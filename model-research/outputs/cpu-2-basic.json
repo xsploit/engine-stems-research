@@ -1,0 +1,32 @@
+{
+  "name": "cpu-2-basic",
+  "runtime": "1.30.0",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "provider_options": {
+    "CPUExecutionProvider": {}
+  },
+  "initialization_seconds": 0.25678262498695403,
+  "first_run_seconds": 0.2470429640088696,
+  "warm_seconds": [
+    0.24681569202221,
+    0.24181684601353481,
+    0.24506595599814318,
+    0.2413522639835719,
+    0.24360308598261327
+  ],
+  "median_seconds": 0.24360308598261327,
+  "finite": true,
+  "output_range": [
+    0.0,
+    0.999998927116394
+  ],
+  "input": "seed42 uniform random [0,1), synthetic tensor, NOT real audio frontend",
+  "vs_unoptimized_fp32": {
+    "max_abs": 0.0,
+    "rms": 0.0,
+    "relative_l2": 0.0,
+    "exact_equal": true
+  }
+}

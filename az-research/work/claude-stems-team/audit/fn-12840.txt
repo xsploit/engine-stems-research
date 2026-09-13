@@ -1,0 +1,30 @@
+0000000000012840 <zplane::StemsProAlgorithm::getResamplerCompensationSamples() const>:
+   12840:       stp x29, x30, [sp, #-0x20]!
+   12844:       mov x29, sp
+   12848:       str x19, [sp, #0x10]
+   1284c:       mov x19, x0
+   12850:       ldrb w0, [x0, #0xa8]
+   12854:       cbnz w0, 0x12868 <zplane::StemsProAlgorithm::getResamplerCompensationSamples() const+0x28>
+   12858:       mov x0, #0x0                // =0
+   1285c:       ldr x19, [sp, #0x10]
+   12860:       ldp x29, x30, [sp], #0x20
+   12864:       ret
+   12868:       ldr s0, [x19, #0x44]
+   1286c:       add x0, x19, #0x1a0
+   12870:       str d8, [sp, #0x18]
+   12874:       ldr s8, [x19, #0x40]
+   12878:       fdiv s8, s0, s8
+   1287c:       bl 0x195f0 <zplane::Resample::Resampler::getNumPrefillSamples() const>
+   12880:       mov x1, x0
+   12884:       add x0, x19, #0x1e8
+   12888:       mov x19, x1
+   1288c:       bl 0x195f0 <zplane::Resample::Resampler::getNumPrefillSamples() const>
+   12890:       ucvtf s1, x0
+   12894:       ucvtf s0, x19
+   12898:       ldr x19, [sp, #0x10]
+   1289c:       fmadd s0, s1, s8, s0
+   128a0:       ldr d8, [sp, #0x18]
+   128a4:       ldp x29, x30, [sp], #0x20
+   128a8:       fcvtzu x0, s0
+   128ac:       ret
+

@@ -1,0 +1,87 @@
+{
+  "candidate": "int8-all-conv",
+  "device": "i5-13600K CPU, four threads",
+  "runtime": "1.30.0",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "bytes": 106931336,
+  "original_median_seconds": 0.10960182000417262,
+  "candidate_median_seconds": 0.07396763999713585,
+  "speedup": 1.481753642652606,
+  "original_seconds": [
+    0.16835114601417445,
+    0.10960182000417262,
+    0.10924928201711737,
+    0.10926537902560085,
+    0.1092873570160009,
+    0.10963265100144781,
+    0.10961636499268934
+  ],
+  "candidate_seconds": [
+    0.074197758018272,
+    0.07396763999713585,
+    0.0727749310026411,
+    0.07335171900922433,
+    0.07436275400687009,
+    0.07373237100546248,
+    0.07415969399153255
+  ],
+  "output_metrics": {
+    "music_proxy_0": {
+      "finite": true,
+      "max_abs": 1.0,
+      "mean_abs": 0.2925768659076482,
+      "rms": 0.37965693589664806,
+      "p99_abs": 0.985386993587017,
+      "relative_l2": 0.8608918360782554,
+      "fraction_abs_above_0_01": 0.7978386878967285
+    },
+    "music_proxy_1": {
+      "finite": true,
+      "max_abs": 1.0,
+      "mean_abs": 0.26185683944130744,
+      "rms": 0.3609993263398922,
+      "p99_abs": 0.9999977946281433,
+      "relative_l2": 0.9254823633401275,
+      "fraction_abs_above_0_01": 0.7945199012756348
+    },
+    "music_proxy_2": {
+      "finite": true,
+      "max_abs": 1.0,
+      "mean_abs": 0.24585905234371808,
+      "rms": 0.35699819159368146,
+      "p99_abs": 0.9999996423721313,
+      "relative_l2": 0.9155834014435663,
+      "fraction_abs_above_0_01": 0.7507495880126953
+    },
+    "music_proxy_3": {
+      "finite": true,
+      "max_abs": 1.0,
+      "mean_abs": 0.2618174921147869,
+      "rms": 0.3699620284399516,
+      "p99_abs": 1.0,
+      "relative_l2": 0.9195184981015285,
+      "fraction_abs_above_0_01": 0.7726073265075684
+    },
+    "quiet_proxy": {
+      "finite": true,
+      "max_abs": 1.0,
+      "mean_abs": 0.32186471881621515,
+      "rms": 0.408684542605203,
+      "p99_abs": 0.9986510521173477,
+      "relative_l2": 1.1098387274987673,
+      "fraction_abs_above_0_01": 0.8411922454833984
+    },
+    "silence": {
+      "finite": true,
+      "max_abs": 1.0,
+      "mean_abs": 0.30237918089723337,
+      "rms": 0.386880950552441,
+      "p99_abs": 0.998808611035347,
+      "relative_l2": 1.1860897281013025,
+      "fraction_abs_above_0_01": 0.839820384979248
+    }
+  },
+  "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed."
+}

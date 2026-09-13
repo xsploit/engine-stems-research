@@ -1,0 +1,89 @@
+{
+  "before": {
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_buffers": 1
+  },
+  "mode": "0x2d",
+  "baseline": {
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      310143.52,
+      310128.62,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      2495328,
+      2650370,
+      0,
+      0
+    ],
+    "unique_buffers": 40
+  },
+  "fourPadsToggled": {
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_buffers": 1
+  },
+  "restored": {
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      325067.78,
+      326489.04,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      2658394,
+      2793817,
+      0,
+      0
+    ],
+    "unique_buffers": 40
+  },
+  "stopped": {
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_buffers": 1
+  },
+  "backlight": "0"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "file": "input.wav",
+    "codec_name": "pcm_f32le",
+    "sample_rate": "44100",
+    "channels": 2,
+    "time_base": "1/44100",
+    "duration_ts": 1323000,
+    "duration": "30.000000"
+  },
+  {
+    "file": "residual.wav",
+    "codec_name": "pcm_f32le",
+    "sample_rate": "44100",
+    "channels": 2,
+    "time_base": "1/44100",
+    "duration_ts": 1323000,
+    "duration": "30.000000"
+  },
+  {
+    "file": "stem-0.wav",
+    "codec_name": "pcm_f32le",
+    "sample_rate": "44100",
+    "channels": 2,
+    "time_base": "1/44100",
+    "duration_ts": 1323000,
+    "duration": "30.000000"
+  },
+  {
+    "file": "stem-1.wav",
+    "codec_name": "pcm_f32le",
+    "sample_rate": "44100",
+    "channels": 2,
+    "time_base": "1/44100",
+    "duration_ts": 1323000,
+    "duration": "30.000000"
+  },
+  {
+    "file": "stem-2.wav",
+    "codec_name": "pcm_f32le",
+    "sample_rate": "44100",
+    "channels": 2,
+    "time_base": "1/44100",
+    "duration_ts": 1323000,
+    "duration": "30.000000"
+  },
+  {
+    "file": "stem-3.wav",
+    "codec_name": "pcm_f32le",
+    "sample_rate": "44100",
+    "channels": 2,
+    "time_base": "1/44100",
+    "duration_ts": 1323000,
+    "duration": "30.000000"
+  }
+]

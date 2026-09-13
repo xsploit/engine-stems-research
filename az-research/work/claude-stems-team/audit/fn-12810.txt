@@ -1,0 +1,14 @@
+0000000000012810 <zplane::StemsProAlgorithm::getNumOutputChannels() const>:
+   12810:       ldrb w2, [x0, #0x80]
+   12814:       ldr w1, [x0, #0x68]
+   12818:       ldr x0, [x0, #0x70]
+   1281c:       cbz w2, 0x12830 <zplane::StemsProAlgorithm::getNumOutputChannels() const+0x20>
+   12820:       add w2, w1, #0x1
+   12824:       sxtw x2, w2
+   12828:       mul x0, x2, x0
+   1282c:       ret
+   12830:       sxtw x1, w1
+   12834:       mul x0, x1, x0
+   12838:       ret
+   1283c:       nop
+

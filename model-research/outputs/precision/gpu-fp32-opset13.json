@@ -1,0 +1,88 @@
+{
+  "candidate": "fp32-opset13",
+  "device": "RTX 5060 Ti",
+  "runtime": "1.30.0",
+  "providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "bytes": 410749648,
+  "original_median_seconds": 0.03358846899936907,
+  "candidate_median_seconds": 0.03351493101217784,
+  "speedup": 1.00219418584405,
+  "original_seconds": [
+    0.03457731701200828,
+    0.033511233021272346,
+    0.03367196401813999,
+    0.03328545598196797,
+    0.03358846899936907,
+    0.03320869500748813,
+    0.03359618500689976
+  ],
+  "candidate_seconds": [
+    0.033550919994013384,
+    0.033422893000533804,
+    0.03361034201225266,
+    0.033697367005515844,
+    0.033115163998445496,
+    0.03334498198819347,
+    0.03351493101217784
+  ],
+  "output_metrics": {
+    "music_proxy_0": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "music_proxy_1": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "music_proxy_2": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "music_proxy_3": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "quiet_proxy": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "silence": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    }
+  },
+  "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed."
+}

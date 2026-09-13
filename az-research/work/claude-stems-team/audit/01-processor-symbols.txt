@@ -1,0 +1,1134 @@
+00000000187e4364 r $d
+00000000000002b4 r $d
+00000000000325e0 r $d
+00000000000325e8 r $d
+0000000000032750 r $d
+0000000000032788 r $d
+0000000000032798 r $d
+00000000000327b8 r $d
+00000000000327d8 r $d
+00000000187e9d43 r $d
+00000000187ff108 d $d
+0000000000033618 r $d
+0000000000033698 r $d
+0000000018800058 b $d
+00000000187ff4e0 d $d
+0000000000000000 b $d
+0000000018800010 d $d
+0000000018800018 d $d
+00000000187e43e0 r $d
+0000000000032860 r $d
+00000000187ff110 d $d
+00000000188000d8 b $d
+00000000187e5720 r $d
+0000000000032928 r $d
+0000000000032a88 r $d
+0000000000032b30 r $d
+0000000000032d40 r $d
+0000000000032db8 r $d
+00000000187ff118 d $d
+0000000000033a98 r $d
+00000000187ff6b8 d $d
+0000000000033ab8 r $d
+00000000187ff6c8 d $d
+0000000000033ad0 r $d
+00000000187ff6e0 d $d
+0000000000033b10 r $d
+00000000187ff6f0 d $d
+0000000000033b30 r $d
+00000000187ff700 d $d
+00000000187ff2c0 d $d
+00000000187ff2e0 d $d
+00000000187ff300 d $d
+00000000187ff320 d $d
+00000000187ff340 d $d
+00000000187ff360 d $d
+00000000187ff380 d $d
+0000000000033b70 r $d
+0000000018800118 b $d
+00000000187e6068 r $d
+0000000000032d40 r $d
+00000000000332c0 r $d
+00000000000332d8 r $d
+0000000000032928 r $d
+00000000187ff120 d $d
+00000000187e6be0 r $d
+00000000187ff128 d $d
+0000000000033b90 r $d
+00000000187e7e90 r $d
+00000000187ff130 d $d
+00000000187e8768 r $d
+0000000018800008 d $d
+00000000187ff138 d $d
+00000000187ff100 d $d
+00000000187e4378 r $d
+0000000018800050 b $d
+0000000000032828 r $d
+00000000187e5568 r $d
+0000000000032868 r $d
+00000000187ea114 r $d
+0000000018800020 d $d
+00000000187e57a8 r $d
+0000000000032888 r $d
+00000000187ea1ec r $d
+00000000000337f0 r $d
+0000000000033830 r $d
+0000000000033878 r $d
+00000000000338c0 r $d
+00000000000338f8 r $d
+00000000187ff588 d $d
+0000000000033930 r $d
+00000000187ff598 d $d
+00000000187ff140 d $d
+0000000000033968 r $d
+00000000187ff5b0 d $d
+0000000000033988 r $d
+00000000187ff5c0 d $d
+00000000000339a0 r $d
+00000000187ff5d8 d $d
+00000000000339c0 r $d
+00000000187ff5e8 d $d
+00000000000339e0 r $d
+00000000187ff5f8 d $d
+0000000000033a00 r $d
+00000000187ff608 d $d
+0000000000033a18 r $d
+00000000187ff620 d $d
+00000000187ff638 d $d
+00000000187ff648 d $d
+00000000187ff658 d $d
+00000000187ff670 d $d
+0000000000033a38 r $d
+00000000187ff688 d $d
+0000000000033a58 r $d
+00000000187ff698 d $d
+0000000000033a78 r $d
+00000000187ff6a8 d $d
+00000000187ff160 d $d
+00000000187ff180 d $d
+00000000187ff1a0 d $d
+00000000187ff1c0 d $d
+00000000187ff1e0 d $d
+00000000187ff200 d $d
+00000000187ff220 d $d
+00000000187ff240 d $d
+00000000187ff260 d $d
+00000000187ff280 d $d
+00000000187ff2a0 d $d
+0000000018800028 d $d
+00000000187e59e0 r $d
+0000000000033c80 r $d
+00000000187e66b8 r $d
+0000000000032928 r $d
+00000000187e66e0 r $d
+0000000000033b90 r $d
+00000000187e6fa0 r $d
+0000000000033428 r $d
+00000000187eac74 r $d
+00000000187e70c8 r $d
+00000000187e3210 r $d
+00000000187ff710 d $d
+00000000187ff720 d $d
+0000000000033658 r $d
+00000000187e7208 r $d
+00000000187e3220 r $d
+00000000187ff778 d $d
+00000000187ff3a0 d $d
+00000000187e7358 r $d
+00000000187e3238 r $d
+00000000187ff790 d $d
+00000000187ff3f8 d $d
+00000000000325e4 r $d
+0000000000033660 r $d
+00000000187e7590 r $d
+0000000018800120 b $d
+0000000018800030 d $d
+00000000187e77b8 r $d
+0000000000033b90 r $d
+00000000187e78b8 r $d
+0000000000033438 r $d
+0000000018800048 d $d
+0000000018800128 b $d
+00000000187e79c8 r $d
+0000000000033bb0 r $d
+00000000187e7a98 r $d
+00000000187eacd8 r $d
+00000000187e3248 r $d
+00000000187ff7a8 d $d
+00000000187e3258 r $d
+00000000187ff7b8 d $d
+00000000187ff450 d $d
+00000000187e87c8 r $d
+0000000000033be0 r $d
+00000000187e3270 r $d
+00000000187e8998 r $d
+0000000000033670 r $d
+0000000000033ba0 r $d
+00000000187e8d48 r $d
+00000000187ead14 r $d
+00000000187e3360 r $d
+00000000187ff7d0 d $d
+00000000187ff498 d $d
+0000000000033ba0 r $d
+00000000187e93a8 r $d
+0000000000033448 r $d
+00000000187ead4c r $d
+0000000000033c00 r $d
+0000000000033670 r $d
+00000000187e3370 r $d
+00000000187e95e0 r $d
+00000000187e9c18 r $d
+00000000000078c0 t $x
+00000000000078f4 t $x
+0000000000004b28 t $x
+00000000000325c8 t $x
+0000000000004b38 t $x
+00000000000325d4 t $x
+0000000000009920 t $x
+0000000000009940 t $x
+0000000000009960 t $x
+0000000000009980 t $x
+00000000000099a0 t $x
+00000000000099c0 t $x
+00000000000099e0 t $x
+0000000000009a00 t $x
+0000000000009a20 t $x
+0000000000009a40 t $x
+0000000000007a00 t $x
+0000000000009a60 t $x
+0000000000009a80 t $x
+0000000000009aa0 t $x
+0000000000009ac0 t $x
+0000000000009ae0 t $x
+0000000000009b00 t $x
+0000000000009b20 t $x
+0000000000009b40 t $x
+0000000000009b60 t $x
+0000000000009b80 t $x
+0000000000005240 t $x
+0000000000009c60 t $x
+0000000000009c80 t $x
+0000000000009cc0 t $x
+0000000000009ea0 t $x
+0000000000009f40 t $x
+0000000000009fe0 t $x
+000000000000a000 t $x
+000000000000a040 t $x
+000000000000a200 t $x
+000000000000a260 t $x
+000000000000a2a0 t $x
+000000000000a340 t $x
+000000000000a3c0 t $x
+000000000000a440 t $x
+000000000000a800 t $x
+000000000000ab00 t $x
+000000000000abe0 t $x
+000000000000ad40 t $x
+000000000000adc0 t $x
+000000000000af60 t $x
+000000000000b100 t $x
+000000000000b2a0 t $x
+000000000000b400 t $x
+000000000000b7c0 t $x
+000000000000bb80 t $x
+000000000000bf40 t $x
+000000000000c1a0 t $x
+000000000000c4e0 t $x
+000000000000c640 t $x
+000000000000c8e0 t $x
+000000000000ce00 t $x
+000000000000cfa0 t $x
+0000000000005280 t $x
+000000000000db40 t $x
+000000000000de20 t $x
+00000000000077a0 t $x
+0000000000016a98 t $x
+0000000000016aa0 t $x
+0000000000016aa8 t $x
+0000000000016ab0 t $x
+0000000000016ab8 t $x
+0000000000016ac0 t $x
+0000000000016ac8 t $x
+0000000000016ad0 t $x
+0000000000016ad8 t $x
+0000000000016ae0 t $x
+0000000000016ae8 t $x
+0000000000016af0 t $x
+0000000000016af8 t $x
+0000000000016b20 t $x
+0000000000016b68 t $x
+0000000000010ec0 t $x
+0000000000016c80 t $x
+0000000000017798 t $x
+00000000000187c0 t $x
+0000000000018e50 t $x
+0000000000007848 t $x
+000000000001c570 t $x
+000000000001cf20 t $x
+000000000001d760 t $x
+000000000001e038 t $x
+0000000000007888 t $x
+00000000000236b8 t $x
+0000000000024d00 t $x
+0000000000007890 t $x
+0000000000025110 t $x
+0000000000007898 t $x
+0000000000007920 t $x
+000000000000d160 t $x
+000000000000def0 t $x
+0000000000010138 t $x
+0000000000010140 t $x
+0000000000010148 t $x
+0000000000010150 t $x
+0000000000010158 t $x
+0000000000010160 t $x
+0000000000010168 t $x
+0000000000010170 t $x
+0000000000010178 t $x
+0000000000010180 t $x
+0000000000010188 t $x
+0000000000010190 t $x
+0000000000010198 t $x
+00000000000101c0 t $x
+0000000000010208 t $x
+0000000000010238 t $x
+0000000000010290 t $x
+00000000000102d0 t $x
+0000000000010330 t $x
+00000000000103a8 t $x
+00000000000104b0 t $x
+0000000000010568 t $x
+0000000000010640 t $x
+0000000000010728 t $x
+00000000000107a8 t $x
+000000000000e228 t $x
+00000000000195d0 t $x
+00000000000195f0 t $x
+000000000001ec18 t $x
+000000000001f138 t $x
+000000000001f4e0 t $x
+000000000001fa50 t $x
+0000000000020810 t $x
+00000000000215d0 t $x
+0000000000021770 t $x
+0000000000021e90 t $x
+0000000000021f90 t $x
+0000000000025410 t $x
+00000000000259b8 t $x
+0000000000027910 t $x
+000000000002d478 t $x
+000000000002dd10 t $x
+0000000000004b50 t $x
+00000000187e32a0 r AEC.48834
+00000000187e3270 r ATan2Constants.48844
+00000000187e32b0 r ATanEstCoefficients0.48835
+00000000187e3320 r CC0.49053
+00000000187e3310 r CC1.49054
+0000000018800020 V DW.ref._ZTISt9bad_alloc
+0000000018800028 V DW.ref._ZTISt9exception
+0000000018800018 V DW.ref.__gxx_personality_v0
+000000000001f4c0 t GetNumFramesNeededFixedOutput
+00000000187e3290 r NegOne.48823
+00000000187e3290 r NegOne.49049
+00000000187e3300 r NoFraction.48996
+00000000187e3280 r One.48822
+00000000187e3280 r One.49050
+00000000187e32d0 r PI.49016
+000000000001f240 t Resample
+000000000001f158 t ResampleCreateInstance
+000000000001f488 t ResampleDestroyInstance
+000000000001f250 t ResampleFixedOutput
+000000000001f148 T ResampleGetBuildDate
+000000000001f4b8 t ResampleGetSamplesNeeded
+000000000001f138 T ResampleGetVersion
+000000000001f4c8 T ResampleReset
+000000000001f4d8 t ResampleSetScalingFactor
+00000000187e3340 r SC0.49051
+00000000187e3330 r SC1.49052
+00000000187ff7e8 a _DYNAMIC
+00000000187ffdb8 a _GLOBAL_OFFSET_TABLE_
+0000000000007898 t _GLOBAL__sub_I_ComplexUtilsHelper.cpp
+0000000000007888 t _GLOBAL__sub_I_Fft.cpp
+0000000000007848 t _GLOBAL__sub_I_StemsProAlgorithm.cpp
+0000000000007890 t _GLOBAL__sub_I_VectorOps.cpp
+00000000000077a0 t _GLOBAL__sub_I__ZN3imb14TinyEncryption11PrivateKeys4acv0E
+0000000000007520 t _GLOBAL__sub_I_challengeKey
+00000000000325e0 R _IO_stdin_used
+0000000000000000 b _TLS_MODULE_BASE_
+0000000000027d88 t bitrv2conj(int, int*, float*)
+00000000000085a0 T prepareStreams()
+0000000000021eb0 T zplImIdxSeparate(int, int)
+0000000000021ea8 T zplReIdxSeparate(int, int)
+0000000000026990 T zplfFree_ARMNeon(float*&)
+0000000000022dd0 T zplfFree_Generic(float*&)
+0000000000027660 t dispatchToArmNeon()
+00000000000233c8 t dispatchToGeneric()
+0000000000026980 T zplfMalloc_ARMNeon(int)
+0000000000022dc0 T zplfMalloc_Generic(int)
+0000000000031aa0 t pffft_cplx_finalize(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t const*)
+0000000000030908 T validate_pffft_simd()
+0000000000021e98 T zplImIdxInterleaved(int, int)
+0000000000021e90 T zplReIdxInterleaved(int, int)
+0000000000021ee8 t zplVecLibDispatcher(UsedCPUExtension_t_tag)
+0000000000021ed8 T zplVecLibGetCPUType()
+0000000000021eb8 T zplVecLibGetVersion()
+0000000000026c28 T zplfCompAbs_ARMNeon(float*, float*, int)
+0000000000022f20 T zplfCompAbs_Generic(float*, float*, int)
+0000000000027210 T zplfSetZero_ARMNeon(float*, int)
+00000000000233b0 T zplfSetZero_Generic(float*, int)
+000000000000a040 t writeAudioParamBlock(AudioBuffer const&, std::ostream&, int)
+0000000000026fe0 T zplfPrincArg_ARMNeon(float*, float*, int)
+00000000000231b8 T zplfPrincArg_Generic(float*, float*, int)
+0000000000026d80 T zplfRealLn_I_ARMNeon(float*, float, float, int)
+0000000000023080 T zplfRealLn_I_Generic(float*, float, float, int)
+0000000000031bc8 t pffft_cplx_preprocess(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t const*)
+0000000000021ec8 T zplVecLibGetBuildDate()
+0000000000026658 T zplfCompAdd_I_ARMNeon(float*, float*, int)
+0000000000022b48 T zplfCompAdd_I_Generic(float*, float*, int)
+00000000000267a8 T zplfCompDiv_I_ARMNeon(float*, float*, int)
+0000000000022be8 T zplfCompDiv_I_Generic(float*, float*, int)
+00000000000267b0 T zplfCompMac_I_ARMNeon(float*, float*, float*, int)
+0000000000022bf0 T zplfCompMac_I_Generic(float*, float*, float*, int)
+0000000000026670 T zplfCompMul_I_ARMNeon(float*, float*, int)
+0000000000022b60 T zplfCompMul_I_Generic(float*, float*, int)
+0000000000026e10 T zplfCompPhase_ARMNeon(float*, float*, int)
+0000000000023110 T zplfCompPhase_Generic(float*, float*, int)
+00000000000261b0 T zplfRealAbs_I_ARMNeon(float*, int)
+00000000000226e8 T zplfRealAbs_I_Generic(float*, int)
+0000000000025b30 T zplfRealAdd_I_ARMNeon(float*, float*, int)
+0000000000022150 T zplfRealAdd_I_Generic(float*, float*, int)
+0000000000026a68 T zplfRealDiv_I_ARMNeon(float*, float*, int)
+0000000000022518 T zplfRealDiv_I_Generic(float*, float*, int)
+0000000000026bd8 T zplfRealExp_I_ARMNeon(float*, int)
+0000000000023030 T zplfRealExp_I_Generic(float*, int)
+0000000000026018 T zplfRealMac_I_ARMNeon(float*, float*, float*, int)
+00000000000225f0 T zplfRealMac_I_Generic(float*, float*, float*, int)
+0000000000025de0 T zplfRealMul_I_ARMNeon(float*, float*, int)
+00000000000223a0 T zplfRealMul_I_Generic(float*, float*, int)
+0000000000025c88 T zplfRealSub_I_ARMNeon(float*, float*, int)
+00000000000222c8 T zplfRealSub_I_Generic(float*, float*, int)
+0000000000026850 T zplfCompConj_I_ARMNeon(float*, int)
+0000000000022c90 T zplfCompConj_I_Generic(float*, int)
+0000000000027580 T zplfRealAddC_I_ARMNeon(float*, float, int)
+0000000000022228 T zplfRealAddC_I_Generic(float*, float, int)
+0000000000025a40 T zplfRealMaxVec_ARMNeon(float*, float*, int)
+0000000000022060 T zplfRealMaxVec_Generic(float*, float*, int)
+0000000000025f38 T zplfRealMulC_I_ARMNeon(float*, float, int)
+0000000000022478 T zplfRealMulC_I_Generic(float*, float, int)
+0000000000027338 T zplfRealSinCos_ARMNeon(float*, float*, float*, int)
+0000000000023338 T zplfRealSinCos_Generic(float*, float*, float*, int)
+0000000000027228 T zplfRealSqrt_I_ARMNeon(float*, int)
+0000000000022e00 T zplfRealSqrt_I_Generic(float*, int)
+0000000000022fc0 T zplfRealCalcRMS_Generic(float const*, float*, int)
+00000000000269c0 T zplfRealCalcStd_ARMNeon(float*, float*, int)
+0000000000022e78 T zplfRealCalcStd_Generic(float*, float*, int)
+00000000000259f8 T zplfRealFindMax_ARMNeon(float*, float*, int*, int)
+0000000000021fd0 T zplfRealFindMax_Generic(float*, float*, int*, int)
+0000000000022018 T zplfRealFindMin_Generic(float*, float*, int*, int)
+0000000000031ce8 t pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)
+0000000000021f78 T zplVecLibDispatcherClear()
+00000000000259b8 T zplfRealCalcMean_ARMNeon(float*, float*, int)
+0000000000021f90 T zplfRealCalcMean_Generic(float*, float*, int)
+0000000000026348 T zplfCompMergeReIm_ARMNeon(float*, float*, float*, int)
+0000000000022838 T zplfCompMergeReIm_Generic(float*, float*, float*, int)
+00000000000264c8 T zplfCompSplitReIm_ARMNeon(float*, float*, float*, int)
+00000000000229b8 T zplfCompSplitReIm_Generic(float*, float*, float*, int)
+00000000000262e0 T zplfRealHThresh_I_ARMNeon(float*, float, float, int)
+00000000000227d0 T zplfRealHThresh_I_Generic(float*, float, float, int)
+00000000000262b0 T zplfRealLThresh_I_ARMNeon(float*, float, float, int)
+00000000000227a0 T zplfRealLThresh_I_Generic(float*, float, float, int)
+0000000000026310 T zplfRealDotProduct_ARMNeon(float*, float*, float*, int)
+0000000000022800 T zplfRealDotProduct_Generic(float*, float*, float*, int)
+000000000002da28 T zplfFFTCreateInstance_pffft(CzplfFFT_If*&, int, int, CzplfFFT_If::_Fft_Windows_)
+000000000002dc28 T zplfFFTDestroyInstance_pffft(CzplfFFT_If*&)
+0000000000025708 T zplfFFTCreateInstance_Generic(CzplfFFT_If*&, int, int, CzplfFFT_If::_Fft_Windows_)
+00000000000258d8 T zplfFFTDestroyInstance_Generic(CzplfFFT_If*&)
+000000000002ad80 T cdft(int, int, float*, int*, float*)
+000000000002b650 T ddct(int, int, float*, int*, float*)
+000000000002c710 T ddst(int, int, float*, int*, float*)
+000000000002b9e0 T dfct(int, float*, float*, int*, float*)
+000000000002cab8 T dfst(int, float*, float*, int*, float*)
+000000000002afe8 t rdft(int, int, float*, int*, float*)
+00000000000279d8 t bitrv2(int, int*, float*)
+00000000000281b8 t cft1st(int, float*, float*)
+00000000000289e8 t cftmdl(int, int, float*, float*)
+000000000002b2f0 t dctsub(int, float*, int, float*)
+000000000002c3b0 t dstsub(int, float*, int, float*)
+0000000000027910 T makect(int, int*, float*)
+0000000000027d70 T makewt(int, int*, float*)
+0000000000027c60 t makewt(int, int*, float*) [clone .part.0]
+000000000002a5b0 t cftbsub(int, float*, float*)
+0000000000029eb8 t cftfsub(int, float*, float*)
+000000000002af08 t rftbsub(int, float*, int, float*)
+000000000002ae50 t rftfsub(int, float*, int, float*)
+0000000000030e10 t cfftf1_ps(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t*, float const*, int const*, int)
+0000000000030c18 t cffti1_ps(int, float*, int*)
+0000000000000220 b guard variable for (anonymous namespace)::oauthClientId::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000238 b guard variable for (anonymous namespace)::hostProductName::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000100 b guard variable for main::{lambda()#4}::operator()() const::obfuscated_data
+00000000000001d8 b guard variable for main::{lambda()#5}::operator()() const::obfuscated_data
+00000000000001f0 b guard variable for main::{lambda()#6}::operator()() const::obfuscated_data
+0000000000000208 b guard variable for main::{lambda()#7}::operator()() const::obfuscated_data
+00000000000000f0 b guard variable for (anonymous namespace)::checkVersion(VersionNumber)::{lambda()#2}::operator()() const::obfuscated_data
+00000000000000d8 b guard variable for (anonymous namespace)::checkVersion(VersionNumber)::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000028 b guard variable for (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#2}::operator()() const::obfuscated_data
+0000000000000040 b guard variable for (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#3}::operator()() const::obfuscated_data
+0000000000000058 b guard variable for (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#4}::operator()() const::obfuscated_data
+0000000000000068 b guard variable for (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#5}::operator()() const::obfuscated_data
+0000000000000088 b guard variable for (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#6}::operator()() const::obfuscated_data
+00000000000000a0 b guard variable for (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#7}::operator()() const::obfuscated_data
+00000000000000b0 b guard variable for (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#8}::operator()() const::obfuscated_data
+00000000000000c0 b guard variable for (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#9}::operator()() const::obfuscated_data
+0000000000000010 b guard variable for (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000128 b guard variable for (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#2}::operator()() const::obfuscated_data
+0000000000000140 b guard variable for (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#3}::operator()() const::obfuscated_data
+0000000000000158 b guard variable for (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#4}::operator()() const::obfuscated_data
+0000000000000168 b guard variable for (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#5}::operator()() const::obfuscated_data
+0000000000000188 b guard variable for (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#6}::operator()() const::obfuscated_data
+00000000000001a0 b guard variable for (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#7}::operator()() const::obfuscated_data
+00000000000001b0 b guard variable for (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#8}::operator()() const::obfuscated_data
+00000000000001c0 b guard variable for (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#9}::operator()() const::obfuscated_data
+0000000000000110 b guard variable for (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000000 b guard variable for main::{lambda()#1}::operator()() const::{lambda()#1}::operator()() const::obfuscated_data
+0000000000030368 t pffft_real_finalize(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t const*)
+0000000018800048 d DetectedCPUExtension
+0000000000030628 t pffft_real_preprocess(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t const*)
+0000000018800030 d m_pCustomAllocatorFunctionPtr
+0000000018800128 b bzplVecLibDispatcherInitialized
+0000000018800040 d m_pCustomDeallocatorFunctionPtr
+0000000018800038 d m_pCustomReallocatorFunctionPtr
+000000000002e7d8 t radb2_ps(int, int, __Float32x4_t const*, __Float32x4_t*, float const*)
+000000000002edc8 t radb4_ps(int, int, __Float32x4_t const*, __Float32x4_t*, float const*, float const*, float const*)
+000000000002e600 t radf2_ps(int, int, __Float32x4_t const*, __Float32x4_t*, float const*)
+000000000002e9b0 t radf4_ps(int, int, __Float32x4_t const*, __Float32x4_t*, float const*, float const*, float const*)
+00000000000301d0 t decompose(int, int*, int const*)
+000000000002dd10 t passf2_ps(int, int, __Float32x4_t const*, __Float32x4_t*, float const*, float)
+000000000002de78 t passf3_ps(int, int, __Float32x4_t const*, __Float32x4_t*, float const*, float const*, float)
+000000000002e010 t passf4_ps(int, int, __Float32x4_t const*, __Float32x4_t*, float const*, float const*, float const*, float)
+000000000002e2b8 t passf5_ps(int, int, __Float32x4_t const*, __Float32x4_t*, float const*, float const*, float const*, float const*, float)
+000000000002f9c0 t rfftb1_ps(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t*, float const*, int const*)
+000000000002f1b0 t rfftf1_ps(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t*, float const*, int const*)
+000000000000b2a0 t AudioBuffer::AudioBuffer(int, int)
+000000000000b2a0 W AudioBuffer::AudioBuffer(int, int)
+0000000000025418 T CzplfFFTGen::FreeFFTTables()
+0000000000025410 T CzplfFFTGen::BuildFFTTables()
+0000000000025490 t CzplfFFTGen::Init()
+0000000000025550 T CzplfFFTGen::zplfFFT(float*, float*)
+00000000000255e8 T CzplfFFTGen::zplfIFFT(float*, float*)
+00000000000256d8 T CzplfFFTGen::CzplfFFTGen(int, int, CzplfFFT_If::_Fft_Windows_)
+00000000000256d8 T CzplfFFTGen::CzplfFFTGen(int, int, CzplfFFT_If::_Fft_Windows_)
+0000000000025660 T CzplfFFTGen::~CzplfFFTGen()
+0000000000025420 T CzplfFFTGen::~CzplfFFTGen()
+0000000000025420 T CzplfFFTGen::~CzplfFFTGen()
+0000000000021e28 T CzplfFFT_If::zplfGetWindow(float*)
+0000000000021e60 t CzplfFFT_If::zplfSetWindow(float*)
+0000000000021770 t CzplfFFT_If::CalculateWindow(CzplfFFT_If::_Fft_Windows_)
+0000000000021dd0 t CzplfFFT_If::Log2(int)
+00000000000208c8 T CResampleInt::InitTables(int)
+0000000000020de0 t CResampleInt::ResampleData(short*, short*, float, double*, int, float)
+0000000000020810 T CResampleInt::FillPreBuffer(char const*, unsigned int, unsigned int)
+00000000000209c0 T CResampleInt::GetNumOfOutputSamples(int, float, float)
+0000000000020b60 T CResampleInt::Init()
+0000000000020ad8 T CResampleInt::Reset()
+0000000000020878 T CResampleInt::DeInit()
+0000000000021210 T CResampleInt::Process(char const*, char*, float, float, unsigned int, unsigned int)
+0000000000020d10 t CResampleInt::CResampleInt(int, int, int, bool)
+0000000000020d10 T CResampleInt::CResampleInt(int, int, int, bool)
+0000000000020cb0 T CResampleInt::~CResampleInt()
+0000000000020c50 T CResampleInt::~CResampleInt()
+0000000000020c50 T CResampleInt::~CResampleInt()
+000000000002d480 T CzplFFTpffft::FreeFFTTables()
+000000000002d478 T CzplFFTpffft::BuildFFTTables()
+000000000002d7a0 T CzplFFTpffft::BuildComplexVector(float*, float*, int)
+000000000002d778 T CzplFFTpffft::BuildCombinedVector(float*, float*, int)
+000000000002d508 T CzplFFTpffft::Init()
+000000000002d5a8 T CzplFFTpffft::zplfFFT(float*, float*)
+000000000002d640 T CzplFFTpffft::zplfIFFT(float*, float*)
+000000000002d728 T CzplFFTpffft::CzplFFTpffft(int, int, CzplfFFT_If::_Fft_Windows_)
+000000000002d728 T CzplFFTpffft::CzplFFTpffft(int, int, CzplfFFT_If::_Fft_Windows_)
+000000000002d6a8 T CzplFFTpffft::~CzplFFTpffft()
+000000000002d488 T CzplFFTpffft::~CzplFFTpffft()
+000000000002d488 T CzplFFTpffft::~CzplFFTpffft()
+0000000000007a44 t (anonymous namespace)::StemsError::~StemsError()
+0000000000007a2c t (anonymous namespace)::StemsError::~StemsError()
+0000000000007a2c t (anonymous namespace)::StemsError::~StemsError()
+0000000018800060 b (anonymous namespace)::protection::protectedAreas
+0000000018800058 b (anonymous namespace)::protection::triggerProtection
+0000000000008180 t (anonymous namespace)::handleErrorCode(int)
+00000000000085e0 t void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&) [clone .constprop.0]
+000000000000d160 t (anonymous namespace)::padLeft(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char, int) [clone .constprop.0]
+0000000000005240 t (anonymous namespace)::errorExit(bool) [clone .isra.0]
+0000000018800078 b (anonymous namespace)::oauthClientId
+0000000018800098 b (anonymous namespace)::hostProductName
+00000000188000b8 b (anonymous namespace)::hostProductVersion
+0000000000021660 T zplAllocator::defaultFree(void*)
+00000000000215d0 T zplAllocator::defaultMalloc(unsigned long, zplAlloc::MemoryAlignment_t)
+00000000000215f8 T zplAllocator::defaultRealloc(void*, unsigned long, zplAlloc::MemoryAlignment_t)
+0000000018800120 B zplAllocator::m_lByteCounter
+0000000000021710 T zplAllocator::getNumOfBytesAllocated()
+0000000000021700 t zplAllocator::free(void*)
+0000000000021698 t zplAllocator::malloc(unsigned long, zplAlloc::MemoryAlignment_t)
+0000000000021720 t zplAllocator::realloc(void*, unsigned long, zplAlloc::MemoryAlignment_t)
+000000000001f648 t CResampleBase::SetScalingFactor(float)
+000000000001f9c0 t CResampleBase::getNumOfSamplesNeeded(int, float, float)
+000000000001f920 t CResampleBase::GetNumFramesNeededFixedOutput(int, float, float)
+000000000001f788 t CResampleBase::sinc(float)
+000000000001f6b8 t CResampleBase::Reset(float, float, float)
+000000000001f4e0 T CResampleBase::Reset()
+000000000001f8c8 T CResampleBase::Bessel(float)
+000000000001f4e8 t CResampleBase::Create(CResampleBase*&, int, int, int, int, bool)
+000000000001f7d0 t CResampleBase::window(float, int)
+000000000001f618 t CResampleBase::Destroy(CResampleBase*)
+000000000000a440 t VersionNumber::fromString(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+000000000001fb20 T CResampleFloat::InitTables(int)
+0000000000020068 t CResampleFloat::ResampleData(float*, float*, float, double*, int, float)
+000000000001fa50 T CResampleFloat::FillPreBuffer(char const*, unsigned int, unsigned int)
+000000000001fc00 T CResampleFloat::GetNumOfOutputSamples(int, float, float)
+000000000001fd98 T CResampleFloat::Init()
+000000000001fd18 T CResampleFloat::Reset()
+000000000001fab0 T CResampleFloat::DeInit()
+00000000000204b0 T CResampleFloat::Process(char const*, char*, float, float, unsigned int, unsigned int)
+000000000001ff88 t CResampleFloat::CResampleFloat(int, int, int, bool)
+000000000001ff88 T CResampleFloat::CResampleFloat(int, int, int, bool)
+000000000001ff10 T CResampleFloat::~CResampleFloat()
+000000000001fe98 T CResampleFloat::~CResampleFloat()
+000000000001fe98 T CResampleFloat::~CResampleFloat()
+0000000000021668 T zplAllocatorIf::setCustomAllocator(void* (*)(unsigned long, zplAlloc::MemoryAlignment_t))
+0000000000021688 T zplAllocatorIf::setCustomDeallocator(void (*)(void*))
+0000000000021678 T zplAllocatorIf::setCustomReallocator(void* (*)(void*, unsigned long, zplAlloc::MemoryAlignment_t))
+00000000000195d0 t Stems_resources::get_2f8c5ad4fa633d60d7b3a7cefcccddcf()
+00000000000195e0 t Stems_resources::get_2f8c5ad4fa633d60d7b3a7cefcccddcf_size()
+0000000000007b08 t ay::obfuscated_data<10ull, 15121211008207919047ull>::decrypt() [clone .part.0]
+0000000000009aa0 W ay::obfuscated_data<10ull, 15121211008207919047ull>::~obfuscated_data()
+0000000000009aa0 W ay::obfuscated_data<10ull, 15121211008207919047ull>::~obfuscated_data()
+0000000000009980 W ay::obfuscated_data<10ull, 2146947873909111779ull>::~obfuscated_data()
+0000000000009980 W ay::obfuscated_data<10ull, 2146947873909111779ull>::~obfuscated_data()
+0000000000009a20 W ay::obfuscated_data<10ull, 4990410596663651085ull>::~obfuscated_data()
+0000000000009a20 W ay::obfuscated_data<10ull, 4990410596663651085ull>::~obfuscated_data()
+0000000000009a00 W ay::obfuscated_data<10ull, 6765510007263147991ull>::~obfuscated_data()
+0000000000009a00 W ay::obfuscated_data<10ull, 6765510007263147991ull>::~obfuscated_data()
+0000000000007a84 t ay::obfuscated_data<10ull, 6998023196564196829ull>::decrypt() [clone .part.0]
+0000000000009a60 W ay::obfuscated_data<10ull, 6998023196564196829ull>::~obfuscated_data()
+0000000000009a60 W ay::obfuscated_data<10ull, 6998023196564196829ull>::~obfuscated_data()
+0000000000009b00 W ay::obfuscated_data<11ull, 12674201596434021857ull>::~obfuscated_data()
+0000000000009b00 W ay::obfuscated_data<11ull, 12674201596434021857ull>::~obfuscated_data()
+0000000000009940 W ay::obfuscated_data<12ull, 14517101911205821319ull>::~obfuscated_data()
+0000000000009940 W ay::obfuscated_data<12ull, 14517101911205821319ull>::~obfuscated_data()
+0000000000009a40 W ay::obfuscated_data<12ull, 2404850869314226063ull>::~obfuscated_data()
+0000000000009a40 W ay::obfuscated_data<12ull, 2404850869314226063ull>::~obfuscated_data()
+0000000000007bc8 t ay::obfuscated_data<13ull, 14785301942539353593ull>::decrypt() [clone .part.0]
+0000000000009b60 W ay::obfuscated_data<13ull, 14785301942539353593ull>::~obfuscated_data()
+0000000000009b60 W ay::obfuscated_data<13ull, 14785301942539353593ull>::~obfuscated_data()
+0000000000009960 W ay::obfuscated_data<13ull, 1823317716879916447ull>::~obfuscated_data()
+0000000000009960 W ay::obfuscated_data<13ull, 1823317716879916447ull>::~obfuscated_data()
+0000000000007b88 t ay::obfuscated_data<18ull, 15240658050002563497ull>::decrypt() [clone .part.0]
+0000000000009ae0 W ay::obfuscated_data<18ull, 15240658050002563497ull>::~obfuscated_data()
+0000000000009ae0 W ay::obfuscated_data<18ull, 15240658050002563497ull>::~obfuscated_data()
+0000000000007b48 t ay::obfuscated_data<5ull, 15121211008207919047ull>::decrypt() [clone .part.0]
+0000000000009ac0 W ay::obfuscated_data<5ull, 15121211008207919047ull>::~obfuscated_data()
+0000000000009ac0 W ay::obfuscated_data<5ull, 15121211008207919047ull>::~obfuscated_data()
+00000000000099e0 W ay::obfuscated_data<5ull, 4836704593868483895ull>::~obfuscated_data()
+00000000000099e0 W ay::obfuscated_data<5ull, 4836704593868483895ull>::~obfuscated_data()
+00000000000099c0 W ay::obfuscated_data<5ull, 8344932244452511525ull>::~obfuscated_data()
+00000000000099c0 W ay::obfuscated_data<5ull, 8344932244452511525ull>::~obfuscated_data()
+0000000000009b40 W ay::obfuscated_data<6ull, 1978695492441415517ull>::~obfuscated_data()
+0000000000009b40 W ay::obfuscated_data<6ull, 1978695492441415517ull>::~obfuscated_data()
+00000000000099a0 W ay::obfuscated_data<7ull, 2146947873909111779ull>::~obfuscated_data()
+00000000000099a0 W ay::obfuscated_data<7ull, 2146947873909111779ull>::~obfuscated_data()
+0000000000009b20 W ay::obfuscated_data<7ull, 4027134645962747145ull>::~obfuscated_data()
+0000000000009b20 W ay::obfuscated_data<7ull, 4027134645962747145ull>::~obfuscated_data()
+0000000000007ac8 t ay::obfuscated_data<8ull, 6998023196564196829ull>::decrypt() [clone .part.0]
+0000000000009a80 W ay::obfuscated_data<8ull, 6998023196564196829ull>::~obfuscated_data()
+0000000000009a80 W ay::obfuscated_data<8ull, 6998023196564196829ull>::~obfuscated_data()
+000000000000d66c T imb::conversion::toString[abi:cxx11](unsigned int)
+000000000000d2e0 T imb::conversion::toString[abi:cxx11](unsigned long)
+000000000000da90 T imb::conversion::toUInt32(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+000000000000da00 T imb::conversion::toUInt64(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+000000000000ad40 t std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > imb::paramblock::fromParamBlock<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+000000000000bb80 t bool imb::paramblock::fromParamBlock<bool>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+000000000000b7c0 t float imb::paramblock::fromParamBlock<float>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+000000000000b400 t int imb::paramblock::fromParamBlock<int>(std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+000000000000c8e0 t imb::paramblock::readParamBlock[abi:cxx11](std::istream&)
+000000000000a000 t imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()
+000000000000a000 W imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()
+0000000000007dd0 t imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::ParamBlockWriter<std::ostream>::operator()<char [13]>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const (&) [13]) [clone .isra.0]
+0000000000007d88 t imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::ParamBlockWriter<std::ostream>::operator()<char [5]>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const (&) [5]) [clone .isra.0]
+0000000000007e24 t imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::ParamBlockWriter<std::ostream>::operator()<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [clone .isra.0]
+0000000000008000 t imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::ParamBlockWriter<std::ostream>::operator()<int>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int const&) [clone .isra.0]
+0000000018800108 B imb::TinyEncryption::PrivateKeys::engineStems
+00000000188000d8 B imb::TinyEncryption::PrivateKeys::acv0
+00000000188000e8 B imb::TinyEncryption::PrivateKeys::acv7
+00000000188000f8 B imb::TinyEncryption::PrivateKeys::mpcStems
+000000000000dc40 T imb::TinyEncryption::randomChallenge()
+0000000000009cc0 t imb::params::parseParameters(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, std::vector<imb::params::Parameter, std::allocator<imb::params::Parameter> > const&)
+000000000000c1a0 t imb::params::parseParameters(int, char**, std::vector<imb::params::Parameter, std::allocator<imb::params::Parameter> > const&)
+0000000000009ea0 t imb::params::Parameter::~Parameter()
+0000000000009ea0 W imb::params::Parameter::~Parameter()
+0000000000017798 t zplane::Algorithms::OverlapAddStep<float>::prepare(zplane::Algorithms::OverlapAddStep<float>::PrepareParameters)
+0000000000018e50 t zplane::Algorithms::OverlapAddStep<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)
+0000000000016b68 t zplane::Algorithms::OverlapAddStep<float>::~OverlapAddStep()
+0000000000016b68 W zplane::Algorithms::OverlapAddStep<float>::~OverlapAddStep()
+000000000001ec80 t zplane::Algorithms::WindowGenerator::hann(zplane::VectorView<float>)
+000000000001efc0 T zplane::Algorithms::WindowGenerator::welch(zplane::VectorView<float>)
+000000000001ed10 T zplane::Algorithms::WindowGenerator::hamming(zplane::VectorView<float>)
+000000000001ee60 T zplane::Algorithms::WindowGenerator::bartlett(zplane::VectorView<float>)
+000000000001eda8 T zplane::Algorithms::WindowGenerator::blackman(zplane::VectorView<float>)
+000000000001ec18 T zplane::Algorithms::WindowGenerator::rectangle(zplane::VectorView<float>)
+000000000001c650 t zplane::Algorithms::Fft::releaseResources()
+000000000001ca88 t zplane::Algorithms::Fft::transformInverse(zplane::ComplexAudioBlockView<float const, zplane::ComplexSplitLayout>, zplane::AudioBlockView<float>)
+000000000001d760 t zplane::Algorithms::Fft::Impl::transformInverse(zplane::ComplexAudioBlockView<float const, zplane::ComplexSplitLayout>, zplane::AudioBlockView<float>)
+000000000001cf20 t zplane::Algorithms::Fft::Impl::transform(zplane::AudioBlockView<float const>, zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>)
+000000000001e038 t zplane::Algorithms::Fft::Impl::Impl(zplane::Algorithms::Fft::PrepareParameters)
+000000000001e038 W zplane::Algorithms::Fft::Impl::Impl(zplane::Algorithms::Fft::PrepareParameters)
+000000000001ce20 t zplane::Algorithms::Fft::prepare(zplane::Algorithms::Fft::PrepareParameters)
+000000000001c6f0 t zplane::Algorithms::Fft::transform(zplane::AudioBlockView<float const>, zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>)
+000000000001c570 t zplane::Algorithms::Fft::Fft()
+000000000001c570 T zplane::Algorithms::Fft::Fft()
+000000000001c578 t zplane::Algorithms::Fft::~Fft()
+000000000001c578 T zplane::Algorithms::Fft::~Fft()
+0000000000016c80 t zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)
+00000000000187c0 t zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)
+0000000000010728 W zplane::AudioBlock<float>::~AudioBlock()
+0000000000010330 t zplane::AudioBlock<float>::~AudioBlock()
+0000000000010330 W zplane::AudioBlock<float>::~AudioBlock()
+0000000000010180 W zplane::VectorView<float const* const>::~VectorView()
+0000000000010148 W zplane::VectorView<float const* const>::~VectorView()
+0000000000010148 W zplane::VectorView<float const* const>::~VectorView()
+0000000000010178 W zplane::VectorView<float* const>::~VectorView()
+0000000000010158 W zplane::VectorView<float* const>::~VectorView()
+0000000000010158 W zplane::VectorView<float* const>::~VectorView()
+0000000000010190 W zplane::VectorView<float const>::~VectorView()
+0000000000010160 W zplane::VectorView<float const>::~VectorView()
+0000000000010160 W zplane::VectorView<float const>::~VectorView()
+0000000000016ae0 W zplane::VectorView<float const*>::~VectorView()
+0000000000016ac0 W zplane::VectorView<float const*>::~VectorView()
+0000000000016ac0 W zplane::VectorView<float const*>::~VectorView()
+0000000000016ac8 W zplane::VectorView<float*>::~VectorView()
+0000000000016a98 W zplane::VectorView<float*>::~VectorView()
+0000000000016a98 W zplane::VectorView<float*>::~VectorView()
+0000000000010168 W zplane::VectorView<float>::~VectorView()
+0000000000010140 W zplane::VectorView<float>::~VectorView()
+0000000000010140 W zplane::VectorView<float>::~VectorView()
+00000000000102d0 W zplane::ComplexVector<float, zplane::ComplexSplitLayout>::~ComplexVector()
+0000000000010290 W zplane::ComplexVector<float, zplane::ComplexSplitLayout>::~ComplexVector()
+0000000000010290 W zplane::ComplexVector<float, zplane::ComplexSplitLayout>::~ComplexVector()
+0000000000010188 W zplane::AudioBlockView<float const>::~AudioBlockView()
+0000000000010150 W zplane::AudioBlockView<float const>::~AudioBlockView()
+0000000000010150 W zplane::AudioBlockView<float const>::~AudioBlockView()
+0000000000010170 W zplane::AudioBlockView<float>::~AudioBlockView()
+0000000000010138 W zplane::AudioBlockView<float>::~AudioBlockView()
+0000000000010138 W zplane::AudioBlockView<float>::~AudioBlockView()
+00000000000103a8 W zplane::ComplexAudioBlock<float, zplane::ComplexSplitLayout>::~ComplexAudioBlock()
+0000000000010640 W zplane::ComplexAudioBlock<float, zplane::ComplexSplitLayout>::~ComplexAudioBlock()
+0000000000010640 W zplane::ComplexAudioBlock<float, zplane::ComplexSplitLayout>::~ComplexAudioBlock()
+0000000000016ae8 W zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>::~ComplexVectorView()
+0000000000016ab0 W zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>::~ComplexVectorView()
+0000000000016ab0 W zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>::~ComplexVectorView()
+0000000000016ad0 W zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>::~ComplexVectorView()
+0000000000016aa8 W zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>::~ComplexVectorView()
+0000000000016aa8 W zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>::~ComplexVectorView()
+00000000000114f8 T zplane::StemsProAlgorithm::releaseResources()
+0000000000015128 t zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)
+00000000000128b0 t zplane::StemsProAlgorithm::ephraimMalahApprox(unsigned long, unsigned long, unsigned long)
+00000000000157a0 t zplane::StemsProAlgorithm::computeOutputTensor(zplane::AudioBlockView<float>)
+00000000000120e8 t zplane::StemsProAlgorithm::reset()
+0000000000012e78 t zplane::StemsProAlgorithm::prepare(zplane::StemsProAlgorithm::PrepareParameters)
+0000000000016290 t zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)
+0000000000010ec0 t zplane::StemsProAlgorithm::StemsProAlgorithm()
+0000000000010ec0 T zplane::StemsProAlgorithm::StemsProAlgorithm()
+00000000000107a8 t zplane::StemsProAlgorithm::~StemsProAlgorithm()
+00000000000107a8 W zplane::StemsProAlgorithm::~StemsProAlgorithm()
+0000000000025110 t zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)
+0000000000025298 t zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)
+0000000000016af0 W zplane::ComplexAudioBlockView<float const, zplane::ComplexSplitLayout>::~ComplexAudioBlockView()
+0000000000016ab8 W zplane::ComplexAudioBlockView<float const, zplane::ComplexSplitLayout>::~ComplexAudioBlockView()
+0000000000016ab8 W zplane::ComplexAudioBlockView<float const, zplane::ComplexSplitLayout>::~ComplexAudioBlockView()
+0000000000016ad8 W zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>::~ComplexAudioBlockView()
+0000000000016aa0 W zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>::~ComplexAudioBlockView()
+0000000000016aa0 W zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>::~ComplexAudioBlockView()
+0000000000010568 W zplane::Vector<zplane::ComplexVector<float, zplane::ComplexSplitLayout> >::~Vector()
+00000000000104b0 W zplane::Vector<zplane::ComplexVector<float, zplane::ComplexSplitLayout> >::~Vector()
+00000000000104b0 W zplane::Vector<zplane::ComplexVector<float, zplane::ComplexSplitLayout> >::~Vector()
+00000000000101c0 W zplane::Vector<float*>::~Vector()
+0000000000010198 W zplane::Vector<float*>::~Vector()
+0000000000010198 W zplane::Vector<float*>::~Vector()
+0000000000016b20 W zplane::Vector<void*>::~Vector()
+0000000000016af8 W zplane::Vector<void*>::~Vector()
+0000000000016af8 W zplane::Vector<void*>::~Vector()
+0000000000010238 W zplane::Vector<float>::~Vector()
+0000000000010208 W zplane::Vector<float>::~Vector()
+0000000000010208 W zplane::Vector<float>::~Vector()
+0000000000019628 t zplane::Resample::Resampler::releaseResources()
+0000000000019808 T zplane::Resample::Resampler::setFixedBlockSize(unsigned long)
+000000000001ab20 T zplane::Resample::Resampler::setPrefillSamples(zplane::VectorView<float const>)
+0000000000019b48 T zplane::Resample::Resampler::setDesiredNonFixedBlockSize(unsigned long)
+000000000001a7a8 T zplane::Resample::Resampler::setFractionalInputBlockOffset(float)
+0000000000019698 t zplane::Resample::Resampler::reset()
+000000000001b100 t zplane::Resample::Resampler::prepare(zplane::Resample::Resampler::PrepareParameters const&)
+000000000001bea0 t zplane::Resample::Resampler::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)
+0000000000019798 t zplane::Resample::Resampler::~Resampler()
+0000000000019798 T zplane::Resample::Resampler::~Resampler()
+000000000000def0 T zplane::StemsPro::getVersion()
+000000000000df68 t zplane::StemsPro::initialize(int, float, int, int, bool)
+000000000000e190 t zplane::StemsPro::flushBuffer(float* const*, unsigned long&)
+000000000000fdc8 t zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)
+000000000000e9b0 t zplane::StemsPro::StemsProImpl::getFramesNeeded()
+000000000000f190 t zplane::StemsPro::StemsProImpl::finishProcessing(float const* const*, unsigned long)
+000000000000e9e8 t zplane::StemsPro::StemsProImpl::getMaxFramesNeeded()
+000000000000e988 t zplane::StemsPro::StemsProImpl::setOutputBlockSize(unsigned long const&)
+000000000000e9f8 t zplane::StemsPro::StemsProImpl::getNumOutputChannels()
+000000000000e9f0 t zplane::StemsPro::StemsProImpl::getInstrumentOutputChannels(zplane::StemsPro::Instrument)
+0000000000010078 t zplane::StemsPro::StemsProImpl::reset()
+000000000000ea00 t zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)
+000000000000e228 t zplane::StemsPro::StemsProImpl::StemsProImpl(float, unsigned long, unsigned long, int, bool)
+000000000000e228 T zplane::StemsPro::StemsProImpl::StemsProImpl(float, unsigned long, unsigned long, int, bool)
+000000000000e880 t zplane::StemsPro::StemsProImpl::~StemsProImpl()
+000000000000e880 T zplane::StemsPro::StemsProImpl::~StemsProImpl()
+000000000000df00 T zplane::StemsPro::getBuildDate()
+000000000000df58 T zplane::StemsPro::isInitialized()
+000000000000e208 t zplane::StemsPro::getFramesNeeded()
+000000000000e158 t zplane::StemsPro::finishProcessing(float const* const*, unsigned long)
+000000000000e210 t zplane::StemsPro::getMaxFramesNeeded()
+000000000000e1c8 t zplane::StemsPro::setOutputBlockSize(unsigned long)
+000000000000e220 T zplane::StemsPro::getNumOutputChannels()
+000000000000e218 T zplane::StemsPro::getInstrumentOutputChannels(zplane::StemsPro::Instrument)
+000000000000e0e8 T zplane::StemsPro::reset()
+000000000000e120 t zplane::StemsPro::process(float const* const*, unsigned long, float* const*)
+000000000000df10 t zplane::StemsPro::StemsPro()
+000000000000df10 T zplane::StemsPro::StemsPro()
+000000000000df18 t zplane::StemsPro::~StemsPro()
+000000000000df18 T zplane::StemsPro::~StemsPro()
+0000000000023900 T zplane::VectorOps<float, void>::calcL1Norm(zplane::VectorView<float const>)
+0000000000023948 T zplane::VectorOps<float, void>::calcL2Norm(zplane::VectorView<float const>)
+0000000000023c10 t zplane::VectorOps<float, void>::calcSquare(zplane::VectorView<float>)
+00000000000244a0 T zplane::VectorOps<float, void>::dotProduct(zplane::VectorView<float const>, zplane::VectorView<float const>)
+00000000000245c0 T zplane::VectorOps<float, void>::findAbsMax(zplane::VectorView<float>)
+00000000000239b0 T zplane::VectorOps<float, void>::normalizeL1(zplane::VectorView<float>)
+0000000000023a30 T zplane::VectorOps<float, void>::normalizeL2(zplane::VectorView<float>)
+0000000000024690 T zplane::VectorOps<float, void>::findMaxIndex(zplane::VectorView<float>)
+0000000000024630 T zplane::VectorOps<float, void>::findMinIndex(zplane::VectorView<float>)
+00000000000242d8 T zplane::VectorOps<float, void>::generateRamp(zplane::VectorView<float>, float, float, bool)
+0000000000024888 T zplane::VectorOps<float, void>::setImagParts(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>)
+0000000000024980 T zplane::VectorOps<float, void>::setMagnitude(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>)
+00000000000248a8 T zplane::VectorOps<float, void>::setMagnitude(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, float)
+0000000000024868 T zplane::VectorOps<float, void>::setRealParts(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>)
+0000000000024848 T zplane::VectorOps<float, void>::copyImagParts(zplane::VectorView<float>, zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>)
+0000000000024828 T zplane::VectorOps<float, void>::copyRealParts(zplane::VectorView<float>, zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>)
+0000000000023c30 t zplane::VectorOps<float, void>::calcSquareRoot(zplane::VectorView<float>)
+00000000000247a8 t zplane::VectorOps<float, void>::calculatePhase(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)
+00000000000243b0 t zplane::VectorOps<float, void>::shiftLeftAndClear(zplane::VectorView<float>, unsigned long)
+00000000000246f8 t zplane::VectorOps<float, void>::calculateMagnitude(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)
+0000000000024428 t zplane::VectorOps<float, void>::shiftLeftAndInsert(zplane::VectorView<float>, zplane::VectorView<float const>)
+0000000000024bf8 t zplane::VectorOps<float, void>::setMagnitudeAndPhase(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>, zplane::VectorView<float const>)
+0000000000023d78 T zplane::VectorOps<float, void>::calcPrincipalArgument(zplane::VectorView<float>)
+0000000000023db8 t zplane::VectorOps<float, void>::add(zplane::VectorView<float>, zplane::VectorView<float const>)
+0000000000023d98 t zplane::VectorOps<float, void>::add(zplane::VectorView<float>, float)
+0000000000023de0 T zplane::VectorOps<float, void>::add(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>)
+0000000000023898 t zplane::VectorOps<float, void>::rms(zplane::VectorView<float const>)
+00000000000237e0 T zplane::VectorOps<float, void>::std(zplane::VectorView<float const>)
+0000000000023778 t zplane::VectorOps<float, void>::sum(zplane::VectorView<float const>)
+00000000000236b8 t zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)
+00000000000236d8 t zplane::VectorOps<float, void>::fill(zplane::VectorView<float>, float)
+0000000000024cc0 t zplane::VectorOps<float, void>::free(float*)
+00000000000237a8 T zplane::VectorOps<float, void>::mean(zplane::VectorView<float const>)
+0000000000023758 t zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)
+0000000000023c70 T zplane::VectorOps<float, void>::calcLn(zplane::VectorView<float>)
+0000000000023c98 T zplane::VectorOps<float, void>::calcLn(zplane::VectorView<float>, float, float)
+0000000000024130 t zplane::VectorOps<float, void>::divide(zplane::VectorView<float>, zplane::VectorView<float const>)
+0000000000024108 T zplane::VectorOps<float, void>::divide(zplane::VectorView<float>, float)
+0000000000024238 T zplane::VectorOps<float, void>::divide(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>)
+00000000000241d0 T zplane::VectorOps<float, void>::divide(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>)
+0000000000024158 T zplane::VectorOps<float, void>::divide(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, float)
+0000000000023bf0 T zplane::VectorOps<float, void>::calcAbs(zplane::VectorView<float>)
+0000000000023b98 T zplane::VectorOps<float, void>::calcCos(zplane::VectorView<float>)
+0000000000023c50 T zplane::VectorOps<float, void>::calcExp(zplane::VectorView<float>)
+0000000000023ae0 T zplane::VectorOps<float, void>::calcMax(zplane::VectorView<float>, float)
+0000000000023b10 T zplane::VectorOps<float, void>::calcMin(zplane::VectorView<float>, float)
+0000000000023b40 T zplane::VectorOps<float, void>::calcSin(zplane::VectorView<float>)
+0000000000024558 T zplane::VectorOps<float, void>::findMax(zplane::VectorView<float>)
+0000000000024510 T zplane::VectorOps<float, void>::findMin(zplane::VectorView<float>)
+0000000000024ca8 t zplane::VectorOps<float, void>::allocate(unsigned long)
+0000000000023cb8 T zplane::VectorOps<float, void>::calcLog2(zplane::VectorView<float>)
+0000000000023f30 t zplane::VectorOps<float, void>::multiply(zplane::VectorView<float>, zplane::VectorView<float const>)
+0000000000023f10 t zplane::VectorOps<float, void>::multiply(zplane::VectorView<float>, float)
+0000000000024030 T zplane::VectorOps<float, void>::multiply(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>)
+0000000000023fc8 T zplane::VectorOps<float, void>::multiply(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>)
+0000000000023f58 T zplane::VectorOps<float, void>::multiply(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, float)
+0000000000024b18 T zplane::VectorOps<float, void>::setPhase(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>)
+0000000000024a38 T zplane::VectorOps<float, void>::setPhase(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, float)
+0000000000023e78 t zplane::VectorOps<float, void>::subtract(zplane::VectorView<float>, zplane::VectorView<float const>)
+0000000000023e50 T zplane::VectorOps<float, void>::subtract(zplane::VectorView<float>, float)
+0000000000023ea0 T zplane::VectorOps<float, void>::subtract(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>)
+0000000000023d18 T zplane::VectorOps<float, void>::calcLog10(zplane::VectorView<float>)
+0000000000024ce8 T zplane::VectorOps<float, void>::shiftLeft(zplane::VectorView<float>, unsigned long)
+000000000001f670 t CResampleBase::GetNumOfFillPreBufferSamples(float, float) const
+000000000000a800 t VersionNumber::toString[abi:cxx11]() const
+000000000000dbc0 T imb::TinyEncryption::decipher(unsigned long const&) const
+000000000000db40 T imb::TinyEncryption::encipher(unsigned long const&) const
+000000000001c618 t zplane::Algorithms::Fft::getNumFftBins() const
+0000000000012750 t zplane::StemsProAlgorithm::getInputBlockSize() const
+00000000000127b0 t zplane::StemsProAlgorithm::getOutputBlockSize() const
+00000000000114c0 t zplane::StemsProAlgorithm::getLatencyInSamples() const
+0000000000012770 t zplane::StemsProAlgorithm::getMaxInputBlockSize() const
+0000000000012810 t zplane::StemsProAlgorithm::getNumOutputChannels() const
+0000000000012790 t zplane::StemsProAlgorithm::getMaxOutputBlockSize() const
+00000000000127d0 t zplane::StemsProAlgorithm::getInstrumentOutputChannels(zplane::StemsPro::Instrument) const
+0000000000012840 t zplane::StemsProAlgorithm::getResamplerCompensationSamples() const
+00000000000196f0 t zplane::Resample::Resampler::getInputBlockSize() const
+0000000000019738 t zplane::Resample::Resampler::getOutputBlockSize() const
+0000000000019788 t zplane::Resample::Resampler::getMaxInputBlockSize() const
+00000000000195f0 t zplane::Resample::Resampler::getNumPrefillSamples() const
+0000000000019790 t zplane::Resample::Resampler::getMaxOutputBlockSize() const
+0000000000009920 W std::ctype<char>::do_widen(char) const
+000000000000abe0 W std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::find(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+000000000000a260 t std::function<void ()>::operator()() const
+0000000000009c80 W std::_Function_base::~_Function_base()
+0000000000009c80 t std::_Function_base::~_Function_base()
+0000000000007c80 t std::_Function_handler<void (std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), main::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#2}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+0000000000007a20 t std::_Function_handler<void (std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), main::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#2}>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+0000000000007cc4 t std::_Function_handler<void (std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), main::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+0000000000007a08 t std::_Function_handler<void (std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&), main::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#1}>::_M_invoke(std::_Any_data const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+0000000000007c44 t std::_Function_handler<void (), main::{lambda()#2}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+0000000000007f80 t std::_Function_handler<void (), main::{lambda()#2}>::_M_invoke(std::_Any_data const&)
+0000000000007c08 t std::_Function_handler<void (), main::{lambda()#3}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+0000000000007e80 t std::_Function_handler<void (), main::{lambda()#3}>::_M_invoke(std::_Any_data const&)
+0000000000007d08 t std::_Function_handler<void (), main::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+0000000000008330 t std::_Function_handler<void (), main::{lambda()#1}>::_M_invoke(std::_Any_data const&)
+0000000000007d4c t std::_Function_handler<void (), (anonymous namespace)::doStems()::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+0000000000007a00 t std::_Function_handler<void (), (anonymous namespace)::doStems()::{lambda()#1}>::_M_invoke(std::_Any_data const&)
+000000000000de20 W std::mersenne_twister_engine<unsigned long, 64ul, 312ul, 156ul, 31ul, 13043109905998158313ul, 29ul, 6148914691236517205ul, 17ul, 8202884508482404352ul, 37ul, 18444473444759240704ul, 43ul, 6364136223846793005ul>::_M_gen_rand()
+0000000000024d00 W float* std::_V2::__rotate<float*>(float*, float*, float*, std::random_access_iterator_tag)
+000000000000ab00 t std::vector<imb::params::Parameter, std::allocator<imb::params::Parameter> >::~vector()
+000000000000ab00 W std::vector<imb::params::Parameter, std::allocator<imb::params::Parameter> >::~vector()
+000000000000bf40 W void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+000000000000a2a0 t std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()
+000000000000a2a0 W std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()
+000000000000af60 W std::vector<float*, std::allocator<float*> >::_M_default_append(unsigned long)
+0000000000009fe0 t std::vector<float*, std::allocator<float*> >::~vector()
+0000000000009fe0 W std::vector<float*, std::allocator<float*> >::~vector()
+00000000000085a8 t void*& std::vector<void*, std::allocator<void*> >::emplace_back<void*>(void*&&) [clone .isra.0]
+000000000000ce00 W void std::vector<void*, std::allocator<void*> >::_M_realloc_insert<void*>(__gnu_cxx::__normal_iterator<void**, std::vector<void*, std::allocator<void*> > >, void*&&)
+0000000000009c60 W std::vector<void*, std::allocator<void*> >::~vector()
+0000000000009c60 W std::vector<void*, std::allocator<void*> >::~vector()
+000000000000adc0 W std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >::_M_default_append(unsigned long)
+0000000000009f40 t std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >::~vector()
+0000000000009f40 W std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >::~vector()
+000000000000b100 W std::vector<float, std::allocator<float> >::_M_default_append(unsigned long)
+0000000000009b80 t void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [clone .isra.0]
+0000000000007ea0 t void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) [clone .isra.0]
+000000000000806c t std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0]
+000000000000a3c0 t std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()
+000000000000a340 t std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()
+000000000000a340 t std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::~basic_stringbuf()
+000000000000c4e0 W std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_get_insert_unique_pos(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+000000000000c640 W std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+00000000000082ac t std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >*) [clone .isra.0]
+000000000000cfa0 W imb::params::Parameter* std::__do_uninit_copy<imb::params::Parameter const*, imb::params::Parameter*>(imb::params::Parameter const*, imb::params::Parameter const*, imb::params::Parameter*)
+0000000018800118 b std::__ioinit
+000000000000a200 t bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+00000000187ff7b8 V typeinfo for CzplfFFTGen
+00000000187ff7a8 V typeinfo for CzplfFFT_If
+00000000187ff790 V typeinfo for CResampleInt
+00000000187ff7d0 V typeinfo for CzplFFTpffft
+00000000187ff710 V typeinfo for CResampleBase
+00000000187ff778 V typeinfo for CResampleFloat
+00000000187ff568 d typeinfo for (anonymous namespace)::StemsError
+00000000187ff620 V typeinfo for zplane::AudioBlock<float>
+00000000187ff688 V typeinfo for zplane::VectorView<float const* const>
+00000000187ff5d8 V typeinfo for zplane::VectorView<float* const>
+00000000187ff6a8 V typeinfo for zplane::VectorView<float const>
+00000000187ff648 V typeinfo for zplane::VectorView<zplane::ComplexVector<float, zplane::ComplexSplitLayout> >
+00000000187ff6f0 V typeinfo for zplane::VectorView<float const*>
+00000000187ff5f8 V typeinfo for zplane::VectorView<float*>
+00000000187ff6b8 V typeinfo for zplane::VectorView<void*>
+00000000187ff5b0 V typeinfo for zplane::VectorView<float>
+00000000187ff598 V typeinfo for zplane::ComplexVector<float, zplane::ComplexSplitLayout>
+00000000187ff698 V typeinfo for zplane::AudioBlockView<float const>
+00000000187ff5e8 V typeinfo for zplane::AudioBlockView<float>
+00000000187ff670 V typeinfo for zplane::ComplexAudioBlock<float, zplane::ComplexSplitLayout>
+00000000187ff6e0 V typeinfo for zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>
+00000000187ff588 V typeinfo for zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>
+00000000187ff700 V typeinfo for zplane::ComplexAudioBlockView<float const, zplane::ComplexSplitLayout>
+00000000187ff638 V typeinfo for zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>
+00000000187ff658 V typeinfo for zplane::Vector<zplane::ComplexVector<float, zplane::ComplexSplitLayout> >
+00000000187ff608 V typeinfo for zplane::Vector<float*>
+00000000187ff6c8 V typeinfo for zplane::Vector<void*>
+00000000187ff5c0 V typeinfo for zplane::Vector<float>
+00000000187ff528 d typeinfo for main::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#2}
+00000000187ff538 d typeinfo for main::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#1}
+00000000187ff518 d typeinfo for main::{lambda()#2}
+00000000187ff508 d typeinfo for main::{lambda()#3}
+00000000187ff548 d typeinfo for main::{lambda()#1}
+00000000187ff558 d typeinfo for (anonymous namespace)::doStems()::{lambda()#1}
+00000000187e3258 V typeinfo name for CzplfFFTGen
+00000000187e3248 V typeinfo name for CzplfFFT_If
+00000000187e3238 V typeinfo name for CResampleInt
+00000000187e3360 V typeinfo name for CzplFFTpffft
+00000000187e3210 V typeinfo name for CResampleBase
+00000000187e3220 V typeinfo name for CResampleFloat
+00000000000336e8 r typeinfo name for (anonymous namespace)::StemsError
+0000000000033a18 V typeinfo name for zplane::AudioBlock<float>
+0000000000033a38 V typeinfo name for zplane::VectorView<float const* const>
+00000000000339a0 V typeinfo name for zplane::VectorView<float* const>
+0000000000033a78 V typeinfo name for zplane::VectorView<float const>
+0000000000033830 V typeinfo name for zplane::VectorView<zplane::ComplexVector<float, zplane::ComplexSplitLayout> >
+0000000000033b10 V typeinfo name for zplane::VectorView<float const*>
+00000000000339e0 V typeinfo name for zplane::VectorView<float*>
+0000000000033a98 V typeinfo name for zplane::VectorView<void*>
+0000000000033968 V typeinfo name for zplane::VectorView<float>
+0000000000033930 V typeinfo name for zplane::ComplexVector<float, zplane::ComplexSplitLayout>
+0000000000033a58 V typeinfo name for zplane::AudioBlockView<float const>
+00000000000339c0 V typeinfo name for zplane::AudioBlockView<float>
+00000000000338c0 V typeinfo name for zplane::ComplexAudioBlock<float, zplane::ComplexSplitLayout>
+0000000000033ad0 V typeinfo name for zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>
+00000000000338f8 V typeinfo name for zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>
+0000000000033b30 V typeinfo name for zplane::ComplexAudioBlockView<float const, zplane::ComplexSplitLayout>
+00000000000337f0 V typeinfo name for zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>
+0000000000033878 V typeinfo name for zplane::Vector<zplane::ComplexVector<float, zplane::ComplexSplitLayout> >
+0000000000033a00 V typeinfo name for zplane::Vector<float*>
+0000000000033ab8 V typeinfo name for zplane::Vector<void*>
+0000000000033988 V typeinfo name for zplane::Vector<float>
+0000000000033788 r typeinfo name for main::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#2}
+0000000000033740 r typeinfo name for main::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#1}
+00000000000337d0 r typeinfo name for main::{lambda()#2}
+00000000000337e0 r typeinfo name for main::{lambda()#3}
+0000000000033730 r typeinfo name for main::{lambda()#1}
+0000000000033708 r typeinfo name for (anonymous namespace)::doStems()::{lambda()#1}
+00000000187ff450 V vtable for CzplfFFTGen
+00000000187ff3f8 V vtable for CResampleInt
+00000000187ff498 V vtable for CzplFFTpffft
+00000000187ff720 V vtable for CResampleBase
+00000000187ff3a0 V vtable for CResampleFloat
+00000000187ff4e0 d vtable for (anonymous namespace)::StemsError
+00000000187ff200 V vtable for zplane::AudioBlock<float>
+00000000187ff260 V vtable for zplane::VectorView<float const* const>
+00000000187ff1a0 V vtable for zplane::VectorView<float* const>
+00000000187ff2a0 V vtable for zplane::VectorView<float const>
+00000000187ff360 V vtable for zplane::VectorView<float const*>
+00000000187ff2e0 V vtable for zplane::VectorView<float*>
+00000000187ff160 V vtable for zplane::VectorView<float>
+00000000187ff140 V vtable for zplane::ComplexVector<float, zplane::ComplexSplitLayout>
+00000000187ff280 V vtable for zplane::AudioBlockView<float const>
+00000000187ff1c0 V vtable for zplane::AudioBlockView<float>
+00000000187ff240 V vtable for zplane::ComplexAudioBlock<float, zplane::ComplexSplitLayout>
+00000000187ff340 V vtable for zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>
+00000000187ff320 V vtable for zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>
+00000000187ff380 V vtable for zplane::ComplexAudioBlockView<float const, zplane::ComplexSplitLayout>
+00000000187ff300 V vtable for zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>
+00000000187ff220 V vtable for zplane::Vector<zplane::ComplexVector<float, zplane::ComplexSplitLayout> >
+00000000187ff1e0 V vtable for zplane::Vector<float*>
+00000000187ff2c0 V vtable for zplane::Vector<void*>
+00000000187ff180 V vtable for zplane::Vector<float>
+00000000187e33b0 r cffti1_ps(int, float*, int*)::ntryh
+00000000187e33d0 r rffti1_ps(int, float*, int*)::ntryh
+0000000000000228 b (anonymous namespace)::oauthClientId::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000240 b (anonymous namespace)::hostProductName::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000108 b main::{lambda()#4}::operator()() const::obfuscated_data
+00000000000001e0 b main::{lambda()#5}::operator()() const::obfuscated_data
+00000000000001f8 b main::{lambda()#6}::operator()() const::obfuscated_data
+0000000000000210 b main::{lambda()#7}::operator()() const::obfuscated_data
+00000000000000f8 b (anonymous namespace)::checkVersion(VersionNumber)::{lambda()#2}::operator()() const::obfuscated_data
+00000000000000e0 b (anonymous namespace)::checkVersion(VersionNumber)::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000030 b (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#2}::operator()() const::obfuscated_data
+0000000000000048 b (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#3}::operator()() const::obfuscated_data
+0000000000000060 b (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#4}::operator()() const::obfuscated_data
+0000000000000070 b (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#5}::operator()() const::obfuscated_data
+0000000000000090 b (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#6}::operator()() const::obfuscated_data
+00000000000000a8 b (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#7}::operator()() const::obfuscated_data
+00000000000000b8 b (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#8}::operator()() const::obfuscated_data
+00000000000000c8 b (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#9}::operator()() const::obfuscated_data
+0000000000000018 b (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void ()> const&)::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000130 b (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#2}::operator()() const::obfuscated_data
+0000000000000148 b (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#3}::operator()() const::obfuscated_data
+0000000000000160 b (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#4}::operator()() const::obfuscated_data
+0000000000000170 b (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#5}::operator()() const::obfuscated_data
+0000000000000190 b (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#6}::operator()() const::obfuscated_data
+00000000000001a8 b (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#7}::operator()() const::obfuscated_data
+00000000000001b8 b (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#8}::operator()() const::obfuscated_data
+00000000000001c8 b (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#9}::operator()() const::obfuscated_data
+0000000000000118 b (anonymous namespace)::doAudioProcessing<zplane::StemsPro>(std::function<void ()> const&)::{lambda()#1}::operator()() const::obfuscated_data
+0000000000000008 b main::{lambda()#1}::operator()() const::{lambda()#1}::operator()() const::obfuscated_data
+00000000187e9c18 r __FRAME_END__
+00000000187e33e4 r __GNU_EH_FRAME_HDR
+0000000018800050 D __TMC_END__
+00000000000002b4 r __abi_tag
+0000000018800260 B __bss_end__
+0000000018800050 B __bss_start
+0000000018800050 B __bss_start__
+0000000018800000 D __data_start
+000000000000798c t __do_global_dtors_aux
+00000000187ff138 d __do_global_dtors_aux_fini_array_entry
+0000000018800008 D __dso_handle
+0000000018800260 B __end__
+00000000187ff100 d __frame_dummy_init_array_entry
+0000000018800260 B _bss_end__
+000000001880004c D _edata
+0000000018800260 B _end
+00000000000325c8 T _fini
+0000000000004b28 T _init
+00000000000078c0 T _start
+00000000000078f4 t call_weak_fn
+00000000187ff580 D challengeKey
+0000000018800050 b completed.0
+0000000018800000 W data_start
+0000000000007920 t deregister_tm_clones
+00000000000079e0 t frame_dummy
+0000000000033c80 R g2f8c5ad4fa633d60d7b3a7cefcccddcfData
+00000000187e31fb R g2f8c5ad4fa633d60d7b3a7cefcccddcfEnd
+00000000187e3200 R g2f8c5ad4fa633d60d7b3a7cefcccddcfSize
+00000000187e32e0 r invm2PI.49018
+00000000187e32f0 r k2PiV.49034
+00000000187e3350 r kInv2PiV.49033
+00000000187e32c0 r kPi2V.48836
+00000000187e32c0 r kPi2V.49048
+00000000187e32d0 r kPiV.49047
+0000000000005280 T main
+00000000187e32f0 r p2PI.49017
+0000000000030c08 T pffft_aligned_free
+0000000000030c00 T pffft_aligned_malloc
+00000000000315c8 t pffft_destroy_setup
+0000000000030ff8 t pffft_new_setup
+0000000000030c10 T pffft_simd_size
+00000000000325b8 T pffft_transform
+00000000000325c0 t pffft_transform_ordered
+00000000000324e8 T pffft_zconvolve_accumulate
+00000000000315f0 T pffft_zreorder
+0000000000007950 t register_tm_clones
+0000000018800138 B zplImIdx
+0000000018800130 B zplReIdx
+0000000018800170 B zplfCompAbs
+0000000018800198 B zplfCompAdd_I
+0000000018800168 B zplfCompConj_I
+0000000018800188 B zplfCompDiv_I
+0000000018800178 B zplfCompMac_I
+00000000188001a8 B zplfCompMergeReIm
+0000000018800190 B zplfCompMul_I
+0000000018800180 B zplfCompPhase
+00000000188001a0 B zplfCompSplitReIm
+0000000018800150 B zplfFFTCreateInstance
+0000000018800148 B zplfFFTDestroyInstance
+0000000018800250 B zplfFree
+0000000018800258 B zplfMalloc
+0000000018800160 B zplfPrincArg
+00000000188001e0 B zplfRealAbs_I
+0000000018800210 B zplfRealAddC_I
+0000000018800218 B zplfRealAdd_I
+0000000018800228 B zplfRealCalcMean
+0000000018800220 B zplfRealCalcRMS
+0000000018800230 B zplfRealCalcStd
+00000000188001f0 B zplfRealDiv_I
+00000000188001b0 B zplfRealDotProduct
+00000000188001d8 B zplfRealExp_I
+0000000018800240 B zplfRealFindMax
+0000000018800140 B zplfRealFindMin
+00000000188001b8 B zplfRealHThresh_I
+00000000188001c0 B zplfRealLThresh_I
+00000000188001c8 B zplfRealLn_I
+00000000188001e8 B zplfRealMac_I
+0000000018800238 B zplfRealMaxVec
+00000000188001f8 B zplfRealMulC_I
+0000000018800200 B zplfRealMul_I
+0000000018800158 B zplfRealSinCos
+00000000188001d0 B zplfRealSqrt_I
+0000000018800208 B zplfRealSub_I
+0000000018800248 B zplfSetZero

@@ -1,0 +1,712 @@
+0000000000016c80 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)>:
+   16c80:       sub sp, sp, #0x230
+   16c84:       stp x29, x30, [sp]
+   16c88:       mov x29, sp
+   16c8c:       stp x21, x22, [sp, #0x20]
+   16c90:       adrp x22, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16c94:       ldr x2, [x22, #0xfa8] ; @187fffa8
+   16c98:       stp x19, x20, [sp, #0x10]
+   16c9c:       mov x19, x0
+   16ca0:       ldr x20, [x1]
+   16ca4:       ldr x0, [x2]
+   16ca8:       str x0, [sp, #0x228]
+   16cac:       mov x0, #0x0                // =0
+   16cb0:       stp x23, x24, [sp, #0x30]
+   16cb4:       stp x25, x26, [sp, #0x40]
+   16cb8:       str x27, [sp, #0x50]
+   16cbc:       cbz x20, 0x170c0 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x440>
+   16cc0:       ldr x0, [x1, #0x8]
+   16cc4:       cbz x0, 0x16ecc <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x24c>
+   16cc8:       cmp x0, x20
+   16ccc:       b.hi 0x17400 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x780>
+   16cd0:       ldr x21, [x1, #0x10]
+   16cd4:       cbnz x21, 0x172b4 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x634>
+   16cd8:       add x19, sp, #0xa0
+   16cdc:       adrp x20, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16ce0:       add x0, x19, #0x80
+   16ce4:       bl 0x5120 <_ZNSt8ios_baseC2Ev@plt>
+   16ce8:       ldr x2, [x20, #0xf68] ; @187fff68
+   16cec:       add x1, sp, #0x200
+   16cf0:       movi v0.4s, #0x0
+   16cf4:       adrp x21, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16cf8:       str xzr, [sp, #0x1f8]
+   16cfc:       ldp x22, x24, [x2, #0x10]
+   16d00:       strh wzr, [sp, #0x200]
+   16d04:       ldr x0, [x21, #0xf78] ; @187fff78
+   16d08:       stur q0, [x1, #0x8]
+   16d0c:       stur q0, [x1, #0x18]
+   16d10:       add x0, x0, #0x10
+   16d14:       mov x1, #0x0                // =0
+   16d18:       ldur x3, [x22, #-0x18]
+   16d1c:       str x22, [sp, #0xa0]
+   16d20:       str x0, [sp, #0x120]
+   16d24:       str x24, [x19, x3]
+   16d28:       str xzr, [sp, #0xa8]
+   16d2c:       ldur x0, [x22, #-0x18]
+   16d30:       add x0, x19, x0
+   16d34:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   16d38:       ldr x0, [x20, #0xf68] ; @187fff68
+   16d3c:       add x2, x19, #0x10
+   16d40:       mov x1, #0x0                // =0
+   16d44:       ldp x23, x25, [x0, #0x20]
+   16d48:       ldur x3, [x23, #-0x18]
+   16d4c:       str x23, [sp, #0xb0]
+   16d50:       add x0, x2, x3
+   16d54:       str x25, [x2, x3]
+   16d58:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   16d5c:       ldr x1, [x20, #0xf68] ; @187fff68
+   16d60:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16d64:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16d68:       add x0, x19, #0x50
+   16d6c:       ldr x2, [x2, #0xef8] ; @187ffef8
+   16d70:       ldr x20, [x1, #0x8]
+   16d74:       add x4, x2, #0x68
+   16d78:       ldr x3, [x3, #0xf60] ; @187fff60
+   16d7c:       add x5, x2, #0x18
+   16d80:       ldur x6, [x20, #-0x18]
+   16d84:       add x2, x2, #0x40
+   16d88:       ldr x26, [x1, #0x30]
+   16d8c:       add x1, x3, #0x10
+   16d90:       str x26, [x19, x6]
+   16d94:       str x5, [sp, #0xa0]
+   16d98:       stp x2, x1, [sp, #0xb0]
+   16d9c:       stp xzr, xzr, [sp, #0xc0]
+   16da0:       stp xzr, xzr, [sp, #0xd0]
+   16da4:       stp xzr, xzr, [sp, #0xe0]
+   16da8:       str x4, [sp, #0x120]
+   16dac:       bl 0x4fc0 <_ZNSt6localeC1Ev@plt>
+   16db0:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16db4:       add x3, x19, #0x70
+   16db8:       mov w4, #0x18               // =24
+   16dbc:       add x1, x19, #0x18
+   16dc0:       ldr x2, [x2, #0xe38] ; @187ffe38
+   16dc4:       add x0, x19, #0x80
+   16dc8:       str w4, [sp, #0xf8]
+   16dcc:       add x2, x2, #0x10
+   16dd0:       str x2, [sp, #0xb8]
+   16dd4:       str x3, [sp, #0x100]
+   16dd8:       str xzr, [sp, #0x108]
+   16ddc:       strb wzr, [sp, #0x110]
+   16de0:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   16de4:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16de8:       add x0, x19, #0x10
+   16dec:       add x1, x1, #0x928
+   16df0:       mov x2, #0xe                // =14
+   16df4:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16df8:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16dfc:       add x0, x19, #0x10
+   16e00:       add x1, x1, #0x938
+   16e04:       mov x2, #0x17               // =23
+   16e08:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16e0c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16e10:       add x0, x19, #0x10
+   16e14:       add x1, x1, #0xa60
+   16e18:       mov x2, #0x21               // =33
+   16e1c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16e20:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16e24:       add x0, x19, #0x10
+   16e28:       add x1, x1, #0x970
+   16e2c:       mov x2, #0xb                // =11
+   16e30:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16e34:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16e38:       add x0, x19, #0x10
+   16e3c:       add x1, x1, #0x980
+   16e40:       mov x2, #0x70               // =112
+   16e44:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16e48:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16e4c:       add x0, x19, #0x10
+   16e50:       add x1, x1, #0x9f8
+   16e54:       mov x2, #0x7                // =7
+   16e58:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16e5c:       add x0, x19, #0x10
+   16e60:       mov w1, #0x30               // =48
+   16e64:       bl 0x4cd0 <_ZNSolsEi@plt>
+   16e68:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16e6c:       mov x2, #0x1                // =1
+   16e70:       add x1, x1, #0xde8
+   16e74:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16e78:       add x20, sp, #0x80
+   16e7c:       mov x0, #0x10               // =16
+   16e80:       bl 0x4d50 <__cxa_allocate_exception@plt>
+   16e84:       mov x22, x0
+   16e88:       mov x8, x20
+   16e8c:       add x0, x19, #0x18
+   16e90:       bl 0x4d60 <_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv@plt>
+   16e94:       ldr x1, [sp, #0x80]
+   16e98:       mov x0, x22
+   16e9c:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+   16ea0:       ldr x0, [sp, #0x80]
+   16ea4:       add x20, x20, #0x10
+   16ea8:       cmp x0, x20
+   16eac:       b.eq 0x16eb4 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x234>
+   16eb0:       bl 0x4e80 <_ZdlPv@plt>
+   16eb4:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16eb8:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16ebc:       mov x0, x22
+   16ec0:       ldr x2, [x2, #0xf48] ; @187fff48
+   16ec4:       ldr x1, [x1, #0xf80] ; @187fff80
+   16ec8:       bl 0x4f10 <__cxa_throw@plt>
+   16ecc:       add x19, sp, #0xa0
+   16ed0:       adrp x20, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16ed4:       add x0, x19, #0x80
+   16ed8:       bl 0x5120 <_ZNSt8ios_baseC2Ev@plt>
+   16edc:       ldr x2, [x20, #0xf68] ; @187fff68
+   16ee0:       add x1, sp, #0x200
+   16ee4:       movi v0.4s, #0x0
+   16ee8:       adrp x21, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16eec:       str xzr, [sp, #0x1f8]
+   16ef0:       ldp x22, x24, [x2, #0x10]
+   16ef4:       strh wzr, [sp, #0x200]
+   16ef8:       ldr x0, [x21, #0xf78] ; @187fff78
+   16efc:       stur q0, [x1, #0x8]
+   16f00:       stur q0, [x1, #0x18]
+   16f04:       add x0, x0, #0x10
+   16f08:       mov x1, #0x0                // =0
+   16f0c:       ldur x3, [x22, #-0x18]
+   16f10:       str x22, [sp, #0xa0]
+   16f14:       str x0, [sp, #0x120]
+   16f18:       str x24, [x19, x3]
+   16f1c:       str xzr, [sp, #0xa8]
+   16f20:       ldur x0, [x22, #-0x18]
+   16f24:       add x0, x19, x0
+   16f28:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   16f2c:       ldr x0, [x20, #0xf68] ; @187fff68
+   16f30:       add x2, x19, #0x10
+   16f34:       mov x1, #0x0                // =0
+   16f38:       ldp x23, x25, [x0, #0x20]
+   16f3c:       ldur x3, [x23, #-0x18]
+   16f40:       str x23, [sp, #0xb0]
+   16f44:       add x0, x2, x3
+   16f48:       str x25, [x2, x3]
+   16f4c:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   16f50:       ldr x1, [x20, #0xf68] ; @187fff68
+   16f54:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16f58:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16f5c:       add x0, x19, #0x50
+   16f60:       ldr x2, [x2, #0xef8] ; @187ffef8
+   16f64:       ldr x26, [x1, #0x8]
+   16f68:       add x4, x2, #0x68
+   16f6c:       ldr x3, [x3, #0xf60] ; @187fff60
+   16f70:       add x5, x2, #0x18
+   16f74:       ldur x6, [x26, #-0x18]
+   16f78:       add x2, x2, #0x40
+   16f7c:       ldr x20, [x1, #0x30]
+   16f80:       add x1, x3, #0x10
+   16f84:       str x20, [x19, x6]
+   16f88:       str x5, [sp, #0xa0]
+   16f8c:       stp x2, x1, [sp, #0xb0]
+   16f90:       stp xzr, xzr, [sp, #0xc0]
+   16f94:       stp xzr, xzr, [sp, #0xd0]
+   16f98:       stp xzr, xzr, [sp, #0xe0]
+   16f9c:       str x4, [sp, #0x120]
+   16fa0:       bl 0x4fc0 <_ZNSt6localeC1Ev@plt>
+   16fa4:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16fa8:       add x3, x19, #0x70
+   16fac:       mov w4, #0x18               // =24
+   16fb0:       add x1, x19, #0x18
+   16fb4:       ldr x2, [x2, #0xe38] ; @187ffe38
+   16fb8:       add x0, x19, #0x80
+   16fbc:       str w4, [sp, #0xf8]
+   16fc0:       add x2, x2, #0x10
+   16fc4:       str x2, [sp, #0xb8]
+   16fc8:       str x3, [sp, #0x100]
+   16fcc:       str xzr, [sp, #0x108]
+   16fd0:       strb wzr, [sp, #0x110]
+   16fd4:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   16fd8:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16fdc:       add x0, x19, #0x10
+   16fe0:       add x1, x1, #0x928
+   16fe4:       mov x2, #0xe                // =14
+   16fe8:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16fec:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16ff0:       add x0, x19, #0x10
+   16ff4:       add x1, x1, #0x938
+   16ff8:       mov x2, #0x17               // =23
+   16ffc:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17000:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17004:       add x0, x19, #0x10
+   17008:       add x1, x1, #0xa00
+   1700c:       mov x2, #0x1d               // =29
+   17010:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17014:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17018:       add x0, x19, #0x10
+   1701c:       add x1, x1, #0x970
+   17020:       mov x2, #0xb                // =11
+   17024:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17028:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   1702c:       add x0, x19, #0x10
+   17030:       add x1, x1, #0x980
+   17034:       mov x2, #0x70               // =112
+   17038:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   1703c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17040:       add x0, x19, #0x10
+   17044:       add x1, x1, #0x9f8
+   17048:       mov x2, #0x7                // =7
+   1704c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17050:       add x0, x19, #0x10
+   17054:       mov w1, #0x2e               // =46
+   17058:       bl 0x4cd0 <_ZNSolsEi@plt>
+   1705c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17060:       mov x2, #0x1                // =1
+   17064:       add x1, x1, #0xde8
+   17068:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   1706c:       add x20, sp, #0x80
+   17070:       mov x0, #0x10               // =16
+   17074:       bl 0x4d50 <__cxa_allocate_exception@plt>
+   17078:       mov x21, x0
+   1707c:       mov x8, x20
+   17080:       add x0, x19, #0x18
+   17084:       bl 0x4d60 <_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv@plt>
+   17088:       ldr x1, [sp, #0x80]
+   1708c:       mov x0, x21
+   17090:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+   17094:       ldr x0, [sp, #0x80]
+   17098:       add x20, x20, #0x10
+   1709c:       cmp x0, x20
+   170a0:       b.eq 0x170a8 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x428>
+   170a4:       bl 0x4e80 <_ZdlPv@plt>
+   170a8:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   170ac:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   170b0:       mov x0, x21
+   170b4:       ldr x2, [x2, #0xf48] ; @187fff48
+   170b8:       ldr x1, [x1, #0xf80] ; @187fff80
+   170bc:       bl 0x4f10 <__cxa_throw@plt>
+   170c0:       add x19, sp, #0xa0
+   170c4:       adrp x20, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   170c8:       add x0, x19, #0x80
+   170cc:       bl 0x5120 <_ZNSt8ios_baseC2Ev@plt>
+   170d0:       ldr x2, [x20, #0xf68] ; @187fff68
+   170d4:       add x1, sp, #0x200
+   170d8:       movi v0.4s, #0x0
+   170dc:       adrp x21, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   170e0:       str xzr, [sp, #0x1f8]
+   170e4:       ldp x22, x24, [x2, #0x10]
+   170e8:       strh wzr, [sp, #0x200]
+   170ec:       ldr x0, [x21, #0xf78] ; @187fff78
+   170f0:       stur q0, [x1, #0x8]
+   170f4:       stur q0, [x1, #0x18]
+   170f8:       add x0, x0, #0x10
+   170fc:       mov x1, #0x0                // =0
+   17100:       ldur x3, [x22, #-0x18]
+   17104:       str x22, [sp, #0xa0]
+   17108:       str x0, [sp, #0x120]
+   1710c:       str x24, [x19, x3]
+   17110:       str xzr, [sp, #0xa8]
+   17114:       ldur x0, [x22, #-0x18]
+   17118:       add x0, x19, x0
+   1711c:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   17120:       ldr x0, [x20, #0xf68] ; @187fff68
+   17124:       add x2, x19, #0x10
+   17128:       mov x1, #0x0                // =0
+   1712c:       ldp x23, x25, [x0, #0x20]
+   17130:       ldur x3, [x23, #-0x18]
+   17134:       str x23, [sp, #0xb0]
+   17138:       add x0, x2, x3
+   1713c:       str x25, [x2, x3]
+   17140:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   17144:       ldr x1, [x20, #0xf68] ; @187fff68
+   17148:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1714c:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   17150:       add x0, x19, #0x50
+   17154:       ldr x2, [x2, #0xef8] ; @187ffef8
+   17158:       ldr x26, [x1, #0x8]
+   1715c:       add x4, x2, #0x68
+   17160:       ldr x3, [x3, #0xf60] ; @187fff60
+   17164:       add x5, x2, #0x18
+   17168:       ldur x6, [x26, #-0x18]
+   1716c:       add x2, x2, #0x40
+   17170:       ldr x20, [x1, #0x30]
+   17174:       add x1, x3, #0x10
+   17178:       str x20, [x19, x6]
+   1717c:       str x5, [sp, #0xa0]
+   17180:       stp x2, x1, [sp, #0xb0]
+   17184:       stp xzr, xzr, [sp, #0xc0]
+   17188:       stp xzr, xzr, [sp, #0xd0]
+   1718c:       stp xzr, xzr, [sp, #0xe0]
+   17190:       str x4, [sp, #0x120]
+   17194:       bl 0x4fc0 <_ZNSt6localeC1Ev@plt>
+   17198:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1719c:       add x3, x19, #0x70
+   171a0:       mov w4, #0x18               // =24
+   171a4:       add x1, x19, #0x18
+   171a8:       ldr x2, [x2, #0xe38] ; @187ffe38
+   171ac:       add x0, x19, #0x80
+   171b0:       str w4, [sp, #0xf8]
+   171b4:       add x2, x2, #0x10
+   171b8:       str x2, [sp, #0xb8]
+   171bc:       str x3, [sp, #0x100]
+   171c0:       str xzr, [sp, #0x108]
+   171c4:       strb wzr, [sp, #0x110]
+   171c8:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   171cc:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   171d0:       add x0, x19, #0x10
+   171d4:       add x1, x1, #0x928
+   171d8:       mov x2, #0xe                // =14
+   171dc:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   171e0:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   171e4:       add x0, x19, #0x10
+   171e8:       add x1, x1, #0x938
+   171ec:       mov x2, #0x17               // =23
+   171f0:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   171f4:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   171f8:       add x0, x19, #0x10
+   171fc:       add x1, x1, #0x950
+   17200:       mov x2, #0x1f               // =31
+   17204:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17208:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   1720c:       add x0, x19, #0x10
+   17210:       add x1, x1, #0x970
+   17214:       mov x2, #0xb                // =11
+   17218:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   1721c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17220:       add x0, x19, #0x10
+   17224:       add x1, x1, #0x980
+   17228:       mov x2, #0x70               // =112
+   1722c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17230:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17234:       add x0, x19, #0x10
+   17238:       add x1, x1, #0x9f8
+   1723c:       mov x2, #0x7                // =7
+   17240:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17244:       add x0, x19, #0x10
+   17248:       mov w1, #0x2d               // =45
+   1724c:       bl 0x4cd0 <_ZNSolsEi@plt>
+   17250:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17254:       mov x2, #0x1                // =1
+   17258:       add x1, x1, #0xde8
+   1725c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17260:       add x20, sp, #0x80
+   17264:       mov x0, #0x10               // =16
+   17268:       bl 0x4d50 <__cxa_allocate_exception@plt>
+   1726c:       mov x21, x0
+   17270:       mov x8, x20
+   17274:       add x0, x19, #0x18
+   17278:       bl 0x4d60 <_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv@plt>
+   1727c:       ldr x1, [sp, #0x80]
+   17280:       mov x0, x21
+   17284:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+   17288:       ldr x0, [sp, #0x80]
+   1728c:       add x20, x20, #0x10
+   17290:       cmp x0, x20
+   17294:       b.eq 0x1729c <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x61c>
+   17298:       bl 0x4e80 <_ZdlPv@plt>
+   1729c:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   172a0:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   172a4:       mov x0, x21
+   172a8:       ldr x2, [x2, #0xf48] ; @187fff48
+   172ac:       ldr x1, [x1, #0xf80] ; @187fff80
+   172b0:       bl 0x4f10 <__cxa_throw@plt>
+   172b4:       add x23, x19, #0x38
+   172b8:       stp x20, x0, [x19, #0x78]
+   172bc:       mul x24, x21, x20
+   172c0:       str x21, [x19, #0x88]
+   172c4:       ldr x1, [x23, #0x10]
+   172c8:       ldrb w0, [x19, #0x50]
+   172cc:       cmp x24, x1
+   172d0:       b.eq 0x17604 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x984>
+   172d4:       cbz w0, 0x172e0 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x660>
+   172d8:       ldr x0, [x23, #0x8]
+   172dc:       bl 0x24cc0 <zplane::VectorOps<float, void>::free(float*)>
+   172e0:       stp xzr, xzr, [x23, #0x8]
+   172e4:       strb wzr, [x23, #0x18]
+   172e8:       cbnz x24, 0x1760c <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x98c>
+   172ec:       ldr x6, [x19, #0x68]
+   172f0:       add x24, x19, #0x58
+   172f4:       ldrb w0, [x24, #0x18]
+   172f8:       cmp x21, x6
+   172fc:       b.eq 0x175f4 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x974>
+   17300:       cbz w0, 0x17310 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x690>
+   17304:       ldr x0, [x24, #0x8]
+   17308:       cbz x0, 0x17310 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x690>
+   1730c:       bl 0x4d30 <_ZdaPv@plt>
+   17310:       stp xzr, xzr, [x24, #0x8]
+   17314:       mov x0, #0xfffffffffffffff  // =1152921504606846975
+   17318:       cmp x21, x0
+   1731c:       strb wzr, [x24, #0x18]
+   17320:       b.hi 0x17628 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9a8>
+   17324:       lsl x23, x21, #3
+   17328:       mov x0, x23
+   1732c:       bl 0x4df0 <_Znam@plt>
+   17330:       mov x6, x21
+   17334:       mov x4, x0
+   17338:       mov w0, #0x1                // =1
+   1733c:       stp x4, x21, [x24, #0x8]
+   17340:       strb w0, [x24, #0x18]
+   17344:       add x0, x4, x23
+   17348:       lsl x5, x20, #2
+   1734c:       mov x3, x4
+   17350:       mov x2, #0x0                // =0
+   17354:       nop
+   17358:       ldr x1, [x19, #0x40]
+   1735c:       add x1, x1, x2
+   17360:       str x1, [x3], #0x8
+   17364:       add x2, x2, x5
+   17368:       cmp x3, x0
+   1736c:       b.ne 0x17358 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x6d8>
+   17370:       stp x4, x6, [x19, #0x18]
+   17374:       stp x20, xzr, [x19, #0x28]
+   17378:       cbz x6, 0x173c4 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x744>
+   1737c:       adrp x23, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   17380:       add x24, sp, #0x68
+   17384:       add x23, x23, #0x170
+   17388:       mov x1, #0x0                // =0
+   1738c:       mov x21, #0x0               // =0
+   17390:       b 0x1739c <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x71c>
+   17394:       ldp x20, x1, [x19, #0x28]
+   17398:       ldr x4, [x19, #0x18]
+   1739c:       mov x0, x24
+   173a0:       ldr x2, [x4, x21, lsl #3]
+   173a4:       str x20, [sp, #0x78]
+   173a8:       add x21, x21, #0x1
+   173ac:       add x1, x2, x1, lsl #2
+   173b0:       stp x23, x1, [sp, #0x68]
+   173b4:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   173b8:       ldr x1, [x19, #0x20]
+   173bc:       cmp x1, x21
+   173c0:       b.hi 0x17394 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x714>
+   173c4:       ldr x22, [x22, #0xfa8] ; @187fffa8
+   173c8:       str xzr, [x19, #0x90]
+   173cc:       ldr x0, [sp, #0x228]
+   173d0:       ldr x1, [x22]
+   173d4:       subs x0, x0, x1
+   173d8:       mov x1, #0x0                // =0
+   173dc:       b.ne 0x17624 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9a4>
+   173e0:       ldp x29, x30, [sp]
+   173e4:       ldp x19, x20, [sp, #0x10]
+   173e8:       ldp x21, x22, [sp, #0x20]
+   173ec:       ldp x23, x24, [sp, #0x30]
+   173f0:       ldp x25, x26, [sp, #0x40]
+   173f4:       ldr x27, [sp, #0x50]
+   173f8:       add sp, sp, #0x230
+   173fc:       ret
+   17400:       add x19, sp, #0xa0
+   17404:       adrp x20, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   17408:       add x0, x19, #0x80
+   1740c:       bl 0x5120 <_ZNSt8ios_baseC2Ev@plt>
+   17410:       ldr x2, [x20, #0xf68] ; @187fff68
+   17414:       add x1, sp, #0x200
+   17418:       movi v0.4s, #0x0
+   1741c:       adrp x21, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   17420:       str xzr, [sp, #0x1f8]
+   17424:       ldp x22, x24, [x2, #0x10]
+   17428:       strh wzr, [sp, #0x200]
+   1742c:       ldr x0, [x21, #0xf78] ; @187fff78
+   17430:       stur q0, [x1, #0x8]
+   17434:       stur q0, [x1, #0x18]
+   17438:       add x0, x0, #0x10
+   1743c:       mov x1, #0x0                // =0
+   17440:       ldur x3, [x22, #-0x18]
+   17444:       str x22, [sp, #0xa0]
+   17448:       str x0, [sp, #0x120]
+   1744c:       str x24, [x19, x3]
+   17450:       str xzr, [sp, #0xa8]
+   17454:       ldur x0, [x22, #-0x18]
+   17458:       add x0, x19, x0
+   1745c:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   17460:       ldr x0, [x20, #0xf68] ; @187fff68
+   17464:       add x2, x19, #0x10
+   17468:       mov x1, #0x0                // =0
+   1746c:       ldp x23, x25, [x0, #0x20]
+   17470:       ldur x3, [x23, #-0x18]
+   17474:       str x23, [sp, #0xb0]
+   17478:       add x0, x2, x3
+   1747c:       str x25, [x2, x3]
+   17480:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   17484:       ldr x1, [x20, #0xf68] ; @187fff68
+   17488:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1748c:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   17490:       add x0, x19, #0x50
+   17494:       ldr x2, [x2, #0xef8] ; @187ffef8
+   17498:       ldr x26, [x1, #0x8]
+   1749c:       add x4, x2, #0x68
+   174a0:       ldr x3, [x3, #0xf60] ; @187fff60
+   174a4:       add x5, x2, #0x18
+   174a8:       ldur x6, [x26, #-0x18]
+   174ac:       add x2, x2, #0x40
+   174b0:       ldr x20, [x1, #0x30]
+   174b4:       add x1, x3, #0x10
+   174b8:       str x20, [x19, x6]
+   174bc:       str x5, [sp, #0xa0]
+   174c0:       stp x2, x1, [sp, #0xb0]
+   174c4:       stp xzr, xzr, [sp, #0xc0]
+   174c8:       stp xzr, xzr, [sp, #0xd0]
+   174cc:       stp xzr, xzr, [sp, #0xe0]
+   174d0:       str x4, [sp, #0x120]
+   174d4:       bl 0x4fc0 <_ZNSt6localeC1Ev@plt>
+   174d8:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   174dc:       add x3, x19, #0x70
+   174e0:       mov w4, #0x18               // =24
+   174e4:       add x1, x19, #0x18
+   174e8:       ldr x2, [x2, #0xe38] ; @187ffe38
+   174ec:       add x0, x19, #0x80
+   174f0:       str w4, [sp, #0xf8]
+   174f4:       add x2, x2, #0x10
+   174f8:       str x2, [sp, #0xb8]
+   174fc:       str x3, [sp, #0x100]
+   17500:       str xzr, [sp, #0x108]
+   17504:       strb wzr, [sp, #0x110]
+   17508:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   1750c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17510:       add x0, x19, #0x10
+   17514:       add x1, x1, #0x928
+   17518:       mov x2, #0xe                // =14
+   1751c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17520:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17524:       add x0, x19, #0x10
+   17528:       add x1, x1, #0x938
+   1752c:       mov x2, #0x17               // =23
+   17530:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17534:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17538:       add x0, x19, #0x10
+   1753c:       add x1, x1, #0xa20
+   17540:       mov x2, #0x38               // =56
+   17544:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17548:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   1754c:       add x0, x19, #0x10
+   17550:       add x1, x1, #0x970
+   17554:       mov x2, #0xb                // =11
+   17558:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   1755c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17560:       add x0, x19, #0x10
+   17564:       add x1, x1, #0x980
+   17568:       mov x2, #0x70               // =112
+   1756c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17570:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17574:       add x0, x19, #0x10
+   17578:       add x1, x1, #0x9f8
+   1757c:       mov x2, #0x7                // =7
+   17580:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   17584:       add x0, x19, #0x10
+   17588:       mov w1, #0x2f               // =47
+   1758c:       bl 0x4cd0 <_ZNSolsEi@plt>
+   17590:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   17594:       mov x2, #0x1                // =1
+   17598:       add x1, x1, #0xde8
+   1759c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   175a0:       add x20, sp, #0x80
+   175a4:       mov x0, #0x10               // =16
+   175a8:       bl 0x4d50 <__cxa_allocate_exception@plt>
+   175ac:       mov x21, x0
+   175b0:       mov x8, x20
+   175b4:       add x0, x19, #0x18
+   175b8:       bl 0x4d60 <_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv@plt>
+   175bc:       ldr x1, [sp, #0x80]
+   175c0:       mov x0, x21
+   175c4:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+   175c8:       ldr x0, [sp, #0x80]
+   175cc:       add x20, x20, #0x10
+   175d0:       cmp x0, x20
+   175d4:       b.eq 0x175dc <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x95c>
+   175d8:       bl 0x4e80 <_ZdlPv@plt>
+   175dc:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   175e0:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   175e4:       mov x0, x21
+   175e8:       ldr x2, [x2, #0xf48] ; @187fff48
+   175ec:       ldr x1, [x1, #0xf80] ; @187fff80
+   175f0:       bl 0x4f10 <__cxa_throw@plt>
+   175f4:       cbz w0, 0x17310 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x690>
+   175f8:       lsl x23, x6, #3
+   175fc:       ldr x4, [x24, #0x8]
+   17600:       b 0x17344 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x6c4>
+   17604:       cbz w0, 0x172e0 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x660>
+   17608:       b 0x172ec <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x66c>
+   1760c:       mov x0, x24
+   17610:       bl 0x24ca8 <zplane::VectorOps<float, void>::allocate(unsigned long)>
+   17614:       mov w1, #0x1                // =1
+   17618:       stp x0, x24, [x23, #0x8]
+   1761c:       strb w1, [x23, #0x18]
+   17620:       b 0x172ec <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x66c>
+   17624:       bl 0x51d0 <__stack_chk_fail@plt>
+   17628:       bl 0x5030 <__cxa_throw_bad_array_new_length@plt>
+   1762c:       ldur x1, [x22, #-0x18]
+   17630:       str x22, [sp, #0xa0]
+   17634:       mov x27, x0
+   17638:       str x24, [x19, x1]
+   1763c:       str xzr, [sp, #0xa8]
+   17640:       ldr x1, [x21, #0xf78] ; @187fff78
+   17644:       add x0, x19, #0x80
+   17648:       add x1, x1, #0x10
+   1764c:       str x1, [sp, #0x120]
+   17650:       bl 0x4f60 <_ZNSt8ios_baseD2Ev@plt>
+   17654:       mov x0, x27
+   17658:       bl 0x4f40 <_Unwind_Resume@plt>
+   1765c:       mov x27, x0
+   17660:       b 0x17640 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9c0>
+   17664:       ldr x1, [sp, #0x80]
+   17668:       add x2, x20, #0x10
+   1766c:       mov x20, x0
+   17670:       cmp x1, x2
+   17674:       b.ne 0x17698 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xa18>
+   17678:       mov x0, x21
+   1767c:       bl 0x5070 <__cxa_free_exception@plt>
+   17680:       mov x0, x19
+   17684:       bl 0x4d40 <_ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev@plt>
+   17688:       mov x0, x20
+   1768c:       bl 0x4f40 <_Unwind_Resume@plt>
+   17690:       mov x20, x0
+   17694:       b 0x17678 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9f8>
+   17698:       mov x0, x1
+   1769c:       bl 0x4e80 <_ZdlPv@plt>
+   176a0:       b 0x17678 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9f8>
+   176a4:       mov x20, x0
+   176a8:       b 0x17680 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xa00>
+   176ac:       mov x27, x0
+   176b0:       add x0, x19, #0x18
+   176b4:       bl 0xa340 <std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char>>::~basic_stringbuf()>
+   176b8:       ldur x1, [x26, #-0x18]
+   176bc:       add x0, sp, #0xb0
+   176c0:       ldur x2, [x23, #-0x18]
+   176c4:       str x20, [x19, x1]
+   176c8:       ldur x1, [x22, #-0x18]
+   176cc:       str x23, [sp, #0xb0]
+   176d0:       str x25, [x0, x2]
+   176d4:       str x22, [sp, #0xa0]
+   176d8:       str x24, [x19, x1]
+   176dc:       str xzr, [sp, #0xa8]
+   176e0:       b 0x17640 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9c0>
+   176e4:       mov x20, x0
+   176e8:       b 0x17680 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xa00>
+   176ec:       mov x27, x0
+   176f0:       add x0, x19, #0x18
+   176f4:       bl 0xa340 <std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char>>::~basic_stringbuf()>
+   176f8:       ldur x1, [x20, #-0x18]
+   176fc:       add x0, sp, #0xb0
+   17700:       ldur x2, [x23, #-0x18]
+   17704:       str x26, [x19, x1]
+   17708:       b 0x176c8 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xa48>
+   1770c:       b 0x1762c <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9ac>
+   17710:       mov x27, x0
+   17714:       b 0x17640 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9c0>
+   17718:       ldr x1, [sp, #0x80]
+   1771c:       add x20, x20, #0x10
+   17720:       mov x21, x0
+   17724:       cmp x1, x20
+   17728:       b.eq 0x17734 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xab4>
+   1772c:       mov x0, x1
+   17730:       bl 0x4e80 <_ZdlPv@plt>
+   17734:       mov x20, x21
+   17738:       mov x0, x22
+   1773c:       bl 0x5070 <__cxa_free_exception@plt>
+   17740:       b 0x17680 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xa00>
+   17744:       mov x20, x0
+   17748:       b 0x17738 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xab8>
+   1774c:       mov x27, x0
+   17750:       b 0x17640 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9c0>
+   17754:       b 0x1762c <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9ac>
+   17758:       b 0x176ac <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xa2c>
+   1775c:       mov x20, x0
+   17760:       b 0x17680 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xa00>
+   17764:       mov x20, x0
+   17768:       b 0x17678 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9f8>
+   1776c:       b 0x17664 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9e4>
+   17770:       mov x20, x0
+   17774:       b 0x17680 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xa00>
+   17778:       mov x20, x0
+   1777c:       b 0x17678 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9f8>
+   17780:       b 0x17664 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9e4>
+   17784:       mov x27, x0
+   17788:       b 0x17640 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9c0>
+   1778c:       b 0x1762c <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0x9ac>
+   17790:       b 0x176ac <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::PrepareParameters)+0xa2c>
+   17794:       nop
+

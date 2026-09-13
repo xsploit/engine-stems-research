@@ -1,0 +1,57 @@
+{
+  "name": "gpu-2-all",
+  "runtime": "1.30.0",
+  "providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "provider_options": {
+    "CPUExecutionProvider": {},
+    "CUDAExecutionProvider": {
+      "sdpa_kernel": "0",
+      "use_tf32": "0",
+      "fuse_conv_bias": "0",
+      "prefer_nhwc": "0",
+      "tunable_op_max_tuning_duration_ms": "0",
+      "tunable_op_enable": "0",
+      "tunable_op_tuning_enable": "0",
+      "enable_cudnn": "1",
+      "use_ep_level_unified_stream": "0",
+      "device_id": "0",
+      "has_user_compute_stream": "0",
+      "gpu_external_empty_cache": "0",
+      "cudnn_conv_algo_search": "HEURISTIC",
+      "cudnn_conv1d_pad_to_nc1d": "0",
+      "gpu_mem_limit": "6442450944",
+      "gpu_external_alloc": "0",
+      "gpu_external_free": "0",
+      "arena_extend_strategy": "kNextPowerOfTwo",
+      "do_copy_in_default_stream": "1",
+      "enable_cuda_graph": "0",
+      "user_compute_stream": "0",
+      "cudnn_conv_use_max_workspace": "1"
+    }
+  },
+  "initialization_seconds": 0.5399904369842261,
+  "first_run_seconds": 0.3522609240026213,
+  "warm_seconds": [
+    0.03481888602254912,
+    0.03377301900763996,
+    0.0340038150025066,
+    0.033588698017410934,
+    0.033823637990280986
+  ],
+  "median_seconds": 0.033823637990280986,
+  "finite": true,
+  "output_range": [
+    0.0,
+    0.999998927116394
+  ],
+  "input": "seed42 uniform random [0,1), synthetic tensor, NOT real audio frontend",
+  "vs_unoptimized_fp32": {
+    "max_abs": 1.6808509826660156e-05,
+    "rms": 1.5476169843997616e-06,
+    "relative_l2": 3.3934400008568465e-06,
+    "exact_equal": false
+  }
+}

@@ -1,0 +1,60 @@
+43353:1bf27b8 StemsLevel/Vocal
+43354:1bf27d0 StemsLevel/Bass
+43355:1bf27e0 StemsLevel/Melody
+43356:1bf27f8 StemsLevel/Drums
+43765:1bf5120 Drums/Perc
+44233:1bf8340 Acapella
+44254:1bf8598 Vocal
+44255:1bf85a0 Bass
+44256:1bf85a8 Melody
+44257:1bf85b0 Drums
+44259:1bf85c8 Instrumental
+44263:1bf8610 VocalFx
+44264:1bf8618 BassFx
+44265:1bf8620 DrumsFx
+44266:1bf8628 MelodyFx
+44268:1bf8648 VocalColor
+44269:1bf8658 BassColor
+44270:1bf8668 DrumsColor
+44271:1bf8678 MelodyColor
+44272:1bf8688 VocalLabel
+44273:1bf8698 BassLabel
+44274:1bf86a8 DrumsLabel
+44275:1bf86b8 MelodyLabel
+44276:1bf86c8 VocalState
+44277:1bf86d8 BassState
+44278:1bf86e8 DrumsState
+44279:1bf86f8 MelodyState
+44280:1bf8708 VocalBackgroundActive
+44281:1bf8720 BassBackgroundActive
+44282:1bf8738 DrumsBackgroundActive
+44283:1bf8750 MelodyBackgroundActive
+44284:1bf8768 VocalFxColor
+44285:1bf8778 BassFxColor
+44286:1bf8788 DrumsFxColor
+44287:1bf8798 MelodyFxColor
+44288:1bf87a8 VocalFxLabel
+44289:1bf87b8 Vocal FX
+44290:1bf87c8 BassFxLabel
+44291:1bf87d8 Bass FX
+44292:1bf87e0 DrumsFxLabel
+44293:1bf87f0 Drums FX
+44294:1bf8800 MelodyFxLabel
+44295:1bf8810 Melody FX
+44296:1bf8820 VocalFxState
+44297:1bf8830 BassFxState
+44298:1bf8840 DrumsFxState
+44299:1bf8850 MelodyFxState
+44300:1bf8860 VocalFxBackgroundActive
+44301:1bf8878 BassFxBackgroundActive
+44302:1bf8890 DrumsFxBackgroundActive
+44303:1bf88a8 MelodyFxBackgroundActive
+44304:1bf88c8 AcapellaState
+44305:1bf88d8 InstrumentalState
+44517:1bfa338  | Bass
+44518:1bfa340  | Drums
+44519:1bfa350  | Melody
+115490:20994c6 		text: `Acapella/Instrumental FX`
+117424:20a9be0 				title: "Bass",
+196405:2574e56 					stemOverride: "Acapella",
+196412:2574f07 					stemOverride: "Instrumental",

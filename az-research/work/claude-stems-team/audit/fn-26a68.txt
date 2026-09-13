@@ -1,0 +1,94 @@
+0000000000026a68 <zplfRealDiv_I_ARMNeon(float*, float*, int)>:
+   26a68:       cmp wzr, w2, asr #2
+   26a6c:       asr w3, w2, #2
+   26a70:       b.ge 0x26ab8 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x50>
+   26a74:       sub w4, w3, #0x1
+   26a78:       mov x3, #0x0                // =0
+   26a7c:       add x4, x4, #0x1
+   26a80:       lsl x4, x4, #4
+   26a84:       nop
+   26a88:       ldr q1, [x1, x3]
+   26a8c:       ldr q2, [x0, x3]
+   26a90:       frecpe v0.4s, v1.4s
+   26a94:       frecps v3.4s, v0.4s, v1.4s
+   26a98:       fmul v0.4s, v0.4s, v3.4s
+   26a9c:       frecps v1.4s, v0.4s, v1.4s
+   26aa0:       fmul v0.4s, v0.4s, v1.4s
+   26aa4:       fmul v0.4s, v2.4s, v0.4s
+   26aa8:       str q0, [x0, x3]
+   26aac:       add x3, x3, #0x10
+   26ab0:       cmp x3, x4
+   26ab4:       b.ne 0x26a88 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x20>
+   26ab8:       and w5, w2, #0xfffffffc
+   26abc:       cmp w2, w5
+   26ac0:       b.le 0x26b94 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x12c>
+   26ac4:       sxtw x3, w5
+   26ac8:       sub w8, w2, #0x1
+   26acc:       add x7, x3, #0x4
+   26ad0:       sub w8, w8, w5
+   26ad4:       lsl x7, x7, #2
+   26ad8:       sub x6, x7, #0x10
+   26adc:       add x9, x1, x7
+   26ae0:       add x4, x0, x6
+   26ae4:       add x7, x0, x7
+   26ae8:       add x6, x1, x6
+   26aec:       cmp x4, x9
+   26af0:       ccmp x6, x7, #0x2, lo
+   26af4:       ccmp w8, #0x4, #0x0, hs
+   26af8:       b.ls 0x26b98 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x130>
+   26afc:       sub w8, w2, w5
+   26b00:       mov x3, #0x0                // =0
+   26b04:       lsr w7, w8, #2
+   26b08:       lsl x7, x7, #4
+   26b0c:       nop
+   26b10:       ldr q0, [x4, x3]
+   26b14:       ldr q1, [x6, x3]
+   26b18:       fdiv v0.4s, v0.4s, v1.4s
+   26b1c:       str q0, [x4, x3]
+   26b20:       add x3, x3, #0x10
+   26b24:       cmp x3, x7
+   26b28:       b.ne 0x26b10 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0xa8>
+   26b2c:       and w3, w8, #0xfffffffc
+   26b30:       add w5, w3, w5
+   26b34:       cmp w8, w3
+   26b38:       b.eq 0x26b94 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x12c>
+   26b3c:       sxtw x4, w5
+   26b40:       add w3, w5, #0x1
+   26b44:       cmp w2, w3
+   26b48:       sbfiz x3, x5, #2, #32
+   26b4c:       ldr s1, [x1, x4, lsl #2]
+   26b50:       ldr s0, [x0, x4, lsl #2]
+   26b54:       fdiv s0, s0, s1
+   26b58:       str s0, [x0, x4, lsl #2]
+   26b5c:       b.le 0x26b94 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x12c>
+   26b60:       add x4, x3, #0x4
+   26b64:       add w5, w5, #0x2
+   26b68:       cmp w2, w5
+   26b6c:       ldr s1, [x1, x4]
+   26b70:       ldr s0, [x0, x4]
+   26b74:       fdiv s0, s0, s1
+   26b78:       str s0, [x0, x4]
+   26b7c:       b.le 0x26b94 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x12c>
+   26b80:       add x2, x3, #0x8
+   26b84:       ldr s1, [x1, x2]
+   26b88:       ldr s0, [x0, x2]
+   26b8c:       fdiv s0, s0, s1
+   26b90:       str s0, [x0, x2]
+   26b94:       ret
+   26b98:       ldr s1, [x1, x3, lsl #2]
+   26b9c:       ldr s0, [x0, x3, lsl #2]
+   26ba0:       fdiv s0, s0, s1
+   26ba4:       str s0, [x0, x3, lsl #2]
+   26ba8:       add x3, x3, #0x1
+   26bac:       cmp w2, w3
+   26bb0:       b.le 0x26b94 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x12c>
+   26bb4:       ldr s1, [x1, x3, lsl #2]
+   26bb8:       ldr s0, [x0, x3, lsl #2]
+   26bbc:       fdiv s0, s0, s1
+   26bc0:       str s0, [x0, x3, lsl #2]
+   26bc4:       add x3, x3, #0x1
+   26bc8:       cmp w2, w3
+   26bcc:       b.gt 0x26b98 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x130>
+   26bd0:       b 0x26b94 <zplfRealDiv_I_ARMNeon(float*, float*, int)+0x12c>
+   26bd4:       nop
+

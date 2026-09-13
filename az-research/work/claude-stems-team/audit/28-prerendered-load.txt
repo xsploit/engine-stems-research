@@ -1,0 +1,261 @@
+e52800 str x21, [sp, #0x50]
+e52804 mov w21, w1
+e52808 ldr x1, [x19, #0xc0]
+e5280c ldr x2, [x0]
+e52810 str x2, [sp, #0x28]
+e52814 mov x2, #0x0                // =0
+e52818 cbz x1, 0xe5289c
+e5281c ldr x20, [x19, #0xf8]
+e52820 cbz x20, 0xe5289c
+e52824 ldr x0, [x20]
+e52828 ldur x0, [x0, #-0x18]
+e5282c add x0, x20, x0
+e52830 bl 0x17c05e0
+e52834 cmp w21, #0x1
+e52838 b .eq	0xe528d0
+e5283c bl 0xc6934c
+e52840 add x1, x0, #0x10
+e52844 ldrb w1, [x1]
+e52848 tst w1, #0xff
+e5284c b .ne	0xe5296c
+e52850 ldr x0, [x19, #0xc0]
+e52854 mov x1, #0x0                // =0
+e52858 bl 0x17f6304
+e52860 ldr x0, [x0, #0xb78]
+e52864 ldr x2, [sp, #0x28]
+e52868 ldr x1, [x0]
+e5286c subs x2, x2, x1
+e52870 mov x1, #0x0                // =0
+e52874 b .ne	0xe52aac
+e52878 ldr x0, [x20]
+e5287c ldp x29, x30, [sp, #0x30]
+e52880 ldur x0, [x0, #-0x18]
+e52884 ldr x21, [sp, #0x50]
+e52888 add x0, x20, x0
+e5288c ldp x19, x20, [sp, #0x40]
+e52890 add sp, sp, #0x60
+e52898 b 0x17e2e64
+e528a0 ldr x0, [x0, #0xb78]
+e528a4 ldr x2, [sp, #0x28]
+e528a8 ldr x1, [x0]
+e528ac subs x2, x2, x1
+e528b0 mov x1, #0x0                // =0
+e528b4 b .ne	0xe52aac
+e528b8 ldp x29, x30, [sp, #0x30]
+e528bc ldp x19, x20, [sp, #0x40]
+e528c0 ldr x21, [sp, #0x50]
+e528c4 add sp, sp, #0x60
+e528cc ret 
+e528d0 ldr x1, [x19, #0xc0]
+e528d4 ldr x0, [x1, #0xb8]
+e528d8 cbnz x0, 0xe52908
+e528dc add x1, x1, #0x270
+e528e0 ldar x0, [x1]
+e528e4 bl 0xc6934c
+e528e8 add x1, x0, #0x10
+e528ec ldrb w1, [x1]
+e528f0 tst w1, #0xff
+e528f4 b .ne	0xe52a24
+e528f8 mov x0, x19
+e528fc mov x1, x20
+e52900 bl 0xe50d28
+e52904 b 0xe5285c
+e52908 ldr x3, [x0]
+e52910 add x2, x2, #0x4ac
+e52914 ldr x3, [x3, #0x40]
+e52918 cmp x3, x2
+e5291c b .ne	0xe529c0
+e52920 ldr x0, [x0, #0x30]
+e52924 cmp x0, #0x0
+e52928 cset w0, ne
+e5292c add x1, x1, #0x270
+e52930 ldar x1, [x1]
+e52934 cmp w0, #0x0
+e52938 ccmp x1, #0x1, #0x4, ne
+e5293c b .ne	0xe52948
+e52940 tbnz w0, #0x0, 0xe5285c
+e52944 b 0xe528e4
+e52948 bl 0xc6934c
+e5294c add x1, x0, #0x10
+e52950 ldrb w1, [x1]
+e52954 tst w1, #0xff
+e52958 b .ne	0xe529d0
+e5295c ldr x0, [x19, #0xc0]
+e52960 mov x1, #0x1                // =1
+e52964 bl 0x17f6304
+e52968 b 0xe5285c
+e5296c ldr x1, [x0, #0x8]
+e52970 mov x2, #0x2                // =2
+e52974 mov x21, sp
+e52978 add x0, sp, #0x8
+e5297c mov x8, x21
+e52980 stp x2, xzr, [sp, #0x8]
+e52984 stp xzr, x1, [sp, #0x18]
+e52988 bl 0x391c08
+e52990 mov x0, x21
+e52994 add x1, x1, #0xc28  ; "Deck"
+e52998 bl 0x51bea8
+e5299c ldr w1, [x19, #0xa0]
+e529a0 add w1, w1, #0x1
+e529a4 bl 0x51be50
+e529ac add x1, x1, #0xaf8  ; "selecting unstemmed track"
+e529b0 bl 0x51bea8
+e529b4 mov x0, x21
+e529b8 bl 0x391c18
+e529bc b 0xe52850
+e529c0 blr x3
+e529c4 ldr x1, [x19, #0xc0]
+e529c8 and w0, w0, #0xff
+e529cc b 0xe5292c
+e529d0 ldr x1, [x0, #0x8]
+e529d4 mov x2, #0x2                // =2
+e529d8 mov x21, sp
+e529dc add x0, sp, #0x8
+e529e0 mov x8, x21
+e529e4 stp x2, xzr, [sp, #0x8]
+e529e8 stp xzr, x1, [sp, #0x18]
+e529ec bl 0x391c08
+e529f4 mov x0, x21
+e529f8 add x1, x1, #0xc28  ; "Deck"
+e529fc bl 0x51bea8
+e52a00 ldr w1, [x19, #0xa0]
+e52a04 add w1, w1, #0x1
+e52a08 bl 0x51be50
+e52a10 add x1, x1, #0xab8  ; "selecting pre-rendered stems"
+e52a14 bl 0x51bea8
+e52a18 mov x0, x21
+e52a1c bl 0x391c18
+e52a20 b 0xe5295c
+e52a24 ldr x1, [x0, #0x8]
+e52a28 mov x2, #0x2                // =2
+e52a2c mov x21, sp
+e52a30 add x0, sp, #0x8
+e52a34 mov x8, x21
+e52a38 stp x2, xzr, [sp, #0x8]
+e52a3c stp xzr, x1, [sp, #0x18]
+e52a40 bl 0x391c08
+e52a48 mov x0, x21
+e52a4c add x1, x1, #0xc28  ; "Deck"
+e52a50 bl 0x51bea8
+e52a54 ldr w1, [x19, #0xa0]
+e52a58 add w1, w1, #0x1
+e52a5c bl 0x51be50
+e52a64 add x1, x1, #0xad8  ; "initialising pre-rendered stems"
+e52a68 bl 0x51bea8
+e52a6c mov x0, x21
+e52a70 bl 0x391c18
+e52a74 b 0xe528f8
+e52a7c mov x19, x0
+e52a80 ldr x0, [x20]
+e52a84 ldur x0, [x0, #-0x18]
+e52a88 add x0, x20, x0
+e52a8c bl 0x17e2e64
+e52a94 ldr x0, [x0, #0xb78]
+e52a98 ldr x2, [sp, #0x28]
+e52a9c ldr x1, [x0]
+e52aa0 subs x2, x2, x1
+e52aa4 mov x1, #0x0                // =0
+e52aa8 b .eq	0xe52ac4
+e52aac bl 0x390978
+e52ab4 mov x19, x0
+e52ab8 mov x0, x21
+e52abc bl 0x391c18
+e52ac0 b 0xe52a80
+e52ac4 mov x0, x19
+e52ac8 bl 0x391548
+e52ad0 b 0xe52ab4
+e52ad8 b 0xe52ab4
+e52ae4 sub x0, x0, #0x60
+e52ae8 b 0xe527e0
+e52af0 sub sp, sp, #0x160
+e52af8 ldr x1, [x1, #0xb78]
+e52afc stp x29, x30, [sp, #0x100]
+e52b00 add x29, sp, #0x100
+e52b04 stp x19, x20, [sp, #0x110]
+e52b08 stp x21, x22, [sp, #0x120]
+e52b0c mov x21, x0
+e52b10 mov x0, #0x10               // =16
+e52b14 stp x25, x26, [sp, #0x140]
+e52b18 ldr x2, [x1]
+e52b1c str x2, [sp, #0xf8]
+e52b20 mov x2, #0x0                // =0
+e52b24 bl 0x3915d8
+e52b28 mov x20, x0
+e52b2c mov x1, x21
+e52b30 bl 0x394758
+e52b34 add x19, sp, #0x60
+e52b38 mov x8, x19
+e52b3c bl 0x392bb8
+e52b40 mov x1, x19
+e52b44 mov x0, x20
+e52b48 bl 0x3985f8
+e52b4c mov x0, x19
+e52b50 stp x23, x24, [sp, #0x130]
+e52b54 bl 0x51bde0
+e52b58 add x23, sp, #0x78
+e52b5c bl 0x392428
+e52b60 mov x2, x0
+e52b64 mov x3, x1
+e52b68 mov x8, x19
+e52b6c mov x0, x23
+e52b70 mov w1, #0x0                // =0
+e52b74 stp x2, x3, [sp, #0x78]
+e52b78 bl 0x392438
+e52b7c mov x1, x19
+e52b80 mov x0, x20
+e52b84 bl 0x392c98
+e52b88 mov x0, x19
+e52b8c bl 0x51bde0
+e52b94 ldr x1, [x1, #0xa50]
+e52b98 mov x0, #0x18               // =24
+e52b9c stp x1, xzr, [sp, #0x60]
+e52ba0 add x22, sp, #0x40
+e52ba4 mov w24, #0x1               // =1
+e52ba8 bl 0x3915d8
+e52bac mov x4, x0
+e52bb4 ldr x7, [x7, #0x838]
+e52bbc add x9, x9, #0x5c4
+e52bc0 mov x8, x22
+e52bc4 mov x2, x20
+e52bc8 mov x1, x19
+e52bcc str w24, [x4]
+e52bd0 mov x6, #0x0                // =0
+e52bd4 stp x9, x20, [x4, #0x8]
+e52bd8 mov w5, #0x0                // =0
+e52bdc mov x3, #0x0                // =0
+e52be0 mov x0, x20
+e52be4 bl 0x392658
+e52be8 mov x0, x22
+e52bec bl 0x392668
+e52bf4 ldr x1, [x1, #0x830]
+e52bf8 mov x0, #0x18               // =24
+e52bfc stp x1, xzr, [sp, #0x60]
+e52c00 bl 0x3915d8
+e52c04 mov x4, x0
+e52c0c ldr x7, [x7, #0x838]
+e52c14 add x9, x9, #0x5f0
+e52c18 mov x8, x22
+e52c1c mov x2, x20
+e52c20 mov x1, x19
+e52c24 str w24, [x4]
+e52c28 mov x6, #0x0                // =0
+e52c2c stp x9, x20, [x4, #0x8]
+e52c30 mov w5, #0x0                // =0
+e52c34 mov x3, #0x0                // =0
+e52c38 mov x0, x20
+e52c3c bl 0x392658
+e52c40 mov x0, x22
+e52c44 bl 0x392668
+e52c4c add x2, x2, #0xd38  ; "noAnalyzerOutput"
+e52c50 mov x1, #0x10               // =16
+e52c54 mov x0, x19
+e52c58 bl 0x51ea20
+e52c5c mov x0, x19
+e52c60 bl 0xc69d30
+e52c64 and w24, w0, #0xff
+e52c68 mov x0, x19
+e52c6c bl 0x51bde0
+e52c70 tbz w24, #0x0, 0xe53004
+e52c74 ldr x0, [x21, #0x50]
+e52c78 add x24, sp, #0x10
+e52c7c stp xzr, xzr, [sp, #0x10]

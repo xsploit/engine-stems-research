@@ -1,0 +1,51 @@
+{
+  "sha256": "c203bfa6bd53d16ef7ba6393540453f6cfd7541a87c169be5310989b8d987a0a",
+  "producer": "pytorch",
+  "producer_version": "2.3.1",
+  "opsets": [
+    [
+      "",
+      11
+    ]
+  ],
+  "nodes": 489,
+  "operators": {
+    "Transpose": 2,
+    "BatchNormalization": 75,
+    "Constant": 16,
+    "Reshape": 4,
+    "MatMul": 2,
+    "ReduceMean": 1,
+    "Sub": 1,
+    "Conv": 154,
+    "LeakyRelu": 142,
+    "Add": 68,
+    "AveragePool": 11,
+    "Resize": 6,
+    "Concat": 6,
+    "Sigmoid": 1
+  },
+  "parameter_elements": 102642696,
+  "inputs": [
+    [
+      "input",
+      [
+        1,
+        2,
+        128,
+        2048
+      ]
+    ]
+  ],
+  "outputs": [
+    [
+      "output",
+      [
+        1,
+        8,
+        128,
+        2048
+      ]
+    ]
+  ]
+}

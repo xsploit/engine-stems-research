@@ -1,0 +1,37 @@
+124183c mov x0, x19
+1241840 bl 0x1240e4c
+1241844 b 0x12416a4
+1241848 bl 0x390938
+124184c ldr w0, [x0]
+1241850 cmp w0, #0xa
+1241854 b .eq	0x12418d8
+1241858 cbz w0, 0x12418d8
+124185c mov x19, #0x0               // =0
+1241864 bfxil x19, x0, #0, #32
+1241868 add x0, x2, #0x10
+124186c add x20, sp, #0x18
+1241870 stp x0, x0, [sp]
+1241874 str xzr, [sp, #0x10]
+1241878 bl 0x391c98
+124187c mov x1, x19
+1241880 mov x2, x0
+1241888 mov x0, x20
+124188c add x3, x3, #0x2b8  ; "running error"
+1241890 bl 0xc9bff0
+1241898 ldr x0, [x0, #0xb78]
+12418a0 add x19, x19, #0x190
+12418a4 str x19, [sp, #0x18]
+12418a8 ldr x2, [sp, #0x38]
+12418ac ldr x1, [x0]
+12418b0 subs x2, x2, x1
+12418b4 mov x1, #0x0                // =0
+12418b8 b .ne	0x12418e0
+12418bc mov x1, x21
+12418c0 mov x0, x20
+12418c4 bl 0x3baff0
+12418c8 add w1, w1, #0x1
+12418cc sbfx x1, x1, #1, #7
+12418d0 cmp w1, #0x0
+12418d4 b .gt	0x1241808
+12418d8 mov w0, #0x0                // =0
+12418dc b 0x1241808

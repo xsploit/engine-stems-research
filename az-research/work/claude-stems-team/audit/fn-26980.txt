@@ -1,0 +1,6 @@
+0000000000026980 <zplfMalloc_ARMNeon(int)>:
+   26980:       sbfiz x0, x0, #2, #32
+   26984:       mov w1, #0x10               // =16
+   26988:       b 0x21698 <zplAllocator::malloc(unsigned long, zplAlloc::MemoryAlignment_t)>
+   2698c:       nop
+

@@ -1,0 +1,2468 @@
+{
+  "before": {
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_buffers": 1
+  },
+  "statusBefore": "state: RUNNING\nowner_pid   : 159449\ntrigger_time: 57307.128258694\ntstamp      : 66864.384782238\ndelay       : 2723\navail       : 30\navail_max   : 172\n-----\nhw_ptr      : 421456158\nappl_ptr    : 421458176\n",
+  "samples": [
+    {
+      "seconds": 0.0004931149887852371,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "421531173",
+      "appl_ptr": "421533184"
+    },
+    {
+      "seconds": 0.05074940998747479,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421533333",
+      "appl_ptr": "421535360"
+    },
+    {
+      "seconds": 0.10230791999492794,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421535627",
+      "appl_ptr": "421537664"
+    },
+    {
+      "seconds": 0.15257191899581812,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421537832",
+      "appl_ptr": "421539840"
+    },
+    {
+      "seconds": 0.20337584799563047,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421540125",
+      "appl_ptr": "421542144"
+    },
+    {
+      "seconds": 0.2556036409951048,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421542286",
+      "appl_ptr": "421544320"
+    },
+    {
+      "seconds": 0.3073266899882583,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421544579",
+      "appl_ptr": "421546624"
+    },
+    {
+      "seconds": 0.35769987499224953,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421546916",
+      "appl_ptr": "421548928"
+    },
+    {
+      "seconds": 0.41001400198729243,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421549209",
+      "appl_ptr": "421551232"
+    },
+    {
+      "seconds": 0.46105204499326646,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421551370",
+      "appl_ptr": "421553408"
+    },
+    {
+      "seconds": 0.5122814039932564,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421553664",
+      "appl_ptr": "421555712"
+    },
+    {
+      "seconds": 0.5630124809977133,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421556001",
+      "appl_ptr": "421558016"
+    },
+    {
+      "seconds": 0.6133121089951601,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421558162",
+      "appl_ptr": "421560192"
+    },
+    {
+      "seconds": 0.6636564049986191,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "421560323",
+      "appl_ptr": "421562368"
+    },
+    {
+      "seconds": 0.7140413869929034,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421562660",
+      "appl_ptr": "421564672"
+    },
+    {
+      "seconds": 0.7646004439884564,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421564821",
+      "appl_ptr": "421566848"
+    },
+    {
+      "seconds": 0.8151256860001013,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421566982",
+      "appl_ptr": "421569024"
+    },
+    {
+      "seconds": 0.8657089279877255,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421569319",
+      "appl_ptr": "421571328"
+    },
+    {
+      "seconds": 0.9164317830000073,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421571480",
+      "appl_ptr": "421573504"
+    },
+    {
+      "seconds": 0.967148322990397,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421573773",
+      "appl_ptr": "421575808"
+    },
+    {
+      "seconds": 1.0174244139925577,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421575978",
+      "appl_ptr": "421577984"
+    },
+    {
+      "seconds": 1.067729246991803,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421578271",
+      "appl_ptr": "421580160"
+    },
+    {
+      "seconds": 1.1186562329967273,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421580432",
+      "appl_ptr": "421582464"
+    },
+    {
+      "seconds": 1.1691329559980659,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421582593",
+      "appl_ptr": "421584640"
+    },
+    {
+      "seconds": 1.2209530599939171,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421584930",
+      "appl_ptr": "421586944"
+    },
+    {
+      "seconds": 1.2712623559928034,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421587091",
+      "appl_ptr": "421589120"
+    },
+    {
+      "seconds": 1.3223437689885031,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421589385",
+      "appl_ptr": "421591424"
+    },
+    {
+      "seconds": 1.3726643799891463,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421591590",
+      "appl_ptr": "421593600"
+    },
+    {
+      "seconds": 1.4239087199966889,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421593883",
+      "appl_ptr": "421595904"
+    },
+    {
+      "seconds": 1.4742807389993686,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421596044",
+      "appl_ptr": "421598080"
+    },
+    {
+      "seconds": 1.5245469039946329,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421598337",
+      "appl_ptr": "421600384"
+    },
+    {
+      "seconds": 1.5751236649957718,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421600542",
+      "appl_ptr": "421602560"
+    },
+    {
+      "seconds": 1.6258478349918732,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421602703",
+      "appl_ptr": "421604736"
+    },
+    {
+      "seconds": 1.6766238569980487,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421604996",
+      "appl_ptr": "421607040"
+    },
+    {
+      "seconds": 1.7282348669978091,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421607333",
+      "appl_ptr": "421609344"
+    },
+    {
+      "seconds": 1.7785471999959555,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421609494",
+      "appl_ptr": "421611520"
+    },
+    {
+      "seconds": 1.8293152949918294,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421611787",
+      "appl_ptr": "421613824"
+    },
+    {
+      "seconds": 1.8795702569914283,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421613992",
+      "appl_ptr": "421616000"
+    },
+    {
+      "seconds": 1.9302340739959618,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "421616286",
+      "appl_ptr": "421618304"
+    },
+    {
+      "seconds": 1.9805150729953311,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421618446",
+      "appl_ptr": "421620480"
+    },
+    {
+      "seconds": 2.031374447993585,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421620651",
+      "appl_ptr": "421622656"
+    },
+    {
+      "seconds": 2.08292619799613,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421622945",
+      "appl_ptr": "421624960"
+    },
+    {
+      "seconds": 2.133192326989956,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421625106",
+      "appl_ptr": "421627136"
+    },
+    {
+      "seconds": 2.1834599930007244,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421627399",
+      "appl_ptr": "421629440"
+    },
+    {
+      "seconds": 2.233712157991249,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421629604",
+      "appl_ptr": "421631616"
+    },
+    {
+      "seconds": 2.283984194000368,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421631765",
+      "appl_ptr": "421633792"
+    },
+    {
+      "seconds": 2.3343238969973754,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421634058",
+      "appl_ptr": "421636096"
+    },
+    {
+      "seconds": 2.385291901999153,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421636263",
+      "appl_ptr": "421638272"
+    },
+    {
+      "seconds": 2.4355710499949055,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421638556",
+      "appl_ptr": "421640576"
+    },
+    {
+      "seconds": 2.4871813189965906,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421640717",
+      "appl_ptr": "421642752"
+    },
+    {
+      "seconds": 2.5384440859925235,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421643010",
+      "appl_ptr": "421645056"
+    },
+    {
+      "seconds": 2.5887760479963617,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421645215",
+      "appl_ptr": "421647232"
+    },
+    {
+      "seconds": 2.6400044259935385,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421647508",
+      "appl_ptr": "421649536"
+    },
+    {
+      "seconds": 2.691811307988246,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421649802",
+      "appl_ptr": "421651840"
+    },
+    {
+      "seconds": 2.743851822000579,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421652139",
+      "appl_ptr": "421654144"
+    },
+    {
+      "seconds": 2.7941579509933945,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421654300",
+      "appl_ptr": "421656320"
+    },
+    {
+      "seconds": 2.8452081229916075,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421656593",
+      "appl_ptr": "421658624"
+    },
+    {
+      "seconds": 2.8958735519991023,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421658754",
+      "appl_ptr": "421660800"
+    },
+    {
+      "seconds": 2.9465208319888916,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421661091",
+      "appl_ptr": "421663104"
+    },
+    {
+      "seconds": 2.9975966149941087,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421663252",
+      "appl_ptr": "421665280"
+    },
+    {
+      "seconds": 3.0482099869986996,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421665545",
+      "appl_ptr": "421667584"
+    },
+    {
+      "seconds": 3.0984801899903687,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "167",
+      "hw_ptr": "421667750",
+      "appl_ptr": "421669760"
+    },
+    {
+      "seconds": 3.148749614992994,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421669911",
+      "appl_ptr": "421671936"
+    },
+    {
+      "seconds": 3.19957647100091,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "421672204",
+      "appl_ptr": "421674240"
+    },
+    {
+      "seconds": 3.2500506379874423,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421674409",
+      "appl_ptr": "421676416"
+    },
+    {
+      "seconds": 3.301314033989911,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421676703",
+      "appl_ptr": "421678720"
+    },
+    {
+      "seconds": 3.3520429819909623,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421678863",
+      "appl_ptr": "421680896"
+    },
+    {
+      "seconds": 3.402918892999878,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421681157",
+      "appl_ptr": "421683200"
+    },
+    {
+      "seconds": 3.4533908749872353,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421683362",
+      "appl_ptr": "421685376"
+    },
+    {
+      "seconds": 3.5037214490002953,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421685523",
+      "appl_ptr": "421687552"
+    },
+    {
+      "seconds": 3.5542114499985473,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421687816",
+      "appl_ptr": "421689856"
+    },
+    {
+      "seconds": 3.6047413219930604,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421690021",
+      "appl_ptr": "421692032"
+    },
+    {
+      "seconds": 3.655723511998076,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421692314",
+      "appl_ptr": "421694336"
+    },
+    {
+      "seconds": 3.707855729997391,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421694607",
+      "appl_ptr": "421696640"
+    },
+    {
+      "seconds": 3.7582823970005848,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421696768",
+      "appl_ptr": "421698816"
+    },
+    {
+      "seconds": 3.8087525279988768,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421699105",
+      "appl_ptr": "421701120"
+    },
+    {
+      "seconds": 3.859290472988505,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421701266",
+      "appl_ptr": "421703296"
+    },
+    {
+      "seconds": 3.910121384993545,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421703559",
+      "appl_ptr": "421705600"
+    },
+    {
+      "seconds": 3.960716442001285,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421705764",
+      "appl_ptr": "421707776"
+    },
+    {
+      "seconds": 4.011245572997723,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421708058",
+      "appl_ptr": "421710080"
+    },
+    {
+      "seconds": 4.061559071997181,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421710219",
+      "appl_ptr": "421712256"
+    },
+    {
+      "seconds": 4.111804996995488,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421712424",
+      "appl_ptr": "421714432"
+    },
+    {
+      "seconds": 4.162231700989651,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421714717",
+      "appl_ptr": "421716736"
+    },
+    {
+      "seconds": 4.212602737999987,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421716878",
+      "appl_ptr": "421718912"
+    },
+    {
+      "seconds": 4.262899903988,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421719083",
+      "appl_ptr": "421721088"
+    },
+    {
+      "seconds": 4.31326553299732,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421721376",
+      "appl_ptr": "421723392"
+    },
+    {
+      "seconds": 4.36362531100167,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421723537",
+      "appl_ptr": "421725568"
+    },
+    {
+      "seconds": 4.413874716992723,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421725698",
+      "appl_ptr": "421727744"
+    },
+    {
+      "seconds": 4.464887130001443,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421728035",
+      "appl_ptr": "421730048"
+    },
+    {
+      "seconds": 4.515145868994296,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "421730196",
+      "appl_ptr": "421732224"
+    },
+    {
+      "seconds": 4.5653997199988225,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421732357",
+      "appl_ptr": "421734400"
+    },
+    {
+      "seconds": 4.615664607990766,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421734694",
+      "appl_ptr": "421736704"
+    },
+    {
+      "seconds": 4.666212127995095,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421736855",
+      "appl_ptr": "421738880"
+    },
+    {
+      "seconds": 4.7164774049888365,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421739016",
+      "appl_ptr": "421741056"
+    },
+    {
+      "seconds": 4.766767570996308,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421741353",
+      "appl_ptr": "421743360"
+    },
+    {
+      "seconds": 4.81704786598857,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421743514",
+      "appl_ptr": "421745536"
+    },
+    {
+      "seconds": 4.867300161000458,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421745675",
+      "appl_ptr": "421747712"
+    },
+    {
+      "seconds": 4.917615104990546,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421747968",
+      "appl_ptr": "421750016"
+    },
+    {
+      "seconds": 4.967904992998228,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421750173",
+      "appl_ptr": "421752192"
+    },
+    {
+      "seconds": 5.018583180994028,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421752334",
+      "appl_ptr": "421754368"
+    },
+    {
+      "seconds": 5.068862475993228,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421754627",
+      "appl_ptr": "421756672"
+    },
+    {
+      "seconds": 5.119931666995399,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421756832",
+      "appl_ptr": "421758848"
+    },
+    {
+      "seconds": 5.170451723999577,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421759125",
+      "appl_ptr": "421761152"
+    },
+    {
+      "seconds": 5.22302772400144,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421761419",
+      "appl_ptr": "421763456"
+    },
+    {
+      "seconds": 5.273283796996111,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421763624",
+      "appl_ptr": "421765632"
+    },
+    {
+      "seconds": 5.323566999999457,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421765917",
+      "appl_ptr": "421767936"
+    },
+    {
+      "seconds": 5.373862461987301,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421768078",
+      "appl_ptr": "421770112"
+    },
+    {
+      "seconds": 5.424096552989795,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421770283",
+      "appl_ptr": "421772288"
+    },
+    {
+      "seconds": 5.474624313996173,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421772576",
+      "appl_ptr": "421774592"
+    },
+    {
+      "seconds": 5.525377760990523,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421774737",
+      "appl_ptr": "421776768"
+    },
+    {
+      "seconds": 5.576212135987589,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421777030",
+      "appl_ptr": "421779072"
+    },
+    {
+      "seconds": 5.626946415999555,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421779235",
+      "appl_ptr": "421781248"
+    },
+    {
+      "seconds": 5.6777965129876975,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421781396",
+      "appl_ptr": "421783424"
+    },
+    {
+      "seconds": 5.7290116119984305,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421783689",
+      "appl_ptr": "421785728"
+    },
+    {
+      "seconds": 5.779327518990613,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "421786026",
+      "appl_ptr": "421788032"
+    },
+    {
+      "seconds": 5.829571776994271,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421788187",
+      "appl_ptr": "421790208"
+    },
+    {
+      "seconds": 5.879832016988075,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421790348",
+      "appl_ptr": "421792384"
+    },
+    {
+      "seconds": 5.93031718498969,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421792641",
+      "appl_ptr": "421794688"
+    },
+    {
+      "seconds": 5.980574405999505,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421794846",
+      "appl_ptr": "421796864"
+    },
+    {
+      "seconds": 6.0308741639892105,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421797007",
+      "appl_ptr": "421799040"
+    },
+    {
+      "seconds": 6.081280441998388,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421799301",
+      "appl_ptr": "421801344"
+    },
+    {
+      "seconds": 6.131527441000799,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421801506",
+      "appl_ptr": "421803520"
+    },
+    {
+      "seconds": 6.181778272992233,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421803666",
+      "appl_ptr": "421805696"
+    },
+    {
+      "seconds": 6.2324899429950165,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421805960",
+      "appl_ptr": "421808000"
+    },
+    {
+      "seconds": 6.282963202989777,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421808165",
+      "appl_ptr": "421810176"
+    },
+    {
+      "seconds": 6.333276405988727,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421810458",
+      "appl_ptr": "421812480"
+    },
+    {
+      "seconds": 6.383578775989008,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421812619",
+      "appl_ptr": "421814656"
+    },
+    {
+      "seconds": 6.433858403994236,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421814824",
+      "appl_ptr": "421816832"
+    },
+    {
+      "seconds": 6.484309849998681,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421817117",
+      "appl_ptr": "421819136"
+    },
+    {
+      "seconds": 6.535333150997758,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421819278",
+      "appl_ptr": "421821312"
+    },
+    {
+      "seconds": 6.585646316991188,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421821483",
+      "appl_ptr": "421823488"
+    },
+    {
+      "seconds": 6.6373715689987876,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421823776",
+      "appl_ptr": "421825792"
+    },
+    {
+      "seconds": 6.687714568994124,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421825937",
+      "appl_ptr": "421827968"
+    },
+    {
+      "seconds": 6.7383803489938146,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421828230",
+      "appl_ptr": "421830272"
+    },
+    {
+      "seconds": 6.788708904001396,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421830435",
+      "appl_ptr": "421832448"
+    },
+    {
+      "seconds": 6.8389674029895104,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421832596",
+      "appl_ptr": "421834624"
+    },
+    {
+      "seconds": 6.889291717991,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421834889",
+      "appl_ptr": "421836928"
+    },
+    {
+      "seconds": 6.940370019990951,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421837227",
+      "appl_ptr": "421839232"
+    },
+    {
+      "seconds": 6.991732916998444,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421839387",
+      "appl_ptr": "421841408"
+    },
+    {
+      "seconds": 7.042292307000025,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "421841681",
+      "appl_ptr": "421843712"
+    },
+    {
+      "seconds": 7.092973366001388,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421843842",
+      "appl_ptr": "421845888"
+    },
+    {
+      "seconds": 7.143343994990573,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421846179",
+      "appl_ptr": "421848192"
+    },
+    {
+      "seconds": 7.193630604990176,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421848340",
+      "appl_ptr": "421850368"
+    },
+    {
+      "seconds": 7.24400199399679,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421850501",
+      "appl_ptr": "421852544"
+    },
+    {
+      "seconds": 7.294463439000538,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421852838",
+      "appl_ptr": "421854848"
+    },
+    {
+      "seconds": 7.344765919988276,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421854999",
+      "appl_ptr": "421857024"
+    },
+    {
+      "seconds": 7.3950303079909645,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421857160",
+      "appl_ptr": "421859200"
+    },
+    {
+      "seconds": 7.445407715000329,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421859497",
+      "appl_ptr": "421861504"
+    },
+    {
+      "seconds": 7.495672584991553,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421861658",
+      "appl_ptr": "421863680"
+    },
+    {
+      "seconds": 7.545946528000059,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421863819",
+      "appl_ptr": "421865856"
+    },
+    {
+      "seconds": 7.596489659001236,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421866112",
+      "appl_ptr": "421868160"
+    },
+    {
+      "seconds": 7.646778954993351,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421868317",
+      "appl_ptr": "421870336"
+    },
+    {
+      "seconds": 7.6970368979964405,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421870478",
+      "appl_ptr": "421872512"
+    },
+    {
+      "seconds": 7.747380823988351,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421872771",
+      "appl_ptr": "421874816"
+    },
+    {
+      "seconds": 7.797954326000763,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421874976",
+      "appl_ptr": "421876992"
+    },
+    {
+      "seconds": 7.8489155159913935,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421877137",
+      "appl_ptr": "421879168"
+    },
+    {
+      "seconds": 7.899165477996576,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421879430",
+      "appl_ptr": "421881472"
+    },
+    {
+      "seconds": 7.949395179995918,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421881635",
+      "appl_ptr": "421883648"
+    },
+    {
+      "seconds": 7.9996141599986,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421883796",
+      "appl_ptr": "421885824"
+    },
+    {
+      "seconds": 8.049843399989186,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421886089",
+      "appl_ptr": "421888128"
+    },
+    {
+      "seconds": 8.100147250996088,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "167",
+      "hw_ptr": "421888294",
+      "appl_ptr": "421890304"
+    },
+    {
+      "seconds": 8.15051373199094,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421890588",
+      "appl_ptr": "421892608"
+    },
+    {
+      "seconds": 8.200875138994888,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421892748",
+      "appl_ptr": "421894784"
+    },
+    {
+      "seconds": 8.252465649988153,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421895042",
+      "appl_ptr": "421897088"
+    },
+    {
+      "seconds": 8.303340783997555,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421897247",
+      "appl_ptr": "421899264"
+    },
+    {
+      "seconds": 8.355030294987955,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "421899540",
+      "appl_ptr": "421901568"
+    },
+    {
+      "seconds": 8.405292960000224,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421901701",
+      "appl_ptr": "421903744"
+    },
+    {
+      "seconds": 8.455588551994879,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421904038",
+      "appl_ptr": "421906048"
+    },
+    {
+      "seconds": 8.50627285099472,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421906199",
+      "appl_ptr": "421908224"
+    },
+    {
+      "seconds": 8.556980927998666,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421908360",
+      "appl_ptr": "421910400"
+    },
+    {
+      "seconds": 8.607362205992104,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421910697",
+      "appl_ptr": "421912704"
+    },
+    {
+      "seconds": 8.657610370995826,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421912858",
+      "appl_ptr": "421914880"
+    },
+    {
+      "seconds": 8.70824778098904,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421915019",
+      "appl_ptr": "421917056"
+    },
+    {
+      "seconds": 8.759349545987789,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421917312",
+      "appl_ptr": "421919360"
+    },
+    {
+      "seconds": 8.809615730991936,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421919649",
+      "appl_ptr": "421921664"
+    },
+    {
+      "seconds": 8.860852885991335,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421921810",
+      "appl_ptr": "421923840"
+    },
+    {
+      "seconds": 8.911333701995318,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421924104",
+      "appl_ptr": "421926144"
+    },
+    {
+      "seconds": 8.96158644100069,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421926309",
+      "appl_ptr": "421928320"
+    },
+    {
+      "seconds": 9.011851292001666,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421928469",
+      "appl_ptr": "421930496"
+    },
+    {
+      "seconds": 9.062206643997342,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421930763",
+      "appl_ptr": "421932672"
+    },
+    {
+      "seconds": 9.112494235989288,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421932968",
+      "appl_ptr": "421934976"
+    },
+    {
+      "seconds": 9.16274738300126,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421935129",
+      "appl_ptr": "421937152"
+    },
+    {
+      "seconds": 9.21300508499553,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421937289",
+      "appl_ptr": "421939328"
+    },
+    {
+      "seconds": 9.263265677000163,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421939627",
+      "appl_ptr": "421941632"
+    },
+    {
+      "seconds": 9.313511991000269,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421941788",
+      "appl_ptr": "421943808"
+    },
+    {
+      "seconds": 9.363801045998116,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421943949",
+      "appl_ptr": "421945984"
+    },
+    {
+      "seconds": 9.41406882199226,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421946242",
+      "appl_ptr": "421948288"
+    },
+    {
+      "seconds": 9.464293746990734,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421948447",
+      "appl_ptr": "421950464"
+    },
+    {
+      "seconds": 9.514537893992383,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421950608",
+      "appl_ptr": "421952640"
+    },
+    {
+      "seconds": 9.566558944992721,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421952901",
+      "appl_ptr": "421954944"
+    },
+    {
+      "seconds": 9.616900722990977,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "421955238",
+      "appl_ptr": "421957248"
+    },
+    {
+      "seconds": 9.667215128996759,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421957399",
+      "appl_ptr": "421959424"
+    },
+    {
+      "seconds": 9.719373032989097,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421959560",
+      "appl_ptr": "421961600"
+    },
+    {
+      "seconds": 9.770921579998685,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421961897",
+      "appl_ptr": "421963904"
+    },
+    {
+      "seconds": 9.821264116995735,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421964190",
+      "appl_ptr": "421966208"
+    },
+    {
+      "seconds": 9.872398772000452,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421966484",
+      "appl_ptr": "421968512"
+    },
+    {
+      "seconds": 9.922646695995354,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421968645",
+      "appl_ptr": "421970688"
+    },
+    {
+      "seconds": 9.972963843989419,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421970850",
+      "appl_ptr": "421972864"
+    },
+    {
+      "seconds": 10.023955515993293,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421973143",
+      "appl_ptr": "421975168"
+    },
+    {
+      "seconds": 10.076286772993626,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421975436",
+      "appl_ptr": "421977472"
+    },
+    {
+      "seconds": 10.127990672990563,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421977729",
+      "appl_ptr": "421979776"
+    },
+    {
+      "seconds": 10.17826311699173,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421979934",
+      "appl_ptr": "421981952"
+    },
+    {
+      "seconds": 10.229645699000685,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421982227",
+      "appl_ptr": "421984256"
+    },
+    {
+      "seconds": 10.279955790989334,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "421984388",
+      "appl_ptr": "421986432"
+    },
+    {
+      "seconds": 10.330874259001575,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421986726",
+      "appl_ptr": "421988736"
+    },
+    {
+      "seconds": 10.381122275997768,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421988886",
+      "appl_ptr": "421990912"
+    },
+    {
+      "seconds": 10.431953483988764,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421991047",
+      "appl_ptr": "421993088"
+    },
+    {
+      "seconds": 10.482199908990879,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "421993385",
+      "appl_ptr": "421995392"
+    },
+    {
+      "seconds": 10.532458574991324,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "421995546",
+      "appl_ptr": "421997568"
+    },
+    {
+      "seconds": 10.582698369995342,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "421997706",
+      "appl_ptr": "421999744"
+    },
+    {
+      "seconds": 10.633006627991563,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422000000",
+      "appl_ptr": "422002048"
+    },
+    {
+      "seconds": 10.683329275998403,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422002205",
+      "appl_ptr": "422004224"
+    },
+    {
+      "seconds": 10.73362614600046,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422004366",
+      "appl_ptr": "422006400"
+    },
+    {
+      "seconds": 10.784346481988905,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422006659",
+      "appl_ptr": "422008704"
+    },
+    {
+      "seconds": 10.83480079799483,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422008864",
+      "appl_ptr": "422010880"
+    },
+    {
+      "seconds": 10.88563302399416,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "422011157",
+      "appl_ptr": "422013184"
+    },
+    {
+      "seconds": 10.937039013995673,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422013318",
+      "appl_ptr": "422015360"
+    },
+    {
+      "seconds": 10.987892646997352,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422015655",
+      "appl_ptr": "422017664"
+    },
+    {
+      "seconds": 11.03845887100033,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422017948",
+      "appl_ptr": "422019968"
+    },
+    {
+      "seconds": 11.090068714998779,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422020109",
+      "appl_ptr": "422022144"
+    },
+    {
+      "seconds": 11.141026775992941,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422022402",
+      "appl_ptr": "422024448"
+    },
+    {
+      "seconds": 11.192049744000542,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422024607",
+      "appl_ptr": "422026624"
+    },
+    {
+      "seconds": 11.242693765001604,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422026901",
+      "appl_ptr": "422028928"
+    },
+    {
+      "seconds": 11.293281932987156,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422029062",
+      "appl_ptr": "422031104"
+    },
+    {
+      "seconds": 11.34360572899459,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422031399",
+      "appl_ptr": "422033408"
+    },
+    {
+      "seconds": 11.394063155996264,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422033560",
+      "appl_ptr": "422035584"
+    },
+    {
+      "seconds": 11.444283765988075,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422035721",
+      "appl_ptr": "422037760"
+    },
+    {
+      "seconds": 11.494653413988999,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422038058",
+      "appl_ptr": "422040064"
+    },
+    {
+      "seconds": 11.54492341299192,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422040219",
+      "appl_ptr": "422042240"
+    },
+    {
+      "seconds": 11.595208578990423,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422042380",
+      "appl_ptr": "422044416"
+    },
+    {
+      "seconds": 11.645629856997402,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422044673",
+      "appl_ptr": "422046720"
+    },
+    {
+      "seconds": 11.69621611799812,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422046878",
+      "appl_ptr": "422048896"
+    },
+    {
+      "seconds": 11.74646307999501,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422049039",
+      "appl_ptr": "422051072"
+    },
+    {
+      "seconds": 11.797122137999395,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422051332",
+      "appl_ptr": "422053376"
+    },
+    {
+      "seconds": 11.84737128499546,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422053537",
+      "appl_ptr": "422055552"
+    },
+    {
+      "seconds": 11.89762769099616,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422055698",
+      "appl_ptr": "422057728"
+    },
+    {
+      "seconds": 11.948295545997098,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422057991",
+      "appl_ptr": "422060032"
+    },
+    {
+      "seconds": 11.998545914990245,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422060196",
+      "appl_ptr": "422062208"
+    },
+    {
+      "seconds": 12.04883995099226,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422062489",
+      "appl_ptr": "422064512"
+    },
+    {
+      "seconds": 12.09923956298735,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422064650",
+      "appl_ptr": "422066688"
+    },
+    {
+      "seconds": 12.149500764993718,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422066855",
+      "appl_ptr": "422068864"
+    },
+    {
+      "seconds": 12.201205035991734,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "422069148",
+      "appl_ptr": "422071168"
+    },
+    {
+      "seconds": 12.251526035994175,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422071309",
+      "appl_ptr": "422073344"
+    },
+    {
+      "seconds": 12.302366983989486,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422073603",
+      "appl_ptr": "422075648"
+    },
+    {
+      "seconds": 12.353832159991725,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422075940",
+      "appl_ptr": "422077952"
+    },
+    {
+      "seconds": 12.405861173989251,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422078101",
+      "appl_ptr": "422080128"
+    },
+    {
+      "seconds": 12.45613626598788,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422080394",
+      "appl_ptr": "422082432"
+    },
+    {
+      "seconds": 12.50647885799117,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422082599",
+      "appl_ptr": "422084608"
+    },
+    {
+      "seconds": 12.557217693989514,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422084892",
+      "appl_ptr": "422086912"
+    },
+    {
+      "seconds": 12.607469841997954,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422087053",
+      "appl_ptr": "422089088"
+    },
+    {
+      "seconds": 12.657716636997066,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422089258",
+      "appl_ptr": "422091264"
+    },
+    {
+      "seconds": 12.709363702990231,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422091551",
+      "appl_ptr": "422093568"
+    },
+    {
+      "seconds": 12.75970029499149,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422093712",
+      "appl_ptr": "422095744"
+    },
+    {
+      "seconds": 12.810045387988794,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422096005",
+      "appl_ptr": "422098048"
+    },
+    {
+      "seconds": 12.86127396899974,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422098210",
+      "appl_ptr": "422100224"
+    },
+    {
+      "seconds": 12.911637635988882,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422100504",
+      "appl_ptr": "422102528"
+    },
+    {
+      "seconds": 12.961885208991589,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422102664",
+      "appl_ptr": "422104704"
+    },
+    {
+      "seconds": 13.012181837999378,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422104869",
+      "appl_ptr": "422106880"
+    },
+    {
+      "seconds": 13.062590633999207,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422107163",
+      "appl_ptr": "422109184"
+    },
+    {
+      "seconds": 13.112935448996723,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422109324",
+      "appl_ptr": "422111360"
+    },
+    {
+      "seconds": 13.1632136519911,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422111529",
+      "appl_ptr": "422113536"
+    },
+    {
+      "seconds": 13.21348213199235,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "167",
+      "hw_ptr": "422113822",
+      "appl_ptr": "422115840"
+    },
+    {
+      "seconds": 13.264167578992783,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422115983",
+      "appl_ptr": "422118016"
+    },
+    {
+      "seconds": 13.314550265000435,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422118276",
+      "appl_ptr": "422120320"
+    },
+    {
+      "seconds": 13.364830467995489,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422120481",
+      "appl_ptr": "422122496"
+    },
+    {
+      "seconds": 13.415116040996509,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422122642",
+      "appl_ptr": "422124672"
+    },
+    {
+      "seconds": 13.465444040994043,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "422124935",
+      "appl_ptr": "422126848"
+    },
+    {
+      "seconds": 13.515703242999734,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422127140",
+      "appl_ptr": "422129152"
+    },
+    {
+      "seconds": 13.565952667995589,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422129301",
+      "appl_ptr": "422131328"
+    },
+    {
+      "seconds": 13.616170796987717,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422131462",
+      "appl_ptr": "422133504"
+    },
+    {
+      "seconds": 13.666428222000832,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422133799",
+      "appl_ptr": "422135808"
+    },
+    {
+      "seconds": 13.71698350099905,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422135960",
+      "appl_ptr": "422137984"
+    },
+    {
+      "seconds": 13.769171109001036,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422138253",
+      "appl_ptr": "422140288"
+    },
+    {
+      "seconds": 13.819584219992976,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422140546",
+      "appl_ptr": "422142592"
+    },
+    {
+      "seconds": 13.871224841990625,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422142751",
+      "appl_ptr": "422144768"
+    },
+    {
+      "seconds": 13.92159750899009,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422145045",
+      "appl_ptr": "422147072"
+    },
+    {
+      "seconds": 13.971907970990287,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422147205",
+      "appl_ptr": "422149248"
+    },
+    {
+      "seconds": 14.02219008198881,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422149410",
+      "appl_ptr": "422151424"
+    },
+    {
+      "seconds": 14.072886807000032,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422151704",
+      "appl_ptr": "422153728"
+    },
+    {
+      "seconds": 14.123253343990655,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422153865",
+      "appl_ptr": "422155904"
+    },
+    {
+      "seconds": 14.173770381996292,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422156202",
+      "appl_ptr": "422158208"
+    },
+    {
+      "seconds": 14.224025713992887,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422158363",
+      "appl_ptr": "422160384"
+    },
+    {
+      "seconds": 14.274500086001353,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422160524",
+      "appl_ptr": "422162560"
+    },
+    {
+      "seconds": 14.324960826997994,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422162817",
+      "appl_ptr": "422164864"
+    },
+    {
+      "seconds": 14.375349308989826,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "168",
+      "hw_ptr": "422165022",
+      "appl_ptr": "422167040"
+    },
+    {
+      "seconds": 14.425602307994268,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422167183",
+      "appl_ptr": "422169216"
+    },
+    {
+      "seconds": 14.476273365988163,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422169476",
+      "appl_ptr": "422171520"
+    },
+    {
+      "seconds": 14.526542123989202,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422171681",
+      "appl_ptr": "422173696"
+    },
+    {
+      "seconds": 14.577536092998344,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422173974",
+      "appl_ptr": "422175872"
+    },
+    {
+      "seconds": 14.628886155987857,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422176135",
+      "appl_ptr": "422178176"
+    },
+    {
+      "seconds": 14.679210655987845,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422178472",
+      "appl_ptr": "422180480"
+    },
+    {
+      "seconds": 14.729502210990177,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "172",
+      "hw_ptr": "422180633",
+      "appl_ptr": "422182656"
+    },
+    {
+      "seconds": 14.779845302997273,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422182794",
+      "appl_ptr": "422184832"
+    },
+    {
+      "seconds": 14.832130244991276,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422185131",
+      "appl_ptr": "422187136"
+    },
+    {
+      "seconds": 14.88250317100028,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "170",
+      "hw_ptr": "422187425",
+      "appl_ptr": "422189440"
+    },
+    {
+      "seconds": 14.9331335619936,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422189586",
+      "appl_ptr": "422191616"
+    },
+    {
+      "seconds": 14.983446505997563,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422191746",
+      "appl_ptr": "422193792"
+    },
+    {
+      "seconds": 15.033733857999323,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "169",
+      "hw_ptr": "422194084",
+      "appl_ptr": "422196096"
+    },
+    {
+      "seconds": 15.08408720899024,
+      "state": "RUNNING",
+      "trigger_time": "57307.128258694",
+      "avail_max": "171",
+      "hw_ptr": "422196245",
+      "appl_ptr": "422198272"
+    }
+  ],
+  "playingBeforeRender": {
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      303777.03,
+      303766.43,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      2465050,
+      2659578,
+      0,
+      0
+    ],
+    "unique_buffers": 40
+  },
+  "renderExit": 0,
+  "playingAfterRender": {
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      824192.23,
+      824367.67,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      2817921,
+      2884869,
+      0,
+      0
+    ],
+    "unique_buffers": 40
+  },
+  "stopped": {
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "unique_buffers": 1
+  },
+  "engineLogDuring": "frame-pacing: seconds=5.015 swaps=301 hz=60.02 max_gap_ms=18.51 gaps_over25ms=0 avg_swap_wait_ms=0.20 errors=0\nframe-pacing: seconds=5.015 swaps=298 hz=59.42 max_gap_ms=26.00 gaps_over25ms=1 avg_swap_wait_ms=0.36 errors=0\nframe-pacing: seconds=5.015 swaps=301 hz=60.02 max_gap_ms=19.21 gaps_over25ms=0 avg_swap_wait_ms=0.32 errors=0\nframe-pacing: seconds=5.015 swaps=301 hz=60.02 max_gap_ms=18.69 gaps_over25ms=0 avg_swap_wait_ms=0.32 errors=0\n",
+  "backlight": "0"
+}

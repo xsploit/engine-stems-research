@@ -1,0 +1,24 @@
+{
+  "pairs": [
+    {
+      "stem": "stem-0",
+      "reference": "/home/subsect/Documents/Codex/2026-09-10/so/work/engine-desktop-test/reference/engine-stem-0.wav",
+      "candidate": "/home/subsect/Documents/Codex/2026-09-10/so/outputs/engine-pc-prototype/pc-cpu4/stem-0.wav"
+    },
+    {
+      "stem": "stem-1",
+      "reference": "/home/subsect/Documents/Codex/2026-09-10/so/work/engine-desktop-test/reference/engine-stem-1.wav",
+      "candidate": "/home/subsect/Documents/Codex/2026-09-10/so/outputs/engine-pc-prototype/pc-cpu4/stem-1.wav"
+    },
+    {
+      "stem": "stem-2",
+      "reference": "/home/subsect/Documents/Codex/2026-09-10/so/work/engine-desktop-test/reference/engine-stem-2.wav",
+      "candidate": "/home/subsect/Documents/Codex/2026-09-10/so/outputs/engine-pc-prototype/pc-cpu4/stem-2.wav"
+    },
+    {
+      "stem": "stem-3",
+      "reference": "/home/subsect/Documents/Codex/2026-09-10/so/work/engine-desktop-test/reference/engine-stem-3.wav",
+      "candidate": "/home/subsect/Documents/Codex/2026-09-10/so/outputs/engine-pc-prototype/pc-cpu4/stem-3.wav"
+    }
+  ]
+}

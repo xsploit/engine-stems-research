@@ -1,0 +1,96 @@
+0000000000025298 <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)>:
+   25298:       stp x29, x30, [sp, #-0x20]!
+   2529c:       adrp x6, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   252a0:       sub w4, w3, #0x1
+   252a4:       mov x29, sp
+   252a8:       ldr x5, [x6, #0xfa8] ; @187fffa8
+   252ac:       cmp w4, #0x0
+   252b0:       ldr x7, [x5]
+   252b4:       str x7, [sp, #0x18]
+   252b8:       mov x7, #0x0                // =0
+   252bc:       b.le 0x253b0 <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)+0x118>
+   252c0:       ubfiz x5, x4, #2, #32
+   252c4:       add x7, x2, w4, uxtw #3
+   252c8:       add x8, x0, x5
+   252cc:       add x5, x1, x5
+   252d0:       cmp x2, x8
+   252d4:       sub w9, w3, #0x2
+   252d8:       ccmp x0, x7, #0x2, lo
+   252dc:       cset w8, hs
+   252e0:       cmp x2, x5
+   252e4:       ccmp x1, x7, #0x2, lo
+   252e8:       cset w5, hs
+   252ec:       cmp w9, #0x4
+   252f0:       and w5, w8, w5
+   252f4:       cset w7, hi
+   252f8:       tst w7, w5
+   252fc:       b.eq 0x253dc <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)+0x144>
+   25300:       lsr w7, w4, #2
+   25304:       mov x8, x2
+   25308:       mov x5, #0x0                // =0
+   2530c:       lsl x7, x7, #4
+   25310:       ldr q0, [x0, x5]
+   25314:       ldr q1, [x1, x5]
+   25318:       add x5, x5, #0x10
+   2531c:       cmp x7, x5
+   25320:       st2 { v0.4s, v1.4s }, [x8], #32
+   25324:       b.ne 0x25310 <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)+0x78>
+   25328:       tst x4, #0x3
+   2532c:       and w5, w4, #0xfffffffc
+   25330:       b.eq 0x253b0 <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)+0x118>
+   25334:       sxtw x10, w5
+   25338:       lsl w8, w5, #1
+   2533c:       add w7, w5, #0x1
+   25340:       sbfiz x9, x5, #2, #32
+   25344:       sxtw x8, w8
+   25348:       cmp w4, w7
+   2534c:       ldr s0, [x0, x10, lsl #2]
+   25350:       add x11, x8, #0x1
+   25354:       str s0, [x2, x8, lsl #2]
+   25358:       ldr s0, [x1, x10, lsl #2]
+   2535c:       str s0, [x2, x11, lsl #2]
+   25360:       b.le 0x253b0 <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)+0x118>
+   25364:       add x8, x9, #0x4
+   25368:       lsl w7, w7, #1
+   2536c:       add w5, w5, #0x2
+   25370:       sxtw x7, w7
+   25374:       cmp w4, w5
+   25378:       ldr s0, [x0, x8]
+   2537c:       add x4, x7, #0x1
+   25380:       str s0, [x2, x7, lsl #2]
+   25384:       ldr s0, [x1, x8]
+   25388:       str s0, [x2, x4, lsl #2]
+   2538c:       b.le 0x253b0 <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)+0x118>
+   25390:       add x9, x9, #0x8
+   25394:       lsl w5, w5, #1
+   25398:       sxtw x5, w5
+   2539c:       ldr s0, [x0, x9]
+   253a0:       add x4, x5, #0x1
+   253a4:       str s0, [x2, x5, lsl #2]
+   253a8:       ldr s0, [x1, x9]
+   253ac:       str s0, [x2, x4, lsl #2]
+   253b0:       add x0, x0, w3, sxtw #2
+   253b4:       ldr x6, [x6, #0xfa8] ; @187fffa8
+   253b8:       ldur s0, [x0, #-0x4]
+   253bc:       ldr x0, [sp, #0x18]
+   253c0:       ldr x1, [x6]
+   253c4:       subs x0, x0, x1
+   253c8:       mov x1, #0x0                // =0
+   253cc:       str s0, [x2, #0x4]
+   253d0:       b.ne 0x2540c <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)+0x174>
+   253d4:       ldp x29, x30, [sp], #0x20
+   253d8:       ret
+   253dc:       mov x7, x2
+   253e0:       mov x5, #0x0                // =0
+   253e4:       nop
+   253e8:       ldr s0, [x0, x5, lsl #2]
+   253ec:       add x7, x7, #0x8
+   253f0:       stur s0, [x7, #-0x8]
+   253f4:       ldr s0, [x1, x5, lsl #2]
+   253f8:       add x5, x5, #0x1
+   253fc:       cmp w4, w5
+   25400:       stur s0, [x7, #-0x4]
+   25404:       b.gt 0x253e8 <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)+0x150>
+   25408:       b 0x253b0 <zplane::ComplexUtilsHelper::copyFFTResult(float const*, float const*, float*, int)+0x118>
+   2540c:       bl 0x51d0 <__stack_chk_fail@plt>
+

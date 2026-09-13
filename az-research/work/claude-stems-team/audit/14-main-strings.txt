@@ -1,0 +1,2155 @@
+5284 stp x29, x30, [sp, #-0x70]!
+5288 adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+528c ldr x2, [x2, #0xfa8]
+5290 mov x29, sp
+5294 stp x21, x22, [sp, #0x20]
+5298 mov w21, w0
+529c stp x25, x26, [sp, #0x40]
+52a0 stp x27, x28, [sp, #0x50]
+52a4 str d8, [sp, #0x60]
+52a8 sub sp, sp, #0x4e0
+52ac ldr x0, [x2]
+52b0 str x0, [sp, #0x4d8]
+52b4 mov x0, #0x0                // =0
+52b8 add x2, sp, #0x1a8
+52bc add x0, sp, #0x1c8
+52c0 stp x2, xzr, [sp, #0x198]
+52c4 strb wzr, [sp, #0x1a8]
+52c8 stp x0, xzr, [sp, #0x1b8]
+52cc strb wzr, [sp, #0x1c8]
+52d0 str x19, [sp, #0x4f0]
+52d4 str x20, [sp, #0x4f8]
+52d8 cmp w21, #0x1
+52e0 add x20, sp, #0x258
+52e4 mov x22, x1
+52e8 mov x0, x20
+52ec adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+52f0 add x1, x1, #0x6e8  ; "--stem"
+52f4 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+52f8 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+52fc add x0, sp, #0x278
+5300 add x1, x1, #0x6f0
+5304 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5308 add x7, sp, #0x298
+530c adrp x2, 0x8000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::deta
+5310 add x2, x2, #0x330
+5314 add x1, sp, #0x198
+5318 adrp x3, 0x7000 <main+0x1d80>
+531c add x3, x3, #0xd08
+5320 stp x3, x2, [x7, #0x10]
+5324 add x2, sp, #0x260
+5328 mov x4, x1
+532c stp x4, xzr, [x7]
+5330 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+5334 add x1, x1, #0x6f8  ; "--action"
+5338 str x23, [sp, #0x510]
+533c add x23, sp, #0x2d8
+5340 str x24, [sp, #0x518]
+5344 mov x0, x23
+5348 stp xzr, xzr, [x2, #0x58]
+534c str x4, [sp, #0x30]
+5350 str xzr, [sp, #0x2c8]
+5354 str xzr, [sp, #0x2d0]
+5358 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+535c adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+5360 add x0, sp, #0x2f8
+5364 add x1, x1, #0x708
+5368 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+536c add x4, sp, #0x260
+5370 add x6, sp, #0x328
+5374 adrp x2, 0x7000 <main+0x1d80>
+5378 adrp x3, 0x7000 <main+0x1d80>
+537c add x2, x2, #0xa08
+5380 add x3, x3, #0xcc4
+5384 stp xzr, xzr, [x4, #0xb8]
+5388 add x23, sp, #0x358
+538c adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+5390 ldr x4, [sp, #0x30]
+5394 stp xzr, xzr, [x6]
+5398 mov x0, x23
+539c stp x4, xzr, [x6, #0x10]
+53a0 add x1, x1, #0x710  ; "--parentVersion"
+53a4 str x3, [sp, #0x348]
+53a8 str x2, [sp, #0x350]
+53ac bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+53b0 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+53b4 add x0, sp, #0x378
+53b8 add x1, x1, #0x720  ; "-pv"
+53bc bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+53c0 add x5, sp, #0x460
+53c4 add x4, sp, #0x1b8
+53c8 adrp x2, 0x7000 <main+0x1d80>
+53cc adrp x3, 0x7000 <main+0x1d80>
+53d0 add x2, x2, #0xa20
+53d4 add x3, x3, #0xc80
+53d8 stp xzr, xzr, [x5, #-0xc8]
+53dc add x5, sp, #0x3a8
+53e0 add x23, sp, #0x3d8
+53e4 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+53e8 mov x0, x23
+53ec stp xzr, xzr, [x5]
+53f0 add x1, x1, #0x728  ; "--version"
+53f4 stp x4, xzr, [x5, #0x10]
+53f8 str x4, [sp, #0x38]
+53fc str x3, [sp, #0x3c8]
+5400 str x2, [sp, #0x3d0]
+5404 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5408 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+540c add x0, sp, #0x3f8
+5410 add x1, x1, #0x738
+5414 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5418 add x4, sp, #0x460
+541c adrp x2, 0x7000 <main+0x1d80>
+5420 adrp x3, 0x7000 <main+0x1d80>
+5424 add x2, x2, #0xf80
+5428 add x3, x3, #0xc44
+542c add x19, sp, #0x458
+5430 stp xzr, xzr, [x4, #-0x48]
+5434 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+5438 mov x0, x19
+543c str x3, [sp, #0x428]
+5440 add x1, x1, #0x740  ; "--help"
+5444 str x2, [sp, #0x430]
+5448 stp xzr, xzr, [x4, #-0x28]
+544c str xzr, [sp, #0x448]
+5450 str xzr, [sp, #0x450]
+5454 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5458 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+545c add x0, sp, #0x478
+5460 add x1, x1, #0x748
+5464 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5468 add x3, sp, #0x460
+546c adrp x2, 0x7000 <main+0x1d80>
+5470 adrp x1, 0x7000 <main+0x1d80>
+5474 add x2, x2, #0xe80
+5478 add x1, x1, #0xc08
+547c mov x0, #0x280              // =640
+5480 stp xzr, xzr, [x3, #0x38]
+5484 str x1, [sp, #0x4a8]
+5488 str x2, [sp, #0x4b0]
+548c stp xzr, xzr, [x3, #0x58]
+5490 stp xzr, xzr, [sp, #0x158]
+5494 str xzr, [sp, #0x4c8]
+5498 str xzr, [sp, #0x4d0]
+549c bl 0x4c10 <_Znwm@plt>
+54a0 mov x2, x0
+54a4 add x1, sp, #0x4d8
+54a8 add x3, x2, #0x280
+54ac mov x0, x20
+54b0 str x2, [sp, #0x150]
+54b4 str x3, [sp, #0x160]
+54b8 bl 0xcfa0 <imb::params::Parameter* std::__do_uninit_copy<imb::params::Parameter const*, imb::
+54bc mov x3, x0
+54c0 add x1, sp, #0x150
+54c4 mov x2, x1
+54c8 mov w0, w21
+54cc mov x1, x22
+54d0 str x2, [sp, #0x28]
+54d4 str x3, [sp, #0x158]
+54d8 bl 0xc1a0 <imb::params::parseParameters(int, char**, std::vector<imb::params::Parameter, std:
+54dc ldr x0, [sp, #0x28]
+54e0 bl 0xab00 <std::vector<imb::params::Parameter, std::allocator<imb::params::Parameter>>::~vect
+54e4 b 0x54ec <main+0x26c>
+54e8 mov x19, x0
+54ec ldr x3, [x19, #0x70]
+54f0 cbz x3, 0x5504 <main+0x284>
+54f4 add x1, x19, #0x60
+54f8 mov w2, #0x3                // =3
+54fc mov x0, x1
+5500 blr x3
+5504 ldr x3, [x19, #0x50]
+5508 cbz x3, 0x551c <main+0x29c>
+550c add x1, x19, #0x40
+5510 mov w2, #0x3                // =3
+5514 mov x0, x1
+5518 blr x3
+551c ldr x0, [x19, #0x20]
+5520 add x1, x19, #0x30
+5524 cmp x0, x1
+552c ldr x1, [x19, #0x30]
+5530 add x1, x1, #0x1
+5534 bl 0x4be0 <_ZdlPvm@plt>
+5538 mov x1, x19
+553c ldr x0, [x1], #0x10
+5540 cmp x0, x1
+5548 ldr x1, [x19, #0x10]
+554c add x1, x1, #0x1
+5550 bl 0x4be0 <_ZdlPvm@plt>
+5554 sub x0, x19, #0x80
+5558 cmp x19, x20
+5560 ldr x0, [sp, #0x38]
+5564 bl 0xa440 <VersionNumber::fromString(std::__cxx11::basic_string<char, std::char_traits<char>,
+5568 mov x3, x0
+556c lsr x0, x0, #32
+5570 str w3, [sp, #0x150]
+5574 mrs x19, TPIDR_EL0
+5578 str w0, [sp, #0x154]
+557c str w1, [sp, #0x158]
+5580 cmp w3, #0x1
+5588 add x4, x19, #0x0, lsl #12  // =0x0
+558c add x4, x4, #0x10
+5590 mov w0, #0x33               // =51
+5594 strb w0, [sp, #0x25c]
+5598 mov w5, #0x9944             // =39236
+559c movk w5, #0xac62, lsl #16
+55a0 str w5, [sp, #0x258]
+55a4 ldr x0, [x4, #0x100]
+55a8 tbnz w0, #0x0, 0x55dc <main+0x35c>
+55ac ldrb w7, [x20, #0x4]
+55b0 mov x6, #0x1                // =1
+55b4 strb w7, [x4, #0x10c]
+55b8 add x1, x4, #0x108
+55bc adrp x2, 0x18800000 <data_start>
+55c0 adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+55c4 add x2, x2, #0x8
+55c8 add x0, x0, #0x9e0
+55cc strb w3, [x1, #0x5]
+55d0 str x6, [x4, #0x100]
+55d4 str w5, [x4, #0x108]
+55d8 bl 0x4d00 <__cxa_thread_atexit@plt>
+55dc add x0, x19, #0x0, lsl #12  // =0x0
+55e0 add x0, x0, #0x10
+55e4 add x2, x0, #0x108
+55e8 ldrb w0, [x0, #0x10d]
+55ec tbz w0, #0x0, 0x562c <main+0x3ac>
+55f0 mov x4, #0xed37             // =60727
+55f4 mov w0, #0x0                // =0
+55f8 movk x4, #0xc107, lsl #16
+55fc movk x4, #0x6d33, lsl #32
+5600 movk x4, #0x431f, lsl #48
+5604 ldrb w1, [x2]
+5608 lsr x3, x4, x0
+560c add w0, w0, #0x8
+5610 eor w1, w1, w3
+5614 strb w1, [x2], #0x1
+5618 cmp w0, #0x28
+5620 add x0, x19, #0x0, lsl #12  // =0x0
+5624 add x0, x0, #0x10
+5628 strb wzr, [x0, #0x10d]
+562c add x1, x19, #0x0, lsl #12  // =0x0
+5630 add x1, x1, #0x10
+5634 mov x0, x20
+5638 add x1, x1, #0x108
+563c bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5640 ldr x0, [sp, #0x30]
+5644 mov x1, x20
+5648 bl 0xa200 <bool std::operator==<char, std::char_traits<char>, std::allocator<char>>(std::__cx
+564c and w21, w0, #0xff
+5650 mov x0, x20
+5654 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5658 tbz w21, #0x0, 0x61cc <main+0xf4c>
+565c adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+5660 ldr x2, [x2, #0xfe0]
+5664 add x3, sp, #0x260
+5668 add x4, sp, #0x260
+566c adrp x0, 0x7000 <main+0x1d80>
+5670 adrp x1, 0x7000 <main+0x1d80>
+5674 add x0, x0, #0xa00
+5678 stp xzr, xzr, [x3, #-0x88]
+567c add x1, x1, #0xd4c
+5680 ldp x2, x3, [x2]
+5684 stp x2, x3, [x4, #-0xd8]
+5688 stp x1, x0, [sp, #0x1e8]
+568c bl 0xdc40 <imb::TinyEncryption::randomChallenge()>
+5690 adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+5694 ldr x2, [x2, #0xe80]
+5698 add x25, sp, #0x218
+569c mov x27, x0
+56a0 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+56a4 mov x0, x25
+56a8 add x1, x1, #0x630  ; "preparing"
+56ac str x2, [sp, #0x40]
+56b0 str x2, [sp, #0x150]
+56b4 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+56b8 ldr x1, [sp, #0x218]
+56bc adrp x3, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+56c0 ldr x2, [sp, #0x220]
+56c4 add x3, x3, #0x640  ; "initialising"
+56c8 ldr x23, [sp, #0x28]
+56cc mov x0, x23
+56d0 bl 0x7dd0 <imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::
+56d4 add x1, sp, #0x238
+56d8 mov x21, x0
+56dc mov x22, x1
+56e0 mov x0, x1
+56e4 adrp x24, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*,
+56e8 add x1, x24, #0x650  ; "session"
+56ec str x22, [sp, #0x18]
+56f0 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+56f4 mov x8, x20
+56f8 mov x0, x27
+56fc bl 0xd2e0 <imb::conversion::toString[abi:cxx11](unsigned long)>
+5700 ldr x1, [sp, #0x238]
+5704 mov x3, x20
+5708 ldr x2, [sp, #0x240]
+570c mov x0, x21
+5710 bl 0x7e24 <imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::
+5714 mov x0, x20
+5718 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+571c mov x0, x22
+5720 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5724 mov x0, x25
+5728 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+572c mov x0, x23
+5730 bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+5734 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+5738 ldr x0, [x0, #0xf70]
+573c add x22, sp, #0x90
+5740 mov x8, x22
+5744 bl 0xc8e0 <imb::paramblock::readParamBlock[abi:cxx11](std::istream&)>
+5748 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+574c mov x0, x20
+5750 add x1, x1, #0x658  ; "numChannels"
+5754 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5758 mov x1, x20
+575c mov x0, x22
+5760 bl 0xb400 <int imb::paramblock::fromParamBlock<int>(std::map<std::__cxx11::basic_string<char,
+5764 mov w23, w0
+5768 mov x0, x20
+576c bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5770 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+5774 mov x0, x20
+5778 add x1, x1, #0x668  ; "sampleRate"
+577c bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5780 mov x1, x20
+5784 mov x0, x22
+5788 bl 0xb7c0 <float imb::paramblock::fromParamBlock<float>(std::map<std::__cxx11::basic_string<c
+578c fmov s8, s0
+5790 mov x0, x20
+5794 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5798 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+579c mov x0, x20
+57a0 add x1, x1, #0x678  ; "maxBlockSize"
+57a4 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+57a8 mov x1, x20
+57ac mov x0, x22
+57b0 bl 0xb400 <int imb::paramblock::fromParamBlock<int>(std::map<std::__cxx11::basic_string<char,
+57b4 mov w21, w0
+57b8 mov x0, x20
+57bc bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+57c0 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+57c4 mov x0, x20
+57c8 add x1, x1, #0x688  ; "highQuality"
+57cc bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+57d0 mov x1, x20
+57d4 mov x0, x22
+57d8 bl 0xbb80 <bool imb::paramblock::fromParamBlock<bool>(std::map<std::__cxx11::basic_string<cha
+57dc mov x0, x20
+57e0 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+57e4 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+57e8 mov x0, x20
+57ec add x1, x1, #0x698  ; "residual"
+57f0 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+57f4 mov x1, x20
+57f8 mov x0, x22
+57fc bl 0xbb80 <bool imb::paramblock::fromParamBlock<bool>(std::map<std::__cxx11::basic_string<cha
+5800 and w1, w0, #0xff
+5804 mov x0, x20
+5808 mov w26, w1
+580c str w1, [sp]
+5810 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5814 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+5818 mov x0, x20
+581c add x1, x1, #0x6a8  ; "numThreads"
+5820 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5824 mov x1, x20
+5828 mov x0, x22
+582c bl 0xb400 <int imb::paramblock::fromParamBlock<int>(std::map<std::__cxx11::basic_string<char,
+5830 mov w28, w0
+5834 mov x0, x20
+5838 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+583c add x1, x24, #0x650  ; "session"
+5840 mov x0, x20
+5844 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5848 add x0, sp, #0x1f8
+584c mov x1, x20
+5850 mov x8, x0
+5854 str x0, [sp, #0x48]
+5858 mov x0, x22
+585c bl 0xad40 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> imb
+5860 mov x0, x20
+5864 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5868 ldr x0, [sp, #0x1e8]
+586c cbz x0, 0x58a0 <main+0x620>
+5870 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+5874 add x24, sp, #0x1d8
+5878 add x1, x1, #0x6b8  ; "time"
+587c mov x0, x20
+5880 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5884 mov x1, x20
+5888 mov x0, x22
+588c bl 0xb400 <int imb::paramblock::fromParamBlock<int>(std::map<std::__cxx11::basic_string<char,
+5890 mov w22, w0
+5894 mov x0, x20
+5898 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+589c tbz w22, #0x0, 0x691c <main+0x169c>
+58a0 ldr x22, [sp, #0x18]
+58a4 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+58a8 add x24, sp, #0x1d8
+58ac add x1, x1, #0x6c0  ; "global"
+58b0 mov x0, x22
+58b4 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+58b8 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+58bc mov x0, x20
+58c0 add x1, x1, #0x6c8  ; "[child] "
+58c4 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+58c8 mov x0, x20
+58cc bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+58d0 mov x0, x22
+58d4 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+58d8 and w0, w26, #0xff
+58dc add w22, w0, #0x4
+58e0 ldr x0, [sp, #0x48]
+58e4 mul w22, w22, w23
+58e8 str w22, [sp, #0x64]
+58ec bl 0xda00 <imb::conversion::toUInt64(std::__cxx11::basic_string<char, std::char_traits<char>,
+58f0 mov x2, x0
+58f4 add x1, sp, #0x68
+58f8 add x0, sp, #0x188
+58fc str x2, [sp, #0x68]
+5900 bl 0xdbc0 <imb::TinyEncryption::decipher(unsigned long const&) const>
+5904 cmp x27, x0
+590c adrp x0, 0x33000 <_IO_stdin_used+0xa20>
+5910 add x3, x19, #0x0, lsl #12  // =0x0
+5914 add x3, x3, #0x10
+5918 ldr x1, [sp, #0x40]
+591c str x1, [sp, #0x150]
+5920 ldr d0, [x0, #0x618]
+5924 mov w0, #0xdba              // =3514
+5928 strh w0, [sp, #0x260]
+592c ldr x0, [x3, #0x110]
+5930 str d0, [sp, #0x258]
+5934 tbnz w0, #0x0, 0x596c <main+0x6ec>
+5938 ldr x4, [sp, #0x258]
+593c add x1, x3, #0x118
+5940 ldrh w2, [x20, #0x8]
+5944 mov x5, #0x1                // =1
+5948 mov w0, #0x1                // =1
+594c strh w2, [x1, #0x8]
+5950 adrp x2, 0x18800000 <data_start>
+5954 add x2, x2, #0x8
+5958 strb w0, [x1, #0xa]
+595c adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+5960 add x0, x0, #0xa60
+5964 stp x5, x4, [x3, #0x110]
+5968 bl 0x4d00 <__cxa_thread_atexit@plt>
+596c add x1, x19, #0x0, lsl #12  // =0x0
+5970 add x1, x1, #0x10
+5974 add x0, x1, #0x118
+5978 ldrb w1, [x1, #0x122]
+597c tbz w1, #0x0, 0x5984 <main+0x704>
+5980 bl 0x7a84 <ay::obfuscated_data<10ull, 6998023196564196829ull>::decrypt() (.part.0)>
+5984 ldr x0, [sp, #0x18]
+5988 add x1, x19, #0x0, lsl #12  // =0x0
+598c add x1, x1, #0x10
+5990 add x1, x1, #0x118
+5994 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5998 add x3, x19, #0x0, lsl #12  // =0x0
+599c add x3, x3, #0x10
+59a0 ldr x0, [x3, #0x128]
+59a4 tbnz w0, #0x0, 0x59e0 <main+0x760>
+59a8 mov x4, #0x79ae             // =31150
+59ac add x1, x3, #0x130
+59b0 movk x4, #0x5b46, lsl #16
+59b4 mov w0, #0x1                // =1
+59b8 movk x4, #0x9c71, lsl #32
+59bc mov x2, #0x1                // =1
+59c0 movk x4, #0x6179, lsl #48
+59c4 strb w0, [x1, #0x8]
+59c8 adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+59cc add x0, x0, #0xa80
+59d0 stp x2, x4, [x3, #0x128]
+59d4 adrp x2, 0x18800000 <data_start>
+59d8 add x2, x2, #0x8
+59dc bl 0x4d00 <__cxa_thread_atexit@plt>
+59e0 add x1, x19, #0x0, lsl #12  // =0x0
+59e4 add x1, x1, #0x10
+59e8 add x0, x1, #0x130
+59ec ldrb w1, [x1, #0x138]
+59f0 tbz w1, #0x0, 0x59f8 <main+0x778>
+59f4 bl 0x7ac8 <ay::obfuscated_data<8ull, 6998023196564196829ull>::decrypt() (.part.0)>
+59f8 add x1, x19, #0x0, lsl #12  // =0x0
+59fc add x1, x1, #0x10
+5a00 mov x0, x20
+5a04 add x1, x1, #0x130
+5a08 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5a0c ldr x1, [sp, #0x238]
+5a10 mov x3, x20
+5a14 ldr x2, [sp, #0x240]
+5a18 ldr x24, [sp, #0x28]
+5a1c mov x0, x24
+5a20 bl 0x7e24 <imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::
+5a24 mov x0, x20
+5a28 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5a2c ldr x0, [sp, #0x18]
+5a30 add x27, sp, #0x70
+5a34 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5a38 str x24, [sp, #0x28]
+5a3c mov x0, x24
+5a40 bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+5a44 add x24, sp, #0x1d8
+5a48 mov x0, x27
+5a4c bl 0xdf10 <zplane::StemsPro::StemsPro()>
+5a50 adrp x1, 0x18800000 <data_start>
+5a54 add x0, x1, #0x58
+5a58 add x0, x0, #0x8
+5a5c add x1, sp, #0x78
+5a60 str x27, [sp, #0x78]
+5a64 bl 0x85a8 <void*& std::vector<void*, std::allocator<void*>>::emplace_back<void*>(void*&&) (.i
+5a68 fmov s0, s8
+5a6c mov w4, w26
+5a70 mov w3, w28
+5a74 mov w2, w21
+5a78 mov w1, w23
+5a7c mov x0, x27
+5a80 bl 0xdf68 <zplane::StemsPro::initialize(int, float, int, int, bool)>
+5a84 bl 0x8180 <(anonymous namespace)::handleErrorCode(int)>
+5a88 sxtw x24, w21
+5a8c mov x0, x27
+5a90 mov x1, x24
+5a94 bl 0xe1c8 <zplane::StemsPro::setOutputBlockSize(unsigned long)>
+5a98 bl 0x8180 <(anonymous namespace)::handleErrorCode(int)>
+5a9c mov x1, x24
+5aa0 mov x0, x27
+5aa4 bl 0xe1c8 <zplane::StemsPro::setOutputBlockSize(unsigned long)>
+5aa8 bl 0x8180 <(anonymous namespace)::handleErrorCode(int)>
+5aac mov x0, x27
+5ab0 bl 0xe210 <zplane::StemsPro::getMaxFramesNeeded()>
+5ab4 mov x24, x0
+5ab8 mov x0, x27
+5abc bl 0xe208 <zplane::StemsPro::getFramesNeeded()>
+5ac0 add x26, sp, #0xc0
+5ac4 mov w2, w21
+5ac8 mov x0, x26
+5acc mov w1, w23
+5ad0 str x26, [sp, #0x50]
+5ad4 bl 0xb2a0 <AudioBuffer::AudioBuffer(int, int)>
+5ad8 add x1, sp, #0xf0
+5adc mov w2, w21
+5ae0 mov x0, x1
+5ae4 mov w1, w22
+5ae8 str x0, [sp, #0x8]
+5aec bl 0xb2a0 <AudioBuffer::AudioBuffer(int, int)>
+5af0 adrp x1, 0x18800000 <data_start>
+5af4 add x0, x1, #0x58
+5af8 add x0, x0, #0x8
+5afc add x1, sp, #0x80
+5b00 str x26, [sp, #0x80]
+5b04 bl 0x85a8 <void*& std::vector<void*, std::allocator<void*>>::emplace_back<void*>(void*&&) (.i
+5b08 ldr x22, [sp, #0x28]
+5b0c add w21, w21, w24
+5b10 mov w1, w23
+5b14 mov w2, w21
+5b18 mov x0, x22
+5b1c bl 0xb2a0 <AudioBuffer::AudioBuffer(int, int)>
+5b20 mov x0, x27
+5b24 str w21, [sp, #0x180]
+5b28 str wzr, [sp, #0x184]
+5b2c bl 0xe208 <zplane::StemsPro::getFramesNeeded()>
+5b30 mov x2, x0
+5b34 adrp x0, 0x18800000 <data_start>
+5b38 add x0, x0, #0x58
+5b3c add x1, sp, #0x88
+5b40 add x0, x0, #0x8
+5b44 str x1, [sp, #0x58]
+5b48 str x22, [sp, #0x88]
+5b4c str w2, [sp, #0x180]
+5b50 str wzr, [sp, #0x184]
+5b54 bl 0x85a8 <void*& std::vector<void*, std::allocator<void*>>::emplace_back<void*>(void*&&) (.i
+5b58 adrp x0, 0x33000 <_IO_stdin_used+0xa20>
+5b5c add x3, x19, #0x0, lsl #12  // =0x0
+5b60 add x3, x3, #0x10
+5b64 ldr x1, [sp, #0x40]
+5b68 str x1, [sp, #0x120]
+5b6c ldr d0, [x0, #0x620]
+5b70 mov w0, #-0x6860            // =-26720
+5b74 strh w0, [sp, #0x260]
+5b78 ldr x0, [x3, #0x140]
+5b7c str d0, [sp, #0x258]
+5b80 tbnz w0, #0x0, 0x5bb8 <main+0x938>
+5b84 ldr x4, [sp, #0x258]
+5b88 add x1, x3, #0x148
+5b8c ldrh w2, [x20, #0x8]
+5b90 mov x5, #0x1                // =1
+5b94 mov w0, #0x1                // =1
+5b98 strh w2, [x1, #0x8]
+5b9c adrp x2, 0x18800000 <data_start>
+5ba0 add x2, x2, #0x8
+5ba4 strb w0, [x1, #0xa]
+5ba8 adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+5bac add x0, x0, #0xaa0
+5bb0 stp x5, x4, [x3, #0x140]
+5bb4 bl 0x4d00 <__cxa_thread_atexit@plt>
+5bb8 add x1, x19, #0x0, lsl #12  // =0x0
+5bbc add x1, x1, #0x10
+5bc0 add x0, x1, #0x148
+5bc4 ldrb w1, [x1, #0x152]
+5bc8 tbz w1, #0x0, 0x5bd0 <main+0x950>
+5bcc bl 0x7b08 <ay::obfuscated_data<10ull, 15121211008207919047ull>::decrypt() (.part.0)>
+5bd0 add x1, x19, #0x0, lsl #12  // =0x0
+5bd4 add x1, x1, #0x10
+5bd8 mov x0, x25
+5bdc add x1, x1, #0x148
+5be0 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5be4 add x3, x19, #0x0, lsl #12  // =0x0
+5be8 add x3, x3, #0x10
+5bec mov w1, #0x4b               // =75
+5bf0 strb w1, [sp, #0x25c]
+5bf4 mov w0, #0xf8a3             // =63651
+5bf8 movk w0, #0xb89b, lsl #16
+5bfc str w0, [sp, #0x258]
+5c00 ldr x1, [x3, #0x158]
+5c04 tbnz w1, #0x0, 0x5c3c <main+0x9bc>
+5c08 add x1, x3, #0x160
+5c0c ldrb w2, [x20, #0x4]
+5c10 mov w5, #0x1                // =1
+5c14 mov x4, #0x1                // =1
+5c18 str w0, [x3, #0x160]
+5c1c adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+5c20 add x0, x0, #0xac0
+5c24 strb w2, [x1, #0x4]
+5c28 adrp x2, 0x18800000 <data_start>
+5c2c add x2, x2, #0x8
+5c30 strb w5, [x1, #0x5]
+5c34 str x4, [x3, #0x158]
+5c38 bl 0x4d00 <__cxa_thread_atexit@plt>
+5c3c add x1, x19, #0x0, lsl #12  // =0x0
+5c40 add x1, x1, #0x10
+5c44 add x0, x1, #0x160
+5c48 ldrb w1, [x1, #0x165]
+5c4c tbz w1, #0x0, 0x5c54 <main+0x9d4>
+5c50 bl 0x7b48 <ay::obfuscated_data<5ull, 15121211008207919047ull>::decrypt() (.part.0)>
+5c54 ldr x21, [sp, #0x18]
+5c58 add x1, x19, #0x0, lsl #12  // =0x0
+5c5c add x1, x1, #0x10
+5c60 add x1, x1, #0x160
+5c64 mov x0, x21
+5c68 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5c6c add x2, sp, #0x120
+5c70 mov x3, x21
+5c74 ldr x1, [sp, #0x218]
+5c78 mov x0, x2
+5c7c ldr x2, [sp, #0x220]
+5c80 str x0, [sp]
+5c84 bl 0x7e24 <imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::
+5c88 add x3, x19, #0x0, lsl #12  // =0x0
+5c8c add x3, x3, #0x10
+5c90 adrp x1, 0x33000 <_IO_stdin_used+0xa20>
+5c94 add x1, x1, #0x698
+5c98 mov x21, x0
+5c9c add x0, sp, #0x260
+5ca0 ldr x2, [x3, #0x168]
+5ca4 ldp x4, x5, [x1, #0x8]
+5ca8 stp x4, x5, [x0, #-0x8]
+5cac ldrh w0, [x1, #0x18]
+5cb0 strh w0, [x20, #0x10]
+5cb4 tbnz w2, #0x0, 0x5ce8 <main+0xa68>
+5cb8 add x1, x3, #0x170
+5cbc stp x4, x5, [x3, #0x170]
+5cc0 mov w2, #0x1                // =1
+5cc4 strh w0, [x1, #0x10]
+5cc8 mov x0, #0x1                // =1
+5ccc strb w2, [x1, #0x12]
+5cd0 adrp x2, 0x18800000 <data_start>
+5cd4 add x2, x2, #0x8
+5cd8 str x0, [x3, #0x168]
+5cdc adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+5ce0 add x0, x0, #0xae0
+5ce4 bl 0x4d00 <__cxa_thread_atexit@plt>
+5ce8 add x1, x19, #0x0, lsl #12  // =0x0
+5cec add x1, x1, #0x10  ; "parameters.numChannels > 0"
+5cf0 add x0, x1, #0x170  ; " resampleInstances.size() }, SampleCount{ getOut"
+5cf4 ldrb w1, [x1, #0x182]
+5cf8 tbz w1, #0x0, 0x5d00 <main+0xa80>
+5cfc bl 0x7b88 <ay::obfuscated_data<18ull, 15240658050002563497ull>::decrypt() (.part.0)>
+5d00 add x1, x19, #0x0, lsl #12  // =0x0
+5d04 add x1, x1, #0x10  ; "parameters.numChannels > 0"
+5d08 mov x0, x20
+5d0c add x1, x1, #0x170  ; " resampleInstances.size() }, SampleCount{ getOut"
+5d10 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+5d14 ldr x1, [sp, #0x258]
+5d18 mov x0, x21
+5d1c ldr x2, [sp, #0x260]
+5d20 add x3, sp, #0x64
+5d24 bl 0x8000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::
+5d28 mov x0, x20
+5d2c bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5d30 ldr x0, [sp, #0x18]
+5d34 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5d38 mov x0, x25
+5d3c bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+5d40 ldr x21, [sp]
+5d44 mov x0, x21
+5d48 bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+5d4c ldr x2, [sp, #0x8]
+5d50 adrp x0, 0x18800000 <data_start>
+5d54 add x0, x0, #0x58
+5d58 mov x1, x21
+5d5c add x0, x0, #0x8
+5d60 str x2, [sp, #0x120]
+5d64 bl 0x85a8 <void*& std::vector<void*, std::allocator<void*>>::emplace_back<void*>(void*&&) (.i
+5d68 adrp x24, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+5d6c ldr x24, [x24, #0xf70]
+5d70 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+5d74 ldr x0, [x0, #0xe80]
+5d78 str x0, [sp, #0x20]
+5d80 ldr x8, [sp]
+5d84 mov x0, x24
+5d88 bl 0xc8e0 <imb::paramblock::readParamBlock[abi:cxx11](std::istream&)>
+5d8c adrp x0, 0x33000 <_IO_stdin_used+0xa20>
+5d90 add x3, x19, #0x0, lsl #12  // =0x0
+5d94 add x3, x3, #0x10
+5d98 mov w1, #0x23               // =35
+5d9c strb w1, [sp, #0x262]
+5da0 ldr d0, [x0, #0x628]
+5da4 mov w0, #0xe84              // =3716
+5da8 strh w0, [sp, #0x260]
+5dac ldr x0, [x3, #0x188]
+5db0 str d0, [sp, #0x258]
+5db4 tbnz w0, #0x0, 0x5dec <main+0xb6c>
+5db8 add x1, x3, #0x190
+5dbc ldur w0, [x20, #0x7]
+5dc0 ldr x2, [x20]
+5dc4 mov w5, #0x1                // =1
+5dc8 mov x4, #0x1                // =1
+5dcc stp x4, x2, [x3, #0x188]
+5dd0 adrp x2, 0x18800000 <data_start>
+5dd4 add x2, x2, #0x8
+5dd8 stur w0, [x1, #0x7]
+5ddc adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+5de0 add x0, x0, #0xb00
+5de4 strb w5, [x1, #0xb]
+5de8 bl 0x4d00 <__cxa_thread_atexit@plt>
+5dec add x0, x19, #0x0, lsl #12  // =0x0
+5df0 add x0, x0, #0x10
+5df4 add x2, x0, #0x190
+5df8 ldrb w0, [x0, #0x19b]
+5dfc tbz w0, #0x0, 0x5e38 <main+0xbb8>
+5e00 mov x0, #0x0                // =0
+5e04 mov x4, #0x7de1             // =32225
+5e08 ldrb w3, [x2, x0]
+5e0c movk x4, #0x7f23, lsl #16
+5e10 ubfiz x1, x0, #3, #3
+5e14 movk x4, #0xcf33, lsl #32
+5e18 movk x4, #0xafe3, lsl #48
+5e1c lsr x1, x4, x1
+5e20 eor w1, w1, w3
+5e24 strb w1, [x2, x0]
+5e28 add x0, x0, #0x1
+5e2c cmp x0, #0xb
+5e34 strb wzr, [x2, #0xb]
+5e38 add x25, x19, #0x0, lsl #12 // =0x0
+5e3c add x25, x25, #0x10
+5e40 add x23, sp, #0x268
+5e44 add x22, x25, #0x190
+5e48 str x23, [sp, #0x258]
+5e4c mov x0, x22
+5e50 bl 0x5140 <strlen@plt>
+5e54 mov x21, x0
+5e58 cmp x0, #0x1
+5e60 cbz x0, 0x5e74 <main+0xbf4>
+5e64 mov x2, x0
+5e68 mov x1, x22
+5e6c mov x0, x23
+5e70 bl 0x4e60 <memcpy@plt>
+5e74 ldr x0, [sp]
+5e78 str x21, [sp, #0x260]
+5e7c strb wzr, [x23, x21]
+5e80 mov x1, x20
+5e84 bl 0xb400 <int imb::paramblock::fromParamBlock<int>(std::map<std::__cxx11::basic_string<char,
+5e88 ldr x2, [sp, #0x258]
+5e8c mov w25, w0
+5e90 cmp x2, x23
+5e98 ldr x1, [sp, #0x268]
+5e9c mov x0, x2
+5ea0 add x1, x1, #0x1  ; "Samples()"
+5ea4 bl 0x4be0 <_ZdlPvm@plt>
+5ea8 add x3, x19, #0x0, lsl #12  // =0x0
+5eac add x3, x3, #0x10
+5eb0 mov w0, #0x4e68             // =20072
+5eb4 movk w0, #0xda33, lsl #16
+5eb8 str w0, [sp, #0x258]
+5ebc mov w2, #0x2ff0             // =12272
+5ec0 mov w1, #-0x1d              // =-29
+5ec4 ldr x0, [x3, #0x1a0]
+5ec8 strh w2, [sp, #0x25c]
+5ecc strb w1, [sp, #0x25e]
+5ed0 tbnz w0, #0x0, 0x5f08 <main+0xc88>
+5ed4 mov x0, #0x100000000000000  // =72057594037927936
+5ed8 add x1, x3, #0x1a8
+5edc ldr w2, [x20]
+5ee0 mov x4, #0x1                // =1
+5ee4 stp x4, x0, [x3, #0x1a0]
+5ee8 ldur w0, [x20, #0x3]
+5eec str w2, [x3, #0x1a8]
+5ef0 adrp x2, 0x18800000 <data_start>
+5ef4 add x2, x2, #0x8
+5ef8 stur w0, [x1, #0x3]
+5efc adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+5f00 add x0, x0, #0xb20
+5f04 bl 0x4d00 <__cxa_thread_atexit@plt>
+5f08 add x0, x19, #0x0, lsl #12  // =0x0
+5f0c add x0, x0, #0x10
+5f10 add x2, x0, #0x1a8
+5f14 ldrb w0, [x0, #0x1af]
+5f18 tbz w0, #0x0, 0x5f58 <main+0xcd8>
+5f1c mov w0, #0x0                // =0
+5f20 mov x3, #0x2d09             // =11529
+5f24 ldrb w1, [x2]
+5f28 movk x3, #0xb347, lsl #16
+5f2c movk x3, #0x419f, lsl #32
+5f30 movk x3, #0x37e3, lsl #48
+5f34 lsr x3, x3, x0
+5f38 add w0, w0, #0x8
+5f3c eor w1, w1, w3
+5f40 strb w1, [x2], #0x1
+5f44 cmp w0, #0x38
+5f4c add x0, x19, #0x0, lsl #12  // =0x0
+5f50 add x0, x0, #0x10
+5f54 strb wzr, [x0, #0x1af]
+5f58 add x26, x19, #0x0, lsl #12 // =0x0
+5f5c add x26, x26, #0x10
+5f60 str x23, [sp, #0x258]
+5f64 add x22, x26, #0x1a8
+5f68 mov x0, x22
+5f6c bl 0x5140 <strlen@plt>
+5f70 mov x21, x0
+5f74 cmp x0, #0x1
+5f7c cbz x0, 0x5f90 <main+0xd10>
+5f80 mov x2, x0
+5f84 mov x1, x22
+5f88 mov x0, x23
+5f8c bl 0x4e60 <memcpy@plt>
+5f90 ldr x0, [sp]
+5f94 str x21, [sp, #0x260]
+5f98 strb wzr, [x23, x21]
+5f9c mov x1, x20
+5fa0 bl 0xabe0 <std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca
+5fa4 mov x1, x0
+5fa8 add x0, sp, #0x128
+5fac cmp x1, x0
+5fb0 add x0, sp, #0x248
+5fb4 str x0, [sp, #0x10]
+5fb8 str x0, [sp, #0x238]
+5fc0 ldp x1, x2, [x1, #0x40]
+5fc4 ldr x0, [sp, #0x18]
+5fc8 add x2, x1, x2
+5fcc bl 0x7ea0 <void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+5fd0 ldr x0, [sp, #0x258]
+5fd4 cmp x0, x23
+5fdc ldr x1, [sp, #0x268]
+5fe0 add x1, x1, #0x1  ; "Samples()"
+5fe4 bl 0x4be0 <_ZdlPvm@plt>
+5fe8 add x0, x19, #0x0, lsl #12  // =0x0
+5fec add x0, x0, #0x10
+5ff0 mov w1, #-0x4286            // =-17030
+5ff4 strh w1, [sp, #0x25c]
+5ff8 mov w2, #0x733f             // =29503
+5ffc movk w2, #0x7acc, lsl #16
+6000 str w2, [sp, #0x258]
+6004 ldr x1, [x0, #0x1b0]
+6008 tbnz w1, #0x0, 0x6044 <main+0xdc4>
+600c add x1, x0, #0x1b8
+6010 ldrh w3, [x20, #0x4]
+6014 ldr w4, [x20]
+6018 mov w2, #0x1                // =1
+601c str w4, [x0, #0x1b8]
+6020 strh w3, [x1, #0x4]
+6024 mov x3, #0x1                // =1
+6028 strb w2, [x1, #0x6]
+602c adrp x2, 0x18800000 <data_start>
+6030 add x2, x2, #0x8
+6034 str x3, [x0, #0x1b0]
+6038 adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+603c add x0, x0, #0xb40
+6040 bl 0x4d00 <__cxa_thread_atexit@plt>
+6044 add x0, x19, #0x0, lsl #12  // =0x0
+6048 add x0, x0, #0x10
+604c add x2, x0, #0x1b8
+6050 ldrb w0, [x0, #0x1be]
+6054 tbz w0, #0x0, 0x6098 <main+0xe18>
+6058 mov w0, #0x0                // =0
+6060 mov x3, #0x1f5d             // =8029
+6064 ldrb w1, [x2]
+6068 movk x3, #0x19a3, lsl #16
+606c movk x3, #0xbd11, lsl #32
+6070 movk x3, #0x1b75, lsl #48
+6074 lsr x3, x3, x0
+6078 add w0, w0, #0x8
+607c eor w1, w1, w3
+6080 strb w1, [x2], #0x1
+6084 cmp w0, #0x30
+608c add x0, x19, #0x0, lsl #12  // =0x0
+6090 add x0, x0, #0x10
+6094 strb wzr, [x0, #0x1be]
+6098 add x26, x19, #0x0, lsl #12 // =0x0
+609c add x26, x26, #0x10
+60a0 str x23, [sp, #0x258]
+60a4 add x22, x26, #0x1b8
+60a8 mov x0, x22
+60ac bl 0x5140 <strlen@plt>
+60b0 mov x21, x0
+60b4 cmp x0, #0x1
+60bc cbz x0, 0x60d0 <main+0xe50>
+60c0 mov x2, x0
+60c4 mov x1, x22
+60c8 mov x0, x23
+60cc bl 0x4e60 <memcpy@plt>
+60d0 str x21, [sp, #0x260]
+60d4 strb wzr, [x23, x21]
+60d8 ldr x2, [sp, #0x240]
+60dc ldr x0, [sp, #0x260]
+60e0 cmp x2, x0
+60e8 ldr x0, [sp, #0x258]
+60ec cmp x0, x23
+60f4 ldr x1, [sp, #0x268]
+60f8 add x1, x1, #0x1  ; "Samples()"
+60fc bl 0x4be0 <_ZdlPvm@plt>
+6100 ldr x0, [sp, #0x18]
+6104 adrp x19, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+6108 ldr x19, [x19, #0xe80]
+610c bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6110 ldr x0, [sp, #0x130]
+6114 bl 0x82ac <std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca
+6118 b 0x613c <main+0xebc>
+611c ldr x3, [sp, #0x108]
+6120 mov x0, x27
+6124 mov x2, #0x0                // =0
+6128 bl 0xe120 <zplane::StemsPro::process(float const* const*, unsigned long, float* const*)>
+612c ldr x0, [sp, #0x8]
+6130 mov x1, x19
+6134 mov w2, #-0x1               // =-1
+6138 bl 0xa040 <writeAudioParamBlock(AudioBuffer const&, std::ostream&, int)>
+613c mov x0, x27
+6140 bl 0xe208 <zplane::StemsPro::getFramesNeeded()>
+6144 ldr x1, [sp, #0x168]
+6148 cbz x0, 0x611c <main+0xe9c>
+614c ldrsw x2, [sp, #0x184]
+6150 mov x0, x27
+6154 bl 0xe158 <zplane::StemsPro::finishProcessing(float const* const*, unsigned long)>
+6158 adrp x21, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+615c ldr x21, [x21, #0xe80]
+6160 mov w22, #0xa               // =10
+6164 b 0x6174 <main+0xef4>
+6168 ldr x0, [sp, #0x8]
+616c mov x1, x21
+6170 bl 0xa040 <writeAudioParamBlock(AudioBuffer const&, std::ostream&, int)>
+6174 ldr x2, [sp]
+6178 mov x0, x27
+617c ldr x1, [sp, #0x108]
+6180 str xzr, [sp, #0x120]
+6184 bl 0xe190 <zplane::StemsPro::flushBuffer(float* const*, unsigned long&)>
+6188 mov w19, w0
+618c cbnz w0, 0x7224 <main+0x1fa4>
+6190 ldr x2, [sp, #0x120]
+6194 cbz x2, 0x6854 <main+0x15d4>
+6198 adrp x0, 0x18800000 <data_start>
+619c adrp x1, 0x18800000 <data_start>
+61a0 add x19, x1, #0x58
+61a4 ldrb w0, [x0, #0x58]
+61a8 tbz w0, #0x0, 0x6168 <main+0xee8>
+61ac bl 0x4d90 <rand@plt>
+61b0 sdiv w1, w0, w22
+61b4 add w1, w1, w1, lsl #2
+61b8 sub w1, w0, w1, lsl #1
+61bc cmp w1, #0x4
+61c4 ldr x2, [sp, #0x120]
+61c8 b 0x6168 <main+0xee8>
+61cc adrp x0, 0x33000 <_IO_stdin_used+0xa20>
+61d0 add x3, x19, #0x0, lsl #12  // =0x0
+61d4 add x3, x3, #0x10
+61d8 ldr d0, [x0, #0x640]
+61dc mov w0, #0x37b2             // =14258
+61e0 strh w0, [sp, #0x260]
+61e4 ldr x0, [x3, #0x1d8]
+61e8 str d0, [sp, #0x258]
+61ec tbnz w0, #0x0, 0x6224 <main+0xfa4>
+61f0 ldr x4, [sp, #0x258]
+61f4 add x1, x3, #0x1e0
+61f8 ldrh w7, [x20, #0x8]
+61fc mov w6, #0x1                // =1
+6200 mov x5, #0x1                // =1
+6204 adrp x2, 0x18800000 <data_start>
+6208 strh w7, [x1, #0x8]
+620c adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+6210 add x2, x2, #0x8
+6214 add x0, x0, #0xa00
+6218 strb w6, [x1, #0xa]
+621c stp x5, x4, [x3, #0x1d8]
+6220 bl 0x4d00 <__cxa_thread_atexit@plt>
+6224 add x0, x19, #0x0, lsl #12  // =0x0
+6228 add x0, x0, #0x10
+622c add x2, x0, #0x1e0
+6230 ldrb w0, [x0, #0x1ea]
+6234 tbz w0, #0x0, 0x6270 <main+0xff0>
+6238 mov x4, #0x37d7             // =14295
+623c mov x0, #0x0                // =0
+6240 movk x4, #0xa345, lsl #16
+6244 movk x4, #0xeb81, lsl #32
+6248 movk x4, #0x5de3, lsl #48
+624c ldrb w3, [x2, x0]
+6250 ubfiz x1, x0, #3, #3
+6254 lsr x1, x4, x1
+6258 eor w1, w1, w3
+625c strb w1, [x2, x0]
+6260 add x0, x0, #0x1
+6264 cmp x0, #0xa
+626c strb wzr, [x2, #0xa]
+6270 add x1, x19, #0x0, lsl #12  // =0x0
+6274 add x1, x1, #0x10
+6278 mov x0, x20
+627c add x1, x1, #0x1e0
+6280 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+6284 ldr x0, [sp, #0x30]
+6288 mov x1, x20
+628c bl 0xa200 <bool std::operator==<char, std::char_traits<char>, std::allocator<char>>(std::__cx
+6290 and w19, w0, #0xff
+6294 mov x0, x20
+6298 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+629c tbnz w19, #0x0, 0x68f8 <main+0x1678>
+62a0 ldr x0, [sp, #0x38]
+62a4 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+62a8 ldr x0, [sp, #0x30]
+62ac bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+62b0 ldr x23, [sp, #0x510]
+62b4 ldr x24, [sp, #0x518]
+62b8 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+62bc ldr x0, [x0, #0xfa8]
+62c0 ldr x2, [sp, #0x4d8]
+62c4 ldr x1, [x0]
+62c8 subs x2, x2, x1
+62cc mov x1, #0x0                // =0
+62d4 ldr x19, [sp, #0x4f0]
+62d8 mov w0, #0x0                // =0
+62dc ldr x20, [sp, #0x4f8]
+62e0 add sp, sp, #0x4e0
+62e4 ldp x21, x22, [sp, #0x20]
+62e8 ldp x25, x26, [sp, #0x40]
+62ec ldp x27, x28, [sp, #0x50]
+62f0 ldr d8, [sp, #0x60]
+62f4 ldp x29, x30, [sp], #0x70
+6300 ldp x0, x23, [x19, #0x8]
+6304 sub x23, x23, x0
+6308 bl 0x4d90 <rand@plt>
+630c ldr x2, [x19, #0x8]
+6310 asr x23, x23, #3
+6314 sdiv w1, w0, w23
+6318 msub w1, w1, w23, w0
+631c ldr x0, [x2, w1, sxtw #3]
+6320 stp xzr, xzr, [x0]
+6324 ldr x2, [sp, #0x120]
+6328 b 0x6168 <main+0xee8>
+632c ldr x0, [sp, #0x238]
+6330 ldr x21, [sp, #0x258]
+6334 cbz x2, 0x6390 <main+0x1110>
+6338 mov x1, x21
+633c bl 0x51f0 <memcmp@plt>
+6340 cbz w0, 0x6390 <main+0x1110>
+6344 cmp x21, x23
+634c ldr x1, [sp, #0x268]
+6350 mov x0, x21
+6354 add x1, x1, #0x1
+6358 bl 0x4be0 <_ZdlPvm@plt>
+635c b 0x6100 <main+0xe80>
+6360 ldrb w0, [x26, #0x1b8]
+6364 strb w0, [sp, #0x268]
+6368 b 0x60d0 <main+0xe50>
+636c ldrb w0, [x26, #0x1a8]
+6370 strb w0, [sp, #0x268]
+6374 b 0x5f90 <main+0xd10>
+6378 ldrb w0, [x25, #0x190]
+637c strb w0, [sp, #0x268]
+6380 b 0x5e74 <main+0xbf4>
+6384 str xzr, [sp, #0x240]
+6388 strb wzr, [sp, #0x248]
+638c b 0x5fd0 <main+0xd50>
+6390 cmp x21, x23
+6398 ldr x1, [sp, #0x268]
+639c mov x0, x21
+63a0 add x1, x1, #0x1
+63a4 bl 0x4be0 <_ZdlPvm@plt>
+63a8 ldp x1, x0, [sp, #0xc0]
+63ac cmp x0, x1
+63b4 mov x26, #-0x5555555555555556 // =-6148914691236517206
+63b8 sbfiz x28, x25, #2, #32
+63bc mov x22, #0x0               // =0
+63c0 mov x21, #0x0               // =0
+63c4 movk x26, #0xaaab
+63c8 ldr x1, [x1, x22]
+63cc mov x2, x28
+63d0 mov x0, x24
+63d4 bl 0x4e10 <_ZNSi4readEPcl@plt>
+63d8 ldp x1, x0, [sp, #0xc0]
+63dc add x21, x21, #0x1
+63e0 add x22, x22, #0x18
+63e4 sub x0, x0, x1
+63e8 asr x0, x0, #3
+63ec mul x0, x0, x26
+63f0 cmp x21, x0
+63f8 tbz w25, #0x1f, 0x6408 <main+0x1188>
+63fc ldp x0, x25, [x1]
+6400 sub x25, x25, x0
+6404 ubfx x25, x25, #2, #32
+6408 ldp x3, x4, [sp, #0x150]
+640c mov x21, #-0x5555555555555556 // =-6148914691236517206
+6410 ldr w5, [sp, #0x184]
+6414 movk x21, #0xaaab
+6418 ldr x28, [sp, #0xd8]
+641c ldp x0, x22, [x3]
+6420 sub x1, x4, x3
+6424 asr x1, x1, #3
+6428 sub x22, x22, x0
+642c mul x1, x1, x21
+6430 asr x22, x22, #2
+6434 sub w22, w22, w5
+6438 cmp w22, w25
+643c csel w22, w22, w25, le
+6440 cmp w1, #0x0
+6448 sbfiz x26, x22, #2, #32
+644c mov x25, #0x0               // =0
+6450 b 0x645c <main+0x11dc>
+6454 add x0, x25, x25, lsl #1
+6458 ldr x0, [x3, x0, lsl #3]
+645c add x0, x0, w5, sxtw #2
+6460 ldr x1, [x28, x25, lsl #3]
+6464 cmp x26, #0x4
+646c mov x2, x26
+6470 bl 0x4bd0 <memmove@plt>
+6474 ldp x3, x4, [sp, #0x150]
+6478 ldr w5, [sp, #0x184]
+647c sub x0, x4, x3
+6480 add x25, x25, #0x1
+6484 asr x0, x0, #3
+6488 mul x0, x0, x21
+648c cmp w0, w25
+6494 ldr w2, [sp, #0x180]
+6498 add w5, w5, w22
+649c str w5, [sp, #0x184]
+64a0 cmp w2, #0x0
+64a8 cmp w2, w5
+64b0 ldr x3, [sp, #0x108]
+64b4 ldr x1, [sp, #0x168]
+64b8 sxtw x2, w2
+64bc mov x0, x27
+64c0 bl 0xe120 <zplane::StemsPro::process(float const* const*, unsigned long, float* const*)>
+64c4 mov w21, w0
+64c8 cbnz w0, 0x6b30 <main+0x18b0>
+64cc ldp x3, x4, [sp, #0x150]
+64d0 mov x21, #-0x5555555555555556 // =-6148914691236517206
+64d4 movk x21, #0xaaab
+64d8 ldr w1, [sp, #0x180]
+64dc ldr w5, [sp, #0x184]
+64e0 cmp w1, w5
+64e4 sub x0, x4, x3
+64e8 csel w26, w1, w5, le
+64ec asr x0, x0, #3
+64f0 mul x0, x0, x21
+64f4 cmp w0, #0x0
+64fc sbfiz x25, x26, #2, #32
+6500 mov x23, #0x0               // =0
+6504 add x0, x23, x23, lsl #1
+6508 sbfiz x2, x5, #2, #32
+650c sub x2, x2, x25
+6510 ldr x0, [x3, x0, lsl #3]
+6514 add x1, x0, x25
+6518 cmp x2, #0x4
+6520 bl 0x4bd0 <memmove@plt>
+6524 ldp x3, x4, [sp, #0x150]
+6528 ldr w5, [sp, #0x184]
+652c sub x0, x4, x3
+6530 add x23, x23, #0x1
+6534 asr x0, x0, #3
+6538 mul x0, x0, x21
+653c cmp w23, w0
+6544 sub w5, w5, w26
+6548 mov x0, x27
+654c str w5, [sp, #0x184]
+6550 bl 0xe208 <zplane::StemsPro::getFramesNeeded()>
+6554 ldr x1, [sp, #0xc0]
+6558 mov x21, #-0x5555555555555556 // =-6148914691236517206
+655c ldp x3, x4, [sp, #0x150]
+6560 movk x21, #0xaaab
+6564 ldp x7, x1, [x1]
+6568 ldr w6, [sp, #0x184]
+656c ldr x28, [sp, #0xd8]
+6570 sub x5, x4, x3
+6574 ldr x2, [x3, #0x8]
+6578 str w0, [sp, #0x180]
+657c ldr x0, [x3]
+6580 asr x5, x5, #3
+6584 sub x1, x1, x7
+6588 sub x2, x2, x0
+658c asr x1, x1, #2
+6590 mul x5, x5, x21
+6594 asr x2, x2, #2
+6598 sub w1, w1, w22
+659c sub w2, w2, w6
+65a0 cmp w1, w2
+65a4 csel w26, w1, w2, le
+65a8 cmp w5, #0x0
+65b0 sbfiz x22, x22, #2, #32
+65b4 sbfiz x25, x26, #2, #32
+65b8 mov x23, #0x0               // =0
+65bc b 0x65c8 <main+0x1348>
+65c0 add x0, x23, x23, lsl #1
+65c4 ldr x0, [x3, x0, lsl #3]
+65c8 add x0, x0, w6, sxtw #2
+65cc ldr x5, [x28, x23, lsl #3]
+65d0 add x1, x5, x22
+65d4 cmp x25, #0x4
+65dc mov x2, x25
+65e0 bl 0x4bd0 <memmove@plt>
+65e4 ldp x3, x4, [sp, #0x150]
+65e8 ldr w6, [sp, #0x184]
+65ec sub x0, x4, x3
+65f0 add x23, x23, #0x1
+65f4 asr x0, x0, #3
+65f8 mul x0, x0, x21
+65fc cmp w23, w0
+6604 ldr x0, [sp, #0x8]
+6608 add w3, w6, w26
+660c ldr x1, [sp, #0x20]
+6610 mov w2, #-0x1               // =-1
+6614 str w3, [sp, #0x184]
+6618 bl 0xa040 <writeAudioParamBlock(AudioBuffer const&, std::ostream&, int)>
+661c adrp x0, 0x18800000 <data_start>
+6620 adrp x1, 0x18800000 <data_start>
+6624 add x21, x1, #0x58
+6628 ldrb w0, [x0, #0x58]
+662c tbnz w0, #0x0, 0x66b4 <main+0x1434>
+6630 ldr x1, [sp, #0x10]
+6634 ldr x0, [sp, #0x238]
+6638 cmp x0, x1
+6640 ldr x1, [sp, #0x248]
+6644 add x1, x1, #0x1
+6648 bl 0x4be0 <_ZdlPvm@plt>
+664c ldr x0, [sp, #0x130]
+6650 bl 0x82ac <std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca
+6654 b 0x5d80 <main+0xb00>
+665c ldr s0, [x1]
+6660 str s0, [x0]
+6664 b 0x647c <main+0x11fc>
+6668 ldr x3, [sp, #0x108]
+666c ldr x1, [sp, #0x168]
+6674 mov x0, x27
+6678 mov x2, #0x0                // =0
+667c bl 0xe120 <zplane::StemsPro::process(float const* const*, unsigned long, float* const*)>
+6680 mov x0, x27
+6684 bl 0xe208 <zplane::StemsPro::getFramesNeeded()>
+6688 ldr x1, [sp, #0x20]
+668c mov x3, x0
+6690 ldr x0, [sp, #0x8]
+6694 mov w2, #-0x1               // =-1
+6698 str w3, [sp, #0x180]
+669c bl 0xa040 <writeAudioParamBlock(AudioBuffer const&, std::ostream&, int)>
+66a0 adrp x0, 0x18800000 <data_start>
+66a4 adrp x1, 0x18800000 <data_start>
+66a8 add x21, x1, #0x58
+66ac ldrb w0, [x0, #0x58]
+66b0 tbz w0, #0x0, 0x6630 <main+0x13b0>
+66b4 bl 0x4d90 <rand@plt>
+66b8 mov w1, #0xa                // =10
+66bc sdiv w1, w0, w1
+66c0 add w1, w1, w1, lsl #2
+66c4 sub w1, w0, w1, lsl #1
+66c8 cmp w1, #0x4
+66d0 ldp x0, x22, [x21, #0x8]
+66d4 sub x22, x22, x0
+66d8 bl 0x4d90 <rand@plt>
+66dc ldr x2, [x21, #0x8]
+66e0 asr x22, x22, #3
+66e4 sdiv w1, w0, w22
+66e8 msub w1, w1, w22, w0
+66ec ldr x0, [x2, w1, sxtw #3]
+66f0 stp xzr, xzr, [x0]
+66f4 b 0x6630 <main+0x13b0>
+66fc ldr s0, [x0, x25]
+6700 str s0, [x0]
+6704 b 0x652c <main+0x12ac>
+670c ldr s0, [x5, x22]
+6710 str s0, [x0]
+6714 b 0x65ec <main+0x136c>
+6718 adrp x1, 0x33000 <_IO_stdin_used+0xa20>
+671c add x0, x19, #0x0, lsl #12  // =0x0
+6720 add x0, x0, #0x10
+6724 ldr x2, [sp, #0x40]
+6728 str x2, [sp, #0x88]
+672c ldr d0, [x1, #0x630]
+6730 mov w1, #0x1098             // =4248
+6734 movk w1, #0x9696, lsl #16
+6738 str w1, [sp, #0x260]
+673c ldr x1, [x0, #0x1c0]
+6740 mov w2, #-0x39              // =-57
+6744 strb w2, [sp, #0x264]
+6748 str d0, [sp, #0x258]
+674c tbnz w1, #0x0, 0x6784 <main+0x1504>
+6750 add x1, x0, #0x1c8
+6754 mov w2, #0x1                // =1
+6758 ldr x3, [x20]
+675c strb w2, [x1, #0xd]
+6760 mov x2, #0x1                // =1
+6764 stp x2, x3, [x0, #0x1c0]
+6768 adrp x2, 0x18800000 <data_start>
+676c adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+6770 ldur x3, [x20, #0x5]
+6774 add x2, x2, #0x8
+6778 add x0, x0, #0xb60
+677c stur x3, [x1, #0x5]
+6780 bl 0x4d00 <__cxa_thread_atexit@plt>
+6784 add x1, x19, #0x0, lsl #12  // =0x0
+6788 add x1, x1, #0x10  ; "parameters.numChannels > 0"
+678c add x0, x1, #0x1c8  ; "NumChannels() == outputSpectrum.getNumChannels()"
+6790 ldrb w1, [x1, #0x1d5]
+6794 tbz w1, #0x0, 0x679c <main+0x151c>
+6798 bl 0x7bc8 <ay::obfuscated_data<13ull, 14785301942539353593ull>::decrypt() (.part.0)>
+679c add x25, x19, #0x0, lsl #12 // =0x0
+67a0 add x25, x25, #0x10
+67a4 str x23, [sp, #0x258]
+67a8 add x22, x25, #0x1c8
+67ac mov x0, x22
+67b0 bl 0x5140 <strlen@plt>
+67b4 mov x21, x0
+67b8 cmp x0, #0x1
+67c0 cbz x0, 0x67d4 <main+0x1554>
+67c4 mov x2, x0
+67c8 mov x1, x22
+67cc mov x0, x23
+67d0 bl 0x4e60 <memcpy@plt>
+67d4 str x21, [sp, #0x260]
+67d8 strb wzr, [x23, x21]
+67dc ldr x0, [sp, #0x20]
+67e0 ldr x1, [sp, #0x258]
+67e4 ldr x2, [sp, #0x260]
+67e8 bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+67ec adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+67f0 mov x21, x0
+67f4 add x1, x1, #0x5e8
+67f8 mov x2, #0x1                // =1
+67fc bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+6800 mov x0, x21
+6804 mov w1, #0x0                // =0
+6808 bl 0x4cd0 <_ZNSolsEi@plt>
+680c adrp x21, 0x33000 <_IO_stdin_used+0xa20>
+6810 mov x2, #0x1                // =1
+6814 add x1, x21, #0x488
+6818 bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+681c ldr x0, [sp, #0x258]
+6820 cmp x0, x23
+6828 ldr x1, [sp, #0x268]
+682c add x1, x1, #0x1
+6830 bl 0x4be0 <_ZdlPvm@plt>
+6834 add x1, x21, #0x488
+6838 mov x2, #0x1                // =1
+683c ldr x21, [sp, #0x20]
+6840 mov x0, x21
+6844 bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+6848 mov x0, x21
+684c bl 0x4e40 <_ZNSo5flushEv@plt>
+6850 b 0x661c <main+0x139c>
+6854 ldr x2, [sp, #0x40]
+6858 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+685c mov x0, x20
+6860 add x1, x1, #0x6d8  ; "done"
+6864 str x2, [sp, #0x120]
+6868 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+686c ldr x1, [sp, #0x258]
+6870 adrp x3, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+6874 ldr x2, [sp, #0x260]
+6878 add x3, x3, #0x6e0  ; "true"
+687c ldr x19, [sp]
+6880 mov x0, x19
+6884 bl 0x7d88 <imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::
+6888 mov x0, x20
+688c bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6890 mov x0, x19
+6894 bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+6898 add x0, sp, #0x168
+689c bl 0x9fe0 <std::vector<float*, std::allocator<float*>>::~vector()>
+68a0 ldr x0, [sp, #0x28]
+68a4 bl 0x9f40 <std::vector<std::vector<float, std::allocator<float>>, std::allocator<std::vector<
+68a8 add x0, sp, #0x108
+68ac bl 0x9fe0 <std::vector<float*, std::allocator<float*>>::~vector()>
+68b0 ldr x0, [sp, #0x8]
+68b4 bl 0x9f40 <std::vector<std::vector<float, std::allocator<float>>, std::allocator<std::vector<
+68b8 add x0, sp, #0xd8
+68bc bl 0x9fe0 <std::vector<float*, std::allocator<float*>>::~vector()>
+68c0 ldr x0, [sp, #0x50]
+68c4 bl 0x9f40 <std::vector<std::vector<float, std::allocator<float>>, std::allocator<std::vector<
+68c8 mov x0, x27
+68cc bl 0xdf18 <zplane::StemsPro::~StemsPro()>
+68d0 ldr x0, [sp, #0x48]
+68d4 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+68d8 ldr x0, [sp, #0xa0]
+68dc bl 0x82ac <std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca
+68e0 add x0, sp, #0x1d8
+68e4 bl 0x9c80 <std::_Function_base::~_Function_base()>
+68e8 b 0x62a0 <main+0x1020>
+68ec ldrb w0, [x25, #0x1c8]
+68f0 strb w0, [sp, #0x268]
+68f4 b 0x67d4 <main+0x1554>
+68f8 add x1, sp, #0x260
+68fc mov x0, x20
+6900 stp xzr, xzr, [x1, #-0x8]
+6904 str xzr, [sp, #0x268]
+6908 str xzr, [sp, #0x270]
+690c bl 0x85e0 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<void 
+6910 mov x0, x20
+6914 bl 0x9c80 <std::_Function_base::~_Function_base()>
+6918 b 0x62a0 <main+0x1020>
+691c mov x0, x24
+6920 bl 0xa260 <std::function<void ()>::operator()() const>
+6924 b 0x58a0 <main+0x620>
+6928 mov w0, #0x0                // =0
+692c str x23, [sp, #0x510]
+6930 str x24, [sp, #0x518]
+6934 bl 0x4ca0 <exit@plt>
+6938 str x23, [sp, #0x510]
+693c str x24, [sp, #0x518]
+6940 bl 0x51d0 <__stack_chk_fail@plt>
+6944 add x3, x19, #0x0, lsl #12  // =0x0
+6948 add x3, x3, #0x10
+694c adrp x0, 0x33000 <_IO_stdin_used+0xa20>
+6950 adrp x2, 0x18800000 <data_start>
+6954 mov w4, #0x1                // =1
+6958 ldr d0, [x0, #0x638]
+695c ldr x1, [x3, #0xd8]
+6960 strb w4, [x2, #0x58]
+6964 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+6968 ldr x0, [x0, #0xe80]
+696c mov w2, #-0x47c             // =-1148
+6970 str x0, [sp, #0x120]
+6974 strh w2, [sp, #0x260]
+6978 str d0, [sp, #0x258]
+697c tbnz w1, #0x0, 0x69b0 <main+0x1730>
+6980 ldr x5, [sp, #0x258]
+6984 mov x6, #0x1                // =1
+6988 ldrh w7, [x20, #0x8]
+698c add x1, x3, #0xe0
+6990 strh w7, [x1, #0x8]
+6994 adrp x2, 0x18800000 <data_start>
+6998 adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+699c add x2, x2, #0x8
+69a0 add x0, x0, #0x980
+69a4 strb w4, [x1, #0xa]
+69a8 stp x6, x5, [x3, #0xd8]
+69ac bl 0x4d00 <__cxa_thread_atexit@plt>
+69b0 add x1, x19, #0x0, lsl #12  // =0x0
+69b4 add x1, x1, #0x10
+69b8 add x0, x1, #0xe0
+69bc ldrb w1, [x1, #0xea]
+69c0 tbz w1, #0x0, 0x6a04 <main+0x1784>
+69c4 mov x3, #0xfbe3             // =64483
+69c8 mov x2, #0x0                // =0
+69cc movk x3, #0x5fa1, lsl #16
+69d0 movk x3, #0x7db7, lsl #32
+69d4 movk x3, #0x1dcb, lsl #48
+69d8 ldrb w4, [x0]
+69dc ubfiz x1, x2, #3, #3
+69e0 add x2, x2, #0x1
+69e4 lsr x1, x3, x1
+69e8 eor w1, w1, w4
+69ec strb w1, [x0], #0x1
+69f0 cmp x2, #0xa
+69f8 add x0, x19, #0x0, lsl #12  // =0x0
+69fc add x0, x0, #0x10
+6a00 strb wzr, [x0, #0xea]
+6a04 add x1, x19, #0x0, lsl #12  // =0x0
+6a08 add x1, x1, #0x10
+6a0c add x0, sp, #0x238
+6a10 add x1, x1, #0xe0
+6a14 str x0, [sp, #0x18]
+6a18 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+6a1c add x3, x19, #0x0, lsl #12  // =0x0
+6a20 add x3, x3, #0x10
+6a24 mov w0, #0x9a85             // =39557
+6a28 movk w0, #0x33c8, lsl #16
+6a2c mov w4, #0x19d2             // =6610
+6a30 mov w2, #-0x35              // =-53
+6a34 str w0, [sp, #0x258]
+6a38 ldr x1, [x3, #0xf0]
+6a3c strh w4, [sp, #0x25c]
+6a40 strb w2, [sp, #0x25e]
+6a44 tbnz w1, #0x0, 0x6a78 <main+0x17f8>
+6a48 ldur w5, [x20, #0x3]
+6a4c add x1, x3, #0xf8
+6a50 mov x2, #0x100000000000000  // =72057594037927936
+6a54 mov x4, #0x1                // =1
+6a58 stp x4, x2, [x3, #0xf0]
+6a5c adrp x2, 0x18800000 <data_start>
+6a60 add x2, x2, #0x8
+6a64 str w0, [x3, #0xf8]
+6a68 adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+6a6c add x0, x0, #0x9a0
+6a70 stur w5, [x1, #0x3]
+6a74 bl 0x4d00 <__cxa_thread_atexit@plt>
+6a78 add x1, x19, #0x0, lsl #12  // =0x0
+6a7c add x1, x1, #0x10
+6a80 add x0, x1, #0xf8
+6a84 ldrb w1, [x1, #0xff]
+6a88 tbz w1, #0x0, 0x6ac8 <main+0x1848>
+6a8c mov x3, #0xfbe3             // =64483
+6a90 mov w1, #0x0                // =0
+6a94 movk x3, #0x5fa1, lsl #16
+6a98 movk x3, #0x7db7, lsl #32
+6a9c movk x3, #0x1dcb, lsl #48
+6aa0 ldrb w2, [x0]
+6aa4 lsr x4, x3, x1
+6aa8 add w1, w1, #0x8
+6aac eor w2, w2, w4
+6ab0 strb w2, [x0], #0x1
+6ab4 cmp w1, #0x38
+6abc add x0, x19, #0x0, lsl #12  // =0x0
+6ac0 add x0, x0, #0x10
+6ac4 strb wzr, [x0, #0xff]
+6ac8 add x1, x19, #0x0, lsl #12  // =0x0
+6acc add x1, x1, #0x10
+6ad0 mov x0, x20
+6ad4 add x1, x1, #0xf8
+6ad8 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+6adc ldr x1, [sp, #0x238]
+6ae0 add x19, sp, #0x120
+6ae4 ldr x2, [sp, #0x240]
+6ae8 mov x0, x19
+6aec mov x3, x20
+6af0 str x19, [sp]
+6af4 bl 0x7e24 <imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::
+6af8 mov x0, x20
+6afc bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6b00 ldr x0, [sp, #0x18]
+6b04 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6b08 mov x0, x19
+6b0c bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+6b10 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+6b14 ldr x0, [x0, #0xfa8]
+6b18 ldr x2, [sp, #0x4d8]
+6b1c ldr x1, [x0]
+6b20 subs x2, x2, x1
+6b24 mov x1, #0x0                // =0
+6b2c bl 0x5240 <(anonymous namespace)::errorExit(bool) (.isra.0)>
+6b30 mov x0, #0x18               // =24
+6b34 bl 0x4d50 <__cxa_allocate_exception@plt>
+6b38 adrp x1, 0x33000 <_IO_stdin_used+0xa20>
+6b3c mov x19, x0
+6b40 add x1, x1, #0x610
+6b44 mov x0, x20
+6b48 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+6b4c mov x1, x20
+6b50 mov x0, x19
+6b54 bl 0x4c60 <_ZNSt13runtime_errorC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@plt>
+6b58 adrp x22, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+6b5c add x22, x22, #0x4e0
+6b60 add x1, x22, #0x10
+6b64 str x1, [x19]
+6b68 str w21, [x19, #0x10]
+6b6c mov x0, x20
+6b70 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6b74 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+6b78 ldr x0, [x0, #0xfa8]
+6b7c ldr x2, [sp, #0x4d8]
+6b80 ldr x1, [x0]
+6b84 subs x2, x2, x1
+6b88 mov x1, #0x0                // =0
+6b90 bl 0x51d0 <__stack_chk_fail@plt>
+6b94 bti j
+6b98 mov x22, x0
+6b9c mov x19, x1
+6ba0 mov x0, x20
+6ba4 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6ba8 ldr x0, [sp, #0x18]
+6bac bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6bb0 ldr x0, [sp]
+6bb4 mov x21, x19
+6bb8 bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+6bbc ldr x23, [sp, #0x510]
+6bc0 ldr x24, [sp, #0x518]
+6bc4 ldr x0, [sp, #0x38]
+6bc8 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6bcc ldr x0, [sp, #0x30]
+6bd0 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6bd4 mov x0, x22
+6bd8 cmp x21, #0x1
+6be0 bl 0x4bc0 <__cxa_begin_catch@plt>
+6be4 mrs x19, TPIDR_EL0
+6be8 ldr x1, [x0]
+6bec mov x22, x0
+6bf0 ldr x1, [x1, #0x10]
+6bf4 blr x1
+6bf8 adrp x0, 0x33000 <_IO_stdin_used+0xa20>
+6bfc add x3, x19, #0x0, lsl #12  // =0x0
+6c00 add x3, x3, #0x10
+6c04 mov w1, #0x6b68             // =27496
+6c08 strh w1, [sp, #0x260]
+6c0c ldr d0, [x0, #0x648]
+6c10 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+6c14 ldr x0, [x0, #0xe80]
+6c18 str x0, [sp, #0x150]
+6c1c ldr x0, [x3, #0x1f0]
+6c20 str d0, [sp, #0x258]
+6c24 tbnz w0, #0x0, 0x6c54 <main+0x19d4>
+6c28 ldr x4, [sp, #0x258]
+6c2c add x1, x3, #0x1f8
+6c30 ldrh w5, [x20, #0x8]
+6c34 adrp x2, 0x18800000 <data_start>
+6c38 adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+6c3c add x2, x2, #0x8
+6c40 strh w5, [x1, #0x8]
+6c44 add x0, x0, #0xa20
+6c48 strb w21, [x1, #0xa]
+6c4c stp x21, x4, [x3, #0x1f0]
+6c50 bl 0x4d00 <__cxa_thread_atexit@plt>
+6c54 add x1, x19, #0x0, lsl #12  // =0x0
+6c58 add x1, x1, #0x10  ; "parameters.numChannels > 0"
+6c5c add x0, x1, #0x1f8
+6c60 ldrb w1, [x1, #0x202]
+6c64 tbnz w1, #0x0, 0x6e84 <main+0x1c04>
+6c68 add x1, x19, #0x0, lsl #12  // =0x0
+6c6c add x1, x1, #0x10  ; "parameters.numChannels > 0"
+6c70 add x0, sp, #0x238
+6c74 add x1, x1, #0x1f8
+6c78 str x0, [sp, #0x18]
+6c7c bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+6c80 ldr x1, [sp, #0x238]
+6c84 add x0, sp, #0x150
+6c88 ldr x2, [sp, #0x240]
+6c8c add x3, x22, #0x10
+6c90 str x0, [sp, #0x28]
+6c94 bl 0x8000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>& imb::paramblock::detail::
+6c98 add x3, x19, #0x0, lsl #12  // =0x0
+6c9c add x3, x3, #0x10
+6ca0 adrp x1, 0x33000 <_IO_stdin_used+0xa20>
+6ca4 mov x21, x0
+6ca8 ldr d0, [x1, #0x650]
+6cac mov w1, #0xe9e6             // =59878
+6cb0 ldr x0, [x3, #0x208]
+6cb4 movk w1, #0xcb24, lsl #16
+6cb8 str w1, [sp, #0x260]
+6cbc str d0, [sp, #0x258]
+6cc0 tbnz w0, #0x0, 0x6cfc <main+0x1a7c>
+6cc4 ldr x4, [sp, #0x258]
+6cc8 add x1, x3, #0x210
+6ccc ldr w7, [x20, #0x8]
+6cd0 mov w6, #0x1                // =1
+6cd4 mov x5, #0x1                // =1
+6cd8 adrp x2, 0x18800000 <data_start>
+6cdc str w7, [x1, #0x8]
+6ce0 adrp x0, 0x9000 <void (anonymous namespace)::doAudioProcessing<StemsAttenuator>(std::function<v
+6ce4 add x2, x2, #0x8
+6ce8 add x0, x0, #0xa40
+6cec strb w6, [x1, #0xc]
+6cf0 str x5, [x3, #0x208]
+6cf4 str x4, [x3, #0x210]
+6cf8 bl 0x4d00 <__cxa_thread_atexit@plt>
+6cfc add x1, x19, #0x0, lsl #12  // =0x0
+6d00 add x1, x1, #0x10  ; "parameters.numChannels > 0"
+6d04 add x0, x1, #0x210  ; "aneway/workspace/ems-Pro_Stems-Pro-LinuxARM_1.1."
+6d08 ldrb w1, [x1, #0x21c]
+6d0c tbnz w1, #0x0, 0x6f24 <main+0x1ca4>
+6d10 add x1, x19, #0x0, lsl #12  // =0x0
+6d14 add x1, x1, #0x10  ; "parameters.numChannels > 0"
+6d18 mov x0, x20
+6d1c add x1, x1, #0x210  ; "aneway/workspace/ems-Pro_Stems-Pro-LinuxARM_1.1."
+6d20 bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+6d24 ldr x1, [x22]
+6d28 mov x0, x22
+6d2c ldr x1, [x1, #0x10]
+6d30 blr x1
+6d34 mov x19, x0
+6d38 ldr x0, [x21]
+6d3c ldr x1, [sp, #0x258]
+6d40 ldr x2, [sp, #0x260]
+6d44 bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+6d48 adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, 
+6d4c add x1, x1, #0x5e8
+6d50 bl 0x4eb0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+6d54 mov x1, x19
+6d58 bl 0x4eb0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+6d5c adrp x1, 0x33000 <_IO_stdin_used+0xa20>
+6d60 add x1, x1, #0x488
+6d64 bl 0x4eb0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+6d68 mov x0, x20
+6d6c bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6d70 ldr x0, [sp, #0x18]
+6d74 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6d78 ldr x0, [sp, #0x28]
+6d7c bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+6d80 bl 0x4fb0 <__cxa_end_catch@plt>
+6d84 b 0x62b8 <main+0x1038>
+6d88 bti j
+6d8c mov x22, x0
+6d90 mov x19, x1
+6d94 add x0, sp, #0x120
+6d98 str x0, [sp]
+6d9c b 0x6ba8 <main+0x1928>
+6da0 bti j
+6da4 mov x22, x0
+6da8 mov x19, x1
+6dac add x0, sp, #0x120
+6db0 str x0, [sp]
+6db4 b 0x6bb0 <main+0x1930>
+6db8 bti j
+6dbc mov x22, x0
+6dc0 mov x21, x1
+6dc4 mov x0, x20
+6dc8 bl 0x9c80 <std::_Function_base::~_Function_base()>
+6dcc ldr x23, [sp, #0x510]
+6dd0 ldr x24, [sp, #0x518]
+6dd4 b 0x6bc4 <main+0x1944>
+6dd8 bti j
+6ddc mov x19, x0
+6de0 mov x21, x1
+6de4 b 0x6dfc <main+0x1b7c>
+6de8 bti j
+6dec mov x19, x0
+6df0 mov x21, x1
+6df4 mov x0, x20
+6df8 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6dfc ldr x0, [sp]
+6e00 mov x23, x19
+6e04 mov x19, x21
+6e08 bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+6e0c add x0, sp, #0x168
+6e10 bl 0x9fe0 <std::vector<float*, std::allocator<float*>>::~vector()>
+6e14 ldr x0, [sp, #0x28]
+6e18 mov x21, x23
+6e1c bl 0x9f40 <std::vector<std::vector<float, std::allocator<float>>, std::allocator<std::vector<
+6e20 add x0, sp, #0x108
+6e24 bl 0x9fe0 <std::vector<float*, std::allocator<float*>>::~vector()>
+6e28 ldr x0, [sp, #0x8]
+6e2c bl 0x9f40 <std::vector<std::vector<float, std::allocator<float>>, std::allocator<std::vector<
+6e30 add x0, sp, #0xd8
+6e34 bl 0x9fe0 <std::vector<float*, std::allocator<float*>>::~vector()>
+6e38 ldr x0, [sp, #0x50]
+6e3c bl 0x9f40 <std::vector<std::vector<float, std::allocator<float>>, std::allocator<std::vector<
+6e40 add x24, sp, #0x1d8
+6e44 mov x0, x27
+6e48 bl 0xdf18 <zplane::StemsPro::~StemsPro()>
+6e4c ldr x0, [sp, #0x48]
+6e50 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6e54 ldr x0, [sp, #0xa0]
+6e58 mov x22, x21
+6e5c bl 0x82ac <std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca
+6e60 mov x0, x24
+6e64 mov x21, x19
+6e68 bl 0x9c80 <std::_Function_base::~_Function_base()>
+6e6c ldr x23, [sp, #0x510]
+6e70 ldr x24, [sp, #0x518]
+6e74 b 0x6bc4 <main+0x1944>
+6e78 bl 0x4bc0 <__cxa_begin_catch@plt>
+6e7c bl 0x4fb0 <__cxa_end_catch@plt>
+6e80 b 0x62b8 <main+0x1038>
+6e84 mov x3, #0x6b0d             // =27405
+6e88 mov x2, #0x0                // =0
+6e8c movk x3, #0x517b, lsl #16
+6e90 movk x3, #0x7fff, lsl #32
+6e94 movk x3, #0x4541, lsl #48
+6e98 ldrb w4, [x0]
+6e9c ubfiz x1, x2, #3, #3
+6ea0 add x2, x2, #0x1
+6ea4 lsr x1, x3, x1
+6ea8 eor w1, w1, w4
+6eac strb w1, [x0], #0x1
+6eb0 cmp x2, #0xa
+6eb8 add x0, x19, #0x0, lsl #12  // =0x0
+6ebc add x0, x0, #0x10
+6ec0 strb wzr, [x0, #0x202]
+6ec4 b 0x6c68 <main+0x19e8>
+6ec8 bti j
+6ecc mov x19, x0
+6ed0 ldr x0, [sp, #0x18]
+6ed4 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6ed8 ldr x0, [sp, #0x28]
+6edc bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+6ee0 bl 0x4fb0 <__cxa_end_catch@plt>
+6ee4 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+6ee8 ldr x0, [x0, #0xfa8]
+6eec ldr x2, [sp, #0x4d8]
+6ef0 ldr x1, [x0]
+6ef4 subs x2, x2, x1
+6ef8 mov x1, #0x0                // =0
+6efc str x23, [sp, #0x510]
+6f00 str x24, [sp, #0x518]
+6f08 mov x0, x19
+6f0c bl 0x4f40 <_Unwind_Resume@plt>
+6f10 bti j
+6f14 add x1, sp, #0x150
+6f18 mov x19, x0
+6f1c str x1, [sp, #0x28]
+6f20 b 0x6ed8 <main+0x1c58>
+6f24 mov x3, #0x878f             // =34703
+6f28 mov x2, #0x0                // =0
+6f2c movk x3, #0xcb43, lsl #16
+6f30 movk x3, #0xbf1f, lsl #32
+6f34 movk x3, #0x215f, lsl #48
+6f38 ldrb w4, [x0]
+6f3c ubfiz x1, x2, #3, #3
+6f40 add x2, x2, #0x1
+6f44 lsr x1, x3, x1
+6f48 eor w1, w1, w4
+6f4c strb w1, [x0], #0x1
+6f50 cmp x2, #0xc
+6f58 add x0, x19, #0x0, lsl #12  // =0x0
+6f5c add x0, x0, #0x10
+6f60 strb wzr, [x0, #0x21c]
+6f64 b 0x6d10 <main+0x1a90>
+6f68 bti j
+6f6c mov x19, x0
+6f70 mov x0, x20
+6f74 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6f78 b 0x6ed0 <main+0x1c50>
+6f7c bti j
+6f80 mov x22, x0
+6f84 mov x19, x1
+6f88 ldr x23, [sp, #0x510]
+6f8c add x1, sp, #0x1b8
+6f90 ldr x24, [sp, #0x518]
+6f94 mov x0, #0x2                // =2
+6f98 str x1, [sp, #0x38]
+6f9c mov x21, #0x4               // =4
+6fa0 sub x21, x21, x0
+6fa4 add x21, x20, x21, lsl #7
+6fa8 cmp x21, x20
+6fb0 mov x21, x19
+6fb4 b 0x6bc4 <main+0x1944>
+6fb8 bti j
+6fbc mov x22, x0
+6fc0 mov x19, x1
+6fc4 mov x0, x23
+6fc8 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+6fcc ldr x23, [sp, #0x510]
+6fd0 add x1, sp, #0x1b8
+6fd4 ldr x24, [sp, #0x518]
+6fd8 mov x0, #0x3                // =3
+6fdc str x1, [sp, #0x38]
+6fe0 b 0x6f9c <main+0x1d1c>
+6fe4 bti j
+6fe8 mov x22, x0
+6fec mov x19, x1
+6ff0 add x24, sp, #0x1d8
+6ff4 b 0x6e60 <main+0x1be0>
+6ff8 bti j
+6ffc mov x22, x0
+7000 mov x19, x1
+7004 ldr x0, [sp, #0x28]
+7008 add x24, sp, #0x1d8
+700c bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+7010 b 0x6e60 <main+0x1be0>
+7014 sub x21, x21, #0x80
+7018 mov x0, x21
+701c bl 0x9ea0 <imb::params::Parameter::~Parameter()>
+7020 b 0x6fa8 <main+0x1d28>
+7024 bti j
+7028 mov x22, x0
+702c mov x19, x1
+7030 mov x0, x25
+7034 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7038 b 0x7004 <main+0x1d84>
+703c bti j
+7040 mov x22, x0
+7044 mov x19, x1
+7048 ldr x0, [sp, #0x18]
+704c bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7050 b 0x7030 <main+0x1db0>
+7054 bti j
+7058 mov x22, x0
+705c mov x19, x1
+7060 mov x0, x20
+7064 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7068 b 0x7048 <main+0x1dc8>
+706c bti j
+7070 mov x21, x0
+7074 mov x19, x1
+7078 add x24, sp, #0x1d8
+707c b 0x6e54 <main+0x1bd4>
+7080 bti j
+7084 mov x21, x0
+7088 mov x19, x1
+708c mov x0, x20
+7090 add x24, sp, #0x1d8
+7094 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7098 b 0x6e54 <main+0x1bd4>
+709c bti j
+70a0 b 0x7084 <main+0x1e04>
+70a4 bti j
+70a8 b 0x7084 <main+0x1e04>
+70ac bti j
+70b0 b 0x7084 <main+0x1e04>
+70b4 bti j
+70b8 mov x22, x0
+70bc mov x19, x1
+70c0 ldr x0, [sp, #0x28]
+70c4 mov x21, #0x4               // =4
+70c8 bl 0xab00 <std::vector<imb::params::Parameter, std::allocator<imb::params::Parameter>>::~vect
+70cc add x0, x20, x21, lsl #7
+70d0 sub x21, x21, #0x1
+70d4 bl 0x9ea0 <imb::params::Parameter::~Parameter()>
+70d8 cmn x21, #0x1
+70e0 ldr x23, [sp, #0x510]
+70e4 mov x0, #0x4                // =4
+70e8 ldr x24, [sp, #0x518]
+70ec b 0x6f9c <main+0x1d1c>
+70f0 bti j
+70f4 ldr x2, [sp, #0x150]
+70f8 mov x22, x0
+70fc ldr x3, [sp, #0x160]
+7100 mov x19, x1
+7104 mov x0, x2
+7108 mov x21, #0x4               // =4
+710c sub x1, x3, x2
+7110 bl 0x4be0 <_ZdlPvm@plt>
+7114 b 0x70cc <main+0x1e4c>
+7118 bti j
+711c mov x22, x0
+7120 mov x19, x1
+7124 mov x21, #0x4               // =4
+7128 b 0x70cc <main+0x1e4c>
+712c bti j
+7130 mov x21, x1
+7134 mov x22, x0
+7138 mov x0, x19
+713c bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7140 ldr x23, [sp, #0x510]
+7144 mov x19, x21
+7148 ldr x24, [sp, #0x518]
+714c mov x0, #0x0                // =0
+7150 b 0x6f9c <main+0x1d1c>
+7154 bti j
+7158 mov x22, x0
+715c mov x19, x1
+7160 b 0x6fcc <main+0x1d4c>
+7164 bti j
+7168 mov x22, x0
+716c mov x19, x1
+7170 mov x0, x20
+7174 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7178 add x0, sp, #0x198
+717c str x0, [sp, #0x30]
+7180 add x0, sp, #0x1b8
+7184 str x0, [sp, #0x38]
+7188 mov x0, #0x4                // =4
+718c b 0x6f9c <main+0x1d1c>
+7190 bti j
+7194 ldr x23, [sp, #0x510]
+7198 mov x22, x0
+719c ldr x24, [sp, #0x518]
+71a0 mov x19, x1
+71a4 mov x0, #0x1                // =1
+71a8 b 0x6f9c <main+0x1d1c>
+71ac bti j
+71b0 mov x22, x0
+71b4 mov x19, x1
+71b8 mov x0, x23
+71bc bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+71c0 b 0x6f88 <main+0x1d08>
+71c4 bti j
+71c8 mov x21, x0
+71cc mov x19, x1
+71d0 ldr x0, [sp, #0x18]
+71d4 add x24, sp, #0x1d8
+71d8 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+71dc b 0x6e4c <main+0x1bcc>
+71e0 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+71e4 ldr x0, [x0, #0xfa8]
+71e8 ldr x2, [sp, #0x4d8]
+71ec ldr x1, [x0]
+71f0 subs x2, x2, x1
+71f4 mov x1, #0x0                // =0
+71fc add x24, sp, #0x1d8
+7200 bl 0x5240 <(anonymous namespace)::errorExit(bool) (.isra.0)>
+7204 bti j
+7208 mov x23, x0
+720c mov x19, x1
+7210 mov x0, x20
+7214 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7218 ldr x0, [sp, #0x130]
+721c bl 0x82ac <std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca
+7220 b 0x6e0c <main+0x1b8c>
+7224 mov x0, #0x18               // =24
+7228 bl 0x4d50 <__cxa_allocate_exception@plt>
+722c adrp x1, 0x33000 <_IO_stdin_used+0xa20>
+7230 mov x21, x0
+7234 add x1, x1, #0x610
+7238 mov x0, x20
+723c bl 0x806c <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>::ba
+7240 mov x1, x20
+7244 mov x0, x21
+7248 bl 0x4c60 <_ZNSt13runtime_errorC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@plt>
+724c adrp x22, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+7250 add x22, x22, #0x4e0
+7254 add x1, x22, #0x10
+7258 str x1, [x21]
+725c str w19, [x21, #0x10]
+7260 mov x0, x20
+7264 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7268 adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+726c ldr x0, [x0, #0xfa8]
+7270 ldr x2, [sp, #0x4d8]
+7274 ldr x1, [x0]
+7278 subs x2, x2, x1
+727c mov x1, #0x0                // =0
+7284 adrp x2, 0x7000 <main+0x1d80>
+7288 add x1, x22, #0x88
+728c mov x0, x21
+7290 add x2, x2, #0xa2c
+7294 bl 0x4f10 <__cxa_throw@plt>
+7298 bti j
+729c mov x19, x0
+72a0 mov x22, x1
+72a4 mov x0, x20
+72a8 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+72ac mov x0, x21
+72b0 mov x23, x19
+72b4 bl 0x5070 <__cxa_free_exception@plt>
+72b8 mov x19, x22
+72bc b 0x6e0c <main+0x1b8c>
+72c0 bti j
+72c4 mov x19, x0
+72c8 mov x22, x1
+72cc b 0x72ac <main+0x202c>
+72d0 bti j
+72d4 mov x21, x0
+72d8 mov x19, x1
+72dc b 0x6e30 <main+0x1bb0>
+72e0 bti j
+72e4 mov x21, x0
+72e8 mov x19, x1
+72ec b 0x6e20 <main+0x1ba0>
+72f0 bti j
+72f4 mov x23, x0
+72f8 mov x19, x1
+72fc b 0x6e0c <main+0x1b8c>
+7300 bti j
+7304 mov x19, x1
+7308 mov x23, x0
+730c add x0, sp, #0x120
+7310 str x0, [sp]
+7314 ldr x0, [sp]
+7318 bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+731c b 0x6e0c <main+0x1b8c>
+7320 bti j
+7324 b 0x7084 <main+0x1e04>
+7328 bti j
+732c b 0x7084 <main+0x1e04>
+7330 bti j
+7334 mov x21, x0
+7338 mov x19, x1
+733c b 0x6e4c <main+0x1bcc>
+7340 bti j
+7344 b 0x7084 <main+0x1e04>
+7348 bti j
+734c ldr x23, [sp, #0x510]
+7350 mov x22, x0
+7354 ldr x24, [sp, #0x518]
+7358 mov x19, x1
+735c mov x0, #0x0                // =0
+7360 b 0x6f9c <main+0x1d1c>
+7364 bti j
+7368 mov x22, x0
+736c mov x19, x1
+7370 mov x0, x23
+7374 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7378 ldr x23, [sp, #0x510]
+737c mov x0, #0x1                // =1
+7380 ldr x24, [sp, #0x518]
+7384 b 0x6f9c <main+0x1d1c>
+7388 bti j
+738c ldr x23, [sp, #0x510]
+7390 mov x22, x0
+7394 ldr x24, [sp, #0x518]
+7398 mov x21, x1
+739c b 0x6bc4 <main+0x1944>
+73a0 bti j
+73a4 mov x19, x1
+73a8 add x1, sp, #0x198
+73ac mov x22, x0
+73b0 mov x0, #0x4                // =4
+73b4 str x1, [sp, #0x30]
+73b8 add x1, sp, #0x1b8
+73bc str x1, [sp, #0x38]
+73c0 b 0x6f9c <main+0x1d1c>
+73c4 bti j
+73c8 mov x19, x1
+73cc mov x23, x0
+73d0 add x0, sp, #0x120
+73d4 str x0, [sp]
+73d8 mov x0, x25
+73dc bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+73e0 b 0x7314 <main+0x2094>
+73e4 bti j
+73e8 mov x23, x0
+73ec mov x19, x1
+73f0 ldr x0, [sp, #0x18]
+73f4 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+73f8 b 0x73d8 <main+0x2158>
+73fc bti j
+7400 mov x21, x1
+7404 mov x23, x0
+7408 mov x19, x21
+740c mov x0, x20
+7410 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7414 b 0x73f0 <main+0x2170>
+7418 bti j
+741c b 0x7208 <main+0x1f88>
+7420 bti j
+7424 mov x21, x1
+7428 mov x23, x0
+742c mov x0, x20
+7430 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7434 ldr x0, [sp, #0x58]
+7438 mov x19, x21
+743c bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+7440 ldr x0, [sp, #0x18]
+7444 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7448 b 0x7218 <main+0x1f98>
+744c adrp x2, 0x7000 <main+0x1d80>
+7450 add x1, x22, #0x88
+7454 mov x0, x19
+7458 add x2, x2, #0xa2c
+745c bl 0x4f10 <__cxa_throw@plt>
+7460 bti j
+7464 mov x21, x0
+7468 mov x22, x1
+746c mov x0, x20
+7470 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+7474 mov x0, x19
+7478 mov x23, x21
+747c mov x19, x22
+7480 bl 0x5070 <__cxa_free_exception@plt>
+7484 b 0x7440 <main+0x21c0>
+7488 bti j
+748c mov x21, x0
+7490 mov x22, x1
+7494 b 0x7474 <main+0x21f4>
+7498 bti j
+749c mov x23, x0
+74a0 mov x19, x1
+74a4 b 0x7440 <main+0x21c0>
+74a8 bti j
+74ac mov x21, x0
+74b0 mov x19, x1
+74b4 mov x0, x20
+74b8 add x24, sp, #0x1d8
+74bc bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+74c0 b 0x6e4c <main+0x1bcc>
+74c4 bti j
+74c8 mov x21, x0
+74cc mov x19, x1
+74d0 ldr x0, [sp, #0x28]
+74d4 add x24, sp, #0x1d8
+74d8 bl 0xa000 <imb::paramblock::detail::ParamBlockWriter<std::ostream>::~ParamBlockWriter()>
+74dc b 0x6e4c <main+0x1bcc>
+74e0 bti j
+74e4 mov x21, x0
+74e8 mov x19, x1
+74ec ldr x0, [sp, #0x18]
+74f0 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+74f4 b 0x74d0 <main+0x2250>
+74f8 bti j
+74fc mov x21, x0
+7500 mov x19, x1
+7504 mov x0, x20
+7508 bl 0x4fe0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv@plt>
+750c b 0x74ec <main+0x226c>
+7510 bti j
+7514 mov x21, x0
+7518 mov x19, x1
+751c b 0x6e40 <main+0x1bc0>

@@ -1,0 +1,59 @@
+{
+  "prefix_run": {
+    "runtime": "1.16.3",
+    "threads": 2,
+    "optimization": 99,
+    "init_seconds": 0.287824132,
+    "first_run_seconds": 9.092519145,
+    "warm_seconds": [],
+    "finite": true
+  },
+  "cpu_model": "cortex-a76",
+  "node_duration_us_emulated": {
+    "Transpose": 14364,
+    "BatchNormalization": 25421,
+    "Reshape": 500,
+    "MatMul": 175451,
+    "Conv": 4428436,
+    "LeakyRelu": 16222,
+    "FusedConv": 4135850,
+    "Add": 8883,
+    "AveragePool": 25426,
+    "Cast": 3710,
+    "NhwcFusedConv": 248374
+  },
+  "selected_kernel": [
+    {
+      "op_name": "NhwcFusedConv",
+      "provider": "CPUExecutionProvider",
+      "input_type_shape": [
+        {
+          "float16": [
+            1,
+            32,
+            64,
+            64
+          ]
+        },
+        {
+          "float16": [
+            128
+          ]
+        }
+      ],
+      "output_type_shape": [
+        {
+          "float16": [
+            1,
+            32,
+            64,
+            128
+          ]
+        }
+      ]
+    }
+  ],
+  "full_model_exit": 124,
+  "full_model_timeout_seconds": 300,
+  "limitations": "Synthetic prefix only. Emulated timing is not Pi timing. FP16 tensor types do not prove accumulator precision."
+}

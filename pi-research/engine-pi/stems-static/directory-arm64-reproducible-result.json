@@ -1,0 +1,11 @@
+{
+  "scope": "ARM64 directory adapter under local emulation; no Engine or Pi run",
+  "firmware_qt_sha256": "6b3865441d2224c1c349842deff4f61dfa06e3cb7b4d457bcb706aae0a1c7a33",
+  "source_sha256": {
+    "pi-stems-directory.cpp": "a99c5935e676ab917b0ccd8e407219e34c47652c715e9842c45f463c42060102",
+    "directory-adapter-probe.cpp": "98761b69e4741540fde0d2e6db069bb5958ea2e781ecbbfa0f9780d775fe7d01"
+  },
+  "exit_code": 0,
+  "stdout": "PASS temporary directories\nPASS create synthetic file\nPASS set synthetic permissions\nPASS create synthetic file\nPASS set synthetic permissions\nPASS create synthetic file\nPASS set synthetic permissions\nPASS create synthetic file\nPASS set synthetic permissions\nPASS create synthetic file\nPASS set synthetic permissions\nPASS create synthetic file\nPASS set synthetic permissions\nPASS disabled by default\nPASS exact target sees real entries\nPASS unrelated directory unchanged\nPASS other filter unchanged\nPASS other sort unchanged\nPASS normal listing unchanged\nPASS remove synthetic component\nPASS incomplete adapter not accepted\nPASS relative opt-in rejected\n",
+  "stderr": ""
+}

@@ -1,0 +1,51 @@
+{
+  "fp16-selective-conv": {
+    "nodes": 725,
+    "precision_counts": {
+      "Conv_weight_type_1": 27,
+      "cast_to_10": 127,
+      "Conv_weight_type_10": 127,
+      "cast_to_1": 127
+    },
+    "op_counts": {
+      "Transpose": 2,
+      "BatchNormalization": 75,
+      "Reshape": 4,
+      "MatMul": 2,
+      "Conv": 154,
+      "LeakyRelu": 142,
+      "Add": 68,
+      "AveragePool": 11,
+      "Cast": 254,
+      "Resize": 6,
+      "Concat": 6,
+      "Sigmoid": 1
+    }
+  },
+  "fp16-arm-dispatch": {
+    "nodes": 851,
+    "precision_counts": {
+      "Conv_weight_type_1": 14,
+      "FusedConv_weight_type_1": 13,
+      "cast_to_10": 127,
+      "NhwcFusedConv_weight_type_10": 127,
+      "cast_to_1": 127
+    },
+    "op_counts": {
+      "Transpose": 141,
+      "BatchNormalization": 75,
+      "Reshape": 4,
+      "MatMul": 2,
+      "Conv": 14,
+      "LeakyRelu": 130,
+      "FusedConv": 13,
+      "Add": 67,
+      "AveragePool": 11,
+      "Cast": 254,
+      "NhwcFusedConv": 127,
+      "Resize": 6,
+      "Concat": 6,
+      "Sigmoid": 1
+    }
+  }
+}

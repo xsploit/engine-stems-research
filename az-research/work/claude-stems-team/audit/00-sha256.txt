@@ -1,0 +1,2 @@
+3c6f1cb7d5ceb919deda7446317da3e8aaacd8a2652a6c0724a3295e843b9584  /home/subsect/Documents/Codex/2026-09-10-in-my-pc-im-workin-on/engine-pi/stems-static/processor/stems-processor
+3ffdda6ee33efcc25b3d748ec82cbc0dfc0c4e79405b101fe4419c5f9cc08f01  /home/subsect/Documents/Codex/2026-09-10-in-my-pc-im-workin-on/engine-pi/stems-static/processor/libNNPredictionDispatcher_on.so

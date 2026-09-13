@@ -1,0 +1,7 @@
+{
+  "model_sha256": "c203bfa6bd53d16ef7ba6393540453f6cfd7541a87c169be5310989b8d987a0a",
+  "model_bytes": 410711419,
+  "windows_worker_embedded_model_offset": 4861536,
+  "windows_region_sha256": "c203bfa6bd53d16ef7ba6393540453f6cfd7541a87c169be5310989b8d987a0a",
+  "byte_identical_model": true
+}

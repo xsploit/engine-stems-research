@@ -1,0 +1,199 @@
+{
+  "conv_macs_per_call": 27411873792,
+  "conv_count": 154,
+  "unresolved_conv_count": 0,
+  "largest_convs": [
+    {
+      "name": "/decoder_block3/conv_block2/conv1/Conv",
+      "output": [
+        1,
+        256,
+        16,
+        32
+      ],
+      "weights": [
+        256,
+        512,
+        3,
+        3
+      ],
+      "macs": 603979776
+    },
+    {
+      "name": "/decoder_block4/conv_block2/conv1/Conv",
+      "output": [
+        1,
+        128,
+        32,
+        64
+      ],
+      "weights": [
+        128,
+        256,
+        3,
+        3
+      ],
+      "macs": 603979776
+    },
+    {
+      "name": "/decoder_block5/conv_block2/conv1/Conv",
+      "output": [
+        1,
+        64,
+        64,
+        128
+      ],
+      "weights": [
+        64,
+        128,
+        3,
+        3
+      ],
+      "macs": 603979776
+    },
+    {
+      "name": "/decoder_block6/conv_block2/conv1/Conv",
+      "output": [
+        1,
+        32,
+        128,
+        256
+      ],
+      "weights": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "macs": 603979776
+    },
+    {
+      "name": "/decoder_block2/conv_block2/conv1/Conv",
+      "output": [
+        1,
+        384,
+        8,
+        16
+      ],
+      "weights": [
+        384,
+        768,
+        3,
+        3
+      ],
+      "macs": 339738624
+    },
+    {
+      "name": "/encoder_block1/conv_block1/conv1/Conv",
+      "output": [
+        1,
+        32,
+        128,
+        256
+      ],
+      "weights": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "macs": 301989888
+    },
+    {
+      "name": "/encoder_block1/conv_block1/conv2/Conv",
+      "output": [
+        1,
+        32,
+        128,
+        256
+      ],
+      "weights": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "macs": 301989888
+    },
+    {
+      "name": "/encoder_block1/conv_block2/conv1/Conv",
+      "output": [
+        1,
+        32,
+        128,
+        256
+      ],
+      "weights": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "macs": 301989888
+    },
+    {
+      "name": "/encoder_block1/conv_block2/conv2/Conv",
+      "output": [
+        1,
+        32,
+        128,
+        256
+      ],
+      "weights": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "macs": 301989888
+    },
+    {
+      "name": "/encoder_block1/conv_block3/conv1/Conv",
+      "output": [
+        1,
+        32,
+        128,
+        256
+      ],
+      "weights": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "macs": 301989888
+    },
+    {
+      "name": "/encoder_block1/conv_block3/conv2/Conv",
+      "output": [
+        1,
+        32,
+        128,
+        256
+      ],
+      "weights": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "macs": 301989888
+    },
+    {
+      "name": "/encoder_block1/conv_block4/conv1/Conv",
+      "output": [
+        1,
+        32,
+        128,
+        256
+      ],
+      "weights": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "macs": 301989888
+    }
+  ]
+}

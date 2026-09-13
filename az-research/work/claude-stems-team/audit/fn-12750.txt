@@ -1,0 +1,10 @@
+0000000000012750 <zplane::StemsProAlgorithm::getInputBlockSize() const>:
+   12750:       ldrb w1, [x0, #0xa8]
+   12754:       cbnz w1, 0x12768 <zplane::StemsProAlgorithm::getInputBlockSize() const+0x18>
+   12758:       ldr x1, [x0, #0x50]
+   1275c:       ldr x0, [x0, #0x60]
+   12760:       mul x0, x1, x0
+   12764:       ret
+   12768:       add x0, x0, #0x1a0
+   1276c:       b 0x196f0 <zplane::Resample::Resampler::getInputBlockSize() const>
+

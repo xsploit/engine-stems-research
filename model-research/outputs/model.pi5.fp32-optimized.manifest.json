@@ -1,0 +1,15 @@
+{
+  "source_sha256": "c203bfa6bd53d16ef7ba6393540453f6cfd7541a87c169be5310989b8d987a0a",
+  "candidate_sha256": "533a927e3df1650712e8bb1c487ce9530b0722b1f8252763f2e3ac0358b7825b",
+  "candidate_bytes": 410706784,
+  "source_nodes": 489,
+  "candidate_nodes": 393,
+  "precision": "FP32",
+  "input_shape": [1, 2, 128, 2048],
+  "output_shape": [1, 8, 128, 2048],
+  "target_cpu": "ARM Cortex-A76 / Raspberry Pi 5",
+  "builder_runtime": "Engine ARM ONNX Runtime 1.16.3 under QEMU",
+  "arm_test_exact_equal": true,
+  "arm_test_max_abs_difference": 0.0,
+  "deployed": false
+}

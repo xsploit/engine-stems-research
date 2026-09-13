@@ -1,0 +1,30 @@
+c29630 ldar w0, [x0]
+c29634 ands w0, w0, #0x7f
+c29638 b .eq	0xc29448
+c2963c add w0, w0, #0x1
+c29640 sbfx x0, x0, #1, #7
+c29644 cmp w0, #0x0
+c29648 b .gt	0xc29448
+c2964c ldr w0, [x28, #0x398]
+c29650 add x25, sp, #0x1f0
+c29654 mov x1, x25
+c29658 mov w2, #0x1                // =1
+c2965c str x21, [sp, #0x610]
+c29660 str x22, [sp, #0x618]
+c29664 bl 0x397c88
+c29668 cmn w0, #0x1
+c2966c b .eq	0xc2b14c
+c29670 str x23, [sp, #0x620]
+c29674 str x24, [sp, #0x628]
+c29678 cbz w0, 0xc2a18c
+c2967c ldr w21, [sp, #0x1f0]
+c29680 ands w0, w21, #0x7f
+c29684 b .eq	0xc2b100
+c29688 add w0, w0, #0x1
+c2968c ldr x23, [sp, #0x620]
+c29690 sbfx x0, x0, #1, #7
+c29694 ldr x24, [sp, #0x628]
+c29698 cmp w0, #0x0
+c2969c b .le	0xc2b298
+c296a0 mov x0, x20
+c296a4 bl 0x123c780

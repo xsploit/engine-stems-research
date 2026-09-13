@@ -1,0 +1,486 @@
+000000000000ea00 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)>:
+    ea00:       stp x29, x30, [sp, #-0x110]!
+    ea04:       mov x29, sp
+    ea08:       stp x21, x22, [sp, #0x20]
+    ea0c:       adrp x22, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    ea10:       ldr x4, [x22, #0xfa8] ; @187fffa8
+    ea14:       stp x19, x20, [sp, #0x10]
+    ea18:       mov x19, x0
+    ea1c:       ldrb w0, [x0, #0xc79]
+    ea20:       ldr x5, [x4]
+    ea24:       str x5, [sp, #0x108]
+    ea28:       mov x5, #0x0                // =0
+    ea2c:       stp x27, x28, [sp, #0x50]
+    ea30:       str x3, [sp, #0x60]
+    ea34:       cbnz w0, 0xefb0 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x5b0>
+    ea38:       stp x25, x26, [sp, #0x40]
+    ea3c:       mov x25, x1
+    ea40:       cbz x1, 0xedec <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x3ec>
+    ea44:       add x20, x19, #0xb70
+    ea48:       mov x21, x2
+    ea4c:       ldr x2, [x19, #0x20]
+    ea50:       ldp x1, x0, [x20, #0x8]
+    ea54:       subs x0, x0, x1
+    ea58:       b.mi 0xee20 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x420>
+    ea5c:       cmp x2, x0
+    ea60:       mov x0, #0x0                // =0
+    ea64:       b.hi 0xedd4 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x3d4>
+    ea68:       ldr x1, [sp, #0x60]
+    ea6c:       cmp x1, #0x0
+    ea70:       ccmp x21, x0, #0x0, ne
+    ea74:       b.ne 0xedec <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x3ec>
+    ea78:       stp x23, x24, [sp, #0x30]
+    ea7c:       add x24, x19, #0x28
+    ea80:       str x24, [sp, #0x88]
+    ea84:       cbz x21, 0xee58 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x458>
+    ea88:       mov x0, x24
+    ea8c:       ldr x26, [x19, #0x8]
+    ea90:       bl 0x12750 <zplane::StemsProAlgorithm::getInputBlockSize() const>
+    ea94:       mov x23, x0
+    ea98:       mov x0, x24
+    ea9c:       bl 0x127b0 <zplane::StemsProAlgorithm::getOutputBlockSize() const>
+    eaa0:       ldr w1, [x19, #0xc84]
+    eaa4:       sub w23, w23, w0
+    eaa8:       mov x0, x24
+    eaac:       add w1, w1, w23
+    eab0:       str w1, [x19, #0xc84]
+    eab4:       bl 0x127b0 <zplane::StemsProAlgorithm::getOutputBlockSize() const>
+    eab8:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    eabc:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    eac0:       add x2, x2, #0x290
+    eac4:       add x1, x1, #0x270
+    eac8:       stp x2, xzr, [sp, #0xd0]
+    eacc:       mov x23, x0
+    ead0:       stp x1, x25, [sp, #0xe0]
+    ead4:       stp x26, x21, [sp, #0xf0]
+    ead8:       str xzr, [sp, #0x100]
+    eadc:       cbnz x0, 0xefc8 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x5c8>
+    eae0:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    eae4:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    eae8:       add x1, x1, #0x1d0
+    eaec:       add x0, x0, #0x1b0
+    eaf0:       stp x1, xzr, [sp, #0x90]
+    eaf4:       stp x0, xzr, [sp, #0xa0]
+    eaf8:       stp xzr, xzr, [sp, #0xb0]
+    eafc:       str xzr, [sp, #0xc0]
+    eb00:       ldr x0, [sp, #0x88]
+    eb04:       add x25, sp, #0x90
+    eb08:       add x26, sp, #0xd0
+    eb0c:       mov x2, x25
+    eb10:       mov x1, x26
+    eb14:       bl 0x16290 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)>
+    eb18:       cbz x23, 0xefb8 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x5b8>
+    eb1c:       ldr x4, [x19, #0xb18]
+    eb20:       ldr x6, [x19, #0xb28]
+    eb24:       ldr x1, [x19, #0xb10]
+    eb28:       str x1, [sp, #0x78]
+    eb2c:       ldr x0, [x19, #0xba8]
+    eb30:       cmp x4, x0
+    eb34:       b.ne 0xf154 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x754>
+    eb38:       ldp x1, x0, [x20, #0x8]
+    eb3c:       ldr x2, [x19, #0xb70]
+    eb40:       cmp x2, #0x0
+    eb44:       sub x3, x2, #0x1
+    eb48:       sub x1, x0, x1
+    eb4c:       csel x3, x3, xzr, ne
+    eb50:       add x5, x1, x2
+    eb54:       cmp x1, #0x0
+    eb58:       csel x1, x5, x1, lt
+    eb5c:       sub x1, x3, x1
+    eb60:       cmp x23, x1
+    eb64:       b.hi 0xf124 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x724>
+    eb68:       cbz x23, 0xec88 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x288>
+    eb6c:       cbz x4, 0xec78 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x278>
+    eb70:       lsl x1, x6, #2
+    eb74:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    eb78:       add x28, x19, #0xb88
+    eb7c:       add x3, x3, #0x170
+    eb80:       mov x21, #0x0               // =0
+    eb84:       str x3, [sp, #0x68]
+    eb88:       str x1, [sp, #0x80]
+    eb8c:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    eb90:       add x1, x1, #0x2b0
+    eb94:       str x1, [sp, #0x70]
+    eb98:       b 0xebd8 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x1d8>
+    eb9c:       ldr x2, [sp, #0x70]
+    eba0:       stp x2, x27, [sp, #0x90]
+    eba4:       mov x1, x25
+    eba8:       ldr x2, [sp, #0x68]
+    ebac:       mov x0, x26
+    ebb0:       str x23, [sp, #0xa0]
+    ebb4:       str x2, [sp, #0xd0]
+    ebb8:       stp x3, x23, [sp, #0xd8]
+    ebbc:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    ebc0:       add x21, x21, #0x1
+    ebc4:       ldr x0, [x19, #0xba8]
+    ebc8:       ldr x2, [x19, #0xb70]
+    ebcc:       cmp x0, x21
+    ebd0:       ldr x0, [x19, #0xb80]
+    ebd4:       b.ls 0xec78 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x278>
+    ebd8:       ldr x4, [x19, #0xba0]
+    ebdc:       add x1, x23, x0
+    ebe0:       cmp x1, x2
+    ebe4:       ldr x3, [x28, #0x30]
+    ebe8:       ldr x1, [x4, x21, lsl #3]
+    ebec:       add x24, x1, x3, lsl #2
+    ebf0:       ldp x4, x1, [sp, #0x78]
+    ebf4:       add x3, x24, x0, lsl #2
+    ebf8:       ldr x27, [x4, x21, lsl #3]
+    ebfc:       add x27, x27, x1
+    ec00:       b.ls 0xeb9c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x19c>
+    ec04:       ldp x5, x4, [sp, #0x68]
+    ec08:       sub x2, x2, x0
+    ec0c:       mov x1, x25
+    ec10:       mov x0, x26
+    ec14:       stp x4, x27, [sp, #0x90]
+    ec18:       str x2, [sp, #0xa0]
+    ec1c:       stp x5, x3, [sp, #0xd0]
+    ec20:       str x2, [sp, #0xe0]
+    ec24:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    ec28:       ldr x4, [x20]
+    ec2c:       mov x1, x25
+    ec30:       ldr x2, [x20, #0x10]
+    ec34:       mov x0, x26
+    ec38:       ldp x5, x3, [sp, #0x68]
+    ec3c:       str x3, [sp, #0x90]
+    ec40:       stp x5, x24, [sp, #0xd0]
+    ec44:       sub x3, x4, x2
+    ec48:       sub x2, x2, x4
+    ec4c:       add x2, x2, x23
+    ec50:       add x27, x27, x3, lsl #2
+    ec54:       stp x27, x2, [sp, #0x98]
+    ec58:       str x2, [sp, #0xe0]
+    ec5c:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    ec60:       ldr x0, [x19, #0xba8]
+    ec64:       add x21, x21, #0x1
+    ec68:       ldr x2, [x19, #0xb70]
+    ec6c:       cmp x0, x21
+    ec70:       ldr x0, [x19, #0xb80]
+    ec74:       b.hi 0xebd8 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x1d8>
+    ec78:       add x23, x23, x0
+    ec7c:       udiv x0, x23, x2
+    ec80:       msub x23, x0, x2, x23
+    ec84:       str x23, [x19, #0xb80]
+    ec88:       ldrb w0, [x19, #0xc78]
+    ec8c:       cbnz w0, 0xee58 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x458>
+    ec90:       ldr x0, [sp, #0x88]
+    ec94:       bl 0x114c0 <zplane::StemsProAlgorithm::getLatencyInSamples() const>
+    ec98:       mov x23, x0
+    ec9c:       cbz x0, 0xeff8 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x5f8>
+    eca0:       ldr x0, [x19, #0xb18]
+    eca4:       ldr x3, [x19, #0xb28]
+    eca8:       ldr x1, [x19, #0xb10]
+    ecac:       str x1, [sp, #0x70]
+    ecb0:       ldr x2, [x19, #0xba8]
+    ecb4:       cmp x0, x2
+    ecb8:       b.ne 0xf0ec <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x6ec>
+    ecbc:       ldp x0, x1, [x20, #0x8]
+    ecc0:       subs x1, x1, x0
+    ecc4:       b.pl 0xecd0 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x2d0>
+    ecc8:       ldr x4, [x19, #0xb70]
+    eccc:       add x1, x1, x4
+    ecd0:       cmp x23, x1
+    ecd4:       b.hi 0xf0bc <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x6bc>
+    ecd8:       cbz x23, 0xee4c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x44c>
+    ecdc:       cbz x2, 0xee38 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x438>
+    ece0:       lsl x1, x3, #2
+    ece4:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    ece8:       add x2, x3, #0x170
+    ecec:       stp x1, x2, [sp, #0x78]
+    ecf0:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    ecf4:       add x1, x1, #0x2b0
+    ecf8:       add x28, x19, #0xb88
+    ecfc:       mov x24, x1
+    ed00:       mov x21, #0x0               // =0
+    ed04:       b 0xed3c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x33c>
+    ed08:       ldr x2, [sp, #0x80]
+    ed0c:       mov x1, x25
+    ed10:       mov x0, x26
+    ed14:       stp x24, x4, [sp, #0x90]
+    ed18:       str x23, [sp, #0xa0]
+    ed1c:       str x2, [sp, #0xd0]
+    ed20:       stp x3, x23, [sp, #0xd8]
+    ed24:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    ed28:       add x21, x21, #0x1
+    ed2c:       ldr x1, [x19, #0xba8]
+    ed30:       ldr x0, [x19, #0xb78]
+    ed34:       cmp x1, x21
+    ed38:       b.ls 0xee38 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x438>
+    ed3c:       ldr x2, [x19, #0xba0]
+    ed40:       add x1, x23, x0
+    ed44:       ldr x4, [x28, #0x30]
+    ed48:       ldr x27, [x2, x21, lsl #3]
+    ed4c:       ldp x2, x5, [sp, #0x70]
+    ed50:       add x27, x27, x4, lsl #2
+    ed54:       add x4, x27, x0, lsl #2
+    ed58:       ldr x3, [x2, x21, lsl #3]
+    ed5c:       ldr x2, [x20]
+    ed60:       add x3, x3, x5
+    ed64:       str x3, [sp, #0x68]
+    ed68:       cmp x1, x2
+    ed6c:       b.ls 0xed08 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x308>
+    ed70:       mov x5, x3
+    ed74:       sub x2, x2, x0
+    ed78:       ldr x3, [sp, #0x80]
+    ed7c:       mov x1, x25
+    ed80:       mov x0, x26
+    ed84:       stp x24, x4, [sp, #0x90]
+    ed88:       str x2, [sp, #0xa0]
+    ed8c:       stp x3, x5, [sp, #0xd0]
+    ed90:       str x2, [sp, #0xe0]
+    ed94:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    ed98:       ldp x4, x2, [x20]
+    ed9c:       mov x1, x25
+    eda0:       ldr x5, [sp, #0x68]
+    eda4:       mov x0, x26
+    eda8:       stp x24, x27, [sp, #0x90]
+    edac:       sub x3, x4, x2
+    edb0:       sub x2, x2, x4
+    edb4:       ldr x4, [sp, #0x80]
+    edb8:       add x2, x2, x23
+    edbc:       add x3, x5, x3, lsl #2
+    edc0:       str x2, [sp, #0xa0]
+    edc4:       stp x4, x3, [sp, #0xd0]
+    edc8:       str x2, [sp, #0xe0]
+    edcc:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    edd0:       b 0xed28 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x328>
+    edd4:       add x0, x19, #0x28
+    edd8:       bl 0x12750 <zplane::StemsProAlgorithm::getInputBlockSize() const>
+    eddc:       ldr x1, [sp, #0x60]
+    ede0:       cmp x1, #0x0
+    ede4:       ccmp x21, x0, #0x0, ne
+    ede8:       b.eq 0xea78 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x78>
+    edec:       ldp x25, x26, [sp, #0x40]
+    edf0:       mov w0, #0x4                // =4
+    edf4:       ldr x22, [x22, #0xfa8] ; @187fffa8
+    edf8:       ldr x1, [sp, #0x108]
+    edfc:       ldr x2, [x22]
+    ee00:       subs x1, x1, x2
+    ee04:       mov x2, #0x0                // =0
+    ee08:       b.ne 0xf008 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x608>
+    ee0c:       ldp x19, x20, [sp, #0x10]
+    ee10:       ldp x21, x22, [sp, #0x20]
+    ee14:       ldp x27, x28, [sp, #0x50]
+    ee18:       ldp x29, x30, [sp], #0x110
+    ee1c:       ret
+    ee20:       ldr x1, [x19, #0xb70]
+    ee24:       add x0, x0, x1
+    ee28:       cmp x2, x0
+    ee2c:       mov x0, #0x0                // =0
+    ee30:       b.ls 0xea68 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x68>
+    ee34:       b 0xedd4 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x3d4>
+    ee38:       ldr x1, [x19, #0xb70]
+    ee3c:       add x0, x23, x0
+    ee40:       udiv x23, x0, x1
+    ee44:       msub x0, x23, x1, x0
+    ee48:       str x0, [x19, #0xb78]
+    ee4c:       mov w0, #0x1                // =1
+    ee50:       strb w0, [x19, #0xc78]
+    ee54:       nop
+    ee58:       ldr x0, [sp, #0x88]
+    ee5c:       bl 0x12810 <zplane::StemsProAlgorithm::getNumOutputChannels() const>
+    ee60:       ldr x2, [x19, #0xba8]
+    ee64:       ldr x24, [x19, #0x20]
+    ee68:       cmp x0, x2
+    ee6c:       b.ne 0xf06c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x66c>
+    ee70:       ldp x0, x1, [x20, #0x8]
+    ee74:       subs x1, x1, x0
+    ee78:       b.pl 0xee84 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x484>
+    ee7c:       ldr x3, [x19, #0xb70]
+    ee80:       add x1, x1, x3
+    ee84:       cmp x24, x1
+    ee88:       b.hi 0xf014 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x614>
+    ee8c:       cbz x24, 0xefa0 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x5a0>
+    ee90:       cbz x2, 0xef8c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x58c>
+    ee94:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    ee98:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    ee9c:       add x2, x3, #0x170
+    eea0:       add x1, x1, #0x2b0
+    eea4:       add x25, sp, #0x90
+    eea8:       add x26, sp, #0xd0
+    eeac:       add x28, x19, #0xb88
+    eeb0:       mov x21, #0x0               // =0
+    eeb4:       stp x2, x1, [sp, #0x68]
+    eeb8:       b 0xeef4 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x4f4>
+    eebc:       ldr x2, [sp, #0x70]
+    eec0:       stp x2, x3, [sp, #0x90]
+    eec4:       mov x1, x25
+    eec8:       ldr x2, [sp, #0x68]
+    eecc:       mov x0, x26
+    eed0:       str x24, [sp, #0xa0]
+    eed4:       str x2, [sp, #0xd0]
+    eed8:       stp x27, x24, [sp, #0xd8]
+    eedc:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    eee0:       add x21, x21, #0x1
+    eee4:       ldr x1, [x19, #0xba8]
+    eee8:       ldr x0, [x19, #0xb78]
+    eeec:       cmp x1, x21
+    eef0:       b.ls 0xef8c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x58c>
+    eef4:       ldr x1, [x19, #0xba0]
+    eef8:       add x2, x24, x0
+    eefc:       ldr x23, [x28, #0x30]
+    ef00:       ldr x3, [x1, x21, lsl #3]
+    ef04:       ldr x1, [x20]
+    ef08:       add x23, x3, x23, lsl #2
+    ef0c:       cmp x2, x1
+    ef10:       add x3, x23, x0, lsl #2
+    ef14:       ldr x2, [sp, #0x60]
+    ef18:       ldr x27, [x2, x21, lsl #3]
+    ef1c:       b.ls 0xeebc <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x4bc>
+    ef20:       ldp x5, x4, [sp, #0x68]
+    ef24:       sub x2, x1, x0
+    ef28:       mov x1, x25
+    ef2c:       mov x0, x26
+    ef30:       stp x4, x3, [sp, #0x90]
+    ef34:       str x2, [sp, #0xa0]
+    ef38:       stp x5, x27, [sp, #0xd0]
+    ef3c:       str x2, [sp, #0xe0]
+    ef40:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    ef44:       ldp x4, x2, [x20]
+    ef48:       mov x1, x25
+    ef4c:       ldp x5, x3, [sp, #0x68]
+    ef50:       stp x3, x23, [sp, #0x90]
+    ef54:       mov x0, x26
+    ef58:       str x5, [sp, #0xd0]
+    ef5c:       sub x3, x4, x2
+    ef60:       add x2, x24, x2
+    ef64:       sub x2, x2, x4
+    ef68:       str x2, [sp, #0xa0]
+    ef6c:       add x27, x27, x3, lsl #2
+    ef70:       stp x27, x2, [sp, #0xd8]
+    ef74:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    ef78:       ldr x1, [x19, #0xba8]
+    ef7c:       add x21, x21, #0x1
+    ef80:       ldr x0, [x19, #0xb78]
+    ef84:       cmp x1, x21
+    ef88:       b.hi 0xeef4 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x4f4>
+    ef8c:       ldr x1, [x19, #0xb70]
+    ef90:       add x24, x24, x0
+    ef94:       udiv x0, x24, x1
+    ef98:       msub x24, x0, x1, x24
+    ef9c:       str x24, [x19, #0xb78]
+    efa0:       mov w0, #0x0                // =0
+    efa4:       ldp x23, x24, [sp, #0x30]
+    efa8:       ldp x25, x26, [sp, #0x40]
+    efac:       b 0xedf4 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x3f4>
+    efb0:       mov w0, #0x5                // =5
+    efb4:       b 0xedf4 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x3f4>
+    efb8:       mov x6, #0x0                // =0
+    efbc:       mov x4, #0x0                // =0
+    efc0:       str xzr, [sp, #0x78]
+    efc4:       b 0xeb2c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x12c>
+    efc8:       ldr x5, [x19, #0xb10]
+    efcc:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    efd0:       ldr x4, [x19, #0xb18]
+    efd4:       add x2, x2, #0x1d0
+    efd8:       ldr x3, [x19, #0xb28]
+    efdc:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    efe0:       add x0, x1, #0x1b0
+    efe4:       stp x2, xzr, [sp, #0x90]
+    efe8:       stp x0, x5, [sp, #0xa0]
+    efec:       stp x4, x23, [sp, #0xb0]
+    eff0:       str x3, [sp, #0xc0]
+    eff4:       b 0xeb00 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x100>
+    eff8:       mov x3, #0x0                // =0
+    effc:       mov x0, #0x0                // =0
+    f000:       str xzr, [sp, #0x70]
+    f004:       b 0xecb0 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x2b0>
+    f008:       stp x23, x24, [sp, #0x30]
+    f00c:       stp x25, x26, [sp, #0x40]
+    f010:       bl 0x51d0 <__stack_chk_fail@plt>
+    f014:       mov x0, #0x10               // =16
+    f018:       bl 0x4d50 <__cxa_allocate_exception@plt>
+    f01c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+    f020:       mov x21, x0
+    f024:       add x1, x1, #0x900
+    f028:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+    f02c:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f030:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f034:       mov x0, x21
+    f038:       ldr x2, [x2, #0xf48] ; @187fff48
+    f03c:       ldr x1, [x1, #0xf80] ; @187fff80
+    f040:       bl 0x4f10 <__cxa_throw@plt>
+    f044:       mov x19, x0
+    f048:       mov x0, x19
+    f04c:       cmp x1, #0x1
+    f050:       b.ne 0xf0b8 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x6b8>
+    f054:       bl 0x4bc0 <__cxa_begin_catch@plt>
+    f058:       bl 0x4fb0 <__cxa_end_catch@plt>
+    f05c:       mov w0, #0x6                // =6
+    f060:       ldp x23, x24, [sp, #0x30]
+    f064:       ldp x25, x26, [sp, #0x40]
+    f068:       b 0xedf4 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x3f4>
+    f06c:       mov x0, #0x10               // =16
+    f070:       bl 0x4d50 <__cxa_allocate_exception@plt>
+    f074:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+    f078:       mov x21, x0
+    f07c:       add x1, x1, #0x8a8
+    f080:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+    f084:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f088:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f08c:       mov x0, x21
+    f090:       ldr x2, [x2, #0xf48] ; @187fff48
+    f094:       ldr x1, [x1, #0xf80] ; @187fff80
+    f098:       bl 0x4f10 <__cxa_throw@plt>
+    f09c:       mov x20, x1
+    f0a0:       mov x19, x0
+    f0a4:       mov x0, x21
+    f0a8:       bl 0x5070 <__cxa_free_exception@plt>
+    f0ac:       mov x1, x20
+    f0b0:       b 0xf048 <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x648>
+    f0b4:       b 0xf09c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x69c>
+    f0b8:       bl 0x4f40 <_Unwind_Resume@plt>
+    f0bc:       mov x0, #0x10               // =16
+    f0c0:       bl 0x4d50 <__cxa_allocate_exception@plt>
+    f0c4:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+    f0c8:       mov x21, x0
+    f0cc:       add x1, x1, #0x900
+    f0d0:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+    f0d4:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f0d8:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f0dc:       mov x0, x21
+    f0e0:       ldr x2, [x2, #0xf48] ; @187fff48
+    f0e4:       ldr x1, [x1, #0xf80] ; @187fff80
+    f0e8:       bl 0x4f10 <__cxa_throw@plt>
+    f0ec:       mov x0, #0x10               // =16
+    f0f0:       bl 0x4d50 <__cxa_allocate_exception@plt>
+    f0f4:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+    f0f8:       mov x21, x0
+    f0fc:       add x1, x1, #0x8a8
+    f100:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+    f104:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f108:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f10c:       mov x0, x21
+    f110:       ldr x2, [x2, #0xf48] ; @187fff48
+    f114:       ldr x1, [x1, #0xf80] ; @187fff80
+    f118:       bl 0x4f10 <__cxa_throw@plt>
+    f11c:       b 0xf09c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x69c>
+    f120:       b 0xf09c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x69c>
+    f124:       mov x0, #0x10               // =16
+    f128:       bl 0x4d50 <__cxa_allocate_exception@plt>
+    f12c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+    f130:       mov x21, x0
+    f134:       add x1, x1, #0x8d0
+    f138:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+    f13c:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f140:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f144:       mov x0, x21
+    f148:       ldr x2, [x2, #0xf48] ; @187fff48
+    f14c:       ldr x1, [x1, #0xf80] ; @187fff80
+    f150:       bl 0x4f10 <__cxa_throw@plt>
+    f154:       mov x0, #0x10               // =16
+    f158:       bl 0x4d50 <__cxa_allocate_exception@plt>
+    f15c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+    f160:       mov x21, x0
+    f164:       add x1, x1, #0x8a8
+    f168:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+    f16c:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f170:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    f174:       mov x0, x21
+    f178:       ldr x2, [x2, #0xf48] ; @187fff48
+    f17c:       ldr x1, [x1, #0xf80] ; @187fff80
+    f180:       bl 0x4f10 <__cxa_throw@plt>
+    f184:       b 0xf09c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x69c>
+    f188:       b 0xf09c <zplane::StemsPro::StemsProImpl::process(float const* const*, unsigned long, float* const*)+0x69c>
+    f18c:       nop
+

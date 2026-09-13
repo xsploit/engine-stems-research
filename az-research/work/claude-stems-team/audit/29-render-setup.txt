@@ -1,0 +1,242 @@
+c28200 ldr w2, [sp, #0x8]
+c28204 mov w3, #0x2                // =2
+c28208 tbz w0, #0x0, 0xc28b38
+c28210 ldr x1, [x1, #0xb78]
+c28214 mov x0, #0x0                // =0
+c28218 bfxil x0, x3, #0, #32
+c2821c ldr x4, [sp, #0x148]
+c28220 ldr x3, [x1]
+c28224 subs x4, x4, x3
+c28228 mov x3, #0x0                // =0
+c2822c bfi x0, x2, #32, #32
+c28230 b .ne	0xc28c94
+c28234 ldp x29, x30, [sp, #0x150]
+c28238 ldp x19, x20, [sp, #0x160]
+c2823c ldp x21, x22, [sp, #0x170]
+c28240 ldp x23, x24, [sp, #0x180]
+c28244 ldp x25, x26, [sp, #0x190]
+c28248 ldp x27, x28, [sp, #0x1a0]
+c2824c add sp, sp, #0x1c0
+c28254 ret 
+c28258 add x22, sp, #0x70
+c2825c mov x1, x20
+c28260 mov x0, x22
+c28264 stp xzr, xzr, [sp, #0x98]
+c28268 str xzr, [sp, #0xa8]
+c2826c bl 0x3920d8
+c28270 mov x0, x20
+c28274 stp x25, x26, [sp, #0x190]
+c28278 bl 0x51bde0
+c2827c add x25, x19, #0x88
+c28280 mov x0, x22
+c28284 mov x1, x25
+c28288 bl 0x393238
+c2828c tbz w0, #0x0, 0xc283fc
+c28290 mov x1, x25
+c28294 mov x0, x22
+c28298 bl 0x393cb8
+c2829c tbz w0, #0x0, 0xc28470
+c282a0 mov x8, x20
+c282a4 mov x0, x22
+c282a8 bl 0x3920e8
+c282ac add x24, sp, #0x80
+c282b0 mov x1, x20
+c282b4 mov x0, x24
+c282b8 bl 0x3920d8
+c282bc add x2, x19, #0xa0
+c282c0 mov x1, x24
+c282c4 mov x0, x23
+c282c8 bl 0x397cc8
+c282cc mov x0, x24
+c282d0 bl 0x3922b8
+c282d4 mov x0, x20
+c282d8 bl 0x51bde0
+c282dc mov x8, x20
+c282e0 mov x0, x23
+c282e4 bl 0x395078
+c282e8 mov x0, x20
+c282ec bl 0x392fd8
+c282f0 and w23, w0, #0xff
+c282f4 mov x0, x20
+c282f8 bl 0x3922b8
+c282fc mov x0, x22
+c28300 bl 0x3922b8
+c28304 tbz w23, #0x0, 0xc2841c
+c28308 ldp x25, x26, [sp, #0x190]
+c2830c b 0xc27fb8
+c28314 mov x0, x20
+c28318 add x2, x23, #0x3f8  ; "zplaneStemsRenderThreadCount"
+c2831c mov x1, #0x1c               // =28
+c28320 bl 0x51ea20
+c28324 mov x0, x20
+c28328 bl 0xc69d30
+c2832c and w22, w0, #0xff
+c28330 mov x0, x20
+c28334 bl 0x51bde0
+c28338 tbz w22, #0x0, 0xc284e0
+c2833c add x2, x23, #0x3f8  ; "zplaneStemsRenderThreadCount"
+c28340 mov x0, x20
+c28344 mov x1, #0x1c               // =28
+c28348 bl 0x51ea20
+c2834c add x24, sp, #0x80
+c28350 mov x0, x20
+c28354 mov x8, x24
+c28358 bl 0xc69eec
+c2835c mov x0, x20
+c28360 bl 0x51bde0
+c28364 ldp x1, x0, [sp, #0x88]
+c28368 mov x2, x20
+c2836c mov w3, #0xa                // =10
+c28370 bl 0x393478
+c28374 cmp x0, w0, sxtw
+c28378 b .eq	0xc28afc
+c2837c strb wzr, [sp, #0x98]
+c28380 mov w22, #0x1               // =1
+c28384 mov x0, x24
+c28388 bl 0x51bde0
+c28390 add x0, x0, #0x90  ; "default"
+c28394 mov x1, #0x2                // =2
+c28398 stp x1, xzr, [sp, #0x98]
+c2839c stp xzr, x0, [sp, #0xa8]
+c283a0 bl 0xc694ac
+c283a4 add x24, sp, #0x80
+c283a8 mov x1, x0
+c283ac mov x8, x24
+c283b0 mov x0, x20
+c283b4 bl 0x394858
+c283bc mov x0, x24
+c283c0 add x1, x1, #0x418  ; "Stems Render Thread Count:"
+c283c4 bl 0x51bea8
+c283c8 mov w1, w22
+c283cc bl 0x51be50
+c283d0 mov x0, x24
+c283d4 bl 0x391c18
+c283d8 add x1, x28, #0x520
+c283dc add x0, x1, #0x110  ; "creen::HostPlaylistController::updateListsSelect"
+c283e0 strb w22, [x1, #0x118]
+c283e4 bl 0x392068
+c283e8 b 0xc27f8c
+c283ec add x26, x26, #0x1
+c283f0 cmp w3, w26
+c283f4 b .gt	0xc280a4
+c283f8 b 0xc280c4
+c283fc bl 0xc694ac
+c28400 add x1, x0, #0x11
+c28404 ldrb w1, [x1]
+c28408 tst w1, #0xff
+c2840c b .ne	0xc291cc
+c28410 add x24, sp, #0x80
+c28414 mov x0, x22
+c28418 bl 0x3922b8
+c28420 add x0, x0, #0x90  ; "default"
+c28424 mov x1, #0x2                // =2
+c28428 stp x1, xzr, [sp, #0x98]
+c2842c stp xzr, x0, [sp, #0xa8]
+c28430 bl 0xc694ac
+c28434 mov x8, x24
+c28438 mov x1, x0
+c2843c mov x0, x20
+c28440 bl 0x395828
+c28448 mov x0, x24
+c2844c add x1, x1, #0x438  ; "Could not create output file for"
+c28450 bl 0x51bea8
+c28454 add x1, x19, #0xb8
+c28458 bl 0x51bfc0
+c2845c mov x0, x24
+c28460 bl 0x391c18
+c28464 mov w3, #0x1                // =1
+c28468 mov w2, #-0x1               // =-1
+c2846c b 0xc2820c
+c28470 bl 0xc694ac
+c28474 add x1, x0, #0x11
+c28478 ldrb w1, [x1]
+c2847c tst w1, #0xff
+c28480 b .eq	0xc28410
+c28484 ldr x1, [x0, #0x8]
+c28488 mov x2, #0x2                // =2
+c2848c add x24, sp, #0x80
+c28490 mov x0, x20
+c28494 mov x8, x24
+c28498 stp x2, xzr, [sp, #0x98]
+c2849c stp xzr, x1, [sp, #0xa8]
+c284a0 bl 0x391c28
+c284a8 mov x0, x24
+c284ac add x1, x1, #0x6c8  ; "Unable to cd to stems folder:"
+c284b0 bl 0x51bea8
+c284b4 mov x1, x25
+c284b8 bl 0x51bfc0
+c284bc mov x0, x24
+c284c0 bl 0x391c18
+c284c4 mov x0, x22
+c284c8 bl 0x3922b8
+c284cc b 0xc2841c
+c284d0 mov x0, x1
+c284d4 blr x2
+c284d8 mov w26, w0
+c284dc b 0xc28064
+c284e0 mov w22, #0x1               // =1
+c284e4 b 0xc2838c
+c284e8 mov w26, #0x0               // =0
+c284ec b 0xc28064
+c284f0 ldr x1, [x2, #0x20]
+c284f8 add x23, x3, #0xcac
+c284fc str d8, [sp, #0x1b0]
+c28500 cmp x1, x23
+c28504 b .ne	0xc28a84
+c28508 ldr x3, [x0, #0xa0]
+c2850c add x1, x26, #0x420
+c28510 ldr x2, [x2, #0x28]
+c28514 cbz x3, 0xc28ab4
+c28518 ldr w27, [x0, #0x88]
+c2851c cmp x2, x1
+c28520 b .ne	0xc28ac4
+c28524 ldr s8, [x3, #0x190]
+c28528 ldr x1, [x19, #0xe8]
+c2852c add x0, x19, #0xd8
+c28530 cbz x1, 0xc28bf4
+c28534 ldr x1, [x0, #0x18]
+c28538 add x2, sp, #0xc0
+c2853c mov x8, x2
+c28540 str x2, [sp, #0x58]
+c28544 blr x1
+c28548 mov x0, #0x3d8              // =984
+c2854c bl 0x3915d8
+c28550 mov x23, x0
+c28554 stp x19, xzr, [sp, #0xe0]
+c28558 ldr w2, [x19, #0x68]
+c2855c add x28, x28, #0x520
+c28560 str w2, [sp, #0x44]
+c28564 str w2, [x23, #0x8]
+c28568 mov w1, #0x1                // =1
+c2856c ldp x2, x3, [sp, #0xe0]
+c28570 ucvtf s0, s8
+c28574 stp x19, xzr, [sp, #0x100]
+c28578 add x4, x0, #0x10
+c28580 add x0, x0, #0xc64
+c28584 strh w1, [x23, #0xc]
+c2858c add x1, x1, #0xd80
+c28590 stp x2, x3, [x23, #0x10]
+c28594 add x6, x23, #0x30  ; "newToRow : "
+c28598 ldr x2, [sp, #0xc8]
+c2859c str x0, [x23, #0x28]
+c285a4 add x0, x0, #0x148
+c285a8 str x1, [x23, #0x48]
+c285ac ldrsb w1, [x28, #0x118]
+c285b0 stp x4, x6, [sp, #0x48]
+c285b4 ldp x4, x5, [sp, #0x100]
+c285b8 str w27, [x23]
+c285bc str x0, [x23, #0x20]
+c285c4 add x0, x0, #0x18c
+c285c8 stp x4, x5, [x23, #0x30]
+c285cc str x0, [x23, #0x40]
+c285d0 str w1, [x23, #0x50]
+c285d4 stp xzr, xzr, [sp, #0xf0]
+c285d8 stp xzr, xzr, [sp, #0x110]
+c285dc str s0, [x23, #0x4]
+c285e0 cbnz x2, 0xc28ad8
+c285e4 add x0, x23, #0x58
+c285ec mov x2, x20
+c285f0 add x1, x1, #0x7e0  ; "stems-processor"
+c285f4 str x0, [sp, #0x60]
+c285f8 bl 0x51cae0
+c285fc add x1, x23, #0x100  ; "void RemoteHostScreen::HostPlaylistController::u"

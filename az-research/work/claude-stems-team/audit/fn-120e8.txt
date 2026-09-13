@@ -1,0 +1,412 @@
+00000000000120e8 <zplane::StemsProAlgorithm::reset()>:
+   120e8:       stp x29, x30, [sp, #-0x90]!
+   120ec:       mov x29, sp
+   120f0:       stp x21, x22, [sp, #0x20]
+   120f4:       adrp x21, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   120f8:       ldr x1, [x21, #0xfa8] ; @187fffa8
+   120fc:       stp x19, x20, [sp, #0x10]
+   12100:       mov x19, x0
+   12104:       ldr x0, [x0, #0x250]
+   12108:       ldr x2, [x1]
+   1210c:       str x2, [sp, #0x88]
+   12110:       mov x2, #0x0                // =0
+   12114:       stp x23, x24, [sp, #0x30]
+   12118:       stp x25, x26, [sp, #0x40]
+   1211c:       stp x27, x28, [sp, #0x50]
+   12120:       cbz x0, 0x12744 <zplane::StemsProAlgorithm::reset()+0x65c>
+   12124:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   12128:       add x24, x19, #0x230
+   1212c:       add x20, x1, #0x170
+   12130:       add x22, sp, #0x70
+   12134:       mov x23, #0x0               // =0
+   12138:       ldr x2, [x19, #0x248]
+   1213c:       mov x0, x22
+   12140:       ldp x3, x1, [x24, #0x28]
+   12144:       ldr x2, [x2, x23, lsl #3]
+   12148:       str x3, [sp, #0x80]
+   1214c:       add x23, x23, #0x1
+   12150:       add x1, x2, x1, lsl #2
+   12154:       stp x20, x1, [sp, #0x70]
+   12158:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   1215c:       ldr x0, [x19, #0x250]
+   12160:       cmp x0, x23
+   12164:       b.hi 0x12138 <zplane::StemsProAlgorithm::reset()+0x50>
+   12168:       ldrb w0, [x19, #0xa8]
+   1216c:       str xzr, [x24, #0x90]
+   12170:       cbnz w0, 0x126dc <zplane::StemsProAlgorithm::reset()+0x5f4>
+   12174:       ldr x0, [x19, #0xd0]
+   12178:       cbz x0, 0x121c0 <zplane::StemsProAlgorithm::reset()+0xd8>
+   1217c:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   12180:       add x22, sp, #0x70
+   12184:       add x20, x1, #0x170
+   12188:       add x24, x19, #0xb0
+   1218c:       mov x23, #0x0               // =0
+   12190:       ldr x2, [x19, #0xc8]
+   12194:       mov x0, x22
+   12198:       ldp x3, x1, [x24, #0x28]
+   1219c:       ldr x2, [x2, x23, lsl #3]
+   121a0:       str x3, [sp, #0x80]
+   121a4:       add x23, x23, #0x1
+   121a8:       add x1, x2, x1, lsl #2
+   121ac:       stp x20, x1, [sp, #0x70]
+   121b0:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   121b4:       ldr x0, [x19, #0xd0]
+   121b8:       cmp x0, x23
+   121bc:       b.hi 0x12190 <zplane::StemsProAlgorithm::reset()+0xa8>
+   121c0:       ldr x0, [x19, #0x148]
+   121c4:       cbz x0, 0x12210 <zplane::StemsProAlgorithm::reset()+0x128>
+   121c8:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   121cc:       add x22, sp, #0x70
+   121d0:       add x20, x1, #0x170
+   121d4:       add x24, x19, #0x128
+   121d8:       mov x23, #0x0               // =0
+   121dc:       nop
+   121e0:       ldr x2, [x19, #0x140]
+   121e4:       mov x0, x22
+   121e8:       ldp x3, x1, [x24, #0x28]
+   121ec:       ldr x2, [x2, x23, lsl #3]
+   121f0:       str x3, [sp, #0x80]
+   121f4:       add x23, x23, #0x1
+   121f8:       add x1, x2, x1, lsl #2
+   121fc:       stp x20, x1, [sp, #0x70]
+   12200:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   12204:       ldr x0, [x19, #0x148]
+   12208:       cmp x0, x23
+   1220c:       b.hi 0x121e0 <zplane::StemsProAlgorithm::reset()+0xf8>
+   12210:       ldr x0, [x19, #0x458]
+   12214:       cbz x0, 0x12260 <zplane::StemsProAlgorithm::reset()+0x178>
+   12218:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1221c:       add x22, sp, #0x70
+   12220:       add x20, x1, #0x170
+   12224:       add x24, x19, #0x438
+   12228:       mov x23, #0x0               // =0
+   1222c:       nop
+   12230:       ldr x2, [x19, #0x450]
+   12234:       mov x0, x22
+   12238:       ldp x3, x1, [x24, #0x28]
+   1223c:       ldr x2, [x2, x23, lsl #3]
+   12240:       str x3, [sp, #0x80]
+   12244:       add x23, x23, #0x1
+   12248:       add x1, x2, x1, lsl #2
+   1224c:       stp x20, x1, [sp, #0x70]
+   12250:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   12254:       ldr x0, [x19, #0x458]
+   12258:       cmp x0, x23
+   1225c:       b.hi 0x12230 <zplane::StemsProAlgorithm::reset()+0x148>
+   12260:       ldr x26, [x19, #0x4c8]
+   12264:       cbz x26, 0x122ec <zplane::StemsProAlgorithm::reset()+0x204>
+   12268:       ldr x2, [x19, #0x4d0]
+   1226c:       ldr x20, [x19, #0x4c0]
+   12270:       ldr x3, [x19, #0x4d8]
+   12274:       ldr x28, [x19, #0x4e0]
+   12278:       cbz x2, 0x122ec <zplane::StemsProAlgorithm::reset()+0x204>
+   1227c:       add x24, x3, x28
+   12280:       add x25, x28, x2
+   12284:       add x0, x2, x24
+   12288:       lsl x28, x28, #2
+   1228c:       lsl x24, x24, #2
+   12290:       lsl x25, x25, #2
+   12294:       cmp x28, x0, lsl #2
+   12298:       add x26, x20, x26, lsl #3
+   1229c:       cset w27, ge
+   122a0:       cmp x24, x25
+   122a4:       cset w0, ge
+   122a8:       lsl x22, x2, #2
+   122ac:       orr w27, w27, w0
+   122b0:       ldr x23, [x20]
+   122b4:       cbz w27, 0x126b0 <zplane::StemsProAlgorithm::reset()+0x5c8>
+   122b8:       mov x2, x22
+   122bc:       mov w1, #0x0                // =0
+   122c0:       add x0, x23, x28
+   122c4:       str x3, [sp, #0x68]
+   122c8:       bl 0x4ce0 <memset@plt>
+   122cc:       add x20, x20, #0x8
+   122d0:       mov x2, x22
+   122d4:       add x0, x23, x24
+   122d8:       mov w1, #0x0                // =0
+   122dc:       bl 0x4ce0 <memset@plt>
+   122e0:       cmp x26, x20
+   122e4:       ldr x3, [sp, #0x68]
+   122e8:       b.ne 0x122b0 <zplane::StemsProAlgorithm::reset()+0x1c8>
+   122ec:       ldr x0, [x19, #0x548]
+   122f0:       cbz x0, 0x12338 <zplane::StemsProAlgorithm::reset()+0x250>
+   122f4:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   122f8:       add x22, sp, #0x70
+   122fc:       add x20, x1, #0x170
+   12300:       add x24, x19, #0x528
+   12304:       mov x23, #0x0               // =0
+   12308:       ldr x2, [x19, #0x540]
+   1230c:       mov x0, x22
+   12310:       ldp x3, x1, [x24, #0x28]
+   12314:       ldr x2, [x2, x23, lsl #3]
+   12318:       str x3, [sp, #0x80]
+   1231c:       add x23, x23, #0x1
+   12320:       add x1, x2, x1, lsl #2
+   12324:       stp x20, x1, [sp, #0x70]
+   12328:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   1232c:       ldr x0, [x19, #0x548]
+   12330:       cmp x0, x23
+   12334:       b.hi 0x12308 <zplane::StemsProAlgorithm::reset()+0x220>
+   12338:       ldr x0, [x19, #0x5c0]
+   1233c:       cbz x0, 0x12388 <zplane::StemsProAlgorithm::reset()+0x2a0>
+   12340:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   12344:       add x22, sp, #0x70
+   12348:       add x20, x1, #0x170
+   1234c:       add x24, x19, #0x5a0
+   12350:       mov x23, #0x0               // =0
+   12354:       nop
+   12358:       ldr x2, [x19, #0x5b8]
+   1235c:       mov x0, x22
+   12360:       ldp x3, x1, [x24, #0x28]
+   12364:       ldr x2, [x2, x23, lsl #3]
+   12368:       str x3, [sp, #0x80]
+   1236c:       add x23, x23, #0x1
+   12370:       add x1, x2, x1, lsl #2
+   12374:       stp x20, x1, [sp, #0x70]
+   12378:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   1237c:       ldr x0, [x19, #0x5c0]
+   12380:       cmp x0, x23
+   12384:       b.hi 0x12358 <zplane::StemsProAlgorithm::reset()+0x270>
+   12388:       ldr x0, [x19, #0x638]
+   1238c:       cbz x0, 0x123d8 <zplane::StemsProAlgorithm::reset()+0x2f0>
+   12390:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   12394:       add x22, sp, #0x70
+   12398:       add x20, x1, #0x170
+   1239c:       add x24, x19, #0x618
+   123a0:       mov x23, #0x0               // =0
+   123a4:       nop
+   123a8:       ldr x2, [x19, #0x630]
+   123ac:       mov x0, x22
+   123b0:       ldp x3, x1, [x24, #0x28]
+   123b4:       ldr x2, [x2, x23, lsl #3]
+   123b8:       str x3, [sp, #0x80]
+   123bc:       add x23, x23, #0x1
+   123c0:       add x1, x2, x1, lsl #2
+   123c4:       stp x20, x1, [sp, #0x70]
+   123c8:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   123cc:       ldr x0, [x19, #0x638]
+   123d0:       cmp x0, x23
+   123d4:       b.hi 0x123a8 <zplane::StemsProAlgorithm::reset()+0x2c0>
+   123d8:       ldr x26, [x19, #0x6a8]
+   123dc:       cbz x26, 0x12464 <zplane::StemsProAlgorithm::reset()+0x37c>
+   123e0:       ldr x2, [x19, #0x6b0]
+   123e4:       ldr x20, [x19, #0x6a0]
+   123e8:       ldr x3, [x19, #0x6b8]
+   123ec:       ldr x28, [x19, #0x6c0]
+   123f0:       cbz x2, 0x12464 <zplane::StemsProAlgorithm::reset()+0x37c>
+   123f4:       add x24, x3, x28
+   123f8:       add x25, x28, x2
+   123fc:       add x0, x2, x24
+   12400:       lsl x28, x28, #2
+   12404:       lsl x24, x24, #2
+   12408:       lsl x25, x25, #2
+   1240c:       cmp x28, x0, lsl #2
+   12410:       add x26, x20, x26, lsl #3
+   12414:       cset w27, ge
+   12418:       cmp x25, x24
+   1241c:       cset w0, le
+   12420:       lsl x22, x2, #2
+   12424:       orr w27, w27, w0
+   12428:       ldr x23, [x20]
+   1242c:       cbz w27, 0x12684 <zplane::StemsProAlgorithm::reset()+0x59c>
+   12430:       mov x2, x22
+   12434:       mov w1, #0x0                // =0
+   12438:       add x0, x23, x28
+   1243c:       str x3, [sp, #0x68]
+   12440:       bl 0x4ce0 <memset@plt>
+   12444:       add x20, x20, #0x8
+   12448:       mov x2, x22
+   1244c:       add x0, x23, x24
+   12450:       mov w1, #0x0                // =0
+   12454:       bl 0x4ce0 <memset@plt>
+   12458:       cmp x26, x20
+   1245c:       ldr x3, [sp, #0x68]
+   12460:       b.ne 0x12428 <zplane::StemsProAlgorithm::reset()+0x340>
+   12464:       ldr x0, [x19, #0x728]
+   12468:       cbz x0, 0x124b0 <zplane::StemsProAlgorithm::reset()+0x3c8>
+   1246c:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   12470:       add x22, sp, #0x70
+   12474:       add x20, x1, #0x170
+   12478:       add x24, x19, #0x708
+   1247c:       mov x23, #0x0               // =0
+   12480:       ldr x2, [x19, #0x720]
+   12484:       mov x0, x22
+   12488:       ldp x3, x1, [x24, #0x28]
+   1248c:       ldr x2, [x2, x23, lsl #3]
+   12490:       str x3, [sp, #0x80]
+   12494:       add x23, x23, #0x1
+   12498:       add x1, x2, x1, lsl #2
+   1249c:       stp x20, x1, [sp, #0x70]
+   124a0:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   124a4:       ldr x0, [x19, #0x728]
+   124a8:       cmp x0, x23
+   124ac:       b.hi 0x12480 <zplane::StemsProAlgorithm::reset()+0x398>
+   124b0:       ldrb w0, [x19, #0x80]
+   124b4:       cbnz w0, 0x126f0 <zplane::StemsProAlgorithm::reset()+0x608>
+   124b8:       ldr x0, [x19, #0x890]
+   124bc:       cbz x0, 0x12508 <zplane::StemsProAlgorithm::reset()+0x420>
+   124c0:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   124c4:       add x22, sp, #0x70
+   124c8:       add x20, x1, #0x170
+   124cc:       add x24, x19, #0x870
+   124d0:       mov x23, #0x0               // =0
+   124d4:       nop
+   124d8:       ldr x2, [x19, #0x888]
+   124dc:       mov x0, x22
+   124e0:       ldp x3, x1, [x24, #0x28]
+   124e4:       ldr x2, [x2, x23, lsl #3]
+   124e8:       str x3, [sp, #0x80]
+   124ec:       add x23, x23, #0x1
+   124f0:       add x1, x2, x1, lsl #2
+   124f4:       stp x20, x1, [sp, #0x70]
+   124f8:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   124fc:       ldr x0, [x19, #0x890]
+   12500:       cmp x0, x23
+   12504:       b.hi 0x124d8 <zplane::StemsProAlgorithm::reset()+0x3f0>
+   12508:       ldr x0, [x19, #0x908]
+   1250c:       cbz x0, 0x12558 <zplane::StemsProAlgorithm::reset()+0x470>
+   12510:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   12514:       add x22, sp, #0x70
+   12518:       add x20, x1, #0x170
+   1251c:       add x24, x19, #0x8e8
+   12520:       mov x23, #0x0               // =0
+   12524:       nop
+   12528:       ldr x2, [x19, #0x900]
+   1252c:       mov x0, x22
+   12530:       ldp x3, x1, [x24, #0x28]
+   12534:       ldr x2, [x2, x23, lsl #3]
+   12538:       str x3, [sp, #0x80]
+   1253c:       add x23, x23, #0x1
+   12540:       add x1, x2, x1, lsl #2
+   12544:       stp x20, x1, [sp, #0x70]
+   12548:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   1254c:       ldr x0, [x19, #0x908]
+   12550:       cmp x0, x23
+   12554:       b.hi 0x12528 <zplane::StemsProAlgorithm::reset()+0x440>
+   12558:       ldr x0, [x19, #0x980]
+   1255c:       cbz x0, 0x125a8 <zplane::StemsProAlgorithm::reset()+0x4c0>
+   12560:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   12564:       add x22, sp, #0x70
+   12568:       add x20, x1, #0x170
+   1256c:       add x24, x19, #0x960
+   12570:       mov x23, #0x0               // =0
+   12574:       nop
+   12578:       ldr x2, [x19, #0x978]
+   1257c:       mov x0, x22
+   12580:       ldp x3, x1, [x24, #0x28]
+   12584:       ldr x2, [x2, x23, lsl #3]
+   12588:       str x3, [sp, #0x80]
+   1258c:       add x23, x23, #0x1
+   12590:       add x1, x2, x1, lsl #2
+   12594:       stp x20, x1, [sp, #0x70]
+   12598:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   1259c:       ldr x0, [x19, #0x980]
+   125a0:       cmp x0, x23
+   125a4:       b.hi 0x12578 <zplane::StemsProAlgorithm::reset()+0x490>
+   125a8:       ldr x0, [x19, #0x9f8]
+   125ac:       cbz x0, 0x125f8 <zplane::StemsProAlgorithm::reset()+0x510>
+   125b0:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   125b4:       add x22, sp, #0x70
+   125b8:       add x20, x1, #0x170
+   125bc:       add x24, x19, #0x9d8
+   125c0:       mov x23, #0x0               // =0
+   125c4:       nop
+   125c8:       ldr x2, [x19, #0x9f0]
+   125cc:       mov x0, x22
+   125d0:       ldp x3, x1, [x24, #0x28]
+   125d4:       ldr x2, [x2, x23, lsl #3]
+   125d8:       str x3, [sp, #0x80]
+   125dc:       add x23, x23, #0x1
+   125e0:       add x1, x2, x1, lsl #2
+   125e4:       stp x20, x1, [sp, #0x70]
+   125e8:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   125ec:       ldr x0, [x19, #0x9f8]
+   125f0:       cmp x0, x23
+   125f4:       b.hi 0x125c8 <zplane::StemsProAlgorithm::reset()+0x4e0>
+   125f8:       ldr x0, [x19, #0xa70]
+   125fc:       cbz x0, 0x12648 <zplane::StemsProAlgorithm::reset()+0x560>
+   12600:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   12604:       add x22, sp, #0x70
+   12608:       add x20, x1, #0x170
+   1260c:       add x24, x19, #0xa50
+   12610:       mov x23, #0x0               // =0
+   12614:       nop
+   12618:       ldr x2, [x19, #0xa68]
+   1261c:       mov x0, x22
+   12620:       ldp x3, x1, [x24, #0x28]
+   12624:       ldr x2, [x2, x23, lsl #3]
+   12628:       str x3, [sp, #0x80]
+   1262c:       add x23, x23, #0x1
+   12630:       add x1, x2, x1, lsl #2
+   12634:       stp x20, x1, [sp, #0x70]
+   12638:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   1263c:       ldr x0, [x19, #0xa70]
+   12640:       cmp x0, x23
+   12644:       b.hi 0x12618 <zplane::StemsProAlgorithm::reset()+0x530>
+   12648:       ldr x21, [x21, #0xfa8] ; @187fffa8
+   1264c:       mov w0, #0x1                // =1
+   12650:       strb w0, [x19, #0xac8]
+   12654:       ldr x0, [sp, #0x88]
+   12658:       ldr x1, [x21]
+   1265c:       subs x0, x0, x1
+   12660:       mov x1, #0x0                // =0
+   12664:       b.ne 0x1274c <zplane::StemsProAlgorithm::reset()+0x664>
+   12668:       ldp x19, x20, [sp, #0x10]
+   1266c:       ldp x21, x22, [sp, #0x20]
+   12670:       ldp x23, x24, [sp, #0x30]
+   12674:       ldp x25, x26, [sp, #0x40]
+   12678:       ldp x27, x28, [sp, #0x50]
+   1267c:       ldp x29, x30, [sp], #0x90
+   12680:       ret
+   12684:       add x0, x23, x28
+   12688:       add x23, x23, x25
+   1268c:       str wzr, [x0]
+   12690:       str wzr, [x0, x3, lsl #2]
+   12694:       add x0, x0, #0x4
+   12698:       cmp x0, x23
+   1269c:       b.ne 0x1268c <zplane::StemsProAlgorithm::reset()+0x5a4>
+   126a0:       add x20, x20, #0x8
+   126a4:       cmp x26, x20
+   126a8:       b.ne 0x12428 <zplane::StemsProAlgorithm::reset()+0x340>
+   126ac:       b 0x12464 <zplane::StemsProAlgorithm::reset()+0x37c>
+   126b0:       add x0, x23, x28
+   126b4:       add x23, x23, x25
+   126b8:       str wzr, [x0]
+   126bc:       str wzr, [x0, x3, lsl #2]
+   126c0:       add x0, x0, #0x4
+   126c4:       cmp x23, x0
+   126c8:       b.ne 0x126b8 <zplane::StemsProAlgorithm::reset()+0x5d0>
+   126cc:       add x20, x20, #0x8
+   126d0:       cmp x26, x20
+   126d4:       b.ne 0x122b0 <zplane::StemsProAlgorithm::reset()+0x1c8>
+   126d8:       b 0x122ec <zplane::StemsProAlgorithm::reset()+0x204>
+   126dc:       add x0, x19, #0x1a0
+   126e0:       bl 0x19698 <zplane::Resample::Resampler::reset()>
+   126e4:       add x0, x19, #0x1e8
+   126e8:       bl 0x19698 <zplane::Resample::Resampler::reset()>
+   126ec:       b 0x12174 <zplane::StemsProAlgorithm::reset()+0x8c>
+   126f0:       ldr x0, [x19, #0x818]
+   126f4:       cbz x0, 0x124b8 <zplane::StemsProAlgorithm::reset()+0x3d0>
+   126f8:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   126fc:       add x22, sp, #0x70
+   12700:       add x20, x1, #0x170
+   12704:       add x24, x19, #0x7f8
+   12708:       mov x23, #0x0               // =0
+   1270c:       nop
+   12710:       ldr x2, [x19, #0x810]
+   12714:       mov x0, x22
+   12718:       ldp x3, x1, [x24, #0x28]
+   1271c:       ldr x2, [x2, x23, lsl #3]
+   12720:       str x3, [sp, #0x80]
+   12724:       add x23, x23, #0x1
+   12728:       add x1, x2, x1, lsl #2
+   1272c:       stp x20, x1, [sp, #0x70]
+   12730:       bl 0x23758 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+   12734:       ldr x0, [x19, #0x818]
+   12738:       cmp x0, x23
+   1273c:       b.hi 0x12710 <zplane::StemsProAlgorithm::reset()+0x628>
+   12740:       b 0x124b8 <zplane::StemsProAlgorithm::reset()+0x3d0>
+   12744:       add x24, x19, #0x230
+   12748:       b 0x12168 <zplane::StemsProAlgorithm::reset()+0x80>
+   1274c:       bl 0x51d0 <__stack_chk_fail@plt>
+

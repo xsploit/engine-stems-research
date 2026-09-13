@@ -1,0 +1,42 @@
+c28960 mov w3, #0x17f              // =383
+c28964 str w3, [x2, #0x10]
+c28968 sbfiz x1, x1, #2, #32
+c28970 ldr x2, [x2, #0xb78]
+c28974 strb wzr, [x23, #0x3b8]
+c28978 str xzr, [x23, #0x3c0]
+c2897c stp xzr, xzr, [x27, #0x8]
+c28980 str x2, [sp, #0x10]
+c28984 bl 0xe6c260
+c28988 ldr x0, [sp, #0x48]
+c2898c ldr x0, [x0, #0x10]
+c28990 cbz x0, 0xc28e30
+c28994 ldr x0, [sp, #0x50]
+c28998 ldr x0, [x0, #0x10]
+c2899c cbz x0, 0xc28e30
+c289a0 ldr x3, [sp, #0x110]
+c289a4 cbz x3, 0xc289b8
+c289a8 add x1, sp, #0x100
+c289ac mov w2, #0x3                // =3
+c289b0 mov x0, x1
+c289b4 blr x3
+c289b8 ldr x3, [sp, #0xf0]
+c289bc cbz x3, 0xc289d0
+c289c0 add x1, sp, #0xe0
+c289c4 mov w2, #0x3                // =3
+c289c8 mov x0, x1
+c289cc blr x3
+c289d0 ldr x27, [x19, #0xd0]
+c289d4 str x23, [x19, #0xd0]
+c289d8 cbz x27, 0xc289f0
+c289dc mov x0, x27
+c289e0 bl 0x1241664
+c289e4 mov x0, x27
+c289e8 mov x1, #0x3d8              // =984
+c289ec bl 0x391ae8
+c289f0 ldr x0, [sp, #0x58]
+c289f4 bl 0x51c280
+c289f8 ldr x0, [x19, #0xd0]
+c289fc cbnz x0, 0xc28c14
+c28a04 add x0, x0, #0x90  ; "default"
+c28a08 mov x1, #0x2                // =2
+c28a0c stp x1, xzr, [sp, #0x98]

@@ -1,0 +1,10 @@
+0000000000023d98 <zplane::VectorOps<float, void>::add(zplane::VectorView<float>, float)>:
+   23d98:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   23d9c:       mov x1, x0
+   23da0:       ldr x0, [x0, #0x8]
+   23da4:       ldr x2, [x2, #0xe00] ; @187ffe00
+   23da8:       ldr w1, [x1, #0x10]
+   23dac:       ldr x2, [x2]
+   23db0:       mov x16, x2
+   23db4:       br x16
+

@@ -1,0 +1,24 @@
+{
+  "pairs": [
+    {
+      "stem": "stem-0",
+      "reference": "engine-0.wav",
+      "candidate": "candidate-0.wav"
+    },
+    {
+      "stem": "stem-1",
+      "reference": "engine-1.wav",
+      "candidate": "candidate-1.wav"
+    },
+    {
+      "stem": "stem-2",
+      "reference": "engine-2.wav",
+      "candidate": "candidate-2.wav"
+    },
+    {
+      "stem": "stem-3",
+      "reference": "engine-3.wav",
+      "candidate": "candidate-3.wav"
+    }
+  ]
+}

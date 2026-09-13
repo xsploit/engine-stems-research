@@ -1,0 +1,16 @@
+000000000001c618 <zplane::Algorithms::Fft::getNumFftBins() const>:
+   1c618:       ldr x0, [x0]
+   1c61c:       cbz x0, 0x1c644 <zplane::Algorithms::Fft::getNumFftBins() const+0x2c>
+   1c620:       ldr x0, [x0, #0x30]
+   1c624:       ldr w1, [x0, #0x8]
+   1c628:       sxtw x0, w1
+   1c62c:       tst x1, #0x1
+   1c630:       add x1, x0, #0x1
+   1c634:       lsr x0, x0, #1
+   1c638:       lsr x1, x1, #1
+   1c63c:       csinc x0, x1, x0, ne
+   1c640:       ret
+   1c644:       mov x0, #0x0                // =0
+   1c648:       ret
+   1c64c:       nop
+

@@ -1,0 +1,19 @@
+c2a900 add x2, sp, #0x118
+c2a904 add x0, sp, #0x2b8
+c2a90c add x1, x1, #0x660  ; "numThreads"
+c2a910 str x0, [sp, #0xa8]
+c2a914 str x2, [sp, #0xd8]
+c2a918 bl 0x51cae0
+c2a91c ldr x1, [sp, #0x2b8]
+c2a920 mov x0, x24
+c2a924 ldr x2, [sp, #0x2c0]
+c2a928 bl 0x391788
+c2a92c ldr x1, [sp, #0x58]
+c2a930 mov x20, x0
+c2a934 mov x2, #0x1                // =1
+c2a938 add x1, x1, #0x670  ; "ack"
+c2a93c bl 0x391788
+c2a940 ldr w1, [x28, #0x50]
+c2a944 mov x0, x20
+c2a948 bl 0x391798
+c2a94c add x1, x23, #0x4b8

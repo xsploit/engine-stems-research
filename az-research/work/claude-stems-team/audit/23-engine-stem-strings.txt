@@ -1,0 +1,400 @@
+1bcaa98 .stems
+1bcb778 StemsQueueManager
+1bcb790 StemsProcessorDownloadManager
+1bcc0e8 StemsMode
+1bd2278 Remove Stems
+1bd2f24 ,StemsInfo AS(
+1bd2f33 	SELECT *, GET_STEMS_STATUS(identifier) OVER(ORDER BY identifier) AS stemsStatus
+1bd2fa8 SELECT COUNT(*) FROM StemsInfo WHERE stemsStatus > 0
+1bd3588 stems_count
+1bd5588 static void RelocateMissingFileJob::relocateStemsFile(const std::shared_ptr<librarian::Track>&, const std::shared_ptr<librarian::Track>&)
+1bd5618 Failed to remove stems file:
+1bd5ae8 /Stems
+1bd6128 Collection model is updating right now, will skip stems list cache step!
+1bd6178 Current collection job settings not valid, will skip stems list cache step!
+1bd61c8 Stems list caching not required
+1bd61e8 Enqueue stems list cache job
+1bd6238 Stems list cache took
+1bd6ab0 TouchDragListToStemsList
+1bd6ad0 LIST_TO_STEMS
+1bd6ae0 TouchDragTracksToStemsList
+1bd6b00 TRACKS_TO_STEMS
+1bd7210 /Client/Preferences/Profile/Application/ShowStemsList
+1bd73a0 ShouldShowStemsFileRemovalWarning
+1bd73c8 /Client/Preferences/IncreaseStemsRequiredSpace
+1bd7648 Stems
+1bd7890 isStemmed
+1bddc70 tidal-stems
+1bdf578  Stems Support
+1bdf588 Downloading Stems Support
+1bdf6dc Stems
+1bdf728 virtual void StemsProcessorDownloadManager::downloadStemsProcessor()
+1bdf790 virtual void EmbeddedStemsProcessorDownloadManager::downloadStemsProcessor()
+1bdf7e0 stems-processor
+1bdf7f0 Stems Processor mounted at:
+1bdf830 Searching for Stems Processor in:
+1bdf858 stems-child-process.sqsh.signed
+1bdf878 Stems Processor Path:
+1bdf938 Failed to mount stems processor image:
+1bdf960 Total stems rendering took:
+1bdf990 Could not get RenderStemsJob
+1bdf9b0 Failed to create Stems
+1bdf9c8 Failed to get render stems job result
+1bdf9f0 removeStems
+1bdfa00 Download Stems
+1bdfa10 stems-processor.tar.zst
+1bdfa28 Error in DownloadStemsProcessorJob:
+1bdfa90 Failed to remove stems processor
+1bdfe88 stemslist
+1be0118 *.stems
+1be0120 stemsProcessorPath
+1be0138 Stems download file already exists, download already in progress
+1be0180 Download and Extract Stems Processor
+1be01a8 https://inmusic.to/enginedj-aarch64-stems
+1be01d8 Download Stems Processor
+1be0220 Stems processor not available and not downloading
+1be0258 stems.mp4
+1be0268 Render Stems Pre-Check
+1be0280 Could not get RenderStemsPreCheckJob
+1be0308 Stems Queue Manager could not decode stems identifier for:
+1be0348 Render Stems
+1be03f8 DownloadStemsProcessorJob download() failed
+1be0468 RenderStemsJob: abort
+1be0480 RenderStemsJob: track identifier was empty
+1be04b0 RenderStemsJob: could not get stems track for:
+1be04e1 RenderStemsJob start render:
+1be0500 RenderStemsJob: Could not decode identifier for
+1be0530 RenderStemsJob: Not enough space available on
+1be0560 RenderStemsJob could not initialize audio processor for
+1be0598 RenderStemsJob: track removed
+1be05b8 RenderStemsJob: Error occurred while rendering track
+1be05f1 RenderStemsJob:
+1be0651 Copy stems file to target:
+1be0671   Stems file:
+1be06a8 Unable to create stems folder:
+1be06c8 Unable to cd to stems folder:
+1be06e8 Copy stems file to target, Failed to remove existing file from stems folder:
+1be0738 Copy stems file to target, Not enough free space on:
+1be0780 Copy stems file to target, Failed to copy file to stems folder:
+1be07c0 Copy stems file to target, Failed to rename:
+1be07f0 RenderStemsJob: Unable to copy temp file to target path. Could not decode stems identifier:
+1be0850 stems.downloaded
+1be08e0 RemoveStemsJob failed to set promise value:
+1be1558 RenderStemsPreCheckJob could not convert universal id to a number:
+1be15a0 getStemsTrack could not get track for universal id:
+1be15d8 Stem render skipped
+1be1728 RenderStemsPreCheckJob: skipping track
+1be1768 Could not decode identifier for stems track in queue
+1be17a0 Could not find track for stems track in queue
+1be1804 Please free some space to create stems.
+1be185a Please free some space to create stems in this location.
+1be1899 RenderStemsPreCheckJob: Drive space check failed:
+1be1910 RemoveStemsJob could not convert universal id to a number:
+1be1950 RemoveStemsJob: removeFromMultipleDrives =
+1be1990 RemoveStemsJob failed to remove stems file:
+1be1f48 StemRender
+1be2ec0 setStemsRemovalWarningShowAgain
+1be2f18 Stems queue manager could not convert universal ids from mime data
+1be2f90 Invalid mime content detected for rendering tracks in stems queue manager
+1be42e8 /Engine/Deck%1/Track/Stemmed
+1be44a0 AUTO_STEMS
+1be4e68 stems
+1be4e70 stemsRenderProgress
+1be5f08 Failed to find stems file for: 
+1be5f28 Failed to copy stems file: 
+1beb958 amazon-stems
+1beb968 applemusic-stems
+1beb980 beatport-stems
+1beb990 beatsource-stems
+1becf00 soundcloud-stems
+1bedc30 Stems Processor Error:
+1bedda0 /EngineDJ/Stems/
+1beddb8 .stems_temp
+1bee3f8 zplaneStemsRenderThreadCount
+1bee418 Stems Render Thread Count:
+1bee4d0 Unable to create stems processor for
+1bee790 getStemsTrack could not get database for track:
+1bee878 getStemsTrack
+1bee8f8 Could not find track from stems identifier
+1beebe0 /GUI/RemoteHostScreen/Debug/StemFxBehaviorOnDevice
+1bef108 mode >= 0 && mode <= static_cast<int>(RemoteHostScreenApi::MixerMode::StemsLevel)
+1befe98 /Client/Preferences/Profile/Application/StemFxBehavior
+1bf05c8 air.planck.stems
+1bf05e0 air.planck.stems.controller
+1bf0600 air.planck.stems.render
+1bf0618 air.planck.stems.download
+1bf1728 StemsPadControllerInterface
+1bf1748 StemMixer::Listener
+1bf27b8 StemsLevel/Vocal
+1bf27d0 StemsLevel/Bass
+1bf27e0 StemsLevel/Melody
+1bf27f8 StemsLevel/Drums
+1bf2810 StemsLevel/Reset
+1bf28f8 Stems/
+1bf5688 StemsSync
+1bf5710 IncreaseStemsRequiredSpace
+1bf6120 Stemmed
+1bf7038 STEMS
+1bf7040 CUES_STEMS
+1bf8588 StemsLevel
+1bf8ff8 stems.fx.modeName
+1bf9010 stems.trigger
+1bf9550 stems mode
+1bf9a28 no pre-rendered stems found
+1bf9a48 pre-rendered stems found
+1bf9ab8 selecting pre-rendered stems
+1bf9ad8 initialising pre-rendered stems
+1bfa370 hw.stems.mode.engaged
+1c02428 hasStems
+1c02450 hasStemsProcessorDownload
+1c03480 hasStemsLevelButton
+1c03498 hasStemsOverrideButtons
+1c034b0 hasStemsProEmbeddedRendering
+1c034d0 hasStemsProcessorFactoryInstalled
+1c035d0 hasDemoContentPreRenderedStems
+1c03868 numStemsStateLeds
+1c03d88 stemsPreRenderedPlayback
+1c03ee8 hasStemsFx
+1c0b7d0 Send Set Stem FX Behavior : %1
+1c0bf38 Stems Level
+1c132b0 stemsStatus
+1c13380 stemsStatus 
+1c19890 getStemsStatusValue
+1c1a608 SQL function getStemsStatus has no context set
+1c1a638 SQL function getStemsStatus called with invalid number of arguments
+1c1a680 Invalid type of the first argument of getStemsStatus function call
+1c1a6c8 Invalid type of the second argument of getStemsStatus function call
+1c1a738 getStemsStatus tracks identifiers are not properly sorted
+1c1a778 getStemsStatusStep
+1c1c280 GET_STEMS_STATUS
+1c1f9f0 StemsInfo USING(id)
+1c1fb88 stemsStatus = 
+1c1fbe8  stemsStatus != 0
+1c200c4 ,%sStemsInfo AS(
+1c200d5 	SELECT *, GET_STEMS_STATUS(identifier, '%s') OVER(ORDER BY identifier) AS stemsStatus
+1c4ad50 [/\\]Stems$
+1c4cca0 StemFxBehavior
+1c4ccb0 ShowStemsList
+1c4d0e8 Auto Loop Stems
+1c4d0f8 Hot Cue Stems
+1c4e720 TrackDeckModes::StemsMode
+1c4fc70 StemsDialogActions
+1c4fc88 StemsDialogActions::Action
+1c4fcc0 StemsViewInterface
+1e920f8 	source: Qt.resolvedUrl("StemsRenderCancel.png")
+1e98614 	source: Qt.resolvedUrl("StemsOff.png")
+1f646f1 	source: Qt.resolvedUrl("Stems.png")
+1f64fe4 	source: "Stems30x30.png"
+1f668ee 	source: "Stems80x80.png"
+1fb2375 		if(modelData.typeRole === ListsModel.Stemslist) {
+1fb23ba 		return [TouchDragReorderLists, TouchDragListToList, TouchDragListToStemsList]
+1fb2433 		if(modelData.typeRole === ListsModel.Stemslist) {
+1fb2467 			if(Config.device.hasStemsProEmbeddedRendering) {
+1fb249b 				return [TouchDragListToStemsList, TouchDragTracksToStemsList]
+1fb30af 		else if(info.matchingKeys.indexOf(TouchDragListToStemsList) > -1) {
+1fb30f5 			Planck.librarianController.stemsQueueManager.startRenderTracksFromListPath(controller.getListPath(info.payload), controller.getSourceDevice(info.payload))
+1fb31c0 		else if(info.matchingKeys.indexOf(TouchDragTracksToStemsList) > -1) {
+1fb328f 			Planck.librarianController.stemsQueueManager.startRenderTracks(tracks.join(";"))
+1fc736b 		else if(row.isRenderingStems) {
+1fc738d 			'Rendering ' + String(Math.round(row.stemsRenderProgress * 100)) + '%'
+1fc77b9 	readonly property bool isStemmed: row.modelData.stems === 3
+1fc77f6 	readonly property bool renderingInProgress: row.modelData.stems === 2
+1fc783d 	readonly property bool inStemsQueue: row.modelData.stems === 1
+1fc7894 	visible: (Planck.hasStemsPreRenderedPlayback() || (!!row.modelData.isDemoTrack && Config.device.hasDemoContentPreRenderedStems) ) && row.modelData.stems !== 0
+1fc7951 		objectName: "StemsIcon"
+1fc799f 		visible: isStemmed || inStemsQueue
+1fc79c4 		color: isStemmed ? Style.icon01Color : Style.disabled01Color
+1fc7a03 		source: Qt.resolvedUrl("../img/icon_stems_rendered.png")
+1fc8315 	         && !row.isRenderingStems
+1fca463 	         && !row.isRenderingStems
+1fca8f6 					stemState: row.modelData.stems
+1fcae54 		else if(row.isRenderingStems) {
+1fcae76 			percentage = row.stemsRenderProgress
+1fcaf16 	color: (row.isDownloading) ? Style.focus01Color : isListening ? Style.activeFauxOpacityColor : row.modelData.stems === 2 ? Qt.darker(Style.systemBlue01Color, 1.2) : Style.activeFauxOpacityColor
+1fcafd9 	visible: (isListening && percentageComplete > 0 && row.isCurrentRow) || row.isDownloading || row.modelData.stems === 2
+1fe36e4 	objectName: "StatusBar_StemsRenderingIndicator"
+1fe3716 	readonly property StemsQueueManager manager: Planck.librarianController.stemsQueueManager || null
+1fe377a 	active: manager && manager.totalRenderStemsQueueCount > 0
+1fe4adb 	readonly property StemsViewInterface stemsView: PlanckGUI.views.stems || null
+1fe4b5d 	visible: !Config.device.hasStemsLevelButton && stemsView && stemsView.channelSoftTakeOverActive
+1fe4c11 		target: stemsView
+1fe9b7b 	id: clearStemsQueueButton
+1fe9b96 	objectName: "StatusBar_ClearStemsQueueButton"
+1fe9c5a 	readonly property StemsQueueManager manager: Planck.librarianController.stemsQueueManager || null
+1fe9cbd 	readonly property bool enabled: manager && manager.totalRenderStemsQueueCount > 0
+1fe9eb1 	visible: Config.device.hasStemsProEmbeddedRendering && collectionController.isCurrentCollectionStemslist && enabled
+1fe9f26 	onClicked: if (enabled) { clearStemsQueueMessageBox.show() }
+1fe9f65 	ClearStemsQueueMessageBox {
+1fe9f82 		id: clearStemsQueueMessageBox
+2099450 	active: Planck.stemsFxFeature && Config.device.hasStemsOverrideButtons
+20994e9 		prop: Planck.getProperty("/Client/Preferences/Profile/Application/StemFxBehavior")
+20a0de9 	active: Planck.hasStemsPreRenderedPlayback()
+20a0e49 		text: "Stems List"
+20a0e5e 		prop: Planck.getProperty("/Client/Preferences/Profile/Application/ShowStemsList")
+20a7398 	property StemsProcessorDownloadManager manager: Planck.librarianController.stemsProcessorDownloadManager
+20a7449 		readonly property bool isRendering: Planck.librarianController.stemsQueueManager && Planck.librarianController.stemsQueueManager.renderStemsQueueCount > 0
+20a754d 			objectName: "StemsDownloadProgressRing"
+20a76b9 			objectName: "StemsDownloadProgressText"
+20a79e3 		Component.onCompleted: entry.manager.isStemsProcessorAvailable()
+20bd192 		StemsList { },
+20bd966 		StemFxBehavior { },
+20bdb83 		StemsDownload { },
+21703b9 				'stems': ""
+217403c 	property StemsQueueManager manager: Planck.librarianController.stemsQueueManager
+21740b1 		function onShowDownloadStemsMessage(message, subMessage, subMessage2, buttons, acceptedAction, rejectedAction) {
+217413d 				id: "StemsDownload",
+2175554 	property StemsQueueManager manager: Planck.librarianController.stemsQueueManager
+2175648 				id: "StemsRenderError",
+217929c 	StemsDownloadMessageBox { }
+21792b9 	StemsRenderErrorMessageBox { }
+217c08c 			id: "ClearStemsQueueMessageBox",
+217c0c9 			title: "Clear Stem Render Queue?",
+217c20a 					Planck.librarianController.stemsQueueManager.abortRenderTracks()
+217c263 	// Planck isn't available if the ClearStemsQueueMessageBox is destroyed,
+217c300 	Component.onDestruction: PlanckGUI.views.prompts.drop("ClearStemsQueueMessageBox")
+2224f51 Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1985, 1987, 1991, 1993, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Library GmbH, and may not be reproduced, used, displayed, modified, disclosed or transferred without the express written approval of Linotype Library GmbH. Copyright (c) 1985, 1987, 1991, 1993 Adobe Systems Incorporated. All rights reserved.Helvetica LT CondensedRegularLinotype Library GmbH: Helvetica LT Condensed Medium: 2002Helvetica LT Condensed MediumVersion 6.03HelveticaLT-CondensedHelvetica is a trademark of Heidelberger Druckmaschinen AG which may be registered in certain jurisdictions, exclusively licensed through Linotype Library GmbH, a wholly owned subsidiary of Heidelberger Druckmaschinen AG.Linotype Library GmbH & Adobe SystemsD. Stempel AG / Haas'sche SchriftgiessereiPart of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1985, 1987, 1991, 1993, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Library GmbH, and may not be reproduced, used, displayed, modified, disclosed or transferred without the express written approval of Linotype Library GmbH. Copyright (c) 1985, 1987, 1991, 1993 Adobe Systems Incorporated. All rights reserved.http://www.linotype.com http://www.linotype.com NOTIFICATION OF LICENSE AGREEMENT
+22b5938 Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1985, 1987, 1991, 1993, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Library GmbH, and may not be reproduced, used, displayed, modified, disclosed or transferred without the express written approval of Linotype Library GmbH. Copyright (c) 1985, 1987, 1991, 1993 Adobe Systems Incorporated. All rights reserved.Helvetica LT CondensedBoldLinotype Library GmbH: Helvetica LT Condensed Bold: 2002Helvetica LT Condensed BoldVersion 6.03HelveticaLT-Condensed-BoldHelvetica is a trademark of Heidelberger Druckmaschinen AG which may be registered in certain jurisdictions, exclusively licensed through Linotype Library GmbH, a wholly owned subsidiary of Heidelberger Druckmaschinen AG.Linotype Library GmbH & Adobe SystemsD. Stempel AG / Haas'sche SchriftgiessereiPart of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1985, 1987, 1991, 1993, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Library GmbH, and may not be reproduced, used, displayed, modified, disclosed or transferred without the express written approval of Linotype Library GmbH. Copyright (c) 1985, 1987, 1991, 1993 Adobe Systems Incorporated. All rights reserved.http://www.linotype.com http://www.linotype.com NOTIFICATION OF LICENSE AGREEMENT
+233aa98 StemsProcessorDownloadManagerInterface*
+233aac0 StemsQueueManager*
+233ec54 stemsQueueManagerChanged
+233ec6d stemsProcessorDownloadManagerChanged
+233f980 stemsQueueManager
+233f992 StemsQueueManager*
+233f9a5 stemsProcessorDownloadManager
+233f9c3 StemsProcessorDownloadManagerInterface*
+234375c stemsListToggled
+234376d stemsListState
+2347ea8 stemsEnabledColor
+2348418 StemsEnabled
+2353100 StemsViewInterface
+23531d8 StemsViewInterface
+2359b28 StemsQueueManager
+2359b40 StemsDialogActions::Action
+2359b60 StemsProcessorDownloadManagerInterface
+235a018 StemsViewInterface*
+235b3e2 Stems
+235b3e8 StemsRenderProgress
+235bde3 totalStemsFileBytesChanged
+235bfb5 totalStemsFileBytes
+235c12c isCurrentCollectionStemslist
+23614f9 Stemslist
+236cb88 StemsQueueManager
+236cbce StemsDialogActions::Action
+236cc07 showDownloadStemsMessage
+236cc20 showRenderStemsProcessingMessage
+236cc41 showStemsFileRemovalWarning
+236cc5d continueStemsFileRemoval
+236ccec renderStemsQueueChanged
+236cd2a onRenderStemsPreCheckJobDone
+236cd64 onRenderStemsJobDone
+236cdab removeStemsFromDrive
+236cdcd removeStemsFromCollection
+236cde7 setStemsRemovalWarningShowAgain
+236cebf renderStemsQueueCount
+236ced5 totalRenderStemsQueueCount
+236cef0 QQmlListProperty<StemsQueueManager>
+236d260 StemsProcessorDownloadManagerInterface
+236d2bb StemsDialogActions::Action
+236d36d isStemsProcessorAvailable
+236d3f8 QQmlListProperty<StemsProcessorDownloadManagerInterface>
+236dc01 onStemsListToggled
+236dc14 stemsListState
+236f1e5 stems
+236f1eb StemsViewInterface*
+2374e8b StemsStatus
+237575e kStemsAcapellaEchoOut
+2375774 kStemsInstrumentalEchoOut
+237578e kStemsVocalEchoOut
+23757a1 kStemsMelodyEchoOut
+23757b5 kStemsBassEchoOut
+23757c7 kStemsDrumsEchoOut
+237b6d0 TrackDeckModes::StemsMode
+237b77f StemsMode
+237b789 NoStems
+237e230 RemoteHostScreenApi::StemFxBehavior
+2380c19 setStemFxBehaviorReceived
+2380c33 StemFxBehavior
+2381154 sendSetStemFxBehavior
+238b048 QList<StemsDialogActions>
+238b068 StemsDialogActions
+238b138 StemsDialogActions
+238b157 DownloadStems
+238b165 CancelStemsDownload
+238b179 AbortRenderStems
+238b18a IgnoreAbortRenderStems
+23921f7 hasStemsPreRenderedPlayback
+2392234 isStemsFxFeatureOn
+2392743 stemsFxFeature
+23934d0 ZN9QMetaType19registerMutableViewI5QListI18StemsDialogActionsE9QIterableI13QMetaSequenceEN9QtPrivate37QSequentialIterableMutableViewFunctorIS3_EEEEbT1_EUlPvSB_E_
+2393578 ZN9QMetaType17registerConverterI5QListI18StemsDialogActionsE9QIterableI13QMetaSequenceEN9QtPrivate33QSequentialIterableConvertFunctorIS3_EEEEbT1_EUlPKvPvE_
+23c1000 21StemsFeaturePopupView
+23c1018 St23_Sp_counted_ptr_inplaceI21StemsFeaturePopupViewSaIvELN9__gnu_cxx12_Lock_policyE2EE
+23c1070 37EmbeddedStemsProcessorDownloadManager
+23c1098 38StemsProcessorDownloadManagerInterface
+23c5598 18StemsViewInterface
+23c55b0 9StemsView
+23d1458 St14default_deleteI20StemsListActionGroupE
+23d48c0 *ZN3air6refptrI16PropertyObserverI18TwoStateTranslatorbXadL_ZNS2_5stateEvEEbEE4makeIJRKNS0_I8PropertyEEZN20StemsListActionGroupC4ER19LibrarianControllerS9_S9_S9_S9_RKSt6vectorIS7_SaIS7_EEEUlbE_bEEES4_DpOT_E7Storage
+23d4998 21RemoveFromStemsAction
+23d49b0 20StemsListActionGroup
+23d49c8 St19_Sp_counted_deleterIP20StemsListActionGroupSt14default_deleteIS0_ESaIvELN9__gnu_cxx12_Lock_policyE2EE
+23d4be8 16AddToStemsAction
+23e3af8 StemsDirectorySizeWatcher
+23e3b18 *ZN3air6refptrI16PropertyObserverI16StringTranslator7QStringXadL_ZNS2_6stringEvEERKS3_EE4makeIJNS0_I8PropertyEEZN29LibrarianCollectionControllerC4EP9StateNodeNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS0_I8StateMapEERKSJ_NS0_I11PlanckTimerEEP18AnalysisControllerSt10shared_ptrIN9librarian9LibrarianEEP19LibrarianControllerRKNS_7weakptrI13JobControllerEERKNS0_I15MatchControllerEESt10unique_ptrI25StemsDirectorySizeWatcherSt14default_deleteIS1A_EEEUlS3_E_EEES7_DpOT_E7Storage
+23e3e18 StemsDirectorySizeWatcher
+23e7bb8 *ZN29LibrarianCollectionControllerC4EP9StateNodeNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN3air6refptrI8StateMapEERKS7_NS9_I11PlanckTimerEEP18AnalysisControllerSt10shared_ptrIN9librarian9LibrarianEEP19LibrarianControllerRKNS8_7weakptrI13JobControllerEERKNS9_I15MatchControllerEESt10unique_ptrI25StemsDirectorySizeWatcherSt14default_deleteIS10_EEEUl7QStringE_
+23e98e8 25StemsDirectorySizeWatcher
+23e9908 ZN3air6refptrI29LibrarianCollectionControllerE4makeIJP19LibrarianControllerRA11_KcP8StateMapRA20_S6_RNS0_I11PlanckTimerEEP18AnalysisControllerRSt10shared_ptrIN9librarian9LibrarianEES5_RNS_7weakptrI13JobControllerEERNS0_I15MatchControllerEESt10unique_ptrI25StemsDirectorySizeWatcherSt14default_deleteISV_EEEEES2_DpOT_E7Storage
+23ea768 St23_Sp_counted_ptr_inplaceI37EmbeddedStemsProcessorDownloadManagerSaIvELN9__gnu_cxx12_Lock_policyE2EE
+23ea7d0 29StemsProcessorDownloadManager
+23ea7f0 St23_Sp_counted_ptr_inplaceI29StemsProcessorDownloadManagerSaIvELN9__gnu_cxx12_Lock_policyE2EE
+23ea850 17StemsQueueManager
+243a618 *ZN25DownloadStemsProcessorJobC4ESt10unique_ptrI23FileDownloaderInterfaceSt14default_deleteIS1_EE4QUrlRK4QDirRK7QStringEUlvE_
+243a698 *ZN25DownloadStemsProcessorJobC4ESt10unique_ptrI23FileDownloaderInterfaceSt14default_deleteIS1_EE4QUrlRK4QDirRK7QStringEUlP13QNetworkReplyE_
+243a728 *ZN25DownloadStemsProcessorJobC4ESt10unique_ptrI23FileDownloaderInterfaceSt14default_deleteIS1_EE4QUrlRK4QDirRK7QStringEUlxxE_
+243a7a8 *ZN25DownloadStemsProcessorJobC4ESt10unique_ptrI23FileDownloaderInterfaceSt14default_deleteIS1_EE4QUrlRK4QDirRK7QStringEUlN13QNetworkReply12NetworkErrorEE_
+243a900 34DownloadStemsProcessorJobInterface
+243a928 25DownloadStemsProcessorJob
+243a948 *ZN17StemsQueueManager23onEnqueueTrackRenderJobERK7QStringEUlvE_
+243a990 RenderStemsJob
+243a9a0 14RenderStemsJob
+243a9b8 19StemsAudioProcessor
+243aad0 RenderStemsJob
+243ab50 RemoveStemsJob
+243ab60 St23_Sp_counted_ptr_inplaceI17StemsDataAccessorSaIvELN9__gnu_cxx12_Lock_policyE2EE
+243abb8 14RemoveStemsJob
+243ac78 RemoveStemsJob
+243acd8 RenderStemsPreCheckJob
+243acf0 17StemsDataAccessor
+243ad08 22RenderStemsPreCheckJob
+243aef0 RenderStemsPreCheckJob
+243af3b StemsDialogActions::Action
+243af78 *ZN37EmbeddedStemsProcessorDownloadManagerC4ERKN3air7weakptrI13JobControllerEEEUlRK4QUrlE_
+243b008 *ZN29StemsProcessorDownloadManagerC4ERKN3air7weakptrI13JobControllerEEEUlRK4QUrlE_
+243b0d0 DownloadStemsProcessorJobInterface
+243b198 DownloadStemsProcessorJobInterface
+243b1f0 38DownloadStemsProcessorDependencyPolicy
+24415ff onSetStemFxBehaviorReceived
+244161b RemoteHostScreenApi::StemFxBehavior
+2443b34 onStemFxBehaviorChanged
+2443e70 DownloadStemsProcessorJob
+2444e40 DownloadStemsProcessorJob
+2448970 AddToStemsAction
+2448a90 RemoveFromStemsAction
+2448b80 RemoveFromStemsAction
+2448ed0 AddToStemsAction
+244a9b8 StemsListActionGroup
+244c378 StemsListActionGroup
+2456930 *ZN20StemsListActionGroupC4ER19LibrarianControllerRKN3air6refptrI8PropertyEES7_S7_S7_RKSt6vectorIS5_SaIS5_EEEUlbE_
+2488d78 StemsPadController
+24898a8 StemProcessNotifier
+248a2a8 StemProcessNotifier
+248a3d0 19StemProcessNotifier
+248b530 StemsPadController
+2490088 N9StemMixer8ListenerE
+24902d0 18StemsStateSequence
+24902e8 17StemsStateAdapter
+2491190 20DeckStemsModeHandler
+2491b10 St14default_deleteI18StemsPadControllerE
+2494f50 30StemsPadControlStateMapAdaptor
+2494f78 17StemsLevelControl

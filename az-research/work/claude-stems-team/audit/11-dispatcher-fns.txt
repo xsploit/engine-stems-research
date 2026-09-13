@@ -1,0 +1,404 @@
+### ONNXImpl25getModelInputShapeAtIndex 0x00000000004394d0-0x0000000000439508
+  4394d0:       add x1, x1, x1, lsl #1
+  4394d4:       adrp x2, 0x1399000 <__frame_dummy_init_array_entry+0x4c8>
+  4394d8:       ldr x3, [x0, #0x8]
+  4394dc:       lsl x1, x1, #3
+  4394e0:       add x2, x2, #0x9f0
+  4394e4:       mov x0, x8
+  4394e8:       add x4, x3, x1
+  4394ec:       ldr x3, [x3, x1]
+  4394f0:       ldr x1, [x4, #0x8]
+  4394f4:       stp x2, x3, [x8]
+  4394f8:       sub x1, x1, x3
+  4394fc:       asr x1, x1, #3
+  439500:       str x1, [x8, #0x10]
+  439504:       ret
+### ONNXImpl21initModelInputTensors 0x0000000000439508-0x0000000000439610
+  439508:       stp x29, x30, [sp, #-0x70]!
+  43950c:       mov x29, sp
+  439510:       stp x25, x26, [sp, #0x40]
+  439514:       mov x26, x0
+  439518:       stp x19, x20, [sp, #0x10]
+  43951c:       mov x19, x1
+  439520:       mov x20, #-0x5555555555555556 // =-6148914691236517206
+  439524:       ldr x2, [x0, #0x8]
+  439528:       mov x0, x1
+  43952c:       ldr x1, [x26, #0x10]
+  439530:       stp x23, x24, [sp, #0x30]
+  439534:       adrp x23, 0x13c9000 <_GLOBAL_OFFSET_TABLE_+0x6880>
+  439538:       sub x1, x1, x2
+  43953c:       movk x20, #0xaaab
+  439540:       ldr x3, [x23, #0x808]
+  439544:       asr x1, x1, #3
+  439548:       ldr x4, [x3]
+  43954c:       str x4, [sp, #0x68]
+  439550:       mov x4, #0x0                // =0
+  439554:       mul x1, x1, x20
+  439558:       bl 0x3f73c0 <_ZN6zplane22NNPredictionDispatcher14zplTensorArray4initEm@plt>
+  43955c:       ldp x1, x0, [x26, #0x8]
+  439560:       cmp x1, x0
+  439564:       b.eq 0x4395dc <zplane::NNPredictionDispatcher::ONNXImpl::initModelInputTensors(zplane::NNPredictionDispatcher::zplTensorArray&) const+0xd4>
+  439568:       stp x21, x22, [sp, #0x20]
+  43956c:       adrp x21, 0x1399000 <__frame_dummy_init_array_entry+0x4c8>
+  439570:       add x22, sp, #0x50
+  439574:       add x21, x21, #0x9f0
+  439578:       mov x25, #0x0               // =0
+  43957c:       mov x24, #0x0               // =0
+  439580:       mov x1, x24
+  439584:       mov x0, x19
+  439588:       bl 0x3fc400 <_ZN6zplane22NNPredictionDispatcher14zplTensorArrayixEm@plt>
+  43958c:       add x24, x24, #0x1
+  439590:       ldr x3, [x26, #0x8]
+  439594:       mov w2, #0x0                // =0
+  439598:       mov x1, x22
+  43959c:       add x5, x3, x25
+  4395a0:       ldr x4, [x3, x25]
+  4395a4:       add x25, x25, #0x18
+  4395a8:       ldr x3, [x5, #0x8]
+  4395ac:       stp x21, x4, [sp, #0x50]
+  4395b0:       sub x3, x3, x4
+  4395b4:       asr x3, x3, #3
+  4395b8:       str x3, [sp, #0x60]
+  4395bc:       bl 0x3f65f0 <_ZN6zplane22NNPredictionDispatcher13zplTensorBase4initENS_10VectorViewIKmEEb@plt>
+  4395c0:       ldp x0, x2, [x26, #0x8]
+  4395c4:       sub x2, x2, x0
+  4395c8:       asr x2, x2, #3
+  4395cc:       mul x2, x2, x20
+  4395d0:       cmp x24, x2
+  4395d4:       b.lo 0x439580 <zplane::NNPredictionDispatcher::ONNXImpl::initModelInputTensors(zplane::NNPredictionDispatcher::zplTensorArray&) const+0x78>
+  4395d8:       ldp x21, x22, [sp, #0x20]
+  4395dc:       ldr x23, [x23, #0x808]
+  4395e0:       ldr x0, [sp, #0x68]
+  4395e4:       ldr x1, [x23]
+  4395e8:       subs x0, x0, x1
+  4395ec:       mov x1, #0x0                // =0
+  4395f0:       b.ne 0x439608 <zplane::NNPredictionDispatcher::ONNXImpl::initModelInputTensors(zplane::NNPredictionDispatcher::zplTensorArray&) const+0x100>
+  4395f4:       ldp x19, x20, [sp, #0x10]
+  4395f8:       ldp x23, x24, [sp, #0x30]
+  4395fc:       ldp x25, x26, [sp, #0x40]
+  439600:       ldp x29, x30, [sp], #0x70
+  439604:       ret
+  439608:       stp x21, x22, [sp, #0x20]
+  43960c:       bl 0x410040 <__stack_chk_fail@plt>
+### zplTensorBase10setRawData 0x00000000004367c0-0x0000000000436870
+  4367c0:       stp x29, x30, [sp, #-0x30]!
+  4367c4:       mov x29, sp
+  4367c8:       stp x19, x20, [sp, #0x10]
+  4367cc:       mov x20, x1
+  4367d0:       ldr x1, [x0, #0x60]
+  4367d4:       str x21, [sp, #0x20]
+  4367d8:       cmp x1, w2, sxtw
+  4367dc:       b.ne 0x436828 <zplane::NNPredictionDispatcher::zplTensorBase::setRawData(float*, int)+0x68>
+  4367e0:       ldrb w1, [x0, #0x50]
+  4367e4:       sxtw x21, w2
+  4367e8:       add x19, x0, #0x38
+  4367ec:       cbnz w1, 0x436808 <zplane::NNPredictionDispatcher::zplTensorBase::setRawData(float*, int)+0x48>
+  4367f0:       stp x20, x21, [x19, #0x8]
+  4367f4:       strb wzr, [x19, #0x18]
+  4367f8:       ldp x19, x20, [sp, #0x10]
+  4367fc:       ldr x21, [sp, #0x20]
+  436800:       ldp x29, x30, [sp], #0x30
+  436804:       ret
+  436808:       ldr x0, [x19, #0x8]
+  43680c:       bl 0x43fb30 <zplane::VectorOps<float, void>::free(float*)>
+  436810:       stp x20, x21, [x19, #0x8]
+  436814:       strb wzr, [x19, #0x18]
+  436818:       ldp x19, x20, [sp, #0x10]
+  43681c:       ldr x21, [sp, #0x20]
+  436820:       ldp x29, x30, [sp], #0x30
+  436824:       ret
+  436828:       mov x0, #0x10               // =16
+  43682c:       bl 0x3fb140 <__cxa_allocate_exception@plt>
+  436830:       adrp x1, 0x1075000 <e843419@0310_00016114_950+0xf88>
+  436834:       mov x19, x0
+  436838:       add x1, x1, #0xbd8
+  43683c:       bl 0x3f5b90 <_ZNSt16invalid_argumentC1EPKc@plt>
+  436840:       adrp x2, 0x13c4000 <_GLOBAL_OFFSET_TABLE_+0x1880>
+  436844:       adrp x1, 0x13c4000 <_GLOBAL_OFFSET_TABLE_+0x1880>
+  436848:       mov x0, x19
+  43684c:       ldr x2, [x2, #0xa00]
+  436850:       ldr x1, [x1, #0xd88]
+  436854:       bl 0x400ef0 <__cxa_throw@plt>
+  436858:       mov x1, x0
+  43685c:       mov x0, x19
+  436860:       mov x19, x1
+  436864:       bl 0x408f40 <__cxa_free_exception@plt>
+  436868:       mov x0, x19
+  43686c:       bl 0x401db0 <_Unwind_Resume@plt>
+### zplTensorBase4initENS_10VectorViewIKmEEb 0x0000000000436408-0x0000000000436500
+  436408:       stp x29, x30, [sp, #-0x50]!
+  43640c:       mov x29, sp
+  436410:       stp x19, x20, [sp, #0x10]
+  436414:       adrp x20, 0x13c9000 <_GLOBAL_OFFSET_TABLE_+0x6880>
+  436418:       mov x19, x0
+  43641c:       ldp x0, x5, [x1, #0x8]
+  436420:       ldr x3, [x20, #0x808]
+  436424:       ldr x4, [x3]
+  436428:       str x4, [sp, #0x48]
+  43642c:       mov x4, #0x0                // =0
+  436430:       str x21, [sp, #0x20]
+  436434:       add x4, x0, x5, lsl #3
+  436438:       and w21, w2, #0xff
+  43643c:       cmp x0, x4
+  436440:       b.eq 0x43645c <zplane::NNPredictionDispatcher::zplTensorBase::init(zplane::VectorView<unsigned long const>, bool)+0x54>
+  436444:       mov x1, x0
+  436448:       ldr x3, [x1]
+  43644c:       cbz x3, 0x4364b8 <zplane::NNPredictionDispatcher::zplTensorBase::init(zplane::VectorView<unsigned long const>, bool)+0xb0>
+  436450:       add x1, x1, #0x8
+  436454:       cmp x4, x1
+  436458:       b.ne 0x436448 <zplane::NNPredictionDispatcher::zplTensorBase::init(zplane::VectorView<unsigned long const>, bool)+0x40>
+  43645c:       ldr x2, [x19]
+  436460:       adrp x1, 0x1399000 <__frame_dummy_init_array_entry+0x4c8>
+  436464:       add x1, x1, #0x9f0
+  436468:       stp x1, x0, [sp, #0x30]
+  43646c:       add x1, sp, #0x30
+  436470:       ldr x2, [x2, #0x10]
+  436474:       str x5, [sp, #0x40]
+  436478:       mov x0, x19
+  43647c:       blr x2
+  436480:       mov w1, w21
+  436484:       mov x0, x19
+  436488:       bl 0x3f7610 <_ZN6zplane22NNPredictionDispatcher13zplTensorBase8allocateEb@plt>
+  43648c:       ldr x20, [x20, #0x808]
+  436490:       ldr x0, [sp, #0x48]
+  436494:       ldr x1, [x20]
+  436498:       subs x0, x0, x1
+  43649c:       mov x1, #0x0                // =0
+  4364a0:       b.ne 0x4364b4 <zplane::NNPredictionDispatcher::zplTensorBase::init(zplane::VectorView<unsigned long const>, bool)+0xac>
+  4364a4:       ldp x19, x20, [sp, #0x10]
+  4364a8:       ldr x21, [sp, #0x20]
+  4364ac:       ldp x29, x30, [sp], #0x50
+  4364b0:       ret
+  4364b4:       bl 0x410040 <__stack_chk_fail@plt>
+  4364b8:       mov x0, #0x10               // =16
+  4364bc:       bl 0x3fb140 <__cxa_allocate_exception@plt>
+  4364c0:       adrp x1, 0x1075000 <e843419@0310_00016114_950+0xf88>
+  4364c4:       mov x19, x0
+  4364c8:       add x1, x1, #0xbb0
+  4364cc:       bl 0x3f5b90 <_ZNSt16invalid_argumentC1EPKc@plt>
+  4364d0:       adrp x2, 0x13c4000 <_GLOBAL_OFFSET_TABLE_+0x1880>
+  4364d4:       adrp x1, 0x13c4000 <_GLOBAL_OFFSET_TABLE_+0x1880>
+  4364d8:       mov x0, x19
+  4364dc:       ldr x2, [x2, #0xa00]
+  4364e0:       ldr x1, [x1, #0xd88]
+  4364e4:       bl 0x400ef0 <__cxa_throw@plt>
+  4364e8:       mov x1, x0
+  4364ec:       mov x0, x19
+  4364f0:       mov x19, x1
+  4364f4:       bl 0x408f40 <__cxa_free_exception@plt>
+  4364f8:       mov x0, x19
+  4364fc:       bl 0x401db0 <_Unwind_Resume@plt>
+### zplTensorBase8allocate 0x0000000000436320-0x0000000000436408
+  436320:       stp x29, x30, [sp, #-0x50]!
+  436324:       mov x29, sp
+  436328:       stp x19, x20, [sp, #0x10]
+  43632c:       adrp x20, 0x13c9000 <_GLOBAL_OFFSET_TABLE_+0x6880>
+  436330:       add x19, x0, #0x38
+  436334:       ldr x2, [x20, #0x808]
+  436338:       stp x21, x22, [sp, #0x20]
+  43633c:       and w22, w1, #0xff
+  436340:       ldr x3, [x2]
+  436344:       str x3, [sp, #0x48]
+  436348:       mov x3, #0x0                // =0
+  43634c:       ldr x1, [x19, #0x10]
+  436350:       ldr x21, [x0, #0x60]
+  436354:       ldrb w0, [x19, #0x18]
+  436358:       cmp x21, x1
+  43635c:       b.eq 0x4363ec <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0xcc>
+  436360:       cbnz w0, 0x4363d4 <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0xb4>
+  436364:       stp xzr, xzr, [x19, #0x8]
+  436368:       strb wzr, [x19, #0x18]
+  43636c:       cbnz x21, 0x43639c <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0x7c>
+  436370:       cbnz w22, 0x4363b4 <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0x94>
+  436374:       ldr x20, [x20, #0x808]
+  436378:       ldr x0, [sp, #0x48]
+  43637c:       ldr x1, [x20]
+  436380:       subs x0, x0, x1
+  436384:       mov x1, #0x0                // =0
+  436388:       b.ne 0x436400 <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0xe0>
+  43638c:       ldp x19, x20, [sp, #0x10]
+  436390:       ldp x21, x22, [sp, #0x20]
+  436394:       ldp x29, x30, [sp], #0x50
+  436398:       ret
+  43639c:       mov x0, x21
+  4363a0:       bl 0x43fb18 <zplane::VectorOps<float, void>::allocate(unsigned long)>
+  4363a4:       mov w1, #0x1                // =1
+  4363a8:       stp x0, x21, [x19, #0x8]
+  4363ac:       strb w1, [x19, #0x18]
+  4363b0:       cbz w22, 0x436374 <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0x54>
+  4363b4:       ldr x2, [x19, #0x8]
+  4363b8:       adrp x1, 0x1399000 <__frame_dummy_init_array_entry+0x4c8>
+  4363bc:       add x1, x1, #0x990
+  4363c0:       add x0, sp, #0x30
+  4363c4:       stp x1, x2, [sp, #0x30]
+  4363c8:       str x21, [sp, #0x40]
+  4363cc:       bl 0x43e5c8 <zplane::VectorOps<float, void>::clear(zplane::VectorView<float>)>
+  4363d0:       b 0x436374 <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0x54>
+  4363d4:       ldr x0, [x19, #0x8]
+  4363d8:       bl 0x43fb30 <zplane::VectorOps<float, void>::free(float*)>
+  4363dc:       stp xzr, xzr, [x19, #0x8]
+  4363e0:       strb wzr, [x19, #0x18]
+  4363e4:       cbz x21, 0x436370 <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0x50>
+  4363e8:       b 0x43639c <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0x7c>
+  4363ec:       cbnz w0, 0x436370 <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0x50>
+  4363f0:       stp xzr, xzr, [x19, #0x8]
+  4363f4:       strb wzr, [x19, #0x18]
+  4363f8:       cbz x21, 0x436370 <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0x50>
+  4363fc:       b 0x43639c <zplane::NNPredictionDispatcher::zplTensorBase::allocate(bool)+0x7c>
+  436400:       bl 0x410040 <__stack_chk_fail@plt>
+  436404:       nop
+### rearrangeDataVecToChannelsFirst 0x00000000004373e8-0x0000000000437650
+  4373e8:       stp x29, x30, [sp, #-0xa0]!
+  4373ec:       mov x29, sp
+  4373f0:       stp x23, x24, [sp, #0x30]
+  4373f4:       adrp x23, 0x13c9000 <_GLOBAL_OFFSET_TABLE_+0x6880>
+  4373f8:       stp x21, x22, [sp, #0x20]
+  4373fc:       mov x22, x0
+  437400:       ldr x0, [x23, #0x808]
+  437404:       stp x19, x20, [sp, #0x10]
+  437408:       ldr x1, [x0]
+  43740c:       str x1, [sp, #0x98]
+  437410:       mov x1, #0x0                // =0
+  437414:       stp x25, x26, [sp, #0x40]
+  437418:       ldp x2, x0, [x22, #0x8]
+  43741c:       cmp x2, x0
+  437420:       b.eq 0x4375d4 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x1ec>
+  437424:       mov x25, #0x0               // =0
+  437428:       mov x19, #0x0               // =0
+  43742c:       mov x21, #0x0               // =0
+  437430:       mov x20, #0x0               // =0
+  437434:       mov x24, #0xfffffffffffffff // =1152921504606846975
+  437438:       str x27, [sp, #0x50]
+  43743c:       b 0x437454 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x6c>
+  437440:       sub x1, x0, x2
+  437444:       str x20, [x19], #0x8
+  437448:       add x20, x20, #0x1
+  43744c:       cmp x20, x1, asr #3
+  437450:       b.hs 0x4374c0 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0xd8>
+  437454:       cmp x25, x19
+  437458:       b.ne 0x437440 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x58>
+  43745c:       sub x26, x25, x21
+  437460:       cmp x24, x26, asr #3
+  437464:       asr x0, x26, #3
+  437468:       b.eq 0x4375e8 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x200>
+  43746c:       cbz x0, 0x4375cc <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x1e4>
+  437470:       cmp x0, x0, lsl #1
+  437474:       mov x25, #0x7ffffffffffffff8 // =9223372036854775800
+  437478:       lsl x0, x0, #1
+  43747c:       b.ls 0x437574 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x18c>
+  437480:       mov x0, x25
+  437484:       bl 0x3f4f20 <_Znwm@plt>
+  437488:       mov x27, x0
+  43748c:       add x19, x26, #0x8
+  437490:       add x25, x0, x25
+  437494:       cmp x26, #0x0
+  437498:       add x19, x27, x19
+  43749c:       str x20, [x27, x26]
+  4374a0:       b.gt 0x437594 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x1ac>
+  4374a4:       cbnz x21, 0x4375a4 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x1bc>
+  4374a8:       ldp x2, x0, [x22, #0x8]
+  4374ac:       add x20, x20, #0x1
+  4374b0:       mov x21, x27
+  4374b4:       sub x1, x0, x2
+  4374b8:       cmp x20, x1, asr #3
+  4374bc:       b.lo 0x437454 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x6c>
+  4374c0:       sub x0, x19, x21
+  4374c4:       cmp xzr, x0, asr #3
+  4374c8:       asr x20, x0, #3
+  4374cc:       b.eq 0x4375b0 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x1c8>
+  4374d0:       mov x1, #0xfffffffffffffff  // =1152921504606846975
+  4374d4:       cmp x20, x1
+  4374d8:       b.hi 0x437624 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x23c>
+  4374dc:       bl 0x3fcae0 <_Znam@plt>
+  4374e0:       ldr x27, [sp, #0x50]
+  4374e4:       mov x24, x0
+  4374e8:       mov w26, #0x1               // =1
+  4374ec:       adrp x19, 0x1399000 <__frame_dummy_init_array_entry+0x4c8>
+  4374f0:       adrp x2, 0x1399000 <__frame_dummy_init_array_entry+0x4c8>
+  4374f4:       add x3, x19, #0x9f0
+  4374f8:       add x2, x2, #0xa10
+  4374fc:       add x25, sp, #0x80
+  437500:       add x0, sp, #0x68
+  437504:       mov x1, x25
+  437508:       stp x3, x21, [sp, #0x68]
+  43750c:       stp x20, x2, [sp, #0x78]
+  437510:       stp x24, x20, [sp, #0x88]
+  437514:       bl 0x3ff420 <_ZN6zplane22NNPredictionDispatcher13zplTensorBase25convertPosToChannelsFirstENS_10VectorViewIKmEENS2_ImEE@plt>
+  437518:       add x19, x19, #0x9f0
+  43751c:       mov x1, x25
+  437520:       mov x0, x22
+  437524:       mov w2, #0x1                // =1
+  437528:       stp x19, x24, [sp, #0x80]
+  43752c:       str x20, [sp, #0x90]
+  437530:       bl 0x406eb0 <_ZN6zplane22NNPredictionDispatcher13zplTensorBase9transposeENS_10VectorViewIKmEEb@plt>
+  437534:       cbnz w26, 0x4375c0 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x1d8>
+  437538:       cbz x21, 0x437544 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x15c>
+  43753c:       mov x0, x21
+  437540:       bl 0x3fec60 <_ZdlPv@plt>
+  437544:       ldr x23, [x23, #0x808]
+  437548:       ldr x0, [sp, #0x98]
+  43754c:       ldr x1, [x23]
+  437550:       subs x0, x0, x1
+  437554:       mov x1, #0x0                // =0
+  437558:       b.ne 0x4375f4 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x20c>
+  43755c:       ldp x19, x20, [sp, #0x10]
+  437560:       ldp x21, x22, [sp, #0x20]
+  437564:       ldp x23, x24, [sp, #0x30]
+  437568:       ldp x25, x26, [sp, #0x40]
+  43756c:       ldp x29, x30, [sp], #0xa0
+  437570:       ret
+  437574:       cbnz x0, 0x4375fc <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x214>
+  437578:       mov x27, #0x0               // =0
+  43757c:       add x19, x26, #0x8
+  437580:       cmp x26, #0x0
+  437584:       add x19, x27, x19
+  437588:       str x20, [x27, x26]
+  43758c:       mov x25, #0x0               // =0
+  437590:       b.le 0x4374a4 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0xbc>
+  437594:       mov x2, x26
+  437598:       mov x1, x21
+  43759c:       mov x0, x27
+  4375a0:       bl 0x3f3280 <memmove@plt>
+  4375a4:       mov x0, x21
+  4375a8:       bl 0x3fec60 <_ZdlPv@plt>
+  4375ac:       b 0x4374a8 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0xc0>
+  4375b0:       mov w26, #0x0               // =0
+  4375b4:       mov x24, #0x0               // =0
+  4375b8:       ldr x27, [sp, #0x50]
+  4375bc:       b 0x4374ec <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x104>
+  4375c0:       mov x0, x24
+  4375c4:       bl 0x3faa70 <_ZdaPv@plt>
+  4375c8:       b 0x437538 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x150>
+  4375cc:       mov x25, #0x8               // =8
+  4375d0:       b 0x437480 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x98>
+  4375d4:       mov w26, #0x0               // =0
+  4375d8:       mov x21, #0x0               // =0
+  4375dc:       mov x20, #0x0               // =0
+  4375e0:       mov x24, #0x0               // =0
+  4375e4:       b 0x4374ec <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x104>
+  4375e8:       adrp x0, 0x1075000 <e843419@0310_00016114_950+0xf88>
+  4375ec:       add x0, x0, #0xce8
+  4375f0:       bl 0x4007a0 <_ZSt20__throw_length_errorPKc@plt>
+  4375f4:       str x27, [sp, #0x50]
+  4375f8:       bl 0x410040 <__stack_chk_fail@plt>
+  4375fc:       cmp x0, x24
+  437600:       csel x0, x0, x24, ls
+  437604:       lsl x25, x0, #3
+  437608:       b 0x437480 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x98>
+  43760c:       mov x19, x0
+  437610:       cbz x21, 0x43761c <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x234>
+  437614:       mov x0, x21
+  437618:       bl 0x3fec60 <_ZdlPv@plt>
+  43761c:       mov x0, x19
+  437620:       bl 0x401db0 <_Unwind_Resume@plt>
+  437624:       bl 0x406fa0 <__cxa_throw_bad_array_new_length@plt>
+  437628:       mov x19, x0
+  43762c:       cbz w26, 0x437644 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x25c>
+  437630:       mov x0, x24
+  437634:       bl 0x3faa70 <_ZdaPv@plt>
+  437638:       str x27, [sp, #0x50]
+  43763c:       cbnz x21, 0x437614 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x22c>
+  437640:       b 0x43761c <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x234>
+  437644:       str x27, [sp, #0x50]
+  437648:       cbnz x21, 0x437614 <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x22c>
+  43764c:       b 0x43761c <zplane::NNPredictionDispatcher::zplTensorBase::rearrangeDataVecToChannelsFirst()+0x234>

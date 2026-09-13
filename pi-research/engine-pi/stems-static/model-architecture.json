@@ -1,0 +1,55 @@
+{
+  "producer": "pytorch",
+  "producerVersion": "2.3.1",
+  "opsets": [
+    {
+      "domain": "",
+      "version": 11
+    }
+  ],
+  "operators": {
+    "Transpose": 2,
+    "BatchNormalization": 75,
+    "Constant": 16,
+    "Reshape": 4,
+    "MatMul": 2,
+    "ReduceMean": 1,
+    "Sub": 1,
+    "Conv": 154,
+    "LeakyRelu": 142,
+    "Add": 68,
+    "AveragePool": 11,
+    "Resize": 6,
+    "Concat": 6,
+    "Sigmoid": 1
+  },
+  "inputs": [
+    {
+      "name": "input",
+      "shape": [
+        1,
+        2,
+        128,
+        2048
+      ],
+      "dtype": 1
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output",
+      "shape": [
+        1,
+        8,
+        128,
+        2048
+      ],
+      "dtype": 1
+    }
+  ],
+  "initializerTypes": {
+    "FLOAT": 536
+  },
+  "nodeCount": 489,
+  "initializerCount": 536
+}

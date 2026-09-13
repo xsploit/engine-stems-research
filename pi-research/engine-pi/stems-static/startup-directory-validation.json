@@ -1,0 +1,10 @@
+{
+  "shell_syntax": "pass",
+  "captured_launch_arguments_preserved": true,
+  "existing_environment_preserved": true,
+  "adapter_environment_only_at_engine_launch": true,
+  "mounts_before_engine": true,
+  "ambiguous_input_rejected": true,
+  "executed_engine": false,
+  "pi_access": false
+}

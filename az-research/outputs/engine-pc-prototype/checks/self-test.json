@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "frames": 1,
+      "max_abs_identity_error": 7.450580596923828e-09
+    },
+    {
+      "frames": 1023,
+      "max_abs_identity_error": 5.960464477539063e-08
+    },
+    {
+      "frames": 128001,
+      "max_abs_identity_error": 8.940696716308594e-08
+    },
+    {
+      "frames": 131072,
+      "max_abs_identity_error": 8.940696716308594e-08
+    },
+    {
+      "frames": 261072,
+      "max_abs_identity_error": 8.940696716308594e-08
+    }
+  ],
+  "silence_postfilter_exact_zero": true,
+  "limit": "Tests reconstructed framing/OLA and silence, not Engine equivalence or stem quality"
+}

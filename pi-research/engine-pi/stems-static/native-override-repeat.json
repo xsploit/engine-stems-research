@@ -1,0 +1,92 @@
+[
+  {
+    "label": "baseline1",
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      299499.76,
+      299523.75,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      2495328,
+      2650370,
+      0,
+      0
+    ],
+    "unique_buffers": 40
+  },
+  {
+    "label": "acapella_toggle",
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      138392.71,
+      139513.83,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      779952,
+      882870,
+      0,
+      0
+    ],
+    "unique_buffers": 40
+  },
+  {
+    "label": "restored_acapella_toggle",
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      302006.28,
+      301759.39,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      2495328,
+      2650370,
+      0,
+      0
+    ],
+    "unique_buffers": 40
+  },
+  {
+    "label": "instrumental_toggle",
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      253533.13,
+      253610.07,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      2435823,
+      2572735,
+      0,
+      0
+    ],
+    "unique_buffers": 40
+  },
+  {
+    "label": "restored_instrumental_toggle",
+    "pid": "159449",
+    "format": "S24_3LE",
+    "rms": [
+      298147.54,
+      297304.5,
+      0.0,
+      0.0
+    ],
+    "peaks": [
+      2495328,
+      2650370,
+      0,
+      0
+    ],
+    "unique_buffers": 40
+  }
+]

@@ -1,0 +1,372 @@
+00000000000128b0 <zplane::StemsProAlgorithm::ephraimMalahApprox(unsigned long, unsigned long, unsigned long)>:
+   128b0:       stp x29, x30, [sp, #-0xd0]!
+   128b4:       mov x4, x1
+   128b8:       add x6, x0, #0x708
+   128bc:       mov x29, sp
+   128c0:       stp x19, x20, [sp, #0x10]
+   128c4:       mov x19, x0
+   128c8:       mov x20, x2
+   128cc:       stp x21, x22, [sp, #0x20]
+   128d0:       add x21, x0, #0x960
+   128d4:       mov x8, x3
+   128d8:       ldr x1, [x0, #0x978]
+   128dc:       adrp x5, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   128e0:       ldr x0, [x0, #0x78]
+   128e4:       str x8, [sp, #0x60]
+   128e8:       ldr x7, [x1, x2, lsl #3]
+   128ec:       adrp x22, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   128f0:       madd x0, x4, x0, x2
+   128f4:       add x22, x22, #0x170
+   128f8:       ldr x2, [x21, #0x30]
+   128fc:       stp x23, x24, [sp, #0x30]
+   12900:       add x23, sp, #0xb0
+   12904:       ldr x1, [x19, #0x720]
+   12908:       add x2, x7, x2, lsl #2
+   1290c:       ldr x7, [x19, #0x58]
+   12910:       str x2, [sp, #0xa0]
+   12914:       ldr x3, [x19, #0x738]
+   12918:       stp x25, x26, [sp, #0x40]
+   1291c:       add x25, sp, #0x98
+   12920:       ldr x0, [x1, x0, lsl #3]
+   12924:       madd x3, x7, x8, x3
+   12928:       ldr x5, [x5, #0xfa8] ; @187fffa8
+   1292c:       add x8, x19, #0x528
+   12930:       ldr x2, [x21, #0x28]
+   12934:       add x3, x0, x3, lsl #2
+   12938:       ldr x1, [x5]
+   1293c:       str x1, [sp, #0xc8]
+   12940:       mov x1, #0x0                // =0
+   12944:       stp x27, x28, [sp, #0x50]
+   12948:       mov x1, x23
+   1294c:       str x4, [sp, #0x70]
+   12950:       mov x0, x25
+   12954:       stp x5, x6, [sp, #0x80]
+   12958:       adrp x24, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1295c:       add x24, x24, #0x2b0
+   12960:       str x22, [sp, #0x98]
+   12964:       stp x2, x24, [sp, #0xa8]
+   12968:       str x8, [sp, #0x68]
+   1296c:       stp x3, x7, [sp, #0xb8]
+   12970:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12974:       mov x0, x23
+   12978:       ldr x3, [x19, #0x978]
+   1297c:       ldp x7, x1, [x21, #0x28]
+   12980:       ldr x3, [x3, x20, lsl #3]
+   12984:       str x7, [sp, #0xc0]
+   12988:       add x1, x3, x1, lsl #2
+   1298c:       stp x22, x1, [sp, #0xb0]
+   12990:       bl 0x23c10 <zplane::VectorOps<float, void>::calcSquare(zplane::VectorView<float>)>
+   12994:       ldr x3, [x19, #0x900]
+   12998:       mov x1, x23
+   1299c:       ldr x8, [sp, #0x68]
+   129a0:       str x8, [sp, #0x78]
+   129a4:       ldr x9, [x3, x20, lsl #3]
+   129a8:       mov x0, x25
+   129ac:       ldr x7, [x19, #0x918]
+   129b0:       ldr x10, [x19, #0x540]
+   129b4:       add x7, x9, x7, lsl #2
+   129b8:       stp x22, x7, [sp, #0x98]
+   129bc:       ldr x3, [x8, #0x30]
+   129c0:       ldr x9, [x19, #0x58]
+   129c4:       ldr x8, [sp, #0x60]
+   129c8:       ldr x7, [x19, #0x910]
+   129cc:       str x7, [sp, #0xa8]
+   129d0:       ldr x7, [x10, x20, lsl #3]
+   129d4:       madd x3, x9, x8, x3
+   129d8:       str x9, [sp, #0xc0]
+   129dc:       add x3, x7, x3, lsl #2
+   129e0:       stp x24, x3, [sp, #0xb0]
+   129e4:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   129e8:       ldr x3, [x19, #0x900]
+   129ec:       mov x1, x23
+   129f0:       ldr x4, [sp, #0x70]
+   129f4:       mov x0, x25
+   129f8:       ldr x9, [x3, x20, lsl #3]
+   129fc:       ldr x7, [x19, #0x78]
+   12a00:       ldr x3, [x19, #0x918]
+   12a04:       ldr x6, [sp, #0x88]
+   12a08:       madd x7, x4, x7, x20
+   12a0c:       add x3, x9, x3, lsl #2
+   12a10:       stp x22, x3, [sp, #0x98]
+   12a14:       ldr x10, [x19, #0x720]
+   12a18:       str x6, [sp, #0x68]
+   12a1c:       ldr x3, [x6, #0x30]
+   12a20:       ldr x9, [x19, #0x58]
+   12a24:       ldr x8, [sp, #0x60]
+   12a28:       ldr x7, [x10, x7, lsl #3]
+   12a2c:       str x9, [sp, #0xc0]
+   12a30:       madd x3, x9, x8, x3
+   12a34:       ldr x9, [x19, #0x910]
+   12a38:       str x9, [sp, #0xa8]
+   12a3c:       add x3, x7, x3, lsl #2
+   12a40:       stp x24, x3, [sp, #0xb0]
+   12a44:       bl 0x23e78 <zplane::VectorOps<float, void>::subtract(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12a48:       ldr x3, [x19, #0x900]
+   12a4c:       mov x0, x23
+   12a50:       ldr x1, [x19, #0x918]
+   12a54:       ldr x3, [x3, x20, lsl #3]
+   12a58:       ldr x7, [x19, #0x910]
+   12a5c:       str x7, [sp, #0xc0]
+   12a60:       add x1, x3, x1, lsl #2
+   12a64:       stp x22, x1, [sp, #0xb0]
+   12a68:       bl 0x23c10 <zplane::VectorOps<float, void>::calcSquare(zplane::VectorView<float>)>
+   12a6c:       ldr x3, [x19, #0x9f0]
+   12a70:       mov x1, x23
+   12a74:       ldr x8, [sp, #0x78]
+   12a78:       mov x0, x25
+   12a7c:       ldr x10, [x3, x20, lsl #3]
+   12a80:       ldr x7, [x19, #0xa08]
+   12a84:       ldr x9, [x19, #0x540]
+   12a88:       ldr x3, [x8, #0x30]
+   12a8c:       add x7, x10, x7, lsl #2
+   12a90:       ldr x8, [x19, #0x58]
+   12a94:       stp x22, x7, [sp, #0x98]
+   12a98:       ldr x2, [sp, #0x60]
+   12a9c:       ldr x7, [x19, #0xa00]
+   12aa0:       str x7, [sp, #0xa8]
+   12aa4:       ldr x7, [x9, x20, lsl #3]
+   12aa8:       madd x3, x8, x2, x3
+   12aac:       str x8, [sp, #0xc0]
+   12ab0:       add x3, x7, x3, lsl #2
+   12ab4:       stp x24, x3, [sp, #0xb0]
+   12ab8:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12abc:       ldr x3, [x19, #0x9f0]
+   12ac0:       mov x0, x23
+   12ac4:       ldr x1, [x19, #0xa08]
+   12ac8:       ldr x3, [x3, x20, lsl #3]
+   12acc:       ldr x7, [x19, #0xa00]
+   12ad0:       str x7, [sp, #0xc0]
+   12ad4:       add x1, x3, x1, lsl #2
+   12ad8:       stp x22, x1, [sp, #0xb0]
+   12adc:       bl 0x23c10 <zplane::VectorOps<float, void>::calcSquare(zplane::VectorView<float>)>
+   12ae0:       ldr x3, [x19, #0x900]
+   12ae4:       mov x0, x23
+   12ae8:       ldr x1, [x19, #0x918]
+   12aec:       ldr x7, [x3, x20, lsl #3]
+   12af0:       ldr x3, [x19, #0x910]
+   12af4:       str x3, [sp, #0xc0]
+   12af8:       add x1, x7, x1, lsl #2
+   12afc:       ldr s0, [x19, #0xacc]
+   12b00:       stp x22, x1, [sp, #0xb0]
+   12b04:       bl 0x23d98 <zplane::VectorOps<float, void>::add(zplane::VectorView<float>, float)>
+   12b08:       ldr x7, [x19, #0x978]
+   12b0c:       mov x1, x23
+   12b10:       ldr x3, [x21, #0x30]
+   12b14:       mov x0, x25
+   12b18:       ldr x8, [x7, x20, lsl #3]
+   12b1c:       ldr x7, [x19, #0x900]
+   12b20:       add x3, x8, x3, lsl #2
+   12b24:       stp x22, x3, [sp, #0x98]
+   12b28:       ldr x8, [x7, x20, lsl #3]
+   12b2c:       ldr x3, [x19, #0x918]
+   12b30:       ldr x7, [x21, #0x28]
+   12b34:       stp x7, x24, [sp, #0xa8]
+   12b38:       add x3, x8, x3, lsl #2
+   12b3c:       ldr x7, [x19, #0x910]
+   12b40:       str x3, [sp, #0xb8]
+   12b44:       str x7, [sp, #0xc0]
+   12b48:       bl 0x24130 <zplane::VectorOps<float, void>::divide(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12b4c:       ldr x7, [x19, #0x9f0]
+   12b50:       mov x1, x23
+   12b54:       ldr x3, [x19, #0xa08]
+   12b58:       mov x0, x25
+   12b5c:       ldr x8, [x7, x20, lsl #3]
+   12b60:       ldr x7, [x19, #0x900]
+   12b64:       add x3, x8, x3, lsl #2
+   12b68:       stp x22, x3, [sp, #0x98]
+   12b6c:       ldr x8, [x7, x20, lsl #3]
+   12b70:       ldr x3, [x19, #0x918]
+   12b74:       ldr x2, [x19, #0x910]
+   12b78:       str x2, [sp, #0xc0]
+   12b7c:       ldr x7, [x19, #0xa00]
+   12b80:       add x2, x8, x3, lsl #2
+   12b84:       stp x7, x24, [sp, #0xa8]
+   12b88:       str x2, [sp, #0xb8]
+   12b8c:       bl 0x24130 <zplane::VectorOps<float, void>::divide(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12b90:       ldr x3, [x19, #0xa68]
+   12b94:       mov x1, x23
+   12b98:       ldr x2, [x19, #0xa80]
+   12b9c:       mov x0, x25
+   12ba0:       ldr x7, [x3, x20, lsl #3]
+   12ba4:       ldr x3, [x19, #0x978]
+   12ba8:       add x2, x7, x2, lsl #2
+   12bac:       stp x22, x2, [sp, #0x98]
+   12bb0:       ldr x7, [x3, x20, lsl #3]
+   12bb4:       ldr x2, [x21, #0x30]
+   12bb8:       ldr x3, [x19, #0xa78]
+   12bbc:       stp x3, x24, [sp, #0xa8]
+   12bc0:       add x2, x7, x2, lsl #2
+   12bc4:       ldr x3, [x21, #0x28]
+   12bc8:       str x2, [sp, #0xb8]
+   12bcc:       str x3, [sp, #0xc0]
+   12bd0:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12bd4:       ldr x2, [x19, #0xa68]
+   12bd8:       fmov s0, #1.00000000
+   12bdc:       ldr x1, [x19, #0xa80]
+   12be0:       mov x0, x23
+   12be4:       ldr x2, [x2, x20, lsl #3]
+   12be8:       ldr x3, [x19, #0xa78]
+   12bec:       str x3, [sp, #0xc0]
+   12bf0:       add x1, x2, x1, lsl #2
+   12bf4:       stp x22, x1, [sp, #0xb0]
+   12bf8:       bl 0x23d98 <zplane::VectorOps<float, void>::add(zplane::VectorView<float>, float)>
+   12bfc:       ldr x3, [x19, #0x978]
+   12c00:       mov x1, x23
+   12c04:       ldr x2, [x21, #0x30]
+   12c08:       mov x0, x25
+   12c0c:       ldr x7, [x3, x20, lsl #3]
+   12c10:       ldr x3, [x19, #0xa68]
+   12c14:       add x2, x7, x2, lsl #2
+   12c18:       stp x22, x2, [sp, #0x98]
+   12c1c:       ldr x7, [x3, x20, lsl #3]
+   12c20:       ldr x2, [x19, #0xa80]
+   12c24:       ldr x3, [x21, #0x28]
+   12c28:       stp x3, x24, [sp, #0xa8]
+   12c2c:       add x2, x7, x2, lsl #2
+   12c30:       ldr x3, [x19, #0xa78]
+   12c34:       str x2, [sp, #0xb8]
+   12c38:       str x3, [sp, #0xc0]
+   12c3c:       bl 0x24130 <zplane::VectorOps<float, void>::divide(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12c40:       ldr x3, [x19, #0x978]
+   12c44:       mov x1, x23
+   12c48:       ldr x2, [x21, #0x30]
+   12c4c:       mov x0, x25
+   12c50:       ldr x7, [x3, x20, lsl #3]
+   12c54:       ldr x3, [x19, #0x9f0]
+   12c58:       add x2, x7, x2, lsl #2
+   12c5c:       stp x22, x2, [sp, #0x98]
+   12c60:       ldr x7, [x3, x20, lsl #3]
+   12c64:       ldr x2, [x19, #0xa08]
+   12c68:       ldr x3, [x21, #0x28]
+   12c6c:       stp x3, x24, [sp, #0xa8]
+   12c70:       add x2, x7, x2, lsl #2
+   12c74:       ldr x3, [x19, #0xa00]
+   12c78:       str x2, [sp, #0xb8]
+   12c7c:       str x3, [sp, #0xc0]
+   12c80:       bl 0x23f30 <zplane::VectorOps<float, void>::multiply(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12c84:       ldr x3, [x19, #0xa68]
+   12c88:       mov x1, x23
+   12c8c:       ldr x2, [x19, #0xa80]
+   12c90:       mov x0, x25
+   12c94:       ldr x7, [x3, x20, lsl #3]
+   12c98:       ldr x3, [x19, #0x978]
+   12c9c:       add x2, x7, x2, lsl #2
+   12ca0:       stp x22, x2, [sp, #0x98]
+   12ca4:       ldr x7, [x3, x20, lsl #3]
+   12ca8:       ldr x2, [x21, #0x30]
+   12cac:       ldr x3, [x19, #0xa78]
+   12cb0:       stp x3, x24, [sp, #0xa8]
+   12cb4:       add x2, x7, x2, lsl #2
+   12cb8:       ldr x3, [x21, #0x28]
+   12cbc:       str x2, [sp, #0xb8]
+   12cc0:       str x3, [sp, #0xc0]
+   12cc4:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12cc8:       ldr x0, [x19, #0xa68]
+   12ccc:       mov w2, #0xa090             // =41104
+   12cd0:       ldr x1, [x19, #0xa80]
+   12cd4:       movk w2, #0x3f38, lsl #16 ; w2=0x3f38a090 =0.7211999893188477 f32
+   12cd8:       ldr x3, [x0, x20, lsl #3]
+   12cdc:       fmov s0, w2
+   12ce0:       ldr x2, [x19, #0xa78]
+   12ce4:       mov x0, x23
+   12ce8:       add x1, x3, x1, lsl #2
+   12cec:       stp x22, x1, [sp, #0xb0]
+   12cf0:       str x2, [sp, #0xc0]
+   12cf4:       bl 0x23f10 <zplane::VectorOps<float, void>::multiply(zplane::VectorView<float>, float)>
+   12cf8:       ldr x2, [x19, #0x978]
+   12cfc:       mov x0, x23
+   12d00:       ldp x3, x1, [x21, #0x28]
+   12d04:       ldr x2, [x2, x20, lsl #3]
+   12d08:       str x3, [sp, #0xc0]
+   12d0c:       add x1, x2, x1, lsl #2
+   12d10:       stp x22, x1, [sp, #0xb0]
+   12d14:       bl 0x23c10 <zplane::VectorOps<float, void>::calcSquare(zplane::VectorView<float>)>
+   12d18:       ldr x3, [x19, #0x978]
+   12d1c:       mov x1, x23
+   12d20:       ldr x2, [x21, #0x30]
+   12d24:       mov x0, x25
+   12d28:       ldr x7, [x3, x20, lsl #3]
+   12d2c:       ldr x3, [x19, #0xa68]
+   12d30:       add x2, x7, x2, lsl #2
+   12d34:       stp x22, x2, [sp, #0x98]
+   12d38:       ldr x7, [x3, x20, lsl #3]
+   12d3c:       ldr x2, [x19, #0xa80]
+   12d40:       ldr x3, [x19, #0xa78]
+   12d44:       str x3, [sp, #0xc0]
+   12d48:       ldr x3, [x21, #0x28]
+   12d4c:       add x2, x7, x2, lsl #2
+   12d50:       str x3, [sp, #0xa8]
+   12d54:       stp x24, x2, [sp, #0xb0]
+   12d58:       bl 0x23db8 <zplane::VectorOps<float, void>::add(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12d5c:       ldr x2, [x19, #0x978]
+   12d60:       mov x0, x23
+   12d64:       ldp x3, x1, [x21, #0x28]
+   12d68:       ldr x2, [x2, x20, lsl #3]
+   12d6c:       str x3, [sp, #0xc0]
+   12d70:       add x1, x2, x1, lsl #2
+   12d74:       stp x22, x1, [sp, #0xb0]
+   12d78:       bl 0x23c30 <zplane::VectorOps<float, void>::calcSquareRoot(zplane::VectorView<float>)>
+   12d7c:       ldr x2, [x19, #0x9f0]
+   12d80:       mov x0, x23
+   12d84:       ldr x1, [x19, #0xa08]
+   12d88:       ldr x3, [x2, x20, lsl #3]
+   12d8c:       ldr x2, [x19, #0xa00]
+   12d90:       str x2, [sp, #0xc0]
+   12d94:       add x1, x3, x1, lsl #2
+   12d98:       ldr s0, [x19, #0xacc]
+   12d9c:       stp x22, x1, [sp, #0xb0]
+   12da0:       bl 0x23d98 <zplane::VectorOps<float, void>::add(zplane::VectorView<float>, float)>
+   12da4:       ldr x3, [x19, #0x978]
+   12da8:       mov x1, x23
+   12dac:       ldr x2, [x21, #0x30]
+   12db0:       mov x0, x25
+   12db4:       ldr x7, [x3, x20, lsl #3]
+   12db8:       ldr x3, [x19, #0x9f0]
+   12dbc:       add x2, x7, x2, lsl #2
+   12dc0:       stp x22, x2, [sp, #0x98]
+   12dc4:       ldr x7, [x3, x20, lsl #3]
+   12dc8:       ldr x2, [x19, #0xa08]
+   12dcc:       ldr x3, [x19, #0xa00]
+   12dd0:       str x3, [sp, #0xc0]
+   12dd4:       ldr x3, [x21, #0x28]
+   12dd8:       add x2, x7, x2, lsl #2
+   12ddc:       str x3, [sp, #0xa8]
+   12de0:       stp x24, x2, [sp, #0xb0]
+   12de4:       bl 0x24130 <zplane::VectorOps<float, void>::divide(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12de8:       ldp x8, x6, [sp, #0x60]
+   12dec:       mov x1, x23
+   12df0:       ldr x4, [sp, #0x70]
+   12df4:       mov x0, x25
+   12df8:       ldr x2, [x19, #0x78]
+   12dfc:       ldr x7, [x19, #0x720]
+   12e00:       madd x4, x4, x2, x20
+   12e04:       ldr x3, [x6, #0x30]
+   12e08:       ldr x2, [x19, #0x58]
+   12e0c:       ldr x4, [x7, x4, lsl #3]
+   12e10:       str x2, [sp, #0xa8]
+   12e14:       madd x28, x2, x8, x3
+   12e18:       ldr x3, [x19, #0x978]
+   12e1c:       add x28, x4, x28, lsl #2
+   12e20:       stp x22, x28, [sp, #0x98]
+   12e24:       ldr x3, [x3, x20, lsl #3]
+   12e28:       ldr x2, [x21, #0x30]
+   12e2c:       ldr x4, [x21, #0x28]
+   12e30:       str x4, [sp, #0xc0]
+   12e34:       add x2, x3, x2, lsl #2
+   12e38:       stp x24, x2, [sp, #0xb0]
+   12e3c:       bl 0x23f30 <zplane::VectorOps<float, void>::multiply(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   12e40:       ldr x5, [sp, #0x80]
+   12e44:       ldr x0, [sp, #0xc8]
+   12e48:       ldr x1, [x5]
+   12e4c:       subs x0, x0, x1
+   12e50:       mov x1, #0x0                // =0
+   12e54:       b.ne 0x12e74 <zplane::StemsProAlgorithm::ephraimMalahApprox(unsigned long, unsigned long, unsigned long)+0x5c4>
+   12e58:       ldp x19, x20, [sp, #0x10]
+   12e5c:       ldp x21, x22, [sp, #0x20]
+   12e60:       ldp x23, x24, [sp, #0x30]
+   12e64:       ldp x25, x26, [sp, #0x40]
+   12e68:       ldp x27, x28, [sp, #0x50]
+   12e6c:       ldp x29, x30, [sp], #0xd0
+   12e70:       ret
+   12e74:       bl 0x51d0 <__stack_chk_fail@plt>
+

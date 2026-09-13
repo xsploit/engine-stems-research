@@ -1,0 +1,46 @@
+00000000000246f8 <zplane::VectorOps<float, void>::calculateMagnitude(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)>:
+   246f8:       stp x29, x30, [sp, #-0x50]!
+   246fc:       mov x29, sp
+   24700:       stp x19, x20, [sp, #0x10]
+   24704:       ldr x20, [x1, #0x8]
+   24708:       ldr x2, [x0, #0x10]
+   2470c:       ldr x1, [x0, #0x18]
+   24710:       ldr x3, [x0, #0x20]
+   24714:       add x2, x1, x2
+   24718:       ldr x0, [x0, #0x8]
+   2471c:       cmp w3, #0x0
+   24720:       b.le 0x24770 <zplane::VectorOps<float, void>::calculateMagnitude(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)+0x78>
+   24724:       lsl x1, x1, #2
+   24728:       lsl x2, x2, #2
+   2472c:       add x1, x0, x1
+   24730:       add x2, x0, x2
+   24734:       mov x19, #0x0               // =0
+   24738:       str d8, [sp, #0x20]
+   2473c:       nop
+   24740:       ldr s1, [x2, x19, lsl #2]
+   24744:       ldr s0, [x1, x19, lsl #2]
+   24748:       fmul s1, s1, s1
+   2474c:       fmadd s0, s0, s0, s1
+   24750:       fsqrt s8, s0
+   24754:       fcmp s0, #0.0
+   24758:       b.mi 0x2477c <zplane::VectorOps<float, void>::calculateMagnitude(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)+0x84>
+   2475c:       str s8, [x20, x19, lsl #2]
+   24760:       add x19, x19, #0x1
+   24764:       cmp w3, w19
+   24768:       b.gt 0x24740 <zplane::VectorOps<float, void>::calculateMagnitude(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)+0x48>
+   2476c:       ldr d8, [sp, #0x20]
+   24770:       ldp x19, x20, [sp, #0x10]
+   24774:       ldp x29, x30, [sp], #0x50
+   24778:       ret
+   2477c:       str w3, [sp, #0x3c]
+   24780:       stp x2, x1, [sp, #0x40]
+   24784:       bl 0x5050 <sqrtf@plt>
+   24788:       ldr w3, [sp, #0x3c]
+   2478c:       str s8, [x20, x19, lsl #2]
+   24790:       add x19, x19, #0x1
+   24794:       cmp w3, w19
+   24798:       ldp x2, x1, [sp, #0x40]
+   2479c:       b.gt 0x24740 <zplane::VectorOps<float, void>::calculateMagnitude(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)+0x48>
+   247a0:       b 0x2476c <zplane::VectorOps<float, void>::calculateMagnitude(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)+0x74>
+   247a4:       nop
+

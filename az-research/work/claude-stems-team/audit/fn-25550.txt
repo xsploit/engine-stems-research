@@ -1,0 +1,40 @@
+0000000000025550 <CzplfFFTGen::zplfFFT(float*, float*)>:
+   25550:       stp x29, x30, [sp, #-0x20]!
+   25554:       cmp x1, x2
+   25558:       mov x29, sp
+   2555c:       stp x19, x20, [sp, #0x10]
+   25560:       mov x19, x0
+   25564:       mov x20, x1
+   25568:       ldr w0, [x0, #0xc]
+   2556c:       b.eq 0x25584 <CzplfFFTGen::zplfFFT(float*, float*)+0x34>
+   25570:       mov x1, x2
+   25574:       sbfiz x2, x0, #2, #32
+   25578:       mov x0, x20
+   2557c:       bl 0x4e60 <memcpy@plt>
+   25580:       ldr w0, [x19, #0xc]
+   25584:       ldr w1, [x19, #0x8]
+   25588:       sub w1, w1, w0
+   2558c:       cmp w1, #0x0
+   25590:       b.le 0x255a8 <CzplfFFTGen::zplfFFT(float*, float*)+0x58>
+   25594:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   25598:       add x0, x20, w0, sxtw #2
+   2559c:       ldr x2, [x2, #0xdf0] ; @187ffdf0
+   255a0:       ldr x2, [x2]
+   255a4:       blr x2
+   255a8:       ldr w0, [x19, #0x40]
+   255ac:       cbz w0, 0x255cc <CzplfFFTGen::zplfFFT(float*, float*)+0x7c>
+   255b0:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   255b4:       ldr w2, [x19, #0xc]
+   255b8:       ldr x1, [x19, #0x18]
+   255bc:       mov x0, x20
+   255c0:       ldr x3, [x3, #0xe20] ; @187ffe20
+   255c4:       ldr x3, [x3]
+   255c8:       blr x3
+   255cc:       ldr w0, [x19, #0x8]
+   255d0:       mov x2, x20
+   255d4:       ldp x3, x4, [x19, #0x28]
+   255d8:       mov w1, #0x1                // =1
+   255dc:       ldp x19, x20, [sp, #0x10]
+   255e0:       ldp x29, x30, [sp], #0x20
+   255e4:       b 0x2afe8 <rdft(int, int, float*, int*, float*)>
+

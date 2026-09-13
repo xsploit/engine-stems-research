@@ -1,0 +1,112 @@
+[
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/cpu-fp16-conv-fp32-sensitive.json",
+    "sha256": "d38253d5bd33623b422b3a578b4c0b8036963fb3b27d50a2c329bb133e002b12",
+    "candidate": "fp16-conv-fp32-sensitive",
+    "device": "i5-13600K CPU, four threads",
+    "speedup": 0.7478079608287506,
+    "max_relative_l2": 0.4403169061703783,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/cpu-fp16-deep-only.json",
+    "sha256": "e5206ec7997156d1ad9503bf9a39578f8ab3e916ab79352c7180945ad64b1b0f",
+    "candidate": "fp16-deep-only",
+    "device": "i5-13600K CPU, four threads",
+    "speedup": 0.9943693340683593,
+    "max_relative_l2": 0.0006178337935184403,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/cpu-fp16-selective-conv.json",
+    "sha256": "d4148dc5491e7ee08ea0eb3754cad580f8705e04eead7b3ecb3f9f7f1ee0096c",
+    "candidate": "fp16-selective-conv",
+    "device": "i5-13600K CPU, four threads",
+    "speedup": 0.9857664450035581,
+    "max_relative_l2": 0.0045546624850913925,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/cpu-fp32-opset13.json",
+    "sha256": "9b254ff8b77cf4ceeb09a1eea29c186c5268bc450a6e9760f7f84ef55d7f5b94",
+    "candidate": "fp32-opset13",
+    "device": "i5-13600K CPU, four threads",
+    "speedup": 1.0092744897796753,
+    "max_relative_l2": 0.0,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/cpu-int8-all-conv.json",
+    "sha256": "9b9e1c93cee4bd0207b3232cff5550cefd1f24a4ae855ed8a146569605301fd3",
+    "candidate": "int8-all-conv",
+    "device": "i5-13600K CPU, four threads",
+    "speedup": 1.481753642652606,
+    "max_relative_l2": 1.1860897281013025,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/cpu-int8-deep-only.json",
+    "sha256": "7ce07100c588a2f0cc812c8a479c4e121a157fc0b75bfc58295121ad6d3fe8aa",
+    "candidate": "int8-deep-only",
+    "device": "i5-13600K CPU, four threads",
+    "speedup": 1.1005356444713412,
+    "max_relative_l2": 0.08268789787319775,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/cpu-int8-protected-edges.json",
+    "sha256": "85ad9cd4c1468e2dfe1efed2cf7637fd0c77ec994a700a7bfcf18e952964aa61",
+    "candidate": "int8-protected-edges",
+    "device": "i5-13600K CPU, four threads",
+    "speedup": 2.0046255422875188,
+    "max_relative_l2": 0.652602764939885,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/gpu-fp16-conv-fp32-sensitive.json",
+    "sha256": "b2f585c81126458e009080cd128a31047f8f709d8158eb5e39cfcf482726308b",
+    "candidate": "fp16-conv-fp32-sensitive",
+    "device": "RTX 5060 Ti",
+    "speedup": 1.9941348830639083,
+    "max_relative_l2": 0.39307419723143516,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/gpu-fp16-deep-only.json",
+    "sha256": "c215d4cbe24fce43f59b319d622740b1e65d30320ebd679f9c179b314fd6cb93",
+    "candidate": "fp16-deep-only",
+    "device": "RTX 5060 Ti",
+    "speedup": 1.054771611634278,
+    "max_relative_l2": 0.001059635608583999,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/gpu-fp16-selective-conv.json",
+    "sha256": "b2b5c262d9d71475b55454887d91ab46c8a8663a1daf1175831d9e15ddbc0da4",
+    "candidate": "fp16-selective-conv",
+    "device": "RTX 5060 Ti",
+    "speedup": 1.7377380688448583,
+    "max_relative_l2": 0.006033724622862861,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  },
+  {
+    "file": "/home/subsect/Documents/Codex/2026-09-11/engine-pi-stems-static-processor-model/outputs/precision/gpu-fp32-opset13.json",
+    "sha256": "2be859c354e7a6ee3c9d541beebb1d2fd70d35e4195d0717e4945291b0f28a5a",
+    "candidate": "fp32-opset13",
+    "device": "RTX 5060 Ti",
+    "speedup": 1.00219418584405,
+    "max_relative_l2": 0.0,
+    "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed.",
+    "error": null
+  }
+]

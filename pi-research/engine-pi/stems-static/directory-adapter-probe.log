@@ -1,0 +1,22 @@
+PASS temporary directories
+PASS create synthetic file
+PASS set synthetic permissions
+PASS create synthetic file
+PASS set synthetic permissions
+PASS create synthetic file
+PASS set synthetic permissions
+PASS create synthetic file
+PASS set synthetic permissions
+PASS create synthetic file
+PASS set synthetic permissions
+PASS create synthetic file
+PASS set synthetic permissions
+PASS disabled by default
+PASS exact target sees real entries
+PASS unrelated directory unchanged
+PASS other filter unchanged
+PASS other sort unchanged
+PASS normal listing unchanged
+PASS remove synthetic component
+PASS incomplete adapter not accepted
+PASS relative opt-in rejected

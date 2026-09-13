@@ -1,0 +1,21 @@
+{
+  "bytes": 208649486,
+  "fp16_convs": 127,
+  "stages": [
+    "conv_block7a",
+    "conv_block7b",
+    "conv_block7c",
+    "conv_block7d",
+    "decoder_block1",
+    "decoder_block2",
+    "decoder_block3",
+    "decoder_block4",
+    "decoder_block5",
+    "decoder_block6",
+    "encoder_block3",
+    "encoder_block4",
+    "encoder_block5",
+    "encoder_block6"
+  ],
+  "other_operations": "FP32; explicit Cast only at selected Conv boundaries"
+}

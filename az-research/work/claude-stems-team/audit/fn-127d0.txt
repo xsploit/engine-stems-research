@@ -1,0 +1,18 @@
+00000000000127d0 <zplane::StemsProAlgorithm::getInstrumentOutputChannels(zplane::StemsPro::Instrument) const>:
+   127d0:       cbz w1, 0x127fc <zplane::StemsProAlgorithm::getInstrumentOutputChannels(zplane::StemsPro::Instrument) const+0x2c>
+   127d4:       cmp w1, #0x1
+   127d8:       ldr x0, [x0, #0x70]
+   127dc:       b.eq 0x127f8 <zplane::StemsProAlgorithm::getInstrumentOutputChannels(zplane::StemsPro::Instrument) const+0x28>
+   127e0:       cmp w1, #0x2
+   127e4:       b.eq 0x12804 <zplane::StemsProAlgorithm::getInstrumentOutputChannels(zplane::StemsPro::Instrument) const+0x34>
+   127e8:       cmp w1, #0x3
+   127ec:       add x1, x0, x0, lsl #1
+   127f0:       lsl x0, x0, #2
+   127f4:       csel x0, x0, x1, ne
+   127f8:       ret
+   127fc:       mov x0, #0x0                // =0
+   12800:       ret
+   12804:       lsl x0, x0, #1
+   12808:       ret
+   1280c:       nop
+

@@ -1,0 +1,18 @@
+12417c8 b .eq	0x12416a4
+12417cc add w0, w0, #0x1
+12417d0 sbfx x0, x0, #1, #7
+12417d4 cmp w0, #0x0
+12417d8 b .gt	0x12416a4
+12417dc ldr w0, [x19, #0x398]
+12417e0 mov x21, sp
+12417e4 mov x1, x21
+12417e8 mov w2, #0x1                // =1
+12417ec bl 0x397c88
+12417f0 cmn w0, #0x1
+12417f4 b .eq	0x1241848
+12417f8 cbz w0, 0x124183c
+12417fc ldr w0, [sp]
+1241800 ands w1, w0, #0x7f
+1241804 b .ne	0x12418c8
+1241808 ldrb w1, [x20, #0x19]
+124180c tbnz w1, #0x0, 0x12416a4

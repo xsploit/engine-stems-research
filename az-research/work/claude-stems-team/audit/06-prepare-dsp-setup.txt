@@ -1,0 +1,93 @@
+1359c:       ldr x0, [x19, #0x48]
+135a0:       add x2, sp, #0x220
+135a4:       str x0, [sp, #0x138]
+135a8:       add x1, sp, #0xe0
+135ac:       ldr x0, [x19, #0x60]
+135b0:       str x0, [sp, #0x140]
+135b4:       ldrsw x21, [x19, #0x68]
+135b8:       add x0, x19, #0x230
+135bc:       ldp x2, x3, [x2, #-0xe8]
+135c0:       ldr x20, [x24, #0x8]
+135c4:       str x20, [x19, #0x70]
+135c8:       stp x2, x3, [sp, #0xe0]
+135cc:       mul x21, x21, x20
+135d0:       str x20, [sp, #0xf0]
+135d4:       str x20, [sp, #0x148]
+135d8:       bl 0x16c80 <zplane::Algorithms::Hopping<float>::prepare(zplane::Algorithms::Hopping<float>::Prepa
+135dc:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+135e0:       add x1, sp, #0xb0
+135e4:       ldr x0, [x19, #0x48]
+135e8:       str x0, [sp, #0x198]
+135ec:       ldr x0, [x19, #0x60]
+135f0:       str x0, [sp, #0x1a0]
+135f4:       ldr x2, [x2, #0xe30]
+135f8:       add x0, sp, #0x220
+135fc:       stp x21, x2, [sp, #0x1a8]
+13600:       ldp x6, x7, [x0, #-0x88]
+13604:       str x2, [sp, #0x1b8]
+13608:       ldp x4, x5, [x0, #-0x78]
+1360c:       add x0, x19, #0x2c8
+13610:       stp x6, x7, [sp, #0xb0]
+13614:       stp x4, x5, [sp, #0xc0]
+13618:       str x2, [sp, #0xd0]
+1361c:       bl 0x17798 <zplane::Algorithms::OverlapAddStep<float>::prepare(zplane::Algorithms::OverlapAddStep
+13620:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+13624:       mov x1, #0x1                // =1
+13628:       ldr x2, [x19, #0x48]
+1362c:       str x1, [sp, #0x160]
+13630:       ldr x0, [x0, #0xf40]
+13634:       stp x2, x0, [sp, #0x150]
+13638:       add x1, sp, #0x90
+1363c:       str wzr, [sp, #0x168]
+13640:       add x0, x19, #0x430
+13644:       ldp x4, x5, [sp, #0x150]
+13648:       str x0, [sp, #0x88]
+1364c:       ldp x2, x3, [sp, #0x160]
+13650:       stp x4, x5, [sp, #0x90]
+13654:       stp x2, x3, [sp, #0xa0]
+13658:       bl 0x1ce20 <zplane::Algorithms::Fft::prepare(zplane::Algorithms::Fft::PrepareParameters)>
+1365c:       ldr s0, [x19, #0x40]
+13660:       add x25, x19, #0x1a0
+13664:       fcmp s0, s8
+13668:       cset w0, ne
+1366c:       strb w0, [x19, #0xa8]
+13670:       b.eq 0x13704 <zplane::StemsProAlgorithm::prepare(zplane::StemsProAlgorithm::PrepareParameters)+0x
+13674:       ldr x2, [x19, #0x50]
+13678:       add x22, sp, #0x170
+1367c:       ldr x4, [x19, #0x60]
+13680:       mov x1, x22
+13684:       ldr x3, [x24, #0x8]
+13688:       mov x0, x25
+1368c:       mul x2, x2, x4
+13690:       str s8, [x19, #0x44]
+13694:       str x3, [sp, #0x170]
+13698:       str s8, [sp, #0x178]
+1369c:       str s0, [sp, #0x17c]
+136a0:       strb wzr, [sp, #0x180]
+136a4:       str x2, [sp, #0x188]
+136a8:       strb wzr, [sp, #0x194]
+136ac:       bl 0x1b100 <zplane::Resample::Resampler::prepare(zplane::Resample::Resampler::PrepareParameters c
+136b0:       ldrb w2, [x19, #0x80]
+136b4:       add x0, x19, #0x1e8
+136b8:       ldr w1, [x19, #0x68]
+136bc:       ldr x3, [x19, #0x70]
+136c0:       cbz w2, 0x14c54 <zplane::StemsProAlgorithm::prepare(zplane::StemsProAlgorithm::PrepareParameters)
+136c4:       add w2, w1, #0x1
+136c8:       sxtw x2, w2
+136cc:       mul x2, x2, x3
+136d0:       ldr x3, [x19, #0x50]
+136d4:       mov w4, #0x1                // =1
+136d8:       ldr x5, [x19, #0x60]
+136dc:       mov x1, x22
+136e0:       ldr s0, [x19, #0x40]
+136e4:       str x2, [sp, #0x170]
+136e8:       mul x3, x3, x5
+136ec:       str s8, [sp, #0x17c]
+136f0:       str s0, [sp, #0x178]
+136f4:       strb w4, [sp, #0x180]
+136f8:       str x3, [sp, #0x188]
+136fc:       strb wzr, [sp, #0x194]
+13700:       bl 0x1b100 <zplane::Resample::Resampler::prepare(zplane::Resample::Resampler::PrepareParameters c
+13704:       mov x0, x25
+13708:       bl 0x19790 <zplane::Resample::Resampler::getMaxOutputBlockSize() const>
+1370c:       add x22, x19, #0xe8

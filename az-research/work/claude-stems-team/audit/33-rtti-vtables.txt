@@ -1,0 +1,10 @@
+relative relocs 109809
+N9StemMixer8ListenerE name@ 0x2490088 typeinfo objs: ['0x2b505f0']
+   typeinfo 0x2b505f0 -> vtable+8 at []
+DeckStemsModeHandler name@ 0x2491190 typeinfo objs: ['0x2b50a10']
+   typeinfo 0x2b50a10 -> vtable+8 at []
+StemsPadController name@ 0x2488d78 typeinfo objs: []
+StemsStateSequence name@ 0x24902d0 typeinfo objs: ['0x2b506f0']
+   typeinfo 0x2b506f0 -> vtable+8 at []
+StemsStateAdapter name@ 0x24902e8 typeinfo objs: ['0x2b50708']
+   typeinfo 0x2b50708 -> vtable+8 at []

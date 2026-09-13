@@ -1,0 +1,514 @@
+0000000000031ce8 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)>:
+   31ce8:       stp x29, x30, [sp, #-0x60]!
+   31cec:       mov x29, sp
+   31cf0:       stp x21, x22, [sp, #0x20]
+   31cf4:       adrp x22, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   31cf8:       mov x21, x0
+   31cfc:       ldr x6, [x22, #0xfa8]
+   31d00:       stp x19, x20, [sp, #0x10]
+   31d04:       ldr w0, [x0, #0xc]
+   31d08:       ldr x7, [x6]
+   31d0c:       str x7, [x29, #0x58]
+   31d10:       mov x7, #0x0                // =0
+   31d14:       stp x23, x24, [sp, #0x30]
+   31d18:       ldr w20, [x21, #0x4]
+   31d1c:       sub sp, sp, #0x10
+   31d20:       mov x19, x2
+   31d24:       mov w23, w5
+   31d28:       and w0, w0, #0x1
+   31d2c:       cbz x3, 0x31f40 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x258>
+   31d30:       mov x7, x3
+   31d34:       str x2, [x29, #0x48]
+   31d38:       str x7, [x29, #0x50]
+   31d3c:       cmp w0, w23
+   31d40:       ldr w5, [x21, #0x44]
+   31d44:       cset w2, ne
+   31d48:       add x8, x21, #0x8
+   31d4c:       cbnz w4, 0x31e70 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x188>
+   31d50:       add x24, x29, #0x48
+   31d54:       sxtw x2, w2
+   31d58:       cset x0, eq
+   31d5c:       ldr x4, [x21, #0x58]
+   31d60:       ldr x7, [x24, x0, lsl #3]
+   31d64:       ldr x2, [x24, x2, lsl #3]
+   31d68:       cbz w5, 0x31f88 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x2a0>
+   31d6c:       cmp w20, #0x0
+   31d70:       b.le 0x31db4 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0xcc>
+   31d74:       sub w0, w20, #0x1
+   31d78:       add x9, x1, #0x10
+   31d7c:       add x0, x0, #0x1
+   31d80:       add x5, x7, #0x10
+   31d84:       mov x6, #0x0                // =0
+   31d88:       lsl x0, x0, #5
+   31d8c:       nop
+   31d90:       ldr q0, [x1, x6]
+   31d94:       ldr q1, [x9, x6]
+   31d98:       uzp1 v2.4s, v0.4s, v1.4s
+   31d9c:       uzp2 v0.4s, v0.4s, v1.4s
+   31da0:       str q2, [x7, x6]
+   31da4:       str q0, [x5, x6]
+   31da8:       add x6, x6, #0x20
+   31dac:       cmp x0, x6
+   31db0:       b.ne 0x31d90 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0xa8>
+   31db4:       mov x1, x7
+   31db8:       mov x3, x7
+   31dbc:       mov w6, #-0x1               // =-1
+   31dc0:       mov x5, x8
+   31dc4:       mov w0, w20
+   31dc8:       bl 0x30e10 <cfftf1_ps(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t*, float const*, int const*, int)>
+   31dcc:       mov x1, x0
+   31dd0:       mov w0, w20
+   31dd4:       cmp x1, x19
+   31dd8:       cset x2, ne
+   31ddc:       cset x1, eq
+   31de0:       ldr x3, [x21, #0x50]
+   31de4:       ldr x7, [x24, x2, lsl #3]
+   31de8:       ldr x6, [x24, x1, lsl #3]
+   31dec:       mov x1, x7
+   31df0:       mov x2, x6
+   31df4:       bl 0x31aa0 <pffft_cplx_finalize(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t const*)>
+   31df8:       cbnz w23, 0x31fcc <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x2e4>
+   31dfc:       cmp x19, x6
+   31e00:       b.eq 0x31e40 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x158>
+   31e04:       cmp w20, #0x0
+   31e08:       b.le 0x31e40 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x158>
+   31e0c:       add x3, x6, #0x10
+   31e10:       add x2, x19, #0x10
+   31e14:       mov x0, #0x0                // =0
+   31e18:       mov w1, #0x0                // =0
+   31e1c:       nop
+   31e20:       ldr q1, [x6, x0]
+   31e24:       add w1, w1, #0x1
+   31e28:       ldr q0, [x3, x0]
+   31e2c:       cmp w20, w1
+   31e30:       str q1, [x19, x0]
+   31e34:       str q0, [x2, x0]
+   31e38:       add x0, x0, #0x20
+   31e3c:       b.gt 0x31e20 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x138>
+   31e40:       ldr x22, [x22, #0xfa8]
+   31e44:       ldr x0, [x29, #0x58]
+   31e48:       ldr x1, [x22]
+   31e4c:       subs x0, x0, x1
+   31e50:       mov x1, #0x0                // =0
+   31e54:       b.ne 0x324e0 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x7f8>
+   31e58:       mov sp, x29
+   31e5c:       ldp x19, x20, [sp, #0x10]
+   31e60:       ldp x21, x22, [sp, #0x20]
+   31e64:       ldp x23, x24, [sp, #0x30]
+   31e68:       ldp x29, x30, [sp], #0x60
+   31e6c:       ret
+   31e70:       sxtw x3, w2
+   31e74:       add x24, x29, #0x48
+   31e78:       ldr x9, [x24, x3, lsl #3]
+   31e7c:       cmp x9, x1
+   31e80:       b.eq 0x323dc <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x6f4>
+   31e84:       cbnz w23, 0x32174 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x48c>
+   31e88:       mov x2, x9
+   31e8c:       mov w0, w20
+   31e90:       ldr x3, [x21, #0x50]
+   31e94:       cbz w5, 0x31f10 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x228>
+   31e98:       bl 0x31bc8 <pffft_cplx_preprocess(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t const*)>
+   31e9c:       mov x5, x8
+   31ea0:       ldr x4, [x21, #0x58]
+   31ea4:       mov x3, x7
+   31ea8:       mov x1, x9
+   31eac:       mov x2, x19
+   31eb0:       mov w0, w20
+   31eb4:       mov w6, #0x1                // =1
+   31eb8:       bl 0x30e10 <cfftf1_ps(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t*, float const*, int const*, int)>
+   31ebc:       cmp x19, x0
+   31ec0:       cset w0, ne
+   31ec4:       cmp w20, #0x0
+   31ec8:       b.le 0x31e40 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x158>
+   31ecc:       sxtw x0, w0
+   31ed0:       sub w1, w20, #0x1
+   31ed4:       add x1, x1, #0x1
+   31ed8:       ldr x6, [x24, x0, lsl #3]
+   31edc:       mov x0, x6
+   31ee0:       add x1, x6, x1, lsl #5
+   31ee4:       nop
+   31ee8:       ldp q0, q1, [x0]
+   31eec:       zip1 v2.4s, v0.4s, v1.4s
+   31ef0:       zip2 v0.4s, v0.4s, v1.4s
+   31ef4:       stp q2, q0, [x0]
+   31ef8:       add x0, x0, #0x20
+   31efc:       cmp x1, x0
+   31f00:       b.ne 0x31ee8 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x200>
+   31f04:       cmp x6, x19
+   31f08:       b.ne 0x31e0c <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x124>
+   31f0c:       b 0x31e40 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x158>
+   31f10:       bl 0x30628 <pffft_real_preprocess(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t const*)>
+   31f14:       mov x5, x8
+   31f18:       ldr x4, [x21, #0x58]
+   31f1c:       mov x3, x7
+   31f20:       mov x1, x9
+   31f24:       mov x2, x19
+   31f28:       lsl w0, w20, #1
+   31f2c:       bl 0x2f9c0 <rfftb1_ps(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t*, float const*, int const*)>
+   31f30:       cmp x19, x0
+   31f34:       cset x0, ne
+   31f38:       ldr x6, [x24, x0, lsl #3]
+   31f3c:       b 0x31dfc <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x114>
+   31f40:       lsl w2, w20, #1
+   31f44:       sbfiz x2, x2, #4, #32
+   31f48:       and x3, x2, #0xffffffffffff0000
+   31f4c:       sub x3, sp, x3
+   31f50:       cmp sp, x3
+   31f54:       b.eq 0x31f68 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x280>
+   31f58:       sub sp, sp, #0x10, lsl #12  // =0x10000
+   31f5c:       cmp sp, x3
+   31f60:       str xzr, [sp, #0x400]
+   31f64:       b.ne 0x31f58 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x270>
+   31f68:       and x2, x2, #0xffff
+   31f6c:       sub sp, sp, x2
+   31f70:       cmp x2, #0x400
+   31f74:       str xzr, [sp]
+   31f78:       b.hs 0x324a0 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x7b8>
+   31f7c:       add x7, sp, #0x10
+   31f80:       str x19, [x29, #0x48]
+   31f84:       b 0x31d38 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x50>
+   31f88:       mov x3, x2
+   31f8c:       mov x5, x8
+   31f90:       mov x2, x7
+   31f94:       lsl w0, w20, #1
+   31f98:       bl 0x2f1b0 <rfftf1_ps(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t*, float const*, int const*)>
+   31f9c:       mov x1, x0
+   31fa0:       cmp x1, x19
+   31fa4:       mov w0, w20
+   31fa8:       cset x2, ne
+   31fac:       cset x1, eq
+   31fb0:       ldr x3, [x21, #0x50]
+   31fb4:       ldr x7, [x24, x2, lsl #3]
+   31fb8:       ldr x6, [x24, x1, lsl #3]
+   31fbc:       mov x1, x7
+   31fc0:       mov x2, x6
+   31fc4:       bl 0x30368 <pffft_real_finalize(int, __Float32x4_t const*, __Float32x4_t*, __Float32x4_t const*)>
+   31fc8:       cbz w23, 0x31dfc <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x114>
+   31fcc:       ldr w0, [x21, #0x44]
+   31fd0:       cbnz w0, 0x323f4 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x70c>
+   31fd4:       ldr w8, [x21]
+   31fd8:       cmp w8, #0x0
+   31fdc:       add w3, w8, #0x1f
+   31fe0:       csel w3, w3, w8, lt
+   31fe4:       cmp w8, #0x1f
+   31fe8:       asr w3, w3, #5
+   31fec:       b.le 0x32040 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x358>
+   31ff0:       lsl w4, w3, #1
+   31ff4:       mov x2, x6
+   31ff8:       mov x0, x7
+   31ffc:       mov w1, #0x0                // =0
+   32000:       sbfiz x4, x4, #5, #32
+   32004:       add x5, x4, #0x10
+   32008:       ldp q0, q1, [x2]
+   3200c:       add w1, w1, #0x1
+   32010:       cmp w3, w1
+   32014:       zip1 v2.4s, v0.4s, v1.4s
+   32018:       zip2 v0.4s, v0.4s, v1.4s
+   3201c:       stp q2, q0, [x0]
+   32020:       ldp q0, q1, [x2, #0x40]
+   32024:       add x2, x2, #0x80
+   32028:       zip1 v2.4s, v0.4s, v1.4s
+   3202c:       zip2 v0.4s, v0.4s, v1.4s
+   32030:       str q2, [x0, x4]
+   32034:       str q0, [x0, x5]
+   32038:       add x0, x0, #0x20
+   3203c:       b.gt 0x32008 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x320>
+   32040:       ldp q1, q0, [x6, #0x20]
+   32044:       add w1, w8, w8, lsr #31
+   32048:       cmp w8, #0x3f
+   3204c:       add x0, x6, #0xa0
+   32050:       asr w1, w1, #1
+   32054:       zip1 v5.4s, v1.4s, v0.4s
+   32058:       zip2 v1.4s, v1.4s, v0.4s
+   3205c:       add x1, x7, w1, sxtw #2
+   32060:       sub x5, x1, #0x10
+   32064:       mov d0, v5.d[1]
+   32068:       mov d2, v1.d[0]
+   3206c:       stp d2, d0, [x1, #-0x10]
+   32070:       b.le 0x320d4 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x3ec>
+   32074:       mov x2, x5
+   32078:       mov w1, #0x1                // =1
+   3207c:       nop
+   32080:       ldp q3, q4, [x0]
+   32084:       add w1, w1, #0x1
+   32088:       mov v2.16b, v1.16b
+   3208c:       cmp w3, w1
+   32090:       add x0, x0, #0x80
+   32094:       zip1 v0.4s, v3.4s, v4.4s
+   32098:       zip2 v1.4s, v3.4s, v4.4s
+   3209c:       mov d2, v2.d[1]
+   320a0:       mov d4, v0.d[0]
+   320a4:       mov d3, v1.d[0]
+   320a8:       mov d0, v0.d[1]
+   320ac:       stp d4, d2, [x2, #-0x10]
+   320b0:       stp d3, d0, [x2, #-0x20]!
+   320b4:       b.gt 0x32080 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x398>
+   320b8:       sub w0, w3, #0x2
+   320bc:       cmp w8, #0x3f
+   320c0:       mvn x0, x0
+   320c4:       mov x1, #-0x20              // =-32
+   320c8:       lsl x0, x0, #5
+   320cc:       csel x0, x0, x1, gt
+   320d0:       add x5, x5, x0
+   320d4:       mov d1, v1.d[1]
+   320d8:       add x1, x7, w8, sxtw #2
+   320dc:       cmp w8, #0x3f
+   320e0:       add x0, x6, #0xe0
+   320e4:       sub x4, x1, #0x10
+   320e8:       stp d5, d1, [x5, #-0x10]
+   320ec:       ldp q1, q0, [x6, #0x60]
+   320f0:       zip1 v5.4s, v1.4s, v0.4s
+   320f4:       zip2 v1.4s, v1.4s, v0.4s
+   320f8:       mov d0, v5.d[1]
+   320fc:       mov d2, v1.d[0]
+   32100:       stp d2, d0, [x1, #-0x10]
+   32104:       b.le 0x32164 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x47c>
+   32108:       mov x2, x4
+   3210c:       mov w1, #0x1                // =1
+   32110:       ldp q3, q4, [x0]
+   32114:       add w1, w1, #0x1
+   32118:       mov v2.16b, v1.16b
+   3211c:       cmp w3, w1
+   32120:       add x0, x0, #0x80
+   32124:       zip1 v0.4s, v3.4s, v4.4s
+   32128:       zip2 v1.4s, v3.4s, v4.4s
+   3212c:       mov d2, v2.d[1]
+   32130:       mov d4, v0.d[0]
+   32134:       mov d3, v1.d[0]
+   32138:       mov d0, v0.d[1]
+   3213c:       stp d4, d2, [x2, #-0x10]
+   32140:       stp d3, d0, [x2, #-0x20]!
+   32144:       b.gt 0x32110 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x428>
+   32148:       sub w0, w3, #0x2
+   3214c:       cmp w8, #0x3f
+   32150:       mvn x0, x0
+   32154:       mov x1, #-0x20              // =-32
+   32158:       lsl x0, x0, #5
+   3215c:       csel x0, x0, x1, gt
+   32160:       add x4, x4, x0
+   32164:       mov d1, v1.d[1]
+   32168:       mov x6, x7
+   3216c:       stp d5, d1, [x4, #-0x10]
+   32170:       b 0x31dfc <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x114>
+   32174:       cbnz w5, 0x3244c <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x764>
+   32178:       ldr w10, [x21]
+   3217c:       cmp w10, #0x0
+   32180:       add w4, w10, #0x1f
+   32184:       csel w4, w4, w10, lt
+   32188:       cmp w10, #0x1f
+   3218c:       asr w4, w4, #5
+   32190:       b.le 0x324a8 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x7c0>
+   32194:       lsl w11, w4, #1
+   32198:       mov x3, x1
+   3219c:       mov x0, x9
+   321a0:       mov w6, #0x0                // =0
+   321a4:       sbfiz x11, x11, #5, #32
+   321a8:       add x12, x11, #0x10
+   321ac:       nop
+   321b0:       ldp q0, q1, [x3]
+   321b4:       add w6, w6, #0x1
+   321b8:       cmp w4, w6
+   321bc:       uzp1 v2.4s, v0.4s, v1.4s
+   321c0:       uzp2 v0.4s, v0.4s, v1.4s
+   321c4:       stp q2, q0, [x0]
+   321c8:       ldr q0, [x3, x11]
+   321cc:       ldr q1, [x3, x12]
+   321d0:       add x3, x3, #0x20
+   321d4:       uzp1 v2.4s, v0.4s, v1.4s
+   321d8:       uzp2 v0.4s, v0.4s, v1.4s
+   321dc:       stp q2, q0, [x0, #0x40]
+   321e0:       add x0, x0, #0x80
+   321e4:       b.gt 0x321b0 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x4c8>
+   321e8:       cmp w10, #0x0
+   321ec:       add w0, w10, #0x3
+   321f0:       csel w0, w0, w10, lt
+   321f4:       sxtw x11, w10
+   321f8:       sub x11, x11, #0x18
+   321fc:       cmp w10, #0x3f
+   32200:       asr w0, w0, #2
+   32204:       lsl x11, x11, #2
+   32208:       sbfiz x0, x0, #2, #32
+   3220c:       add x12, x9, x11
+   32210:       add x13, x1, x0
+   32214:       add x13, x13, #0x10
+   32218:       ldr q5, [x1, x0]
+   3221c:       mov v4.16b, v5.16b
+   32220:       b.le 0x324d8 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x7f0>
+   32224:       mov x0, x12
+   32228:       mov x6, x13
+   3222c:       mov w3, #0x1                // =1
+   32230:       ldr q0, [x6], #0x20
+   32234:       add w3, w3, #0x1
+   32238:       mov v3.16b, v4.16b
+   3223c:       cmp w4, w3
+   32240:       ldur q4, [x6, #-0x10]
+   32244:       mov d2, v0.d[1]
+   32248:       mov d1, v0.d[0]
+   3224c:       mov d0, v4.d[0]
+   32250:       mov d3, v3.d[1]
+   32254:       mov d1, v1.d[0]
+   32258:       mov d0, v0.d[0]
+   3225c:       mov v1.d[1], v3.d[0]
+   32260:       mov v0.d[1], v2.d[0]
+   32264:       uzp1 v2.4s, v0.4s, v1.4s
+   32268:       uzp2 v0.4s, v0.4s, v1.4s
+   3226c:       stp q2, q0, [x0]
+   32270:       sub x0, x0, #0x80
+   32274:       b.gt 0x32230 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x548>
+   32278:       sub w0, w4, #0x2
+   3227c:       cmp w10, #0x3f
+   32280:       add x0, x0, #0x1
+   32284:       mov x14, #0x20              // =32
+   32288:       mov x6, #-0x80              // =-128
+   3228c:       lsl x3, x0, #5
+   32290:       neg x0, x0, lsl #7
+   32294:       csel x3, x3, x14, gt
+   32298:       csel x0, x0, x6, gt
+   3229c:       add x13, x13, x3
+   322a0:       add x12, x12, x0
+   322a4:       ldr q2, [x13]
+   322a8:       adds w3, w10, w10, lsl #1
+   322ac:       mov d0, v5.d[0]
+   322b0:       add w0, w3, #0x3
+   322b4:       mov d4, v4.d[1]
+   322b8:       csel w0, w0, w3, mi
+   322bc:       mov d1, v2.d[0]
+   322c0:       add x6, x11, #0x40
+   322c4:       mov d2, v2.d[1]
+   322c8:       asr w0, w0, #2
+   322cc:       mov d0, v0.d[0]
+   322d0:       add x6, x9, x6
+   322d4:       sbfiz x0, x0, #2, #32
+   322d8:       cmp w10, #0x3f
+   322dc:       mov d1, v1.d[0]
+   322e0:       add x11, x1, x0
+   322e4:       add x11, x11, #0x10
+   322e8:       mov v0.d[1], v2.d[0]
+   322ec:       mov v1.d[1], v4.d[0]
+   322f0:       uzp1 v2.4s, v0.4s, v1.4s
+   322f4:       uzp2 v0.4s, v0.4s, v1.4s
+   322f8:       stp q2, q0, [x12]
+   322fc:       ldr q5, [x1, x0]
+   32300:       mov v4.16b, v5.16b
+   32304:       b.le 0x3238c <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x6a4>
+   32308:       mov x0, x6
+   3230c:       mov x3, x11
+   32310:       mov w1, #0x1                // =1
+   32314:       nop
+   32318:       ldr q0, [x3], #0x20
+   3231c:       add w1, w1, #0x1
+   32320:       mov v3.16b, v4.16b
+   32324:       cmp w4, w1
+   32328:       ldur q4, [x3, #-0x10]
+   3232c:       mov d2, v0.d[1]
+   32330:       mov d1, v0.d[0]
+   32334:       mov d0, v4.d[0]
+   32338:       mov d3, v3.d[1]
+   3233c:       mov d1, v1.d[0]
+   32340:       mov d0, v0.d[0]
+   32344:       mov v1.d[1], v3.d[0]
+   32348:       mov v0.d[1], v2.d[0]
+   3234c:       uzp1 v2.4s, v0.4s, v1.4s
+   32350:       uzp2 v0.4s, v0.4s, v1.4s
+   32354:       stp q2, q0, [x0]
+   32358:       sub x0, x0, #0x80
+   3235c:       b.gt 0x32318 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x630>
+   32360:       sub w0, w4, #0x2
+   32364:       cmp w10, #0x3f
+   32368:       add x0, x0, #0x1
+   3236c:       mov x4, #0x20               // =32
+   32370:       mov x3, #-0x80              // =-128
+   32374:       lsl x1, x0, #5
+   32378:       neg x0, x0, lsl #7
+   3237c:       csel x1, x1, x4, gt
+   32380:       csel x0, x0, x3, gt
+   32384:       add x11, x11, x1
+   32388:       add x6, x6, x0
+   3238c:       ldr q2, [x11]
+   32390:       mov d0, v5.d[0]
+   32394:       mov d4, v4.d[1]
+   32398:       mov d1, v2.d[0]
+   3239c:       mov d2, v2.d[1]
+   323a0:       mov d0, v0.d[0]
+   323a4:       mov d1, v1.d[0]
+   323a8:       mov v0.d[1], v2.d[0]
+   323ac:       mov v1.d[1], v4.d[0]
+   323b0:       uzp1 v2.4s, v0.4s, v1.4s
+   323b4:       uzp2 v0.4s, v0.4s, v1.4s
+   323b8:       stp q2, q0, [x6]
+   323bc:       eor w2, w2, #0x1
+   323c0:       mov x1, x9
+   323c4:       mov w0, w20
+   323c8:       ldr x3, [x21, #0x50]
+   323cc:       ldr x9, [x24, w2, sxtw #3]
+   323d0:       mov x2, x9
+   323d4:       cbnz w5, 0x31e98 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x1b0>
+   323d8:       b 0x31f10 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x228>
+   323dc:       cmp w0, w23
+   323e0:       cset x0, eq
+   323e4:       cset w2, eq
+   323e8:       ldr x9, [x24, x0, lsl #3]
+   323ec:       cbz w23, 0x31e88 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x1a0>
+   323f0:       b 0x32174 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x48c>
+   323f4:       ldr w3, [x21, #0x4]
+   323f8:       cmp w3, #0x0
+   323fc:       b.le 0x32444 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x75c>
+   32400:       asr w4, w3, #2
+   32404:       mov w2, #0x0                // =0
+   32408:       asr w1, w2, #2
+   3240c:       and w0, w2, #0x3
+   32410:       ldp q0, q1, [x6]
+   32414:       add w2, w2, #0x1
+   32418:       madd w0, w0, w4, w1
+   3241c:       cmp w3, w2
+   32420:       add x6, x6, #0x20
+   32424:       zip1 v2.4s, v0.4s, v1.4s
+   32428:       zip2 v0.4s, v0.4s, v1.4s
+   3242c:       lsl w0, w0, #1
+   32430:       sbfiz x1, x0, #4, #32
+   32434:       add x0, x7, w0, sxtw #4
+   32438:       str q2, [x7, x1]
+   3243c:       str q0, [x0, #0x10]
+   32440:       b.ne 0x32408 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x720>
+   32444:       mov x6, x7
+   32448:       b 0x31dfc <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x114>
+   3244c:       cmp w20, #0x0
+   32450:       b.le 0x323bc <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x6d4>
+   32454:       asr w10, w20, #2
+   32458:       mov x4, x9
+   3245c:       mov w3, #0x0                // =0
+   32460:       asr w6, w3, #2
+   32464:       and w0, w3, #0x3
+   32468:       add w3, w3, #0x1
+   3246c:       cmp w20, w3
+   32470:       madd w0, w0, w10, w6
+   32474:       lsl w0, w0, #1
+   32478:       sbfiz x6, x0, #4, #32
+   3247c:       add x0, x1, w0, sxtw #4
+   32480:       ldr q0, [x1, x6]
+   32484:       ldr q1, [x0, #0x10]
+   32488:       uzp1 v2.4s, v0.4s, v1.4s
+   3248c:       uzp2 v0.4s, v0.4s, v1.4s
+   32490:       stp q2, q0, [x4]
+   32494:       add x4, x4, #0x20
+   32498:       b.ne 0x32460 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x778>
+   3249c:       b 0x323bc <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x6d4>
+   324a0:       str xzr, [sp, #0x400]
+   324a4:       b 0x31f7c <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x294>
+   324a8:       cmp w10, #0x0
+   324ac:       add w0, w10, #0x3
+   324b0:       csel w0, w0, w10, lt
+   324b4:       sxtw x11, w10
+   324b8:       sub x11, x11, #0x18
+   324bc:       asr w0, w0, #2
+   324c0:       lsl x11, x11, #2
+   324c4:       sbfiz x0, x0, #2, #32
+   324c8:       add x12, x9, x11
+   324cc:       add x13, x1, x0
+   324d0:       add x13, x13, #0x10
+   324d4:       ldr q4, [x1, x0]
+   324d8:       mov v5.16b, v4.16b
+   324dc:       b 0x322a4 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x5bc>
+   324e0:       bl 0x51d0 <__stack_chk_fail@plt>
+   324e4:       nop
+

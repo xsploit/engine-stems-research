@@ -1,0 +1,87 @@
+{
+  "candidate": "fp16-deep-only",
+  "device": "i5-13600K CPU, four threads",
+  "runtime": "1.30.0",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "bytes": 234499843,
+  "original_median_seconds": 0.11479952000081539,
+  "candidate_median_seconds": 0.115449578006519,
+  "speedup": 0.9943693340683593,
+  "original_seconds": [
+    0.15848400301183574,
+    0.1200680669862777,
+    0.11680019699269906,
+    0.11409640099736862,
+    0.11439968401100487,
+    0.11479952000081539,
+    0.11376929099787958
+  ],
+  "candidate_seconds": [
+    0.13130887399893254,
+    0.1287371089856606,
+    0.11461779099772684,
+    0.11571981300949119,
+    0.11432067200075835,
+    0.115449578006519,
+    0.11225598200690001
+  ],
+  "output_metrics": {
+    "music_proxy_0": {
+      "finite": true,
+      "max_abs": 0.004357874393463135,
+      "mean_abs": 2.5733865797405997e-05,
+      "rms": 9.931737913613782e-05,
+      "p99_abs": 0.00044783890247344915,
+      "relative_l2": 0.00022520731954246532,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "music_proxy_1": {
+      "finite": true,
+      "max_abs": 0.006730228662490845,
+      "mean_abs": 6.608954862485916e-05,
+      "rms": 0.0001653716158666354,
+      "p99_abs": 0.0006461143493652344,
+      "relative_l2": 0.0004239578933106623,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "music_proxy_2": {
+      "finite": true,
+      "max_abs": 0.01867958903312683,
+      "mean_abs": 0.00010805381380407653,
+      "rms": 0.00024090164439830426,
+      "p99_abs": 0.0008820739388465879,
+      "relative_l2": 0.0006178337935184403,
+      "fraction_abs_above_0_01": 9.5367431640625e-06
+    },
+    "music_proxy_3": {
+      "finite": true,
+      "max_abs": 0.005504786968231201,
+      "mean_abs": 6.035519098190889e-05,
+      "rms": 0.0001297800496441175,
+      "p99_abs": 0.0004710555076599121,
+      "relative_l2": 0.0003225605525937633,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "quiet_proxy": {
+      "finite": true,
+      "max_abs": 0.006586313247680664,
+      "mean_abs": 0.00010510835036825483,
+      "rms": 0.00019830516181166958,
+      "p99_abs": 0.0006351020932197568,
+      "relative_l2": 0.0005385247678772808,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "silence": {
+      "finite": true,
+      "max_abs": 0.012315601110458374,
+      "mean_abs": 9.539267726665912e-05,
+      "rms": 0.0001933507709401411,
+      "p99_abs": 0.0006920987367629999,
+      "relative_l2": 0.0005927698507902699,
+      "fraction_abs_above_0_01": 4.76837158203125e-07
+    }
+  },
+  "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed."
+}

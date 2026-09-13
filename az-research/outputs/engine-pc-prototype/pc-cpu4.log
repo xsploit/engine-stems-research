@@ -1,0 +1,128 @@
+{
+  "status": "EXPERIMENTAL_RENDER_NOT_ENGINE_VALIDATED",
+  "frames": 1323000,
+  "channels_per_stem": 2,
+  "sample_rate": 44100,
+  "audio_seconds": 30.0,
+  "threads": 4,
+  "machine": "x86_64",
+  "platform": "Linux-7.2.3-arch1-3-x86_64-with-glibc2.44",
+  "numpy": "2.5.3",
+  "onnxruntime": "1.30.0",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "initialization_seconds": 0.4363534289877862,
+  "render_seconds": 1.8838406979921274,
+  "total_seconds": 2.323285339982249,
+  "render_realtime_factor": 0.06279468993307091,
+  "total_realtime_factor": 0.07744284466607496,
+  "audio_seconds_per_render_second": 15.924913413313131,
+  "first_output_seconds_including_init": 0.6197586029884405,
+  "process_cpu_seconds": 8.884201314,
+  "average_cores_used": 3.8239819970059643,
+  "peak_process_rss_mib": 904.10546875,
+  "stem_peaks": [
+    0.002645419677719474,
+    0.25715628266334534,
+    0.4981951117515564,
+    0.5255736112594604,
+    0.05660921335220337
+  ],
+  "stem_rms": [
+    0.0003693796076531105,
+    0.13091963050548758,
+    0.0686714758212825,
+    0.08527284556250277,
+    0.0035559665287214002
+  ],
+  "block_times": [
+    {
+      "block": 0,
+      "frontend_s": 0.005309252999722958,
+      "inference_s": 0.11797944898717105,
+      "post_s": 0.044709417037665844,
+      "write_s": 0.012175705982372165
+    },
+    {
+      "block": 1,
+      "frontend_s": 0.004788746009580791,
+      "inference_s": 0.10953318502288312,
+      "post_s": 0.04362745495745912,
+      "write_s": 0.012349508004263043
+    },
+    {
+      "block": 2,
+      "frontend_s": 0.004499429021961987,
+      "inference_s": 0.11003590101609007,
+      "post_s": 0.043881457997485995,
+      "write_s": 0.012384472007397562
+    },
+    {
+      "block": 3,
+      "frontend_s": 0.005029741034377366,
+      "inference_s": 0.10965875198598951,
+      "post_s": 0.044289287994615734,
+      "write_s": 0.012599840003531426
+    },
+    {
+      "block": 4,
+      "frontend_s": 0.004611206997651607,
+      "inference_s": 0.1144474409520626,
+      "post_s": 0.043504791043233126,
+      "write_s": 0.012328370998147875
+    },
+    {
+      "block": 5,
+      "frontend_s": 0.004498222027905285,
+      "inference_s": 0.10915891599142924,
+      "post_s": 0.04427684401161969,
+      "write_s": 0.012588278041221201
+    },
+    {
+      "block": 6,
+      "frontend_s": 0.0044916190090589225,
+      "inference_s": 0.11098658997798339,
+      "post_s": 0.0441567079978995,
+      "write_s": 0.012579459988046438
+    },
+    {
+      "block": 7,
+      "frontend_s": 0.004914982011541724,
+      "inference_s": 0.1112281060195528,
+      "post_s": 0.04382089601131156,
+      "write_s": 0.012651900004129857
+    },
+    {
+      "block": 8,
+      "frontend_s": 0.004590903001371771,
+      "inference_s": 0.11047615297138691,
+      "post_s": 0.0445932190050371,
+      "write_s": 0.012591657985467464
+    },
+    {
+      "block": 9,
+      "frontend_s": 0.004622279026079923,
+      "inference_s": 0.1121268070419319,
+      "post_s": 0.04466826200950891,
+      "write_s": 0.012423995998688042
+    },
+    {
+      "block": 10,
+      "frontend_s": 0.0047710000071674585,
+      "inference_s": 0.11074610200012103,
+      "post_s": 0.03656343900365755,
+      "write_s": 0.0015584549983032048
+    }
+  ],
+  "input_sha256": "3d082237b517b943787b88b8f66be4196036294e01287ccdc35022be2aced361",
+  "model_sha256": "c203bfa6bd53d16ef7ba6393540453f6cfd7541a87c169be5310989b8d987a0a",
+  "limitations": [
+    "No paired original Engine PCM or listening acceptance",
+    "NumPy FFT and IEEE division replace pffft and ARM reciprocal refinements",
+    "FP32 model, optimized desktop ORT; not original ARM runtime",
+    "Stem labels unknown; use numerical indices",
+    "File-render throughput, not live DJ latency or Pi performance",
+    "Residual is input minus reconstructed stems; it is not an independent quality reference"
+  ]
+}

@@ -1,0 +1,9 @@
+c28afc cmp x0, #0x0
+c28b00 ldrb w1, [sp, #0x98]
+c28b04 cset w2, gt
+c28b08 tst w2, w1
+c28b0c b .eq	0xc28380
+c28b10 sxtb w22, w0
+c28b14 b 0xc28384
+c28b18 blr x1
+c28b1c mov w26, w0

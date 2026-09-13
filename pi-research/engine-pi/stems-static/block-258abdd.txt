@@ -1,0 +1,78 @@
+	ximport airAssignments 1.0
+import InputAssignment 0.1
+import OutputAssignment 0.1
+import QtQuick 2.12
+
+import "./private" as Private
+
+Item {
+	id: module
+	objectName: "Stems Overrides Module %1".arg(deckConfig.name)
+
+	property int ledType: LedType.None
+	property alias buttonsModel: partsRepeater.model
+	readonly property QObjProperty pStemmed: Planck.getProperty(`${deckConfig.activeDeckTrackPath}Stemmed`)
+	readonly property bool stemTrackOnDeck: pStemmed.translator && pStemmed.translator.state
+	readonly property QObjProperty pStemFxBehavior: Planck.getProperty(`/Client/Preferences/Profile/Application/StemFxBehavior`)
+	readonly property bool stemFxBehaviorIsShift: pStemFxBehavior.translator && pStemFxBehavior.translator.state
+
+	Repeater {
+		id: partsRepeater
+
+		Item {
+			id: stemOverrideItem
+			ValueNoteAssignment {
+				objectName: "Stem Override %1 Deck %2".arg(model.part).arg(deckConfig.name)
+				note: model.note
+				channel: deckConfig.midiChannel
+				enabled: !globalConfig.shift && deckConfig.inDJMode && module.stemTrackOnDeck
+				output: ActionOutput {
+					target: PropertyTarget {
+						path: `${deckConfig.activeDeckPath}Stems/${model.part}${module.stemFxBehaviorIsShift ? `` : model.shiftFx}`
+					}
+				}
+			}
+
+			ValueNoteAssignment {
+				objectName: "Shift Stem Override %1 %2 Deck %3".arg(model.part).arg(model.shiftFx).arg(deckConfig.name)
+				note: model.note
+				channel: deckConfig.midiChannel
+				enabled: globalConfig.shift && deckConfig.inDJMode && module.stemTrackOnDeck
+				output: ActionOutput {
+					target: PropertyTarget {
+						path: `${deckConfig.activeDeckPath}Stems/${model.part}${module.stemFxBehaviorIsShift ? model.shiftFx : ``}`
+					}
+				}
+			}
+
+			Loader {
+				sourceComponent: OutputAssignment {
+					objectName: "Stem Override %1 LED Deck %2".arg(model.part).arg(deckConfig.name)
+					enabled: deckConfig.inDJMode
+					properties: { 'ledValue': '', 'enabled': '' }
+
+					readonly property bool stemStatus: Planck.getProperty(`${deckConfig.activeDeckPath}Stems/${model.part}State`).translator.state
+					readonly property int ledValue: {
+						if(deckConfig.inDJMode && module.stemTrackOnDeck) {
+							if(stemStatus) {
+								127
+							}
+							else {
+								1
+							}
+						}
+						else {
+							0
+						}
+					}
+
+					function send() {
+						Midi.sendNoteOn(deckConfig.midiChannel, model.note, ledValue)
+					}
+
+					Component.onCompleted: send()
+				}
+			}
+		}
+	}
+}

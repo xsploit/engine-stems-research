@@ -1,0 +1,422 @@
+00000000000187c0 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)>:
+   187c0:       sub sp, sp, #0x240
+   187c4:       stp x29, x30, [sp]
+   187c8:       mov x29, sp
+   187cc:       stp x21, x22, [sp, #0x20]
+   187d0:       adrp x22, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   187d4:       mov x21, x2
+   187d8:       stp x19, x20, [sp, #0x10]
+   187dc:       mov x19, x0
+   187e0:       mov x20, x1
+   187e4:       ldr x0, [x22, #0xfa8] ; @187fffa8
+   187e8:       ldr x1, [x1, #0x20]
+   187ec:       ldr x2, [x0]
+   187f0:       str x2, [sp, #0x238]
+   187f4:       mov x2, #0x0                // =0
+   187f8:       ldr x0, [x19, #0x88]
+   187fc:       cmp x0, x1
+   18800:       b.eq 0x18a04 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x244>
+   18804:       add x19, sp, #0xb0
+   18808:       adrp x20, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1880c:       add x0, x19, #0x80
+   18810:       stp x23, x24, [sp, #0x30]
+   18814:       bl 0x5120 <_ZNSt8ios_baseC2Ev@plt>
+   18818:       ldr x2, [x20, #0xf68] ; @187fff68
+   1881c:       add x1, sp, #0x200
+   18820:       movi v0.4s, #0x0
+   18824:       adrp x23, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18828:       str xzr, [sp, #0x208]
+   1882c:       ldp x21, x24, [x2, #0x10]
+   18830:       strh wzr, [sp, #0x210]
+   18834:       ldr x0, [x23, #0xf78] ; @187fff78
+   18838:       stur q0, [x1, #0x18]
+   1883c:       stur q0, [x1, #0x28]
+   18840:       add x0, x0, #0x10
+   18844:       mov x1, #0x0                // =0
+   18848:       ldur x3, [x21, #-0x18]
+   1884c:       str x21, [sp, #0xb0]
+   18850:       str x0, [sp, #0x130]
+   18854:       str x24, [x19, x3]
+   18858:       str xzr, [sp, #0xb8]
+   1885c:       ldur x0, [x21, #-0x18]
+   18860:       add x0, x19, x0
+   18864:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   18868:       ldr x0, [x20, #0xf68] ; @187fff68
+   1886c:       stp x25, x26, [sp, #0x40]
+   18870:       add x2, x19, #0x10
+   18874:       mov x1, #0x0                // =0
+   18878:       ldp x22, x25, [x0, #0x20]
+   1887c:       ldur x3, [x22, #-0x18]
+   18880:       str x22, [sp, #0xc0]
+   18884:       add x0, x2, x3
+   18888:       str x25, [x2, x3]
+   1888c:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   18890:       ldr x20, [x20, #0xf68] ; @187fff68
+   18894:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18898:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1889c:       add x0, x19, #0x50
+   188a0:       ldr x1, [x1, #0xef8] ; @187ffef8
+   188a4:       ldr x26, [x20, #0x8]
+   188a8:       add x4, x1, #0x18
+   188ac:       ldr x2, [x2, #0xf60] ; @187fff60
+   188b0:       add x3, x1, #0x68
+   188b4:       ldur x5, [x26, #-0x18]
+   188b8:       add x1, x1, #0x40
+   188bc:       add x2, x2, #0x10
+   188c0:       ldr x20, [x20, #0x30]
+   188c4:       str x20, [x19, x5]
+   188c8:       str x4, [sp, #0xb0]
+   188cc:       stp x1, x2, [sp, #0xc0]
+   188d0:       stp xzr, xzr, [sp, #0xd0]
+   188d4:       stp xzr, xzr, [sp, #0xe0]
+   188d8:       stp xzr, xzr, [sp, #0xf0]
+   188dc:       str x3, [sp, #0x130]
+   188e0:       bl 0x4fc0 <_ZNSt6localeC1Ev@plt>
+   188e4:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   188e8:       add x3, x19, #0x70
+   188ec:       mov w4, #0x18               // =24
+   188f0:       add x1, x19, #0x18
+   188f4:       ldr x2, [x2, #0xe38] ; @187ffe38
+   188f8:       add x0, x19, #0x80
+   188fc:       str w4, [sp, #0x108]
+   18900:       add x2, x2, #0x10
+   18904:       str x2, [sp, #0xc8]
+   18908:       str x3, [sp, #0x110]
+   1890c:       str xzr, [sp, #0x118]
+   18910:       strb wzr, [sp, #0x120]
+   18914:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   18918:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   1891c:       add x0, x19, #0x10
+   18920:       add x1, x1, #0xd40
+   18924:       mov x2, #0xe                // =14
+   18928:       str x27, [sp, #0x50]
+   1892c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18930:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18934:       add x0, x19, #0x10
+   18938:       add x1, x1, #0x938
+   1893c:       mov x2, #0x17               // =23
+   18940:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18944:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18948:       add x0, x19, #0x10
+   1894c:       add x1, x1, #0xd50
+   18950:       mov x2, #0x2d               // =45
+   18954:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18958:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   1895c:       add x0, x19, #0x10
+   18960:       add x1, x1, #0x970
+   18964:       mov x2, #0xb                // =11
+   18968:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   1896c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18970:       add x0, x19, #0x10
+   18974:       add x1, x1, #0x980
+   18978:       mov x2, #0x70               // =112
+   1897c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18980:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18984:       add x0, x19, #0x10
+   18988:       add x1, x1, #0x9f8
+   1898c:       mov x2, #0x7                // =7
+   18990:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18994:       add x0, x19, #0x10
+   18998:       mov w1, #0x42               // =66
+   1899c:       bl 0x4cd0 <_ZNSolsEi@plt>
+   189a0:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   189a4:       mov x2, #0x1                // =1
+   189a8:       add x1, x1, #0xde8
+   189ac:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   189b0:       add x20, sp, #0x90
+   189b4:       mov x0, #0x10               // =16
+   189b8:       bl 0x4d50 <__cxa_allocate_exception@plt>
+   189bc:       mov x21, x0
+   189c0:       mov x8, x20
+   189c4:       add x0, x19, #0x18
+   189c8:       bl 0x4d60 <_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv@plt>
+   189cc:       ldr x1, [sp, #0x90]
+   189d0:       mov x0, x21
+   189d4:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+   189d8:       ldr x0, [sp, #0x90]
+   189dc:       add x20, x20, #0x10
+   189e0:       cmp x0, x20
+   189e4:       b.eq 0x189ec <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x22c>
+   189e8:       bl 0x4e80 <_ZdlPv@plt>
+   189ec:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   189f0:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   189f4:       mov x0, x21
+   189f8:       ldr x2, [x2, #0xf48] ; @187fff48
+   189fc:       ldr x1, [x1, #0xf80] ; @187fff80
+   18a00:       bl 0x4f10 <__cxa_throw@plt>
+   18a04:       ldr x2, [x20, #0x28]
+   18a08:       ldr x1, [x19, #0x80]
+   18a0c:       cmp x2, x1
+   18a10:       b.ne 0x18804 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x44>
+   18a14:       ldr x1, [x21, #0x20]
+   18a18:       cmp x0, x1
+   18a1c:       b.eq 0x18c20 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x460>
+   18a20:       add x19, sp, #0xb0
+   18a24:       adrp x20, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18a28:       add x0, x19, #0x80
+   18a2c:       stp x23, x24, [sp, #0x30]
+   18a30:       bl 0x5120 <_ZNSt8ios_baseC2Ev@plt>
+   18a34:       ldr x2, [x20, #0xf68] ; @187fff68
+   18a38:       add x1, sp, #0x200
+   18a3c:       movi v0.4s, #0x0
+   18a40:       adrp x23, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18a44:       str xzr, [sp, #0x208]
+   18a48:       ldp x21, x24, [x2, #0x10]
+   18a4c:       strh wzr, [sp, #0x210]
+   18a50:       ldr x0, [x23, #0xf78] ; @187fff78
+   18a54:       stur q0, [x1, #0x18]
+   18a58:       stur q0, [x1, #0x28]
+   18a5c:       add x0, x0, #0x10
+   18a60:       mov x1, #0x0                // =0
+   18a64:       ldur x3, [x21, #-0x18]
+   18a68:       str x21, [sp, #0xb0]
+   18a6c:       str x0, [sp, #0x130]
+   18a70:       str x24, [x19, x3]
+   18a74:       str xzr, [sp, #0xb8]
+   18a78:       ldur x0, [x21, #-0x18]
+   18a7c:       add x0, x19, x0
+   18a80:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   18a84:       ldr x0, [x20, #0xf68] ; @187fff68
+   18a88:       stp x25, x26, [sp, #0x40]
+   18a8c:       add x2, x19, #0x10
+   18a90:       mov x1, #0x0                // =0
+   18a94:       ldp x22, x25, [x0, #0x20]
+   18a98:       ldur x3, [x22, #-0x18]
+   18a9c:       str x22, [sp, #0xc0]
+   18aa0:       add x0, x2, x3
+   18aa4:       str x25, [x2, x3]
+   18aa8:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   18aac:       ldr x20, [x20, #0xf68] ; @187fff68
+   18ab0:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18ab4:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18ab8:       add x0, x19, #0x50
+   18abc:       ldr x1, [x1, #0xef8] ; @187ffef8
+   18ac0:       ldr x26, [x20, #0x8]
+   18ac4:       add x4, x1, #0x18
+   18ac8:       ldr x2, [x2, #0xf60] ; @187fff60
+   18acc:       add x3, x1, #0x68
+   18ad0:       ldur x5, [x26, #-0x18]
+   18ad4:       add x1, x1, #0x40
+   18ad8:       add x2, x2, #0x10
+   18adc:       ldr x20, [x20, #0x30]
+   18ae0:       str x20, [x19, x5]
+   18ae4:       str x4, [sp, #0xb0]
+   18ae8:       stp x1, x2, [sp, #0xc0]
+   18aec:       stp xzr, xzr, [sp, #0xd0]
+   18af0:       stp xzr, xzr, [sp, #0xe0]
+   18af4:       stp xzr, xzr, [sp, #0xf0]
+   18af8:       str x3, [sp, #0x130]
+   18afc:       bl 0x4fc0 <_ZNSt6localeC1Ev@plt>
+   18b00:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18b04:       add x3, x19, #0x70
+   18b08:       mov w4, #0x18               // =24
+   18b0c:       add x1, x19, #0x18
+   18b10:       ldr x2, [x2, #0xe38] ; @187ffe38
+   18b14:       add x0, x19, #0x80
+   18b18:       str w4, [sp, #0x108]
+   18b1c:       add x2, x2, #0x10
+   18b20:       str x2, [sp, #0xc8]
+   18b24:       str x3, [sp, #0x110]
+   18b28:       str xzr, [sp, #0x118]
+   18b2c:       strb wzr, [sp, #0x120]
+   18b30:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   18b34:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18b38:       add x0, x19, #0x10
+   18b3c:       add x1, x1, #0xd40
+   18b40:       mov x2, #0xe                // =14
+   18b44:       str x27, [sp, #0x50]
+   18b48:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18b4c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18b50:       add x0, x19, #0x10
+   18b54:       add x1, x1, #0x938
+   18b58:       mov x2, #0x17               // =23
+   18b5c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18b60:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18b64:       add x0, x19, #0x10
+   18b68:       add x1, x1, #0xd80
+   18b6c:       mov x2, #0x32               // =50
+   18b70:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18b74:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18b78:       add x0, x19, #0x10
+   18b7c:       add x1, x1, #0x970
+   18b80:       mov x2, #0xb                // =11
+   18b84:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18b88:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18b8c:       add x0, x19, #0x10
+   18b90:       add x1, x1, #0x980
+   18b94:       mov x2, #0x70               // =112
+   18b98:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18b9c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18ba0:       add x0, x19, #0x10
+   18ba4:       add x1, x1, #0x9f8
+   18ba8:       mov x2, #0x7                // =7
+   18bac:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18bb0:       add x0, x19, #0x10
+   18bb4:       mov w1, #0x43               // =67
+   18bb8:       bl 0x4cd0 <_ZNSolsEi@plt>
+   18bbc:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   18bc0:       mov x2, #0x1                // =1
+   18bc4:       add x1, x1, #0xde8
+   18bc8:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   18bcc:       add x20, sp, #0x90
+   18bd0:       mov x0, #0x10               // =16
+   18bd4:       bl 0x4d50 <__cxa_allocate_exception@plt>
+   18bd8:       mov x21, x0
+   18bdc:       mov x8, x20
+   18be0:       add x0, x19, #0x18
+   18be4:       bl 0x4d60 <_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv@plt>
+   18be8:       ldr x1, [sp, #0x90]
+   18bec:       mov x0, x21
+   18bf0:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+   18bf4:       ldr x0, [sp, #0x90]
+   18bf8:       add x20, x20, #0x10
+   18bfc:       cmp x0, x20
+   18c00:       b.eq 0x18c08 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x448>
+   18c04:       bl 0x4e80 <_ZdlPv@plt>
+   18c08:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18c0c:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18c10:       mov x0, x21
+   18c14:       ldr x2, [x2, #0xf48] ; @187fff48
+   18c18:       ldr x1, [x1, #0xf80] ; @187fff80
+   18c1c:       bl 0x4f10 <__cxa_throw@plt>
+   18c20:       ldr x3, [x21, #0x28]
+   18c24:       ldr x1, [x19, #0x78]
+   18c28:       cmp x3, x1
+   18c2c:       b.ne 0x18a20 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x260>
+   18c30:       cbz x0, 0x18d04 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x544>
+   18c34:       stp x23, x24, [sp, #0x30]
+   18c38:       adrp x24, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18c3c:       mov x23, #0x0               // =0
+   18c40:       add x24, x24, #0x2b0
+   18c44:       stp x25, x26, [sp, #0x40]
+   18c48:       adrp x25, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   18c4c:       add x26, sp, #0x78
+   18c50:       add x25, x25, #0x170
+   18c54:       str x27, [sp, #0x50]
+   18c58:       add x27, sp, #0x60
+   18c5c:       b 0x18c64 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x4a4>
+   18c60:       ldr x2, [x20, #0x28]
+   18c64:       mov x1, x26
+   18c68:       ldr x4, [x19, #0x18]
+   18c6c:       mov x0, x27
+   18c70:       ldr x3, [x20, #0x18]
+   18c74:       ldr x6, [x4, x23, lsl #3]
+   18c78:       str x2, [sp, #0x88]
+   18c7c:       ldr x5, [x3, x23, lsl #3]
+   18c80:       ldr x2, [x20, #0x30]
+   18c84:       ldr x3, [x19, #0x30]
+   18c88:       ldr x4, [x19, #0x28]
+   18c8c:       add x2, x5, x2, lsl #2
+   18c90:       add x3, x6, x3, lsl #2
+   18c94:       stp x25, x3, [sp, #0x60]
+   18c98:       stp x4, x24, [sp, #0x70]
+   18c9c:       str x2, [sp, #0x80]
+   18ca0:       bl 0x24428 <zplane::VectorOps<float, void>::shiftLeftAndInsert(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   18ca4:       ldr x3, [x21, #0x18]
+   18ca8:       mov x0, x27
+   18cac:       ldr x2, [x21, #0x30]
+   18cb0:       mov x1, x26
+   18cb4:       ldr x4, [x3, x23, lsl #3]
+   18cb8:       ldr x3, [x19, #0x18]
+   18cbc:       add x2, x4, x2, lsl #2
+   18cc0:       stp x25, x2, [sp, #0x60]
+   18cc4:       ldr x4, [x3, x23, lsl #3]
+   18cc8:       add x23, x23, #0x1
+   18ccc:       ldr x2, [x19, #0x30]
+   18cd0:       ldr x3, [x21, #0x28]
+   18cd4:       stp x3, x24, [sp, #0x70]
+   18cd8:       add x2, x4, x2, lsl #2
+   18cdc:       ldr x3, [x19, #0x28]
+   18ce0:       str x2, [sp, #0x80]
+   18ce4:       str x3, [sp, #0x88]
+   18ce8:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   18cec:       ldr x0, [x19, #0x88]
+   18cf0:       cmp x0, x23
+   18cf4:       b.hi 0x18c60 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x4a0>
+   18cf8:       ldp x23, x24, [sp, #0x30]
+   18cfc:       ldp x25, x26, [sp, #0x40]
+   18d00:       ldr x27, [sp, #0x50]
+   18d04:       ldr x1, [x19, #0x90]
+   18d08:       ldr x0, [x22, #0xfa8] ; @187fffa8
+   18d0c:       add x1, x1, #0x1
+   18d10:       str x1, [x19, #0x90]
+   18d14:       ldr x1, [sp, #0x238]
+   18d18:       ldr x2, [x0]
+   18d1c:       subs x1, x1, x2
+   18d20:       mov x2, #0x0                // =0
+   18d24:       b.ne 0x18d3c <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x57c>
+   18d28:       ldp x29, x30, [sp]
+   18d2c:       ldp x19, x20, [sp, #0x10]
+   18d30:       ldp x21, x22, [sp, #0x20]
+   18d34:       add sp, sp, #0x240
+   18d38:       ret
+   18d3c:       stp x23, x24, [sp, #0x30]
+   18d40:       stp x25, x26, [sp, #0x40]
+   18d44:       str x27, [sp, #0x50]
+   18d48:       bl 0x51d0 <__stack_chk_fail@plt>
+   18d4c:       ldr x1, [sp, #0x90]
+   18d50:       add x2, x20, #0x10
+   18d54:       mov x20, x0
+   18d58:       cmp x1, x2
+   18d5c:       b.ne 0x18d80 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5c0>
+   18d60:       mov x0, x21
+   18d64:       bl 0x5070 <__cxa_free_exception@plt>
+   18d68:       mov x0, x19
+   18d6c:       bl 0x4d40 <_ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev@plt>
+   18d70:       mov x0, x20
+   18d74:       bl 0x4f40 <_Unwind_Resume@plt>
+   18d78:       mov x20, x0
+   18d7c:       b 0x18d60 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5a0>
+   18d80:       mov x0, x1
+   18d84:       bl 0x4e80 <_ZdlPv@plt>
+   18d88:       b 0x18d60 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5a0>
+   18d8c:       mov x20, x0
+   18d90:       b 0x18d68 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5a8>
+   18d94:       str x27, [sp, #0x50]
+   18d98:       mov x27, x0
+   18d9c:       add x0, x19, #0x18
+   18da0:       bl 0xa340 <std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char>>::~basic_stringbuf()>
+   18da4:       ldur x1, [x26, #-0x18]
+   18da8:       add x0, sp, #0xc0
+   18dac:       ldur x2, [x22, #-0x18]
+   18db0:       str x20, [x19, x1]
+   18db4:       ldur x1, [x21, #-0x18]
+   18db8:       str x22, [sp, #0xc0]
+   18dbc:       str x25, [x0, x2]
+   18dc0:       str x21, [sp, #0xb0]
+   18dc4:       str x24, [x19, x1]
+   18dc8:       str xzr, [sp, #0xb8]
+   18dcc:       ldr x1, [x23, #0xf78] ; @187fff78
+   18dd0:       add x0, x19, #0x80
+   18dd4:       add x1, x1, #0x10
+   18dd8:       str x1, [sp, #0x130]
+   18ddc:       bl 0x4f60 <_ZNSt8ios_baseD2Ev@plt>
+   18de0:       mov x0, x27
+   18de4:       bl 0x4f40 <_Unwind_Resume@plt>
+   18de8:       ldur x1, [x21, #-0x18]
+   18dec:       str x27, [sp, #0x50]
+   18df0:       str x21, [sp, #0xb0]
+   18df4:       mov x27, x0
+   18df8:       str x24, [x19, x1]
+   18dfc:       str xzr, [sp, #0xb8]
+   18e00:       b 0x18dcc <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x60c>
+   18e04:       stp x25, x26, [sp, #0x40]
+   18e08:       str x27, [sp, #0x50]
+   18e0c:       mov x27, x0
+   18e10:       b 0x18dcc <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x60c>
+   18e14:       ldr x2, [sp, #0x90]
+   18e18:       add x1, x20, #0x10
+   18e1c:       mov x20, x0
+   18e20:       cmp x2, x1
+   18e24:       b.eq 0x18d60 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5a0>
+   18e28:       mov x0, x2
+   18e2c:       bl 0x4e80 <_ZdlPv@plt>
+   18e30:       b 0x18d60 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5a0>
+   18e34:       mov x20, x0
+   18e38:       b 0x18d60 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5a0>
+   18e3c:       mov x20, x0
+   18e40:       b 0x18d68 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5a8>
+   18e44:       b 0x18d94 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5d4>
+   18e48:       b 0x18de8 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x628>
+   18e4c:       b 0x18e04 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x644>
+

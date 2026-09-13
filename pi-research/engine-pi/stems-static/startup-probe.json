@@ -1,0 +1,16 @@
+[
+  {
+    "arg": "--help",
+    "exit": 0,
+    "seconds": 0.01576484099496156,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "arg": "--version",
+    "exit": 0,
+    "seconds": 0.014437828998779878,
+    "stdout": "",
+    "stderr": "1.4.0\n"
+  }
+]

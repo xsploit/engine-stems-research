@@ -1,0 +1,66 @@
+000000000001ce20 <zplane::Algorithms::Fft::prepare(zplane::Algorithms::Fft::PrepareParameters)>:
+   1ce20:       stp x29, x30, [sp, #-0x70]!
+   1ce24:       mov x29, sp
+   1ce28:       ldp x2, x3, [x1]
+   1ce2c:       stp x2, x3, [sp, #0x50]
+   1ce30:       ldp x2, x3, [x1, #0x10]
+   1ce34:       stp x19, x20, [sp, #0x10]
+   1ce38:       mov x19, x0
+   1ce3c:       mov x0, #0x38               // =56
+   1ce40:       str x21, [sp, #0x20]
+   1ce44:       stp x2, x3, [sp, #0x60]
+   1ce48:       bl 0x4c10 <_Znwm@plt>
+   1ce4c:       mov x21, x0
+   1ce50:       ldp x4, x5, [sp, #0x50]
+   1ce54:       add x1, sp, #0x30
+   1ce58:       ldp x2, x3, [sp, #0x60]
+   1ce5c:       stp x4, x5, [sp, #0x30]
+   1ce60:       stp x2, x3, [sp, #0x40]
+   1ce64:       bl 0x1e038 <zplane::Algorithms::Fft::Impl::Impl(zplane::Algorithms::Fft::PrepareParameters)>
+   1ce68:       ldr x20, [x19]
+   1ce6c:       str x21, [x19]
+   1ce70:       cbz x20, 0x1ced8 <zplane::Algorithms::Fft::prepare(zplane::Algorithms::Fft::PrepareParameters)+0xb8>
+   1ce74:       ldrb w0, [x20, #0x28]
+   1ce78:       add x19, x20, #0x10
+   1ce7c:       cbnz w0, 0x1cee8 <zplane::Algorithms::Fft::prepare(zplane::Algorithms::Fft::PrepareParameters)+0xc8>
+   1ce80:       ldr x0, [x20, #0x30]
+   1ce84:       stp xzr, xzr, [x19, #0x8]
+   1ce88:       strb wzr, [x19, #0x18]
+   1ce8c:       cbz x0, 0x1cec0 <zplane::Algorithms::Fft::prepare(zplane::Algorithms::Fft::PrepareParameters)+0xa0>
+   1ce90:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1ce94:       add x0, x20, #0x30
+   1ce98:       ldr x1, [x1, #0xe28] ; @187ffe28
+   1ce9c:       ldr x1, [x1]
+   1cea0:       blr x1
+   1cea4:       ldrb w1, [x19, #0x18]
+   1cea8:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1ceac:       add x0, x0, #0x190
+   1ceb0:       str x0, [x20, #0x10]
+   1ceb4:       cbz w1, 0x1cec0 <zplane::Algorithms::Fft::prepare(zplane::Algorithms::Fft::PrepareParameters)+0xa0>
+   1ceb8:       ldr x0, [x19, #0x8]
+   1cebc:       bl 0x24cc0 <zplane::VectorOps<float, void>::free(float*)>
+   1cec0:       mov x0, x20
+   1cec4:       mov x1, #0x38               // =56
+   1cec8:       ldp x19, x20, [sp, #0x10]
+   1cecc:       ldr x21, [sp, #0x20]
+   1ced0:       ldp x29, x30, [sp], #0x70
+   1ced4:       b 0x4be0 <_ZdlPvm@plt>
+   1ced8:       ldp x19, x20, [sp, #0x10]
+   1cedc:       ldr x21, [sp, #0x20]
+   1cee0:       ldp x29, x30, [sp], #0x70
+   1cee4:       ret
+   1cee8:       ldr x0, [x19, #0x8]
+   1ceec:       bl 0x24cc0 <zplane::VectorOps<float, void>::free(float*)>
+   1cef0:       ldr x0, [x20, #0x30]
+   1cef4:       stp xzr, xzr, [x19, #0x8]
+   1cef8:       strb wzr, [x19, #0x18]
+   1cefc:       cbnz x0, 0x1ce90 <zplane::Algorithms::Fft::prepare(zplane::Algorithms::Fft::PrepareParameters)+0x70>
+   1cf00:       b 0x1cec0 <zplane::Algorithms::Fft::prepare(zplane::Algorithms::Fft::PrepareParameters)+0xa0>
+   1cf04:       mov x1, #0x38               // =56
+   1cf08:       mov x19, x0
+   1cf0c:       mov x0, x21
+   1cf10:       bl 0x4be0 <_ZdlPvm@plt>
+   1cf14:       mov x0, x19
+   1cf18:       bl 0x4f40 <_Unwind_Resume@plt>
+   1cf1c:       nop
+

@@ -1,0 +1,3078 @@
+
+/home/subsect/Documents/Codex/2026-09-10-in-my-pc-im-workin-on/engine-pi/reverse/Engine: file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+000000000039cc00 <.text>:
+ c28400: add x1, x0, #0x11
+ c28404: ldrb w1, [x1]
+ c28408: tst w1, #0xff
+ c2840c: b.ne 0xc291cc <.text+0x88c5cc>
+ c28410: add x24, sp, #0x80
+ c28414: mov x0, x22
+ c28418: bl 0x3922b8 <_ZN4QDirD1Ev@plt>
+ c2841c: adrp x0, 0x1bc7000
+ c28420: add x0, x0, #0x90
+ c28424: mov x1, #0x2 // =2
+ c28428: stp x1, xzr, [sp, #0x98]
+ c2842c: stp xzr, x0, [sp, #0xa8]
+ c28430: bl 0xc694ac <.text+0x8cc8ac>
+ c28434: mov x8, x24
+ c28438: mov x1, x0
+ c2843c: mov x0, x20
+ c28440: bl 0x395828 <_ZNK14QMessageLogger7warningERK16QLoggingCategory@plt>
+ c28444: adrp x1, 0x1bee000
+ c28448: mov x0, x24
+ c2844c: add x1, x1, #0x438
+ c28450: bl 0x51bea8 <.text+0x17f2a8>
+ c28454: add x1, x19, #0xb8
+ c28458: bl 0x51bfc0 <.text+0x17f3c0>
+ c2845c: mov x0, x24
+ c28460: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c28464: mov w3, #0x1 // =1
+ c28468: mov w2, #-0x1 // =-1
+ c2846c: b 0xc2820c <.text+0x88b60c>
+ c28470: bl 0xc694ac <.text+0x8cc8ac>
+ c28474: add x1, x0, #0x11
+ c28478: ldrb w1, [x1]
+ c2847c: tst w1, #0xff
+ c28480: b.eq 0xc28410 <.text+0x88b810>
+ c28484: ldr x1, [x0, #0x8]
+ c28488: mov x2, #0x2 // =2
+ c2848c: add x24, sp, #0x80
+ c28490: mov x0, x20
+ c28494: mov x8, x24
+ c28498: stp x2, xzr, [sp, #0x98]
+ c2849c: stp xzr, x1, [sp, #0xa8]
+ c284a0: bl 0x391c28 <_ZNK14QMessageLogger7warningEv@plt>
+ c284a4: adrp x1, 0x1be0000
+ c284a8: mov x0, x24
+ c284ac: add x1, x1, #0x6c8
+ c284b0: bl 0x51bea8 <.text+0x17f2a8>
+ c284b4: mov x1, x25
+ c284b8: bl 0x51bfc0 <.text+0x17f3c0>
+ c284bc: mov x0, x24
+ c284c0: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c284c4: mov x0, x22
+ c284c8: bl 0x3922b8 <_ZN4QDirD1Ev@plt>
+ c284cc: b 0xc2841c <.text+0x88b81c>
+ c284d0: mov x0, x1
+ c284d4: blr x2
+ c284d8: mov w26, w0
+ c284dc: b 0xc28064 <.text+0x88b464>
+ c284e0: mov w22, #0x1 // =1
+ c284e4: b 0xc2838c <.text+0x88b78c>
+ c284e8: mov w26, #0x0 // =0
+ c284ec: b 0xc28064 <.text+0x88b464>
+ c284f0: ldr x1, [x2, #0x20]
+ c284f4: adrp x3, 0x15ed000 <_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_jESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS7_+0x1be1a0>
+ c284f8: add x23, x3, #0xcac
+ c284fc: str d8, [sp, #0x1b0]
+ c28500: cmp x1, x23
+ c28504: b.ne 0xc28a84 <.text+0x88be84>
+ c28508: ldr x3, [x0, #0xa0]
+ c2850c: add x1, x26, #0x420
+ c28510: ldr x2, [x2, #0x28]
+ c28514: cbz x3, 0xc28ab4 <.text+0x88beb4>
+ c28518: ldr w27, [x0, #0x88]
+ c2851c: cmp x2, x1
+ c28520: b.ne 0xc28ac4 <.text+0x88bec4>
+ c28524: ldr s8, [x3, #0x190]
+ c28528: ldr x1, [x19, #0xe8]
+ c2852c: add x0, x19, #0xd8
+ c28530: cbz x1, 0xc28bf4 <.text+0x88bff4>
+ c28534: ldr x1, [x0, #0x18]
+ c28538: add x2, sp, #0xc0
+ c2853c: mov x8, x2
+ c28540: str x2, [sp, #0x58]
+ c28544: blr x1
+ c28548: mov x0, #0x3d8 // =984
+ c2854c: bl 0x3915d8 <_Znwm@plt>
+ c28550: mov x23, x0
+ c28554: stp x19, xzr, [sp, #0xe0]
+ c28558: ldr w2, [x19, #0x68]
+ c2855c: add x28, x28, #0x520
+ c28560: str w2, [sp, #0x44]
+ c28564: str w2, [x23, #0x8]
+ c28568: mov w1, #0x1 // =1
+ c2856c: ldp x2, x3, [sp, #0xe0]
+ c28570: ucvtf s0, s8
+ c28574: stp x19, xzr, [sp, #0x100]
+ c28578: add x4, x0, #0x10
+ c2857c: adrp x0, 0xc1b000 <.text+0x87e400>
+ c28580: add x0, x0, #0xc64
+ c28584: strh w1, [x23, #0xc]
+ c28588: adrp x1, 0xc1b000 <.text+0x87e400>
+ c2858c: add x1, x1, #0xd80
+ c28590: stp x2, x3, [x23, #0x10]
+ c28594: add x6, x23, #0x30
+ c28598: ldr x2, [sp, #0xc8]
+ c2859c: str x0, [x23, #0x28]
+ c285a0: adrp x0, 0xc16000 <.text+0x879400>
+ c285a4: add x0, x0, #0x148
+ c285a8: str x1, [x23, #0x48]
+ c285ac: ldrsb w1, [x28, #0x118]
+ c285b0: stp x4, x6, [sp, #0x48]
+ c285b4: ldp x4, x5, [sp, #0x100]
+ c285b8: str w27, [x23]
+ c285bc: str x0, [x23, #0x20]
+ c285c0: adrp x0, 0xc16000 <.text+0x879400>
+ c285c4: add x0, x0, #0x18c
+ c285c8: stp x4, x5, [x23, #0x30]
+ c285cc: str x0, [x23, #0x40]
+ c285d0: str w1, [x23, #0x50]
+ c285d4: stp xzr, xzr, [sp, #0xf0]
+ c285d8: stp xzr, xzr, [sp, #0x110]
+ c285dc: str s0, [x23, #0x4]
+ c285e0: cbnz x2, 0xc28ad8 <.text+0x88bed8>
+ c285e4: add x0, x23, #0x58
+ c285e8: adrp x1, 0x1bdf000
+ c285ec: mov x2, x20
+ c285f0: add x1, x1, #0x7e0
+ c285f4: str x0, [sp, #0x60]
+ c285f8: bl 0x51cae0 <.text+0x17fee0>
+ c285fc: add x1, x23, #0x100
+ c28600: lsl w27, w27, #2
+ c28604: mov x28, x1
+ c28608: stp w27, wzr, [x23, #0x78]
+ c2860c: mov x0, x1
+ c28610: str x1, [sp, #0x20]
+ c28614: bl 0x391758 <_ZNSt8ios_baseC2Ev@plt>
+ c28618: str xzr, [x28, #0xd8]
+ c2861c: adrp x0, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c28620: add x0, x0, #0xdd8
+ c28624: strh wzr, [x23, #0x1e0]
+ c28628: add x3, x0, #0x3e8
+ c2862c: add x2, x0, #0x410
+ c28630: stp xzr, xzr, [x28, #0xe8]
+ c28634: mov x0, x28
+ c28638: mov x1, #0x0 // =0
+ c2863c: stp xzr, xzr, [x28, #0xf8]
+ c28640: str x3, [x23, #0x80]
+ c28644: str x2, [x23, #0x100]
+ c28648: bl 0x391768 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+ c2864c: adrp x1, 0x2b99000
+ c28650: ldr x1, [x1, #0x1b0]
+ c28654: add x28, x23, #0x88
+ c28658: adrp x0, 0x2a98000 <_ZN13QMetaSequence12MetaSequenceI5QListI6QColorEE5valueE+0x5118>
+ c2865c: add x0, x0, #0x4b0
+ c28660: add x2, x0, #0x190
+ c28664: add x0, x0, #0x1b8
+ c28668: str x2, [x23, #0x80]
+ c2866c: add x2, x23, #0xc0
+ c28670: stp x1, x2, [sp, #0x28]
+ c28674: add x1, x1, #0x10
+ c28678: str x1, [x23, #0x88]
+ c2867c: str x0, [x23, #0x100]
+ c28680: mov x0, x2
+ c28684: stp xzr, xzr, [x28, #0x8]
+ c28688: stp xzr, xzr, [x28, #0x18]
+ c2868c: stp xzr, xzr, [x28, #0x28]
+ c28690: bl 0x391778 <_ZNSt6localeC1Ev@plt>
+ c28694: adrp x0, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c28698: add x0, x0, #0xdd8
+ c2869c: add x1, sp, #0xb8
+ c286a0: add x0, x0, #0x430
+ c286a4: str x0, [x23, #0x88]
+ c286a8: mov x0, #-0x1 // =-1
+ c286ac: str x0, [x23, #0xc8]
+ c286b0: mov x0, x1
+ c286b4: str x1, [sp, #0x18]
+ c286b8: bl 0x397cd8 <pipe@plt>
+ c286bc: cmn w0, #0x1
+ c286c0: b.eq 0xc28c24 <.text+0x88c024>
+ c286c4: ldr d0, [sp, #0xb8]
+ c286c8: add x27, x23, #0xd0
+ c286cc: str xzr, [x23, #0xd0]
+ c286d0: mov x0, #0x400 // =1024
+ c286d4: str d0, [x23, #0xc8]
+ c286d8: stp xzr, xzr, [x27, #0x8]
+ c286dc: bl 0x3915d8 <_Znwm@plt>
+ c286e0: add x3, x0, #0x400
+ c286e4: mov x1, x0
+ c286e8: str x1, [x23, #0xd0]
+ c286ec: mov x2, #0x3ff // =1023
+ c286f0: strb wzr, [x0], #0x1
+ c286f4: mov w1, #0x0 // =0
+ c286f8: str x3, [x27, #0x10]
+ c286fc: str x3, [sp, #0x10]
+ c28700: bl 0x3909c8 <memset@plt>
+ c28704: ldr x3, [sp, #0x10]
+ c28708: add x1, x23, #0xe8
+ c2870c: str x3, [x27, #0x8]
+ c28710: mov x0, #0x400 // =1024
+ c28714: str xzr, [x23, #0xe8]
+ c28718: stp xzr, xzr, [x1, #0x8]
+ c2871c: str x1, [sp, #0x10]
+ c28720: bl 0x3915d8 <_Znwm@plt>
+ c28724: mov x3, x0
+ c28728: add x4, x0, #0x400
+ c2872c: stp x4, x3, [sp, #0x30]
+ c28730: mov x2, #0x3ff // =1023
+ c28734: mov w1, #0x0 // =0
+ c28738: str x3, [x23, #0xe8]
+ c2873c: ldr x3, [sp, #0x10]
+ c28740: strb wzr, [x0], #0x1
+ c28744: str x4, [x3, #0x10]
+ c28748: bl 0x3909c8 <memset@plt>
+ c2874c: ldr x0, [sp, #0x10]
+ c28750: mov x1, x28
+ c28754: ldp x4, x3, [sp, #0x30]
+ c28758: ldr x2, [x23, #0xd0]
+ c2875c: str x4, [x0, #0x8]
+ c28760: ldr x0, [sp, #0x20]
+ c28764: ldr x5, [x27, #0x8]
+ c28768: add x4, x3, #0x80
+ c2876c: stp x3, x4, [x28, #0x8]
+ c28770: stp x4, x2, [x28, #0x18]
+ c28774: stp x2, x5, [x28, #0x28]
+ c28778: bl 0x397ce8 <_ZNSt9basic_iosIcSt11char_traitsIcEE5rdbufEPSt15basic_streambufIcS1_E@plt>
+ c2877c: add x1, x23, #0x290
+ c28780: str x1, [sp, #0x30]
+ c28784: mov x27, x1
+ c28788: mov x0, x1
+ c2878c: bl 0x391758 <_ZNSt8ios_baseC2Ev@plt>
+ c28790: str xzr, [x27, #0xd8]
+ c28794: adrp x0, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c28798: add x0, x0, #0xdd8
+ c2879c: strh wzr, [x23, #0x370]
+ c287a0: add x2, x0, #0x4e0
+ c287a4: add x4, x23, #0x208
+ c287a8: stp xzr, xzr, [x27, #0xe8]
+ c287ac: add x1, x0, #0x4b8
+ c287b0: mov x0, x27
+ c287b4: stp xzr, xzr, [x27, #0xf8]
+ c287b8: str x1, [x23, #0x208]
+ c287bc: mov x1, #0x0 // =0
+ c287c0: str xzr, [x23, #0x210]
+ c287c4: str x2, [x23, #0x290]
+ c287c8: str x4, [sp, #0x68]
+ c287cc: bl 0x391768 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+ c287d0: adrp x0, 0x2a98000 <_ZN13QMetaSequence12MetaSequenceI5QListI6QColorEE5valueE+0x5118>
+ c287d4: add x0, x0, #0x4b0
+ c287d8: add x1, x0, #0x1e0
+ c287dc: str x1, [x23, #0x208]
+ c287e0: ldr x1, [sp, #0x28]
+ c287e4: add x27, x23, #0x218
+ c287e8: add x0, x0, #0x208
+ c287ec: str x0, [x23, #0x290]
+ c287f0: add x1, x1, #0x10
+ c287f4: str x1, [x23, #0x218]
+ c287f8: add x1, x23, #0x250
+ c287fc: stp xzr, xzr, [x27, #0x8]
+ c28800: mov x0, x1
+ c28804: stp xzr, xzr, [x27, #0x18]
+ c28808: stp xzr, xzr, [x27, #0x28]
+ c2880c: str x1, [sp, #0x38]
+ c28810: bl 0x391778 <_ZNSt6localeC1Ev@plt>
+ c28814: adrp x0, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c28818: add x1, x0, #0xdd8
+ c2881c: ldr x0, [sp, #0x18]
+ c28820: add x1, x1, #0x430
+ c28824: str x1, [x23, #0x218]
+ c28828: mov x1, #-0x1 // =-1
+ c2882c: str x1, [x23, #0x258]
+ c28830: bl 0x397cd8 <pipe@plt>
+ c28834: cmn w0, #0x1
+ c28838: b.eq 0xc28b84 <.text+0x88bf84>
+ c2883c: ldr d0, [sp, #0xb8]
+ c28840: add x0, x23, #0x260
+ c28844: mov x1, x0
+ c28848: str xzr, [x23, #0x260]
+ c2884c: mov x0, #0x400 // =1024
+ c28850: str x1, [sp, #0x10]
+ c28854: str d0, [x23, #0x258]
+ c28858: stp xzr, xzr, [x1, #0x8]
+ c2885c: bl 0x3915d8 <_Znwm@plt>
+ c28860: ldr x4, [sp, #0x10]
+ c28864: add x3, x0, #0x400
+ c28868: mov x1, x0
+ c2886c: str x1, [x23, #0x260]
+ c28870: strb wzr, [x0], #0x1
+ c28874: mov x2, #0x3ff // =1023
+ c28878: str x3, [x4, #0x10]
+ c2887c: mov w1, #0x0 // =0
+ c28880: str x3, [sp, #0x18]
+ c28884: bl 0x3909c8 <memset@plt>
+ c28888: ldp x0, x3, [sp, #0x10]
+ c2888c: add x2, x23, #0x278
+ c28890: str x3, [x0, #0x8]
+ c28894: str xzr, [x23, #0x278]
+ c28898: stp xzr, xzr, [x2, #0x8]
+ c2889c: mov x0, #0x400 // =1024
+ c288a0: str x2, [sp, #0x18]
+ c288a4: bl 0x3915d8 <_Znwm@plt>
+ c288a8: mov x3, x0
+ c288ac: str x3, [sp, #0x38]
+ c288b0: str x3, [x23, #0x278]
+ c288b4: add x4, x0, #0x400
+ c288b8: ldr x3, [sp, #0x18]
+ c288bc: strb wzr, [x0], #0x1
+ c288c0: mov x2, #0x3ff // =1023
+ c288c4: mov w1, #0x0 // =0
+ c288c8: str x4, [sp, #0x28]
+ c288cc: str x4, [x3, #0x10]
+ c288d0: bl 0x3909c8 <memset@plt>
+ c288d4: ldp x0, x2, [sp, #0x10]
+ c288d8: mov x1, x27
+ c288dc: ldr x4, [sp, #0x28]
+ c288e0: ldr x3, [sp, #0x38]
+ c288e4: str x4, [x2, #0x8]
+ c288e8: ldr x2, [x23, #0x260]
+ c288ec: add x4, x3, #0x80
+ c288f0: ldr x5, [x0, #0x8]
+ c288f4: stp x3, x4, [x27, #0x8]
+ c288f8: ldr x0, [sp, #0x30]
+ c288fc: stp x4, x2, [x27, #0x18]
+ c28900: stp x2, x5, [x27, #0x28]
+ c28904: bl 0x397ce8 <_ZNSt9basic_iosIcSt11char_traitsIcEE5rdbufEPSt15basic_streambufIcS1_E@plt>
+ c28908: mov w0, #-0x1 // =-1
+ c2890c: str w0, [x23, #0x398]
+ c28910: str xzr, [x23, #0x3a0]
+ c28914: mov x0, #0x18 // =24
+ c28918: bl 0x3915d8 <_Znwm@plt>
+ c2891c: ldr w1, [x23, #0x78]
+ c28920: mov x2, x0
+ c28924: ldr w3, [sp, #0x44]
+ c28928: adrp x0, 0x2a98000 <_ZN13QMetaSequence12MetaSequenceI5QListI6QColorEE5valueE+0x5118>
+ c2892c: add x0, x0, #0x4b0
+ c28930: add x27, x23, #0x3c0
+ c28934: add x0, x0, #0x228
+ c28938: str x0, [x2]
+ c2893c: mov x0, #0x100000001 // =4294967297
+ c28940: str x0, [x2, #0x8]
+ c28944: mul w1, w3, w1
+ c28948: add x3, x2, #0x10
+ c2894c: str x3, [x23, #0x3a0]
+ c28950: mov w3, #0x1 // =1
+ c28954: str x2, [x23, #0x3a8]
+ c28958: mov x0, x27
+ c2895c: strh w3, [x23, #0x3b0]
+ c28960: mov w3, #0x17f // =383
+ c28964: str w3, [x2, #0x10]
+ c28968: sbfiz x1, x1, #2, #32
+ c2896c: adrp x2, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28970: ldr x2, [x2, #0xb78]
+ c28974: strb wzr, [x23, #0x3b8]
+ c28978: str xzr, [x23, #0x3c0]
+ c2897c: stp xzr, xzr, [x27, #0x8]
+ c28980: str x2, [sp, #0x10]
+ c28984: bl 0xe6c260 <.text+0xacf660>
+ c28988: ldr x0, [sp, #0x48]
+ c2898c: ldr x0, [x0, #0x10]
+ c28990: cbz x0, 0xc28e30 <.text+0x88c230>
+ c28994: ldr x0, [sp, #0x50]
+ c28998: ldr x0, [x0, #0x10]
+ c2899c: cbz x0, 0xc28e30 <.text+0x88c230>
+ c289a0: ldr x3, [sp, #0x110]
+ c289a4: cbz x3, 0xc289b8 <.text+0x88bdb8>
+ c289a8: add x1, sp, #0x100
+ c289ac: mov w2, #0x3 // =3
+ c289b0: mov x0, x1
+ c289b4: blr x3
+ c289b8: ldr x3, [sp, #0xf0]
+ c289bc: cbz x3, 0xc289d0 <.text+0x88bdd0>
+ c289c0: add x1, sp, #0xe0
+ c289c4: mov w2, #0x3 // =3
+ c289c8: mov x0, x1
+ c289cc: blr x3
+ c289d0: ldr x27, [x19, #0xd0]
+ c289d4: str x23, [x19, #0xd0]
+ c289d8: cbz x27, 0xc289f0 <.text+0x88bdf0>
+ c289dc: mov x0, x27
+ c289e0: bl 0x1241664 <.text+0xea4a64>
+ c289e4: mov x0, x27
+ c289e8: mov x1, #0x3d8 // =984
+ c289ec: bl 0x391ae8 <_ZdlPvm@plt>
+ c289f0: ldr x0, [sp, #0x58]
+ c289f4: bl 0x51c280 <.text+0x17f680>
+ c289f8: ldr x0, [x19, #0xd0]
+ c289fc: cbnz x0, 0xc28c14 <.text+0x88c014>
+ c28a00: adrp x0, 0x1bc7000
+ c28a04: add x0, x0, #0x90
+ c28a08: mov x1, #0x2 // =2
+ c28a0c: stp x1, xzr, [sp, #0x98]
+ c28a10: stp xzr, x0, [sp, #0xa8]
+ c28a14: bl 0xc694ac <.text+0x8cc8ac>
+ c28a18: mov x8, x22
+ c28a1c: mov x1, x0
+ c28a20: mov x0, x20
+ c28a24: bl 0x395828 <_ZNK14QMessageLogger7warningERK16QLoggingCategory@plt>
+ c28a28: adrp x1, 0x1bee000
+ c28a2c: mov x0, x22
+ c28a30: add x1, x1, #0x4d0
+ c28a34: bl 0x51bea8 <.text+0x17f2a8>
+ c28a38: mov x19, x0
+ c28a3c: mov x8, x24
+ c28a40: ldp x0, x1, [x21]
+ c28a44: bl 0x51bcc0 <.text+0x17f0c0>
+ c28a48: mov x1, x24
+ c28a4c: mov x0, x19
+ c28a50: bl 0x51bfc0 <.text+0x17f3c0>
+ c28a54: mov x0, x24
+ c28a58: bl 0x51bde0 <.text+0x17f1e0>
+ c28a5c: mov x0, x22
+ c28a60: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c28a64: ldr d8, [sp, #0x1b0]
+ c28a68: b 0xc28464 <.text+0x88b864>
+ c28a6c: blr x3
+ c28a70: mov x1, x0
+ c28a74: ldr x0, [x19, #0x8]
+ c28a78: str x1, [sp, #0x8]
+ c28a7c: ldr x2, [x0]
+ c28a80: b 0xc28134 <.text+0x88b534>
+ c28a84: blr x1
+ c28a88: mov w27, w0
+ c28a8c: ldr x0, [x19, #0x8]
+ c28a90: add x1, x26, #0x420
+ c28a94: ldr x2, [x0]
+ c28a98: ldr x2, [x2, #0x28]
+ c28a9c: cmp x2, x1
+ c28aa0: b.ne 0xc28ac4 <.text+0x88bec4>
+ c28aa4: ldr x3, [x0, #0xa0]
+ c28aa8: cbnz x3, 0xc28524 <.text+0x88b924>
+ c28aac: fmov s8, wzr
+ c28ab0: b 0xc28528 <.text+0x88b928>
+ c28ab4: mov w27, #0x0 // =0
+ c28ab8: fmov s8, wzr
+ c28abc: cmp x2, x1
+ c28ac0: b.eq 0xc28528 <.text+0x88b928>
+ c28ac4: blr x2
+ c28ac8: fmov s8, w0
+ c28acc: b 0xc28528 <.text+0x88b928>
+ c28ad0: blr x1
+ c28ad4: b 0xc280fc <.text+0x88b4fc>
+ c28ad8: ldr x1, [sp, #0xc0]
+ c28adc: add x4, x23, #0x68
+ c28ae0: str x4, [x23, #0x58]
+ c28ae4: add x0, x23, #0x58
+ c28ae8: add x2, x1, x2
+ c28aec: mov w3, #0x0 // =0
+ c28af0: str x0, [sp, #0x60]
+ c28af4: bl 0x51c6c8 <.text+0x17fac8>
+ c28af8: b 0xc285fc <.text+0x88b9fc>
+ c28afc: cmp x0, #0x0
+ c28b00: ldrb w1, [sp, #0x98]
+ c28b04: cset w2, gt
+ c28b08: tst w2, w1
+ c28b0c: b.eq 0xc28380 <.text+0x88b780>
+ c28b10: sxtb w22, w0
+ c28b14: b 0xc28384 <.text+0x88b784>
+ c28b18: blr x1
+ c28b1c: mov w26, w0
+ c28b20: b 0xc2815c <.text+0x88b55c>
+ c28b24: bl 0xc694ac <.text+0x8cc8ac>
+ c28b28: add x1, x0, #0x11
+ c28b2c: ldrb w1, [x1]
+ c28b30: tst w1, #0xff
+ c28b34: b.ne 0xc29000 <.text+0x88c400>
+ c28b38: adrp x0, 0x1bc7000
+ c28b3c: add x0, x0, #0x90
+ c28b40: mov x1, #0x2 // =2
+ c28b44: stp x1, xzr, [sp, #0x98]
+ c28b48: stp xzr, x0, [sp, #0xa8]
+ c28b4c: bl 0xc694ac <.text+0x8cc8ac>
+ c28b50: mov x8, x24
+ c28b54: mov x1, x0
+ c28b58: mov x0, x20
+ c28b5c: bl 0x395828 <_ZNK14QMessageLogger7warningERK16QLoggingCategory@plt>
+ c28b60: adrp x1, 0x1bee000
+ c28b64: mov x0, x24
+ c28b68: add x1, x1, #0x528
+ c28b6c: bl 0x51bea8 <.text+0x17f2a8>
+ c28b70: mov x1, x23
+ c28b74: bl 0x51bfc0 <.text+0x17f3c0>
+ c28b78: b 0xc2845c <.text+0x88b85c>
+ c28b7c: mov w26, #0x0 // =0
+ c28b80: b 0xc2815c <.text+0x88b55c>
+ c28b84: adrp x0, 0x1bc7000
+ c28b88: add x0, x0, #0x10
+ c28b8c: add x21, sp, #0x120
+ c28b90: stp x0, x0, [sp, #0x98]
+ c28b94: str xzr, [sp, #0xa8]
+ c28b98: bl 0x123c724 <.text+0xe9fb24>
+ c28b9c: adrp x3, 0x1bee000
+ c28ba0: mov x2, x1
+ c28ba4: add x3, x3, #0x490
+ c28ba8: mov x1, x0
+ c28bac: mov x0, x21
+ c28bb0: bl 0xc9bff0 <.text+0x8ff3f0>
+ c28bb4: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28bb8: ldr x1, [x1, #0xb78]
+ c28bbc: adrp x0, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c28bc0: add x0, x0, #0xdd8
+ c28bc4: str x1, [sp, #0x10]
+ c28bc8: add x19, x0, #0x3b8
+ c28bcc: str x19, [sp, #0x120]
+ c28bd0: mov x2, x1
+ c28bd4: ldr x0, [sp, #0x148]
+ c28bd8: ldr x1, [x2]
+ c28bdc: subs x0, x0, x1
+ c28be0: mov x1, #0x0 // =0
+ c28be4: b.ne 0xc28cdc <.text+0x88c0dc>
+ c28be8: mov x1, x20
+ c28bec: mov x0, x21
+ c28bf0: bl 0x3baff0 <.text+0x1e3f0>
+ c28bf4: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28bf8: ldr x0, [x0, #0xb78]
+ c28bfc: ldr x2, [sp, #0x148]
+ c28c00: ldr x1, [x0]
+ c28c04: subs x2, x2, x1
+ c28c08: mov x1, #0x0 // =0
+ c28c0c: b.ne 0xc28cdc <.text+0x88c0dc>
+ c28c10: bl 0x392b38 <_ZSt25__throw_bad_function_callv@plt>
+ c28c14: ldr x0, [x19, #0x8]
+ c28c18: ldr d8, [sp, #0x1b0]
+ c28c1c: ldr x2, [x0]
+ c28c20: b 0xc2813c <.text+0x88b53c>
+ c28c24: adrp x0, 0x1bc7000
+ c28c28: add x0, x0, #0x10
+ c28c2c: add x21, sp, #0x120
+ c28c30: stp x0, x0, [sp, #0x98]
+ c28c34: str xzr, [sp, #0xa8]
+ c28c38: bl 0x123c724 <.text+0xe9fb24>
+ c28c3c: adrp x3, 0x1bee000
+ c28c40: mov x2, x1
+ c28c44: add x3, x3, #0x490
+ c28c48: mov x1, x0
+ c28c4c: mov x0, x21
+ c28c50: bl 0xc9bff0 <.text+0x8ff3f0>
+ c28c54: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28c58: ldr x1, [x1, #0xb78]
+ c28c5c: adrp x0, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c28c60: add x0, x0, #0xdd8
+ c28c64: str x1, [sp, #0x10]
+ c28c68: add x19, x0, #0x3b8
+ c28c6c: str x19, [sp, #0x120]
+ c28c70: mov x2, x1
+ c28c74: ldr x0, [sp, #0x148]
+ c28c78: ldr x1, [x2]
+ c28c7c: subs x0, x0, x1
+ c28c80: mov x1, #0x0 // =0
+ c28c84: b.ne 0xc28cdc <.text+0x88c0dc>
+ c28c88: mov x1, x20
+ c28c8c: mov x0, x21
+ c28c90: bl 0x3baff0 <.text+0x1e3f0>
+ c28c94: str d8, [sp, #0x1b0]
+ c28c98: bl 0x390978 <__stack_chk_fail@plt>
+ c28c9c: bti j
+ c28ca0: mov x19, x0
+ c28ca4: mov x0, x24
+ c28ca8: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c28cac: add x0, x28, #0x520
+ c28cb0: add x0, x0, #0x110
+ c28cb4: bl 0x392078 <__cxa_guard_abort@plt>
+ c28cb8: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28cbc: ldr x0, [x0, #0xb78]
+ c28cc0: ldr x2, [sp, #0x148]
+ c28cc4: ldr x1, [x0]
+ c28cc8: subs x2, x2, x1
+ c28ccc: mov x1, #0x0 // =0
+ c28cd0: stp x25, x26, [sp, #0x190]
+ c28cd4: str d8, [sp, #0x1b0]
+ c28cd8: b.eq 0xc28e10 <.text+0x88c210>
+ c28cdc: bl 0x390978 <__stack_chk_fail@plt>
+ c28ce0: bti j
+ c28ce4: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28ce8: ldr x1, [x1, #0xb78]
+ c28cec: mov x20, x0
+ c28cf0: str x1, [sp, #0x10]
+ c28cf4: ldr x0, [sp, #0x28]
+ c28cf8: mov x19, x20
+ c28cfc: add x1, x0, #0x10
+ c28d00: str x1, [x23, #0x218]
+ c28d04: ldr x0, [sp, #0x38]
+ c28d08: bl 0x3917a8 <_ZNSt6localeD1Ev@plt>
+ c28d0c: adrp x0, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c28d10: add x0, x0, #0xdd8
+ c28d14: add x0, x0, #0x4b8
+ c28d18: str x0, [x23, #0x208]
+ c28d1c: ldr x0, [sp, #0x68]
+ c28d20: str xzr, [x0, #0x8]
+ c28d24: adrp x20, 0x2b99000
+ c28d28: ldr x20, [x20, #0x1a0]
+ c28d2c: ldr x0, [sp, #0x30]
+ c28d30: add x1, x20, #0x10
+ c28d34: str x1, [x23, #0x290]
+ c28d38: bl 0x3917b8 <_ZNSt8ios_baseD2Ev@plt>
+ c28d3c: adrp x0, 0x2a98000 <_ZN13QMetaSequence12MetaSequenceI5QListI6QColorEE5valueE+0x5118>
+ c28d40: add x1, x0, #0x4b0
+ c28d44: add x2, x1, #0x190
+ c28d48: add x1, x1, #0x1b8
+ c28d4c: str x2, [x23, #0x80]
+ c28d50: mov x0, x28
+ c28d54: str x1, [x23, #0x100]
+ c28d58: add x20, x20, #0x10
+ c28d5c: bl 0x123d1f0 <.text+0xea05f0>
+ c28d60: str x20, [x23, #0x100]
+ c28d64: adrp x0, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c28d68: add x1, x0, #0xdd8
+ c28d6c: ldr x0, [sp, #0x20]
+ c28d70: add x1, x1, #0x3e8
+ c28d74: str x1, [x23, #0x80]
+ c28d78: bl 0x3917b8 <_ZNSt8ios_baseD2Ev@plt>
+ c28d7c: ldr x0, [sp, #0x60]
+ c28d80: bl 0x51c280 <.text+0x17f680>
+ c28d84: ldr x0, [sp, #0x50]
+ c28d88: ldr x3, [x0, #0x10]
+ c28d8c: cbz x3, 0xc28d9c <.text+0x88c19c>
+ c28d90: mov x1, x0
+ c28d94: mov w2, #0x3 // =3
+ c28d98: blr x3
+ c28d9c: ldr x0, [sp, #0x48]
+ c28da0: ldr x3, [x0, #0x10]
+ c28da4: cbz x3, 0xc28db4 <.text+0x88c1b4>
+ c28da8: mov x1, x0
+ c28dac: mov w2, #0x3 // =3
+ c28db0: blr x3
+ c28db4: ldr x3, [sp, #0x110]
+ c28db8: cbz x3, 0xc28dcc <.text+0x88c1cc>
+ c28dbc: add x1, sp, #0x100
+ c28dc0: mov w2, #0x3 // =3
+ c28dc4: mov x0, x1
+ c28dc8: blr x3
+ c28dcc: ldr x3, [sp, #0xf0]
+ c28dd0: cbz x3, 0xc28de4 <.text+0x88c1e4>
+ c28dd4: add x1, sp, #0xe0
+ c28dd8: mov w2, #0x3 // =3
+ c28ddc: mov x0, x1
+ c28de0: blr x3
+ c28de4: mov x0, x23
+ c28de8: mov x1, #0x3d8 // =984
+ c28dec: bl 0x391ae8 <_ZdlPvm@plt>
+ c28df0: ldr x0, [sp, #0x58]
+ c28df4: bl 0x51c280 <.text+0x17f680>
+ c28df8: ldr x2, [sp, #0x10]
+ c28dfc: ldr x0, [sp, #0x148]
+ c28e00: ldr x1, [x2]
+ c28e04: subs x0, x0, x1
+ c28e08: mov x1, #0x0 // =0
+ c28e0c: b.ne 0xc28cdc <.text+0x88c0dc>
+ c28e10: mov x0, x19
+ c28e14: bl 0x391548 <_Unwind_Resume@plt>
+ c28e18: bti j
+ c28e1c: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28e20: ldr x1, [x1, #0xb78]
+ c28e24: mov x19, x0
+ c28e28: str x1, [sp, #0x10]
+ c28e2c: b 0xc28df0 <.text+0x88c1f0>
+ c28e30: mov x0, #0x10 // =16
+ c28e34: bl 0x391598 <__cxa_allocate_exception@plt>
+ c28e38: adrp x1, 0x1bee000
+ c28e3c: mov x19, x0
+ c28e40: add x1, x1, #0x4a0
+ c28e44: bl 0x392c28 <_ZNSt13runtime_errorC1EPKc@plt>
+ c28e48: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28e4c: ldr x0, [x0, #0xb78]
+ c28e50: str x0, [sp, #0x10]
+ c28e54: mov x2, x0
+ c28e58: ldr x0, [sp, #0x148]
+ c28e5c: ldr x1, [x2]
+ c28e60: subs x0, x0, x1
+ c28e64: mov x1, #0x0 // =0
+ c28e68: b.ne 0xc28cdc <.text+0x88c0dc>
+ c28e6c: adrp x2, 0x2b99000
+ c28e70: ldr x2, [x2, #0x250]
+ c28e74: mov x0, x19
+ c28e78: adrp x1, 0x2b99000
+ c28e7c: ldr x1, [x1, #0x258]
+ c28e80: bl 0x3915a8 <__cxa_throw@plt>
+ c28e84: bti j
+ c28e88: mov x19, x0
+ c28e8c: mov x0, x27
+ c28e90: bl 0xaaa0c0 <.text+0x70d4c0>
+ c28e94: add x0, x23, #0x398
+ c28e98: bl 0x123c7c0 <.text+0xe9fbc0>
+ c28e9c: ldr x0, [sp, #0x68]
+ c28ea0: adrp x20, 0x2b99000
+ c28ea4: ldr x20, [x20, #0x1a0]
+ c28ea8: bl 0x12300c0 <.text+0xe934c0>
+ c28eac: b 0xc28d3c <.text+0x88c13c>
+ c28eb0: bti j
+ c28eb4: mov x20, x0
+ c28eb8: ldr x0, [sp, #0x10]
+ c28ebc: bl 0x6246e0 <.text+0x287ae0>
+ c28ec0: add x0, x23, #0x258
+ c28ec4: bl 0x3b0738 <.text+0x13b38>
+ c28ec8: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28ecc: ldr x0, [x0, #0xb78]
+ c28ed0: str x0, [sp, #0x10]
+ c28ed4: b 0xc28cf4 <.text+0x88c0f4>
+ c28ed8: bti j
+ c28edc: mov x20, x0
+ c28ee0: b 0xc28ec0 <.text+0x88c2c0>
+ c28ee4: bti j
+ c28ee8: mov x19, x0
+ c28eec: mov x0, x21
+ c28ef0: bl 0x51c220 <.text+0x17f620>
+ c28ef4: ldr x0, [sp, #0xa8]
+ c28ef8: add x25, x25, #0x570
+ c28efc: str x25, [sp, #0x98]
+ c28f00: cbz x0, 0xc28f08 <.text+0x88c308>
+ c28f04: bl 0x51d1f0 <.text+0x1805f0>
+ c28f08: ldr x0, [sp, #0x88]
+ c28f0c: cbz x0, 0xc28f14 <.text+0x88c314>
+ c28f10: bl 0x51d1f0 <.text+0x1805f0>
+ c28f14: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28f18: ldr x0, [x0, #0xb78]
+ c28f1c: ldr x2, [sp, #0x148]
+ c28f20: ldr x1, [x0]
+ c28f24: subs x2, x2, x1
+ c28f28: mov x1, #0x0 // =0
+ c28f2c: str d8, [sp, #0x1b0]
+ c28f30: b.eq 0xc28e10 <.text+0x88c210>
+ c28f34: b 0xc28cdc <.text+0x88c0dc>
+ c28f38: bti j
+ c28f3c: mov x19, x0
+ c28f40: b 0xc28ef4 <.text+0x88c2f4>
+ c28f44: bti j
+ c28f48: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28f4c: ldr x1, [x1, #0xb78]
+ c28f50: mov x19, x0
+ c28f54: str x1, [sp, #0x10]
+ c28f58: b 0xc28e9c <.text+0x88c29c>
+ c28f5c: bti j
+ c28f60: mov x19, x0
+ c28f64: mov x0, x27
+ c28f68: bl 0x123d1f0 <.text+0xea05f0>
+ c28f6c: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28f70: ldr x0, [x0, #0xb78]
+ c28f74: str x0, [sp, #0x10]
+ c28f78: b 0xc28d0c <.text+0x88c10c>
+ c28f7c: bti j
+ c28f80: mov x1, x0
+ c28f84: mov x0, x19
+ c28f88: mov x19, x1
+ c28f8c: bl 0x391628 <__cxa_free_exception@plt>
+ c28f90: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28f94: ldr x0, [x0, #0xb78]
+ c28f98: str x0, [sp, #0x10]
+ c28f9c: b 0xc28e8c <.text+0x88c28c>
+ c28fa0: bti j
+ c28fa4: mov x20, x0
+ c28fa8: add x0, x23, #0xc8
+ c28fac: bl 0x3b0738 <.text+0x13b38>
+ c28fb0: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c28fb4: ldr x0, [x0, #0xb78]
+ c28fb8: str x0, [sp, #0x10]
+ c28fbc: ldr x0, [sp, #0x28]
+ c28fc0: mov x19, x20
+ c28fc4: add x1, x0, #0x10
+ c28fc8: str x1, [x23, #0x88]
+ c28fcc: ldr x0, [sp, #0x30]
+ c28fd0: bl 0x3917a8 <_ZNSt6localeD1Ev@plt>
+ c28fd4: adrp x0, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c28fd8: add x0, x0, #0xdd8
+ c28fdc: add x0, x0, #0x3e8
+ c28fe0: str x0, [x23, #0x80]
+ c28fe4: adrp x1, 0x2b99000
+ c28fe8: ldr x1, [x1, #0x1a0]
+ c28fec: ldr x0, [sp, #0x20]
+ c28ff0: add x1, x1, #0x10
+ c28ff4: str x1, [x23, #0x100]
+ c28ff8: bl 0x3917b8 <_ZNSt8ios_baseD2Ev@plt>
+ c28ffc: b 0xc28d7c <.text+0x88c17c>
+ c29000: ldr x1, [x0, #0x8]
+ c29004: mov x2, #0x2 // =2
+ c29008: mov x8, x24
+ c2900c: mov x0, x20
+ c29010: stp x2, xzr, [sp, #0x98]
+ c29014: stp xzr, x1, [sp, #0xa8]
+ c29018: bl 0x391c28 <_ZNK14QMessageLogger7warningEv@plt>
+ c2901c: adrp x1, 0x1bee000
+ c29020: mov x0, x24
+ c29024: add x1, x1, #0x4f8
+ c29028: bl 0x51bea8 <.text+0x17f2a8>
+ c2902c: adrp x1, 0x1bee000
+ c29030: add x1, x1, #0x508
+ c29034: bl 0x51bea8 <.text+0x17f2a8>
+ c29038: mov x0, x24
+ c2903c: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c29040: b 0xc28b38 <.text+0x88bf38>
+ c29044: bti j
+ c29048: mov x20, x0
+ c2904c: mov x0, x21
+ c29050: str x19, [sp, #0x120]
+ c29054: bl 0x397c98 <_ZNSt12system_errorD2Ev@plt>
+ c29058: b 0xc28cf4 <.text+0x88c0f4>
+ c2905c: bti j
+ c29060: mov x19, x0
+ c29064: mov x0, x24
+ c29068: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c2906c: b 0xc28f14 <.text+0x88c314>
+ c29070: bti j
+ c29074: mov x20, x0
+ c29078: mov x0, x21
+ c2907c: str x19, [sp, #0x120]
+ c29080: bl 0x397c98 <_ZNSt12system_errorD2Ev@plt>
+ c29084: b 0xc28fbc <.text+0x88c3bc>
+ c29088: bti j
+ c2908c: b 0xc29060 <.text+0x88c460>
+ c29090: bti j
+ c29094: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29098: ldr x1, [x1, #0xb78]
+ c2909c: mov x20, x0
+ c290a0: str x1, [sp, #0x10]
+ c290a4: b 0xc28fbc <.text+0x88c3bc>
+ c290a8: bti j
+ c290ac: mov x19, x0
+ c290b0: mov x0, x24
+ c290b4: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c290b8: b 0xc2917c <.text+0x88c57c>
+ c290bc: bti j
+ c290c0: mov x1, #0x18 // =24
+ c290c4: mov x19, x0
+ c290c8: mov x0, x27
+ c290cc: bl 0x391ae8 <_ZdlPvm@plt>
+ c290d0: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c290d4: ldr x0, [x0, #0xb78]
+ c290d8: ldr x2, [sp, #0x148]
+ c290dc: ldr x1, [x0]
+ c290e0: subs x2, x2, x1
+ c290e4: mov x1, #0x0 // =0
+ c290e8: str d8, [sp, #0x1b0]
+ c290ec: b.eq 0xc28e10 <.text+0x88c210>
+ c290f0: b 0xc28cdc <.text+0x88c0dc>
+ c290f4: bti j
+ c290f8: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c290fc: ldr x1, [x1, #0xb78]
+ c29100: mov x19, x0
+ c29104: str x1, [sp, #0x10]
+ c29108: b 0xc28fe4 <.text+0x88c3e4>
+ c2910c: bti j
+ c29110: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29114: ldr x1, [x1, #0xb78]
+ c29118: mov x19, x0
+ c2911c: str x1, [sp, #0x10]
+ c29120: b 0xc28d84 <.text+0x88c184>
+ c29124: bti j
+ c29128: mov x19, x0
+ c2912c: b 0xc28f08 <.text+0x88c308>
+ c29130: bti j
+ c29134: b 0xc29060 <.text+0x88c460>
+ c29138: bti j
+ c2913c: mov x19, x0
+ c29140: mov x0, x28
+ c29144: bl 0x123d1f0 <.text+0xea05f0>
+ c29148: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2914c: ldr x0, [x0, #0xb78]
+ c29150: str x0, [sp, #0x10]
+ c29154: b 0xc28fd4 <.text+0x88c3d4>
+ c29158: bti j
+ c2915c: mov x20, x0
+ c29160: mov x0, x27
+ c29164: bl 0x6246e0 <.text+0x287ae0>
+ c29168: b 0xc28fa8 <.text+0x88c3a8>
+ c2916c: bti j
+ c29170: mov x19, x0
+ c29174: mov x0, x20
+ c29178: bl 0x3922b8 <_ZN4QDirD1Ev@plt>
+ c2917c: mov x0, x22
+ c29180: bl 0x3922b8 <_ZN4QDirD1Ev@plt>
+ c29184: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29188: ldr x0, [x0, #0xb78]
+ c2918c: ldr x2, [sp, #0x148]
+ c29190: ldr x1, [x0]
+ c29194: subs x2, x2, x1
+ c29198: mov x1, #0x0 // =0
+ c2919c: str d8, [sp, #0x1b0]
+ c291a0: b.eq 0xc28e10 <.text+0x88c210>
+ c291a4: b 0xc28cdc <.text+0x88c0dc>
+ c291a8: bti j
+ c291ac: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c291b0: ldr x1, [x1, #0xb78]
+ c291b4: mov x19, x0
+ c291b8: str x1, [sp, #0x10]
+ c291bc: b 0xc28d24 <.text+0x88c124>
+ c291c0: bti j
+ c291c4: mov x19, x0
+ c291c8: b 0xc29218 <.text+0x88c618>
+ c291cc: ldr x1, [x0, #0x8]
+ c291d0: mov x2, #0x2 // =2
+ c291d4: add x24, sp, #0x80
+ c291d8: mov x0, x20
+ c291dc: mov x8, x24
+ c291e0: stp x2, xzr, [sp, #0x98]
+ c291e4: stp xzr, x1, [sp, #0xa8]
+ c291e8: bl 0x391c28 <_ZNK14QMessageLogger7warningEv@plt>
+ c291ec: adrp x1, 0x1be0000
+ c291f0: mov x0, x24
+ c291f4: add x1, x1, #0x6a8
+ c291f8: bl 0x51bea8 <.text+0x17f2a8>
+ c291fc: mov x1, x25
+ c29200: bl 0x51bfc0 <.text+0x17f3c0>
+ c29204: b 0xc284bc <.text+0x88b8bc>
+ c29208: bti j
+ c2920c: mov x19, x0
+ c29210: mov x0, x24
+ c29214: bl 0x51bde0 <.text+0x17f1e0>
+ c29218: mov x0, x22
+ c2921c: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c29220: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29224: ldr x0, [x0, #0xb78]
+ c29228: ldr x2, [sp, #0x148]
+ c2922c: ldr x1, [x0]
+ c29230: subs x2, x2, x1
+ c29234: mov x1, #0x0 // =0
+ c29238: b.eq 0xc28e10 <.text+0x88c210>
+ c2923c: b 0xc28cdc <.text+0x88c0dc>
+ c29240: bti j
+ c29244: b 0xc290ac <.text+0x88c4ac>
+ c29248: bti j
+ c2924c: mov x19, x0
+ c29250: mov x0, x20
+ c29254: bl 0x51bde0 <.text+0x17f1e0>
+ c29258: b 0xc28cb8 <.text+0x88c0b8>
+ c2925c: bti j
+ c29260: mov x19, x0
+ c29264: b 0xc2917c <.text+0x88c57c>
+ c29268: bti j
+ c2926c: mov x19, x0
+ c29270: b 0xc29284 <.text+0x88c684>
+ c29274: bti j
+ c29278: mov x19, x0
+ c2927c: mov x0, x24
+ c29280: bl 0x3922b8 <_ZN4QDirD1Ev@plt>
+ c29284: mov x0, x20
+ c29288: bl 0x51bde0 <.text+0x17f1e0>
+ c2928c: b 0xc2917c <.text+0x88c57c>
+ c29290: bti j
+ c29294: mov x19, x0
+ c29298: mov x0, x24
+ c2929c: bl 0x51bde0 <.text+0x17f1e0>
+ c292a0: b 0xc28cac <.text+0x88c0ac>
+ c292a4: bti j
+ c292a8: mov x19, x0
+ c292ac: mov x0, x20
+ c292b0: bl 0x51bde0 <.text+0x17f1e0>
+ c292b4: b 0xc28cac <.text+0x88c0ac>
+ c292b8: bti j
+ c292bc: b 0xc292a8 <.text+0x88c6a8>
+ c292c0: bti j
+ c292c4: mov x19, x0
+ c292c8: b 0xc28cac <.text+0x88c0ac>
+ c292cc: bti j
+ c292d0: b 0xc2924c <.text+0x88c64c>
+ c292d4: bti j
+ c292d8: ldr x2, [sp, #0xa8]
+ c292dc: adrp x1, 0x2a7b000
+ c292e0: add x1, x1, #0x570
+ c292e4: str x1, [sp, #0x98]
+ c292e8: mov x19, x0
+ c292ec: cbz x2, 0xc292f8 <.text+0x88c6f8>
+ c292f0: mov x0, x2
+ c292f4: bl 0x51d1f0 <.text+0x1805f0>
+ c292f8: ldr x0, [sp, #0x88]
+ c292fc: cbz x0, 0xc28cb8 <.text+0x88c0b8>
+ c29300: bl 0x51d1f0 <.text+0x1805f0>
+ c29304: b 0xc28cb8 <.text+0x88c0b8>
+ c29308: bti j
+ c2930c: mov x19, x0
+ c29310: b 0xc292f8 <.text+0x88c6f8>
+ c29314: adrp x0, 0x1bc7000
+ c29318: add x0, x0, #0x90
+ c2931c: mov x1, #0x2 // =2
+ c29320: stp x1, xzr, [sp, #0x98]
+ c29324: stp xzr, x0, [sp, #0xa8]
+ c29328: bl 0xc694ac <.text+0x8cc8ac>
+ c2932c: mov x8, x22
+ c29330: mov x1, x0
+ c29334: mov x0, x20
+ c29338: bl 0x395828 <_ZNK14QMessageLogger7warningERK16QLoggingCategory@plt>
+ c2933c: adrp x1, 0x1bee000
+ c29340: mov x0, x22
+ c29344: add x1, x1, #0x460
+ c29348: bl 0x51bea8 <.text+0x17f2a8>
+ c2934c: mov x19, x0
+ c29350: mov x8, x24
+ c29354: ldp x0, x1, [x21]
+ c29358: bl 0x51bcc0 <.text+0x17f0c0>
+ c2935c: mov x1, x24
+ c29360: mov x0, x19
+ c29364: bl 0x51bfc0 <.text+0x17f3c0>
+ c29368: mov x0, x24
+ c2936c: bl 0x51bde0 <.text+0x17f1e0>
+ c29370: mov x0, x22
+ c29374: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c29378: b 0xc28464 <.text+0x88b864>
+ c2937c: bti j
+ c29380: mov x19, x0
+ c29384: mov x0, x24
+ c29388: bl 0x51bde0 <.text+0x17f1e0>
+ c2938c: mov x0, x22
+ c29390: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c29394: b 0xc28f14 <.text+0x88c314>
+ c29398: bti j
+ c2939c: mov x19, x0
+ c293a0: mov x0, x22
+ c293a4: b 0xc29390 <.text+0x88c790>
+ c293a8: paciasp
+ c293ac: stp x29, x30, [sp, #-0x60]!
+ c293b0: mov x29, sp
+ c293b4: stp x19, x20, [sp, #0x10]
+ c293b8: mov x19, x0
+ c293bc: mov w0, w1
+ c293c0: stp x25, x26, [sp, #0x40]
+ c293c4: mov x3, x0
+ c293c8: stp x27, x28, [sp, #0x50]
+ c293cc: sub sp, sp, #0x5f0
+ c293d0: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c293d4: ldr x1, [x1, #0xb78]
+ c293d8: str x0, [sp, #0x8]
+ c293dc: ldr x0, [x19, #0x8]
+ c293e0: ldr x2, [x1]
+ c293e4: str x2, [sp, #0x5e8]
+ c293e8: mov x2, #0x0 // =0
+ c293ec: ldr x1, [x19, #0x70]
+ c293f0: ldr x4, [x0]
+ c293f4: ldr x1, [x1]
+ c293f8: ldr x2, [x19, #0x60]
+ c293fc: ldr x4, [x4, #0x78]
+ c29400: blr x4
+ c29404: mov x27, x0
+ c29408: ldr x1, [x19, #0x60]
+ c2940c: ldr x28, [x19, #0xd0]
+ c29410: add x1, x1, x0
+ c29414: str x1, [x19, #0x60]
+ c29418: cbz x28, 0xc2947c <.text+0x88c87c>
+ c2941c: ldr x1, [x19, #0x70]
+ c29420: ldrb w0, [x28, #0x3b8]
+ c29424: ldr x1, [x1]
+ c29428: str x1, [sp, #0x18]
+ c2942c: tbz w0, #0x0, 0xc29508 <.text+0x88c908>
+ c29430: ldr w0, [x28, #0x398]
+ c29434: cmn w0, #0x1
+ c29438: b.eq 0xc29fe0 <.text+0x88d3e0>
+ c2943c: ldrb w0, [x28, #0x3b1]
+ c29440: add x20, x28, #0x398
+ c29444: tbz w0, #0x0, 0xc2962c <.text+0x88ca2c>
+ c29448: adrp x0, 0x2b99000
+ c2944c: ldr x0, [x0, #0x558]
+ c29450: adrp x1, 0x1bee000
+ c29454: add x1, x1, #0x718
+ c29458: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2945c: add x0, x28, #0x30
+ c29460: mov w1, #0xa // =10
+ c29464: str w1, [sp, #0x1c0]
+ c29468: ldr x1, [x0, #0x10]
+ c2946c: cbz x1, 0xc2b358 <.text+0x88e758>
+ c29470: ldr x2, [x0, #0x18]
+ c29474: add x1, sp, #0x1c0
+ c29478: blr x2
+ c2947c: ldr w0, [x19, #0xf8]
+ c29480: cmp w0, #0x1
+ c29484: b.eq 0xc294ac <.text+0x88c8ac>
+ c29488: ldr x0, [sp, #0x8]
+ c2948c: cmp x0, x27
+ c29490: b.eq 0xc296b8 <.text+0x88cab8>
+ c29494: ldr x0, [x19, #0xd0]
+ c29498: cbz x0, 0xc294b4 <.text+0x88c8b4>
+ c2949c: bl 0x1240e4c <.text+0xea424c>
+ c294a0: ldr w0, [x19, #0xf8]
+ c294a4: cmp w0, #0x1
+ c294a8: b.ne 0xc294b4 <.text+0x88c8b4>
+ c294ac: mov w0, #0x1 // =1
+ c294b0: b 0xc294d0 <.text+0x88c8d0>
+ c294b4: ldr x0, [x19, #0x78]
+ c294b8: cbz x0, 0xc2a018 <.text+0x88d418>
+ c294bc: str xzr, [x19, #0x78]
+ c294c0: ldr x1, [x0]
+ c294c4: ldr x1, [x1, #0x8]
+ c294c8: blr x1
+ c294cc: mov w0, #0x3 // =3
+ c294d0: adrp x1, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c294d4: ldr x1, [x1, #0xb78]
+ c294d8: ldr x3, [sp, #0x5e8]
+ c294dc: ldr x2, [x1]
+ c294e0: subs x3, x3, x2
+ c294e4: mov x2, #0x0 // =0
+ c294e8: b.ne 0xc2b300 <.text+0x88e700>
+ c294ec: add sp, sp, #0x5f0
+ c294f0: ldp x19, x20, [sp, #0x10]
+ c294f4: ldp x25, x26, [sp, #0x40]
+ c294f8: ldp x27, x28, [sp, #0x50]
+ c294fc: ldp x29, x30, [sp], #0x60
+ c29500: autiasp
+ c29504: ret
+ c29508: str x21, [sp, #0x610]
+ c2950c: add x1, x28, #0x58
+ c29510: str x22, [sp, #0x618]
+ c29514: mov w0, #0x1 // =1
+ c29518: str x23, [sp, #0x620]
+ c2951c: str x24, [sp, #0x628]
+ c29520: strb w0, [x28, #0x3b8]
+ c29524: add x0, sp, #0x3c0
+ c29528: mov x20, x0
+ c2952c: str x0, [sp]
+ c29530: str x1, [sp, #0x28]
+ c29534: bl 0x1895fa0 <memfd_create+0x21ea80>
+ c29538: mov x0, x20
+ c2953c: bl 0x395988 <_ZNKSt10filesystem7__cxx114path18has_root_directoryEv@plt>
+ c29540: tbnz w0, #0x0, 0xc297e8 <.text+0x88cbe8>
+ c29544: add x0, sp, #0x1c0
+ c29548: str x0, [sp, #0x10]
+ c2954c: mov x8, x0
+ c29550: bl 0x1249f60 <.text+0xead360>
+ c29554: ldp x21, x24, [sp, #0x1c0]
+ c29558: stp xzr, xzr, [sp, #0x1f0]
+ c2955c: str xzr, [sp, #0x200]
+ c29560: subs x20, x24, x21
+ c29564: b.eq 0xc2a098 <.text+0x88d498>
+ c29568: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2956c: ldr x23, [x23, #0xb78]
+ c29570: mov x0, #0x7ffffffffffffff8 // =9223372036854775800
+ c29574: cmp x20, x0
+ c29578: b.hi 0xc2b26c <.text+0x88e66c>
+ c2957c: mov x0, x20
+ c29580: bl 0x3915d8 <_Znwm@plt>
+ c29584: ldp x21, x24, [sp, #0x1c0]
+ c29588: mov x26, x0
+ c2958c: add x20, x26, x20
+ c29590: stp x26, x26, [sp, #0x1f0]
+ c29594: str x20, [sp, #0x200]
+ c29598: cmp x21, x24
+ c2959c: b.eq 0xc2a320 <.text+0x88d720>
+ c295a0: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c295a4: ldr x0, [x0, #0xb78]
+ c295a8: mov x20, x26
+ c295ac: str x0, [sp, #0x20]
+ c295b0: b 0xc295e4 <.text+0x88c9e4>
+ c295b4: cmp x22, #0x1
+ c295b8: b.eq 0xc2a2fc <.text+0x88d6fc>
+ c295bc: cbnz x22, 0xc29618 <.text+0x88ca18>
+ c295c0: str x22, [x20, #0x8]
+ c295c4: add x1, x21, #0x20
+ c295c8: strb wzr, [x0, x22]
+ c295cc: add x0, x20, #0x20
+ c295d0: bl 0x391c58 <_ZNSt10filesystem7__cxx114path5_ListC1ERKS2_@plt>
+ c295d4: add x21, x21, #0x28
+ c295d8: add x20, x20, #0x28
+ c295dc: cmp x24, x21
+ c295e0: b.eq 0xc296c0 <.text+0x88cac0>
+ c295e4: ldr x22, [x21, #0x8]
+ c295e8: add x0, x20, #0x10
+ c295ec: str x0, [x20]
+ c295f0: ldr x25, [x21]
+ c295f4: cmp x22, #0xf
+ c295f8: b.ls 0xc295b4 <.text+0x88c9b4>
+ c295fc: tbnz x22, #0x3f, 0xc2b2c0 <.text+0x88e6c0>
+ c29600: adds x0, x22, #0x1
+ c29604: b.mi 0xc2ad1c <.text+0x88e11c>
+ c29608: ldr x23, [sp, #0x20]
+ c2960c: bl 0x3915d8 <_Znwm@plt>
+ c29610: str x0, [x20]
+ c29614: str x22, [x20, #0x10]
+ c29618: mov x1, x25
+ c2961c: mov x2, x22
+ c29620: bl 0x3909b8 <memcpy@plt>
+ c29624: ldr x0, [x20]
+ c29628: b 0xc295c0 <.text+0x88c9c0>
+ c2962c: ldr x0, [x28, #0x3a0]
+ c29630: ldar w0, [x0]
+ c29634: ands w0, w0, #0x7f
+ c29638: b.eq 0xc29448 <.text+0x88c848>
+ c2963c: add w0, w0, #0x1
+ c29640: sbfx x0, x0, #1, #7
+ c29644: cmp w0, #0x0
+ c29648: b.gt 0xc29448 <.text+0x88c848>
+ c2964c: ldr w0, [x28, #0x398]
+ c29650: add x25, sp, #0x1f0
+ c29654: mov x1, x25
+ c29658: mov w2, #0x1 // =1
+ c2965c: str x21, [sp, #0x610]
+ c29660: str x22, [sp, #0x618]
+ c29664: bl 0x397c88 <waitpid@plt>
+ c29668: cmn w0, #0x1
+ c2966c: b.eq 0xc2b14c <.text+0x88e54c>
+ c29670: str x23, [sp, #0x620]
+ c29674: str x24, [sp, #0x628]
+ c29678: cbz w0, 0xc2a18c <.text+0x88d58c>
+ c2967c: ldr w21, [sp, #0x1f0]
+ c29680: ands w0, w21, #0x7f
+ c29684: b.eq 0xc2b100 <.text+0x88e500>
+ c29688: add w0, w0, #0x1
+ c2968c: ldr x23, [sp, #0x620]
+ c29690: sbfx x0, x0, #1, #7
+ c29694: ldr x24, [sp, #0x628]
+ c29698: cmp w0, #0x0
+ c2969c: b.le 0xc2b298 <.text+0x88e698>
+ c296a0: mov x0, x20
+ c296a4: bl 0x123c780 <.text+0xe9fb80>
+ c296a8: tbz w0, #0x0, 0xc2b258 <.text+0x88e658>
+ c296ac: ldr x21, [sp, #0x610]
+ c296b0: ldr x22, [sp, #0x618]
+ c296b4: b 0xc29448 <.text+0x88c848>
+ c296b8: mov w0, #0x2 // =2
+ c296bc: b 0xc294d0 <.text+0x88c8d0>
+ c296c0: ldr x21, [sp, #0x1f0]
+ c296c4: str x20, [sp, #0x1f8]
+ c296c8: cmp x20, x21
+ c296cc: b.eq 0xc2a324 <.text+0x88d724>
+ c296d0: add x22, sp, #0x470
+ c296d4: add x24, sp, #0x480
+ c296d8: add x23, sp, #0x490
+ c296dc: add x25, sp, #0x190
+ c296e0: b 0xc29708 <.text+0x88cb08>
+ c296e4: ldr x1, [sp, #0x490]
+ c296e8: cbz x1, 0xc296f4 <.text+0x88caf4>
+ c296ec: mov x0, x23
+ c296f0: bl 0x391c48 <_ZNKSt10filesystem7__cxx114path5_List13_Impl_deleterclEPNS2_5_ImplE@plt>
+ c296f4: mov x0, x22
+ c296f8: add x21, x21, #0x28
+ c296fc: bl 0x51c280 <.text+0x17f680>
+ c29700: cmp x20, x21
+ c29704: b.eq 0xc2a324 <.text+0x88d724>
+ c29708: ldr x2, [x21, #0x8]
+ c2970c: str x24, [sp, #0x470]
+ c29710: mov x0, x22
+ c29714: mov w3, #0x0 // =0
+ c29718: ldr x1, [x21]
+ c2971c: add x2, x1, x2
+ c29720: bl 0x51c6c8 <.text+0x17fac8>
+ c29724: add x1, x21, #0x20
+ c29728: mov x0, x23
+ c2972c: bl 0x391c58 <_ZNSt10filesystem7__cxx114path5_ListC1ERKS2_@plt>
+ c29730: ldr x1, [sp]
+ c29734: mov x0, x22
+ c29738: bl 0x392388 <_ZNSt10filesystem7__cxx114pathdVERKS1_@plt>
+ c2973c: str wzr, [sp, #0x190]
+ c29740: bl 0x391c98 <_ZNSt3_V215system_categoryEv@plt>
+ c29744: mov x2, x0
+ c29748: mov x1, x25
+ c2974c: mov x0, x22
+ c29750: str x2, [sp, #0x198]
+ c29754: bl 0x391c88 <_ZNSt10filesystem6statusERKNS_7__cxx114pathERSt10error_code@plt>
+ c29758: sxtb w0, w0
+ c2975c: ldr w1, [sp, #0x190]
+ c29760: cmp w1, #0x0
+ c29764: ccmp w0, #0x1, #0x0, eq
+ c29768: b.ne 0xc296e4 <.text+0x88cae4>
+ c2976c: ldr x0, [sp, #0x470]
+ c29770: mov w1, #0x1 // =1
+ c29774: bl 0x397cf8 <access@plt>
+ c29778: cbnz w0, 0xc296e4 <.text+0x88cae4>
+ c2977c: mov x1, x22
+ c29780: add x26, sp, #0x410
+ c29784: mov x0, x26
+ c29788: bl 0x51fb80 <.text+0x182f80>
+ c2978c: mov x0, x22
+ c29790: bl 0x51c220 <.text+0x17f620>
+ c29794: ldr x0, [sp]
+ c29798: mov x1, x26
+ c2979c: bl 0x5200a0 <.text+0x1834a0>
+ c297a0: ldr x1, [sp, #0x3e0]
+ c297a4: ldr x0, [sp, #0x430]
+ c297a8: str x0, [sp, #0x3e0]
+ c297ac: str xzr, [sp, #0x430]
+ c297b0: cbz x1, 0xc297bc <.text+0x88cbbc>
+ c297b4: add x0, sp, #0x3e0
+ c297b8: bl 0x391c48 <_ZNKSt10filesystem7__cxx114path5_List13_Impl_deleterclEPNS2_5_ImplE@plt>
+ c297bc: ldr x1, [sp, #0x410]
+ c297c0: str xzr, [sp, #0x418]
+ c297c4: mov x0, x26
+ c297c8: strb wzr, [x1]
+ c297cc: bl 0x391f08 <_ZNSt10filesystem7__cxx114path14_M_split_cmptsEv@plt>
+ c297d0: mov x0, x26
+ c297d4: bl 0x51c220 <.text+0x17f620>
+ c297d8: add x0, sp, #0x1f0
+ c297dc: bl 0x56e060 <.text+0x1d1460>
+ c297e0: ldr x0, [sp, #0x10]
+ c297e4: bl 0x56e060 <.text+0x1d1460>
+ c297e8: ldr x0, [sp]
+ c297ec: bl 0x392378 <_ZNSt10filesystem6statusERKNS_7__cxx114pathE@plt>
+ c297f0: add w0, w0, #0x1
+ c297f4: and w0, w0, #0xff
+ c297f8: cmp w0, #0x1
+ c297fc: add x0, sp, #0x398
+ c29800: str x0, [sp, #0x20]
+ c29804: b.hi 0xc2a078 <.text+0x88d478>
+ c29808: adrp x1, 0x1bc7000
+ c2980c: str x1, [sp, #0x40]
+ c29810: add x1, x1, #0x10
+ c29814: bl 0x1895ec0 <memfd_create+0x21e9a0>
+ c29818: ldr x0, [sp]
+ c2981c: add x22, sp, #0x470
+ c29820: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29824: ldr x23, [x23, #0xb78]
+ c29828: bl 0x51c220 <.text+0x17f620>
+ c2982c: ldr x0, [sp, #0x40]
+ c29830: add x1, x0, #0x10
+ c29834: mov x0, x22
+ c29838: bl 0x1895ec0 <memfd_create+0x21e9a0>
+ c2983c: ldr x0, [sp, #0x20]
+ c29840: mov x1, x22
+ c29844: bl 0x395308 <_ZNKSt10filesystem7__cxx114path7compareERKS1_@plt>
+ c29848: mov w20, w0
+ c2984c: mov x0, x22
+ c29850: bl 0x51c220 <.text+0x17f620>
+ c29854: cbnz w20, 0xc298ec <.text+0x88ccec>
+ c29858: adrp x0, 0x2b99000
+ c2985c: ldr x0, [x0, #0x558]
+ c29860: adrp x1, 0x1bee000
+ c29864: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29868: ldr x23, [x23, #0xb78]
+ c2986c: add x1, x1, #0x550
+ c29870: mov x2, #0x1a // =26
+ c29874: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c29878: ldr x0, [sp, #0x28]
+ c2987c: ldr x1, [x28, #0x58]
+ c29880: ldr x2, [x0, #0x8]
+ c29884: adrp x0, 0x2b99000
+ c29888: ldr x0, [x0, #0x558]
+ c2988c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c29890: adrp x1, 0x1bee000
+ c29894: add x1, x1, #0x570
+ c29898: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2989c: add x0, x28, #0x30
+ c298a0: mov w1, #0x8 // =8
+ c298a4: str w1, [sp, #0x120]
+ c298a8: ldr x1, [x0, #0x10]
+ c298ac: cbz x1, 0xc2b2e8 <.text+0x88e6e8>
+ c298b0: ldr x2, [x0, #0x18]
+ c298b4: add x1, sp, #0x120
+ c298b8: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c298bc: ldr x23, [x23, #0xb78]
+ c298c0: blr x2
+ c298c4: ldr x0, [sp, #0x20]
+ c298c8: bl 0x51c220 <.text+0x17f620>
+ c298cc: ldr w0, [x28, #0x398]
+ c298d0: ldr x21, [sp, #0x610]
+ c298d4: ldr x22, [sp, #0x618]
+ c298d8: ldr x23, [sp, #0x620]
+ c298dc: ldr x24, [sp, #0x628]
+ c298e0: cmn w0, #0x1
+ c298e4: b.eq 0xc29448 <.text+0x88c848>
+ c298e8: b 0xc2943c <.text+0x88c83c>
+ c298ec: str wzr, [sp, #0x140]
+ c298f0: bl 0x391c98 <_ZNSt3_V215system_categoryEv@plt>
+ c298f4: mov x1, x0
+ c298f8: mov x0, x22
+ c298fc: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29900: ldr x23, [x23, #0xb78]
+ c29904: str x1, [sp, #0x58]
+ c29908: str x1, [sp, #0x148]
+ c2990c: bl 0x394968 <_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEC1Ev@plt>
+ c29910: mov x0, x22
+ c29914: mov w1, #0x1 // =1
+ c29918: bl 0x391798 <_ZNSolsEi@plt>
+ c2991c: adrp x1, 0x1bca000
+ c29920: mov x20, x0
+ c29924: add x1, x1, #0x3f0
+ c29928: mov x2, #0x1 // =1
+ c2992c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c29930: mov x0, x20
+ c29934: mov w1, #0x6 // =6
+ c29938: bl 0x391798 <_ZNSolsEi@plt>
+ c2993c: adrp x1, 0x1bca000
+ c29940: mov x20, x0
+ c29944: add x1, x1, #0x3f0
+ c29948: mov x2, #0x1 // =1
+ c2994c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c29950: mov x0, x20
+ c29954: mov w1, #0x0 // =0
+ c29958: bl 0x391798 <_ZNSolsEi@plt>
+ c2995c: add x20, sp, #0x358
+ c29960: add x0, sp, #0x478
+ c29964: mov x8, x20
+ c29968: str x0, [sp, #0x48]
+ c2996c: str x20, [sp, #0x60]
+ c29970: bl 0x397d08 <_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv@plt>
+ c29974: mov x0, x22
+ c29978: bl 0x394978 <_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev@plt>
+ c2997c: ldr d0, [x28, #0x258]
+ c29980: mov w1, #-0x1 // =-1
+ c29984: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29988: ldr x0, [x0, #0xbd0]
+ c2998c: str w1, [x28, #0x25c]
+ c29990: rev64 v0.2s, v0.2s
+ c29994: ldr x0, [x0]
+ c29998: str d0, [sp, #0x190]
+ c2999c: ldr d0, [x28, #0xc8]
+ c299a0: str w1, [x28, #0xc8]
+ c299a4: str w1, [sp, #0x130]
+ c299a8: str d0, [sp, #0x138]
+ c299ac: bl 0x397d18 <fileno@plt>
+ c299b0: add x9, sp, #0x200
+ c299b4: adrp x2, 0x1bee000
+ c299b8: ldr x8, [sp, #0x20]
+ c299bc: add x2, x2, #0x580
+ c299c0: stp x8, x2, [sp, #0x1f0]
+ c299c4: add x3, sp, #0x140
+ c299c8: add x10, sp, #0x3e8
+ c299cc: adrp x6, 0x1bee000
+ c299d0: adrp x5, 0x1bee000
+ c299d4: add x6, x6, #0x588
+ c299d8: add x5, x5, #0x590
+ c299dc: adrp x4, 0x1bee000
+ c299e0: add x4, x4, #0x598
+ c299e4: stp x6, x5, [x9]
+ c299e8: add x7, sp, #0x3c8
+ c299ec: add x5, sp, #0x138
+ c299f0: stp x4, x20, [x9, #0x10]
+ c299f4: add x2, sp, #0x3d8
+ c299f8: add x4, sp, #0x190
+ c299fc: str x3, [sp, #0x220]
+ c29a00: add x3, sp, #0x130
+ c29a04: mov w6, #0x1 // =1
+ c29a08: str xzr, [sp, #0x3c0]
+ c29a0c: str xzr, [sp, #0x3d0]
+ c29a10: adrp x1, 0x2478000 <_ZTSN12ThreadWeaver9JobFailedE+0xb238>
+ c29a14: strb wzr, [sp, #0x3d8]
+ c29a18: add x1, x1, #0xbd0
+ c29a1c: stp xzr, xzr, [x10]
+ c29a20: add x20, sp, #0x3e8
+ c29a24: stp xzr, xzr, [x10, #0x10]
+ c29a28: str x7, [sp, #0x38]
+ c29a2c: str x4, [sp, #0x70]
+ c29a30: stp x3, x5, [sp, #0x88]
+ c29a34: str w0, [sp, #0x134]
+ c29a38: mov x0, x7
+ c29a3c: str x4, [sp, #0x228]
+ c29a40: str x5, [sp, #0x230]
+ c29a44: str x3, [sp, #0x238]
+ c29a48: str x1, [sp, #0x240]
+ c29a4c: mov x1, x8
+ c29a50: strb w6, [sp, #0x3c0]
+ c29a54: str x2, [sp, #0x3c8]
+ c29a58: bl 0x520e90 <.text+0x184290>
+ c29a5c: ldr x0, [sp, #0x3d0]
+ c29a60: add x20, sp, #0x3e8
+ c29a64: ldr x1, [sp, #0x1f8]
+ c29a68: cbz x0, 0xc2a08c <.text+0x88d48c>
+ c29a6c: add x2, sp, #0x1c0
+ c29a70: mov x0, x22
+ c29a74: bl 0x51cae0 <.text+0x17fee0>
+ c29a78: mov x1, x22
+ c29a7c: mov x0, x20
+ c29a80: bl 0x56f2f0 <.text+0x1d26f0>
+ c29a84: mov x0, x22
+ c29a88: bl 0x51c280 <.text+0x17f680>
+ c29a8c: ldr x0, [sp, #0x3d0]
+ c29a90: ldr x1, [sp, #0x200]
+ c29a94: cbnz x0, 0xc2a454 <.text+0x88d854>
+ c29a98: ldr x0, [sp, #0x38]
+ c29a9c: add x20, sp, #0x3e8
+ c29aa0: bl 0x540e40 <.text+0x1a4240>
+ c29aa4: ldr x0, [sp, #0x3d0]
+ c29aa8: ldr x1, [sp, #0x208]
+ c29aac: cbnz x0, 0xc2a47c <.text+0x88d87c>
+ c29ab0: ldr x0, [sp, #0x38]
+ c29ab4: add x20, sp, #0x3e8
+ c29ab8: bl 0x540e40 <.text+0x1a4240>
+ c29abc: ldr x0, [sp, #0x3d0]
+ c29ac0: ldr x1, [sp, #0x210]
+ c29ac4: cbnz x0, 0xc2a42c <.text+0x88d82c>
+ c29ac8: ldr x0, [sp, #0x38]
+ c29acc: add x20, sp, #0x3e8
+ c29ad0: bl 0x540e40 <.text+0x1a4240>
+ c29ad4: ldr x0, [sp, #0x3d0]
+ c29ad8: ldr x1, [sp, #0x218]
+ c29adc: cbnz x0, 0xc2a4a4 <.text+0x88d8a4>
+ c29ae0: ldr x0, [sp, #0x38]
+ c29ae4: add x20, sp, #0x3e8
+ c29ae8: bl 0x520e90 <.text+0x184290>
+ c29aec: ldrb w0, [sp, #0x3c0]
+ c29af0: ldr x1, [sp, #0x220]
+ c29af4: str x1, [sp, #0x400]
+ c29af8: ldrb w21, [sp, #0x3c1]
+ c29afc: tbnz w0, #0x0, 0xc29b10 <.text+0x88cf10>
+ c29b00: ldr x1, [sp, #0x3e8]
+ c29b04: ldr x0, [sp, #0x3f0]
+ c29b08: cmp x1, x0
+ c29b0c: b.eq 0xc2a0a0 <.text+0x88d4a0>
+ c29b10: tbz w21, #0x0, 0xc2a4b4 <.text+0x88d8b4>
+ c29b14: ldr x1, [sp, #0x3c8]
+ c29b18: add x4, sp, #0x388
+ c29b1c: ldr x2, [sp, #0x3d0]
+ c29b20: add x0, sp, #0x378
+ c29b24: add x20, sp, #0x3e8
+ c29b28: mov w3, #0x0 // =0
+ c29b2c: add x2, x1, x2
+ c29b30: stp x4, x0, [sp, #0x28]
+ c29b34: str x4, [sp, #0x378]
+ c29b38: bl 0x51c6c8 <.text+0x17fac8>
+ c29b3c: ldr x24, [sp, #0x3e8]
+ c29b40: ldr x0, [sp, #0x3f0]
+ c29b44: str x0, [sp, #0x10]
+ c29b48: cmp x24, x0
+ c29b4c: b.eq 0xc29ce8 <.text+0x88d0e8>
+ c29b50: adrp x26, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29b54: ldr x26, [x26, #0xb78]
+ c29b58: adrp x20, 0x1bd9000
+ c29b5c: adrp x21, 0x1bd9000
+ c29b60: add x20, x20, #0xcc8
+ c29b64: add x21, x21, #0xcc9
+ c29b68: ldp x1, x8, [x24]
+ c29b6c: add x2, x1, x8
+ c29b70: add x5, x1, #0x1
+ c29b74: mov x4, x1
+ c29b78: cmp x1, x2
+ c29b7c: b.eq 0xc29c5c <.text+0x88d05c>
+ c29b80: cmp x2, x1
+ c29b84: b.eq 0xc2a178 <.text+0x88d578>
+ c29b88: ldrb w0, [x4]
+ c29b8c: cmp w0, #0x22
+ c29b90: b.ne 0xc2a178 <.text+0x88d578>
+ c29b94: stp x20, x21, [sp, #0x1c0]
+ c29b98: adrp x6, 0x1bee000
+ c29b9c: adrp x7, 0x1bee000
+ c29ba0: add x6, x6, #0x548
+ c29ba4: add x7, x7, #0x54a
+ c29ba8: cmp x5, x4
+ c29bac: b.eq 0xc29be0 <.text+0x88cfe0>
+ c29bb0: add x1, sp, #0xe0
+ c29bb4: mov x23, x26
+ c29bb8: ldp x2, x3, [sp, #0x1c0]
+ c29bbc: stp x2, x3, [sp, #0xe0]
+ c29bc0: ldr x0, [sp, #0x1d0]
+ c29bc4: str x0, [x1, #0x10]
+ c29bc8: mov x2, x6
+ c29bcc: mov x3, x7
+ c29bd0: mov x0, x24
+ c29bd4: bl 0x1241900 <.text+0xea4d00>
+ c29bd8: ldp x1, x8, [x24]
+ c29bdc: add x2, x1, x8
+ c29be0: asr x3, x8, #2
+ c29be4: cmp x3, #0x0
+ c29be8: b.le 0xc2a354 <.text+0x88d754>
+ c29bec: add x3, x1, x3, lsl #2
+ c29bf0: b 0xc29c24 <.text+0x88d024>
+ c29bf4: ldrb w0, [x1, #0x1]
+ c29bf8: cmp w0, #0x20
+ c29bfc: b.eq 0xc2a348 <.text+0x88d748>
+ c29c00: ldrb w0, [x1, #0x2]
+ c29c04: cmp w0, #0x20
+ c29c08: b.eq 0xc2a340 <.text+0x88d740>
+ c29c0c: ldrb w0, [x1, #0x3]
+ c29c10: cmp w0, #0x20
+ c29c14: b.eq 0xc2a37c <.text+0x88d77c>
+ c29c18: add x1, x1, #0x4
+ c29c1c: cmp x1, x3
+ c29c20: b.eq 0xc2a350 <.text+0x88d750>
+ c29c24: ldrb w0, [x1]
+ c29c28: cmp w0, #0x20
+ c29c2c: b.ne 0xc29bf4 <.text+0x88cff4>
+ c29c30: cmp x2, x1
+ c29c34: b.eq 0xc29c5c <.text+0x88d05c>
+ c29c38: mov x23, x26
+ c29c3c: mov x0, x24
+ c29c40: mov w3, #0x22 // =34
+ c29c44: mov x2, #0x0 // =0
+ c29c48: mov x1, #0x0 // =0
+ c29c4c: bl 0x188be00 <memfd_create+0x2148e0>
+ c29c50: mov x0, x24
+ c29c54: mov w1, #0x22 // =34
+ c29c58: bl 0x623ac0 <.text+0x286ec0>
+ c29c5c: ldr x1, [sp, #0x380]
+ c29c60: cbz x1, 0xc29c78 <.text+0x88d078>
+ c29c64: ldr x0, [sp, #0x30]
+ c29c68: mov x23, x26
+ c29c6c: mov w1, #0x20 // =32
+ c29c70: bl 0x623ac0 <.text+0x286ec0>
+ c29c74: ldr x1, [sp, #0x380]
+ c29c78: mov x0, #0x7fffffffffffffff // =9223372036854775807
+ c29c7c: ldp x3, x4, [x24]
+ c29c80: sub x0, x0, x1
+ c29c84: cmp x4, x0
+ c29c88: b.hi 0xc2b388 <.text+0x88e788>
+ c29c8c: ldr x6, [sp, #0x28]
+ c29c90: mov x5, #0xf // =15
+ c29c94: ldr x2, [sp, #0x378]
+ c29c98: add x25, x4, x1
+ c29c9c: ldr x0, [sp, #0x388]
+ c29ca0: cmp x2, x6
+ c29ca4: csel x0, x0, x5, ne
+ c29ca8: cmp x25, x0
+ c29cac: b.hi 0xc2a308 <.text+0x88d708>
+ c29cb0: cbz x4, 0xc29cd0 <.text+0x88d0d0>
+ c29cb4: add x0, x2, x1
+ c29cb8: cmp x4, #0x1
+ c29cbc: b.eq 0xc2a500 <.text+0x88d900>
+ c29cc0: mov x2, x4
+ c29cc4: mov x1, x3
+ c29cc8: bl 0x3909b8 <memcpy@plt>
+ c29ccc: ldr x2, [sp, #0x378]
+ c29cd0: str x25, [sp, #0x380]
+ c29cd4: ldr x0, [sp, #0x10]
+ c29cd8: add x24, x24, #0x20
+ c29cdc: strb wzr, [x2, x25]
+ c29ce0: cmp x0, x24
+ c29ce4: b.ne 0xc29b68 <.text+0x88cf68>
+ c29ce8: add x0, sp, #0x170
+ c29cec: adrp x1, 0x1bd2000
+ c29cf0: mov x2, x0
+ c29cf4: add x1, x1, #0x8e8
+ c29cf8: str x0, [sp, #0x50]
+ c29cfc: mov x0, x22
+ c29d00: bl 0x51cae0 <.text+0x17fee0>
+ c29d04: ldr x1, [sp, #0x30]
+ c29d08: add x20, sp, #0x490
+ c29d0c: mov x0, x20
+ c29d10: bl 0x51fc20 <.text+0x183020>
+ c29d14: add x0, sp, #0x1c0
+ c29d18: mov x1, x22
+ c29d1c: mov x2, #0x2 // =2
+ c29d20: str x0, [sp, #0x10]
+ c29d24: bl 0x188f3ec <memfd_create+0x217ecc>
+ c29d28: mov x0, x20
+ c29d2c: bl 0x51c280 <.text+0x17f680>
+ c29d30: mov x0, x22
+ c29d34: bl 0x51c280 <.text+0x17f680>
+ c29d38: adrp x1, 0x1bd2000
+ c29d3c: mov x0, x22
+ c29d40: add x1, x1, #0x8e0
+ c29d44: bl 0x1895ec0 <memfd_create+0x21e9a0>
+ c29d48: ldr x3, [sp, #0x50]
+ c29d4c: add x26, sp, #0x410
+ c29d50: ldr x1, [sp, #0x470]
+ c29d54: mov x0, x26
+ c29d58: ldr x2, [sp, #0x478]
+ c29d5c: bl 0x51c960 <.text+0x17fd60>
+ c29d60: mov x0, x22
+ c29d64: bl 0x51c220 <.text+0x17f620>
+ c29d68: mov x1, x26
+ c29d6c: mov x0, x22
+ c29d70: bl 0x51fc20 <.text+0x183020>
+ c29d74: ldr q0, [sp, #0x1c0]
+ c29d78: add x4, sp, #0x4a0
+ c29d7c: ldr x1, [sp, #0x1d0]
+ c29d80: mov x0, x26
+ c29d84: str q0, [sp, #0x490]
+ c29d88: stp x1, xzr, [x4]
+ c29d8c: stp xzr, xzr, [x4, #0x10]
+ c29d90: stp xzr, xzr, [sp, #0x1c0]
+ c29d94: str xzr, [sp, #0x1d0]
+ c29d98: bl 0x51c280 <.text+0x17f680>
+ c29d9c: ldr x0, [sp, #0x10]
+ c29da0: bl 0x520550 <.text+0x183950>
+ c29da4: ldr x0, [sp, #0x30]
+ c29da8: bl 0x51c280 <.text+0x17f680>
+ c29dac: ldr x21, [sp, #0x400]
+ c29db0: mov x1, x22
+ c29db4: mov x0, x26
+ c29db8: bl 0x51fc20 <.text+0x183020>
+ c29dbc: ldr q2, [sp, #0x490]
+ c29dc0: mov x0, x20
+ c29dc4: ldr q1, [sp, #0x4a0]
+ c29dc8: str x21, [sp, #0x460]
+ c29dcc: ldr q0, [sp, #0x4b0]
+ c29dd0: str q2, [sp, #0x430]
+ c29dd4: add x20, sp, #0x488
+ c29dd8: str q1, [sp, #0x440]
+ c29ddc: add x21, sp, #0x4b8
+ c29de0: add x25, sp, #0x1f0
+ c29de4: str q0, [sp, #0x450]
+ c29de8: str xzr, [sp, #0x490]
+ c29dec: str xzr, [sp, #0x498]
+ c29df0: str xzr, [sp, #0x4a0]
+ c29df4: bl 0x520550 <.text+0x183950>
+ c29df8: mov x0, x22
+ c29dfc: bl 0x51c280 <.text+0x17f680>
+ c29e00: adrp x0, 0x2b99000
+ c29e04: ldr x0, [x0, #0x988]
+ c29e08: mov w1, #-0x1 // =-1
+ c29e0c: ldr x3, [sp, #0x10]
+ c29e10: str w1, [sp, #0x470]
+ c29e14: ldr x2, [x0]
+ c29e18: str x20, [sp, #0x478]
+ c29e1c: ldr x0, [sp, #0x58]
+ c29e20: str x0, [sp, #0x4a0]
+ c29e24: add x0, sp, #0x4a8
+ c29e28: str xzr, [sp, #0x480]
+ c29e2c: strb wzr, [sp, #0x488]
+ c29e30: str wzr, [sp, #0x498]
+ c29e34: strb wzr, [sp, #0x4b8]
+ c29e38: strb wzr, [sp, #0x4e0]
+ c29e3c: stp x21, xzr, [x0]
+ c29e40: stp x3, xzr, [x0, #0x20]
+ c29e44: mov x0, #0x18 // =24
+ c29e48: stp x26, x25, [sp, #0x1c0]
+ c29e4c: str xzr, [sp, #0x4d8]
+ c29e50: str x2, [sp, #0x4e8]
+ c29e54: str w1, [sp, #0x4f0]
+ c29e58: str xzr, [sp, #0x4f8]
+ c29e5c: bl 0x3915d8 <_Znwm@plt>
+ c29e60: mov x2, #0x100000001 // =4294967297
+ c29e64: adrp x1, 0x2a98000 <_ZN13QMetaSequence12MetaSequenceI5QListI6QColorEE5valueE+0x5118>
+ c29e68: add x1, x1, #0x4b0
+ c29e6c: add x8, sp, #0x170
+ c29e70: add x1, x1, #0x228
+ c29e74: stp x1, x2, [x0]
+ c29e78: add x2, x0, #0x10
+ c29e7c: mov w1, #0x17f // =383
+ c29e80: str w1, [x0, #0x10]
+ c29e84: str x8, [sp, #0x50]
+ c29e88: str x2, [sp, #0x4f8]
+ c29e8c: str x0, [sp, #0x500]
+ c29e90: mov x0, x22
+ c29e94: bl 0x1927690 <memfd_create+0x2b0170>
+ c29e98: ldr x0, [sp, #0x500]
+ c29e9c: cbz x0, 0xc29ea4 <.text+0x88d2a4>
+ c29ea0: bl 0x51d1f0 <.text+0x1805f0>
+ c29ea4: add x0, sp, #0x4a8
+ c29ea8: bl 0x51c280 <.text+0x17f680>
+ c29eac: ldr x0, [sp, #0x48]
+ c29eb0: bl 0x51c280 <.text+0x17f680>
+ c29eb4: ldr x0, [sp, #0x448]
+ c29eb8: cbz x0, 0xc29ec8 <.text+0x88d2c8>
+ c29ebc: ldr x1, [sp, #0x458]
+ c29ec0: sub x1, x1, x0
+ c29ec4: bl 0x391ae8 <_ZdlPvm@plt>
+ c29ec8: add x0, sp, #0x430
+ c29ecc: bl 0x520550 <.text+0x183950>
+ c29ed0: mov x0, x26
+ c29ed4: bl 0x51c280 <.text+0x17f680>
+ c29ed8: add x0, sp, #0x3e8
+ c29edc: bl 0x520550 <.text+0x183950>
+ c29ee0: ldr x0, [sp, #0x38]
+ c29ee4: bl 0x51c280 <.text+0x17f680>
+ c29ee8: add x3, sp, #0x200
+ c29eec: ldrh w1, [sp, #0x188]
+ c29ef0: ldr w2, [sp, #0x170]
+ c29ef4: mov w0, #-0x1 // =-1
+ c29ef8: strh w1, [sp, #0x208]
+ c29efc: ldur q0, [x3, #-0x88]
+ c29f00: str w2, [x28, #0x398]
+ c29f04: str xzr, [sp, #0x200]
+ c29f08: str w0, [sp, #0x1f0]
+ c29f0c: ldr x0, [x28, #0x3a8]
+ c29f10: str xzr, [sp, #0x1f8]
+ c29f14: str q0, [x28, #0x3a0]
+ c29f18: cbz x0, 0xc29f24 <.text+0x88d324>
+ c29f1c: bl 0x51d1f0 <.text+0x1805f0>
+ c29f20: ldrh w1, [sp, #0x208]
+ c29f24: strh w1, [x28, #0x3b0]
+ c29f28: mov x0, x25
+ c29f2c: strb wzr, [sp, #0x208]
+ c29f30: bl 0x123c7c0 <.text+0xe9fbc0>
+ c29f34: ldr w0, [sp, #0x130]
+ c29f38: cmn w0, #0x1
+ c29f3c: b.eq 0xc29f44 <.text+0x88d344>
+ c29f40: bl 0x390a48 <close@plt>
+ c29f44: ldr x0, [sp, #0x60]
+ c29f48: bl 0x51c280 <.text+0x17f680>
+ c29f4c: ldr w0, [sp, #0x140]
+ c29f50: cbz w0, 0xc2a510 <.text+0x88d910>
+ c29f54: adrp x0, 0x2b99000
+ c29f58: ldr x0, [x0, #0x558]
+ c29f5c: adrp x1, 0x1bee000
+ c29f60: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29f64: ldr x23, [x23, #0xb78]
+ c29f68: add x1, x1, #0x5a0
+ c29f6c: mov x2, #0x22 // =34
+ c29f70: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c29f74: ldr x0, [sp, #0x148]
+ c29f78: mov x8, x22
+ c29f7c: ldr w1, [sp, #0x140]
+ c29f80: ldr x2, [x0]
+ c29f84: ldr x2, [x2, #0x20]
+ c29f88: blr x2
+ c29f8c: ldr x1, [sp, #0x470]
+ c29f90: ldr x2, [sp, #0x478]
+ c29f94: adrp x0, 0x2b99000
+ c29f98: ldr x0, [x0, #0x558]
+ c29f9c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c29fa0: adrp x23, 0x1bca000
+ c29fa4: add x1, x23, #0x4b8
+ c29fa8: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c29fac: mov x0, x22
+ c29fb0: bl 0x51c280 <.text+0x17f680>
+ c29fb4: add x0, x28, #0x30
+ c29fb8: mov w1, #0x9 // =9
+ c29fbc: str w1, [sp, #0x128]
+ c29fc0: ldr x1, [x0, #0x10]
+ c29fc4: cbz x1, 0xc2b2a0 <.text+0x88e6a0>
+ c29fc8: ldr x2, [x0, #0x18]
+ c29fcc: add x1, sp, #0x128
+ c29fd0: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c29fd4: ldr x23, [x23, #0xb78]
+ c29fd8: blr x2
+ c29fdc: b 0xc298c4 <.text+0x88ccc4>
+ c29fe0: adrp x0, 0x2b99000
+ c29fe4: ldr x0, [x0, #0x558]
+ c29fe8: adrp x1, 0x1bee000
+ c29fec: add x1, x1, #0x718
+ c29ff0: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c29ff4: add x0, x28, #0x30
+ c29ff8: mov w1, #0xa // =10
+ c29ffc: str w1, [sp, #0x190]
+ c2a000: ldr x1, [x0, #0x10]
+ c2a004: cbz x1, 0xc2b358 <.text+0x88e758>
+ c2a008: ldr x2, [x0, #0x18]
+ c2a00c: add x1, sp, #0x190
+ c2a010: blr x2
+ c2a014: b 0xc2947c <.text+0x88c87c>
+ c2a018: adrp x0, 0x1bc7000
+ c2a01c: add x0, x0, #0x90
+ c2a020: mov x1, #0x2 // =2
+ c2a024: stp x1, xzr, [sp, #0x1f0]
+ c2a028: str xzr, [sp, #0x200]
+ c2a02c: str x0, [sp, #0x208]
+ c2a030: bl 0xc694ac <.text+0x8cc8ac>
+ c2a034: add x1, sp, #0x1c0
+ c2a038: mov x20, x1
+ c2a03c: mov x1, x0
+ c2a040: mov x8, x20
+ c2a044: add x0, sp, #0x1f0
+ c2a048: str x20, [sp, #0x10]
+ c2a04c: bl 0x395828 <_ZNK14QMessageLogger7warningERK16QLoggingCategory@plt>
+ c2a050: adrp x1, 0x1bee000
+ c2a054: mov x0, x20
+ c2a058: add x1, x1, #0x770
+ c2a05c: bl 0x51bea8 <.text+0x17f2a8>
+ c2a060: mov x0, x20
+ c2a064: bl 0x391c18 <_ZN6QDebugD1Ev@plt>
+ c2a068: mov w0, #0x1 // =1
+ c2a06c: str w0, [x19, #0xf8]
+ c2a070: mov w0, #0x1 // =1
+ c2a074: b 0xc294d0 <.text+0x88c8d0>
+ c2a078: ldr x1, [sp]
+ c2a07c: bl 0x51c5ec <.text+0x17f9ec>
+ c2a080: adrp x0, 0x1bc7000
+ c2a084: str x0, [sp, #0x40]
+ c2a088: b 0xc29818 <.text+0x88cc18>
+ c2a08c: ldr x0, [sp, #0x38]
+ c2a090: bl 0x540e40 <.text+0x1a4240>
+ c2a094: b 0xc29a8c <.text+0x88ce8c>
+ c2a098: mov x26, #0x0 // =0
+ c2a09c: b 0xc2958c <.text+0x88c98c>
+ c2a0a0: tbz w21, #0x0, 0xc2aeac <.text+0x88e2ac>
+ c2a0a4: add x0, sp, #0x170
+ c2a0a8: adrp x1, 0x1bd2000
+ c2a0ac: mov x2, x0
+ c2a0b0: add x1, x1, #0x8e8
+ c2a0b4: str x0, [sp, #0x50]
+ c2a0b8: mov x0, x22
+ c2a0bc: bl 0x51cae0 <.text+0x17fee0>
+ c2a0c0: ldr x1, [sp, #0x3c8]
+ c2a0c4: add x3, sp, #0x4a0
+ c2a0c8: ldr x2, [sp, #0x3d0]
+ c2a0cc: add x20, sp, #0x490
+ c2a0d0: mov x0, x20
+ c2a0d4: str x3, [sp, #0x490]
+ c2a0d8: add x2, x1, x2
+ c2a0dc: mov w3, #0x0 // =0
+ c2a0e0: bl 0x51c6c8 <.text+0x17fac8>
+ c2a0e4: add x0, sp, #0x1c0
+ c2a0e8: mov x1, x22
+ c2a0ec: mov x2, #0x2 // =2
+ c2a0f0: str x0, [sp, #0x10]
+ c2a0f4: bl 0x188f3ec <memfd_create+0x217ecc>
+ c2a0f8: mov x0, x20
+ c2a0fc: bl 0x51c280 <.text+0x17f680>
+ c2a100: mov x0, x22
+ c2a104: bl 0x51c280 <.text+0x17f680>
+ c2a108: adrp x1, 0x1bd2000
+ c2a10c: mov x0, x22
+ c2a110: add x1, x1, #0x8e0
+ c2a114: bl 0x1895ec0 <memfd_create+0x21e9a0>
+ c2a118: ldr x3, [sp, #0x50]
+ c2a11c: add x26, sp, #0x410
+ c2a120: ldr x1, [sp, #0x470]
+ c2a124: mov x0, x26
+ c2a128: ldr x2, [sp, #0x478]
+ c2a12c: bl 0x51c960 <.text+0x17fd60>
+ c2a130: mov x0, x22
+ c2a134: bl 0x51c220 <.text+0x17f620>
+ c2a138: mov x1, x26
+ c2a13c: mov x0, x22
+ c2a140: bl 0x51fc20 <.text+0x183020>
+ c2a144: ldr q0, [sp, #0x1c0]
+ c2a148: add x3, sp, #0x4a0
+ c2a14c: ldr x1, [sp, #0x1d0]
+ c2a150: mov x0, x26
+ c2a154: str q0, [sp, #0x490]
+ c2a158: stp x1, xzr, [x3]
+ c2a15c: stp xzr, xzr, [x3, #0x10]
+ c2a160: stp xzr, xzr, [sp, #0x1c0]
+ c2a164: str xzr, [sp, #0x1d0]
+ c2a168: bl 0x51c280 <.text+0x17f680>
+ c2a16c: ldr x0, [sp, #0x10]
+ c2a170: bl 0x520550 <.text+0x183950>
+ c2a174: b 0xc29dac <.text+0x88d1ac>
+ c2a178: add x4, x4, #0x1
+ c2a17c: add x5, x5, #0x1
+ c2a180: cmp x2, x4
+ c2a184: b.ne 0xc29b88 <.text+0x88cf88>
+ c2a188: b 0xc29be0 <.text+0x88cfe0>
+ c2a18c: add x22, sp, #0x470
+ c2a190: adrp x1, 0x1bd6000
+ c2a194: mov x0, x22
+ c2a198: add x1, x1, #0xe68
+ c2a19c: add x20, x28, #0x80
+ c2a1a0: mov x2, x25
+ c2a1a4: bl 0x51cae0 <.text+0x17fee0>
+ c2a1a8: ldr x1, [sp, #0x470]
+ c2a1ac: mov x0, x20
+ c2a1b0: ldr x2, [sp, #0x478]
+ c2a1b4: adrp x23, 0x1bca000
+ c2a1b8: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a1bc: adrp x24, 0x1bc8000
+ c2a1c0: mov x21, x0
+ c2a1c4: add x1, x24, #0x670
+ c2a1c8: mov x2, #0x1 // =1
+ c2a1cc: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a1d0: adrp x1, 0x1bee000
+ c2a1d4: mov x0, x21
+ c2a1d8: add x1, x1, #0x740
+ c2a1dc: mov x2, #0x5 // =5
+ c2a1e0: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a1e4: mov x0, x21
+ c2a1e8: add x1, x23, #0x4b8
+ c2a1ec: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2a1f0: add x0, sp, #0x1c0
+ c2a1f4: add x26, sp, #0x410
+ c2a1f8: mov x2, x0
+ c2a1fc: adrp x1, 0x1bee000
+ c2a200: add x1, x1, #0x748
+ c2a204: str x0, [sp, #0x10]
+ c2a208: mov x0, x26
+ c2a20c: bl 0x51cae0 <.text+0x17fee0>
+ c2a210: ldr x1, [sp, #0x410]
+ c2a214: mov x0, x20
+ c2a218: ldr x2, [sp, #0x418]
+ c2a21c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a220: add x1, x24, #0x670
+ c2a224: mov x21, x0
+ c2a228: mov x2, #0x1 // =1
+ c2a22c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a230: mov w1, w27
+ c2a234: mov x0, x21
+ c2a238: bl 0x391798 <_ZNSolsEi@plt>
+ c2a23c: add x1, x23, #0x4b8
+ c2a240: mov x2, #0x1 // =1
+ c2a244: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a248: mov x0, x26
+ c2a24c: bl 0x51c280 <.text+0x17f680>
+ c2a250: mov x0, x22
+ c2a254: bl 0x51c280 <.text+0x17f680>
+ c2a258: add x1, x23, #0x4b8
+ c2a25c: mov x0, x20
+ c2a260: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2a264: sbfiz x21, x27, #2, #32
+ c2a268: mov x0, x20
+ c2a26c: mov x23, #0x0 // =0
+ c2a270: bl 0x397d28 <_ZNSo5flushEv@plt>
+ c2a274: ldr w0, [x28]
+ c2a278: cmp w0, #0x0
+ c2a27c: b.le 0xc2a2a4 <.text+0x88d6a4>
+ c2a280: ldr x24, [sp, #0x18]
+ c2a284: mov x2, x21
+ c2a288: ldr x1, [x24, x23, lsl #3]
+ c2a28c: mov x0, x20
+ c2a290: add x23, x23, #0x1
+ c2a294: bl 0x397d38 <_ZNSo5writeEPKcl@plt>
+ c2a298: ldr w0, [x28]
+ c2a29c: cmp w0, w23
+ c2a2a0: b.gt 0xc2a284 <.text+0x88d684>
+ c2a2a4: mov x0, x20
+ c2a2a8: bl 0x397d28 <_ZNSo5flushEv@plt>
+ c2a2ac: ldr w0, [x28, #0x2b0]
+ c2a2b0: cbz w0, 0xc2a384 <.text+0x88d784>
+ c2a2b4: adrp x0, 0x2b99000
+ c2a2b8: ldr x0, [x0, #0x558]
+ c2a2bc: adrp x1, 0x1bee000
+ c2a2c0: add x1, x1, #0x718
+ c2a2c4: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2a2c8: add x0, x28, #0x30
+ c2a2cc: mov w1, #0xa // =10
+ c2a2d0: str w1, [sp, #0x1f0]
+ c2a2d4: ldr x1, [x0, #0x10]
+ c2a2d8: cbz x1, 0xc2b348 <.text+0x88e748>
+ c2a2dc: ldr x2, [x0, #0x18]
+ c2a2e0: mov x1, x25
+ c2a2e4: blr x2
+ c2a2e8: ldr x21, [sp, #0x610]
+ c2a2ec: ldr x22, [sp, #0x618]
+ c2a2f0: ldr x23, [sp, #0x620]
+ c2a2f4: ldr x24, [sp, #0x628]
+ c2a2f8: b 0xc2947c <.text+0x88c87c>
+ c2a2fc: ldrb w1, [x25]
+ c2a300: strb w1, [x20, #0x10]
+ c2a304: b 0xc295c0 <.text+0x88c9c0>
+ c2a308: ldr x0, [sp, #0x30]
+ c2a30c: mov x23, x26
+ c2a310: mov x2, #0x0 // =0
+ c2a314: bl 0x5201c0 <.text+0x1835c0>
+ c2a318: ldr x2, [sp, #0x378]
+ c2a31c: b 0xc29cd0 <.text+0x88d0d0>
+ c2a320: str x26, [sp, #0x1f8]
+ c2a324: adrp x0, 0x1bc7000
+ c2a328: add x26, sp, #0x410
+ c2a32c: mov x1, x0
+ c2a330: mov x0, x26
+ c2a334: add x1, x1, #0x10
+ c2a338: bl 0x1895ec0 <memfd_create+0x21e9a0>
+ c2a33c: b 0xc29794 <.text+0x88cb94>
+ c2a340: add x1, x1, #0x2
+ c2a344: b 0xc29c30 <.text+0x88d030>
+ c2a348: add x1, x1, #0x1
+ c2a34c: b 0xc29c30 <.text+0x88d030>
+ c2a350: sub x8, x2, x1
+ c2a354: cmp x8, #0x2
+ c2a358: b.eq 0xc2ad08 <.text+0x88e108>
+ c2a35c: cmp x8, #0x3
+ c2a360: b.eq 0xc2acf8 <.text+0x88e0f8>
+ c2a364: cmp x8, #0x1
+ c2a368: b.ne 0xc29c5c <.text+0x88d05c>
+ c2a36c: ldrb w0, [x1]
+ c2a370: cmp w0, #0x20
+ c2a374: b.ne 0xc29c5c <.text+0x88d05c>
+ c2a378: b 0xc29c30 <.text+0x88d030>
+ c2a37c: add x1, x1, #0x3
+ c2a380: b 0xc29c30 <.text+0x88d030>
+ c2a384: add x0, x28, #0x208
+ c2a388: mov x8, x25
+ c2a38c: bl 0x1240bf0 <.text+0xea3ff0>
+ c2a390: ldr x2, [sp, #0x10]
+ c2a394: adrp x1, 0x1bee000
+ c2a398: mov x0, x22
+ c2a39c: add x1, x1, #0x758
+ c2a3a0: bl 0x51cae0 <.text+0x17fee0>
+ c2a3a4: adrp x1, 0x1bee000
+ c2a3a8: add x2, sp, #0x190
+ c2a3ac: add x1, x1, #0x5d8
+ c2a3b0: mov x0, x26
+ c2a3b4: bl 0x51cae0 <.text+0x17fee0>
+ c2a3b8: mov x0, x26
+ c2a3bc: bl 0x51c280 <.text+0x17f680>
+ c2a3c0: mov x0, x22
+ c2a3c4: bl 0x51c280 <.text+0x17f680>
+ c2a3c8: mov x1, x25
+ c2a3cc: add x0, x28, #0x30
+ c2a3d0: bl 0x123cfa4 <.text+0xea03a4>
+ c2a3d4: ldr x2, [sp, #0x10]
+ c2a3d8: adrp x1, 0x1bee000
+ c2a3dc: mov x0, x22
+ c2a3e0: add x1, x1, #0x760
+ c2a3e4: bl 0x51cae0 <.text+0x17fee0>
+ c2a3e8: mov x1, x22
+ c2a3ec: mov x0, x25
+ c2a3f0: bl 0x123cccc <.text+0xea00cc>
+ c2a3f4: mov w20, w0
+ c2a3f8: mov x0, x22
+ c2a3fc: bl 0x51c280 <.text+0x17f680>
+ c2a400: mov w1, w20
+ c2a404: mov x0, x28
+ c2a408: bl 0x123d3ec <.text+0xea07ec>
+ c2a40c: ldr x1, [sp, #0x200]
+ c2a410: mov x0, x25
+ c2a414: bl 0x5409e8 <.text+0x1a3de8>
+ c2a418: ldr x21, [sp, #0x610]
+ c2a41c: ldr x22, [sp, #0x618]
+ c2a420: ldr x23, [sp, #0x620]
+ c2a424: ldr x24, [sp, #0x628]
+ c2a428: b 0xc2947c <.text+0x88c87c>
+ c2a42c: add x20, sp, #0x3e8
+ c2a430: add x2, sp, #0x1c0
+ c2a434: mov x0, x22
+ c2a438: bl 0x51cae0 <.text+0x17fee0>
+ c2a43c: mov x1, x22
+ c2a440: mov x0, x20
+ c2a444: bl 0x56f2f0 <.text+0x1d26f0>
+ c2a448: mov x0, x22
+ c2a44c: bl 0x51c280 <.text+0x17f680>
+ c2a450: b 0xc29ad4 <.text+0x88ced4>
+ c2a454: add x20, sp, #0x3e8
+ c2a458: add x2, sp, #0x1c0
+ c2a45c: mov x0, x22
+ c2a460: bl 0x51cae0 <.text+0x17fee0>
+ c2a464: mov x1, x22
+ c2a468: mov x0, x20
+ c2a46c: bl 0x56f2f0 <.text+0x1d26f0>
+ c2a470: mov x0, x22
+ c2a474: bl 0x51c280 <.text+0x17f680>
+ c2a478: b 0xc29aa4 <.text+0x88cea4>
+ c2a47c: add x20, sp, #0x3e8
+ c2a480: add x2, sp, #0x1c0
+ c2a484: mov x0, x22
+ c2a488: bl 0x51cae0 <.text+0x17fee0>
+ c2a48c: mov x1, x22
+ c2a490: mov x0, x20
+ c2a494: bl 0x56f2f0 <.text+0x1d26f0>
+ c2a498: mov x0, x22
+ c2a49c: bl 0x51c280 <.text+0x17f680>
+ c2a4a0: b 0xc29abc <.text+0x88cebc>
+ c2a4a4: add x20, sp, #0x3e8
+ c2a4a8: mov x0, x20
+ c2a4ac: bl 0x62a788 <.text+0x28db88>
+ c2a4b0: b 0xc29aec <.text+0x88ceec>
+ c2a4b4: ldr x1, [sp, #0x38]
+ c2a4b8: mov x0, x22
+ c2a4bc: add x26, sp, #0x410
+ c2a4c0: add x20, sp, #0x490
+ c2a4c4: bl 0x51fc20 <.text+0x183020>
+ c2a4c8: str xzr, [sp, #0x4a8]
+ c2a4cc: add x0, sp, #0x1c0
+ c2a4d0: str x0, [sp, #0x10]
+ c2a4d4: add x0, sp, #0x4e0
+ c2a4d8: str xzr, [sp, #0x4b0]
+ c2a4dc: str xzr, [sp, #0x4b8]
+ c2a4e0: ldur q0, [x0, #-0xf8]
+ c2a4e4: str xzr, [sp, #0x3e8]
+ c2a4e8: ldr x0, [sp, #0x3f8]
+ c2a4ec: str xzr, [sp, #0x3f0]
+ c2a4f0: str xzr, [sp, #0x3f8]
+ c2a4f4: str q0, [sp, #0x490]
+ c2a4f8: str x0, [sp, #0x4a0]
+ c2a4fc: b 0xc29dac <.text+0x88d1ac>
+ c2a500: ldrb w0, [x3]
+ c2a504: strb w0, [x2, x1]
+ c2a508: ldr x2, [sp, #0x378]
+ c2a50c: b 0xc29cd0 <.text+0x88d0d0>
+ c2a510: ldr x20, [sp, #0x70]
+ c2a514: add x0, x28, #0x208
+ c2a518: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2a51c: ldr x23, [x23, #0xb78]
+ c2a520: mov x8, x20
+ c2a524: str x0, [sp, #0x98]
+ c2a528: bl 0x1240bf0 <.text+0xea3ff0>
+ c2a52c: adrp x1, 0x1bee000
+ c2a530: mov x2, x25
+ c2a534: add x1, x1, #0x5c8
+ c2a538: mov x0, x22
+ c2a53c: bl 0x51cae0 <.text+0x17fee0>
+ c2a540: ldr x2, [sp, #0x10]
+ c2a544: adrp x0, 0x1bee000
+ c2a548: add x1, x0, #0x5d8
+ c2a54c: mov x0, x26
+ c2a550: bl 0x51cae0 <.text+0x17fee0>
+ c2a554: mov x0, x26
+ c2a558: bl 0x51c280 <.text+0x17f680>
+ c2a55c: mov x0, x22
+ c2a560: bl 0x51c280 <.text+0x17f680>
+ c2a564: adrp x1, 0x1bca000
+ c2a568: mov x2, x25
+ c2a56c: mov x0, x22
+ c2a570: add x1, x1, #0x5f8
+ c2a574: bl 0x51cae0 <.text+0x17fee0>
+ c2a578: mov x1, x22
+ c2a57c: mov x0, x20
+ c2a580: bl 0x70bb00 <.text+0x36ef00>
+ c2a584: add x1, sp, #0x198
+ c2a588: cmp x0, x1
+ c2a58c: b.eq 0xc2ae78 <.text+0x88e278>
+ c2a590: ldp x1, x2, [x0, #0x40]
+ c2a594: add x3, sp, #0x258
+ c2a598: mov x0, x3
+ c2a59c: str x3, [sp, #0x80]
+ c2a5a0: add x3, sp, #0x268
+ c2a5a4: str x3, [sp, #0x258]
+ c2a5a8: mov w3, #0x0 // =0
+ c2a5ac: add x2, x1, x2
+ c2a5b0: bl 0x51c6c8 <.text+0x17fac8>
+ c2a5b4: mov x0, x22
+ c2a5b8: bl 0x51c280 <.text+0x17f680>
+ c2a5bc: ldr x21, [sp, #0x260]
+ c2a5c0: ldr x24, [sp, #0x258]
+ c2a5c4: cbz x21, 0xc2a614 <.text+0x88da14>
+ c2a5c8: adrp x0, 0x1bee000
+ c2a5cc: add x23, x0, #0x5e8
+ c2a5d0: add x20, x24, x21
+ c2a5d4: mov x21, #0x0 // =0
+ c2a5d8: nop
+ c2a5dc: nop
+ c2a5e0: lsl x3, x21, #4
+ c2a5e4: ldrb w1, [x24]
+ c2a5e8: sub x3, x3, x21
+ c2a5ec: mov x0, x23
+ c2a5f0: mov x2, #0x1e // =30
+ c2a5f4: lsl x21, x3, #1
+ c2a5f8: bl 0x390ab8 <memchr@plt>
+ c2a5fc: cbz x0, 0xc2ace4 <.text+0x88e0e4>
+ c2a600: sub x0, x0, x23
+ c2a604: add x24, x24, #0x1
+ c2a608: add x21, x0, x21
+ c2a60c: cmp x20, x24
+ c2a610: b.ne 0xc2a5e0 <.text+0x88d9e0>
+ c2a614: adrp x0, 0x2ccd000 <_ZGVZN9QMetaType23registerMutableViewImplISt6vectorIfSaIfEE9QIterableI13QMetaSequenceEEEbSt8functionIFbPvS8_EES_S_E10unregister+0x4050>
+ c2a618: add x0, x0, #0x520
+ c2a61c: add x2, sp, #0x2e0
+ c2a620: ldp x0, x1, [x0, #0x120]
+ c2a624: stp x0, x1, [x2, #-0x98]
+ c2a628: bl 0x392698 <_ZNSt6chrono3_V212system_clock3nowEv@plt>
+ c2a62c: mov x1, #0x94b3 // =38067
+ c2a630: ldr w2, [x28, #0x7c]
+ c2a634: movk x1, #0x26d6, lsl #16
+ c2a638: movk x1, #0xbe8, lsl #32
+ c2a63c: movk x1, #0x112e, lsl #48
+ c2a640: smulh x1, x0, x1
+ c2a644: asr x1, x1, #26
+ c2a648: sub x0, x1, x0, asr #63
+ c2a64c: cmp x0, #0x0
+ c2a650: and x1, x0, #0x1
+ c2a654: cneg x1, x1, lt
+ c2a658: sub x24, x0, x1
+ c2a65c: cmp w2, #0x1
+ c2a660: b.ne 0xc2a66c <.text+0x88da6c>
+ c2a664: sub x0, x0, x1
+ c2a668: add x24, x0, #0x1
+ c2a66c: ldr x0, [sp]
+ c2a670: add x20, x28, #0x80
+ c2a674: ldr x2, [sp, #0x10]
+ c2a678: adrp x1, 0x1bc7000
+ c2a67c: add x1, x1, #0xef8
+ c2a680: str x20, [sp, #0x68]
+ c2a684: bl 0x51cae0 <.text+0x17fee0>
+ c2a688: ldr x1, [sp, #0x3c0]
+ c2a68c: mov x0, x20
+ c2a690: ldr x2, [sp, #0x3c8]
+ c2a694: adrp x23, 0x1bca000
+ c2a698: str x20, [sp, #0x68]
+ c2a69c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a6a0: adrp x1, 0x1bc8000
+ c2a6a4: mov x20, x0
+ c2a6a8: mov x2, #0x1 // =1
+ c2a6ac: str x1, [sp, #0x58]
+ c2a6b0: add x1, x1, #0x670
+ c2a6b4: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a6b8: mov x0, x20
+ c2a6bc: mov w1, #0x1 // =1
+ c2a6c0: bl 0x391798 <_ZNSolsEi@plt>
+ c2a6c4: adrp x3, 0x1bca000
+ c2a6c8: mov x20, x0
+ c2a6cc: add x1, x3, #0x3f0
+ c2a6d0: mov x2, #0x1 // =1
+ c2a6d4: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a6d8: mov x0, x20
+ c2a6dc: mov w1, #0x6 // =6
+ c2a6e0: bl 0x391798 <_ZNSolsEi@plt>
+ c2a6e4: adrp x2, 0x1bca000
+ c2a6e8: mov x20, x0
+ c2a6ec: add x1, x2, #0x3f0
+ c2a6f0: mov x2, #0x1 // =1
+ c2a6f4: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a6f8: mov x0, x20
+ c2a6fc: mov w1, #0x0 // =0
+ c2a700: bl 0x391798 <_ZNSolsEi@plt>
+ c2a704: add x1, x23, #0x4b8
+ c2a708: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2a70c: add x2, sp, #0x378
+ c2a710: str x2, [sp, #0x30]
+ c2a714: mov x0, x2
+ c2a718: adrp x1, 0x1bee000
+ c2a71c: ldr x2, [sp, #0x50]
+ c2a720: add x1, x1, #0x608
+ c2a724: bl 0x51cae0 <.text+0x17fee0>
+ c2a728: ldr x0, [sp, #0x68]
+ c2a72c: ldr x1, [sp, #0x378]
+ c2a730: ldr x2, [sp, #0x380]
+ c2a734: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a738: ldr x1, [sp, #0x58]
+ c2a73c: mov x20, x0
+ c2a740: mov x2, #0x1 // =1
+ c2a744: add x1, x1, #0x670
+ c2a748: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a74c: mov x1, x24
+ c2a750: mov x0, x20
+ c2a754: bl 0x391f88 <_ZNSo9_M_insertIlEERSoT_@plt>
+ c2a758: add x1, x23, #0x4b8
+ c2a75c: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2a760: ldr x0, [sp, #0x60]
+ c2a764: add x2, sp, #0x150
+ c2a768: adrp x1, 0x1bee000
+ c2a76c: add x1, x1, #0x610
+ c2a770: str x2, [sp, #0x78]
+ c2a774: bl 0x51cae0 <.text+0x17fee0>
+ c2a778: ldr x1, [sp, #0x358]
+ c2a77c: ldr x2, [sp, #0x360]
+ c2a780: ldr x24, [sp, #0x68]
+ c2a784: mov x0, x24
+ c2a788: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a78c: ldr x1, [sp, #0x58]
+ c2a790: mov x20, x0
+ c2a794: mov x2, #0x1 // =1
+ c2a798: add x1, x1, #0x670
+ c2a79c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a7a0: ldr w1, [x28]
+ c2a7a4: mov x0, x20
+ c2a7a8: bl 0x391798 <_ZNSolsEi@plt>
+ c2a7ac: add x1, x23, #0x4b8
+ c2a7b0: mov x2, #0x1 // =1
+ c2a7b4: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a7b8: ldr x2, [sp, #0x90]
+ c2a7bc: add x0, sp, #0x338
+ c2a7c0: adrp x1, 0x1bee000
+ c2a7c4: add x1, x1, #0x620
+ c2a7c8: str x0, [sp, #0xc8]
+ c2a7cc: bl 0x51cae0 <.text+0x17fee0>
+ c2a7d0: ldr x1, [sp, #0x338]
+ c2a7d4: mov x0, x24
+ c2a7d8: ldr x2, [sp, #0x340]
+ c2a7dc: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a7e0: ldr x1, [sp, #0x58]
+ c2a7e4: mov x20, x0
+ c2a7e8: mov x2, #0x1 // =1
+ c2a7ec: add x1, x1, #0x670
+ c2a7f0: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a7f4: ldr s0, [x28, #0x4]
+ c2a7f8: mov x0, x20
+ c2a7fc: fcvt d0, s0
+ c2a800: bl 0x391f68 <_ZNSo9_M_insertIdEERSoT_@plt>
+ c2a804: add x1, x23, #0x4b8
+ c2a808: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2a80c: ldr x2, [sp, #0x88]
+ c2a810: add x0, sp, #0x318
+ c2a814: adrp x1, 0x1bee000
+ c2a818: add x1, x1, #0x630
+ c2a81c: str x0, [sp, #0xc0]
+ c2a820: bl 0x51cae0 <.text+0x17fee0>
+ c2a824: ldr x1, [sp, #0x318]
+ c2a828: mov x0, x24
+ c2a82c: ldr x2, [sp, #0x320]
+ c2a830: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a834: ldr x1, [sp, #0x58]
+ c2a838: mov x20, x0
+ c2a83c: mov x2, #0x1 // =1
+ c2a840: add x1, x1, #0x670
+ c2a844: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a848: ldr w1, [x28, #0x8]
+ c2a84c: mov x0, x20
+ c2a850: bl 0x391798 <_ZNSolsEi@plt>
+ c2a854: add x1, x23, #0x4b8
+ c2a858: mov x2, #0x1 // =1
+ c2a85c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a860: add x0, sp, #0x2f8
+ c2a864: adrp x1, 0x1bee000
+ c2a868: add x2, sp, #0x128
+ c2a86c: add x1, x1, #0x640
+ c2a870: str x0, [sp, #0xb8]
+ c2a874: bl 0x51cae0 <.text+0x17fee0>
+ c2a878: ldr x1, [sp, #0x2f8]
+ c2a87c: mov x0, x24
+ c2a880: ldr x2, [sp, #0x300]
+ c2a884: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a888: ldr x1, [sp, #0x58]
+ c2a88c: mov x20, x0
+ c2a890: mov x2, #0x1 // =1
+ c2a894: add x1, x1, #0x670
+ c2a898: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a89c: ldrb w1, [x28, #0xc]
+ c2a8a0: mov x0, x20
+ c2a8a4: bl 0x391f98 <_ZNSo9_M_insertIbEERSoT_@plt>
+ c2a8a8: add x1, x23, #0x4b8
+ c2a8ac: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2a8b0: add x0, sp, #0x2d8
+ c2a8b4: adrp x1, 0x1bee000
+ c2a8b8: add x2, sp, #0x120
+ c2a8bc: add x1, x1, #0x650
+ c2a8c0: str x0, [sp, #0xb0]
+ c2a8c4: bl 0x51cae0 <.text+0x17fee0>
+ c2a8c8: ldr x1, [sp, #0x2d8]
+ c2a8cc: mov x0, x24
+ c2a8d0: ldr x2, [sp, #0x2e0]
+ c2a8d4: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a8d8: ldr x1, [sp, #0x58]
+ c2a8dc: mov x20, x0
+ c2a8e0: mov x2, #0x1 // =1
+ c2a8e4: add x1, x1, #0x670
+ c2a8e8: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a8ec: ldrb w1, [x28, #0xd]
+ c2a8f0: mov x0, x20
+ c2a8f4: bl 0x391f98 <_ZNSo9_M_insertIbEERSoT_@plt>
+ c2a8f8: add x1, x23, #0x4b8
+ c2a8fc: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2a900: add x2, sp, #0x118
+ c2a904: add x0, sp, #0x2b8
+ c2a908: adrp x1, 0x1bee000
+ c2a90c: add x1, x1, #0x660
+ c2a910: str x0, [sp, #0xa8]
+ c2a914: str x2, [sp, #0xd8]
+ c2a918: bl 0x51cae0 <.text+0x17fee0>
+ c2a91c: ldr x1, [sp, #0x2b8]
+ c2a920: mov x0, x24
+ c2a924: ldr x2, [sp, #0x2c0]
+ c2a928: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a92c: ldr x1, [sp, #0x58]
+ c2a930: mov x20, x0
+ c2a934: mov x2, #0x1 // =1
+ c2a938: add x1, x1, #0x670
+ c2a93c: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a940: ldr w1, [x28, #0x50]
+ c2a944: mov x0, x20
+ c2a948: bl 0x391798 <_ZNSolsEi@plt>
+ c2a94c: add x1, x23, #0x4b8
+ c2a950: mov x2, #0x1 // =1
+ c2a954: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2a958: add x2, sp, #0x110
+ c2a95c: add x0, sp, #0x298
+ c2a960: adrp x1, 0x1bca000
+ c2a964: add x1, x1, #0x5f8
+ c2a968: str x0, [sp, #0xa0]
+ c2a96c: str x2, [sp, #0xd0]
+ c2a970: bl 0x51cae0 <.text+0x17fee0>
+ c2a974: mov w6, #0x79b9 // =31161
+ c2a978: mov w5, #0x3720 // =14112
+ c2a97c: mov w2, w21
+ c2a980: lsr x20, x21, #32
+ c2a984: add x4, sp, #0x248
+ c2a988: mov w1, #0x0 // =0
+ c2a98c: movk w6, #0x9e37, lsl #16
+ c2a990: movk w5, #0xc6ef, lsl #16
+ c2a994: nop
+ c2a998: nop
+ c2a99c: nop
+ c2a9a0: ubfiz x3, x1, #2, #2
+ c2a9a4: lsr w0, w20, #5
+ c2a9a8: eor w0, w0, w20, lsl #4
+ c2a9ac: add w0, w0, w20
+ c2a9b0: ldr w3, [x4, x3]
+ c2a9b4: add w3, w1, w3
+ c2a9b8: add w1, w1, w6
+ c2a9bc: eor w0, w0, w3
+ c2a9c0: ubfx x3, x1, #11, #2
+ c2a9c4: add w2, w2, w0
+ c2a9c8: lsr w0, w2, #5
+ c2a9cc: ldr w3, [x4, x3, lsl #2]
+ c2a9d0: eor w0, w0, w2, lsl #4
+ c2a9d4: add w0, w0, w2
+ c2a9d8: add w3, w1, w3
+ c2a9dc: eor w0, w0, w3
+ c2a9e0: add w20, w20, w0
+ c2a9e4: cmp w1, w5
+ c2a9e8: b.ne 0xc2a9a0 <.text+0x88dda0>
+ c2a9ec: add x0, sp, #0x288
+ c2a9f0: str x0, [sp, #0x278]
+ c2a9f4: str xzr, [sp, #0x280]
+ c2a9f8: adds x20, x2, x20, lsl #32
+ c2a9fc: strb wzr, [sp, #0x288]
+ c2aa00: b.eq 0xc2b284 <.text+0x88e684>
+ c2aa04: str x0, [sp, #0x28]
+ c2aa08: adrp x0, 0x1bee000
+ c2aa0c: add x0, x0, #0x5e8
+ c2aa10: add x24, sp, #0x480
+ c2aa14: mov x21, #0x0 // =0
+ c2aa18: str x0, [sp, #0x48]
+ c2aa1c: add x0, sp, #0x278
+ c2aa20: str x0, [sp, #0x38]
+ c2aa24: b 0xc2aa38 <.text+0x88de38>
+ c2aa28: ldr x21, [sp, #0x280]
+ c2aa2c: mov x20, x0
+ c2aa30: ldr x1, [sp, #0x278]
+ c2aa34: str x1, [sp, #0x28]
+ c2aa38: mov x0, #-0x7777777777777778 // =-8608480567731124088
+ c2aa3c: add x1, x21, #0x1
+ c2aa40: movk x0, #0x8889
+ c2aa44: str x24, [sp, #0x470]
+ c2aa48: ldr x3, [sp, #0x48]
+ c2aa4c: umulh x0, x20, x0
+ c2aa50: str xzr, [sp, #0x478]
+ c2aa54: and x2, x0, #0xfffffffffffffff0
+ c2aa58: strb wzr, [sp, #0x480]
+ c2aa5c: sub x2, x2, x0, lsr #4
+ c2aa60: mov x0, x22
+ c2aa64: sub x2, x20, x2, lsl #1
+ c2aa68: ldrb w2, [x3, x2]
+ c2aa6c: strb w2, [sp, #0x1f0]
+ c2aa70: bl 0x520bd0 <.text+0x183fd0>
+ c2aa74: mov x1, x25
+ c2aa78: mov x0, x22
+ c2aa7c: mov x2, #0x1 // =1
+ c2aa80: bl 0x520ccc <.text+0x1840cc>
+ c2aa84: ldr x1, [sp, #0x28]
+ c2aa88: mov x2, x21
+ c2aa8c: mov x0, x22
+ c2aa90: bl 0x520ccc <.text+0x1840cc>
+ c2aa94: ldr x0, [sp, #0x38]
+ c2aa98: mov x1, x22
+ c2aa9c: bl 0x5200a0 <.text+0x1834a0>
+ c2aaa0: mov x0, x22
+ c2aaa4: bl 0x51c280 <.text+0x17f680>
+ c2aaa8: mov x0, #-0x7777777777777778 // =-8608480567731124088
+ c2aaac: movk x0, #0x8889
+ c2aab0: umulh x0, x20, x0
+ c2aab4: lsr x0, x0, #4
+ c2aab8: cmp x20, #0x1d
+ c2aabc: b.hi 0xc2aa28 <.text+0x88de28>
+ c2aac0: ldr x0, [sp, #0x280]
+ c2aac4: mov x1, #0x10 // =16
+ c2aac8: sub x1, x1, x0
+ c2aacc: mov x0, x22
+ c2aad0: mov w2, #0x46 // =70
+ c2aad4: str x24, [sp, #0x470]
+ c2aad8: bl 0x622d24 <.text+0x286124>
+ c2aadc: ldr x1, [sp, #0x278]
+ c2aae0: mov x0, x22
+ c2aae4: ldr x2, [sp, #0x280]
+ c2aae8: bl 0x520ccc <.text+0x1840cc>
+ c2aaec: mov x1, x0
+ c2aaf0: mov x0, x26
+ c2aaf4: bl 0x51fc20 <.text+0x183020>
+ c2aaf8: mov x0, x22
+ c2aafc: bl 0x51c280 <.text+0x17f680>
+ c2ab00: ldr x0, [sp, #0x38]
+ c2ab04: mov x1, x26
+ c2ab08: bl 0x5200a0 <.text+0x1834a0>
+ c2ab0c: mov x0, x26
+ c2ab10: bl 0x51c280 <.text+0x17f680>
+ c2ab14: ldr x0, [sp, #0x68]
+ c2ab18: ldr x1, [sp, #0x298]
+ c2ab1c: ldr x2, [sp, #0x2a0]
+ c2ab20: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2ab24: ldr x1, [sp, #0x58]
+ c2ab28: mov x20, x0
+ c2ab2c: mov x2, #0x1 // =1
+ c2ab30: add x1, x1, #0x670
+ c2ab34: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2ab38: ldr x1, [sp, #0x278]
+ c2ab3c: mov x0, x20
+ c2ab40: ldr x2, [sp, #0x280]
+ c2ab44: bl 0x391788 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+ c2ab48: add x1, x23, #0x4b8
+ c2ab4c: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2ab50: ldr x0, [sp, #0x38]
+ c2ab54: bl 0x51c280 <.text+0x17f680>
+ c2ab58: ldr x0, [sp, #0xa0]
+ c2ab5c: bl 0x51c280 <.text+0x17f680>
+ c2ab60: ldr x0, [sp, #0xa8]
+ c2ab64: bl 0x51c280 <.text+0x17f680>
+ c2ab68: ldr x0, [sp, #0xb0]
+ c2ab6c: bl 0x51c280 <.text+0x17f680>
+ c2ab70: ldr x0, [sp, #0xb8]
+ c2ab74: bl 0x51c280 <.text+0x17f680>
+ c2ab78: ldr x0, [sp, #0xc0]
+ c2ab7c: bl 0x51c280 <.text+0x17f680>
+ c2ab80: ldr x0, [sp, #0xc8]
+ c2ab84: bl 0x51c280 <.text+0x17f680>
+ c2ab88: ldr x0, [sp, #0x60]
+ c2ab8c: bl 0x51c280 <.text+0x17f680>
+ c2ab90: ldr x0, [sp, #0x30]
+ c2ab94: bl 0x51c280 <.text+0x17f680>
+ c2ab98: ldr x0, [sp]
+ c2ab9c: bl 0x51c280 <.text+0x17f680>
+ c2aba0: ldr x20, [sp, #0x68]
+ c2aba4: add x1, x23, #0x4b8
+ c2aba8: mov x0, x20
+ c2abac: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2abb0: mov x0, x20
+ c2abb4: bl 0x397d28 <_ZNSo5flushEv@plt>
+ c2abb8: ldr x0, [sp, #0x98]
+ c2abbc: ldr x20, [sp, #0x10]
+ c2abc0: mov x8, x20
+ c2abc4: bl 0x1240bf0 <.text+0xea3ff0>
+ c2abc8: adrp x1, 0x1bee000
+ c2abcc: mov x2, x25
+ c2abd0: add x1, x1, #0x670
+ c2abd4: mov x0, x22
+ c2abd8: bl 0x51cae0 <.text+0x17fee0>
+ c2abdc: ldr x2, [sp, #0x50]
+ c2abe0: adrp x0, 0x1bee000
+ c2abe4: add x1, x0, #0x5d8
+ c2abe8: mov x0, x26
+ c2abec: bl 0x51cae0 <.text+0x17fee0>
+ c2abf0: mov x0, x26
+ c2abf4: bl 0x51c280 <.text+0x17f680>
+ c2abf8: mov x0, x22
+ c2abfc: bl 0x51c280 <.text+0x17f680>
+ c2ac00: adrp x21, 0x1bee000
+ c2ac04: mov x2, x25
+ c2ac08: mov x0, x22
+ c2ac0c: add x1, x21, #0x678
+ c2ac10: bl 0x51cae0 <.text+0x17fee0>
+ c2ac14: mov x1, x22
+ c2ac18: mov x0, x20
+ c2ac1c: bl 0x70bb00 <.text+0x36ef00>
+ c2ac20: add x1, sp, #0x1c8
+ c2ac24: cmp x0, x1
+ c2ac28: b.eq 0xc2ae94 <.text+0x88e294>
+ c2ac2c: ldr x2, [x0, #0x48]
+ c2ac30: add x1, sp, #0x3d0
+ c2ac34: str x1, [sp, #0x3c0]
+ c2ac38: mov w3, #0x0 // =0
+ c2ac3c: ldr x1, [x0, #0x40]
+ c2ac40: ldr x0, [sp]
+ c2ac44: add x2, x1, x2
+ c2ac48: bl 0x51c6c8 <.text+0x17fac8>
+ c2ac4c: mov x0, x22
+ c2ac50: bl 0x51c280 <.text+0x17f680>
+ c2ac54: ldr x0, [sp]
+ c2ac58: adrp x1, 0x1bec000
+ c2ac5c: add x20, x28, #0x398
+ c2ac60: add x1, x1, #0xb30
+ c2ac64: bl 0x60e04c <.text+0x27144c>
+ c2ac68: tbz w0, #0x0, 0xc2ad3c <.text+0x88e13c>
+ c2ac6c: adrp x0, 0x2b99000
+ c2ac70: ldr x0, [x0, #0x558]
+ c2ac74: adrp x1, 0x1bee000
+ c2ac78: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2ac7c: ldr x23, [x23, #0xb78]
+ c2ac80: add x1, x1, #0x688
+ c2ac84: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2ac88: add x0, x28, #0x30
+ c2ac8c: mov w1, #0x9 // =9
+ c2ac90: str w1, [sp, #0x130]
+ c2ac94: ldr x1, [x0, #0x10]
+ c2ac98: cbz x1, 0xc2b3d0 <.text+0x88e7d0>
+ c2ac9c: ldr x2, [x0, #0x18]
+ c2aca0: ldr x1, [sp, #0x88]
+ c2aca4: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2aca8: ldr x23, [x23, #0xb78]
+ c2acac: blr x2
+ c2acb0: mov x0, x20
+ c2acb4: bl 0x123ca50 <.text+0xe9fe50>
+ c2acb8: ldr x0, [sp]
+ c2acbc: bl 0x51c280 <.text+0x17f680>
+ c2acc0: ldr x0, [sp, #0x10]
+ c2acc4: ldr x1, [sp, #0x1d0]
+ c2acc8: bl 0x5409e8 <.text+0x1a3de8>
+ c2accc: ldr x0, [sp, #0x80]
+ c2acd0: bl 0x51c280 <.text+0x17f680>
+ c2acd4: ldr x0, [sp, #0x70]
+ c2acd8: ldr x1, [sp, #0x1a0]
+ c2acdc: bl 0x5409e8 <.text+0x1a3de8>
+ c2ace0: b 0xc298c4 <.text+0x88ccc4>
+ c2ace4: add x24, x24, #0x1
+ c2ace8: sub x21, x21, #0x1
+ c2acec: cmp x24, x20
+ c2acf0: b.ne 0xc2a5e0 <.text+0x88d9e0>
+ c2acf4: b 0xc2a614 <.text+0x88da14>
+ c2acf8: ldrb w0, [x1]
+ c2acfc: cmp w0, #0x20
+ c2ad00: b.eq 0xc29c30 <.text+0x88d030>
+ c2ad04: add x1, x1, #0x1
+ c2ad08: ldrb w0, [x1]
+ c2ad0c: cmp w0, #0x20
+ c2ad10: b.eq 0xc29c30 <.text+0x88d030>
+ c2ad14: add x1, x1, #0x1
+ c2ad18: b 0xc2a36c <.text+0x88d76c>
+ c2ad1c: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2ad20: ldr x23, [x23, #0xb78]
+ c2ad24: ldr x0, [sp, #0x5e8]
+ c2ad28: ldr x1, [x23]
+ c2ad2c: subs x0, x0, x1
+ c2ad30: mov x1, #0x0 // =0
+ c2ad34: b.ne 0xc2b310 <.text+0x88e710>
+ c2ad38: bl 0x3915e8 <_ZSt17__throw_bad_allocv@plt>
+ c2ad3c: ldr x0, [sp, #0x98]
+ c2ad40: mov x8, x25
+ c2ad44: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2ad48: ldr x23, [x23, #0xb78]
+ c2ad4c: bl 0x1240bf0 <.text+0xea3ff0>
+ c2ad50: ldr x23, [sp, #0x50]
+ c2ad54: adrp x1, 0x1bee000
+ c2ad58: mov x0, x22
+ c2ad5c: add x1, x1, #0x6b0
+ c2ad60: mov x2, x23
+ c2ad64: bl 0x51cae0 <.text+0x17fee0>
+ c2ad68: ldr x2, [sp, #0x78]
+ c2ad6c: adrp x0, 0x1bee000
+ c2ad70: add x1, x0, #0x5d8
+ c2ad74: mov x0, x26
+ c2ad78: bl 0x51cae0 <.text+0x17fee0>
+ c2ad7c: mov x0, x26
+ c2ad80: bl 0x51c280 <.text+0x17f680>
+ c2ad84: mov x0, x22
+ c2ad88: bl 0x51c280 <.text+0x17f680>
+ c2ad8c: mov x2, x23
+ c2ad90: add x1, x21, #0x678
+ c2ad94: mov x0, x22
+ c2ad98: bl 0x51cae0 <.text+0x17fee0>
+ c2ad9c: mov x1, x22
+ c2ada0: mov x0, x25
+ c2ada4: bl 0x70bb00 <.text+0x36ef00>
+ c2ada8: add x1, sp, #0x1f8
+ c2adac: cmp x0, x1
+ c2adb0: b.eq 0xc2b134 <.text+0x88e534>
+ c2adb4: ldr x2, [x0, #0x48]
+ c2adb8: add x1, sp, #0x420
+ c2adbc: str x1, [sp, #0x410]
+ c2adc0: mov w3, #0x0 // =0
+ c2adc4: ldr x1, [x0, #0x40]
+ c2adc8: mov x0, x26
+ c2adcc: add x2, x1, x2
+ c2add0: bl 0x51c6c8 <.text+0x17fac8>
+ c2add4: mov x0, x22
+ c2add8: bl 0x51c280 <.text+0x17f680>
+ c2addc: ldr x2, [sp, #0x50]
+ c2ade0: adrp x1, 0x1bee000
+ c2ade4: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2ade8: ldr x23, [x23, #0xb78]
+ c2adec: mov x0, x22
+ c2adf0: add x1, x1, #0x6c0
+ c2adf4: bl 0x51cae0 <.text+0x17fee0>
+ c2adf8: mov x1, x22
+ c2adfc: mov x0, x25
+ c2ae00: bl 0x123cccc <.text+0xea00cc>
+ c2ae04: mov w21, w0
+ c2ae08: mov x0, x22
+ c2ae0c: bl 0x51c280 <.text+0x17f680>
+ c2ae10: ldr w0, [x28, #0x78]
+ c2ae14: cmp w21, w0
+ c2ae18: b.eq 0xc2b10c <.text+0x88e50c>
+ c2ae1c: adrp x0, 0x2b99000
+ c2ae20: ldr x0, [x0, #0x558]
+ c2ae24: adrp x1, 0x1bee000
+ c2ae28: add x1, x1, #0x6d8
+ c2ae2c: bl 0x392f28 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+ c2ae30: add x0, x28, #0x30
+ c2ae34: mov w1, #0x9 // =9
+ c2ae38: str w1, [sp, #0x138]
+ c2ae3c: ldr x1, [x0, #0x10]
+ c2ae40: cbz x1, 0xc2b314 <.text+0x88e714>
+ c2ae44: ldr x2, [x0, #0x18]
+ c2ae48: ldr x1, [sp, #0x90]
+ c2ae4c: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2ae50: ldr x23, [x23, #0xb78]
+ c2ae54: blr x2
+ c2ae58: mov x0, x20
+ c2ae5c: bl 0x123ca50 <.text+0xe9fe50>
+ c2ae60: mov x0, x26
+ c2ae64: bl 0x51c280 <.text+0x17f680>
+ c2ae68: ldr x1, [sp, #0x200]
+ c2ae6c: mov x0, x25
+ c2ae70: bl 0x5409e8 <.text+0x1a3de8>
+ c2ae74: b 0xc2acb8 <.text+0x88e0b8>
+ c2ae78: ldr x1, [sp, #0x40]
+ c2ae7c: add x0, sp, #0x258
+ c2ae80: add x2, sp, #0x108
+ c2ae84: str x0, [sp, #0x80]
+ c2ae88: add x1, x1, #0x10
+ c2ae8c: bl 0x51cae0 <.text+0x17fee0>
+ c2ae90: b 0xc2a5b4 <.text+0x88d9b4>
+ c2ae94: ldr x0, [sp, #0x40]
+ c2ae98: ldr x2, [sp, #0xd0]
+ c2ae9c: add x1, x0, #0x10
+ c2aea0: ldr x0, [sp]
+ c2aea4: bl 0x51cae0 <.text+0x17fee0>
+ c2aea8: b 0xc2ac4c <.text+0x88e04c>
+ c2aeac: ldr x2, [sp, #0x3d0]
+ c2aeb0: add x0, sp, #0x150
+ c2aeb4: ldr x1, [sp, #0x3c8]
+ c2aeb8: str x0, [sp, #0x78]
+ c2aebc: stp xzr, xzr, [sp, #0x150]
+ c2aec0: add x20, x1, #0x1
+ c2aec4: str xzr, [sp, #0x160]
+ c2aec8: mov x3, x1
+ c2aecc: cbz x2, 0xc2b098 <.text+0x88e498>
+ c2aed0: ldurb w0, [x20, #-0x1]
+ c2aed4: sub x25, x20, #0x1
+ c2aed8: mov x23, x20
+ c2aedc: cmp w0, #0x22
+ c2aee0: b.eq 0xc2b0f8 <.text+0x88e4f8>
+ c2aee4: tbnz w21, #0x0, 0xc2afc8 <.text+0x88e3c8>
+ c2aee8: cmp w0, #0x20
+ c2aeec: b.ne 0xc2afc8 <.text+0x88e3c8>
+ c2aef0: cmp x1, x25
+ c2aef4: b.eq 0xc2afc4 <.text+0x88e3c4>
+ c2aef8: ldurb w0, [x20, #-0x2]
+ c2aefc: cmp w0, #0x20
+ c2af00: b.eq 0xc2afc4 <.text+0x88e3c4>
+ c2af04: add x24, sp, #0x480
+ c2af08: str x24, [sp, #0x470]
+ c2af0c: str xzr, [sp, #0x478]
+ c2af10: strb wzr, [sp, #0x480]
+ c2af14: ldrb w0, [x3]
+ c2af18: cmp w0, #0x22
+ c2af1c: b.ne 0xc2af2c <.text+0x88e32c>
+ c2af20: ldurb w0, [x20, #-0x2]
+ c2af24: cmp w0, #0x22
+ c2af28: b.eq 0xc2b3b0 <.text+0x88e7b0>
+ c2af2c: sub x4, x25, x3
+ c2af30: mov x0, x22
+ c2af34: mov x2, #0x0 // =0
+ c2af38: mov x1, #0x0 // =0
+ c2af3c: bl 0x522d80 <.text+0x186180>
+ c2af40: ldr x4, [sp, #0x470]
+ c2af44: ldr x3, [sp, #0x478]
+ c2af48: add x3, x4, x3
+ c2af4c: cmp x4, x3
+ c2af50: b.eq 0xc2afa8 <.text+0x88e3a8>
+ c2af54: adrp x6, 0x1bee000
+ c2af58: add x6, x6, #0x54a
+ c2af5c: adrp x7, 0x1bee000
+ c2af60: mov x5, x4
+ c2af64: add x0, x7, #0x548
+ c2af68: cmp x3, x4
+ c2af6c: b.eq 0xc2af9c <.text+0x88e39c>
+ c2af70: ldrb w2, [x5]
+ c2af74: ldrb w1, [x0]
+ c2af78: cmp w2, w1
+ c2af7c: b.ne 0xc2af94 <.text+0x88e394>
+ c2af80: add x5, x5, #0x1
+ c2af84: add x0, x0, #0x1
+ c2af88: cmp x3, x5
+ c2af8c: ccmp x0, x6, #0x4, ne
+ c2af90: b.ne 0xc2af70 <.text+0x88e370>
+ c2af94: cmp x0, x6
+ c2af98: b.eq 0xc2b210 <.text+0x88e610>
+ c2af9c: add x4, x4, #0x1
+ c2afa0: cmp x3, x4
+ c2afa4: b.ne 0xc2af60 <.text+0x88e360>
+ c2afa8: ldr x0, [sp, #0x78]
+ c2afac: mov x1, x22
+ c2afb0: bl 0x56f2f0 <.text+0x1d26f0>
+ c2afb4: mov x0, x22
+ c2afb8: bl 0x51c280 <.text+0x17f680>
+ c2afbc: ldr x1, [sp, #0x3c8]
+ c2afc0: ldr x2, [sp, #0x3d0]
+ c2afc4: mov x3, x20
+ c2afc8: add x0, x1, x2
+ c2afcc: add x20, x20, #0x1
+ c2afd0: cmp x23, x0
+ c2afd4: b.ne 0xc2aed0 <.text+0x88e2d0>
+ c2afd8: cmp x3, x23
+ c2afdc: b.eq 0xc2b098 <.text+0x88e498>
+ c2afe0: add x24, sp, #0x480
+ c2afe4: str x24, [sp, #0x470]
+ c2afe8: str xzr, [sp, #0x478]
+ c2afec: strb wzr, [sp, #0x480]
+ c2aff0: ldrb w0, [x3]
+ c2aff4: cmp w0, #0x22
+ c2aff8: b.ne 0xc2b008 <.text+0x88e408>
+ c2affc: ldurb w0, [x23, #-0x1]
+ c2b000: cmp w0, #0x22
+ c2b004: b.eq 0xc2b32c <.text+0x88e72c>
+ c2b008: sub x4, x23, x3
+ c2b00c: mov x0, x22
+ c2b010: mov x2, #0x0 // =0
+ c2b014: mov x1, #0x0 // =0
+ c2b018: bl 0x522d80 <.text+0x186180>
+ c2b01c: ldr x4, [sp, #0x470]
+ c2b020: ldr x3, [sp, #0x478]
+ c2b024: add x3, x4, x3
+ c2b028: cmp x4, x3
+ c2b02c: b.eq 0xc2b084 <.text+0x88e484>
+ c2b030: adrp x6, 0x1bee000
+ c2b034: add x6, x6, #0x54a
+ c2b038: adrp x7, 0x1bee000
+ c2b03c: mov x5, x4
+ c2b040: add x0, x7, #0x548
+ c2b044: cmp x3, x4
+ c2b048: b.eq 0xc2b078 <.text+0x88e478>
+ c2b04c: ldrb w2, [x5]
+ c2b050: ldrb w1, [x0]
+ c2b054: cmp w2, w1
+ c2b058: b.ne 0xc2b070 <.text+0x88e470>
+ c2b05c: add x0, x0, #0x1
+ c2b060: add x5, x5, #0x1
+ c2b064: cmp x0, x6
+ c2b068: ccmp x3, x5, #0x4, ne
+ c2b06c: b.ne 0xc2b04c <.text+0x88e44c>
+ c2b070: cmp x0, x6
+ c2b074: b.eq 0xc2b1c8 <.text+0x88e5c8>
+ c2b078: add x4, x4, #0x1
+ c2b07c: cmp x3, x4
+ c2b080: b.ne 0xc2b03c <.text+0x88e43c>
+ c2b084: ldr x0, [sp, #0x78]
+ c2b088: mov x1, x22
+ c2b08c: bl 0x56f2f0 <.text+0x1d26f0>
+ c2b090: mov x0, x22
+ c2b094: bl 0x51c280 <.text+0x17f680>
+ c2b098: add x26, sp, #0x410
+ c2b09c: add x0, sp, #0x420
+ c2b0a0: mov x1, x26
+ c2b0a4: str x0, [sp, #0x410]
+ c2b0a8: mov x0, x22
+ c2b0ac: str xzr, [sp, #0x418]
+ c2b0b0: strb wzr, [sp, #0x420]
+ c2b0b4: bl 0x51fc20 <.text+0x183020>
+ c2b0b8: ldr q0, [sp, #0x150]
+ c2b0bc: add x2, sp, #0x4a0
+ c2b0c0: ldr x1, [sp, #0x160]
+ c2b0c4: mov x0, x26
+ c2b0c8: str q0, [sp, #0x490]
+ c2b0cc: add x20, sp, #0x490
+ c2b0d0: stp x1, xzr, [x2]
+ c2b0d4: stp xzr, xzr, [x2, #0x10]
+ c2b0d8: stp xzr, xzr, [sp, #0x150]
+ c2b0dc: str xzr, [sp, #0x160]
+ c2b0e0: bl 0x51c280 <.text+0x17f680>
+ c2b0e4: ldr x0, [sp, #0x78]
+ c2b0e8: bl 0x520550 <.text+0x183950>
+ c2b0ec: add x0, sp, #0x1c0
+ c2b0f0: str x0, [sp, #0x10]
+ c2b0f4: b 0xc29dac <.text+0x88d1ac>
+ c2b0f8: eor w21, w21, #0x1
+ c2b0fc: b 0xc2afc8 <.text+0x88e3c8>
+ c2b100: ldr x23, [sp, #0x620]
+ c2b104: ldr x24, [sp, #0x628]
+ c2b108: b 0xc296a0 <.text+0x88caa0>
+ c2b10c: mov x0, x26
+ c2b110: bl 0x51c280 <.text+0x17f680>
+ c2b114: ldr x1, [sp, #0x200]
+ c2b118: mov x0, x25
+ c2b11c: bl 0x5409e8 <.text+0x1a3de8>
+ c2b120: ldr x0, [sp]
+ c2b124: bl 0x51c280 <.text+0x17f680>
+ c2b128: ldr x0, [sp, #0x10]
+ c2b12c: ldr x1, [sp, #0x1d0]
+ c2b130: b 0xc2acc8 <.text+0x88e0c8>
+ c2b134: ldr x2, [sp, #0xd8]
+ c2b138: ldr x0, [sp, #0x40]
+ c2b13c: add x1, x0, #0x10
+ c2b140: mov x0, x26
+ c2b144: bl 0x51cae0 <.text+0x17fee0>
+ c2b148: b 0xc2add4 <.text+0x88e1d4>
+ c2b14c: bl 0x390938 <__errno_location@plt>
+ c2b150: ldr w0, [x0]
+ c2b154: cmp w0, #0xa
+ c2b158: b.eq 0xc2b298 <.text+0x88e698>
+ c2b15c: bl 0x123c724 <.text+0xe9fb24>
+ c2b160: mov x2, x1
+ c2b164: cbz w0, 0xc2b298 <.text+0x88e698>
+ c2b168: adrp x4, 0x1bc7000
+ c2b16c: add x4, x4, #0x10
+ c2b170: adrp x22, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2b174: ldr x22, [x22, #0xb78]
+ c2b178: add x21, sp, #0x470
+ c2b17c: adrp x19, 0x2b4a000 <_ZTIN12ThreadWeaver9JobFailedE+0x1620>
+ c2b180: add x19, x19, #0xdd8
+ c2b184: mov x1, x0
+ c2b188: add x19, x19, #0x3b8
+ c2b18c: mov x0, x21
+ c2b190: adrp x3, 0x1bee000
+ c2b194: add x3, x3, #0x2b8
+ c2b198: stp x4, x4, [sp, #0x1f0]
+ c2b19c: str xzr, [sp, #0x200]
+ c2b1a0: bl 0xc9bff0 <.text+0x8ff3f0>
+ c2b1a4: str x19, [sp, #0x470]
+ c2b1a8: ldr x0, [sp, #0x5e8]
+ c2b1ac: ldr x1, [x22]
+ c2b1b0: subs x0, x0, x1
+ c2b1b4: mov x1, #0x0 // =0
+ c2b1b8: b.ne 0xc2b308 <.text+0x88e708>
+ c2b1bc: mov x1, x25
+ c2b1c0: mov x0, x21
+ c2b1c4: bl 0x3baff0 <.text+0x1e3f0>
+ c2b1c8: add x7, x7, #0x548
+ c2b1cc: stp x7, x0, [sp, #0x1c0]
+ c2b1d0: adrp x6, 0x1bd9000
+ c2b1d4: adrp x7, 0x1bd9000
+ c2b1d8: add x6, x6, #0xcc8
+ c2b1dc: add x7, x7, #0xcc9
+ c2b1e0: cmp x4, x5
+ c2b1e4: b.eq 0xc2b084 <.text+0x88e484>
+ c2b1e8: add x1, sp, #0xe0
+ c2b1ec: ldp x2, x3, [sp, #0x1c0]
+ c2b1f0: stp x2, x3, [sp, #0xe0]
+ c2b1f4: ldr x0, [sp, #0x1d0]
+ c2b1f8: str x0, [x1, #0x10]
+ c2b1fc: mov x2, x6
+ c2b200: mov x3, x7
+ c2b204: mov x0, x22
+ c2b208: bl 0x1241900 <.text+0xea4d00>
+ c2b20c: b 0xc2b084 <.text+0x88e484>
+ c2b210: add x7, x7, #0x548
+ c2b214: stp x7, x0, [sp, #0x1c0]
+ c2b218: adrp x6, 0x1bd9000
+ c2b21c: adrp x7, 0x1bd9000
+ c2b220: add x6, x6, #0xcc8
+ c2b224: add x7, x7, #0xcc9
+ c2b228: cmp x4, x5
+ c2b22c: b.eq 0xc2afa8 <.text+0x88e3a8>
+ c2b230: add x1, sp, #0xe0
+ c2b234: ldp x2, x3, [sp, #0x1c0]
+ c2b238: stp x2, x3, [sp, #0xe0]
+ c2b23c: ldr x0, [sp, #0x1d0]
+ c2b240: str x0, [x1, #0x10]
+ c2b244: mov x2, x6
+ c2b248: mov x3, x7
+ c2b24c: mov x0, x22
+ c2b250: bl 0x1241900 <.text+0xea4d00>
+ c2b254: b 0xc2afa8 <.text+0x88e3a8>
+ c2b258: ldr x0, [x28, #0x3a0]
+ c2b25c: stlr w21, [x0]
+ c2b260: ldr x21, [sp, #0x610]
+ c2b264: ldr x22, [sp, #0x618]
+ c2b268: b 0xc29448 <.text+0x88c848>
+ c2b26c: ldr x0, [sp, #0x5e8]
+ c2b270: ldr x1, [x23]
+ c2b274: subs x0, x0, x1
+ c2b278: mov x1, #0x0 // =0
+ c2b27c: b.ne 0xc2b310 <.text+0x88e710>
+ c2b280: bl 0x391f38 <_ZSt28__throw_bad_array_new_lengthv@plt>
+ c2b284: add x0, sp, #0x278
+ c2b288: add x24, sp, #0x480
+ c2b28c: mov x1, #0x10 // =16
+ c2b290: str x0, [sp, #0x38]
+ c2b294: b 0xc2aacc <.text+0x88decc>
+ c2b298: mov w21, #0x0 // =0
+ c2b29c: b 0xc296a0 <.text+0x88caa0>
+ c2b2a0: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2b2a4: ldr x23, [x23, #0xb78]
+ c2b2a8: ldr x0, [sp, #0x5e8]
+ c2b2ac: ldr x1, [x23]
+ c2b2b0: subs x0, x0, x1
+ c2b2b4: mov x1, #0x0 // =0
+ c2b2b8: b.ne 0xc2b310 <.text+0x88e710>
+ c2b2bc: bl 0x392b38 <_ZSt25__throw_bad_function_callv@plt>
+ c2b2c0: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2b2c4: ldr x23, [x23, #0xb78]
+ c2b2c8: ldr x0, [sp, #0x5e8]
+ c2b2cc: ldr x1, [x23]
+ c2b2d0: subs x0, x0, x1
+ c2b2d4: mov x1, #0x0 // =0
+ c2b2d8: b.ne 0xc2b310 <.text+0x88e710>
+ c2b2dc: adrp x0, 0x1bc7000
+ c2b2e0: add x0, x0, #0x28
+ c2b2e4: bl 0x391608 <_ZSt20__throw_length_errorPKc@plt>
+ c2b2e8: ldr x0, [sp, #0x5e8]
+ c2b2ec: ldr x1, [x23]
+ c2b2f0: subs x0, x0, x1
+ c2b2f4: mov x1, #0x0 // =0
+ c2b2f8: b.ne 0xc2b310 <.text+0x88e710>
+ c2b2fc: bl 0x392b38 <_ZSt25__throw_bad_function_callv@plt>
+ c2b300: str x21, [sp, #0x610]
+ c2b304: str x22, [sp, #0x618]
+ c2b308: str x23, [sp, #0x620]
+ c2b30c: str x24, [sp, #0x628]
+ c2b310: bl 0x390978 <__stack_chk_fail@plt>
+ c2b314: ldr x0, [sp, #0x5e8]
+ c2b318: ldr x1, [x23]
+ c2b31c: subs x0, x0, x1
+ c2b320: mov x1, #0x0 // =0
+ c2b324: b.ne 0xc2b310 <.text+0x88e710>
+ c2b328: bl 0x392b38 <_ZSt25__throw_bad_function_callv@plt>
+ c2b32c: add x3, x3, #0x1
+ c2b330: mov x0, x22
+ c2b334: sub x4, x25, x3
+ c2b338: mov x2, #0x0 // =0
+ c2b33c: mov x1, #0x0 // =0
+ c2b340: bl 0x522d80 <.text+0x186180>
+ c2b344: b 0xc2b01c <.text+0x88e41c>
+ c2b348: ldr x21, [sp, #0x610]
+ c2b34c: ldr x22, [sp, #0x618]
+ c2b350: ldr x23, [sp, #0x620]
+ c2b354: ldr x24, [sp, #0x628]
+ c2b358: adrp x0, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2b35c: ldr x0, [x0, #0xb78]
+ c2b360: ldr x2, [sp, #0x5e8]
+ c2b364: ldr x1, [x0]
+ c2b368: subs x2, x2, x1
+ c2b36c: mov x1, #0x0 // =0
+ c2b370: str x21, [sp, #0x610]
+ c2b374: str x22, [sp, #0x618]
+ c2b378: str x23, [sp, #0x620]
+ c2b37c: str x24, [sp, #0x628]
+ c2b380: b.ne 0xc2b310 <.text+0x88e710>
+ c2b384: bl 0x392b38 <_ZSt25__throw_bad_function_callv@plt>
+ c2b388: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2b38c: ldr x23, [x23, #0xb78]
+ c2b390: ldr x0, [sp, #0x5e8]
+ c2b394: ldr x1, [x23]
+ c2b398: subs x0, x0, x1
+ c2b39c: mov x1, #0x0 // =0
+ c2b3a0: b.ne 0xc2b310 <.text+0x88e710>
+ c2b3a4: adrp x0, 0x1bc7000
+ c2b3a8: add x0, x0, #0x688
+ c2b3ac: bl 0x391608 <_ZSt20__throw_length_errorPKc@plt>
+ c2b3b0: add x3, x3, #0x1
+ c2b3b4: sub x4, x20, #0x2
+ c2b3b8: sub x4, x4, x3
+ c2b3bc: mov x0, x22
+ c2b3c0: mov x2, #0x0 // =0
+ c2b3c4: mov x1, #0x0 // =0
+ c2b3c8: bl 0x522d80 <.text+0x186180>
+ c2b3cc: b 0xc2af40 <.text+0x88e340>
+ c2b3d0: ldr x0, [sp, #0x5e8]
+ c2b3d4: ldr x1, [x23]
+ c2b3d8: subs x0, x0, x1
+ c2b3dc: mov x1, #0x0 // =0
+ c2b3e0: b.ne 0xc2b310 <.text+0x88e710>
+ c2b3e4: bl 0x392b38 <_ZSt25__throw_bad_function_callv@plt>
+ c2b3e8: bti j
+ c2b3ec: mov x19, x0
+ c2b3f0: mov x0, x22
+ c2b3f4: adrp x23, 0x2b98000 <_ZN13QMetaSequence12MetaSequenceI5QListI10QByteArrayEE5valueE+0x5c78>
+ c2b3f8: ldr x23, [x23, #0xb78]
+ c2b3fc: bl 0x51c280 <.text+0x17f680>

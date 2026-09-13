@@ -1,0 +1,12 @@
+0000000000024130 <zplane::VectorOps<float, void>::divide(zplane::VectorView<float>, zplane::VectorView<float const>)>:
+   24130:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   24134:       mov x2, x0
+   24138:       ldr x1, [x1, #0x8]
+   2413c:       ldr x3, [x3, #0xdd0] ; @187ffdd0
+   24140:       ldr w2, [x2, #0x10]
+   24144:       ldr x0, [x0, #0x8]
+   24148:       ldr x3, [x3]
+   2414c:       mov x16, x3
+   24150:       br x16
+   24154:       nop
+

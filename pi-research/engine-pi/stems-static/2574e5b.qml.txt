@@ -1,0 +1,93 @@
+import "./private" as Private
+
+Item {
+	id: module
+	objectName: "Parameter Module %1".arg(deckConfig.name)
+
+	property int leftNote
+	property int rightNote
+
+	Repeater {
+		model: ListModel {
+			Component.onCompleted: {
+				append({
+					note: module.leftNote,
+					action: "Halve",
+					direction: "Left",
+					stemOverride: "Acapella",
+					loopModeTarget: device.leftParameterTarget,
+				})
+				append({
+					note: module.rightNote,
+					action: "Double",
+					direction: "Right",
+					stemOverride: "Instrumental",
+					loopModeTarget: device.rightParameterTarget,
+				})
+			}
+		}
+
+		Item {
+			ValueNoteAssignment {
+				objectName: "Parameter %1 Deck%2".arg(model.direction).arg(deckConfig.name)
+				id: parameterAssignment
+				note: model.note
+				channel: deckConfig.midiChannel
+				enabled: deckConfig.inDJMode
+
+				property QtObject loopModeAction: ActionOutput {
+					target: model.loopModeTarget
+					behaviour: force.hold
+				}
+
+				property QtObject shiftLoopAction: ActionOutput {
+					target: PropertyTarget {
+						path: `${deckConfig.activeDeckTrackPath}ShiftLoop${model.direction}`
+					}
+				}
+
+				output: QtObject {
+					readonly property QObjProperty pSlicerAction: Planck.getProperty(deckConfig.activeDeckTrackPath + "Slicer/%1".arg(model.action))
+					readonly property QObjProperty pLoopAction: Planck.getProperty(deckConfig.activeDeckTrackPath + "%1Loop".arg(model.action))
+					readonly property QObjProperty pLoopShift: Planck.getProperty(deckConfig.activeDeckTrackPath + "ShiftLoop%1".arg(model.direction))
+					readonly property QObjProperty pStemOverride: Planck.getProperty(deckConfig.activeDeckPath + "Stems/%1".arg(model.stemOverride))
+
+					function setValue(channel, value, assignmentEnabled) {
+
+						if((deckConfig.padsModeIsLoop || !value) && model.loopModeTarget) {
+							parameterAssignment.loopModeAction.setValue(channel, value, assignmentEnabled)
+							return;
+						}
+
+						if(!assignmentEnabled || !value) {
+							return
+						}
+
+						if(deckConfig.padsModeIsSlicer) {
+							pSlicerAction.translator.state = true
+						}
+						else if(deckConfig.padsModeIsAutoLoop || deckConfig.padsModeIsAutoLoopStems) {
+							if(globalConfig.shift) {
+								pLoopShift.translator.state = true
+							}
+							else {
+								pLoopAction.translator.state = true
+							}
+						}
+						else if(deckConfig.padsModeIsStems) {
+							pStemOverride.translator.state = true
+						}
+					}
+				}
+			}
+
+			Private.SimpleLed {
+				objectName: 'Parameter %1 LED %2'.arg(model.direction).arg(deckConfig.name).trim()
+				sendIfAssignmentDisabled: !deckConfig.inComputerMode
+				enabled: deckConfig.inDJMode
+				channel: deckConfig.midiChannel
+				note: model.note
+			}
+		}
+	}
+}

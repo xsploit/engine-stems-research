@@ -1,0 +1,174 @@
+000000000000fdc8 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)>:
+    fdc8:       stp x29, x30, [sp, #-0xc0]!
+    fdcc:       mov x29, sp
+    fdd0:       stp x23, x24, [sp, #0x30]
+    fdd4:       adrp x23, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    fdd8:       ldr x3, [x23, #0xfa8] ; @187fffa8
+    fddc:       stp x19, x20, [sp, #0x10]
+    fde0:       mov x19, x0
+    fde4:       ldr x0, [x3]
+    fde8:       str x0, [sp, #0xb8]
+    fdec:       mov x0, #0x0                // =0
+    fdf0:       stp x25, x26, [sp, #0x40]
+    fdf4:       stp x27, x28, [sp, #0x50]
+    fdf8:       str x2, [sp, #0x70]
+    fdfc:       cbz x1, 0xffc4 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x1fc>
+    fe00:       stp x21, x22, [sp, #0x20]
+    fe04:       add x21, x19, #0xb70
+    fe08:       mov x24, x1
+    fe0c:       ldp x0, x20, [x21, #0x8]
+    fe10:       subs x0, x20, x0
+    fe14:       b.pl 0xfe20 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x58>
+    fe18:       ldr x1, [x19, #0xb70]
+    fe1c:       add x0, x0, x1
+    fe20:       ldr x20, [x19, #0x20]
+    fe24:       cmp x20, x0
+    fe28:       csel x20, x20, x0, ls
+    fe2c:       cbnz x20, 0xfe70 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0xa8>
+    fe30:       ldr x1, [sp, #0x70]
+    fe34:       mov w0, #0x0                // =0
+    fe38:       ldp x21, x22, [sp, #0x20]
+    fe3c:       str xzr, [x1]
+    fe40:       ldr x23, [x23, #0xfa8] ; @187fffa8
+    fe44:       ldr x1, [sp, #0xb8]
+    fe48:       ldr x2, [x23]
+    fe4c:       subs x1, x1, x2
+    fe50:       mov x2, #0x0                // =0
+    fe54:       b.ne 0xffcc <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x204>
+    fe58:       ldp x19, x20, [sp, #0x10]
+    fe5c:       ldp x23, x24, [sp, #0x30]
+    fe60:       ldp x25, x26, [sp, #0x40]
+    fe64:       ldp x27, x28, [sp, #0x50]
+    fe68:       ldp x29, x30, [sp], #0xc0
+    fe6c:       ret
+    fe70:       add x0, x19, #0x28
+    fe74:       bl 0x12810 <zplane::StemsProAlgorithm::getNumOutputChannels() const>
+    fe78:       ldr x2, [x19, #0xba8]
+    fe7c:       cmp x0, x2
+    fe80:       b.ne 0xffd4 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x20c>
+    fe84:       ldp x0, x1, [x21, #0x8]
+    fe88:       subs x1, x1, x0
+    fe8c:       b.pl 0xfe98 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0xd0>
+    fe90:       ldr x3, [x19, #0xb70]
+    fe94:       add x1, x1, x3
+    fe98:       cmp x20, x1
+    fe9c:       b.hi 0x10004 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x23c>
+    fea0:       cbz x2, 0xff9c <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x1d4>
+    fea4:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    fea8:       add x1, x1, #0x2b0
+    feac:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    feb0:       add x27, sp, #0x88
+    feb4:       add x2, x2, #0x170
+    feb8:       add x28, sp, #0xa0
+    febc:       mov x22, #0x0               // =0
+    fec0:       stp x2, x1, [sp, #0x60]
+    fec4:       add x1, x19, #0xb88
+    fec8:       str x1, [sp, #0x78]
+    fecc:       b 0xff08 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x140>
+    fed0:       ldr x2, [sp, #0x68]
+    fed4:       stp x2, x3, [sp, #0x88]
+    fed8:       mov x1, x27
+    fedc:       ldr x2, [sp, #0x60]
+    fee0:       mov x0, x28
+    fee4:       str x20, [sp, #0x98]
+    fee8:       str x2, [sp, #0xa0]
+    feec:       stp x26, x20, [sp, #0xa8]
+    fef0:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    fef4:       add x22, x22, #0x1
+    fef8:       ldr x1, [x19, #0xba8]
+    fefc:       ldr x0, [x19, #0xb78]
+    ff00:       cmp x1, x22
+    ff04:       b.ls 0xff9c <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x1d4>
+    ff08:       ldr x3, [sp, #0x78]
+    ff0c:       add x2, x20, x0
+    ff10:       ldr x1, [x19, #0xba0]
+    ff14:       ldr x25, [x3, #0x30]
+    ff18:       ldr x3, [x1, x22, lsl #3]
+    ff1c:       ldr x1, [x21]
+    ff20:       add x25, x3, x25, lsl #2
+    ff24:       add x3, x25, x0, lsl #2
+    ff28:       cmp x2, x1
+    ff2c:       ldr x26, [x24, x22, lsl #3]
+    ff30:       b.ls 0xfed0 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x108>
+    ff34:       ldp x5, x4, [sp, #0x60]
+    ff38:       sub x2, x1, x0
+    ff3c:       mov x1, x27
+    ff40:       mov x0, x28
+    ff44:       stp x4, x3, [sp, #0x88]
+    ff48:       stp x2, x5, [sp, #0x98]
+    ff4c:       stp x26, x2, [sp, #0xa8]
+    ff50:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    ff54:       mov x1, x27
+    ff58:       ldp x4, x2, [x21]
+    ff5c:       mov x0, x28
+    ff60:       ldp x5, x3, [sp, #0x60]
+    ff64:       stp x3, x25, [sp, #0x88]
+    ff68:       str x5, [sp, #0xa0]
+    ff6c:       sub x3, x4, x2
+    ff70:       sub x2, x2, x4
+    ff74:       add x2, x2, x20
+    ff78:       str x2, [sp, #0x98]
+    ff7c:       add x26, x26, x3, lsl #2
+    ff80:       stp x26, x2, [sp, #0xa8]
+    ff84:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+    ff88:       ldr x1, [x19, #0xba8]
+    ff8c:       add x22, x22, #0x1
+    ff90:       ldr x0, [x19, #0xb78]
+    ff94:       cmp x1, x22
+    ff98:       b.hi 0xff08 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x140>
+    ff9c:       ldr x3, [x19, #0xb70]
+    ffa0:       add x1, x20, x0
+    ffa4:       ldp x21, x22, [sp, #0x20]
+    ffa8:       mov w0, #0x0                // =0
+    ffac:       udiv x2, x1, x3
+    ffb0:       msub x1, x2, x3, x1
+    ffb4:       str x1, [x19, #0xb78]
+    ffb8:       ldr x1, [sp, #0x70]
+    ffbc:       str x20, [x1]
+    ffc0:       b 0xfe40 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x78>
+    ffc4:       mov w0, #0x4                // =4
+    ffc8:       b 0xfe40 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x78>
+    ffcc:       stp x21, x22, [sp, #0x20]
+    ffd0:       bl 0x51d0 <__stack_chk_fail@plt>
+    ffd4:       mov x0, #0x10               // =16
+    ffd8:       bl 0x4d50 <__cxa_allocate_exception@plt>
+    ffdc:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+    ffe0:       mov x21, x0
+    ffe4:       add x1, x1, #0x8a8
+    ffe8:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+    ffec:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    fff0:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+    fff4:       mov x0, x21
+    fff8:       ldr x2, [x2, #0xf48] ; @187fff48
+    fffc:       ldr x1, [x1, #0xf80] ; @187fff80
+   10000:       bl 0x4f10 <__cxa_throw@plt>
+   10004:       mov x0, #0x10               // =16
+   10008:       bl 0x4d50 <__cxa_allocate_exception@plt>
+   1000c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   10010:       mov x21, x0
+   10014:       add x1, x1, #0x900
+   10018:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+   1001c:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   10020:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   10024:       mov x0, x21
+   10028:       ldr x2, [x2, #0xf48] ; @187fff48
+   1002c:       ldr x1, [x1, #0xf80] ; @187fff80
+   10030:       bl 0x4f10 <__cxa_throw@plt>
+   10034:       cmp x1, #0x1
+   10038:       b.ne 0x10070 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x2a8>
+   1003c:       bl 0x4bc0 <__cxa_begin_catch@plt>
+   10040:       bl 0x4fb0 <__cxa_end_catch@plt>
+   10044:       mov w0, #0x6                // =6
+   10048:       ldp x21, x22, [sp, #0x20]
+   1004c:       b 0xfe40 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x78>
+   10050:       mov x19, x0
+   10054:       mov x20, x1
+   10058:       mov x0, x21
+   1005c:       bl 0x5070 <__cxa_free_exception@plt>
+   10060:       mov x0, x19
+   10064:       mov x1, x20
+   10068:       b 0x10034 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x26c>
+   1006c:       b 0x10050 <zplane::StemsPro::StemsProImpl::flushBuffer(float* const*, unsigned long&)+0x288>
+   10070:       bl 0x4f40 <_Unwind_Resume@plt>
+   10074:       nop
+

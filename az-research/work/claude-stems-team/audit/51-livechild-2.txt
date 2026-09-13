@@ -1,0 +1,141 @@
+12410c0 ldr x1, [sp, #0xa8]
+12410c4 add x1, x1, #0x1
+12410c8 bl 0x391ae8
+12410cc mov x1, x20
+12410d0 add x0, x25, #0x30
+12410d4 bl 0x123cfa4
+12410e0 add x1, x1, #0x760  ; "returnFrames"
+12410e4 add x2, x2, #0x76c
+12410e8 mov x0, x26
+12410ec mov w3, #0x0                // =0
+12410f0 str x24, [sp, #0x98]
+12410f4 bl 0x51c6c8
+12410f8 mov x1, x26
+12410fc mov x0, x20
+1241100 bl 0x70bb00
+1241104 mov x19, x0
+1241108 add x0, sp, #0x70
+124110c cmp x19, x0
+1241110 b .eq	0x1241288
+1241114 add x27, sp, #0x130
+1241118 mov x0, x27
+124111c bl 0x391758
+1241120 ldr x0, [sp, #0x40]
+1241124 strh wzr, [sp, #0x210]
+1241128 ldr x1, [sp, #0x8]
+124112c ldp x23, x28, [x0, #0x8]
+1241130 ldur x0, [x23, #-0x18]
+1241134 str x1, [sp, #0x130]
+1241138 add x1, sp, #0x218
+124113c str x23, [sp, #0xb8]
+1241140 str xzr, [sp, #0x208]
+1241144 stp xzr, xzr, [x1]
+1241148 stp xzr, xzr, [x1, #0x10]
+124114c mov x1, #0x0                // =0
+1241150 str x28, [x22, x0]
+1241154 str xzr, [sp, #0xc0]
+1241158 ldur x0, [x23, #-0x18]
+124115c add x0, x22, x0
+1241160 bl 0x391768
+1241164 ldp x1, x2, [sp, #0x10]
+1241168 str x2, [sp, #0xb8]
+124116c ldr x2, [sp, #0x20]
+1241170 add x0, sp, #0x100
+1241174 str x0, [sp, #0x28]
+1241178 str x2, [sp, #0xc8]
+124117c add x1, x1, #0x40  ; "Image_01"
+1241180 stp xzr, xzr, [sp, #0xd0]
+1241184 stp xzr, xzr, [sp, #0xe0]
+1241188 stp xzr, xzr, [sp, #0xf0]
+124118c str x1, [sp, #0x130]
+1241190 bl 0x391778
+1241194 ldr x0, [sp]
+1241198 add x3, sp, #0x60
+124119c ldr x2, [x19, #0x48]
+12411a0 add x0, x0, #0x10
+12411a4 str x0, [sp, #0xc8]
+12411a8 str x3, [sp, #0x30]
+12411ac ldr x1, [x19, #0x40]
+12411b0 add x19, sp, #0x110
+12411b4 mov x0, x19
+12411b8 str wzr, [sp, #0x108]
+12411bc bl 0x51c960
+12411c0 ldr x1, [sp, #0x110]
+12411c4 mov w0, #0x8                // =8
+12411c8 mov x3, #0x0                // =0
+12411cc mov x2, #0x0                // =0
+12411d0 str w0, [sp, #0x108]
+12411d4 mov x0, x21
+12411d8 bl 0x3981c8
+12411dc mov x1, x21
+12411e0 mov x0, x27
+12411e4 bl 0x391768
+12411e8 ldr x1, [sp, #0x30]
+12411ec mov x0, x22
+12411f0 bl 0x399e78
+12411f4 ldp x1, x3, [sp, #0x10]
+12411f8 mov x0, x19
+12411fc ldr x2, [sp]
+1241200 str x3, [sp, #0xb8]
+1241204 add x2, x2, #0x10  ; "sFromRow(int)"
+1241208 str x2, [sp, #0xc8]
+124120c add x1, x1, #0x40  ; "Image_01"
+1241210 str x1, [sp, #0x130]
+1241214 bl 0x51c280
+1241218 ldp x1, x0, [sp, #0x20]
+124121c str x1, [sp, #0xc8]
+1241220 bl 0x3917a8
+1241224 ldur x1, [x23, #-0x18]
+1241228 str x23, [sp, #0xb8]
+124122c mov x0, x27
+1241230 str x28, [x22, x1]
+1241234 ldr x1, [sp, #0x8]
+1241238 str xzr, [sp, #0xc0]
+124123c str x1, [sp, #0x130]
+1241240 bl 0x3917b8
+1241244 ldr w19, [sp, #0x60]
+1241248 ldr x0, [sp, #0x98]
+124124c cmp x0, x24
+1241250 b .eq	0x1241260
+1241254 ldr x1, [sp, #0xa8]
+1241258 add x1, x1, #0x1  ; "er::getPlaylistsFromRow(int)"
+124125c bl 0x391ae8
+1241260 cbz w19, 0x12412a0
+1241264 ldr x0, [sp, #0x90]
+1241268 cbz x0, 0x12412a0
+124126c mov w1, w19
+1241270 mov x0, x25
+1241274 bl 0x123d3ec
+1241278 ldr x1, [sp, #0x78]
+124127c mov x0, x20
+1241280 bl 0x5409e8
+1241284 b 0x124104c
+1241288 ldr x0, [sp, #0x98]
+124128c cmp x0, x24
+1241290 b .eq	0x12412a0
+1241294 ldr x1, [sp, #0xa8]
+1241298 add x1, x1, #0x1  ; "er::getPlaylistsFromRow(int)"
+124129c bl 0x391ae8
+12412a0 ldr x1, [sp, #0x78]
+12412a4 mov x0, x20
+12412a8 bl 0x5409e8
+12412ac ldr x0, [sp, #0x48]
+12412b0 ldrb w0, [x0, #0x19]
+12412b4 tbz w0, #0x0, 0x124130c
+12412bc ldr x0, [x0, #0xb78]
+12412c0 ldr x2, [sp, #0x238]
+12412c4 ldr x1, [x0]
+12412c8 subs x2, x2, x1
+12412cc mov x1, #0x0                // =0
+12412d0 b .ne	0x12414cc
+12412d4 ldr x0, [sp, #0x48]
+12412d8 ldr x19, [sp, #0x250]
+12412dc ldr x20, [sp, #0x258]
+12412e0 ldr x21, [sp, #0x260]
+12412e4 ldr x22, [sp, #0x268]
+12412e8 ldr x23, [sp, #0x270]
+12412ec ldr x24, [sp, #0x278]
+12412f0 ldr x27, [sp, #0x290]
+12412f4 ldr x28, [sp, #0x298]
+12412f8 add sp, sp, #0x240
+12412fc ldp x25, x26, [sp, #0x40]

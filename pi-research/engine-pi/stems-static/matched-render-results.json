@@ -1,0 +1,24 @@
+[
+  {
+    "threads": 1,
+    "inputSHA256": "5672f87b6879aa674bf20266ddc574bd566b292cf01d24988379e0c08c99548e",
+    "audioSeconds": 12,
+    "prepareSeconds": 3.6301843359979102,
+    "renderSeconds": 14.47993685399706,
+    "processingSecondsPerAudioSecond": 1.206661404499755,
+    "firstAudioSecondsAfterPrepared": 2.6882942029915284,
+    "peakChildRssMiB": 896.640625,
+    "outputFrames": 529200
+  },
+  {
+    "threads": 2,
+    "inputSHA256": "5672f87b6879aa674bf20266ddc574bd566b292cf01d24988379e0c08c99548e",
+    "audioSeconds": 12,
+    "prepareSeconds": 2.8444429829978617,
+    "renderSeconds": 11.883799336006632,
+    "processingSecondsPerAudioSecond": 0.990316611333886,
+    "firstAudioSecondsAfterPrepared": 2.169300720008323,
+    "peakChildRssMiB": 899.21875,
+    "outputFrames": 529200
+  }
+]

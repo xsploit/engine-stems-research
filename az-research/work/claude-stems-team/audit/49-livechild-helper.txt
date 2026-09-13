@@ -1,0 +1,72 @@
+1240e50 stp x29, x30, [sp, #-0x60]!
+1240e54 mov x29, sp
+1240e58 stp x25, x26, [sp, #0x40]
+1240e5c sub sp, sp, #0x240
+1240e60 mov x25, x0
+1240e68 ldr x0, [x0, #0xb78]
+1240e6c add x2, x25, #0x398
+1240e70 str x2, [sp, #0x48]
+1240e74 ldr w1, [x25, #0x398]
+1240e78 ldr x3, [x0]
+1240e7c str x3, [sp, #0x238]
+1240e80 mov x3, #0x0                // =0
+1240e84 cmn w1, #0x1
+1240e88 b .ne	0x1240ebc
+1240e90 ldr x0, [x0, #0xb78]
+1240e94 ldr x2, [sp, #0x238]
+1240e98 ldr x1, [x0]
+1240e9c subs x2, x2, x1
+1240ea0 mov x1, #0x0                // =0
+1240ea4 b .ne	0x12414ac
+1240ea8 add sp, sp, #0x240
+1240eac ldp x25, x26, [sp, #0x40]
+1240eb0 ldp x29, x30, [sp], #0x60
+1240eb8 ret 
+1240ebc ldrb w0, [x25, #0x3b1]
+1240ec0 tbnz w0, #0x0, 0x1240e8c
+1240ec4 ldr x0, [x25, #0x3a0]
+1240ec8 ldar w0, [x0]
+1240ecc ands w0, w0, #0x7f
+1240ed0 b .eq	0x1240e8c
+1240ed4 add w0, w0, #0x1
+1240ed8 sbfx x0, x0, #1, #7
+1240edc cmp w0, #0x0
+1240ee0 b .gt	0x1240e8c
+1240ee4 ldr w0, [x25, #0x398]
+1240ee8 mov w2, #0x1                // =1
+1240eec str x20, [sp, #0x258]
+1240ef0 add x20, sp, #0x68
+1240ef4 mov x1, x20
+1240ef8 str x19, [sp, #0x250]
+1240efc bl 0x397c88
+1240f00 cmn w0, #0x1
+1240f04 b .eq	0x12413f4
+1240f08 str x21, [sp, #0x260]
+1240f0c str x22, [sp, #0x268]
+1240f10 str x23, [sp, #0x270]
+1240f14 str x24, [sp, #0x278]
+1240f18 str x27, [sp, #0x290]
+1240f1c str x28, [sp, #0x298]
+1240f20 cbz w0, 0x1240f70
+1240f24 ldr w2, [sp, #0x68]
+1240f28 ands w0, w2, #0x7f
+1240f2c b .eq	0x1241474
+1240f30 add w0, w0, #0x1
+1240f34 ldr x21, [sp, #0x260]
+1240f38 sbfx x0, x0, #1, #7
+1240f3c ldr x22, [sp, #0x268]
+1240f40 ldr x23, [sp, #0x270]
+1240f44 ldr x24, [sp, #0x278]
+1240f48 ldr x27, [sp, #0x290]
+1240f4c ldr x28, [sp, #0x298]
+1240f50 cmp w0, #0x0
+1240f54 b .le	0x1241490
+1240f58 ldr x0, [sp, #0x48]
+1240f5c bl 0x123c780
+1240f60 tbz w0, #0x0, 0x1241498
+1240f64 ldr x19, [sp, #0x250]
+1240f68 ldr x20, [sp, #0x258]
+1240f6c b 0x1240e8c
+1240f70 add x22, sp, #0xb8
+1240f78 mov x0, x22
+1240f7c add x1, x1, #0xe68  ; "action"

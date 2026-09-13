@@ -1,0 +1,22 @@
+0000000000026bd8 <zplfRealExp_I_ARMNeon(float*, int)>:
+   26bd8:       cmp w1, #0x0
+   26bdc:       b.le 0x26c20 <zplfRealExp_I_ARMNeon(float*, int)+0x48>
+   26be0:       stp x29, x30, [sp, #-0x20]!
+   26be4:       sub w1, w1, #0x1
+   26be8:       mov x29, sp
+   26bec:       stp x19, x20, [sp, #0x10]
+   26bf0:       add x20, x0, #0x4
+   26bf4:       mov x19, x0
+   26bf8:       add x20, x20, w1, uxtw #2
+   26bfc:       nop
+   26c00:       ldr s0, [x19]
+   26c04:       bl 0x4db0 <expf@plt>
+   26c08:       str s0, [x19], #0x4
+   26c0c:       cmp x19, x20
+   26c10:       b.ne 0x26c00 <zplfRealExp_I_ARMNeon(float*, int)+0x28>
+   26c14:       ldp x19, x20, [sp, #0x10]
+   26c18:       ldp x29, x30, [sp], #0x20
+   26c1c:       ret
+   26c20:       ret
+   26c24:       nop
+

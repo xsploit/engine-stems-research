@@ -1,0 +1,30 @@
+{
+  "host": "local PC only",
+  "emulator": "qemu-aarch64-static -cpu cortex-a76",
+  "runtime": "Original ARM libNNPredictionDispatcher_on.so, ONNX Runtime 1.16.3",
+  "baseline": {
+    "runtime": "1.16.3",
+    "threads": 2,
+    "optimization": 99,
+    "init_seconds": 1.00291813,
+    "first_run_seconds": 50.64390044,
+    "warm_seconds": [],
+    "finite": true
+  },
+  "candidate": {
+    "runtime": "1.16.3",
+    "threads": 2,
+    "optimization": 0,
+    "init_seconds": 0.465518369,
+    "first_run_seconds": 50.452510927,
+    "warm_seconds": [],
+    "finite": true
+  },
+  "comparison": {
+    "finite": true,
+    "exact_equal": false,
+    "max_abs": 1.3709068298339844e-06,
+    "rms": 1.4746406865435282e-07
+  },
+  "note": "One synthetic model input; emulator timings are not Pi performance. Baseline uses all runtime optimizations, candidate disables further runtime optimization."
+}

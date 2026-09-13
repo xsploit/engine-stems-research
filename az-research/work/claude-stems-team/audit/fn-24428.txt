@@ -1,0 +1,32 @@
+0000000000024428 <zplane::VectorOps<float, void>::shiftLeftAndInsert(zplane::VectorView<float>, zplane::VectorView<float const>)>:
+   24428:       stp x29, x30, [sp, #-0x20]!
+   2442c:       mov x29, sp
+   24430:       ldr x3, [x0, #0x10]
+   24434:       stp x19, x20, [sp, #0x10]
+   24438:       mov x19, x0
+   2443c:       ldr x4, [x1, #0x10]
+   24440:       lsl x5, x3, #2
+   24444:       ldr x0, [x0, #0x8]
+   24448:       mov x20, x1
+   2444c:       lsl x2, x4, #2
+   24450:       add x6, x0, x5
+   24454:       add x1, x0, x2
+   24458:       cmp x1, x6
+   2445c:       b.eq 0x24474 <zplane::VectorOps<float, void>::shiftLeftAndInsert(zplane::VectorView<float>, zplane::VectorView<float const>)+0x4c>
+   24460:       sub x2, x5, x2
+   24464:       bl 0x4bd0 <memmove@plt>
+   24468:       ldr x4, [x20, #0x10]
+   2446c:       ldp x0, x3, [x19, #0x8]
+   24470:       lsl x2, x4, #2
+   24474:       cbz x2, 0x24490 <zplane::VectorOps<float, void>::shiftLeftAndInsert(zplane::VectorView<float>, zplane::VectorView<float const>)+0x68>
+   24478:       ldr x1, [x20, #0x8]
+   2447c:       sub x3, x3, x4
+   24480:       ldp x19, x20, [sp, #0x10]
+   24484:       add x0, x0, x3, lsl #2
+   24488:       ldp x29, x30, [sp], #0x20
+   2448c:       b 0x4bd0 <memmove@plt>
+   24490:       ldp x19, x20, [sp, #0x10]
+   24494:       ldp x29, x30, [sp], #0x20
+   24498:       ret
+   2449c:       nop
+

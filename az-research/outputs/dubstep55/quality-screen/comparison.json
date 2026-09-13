@@ -1,0 +1,1676 @@
+{
+  "quality_verdict": "NOT_ESTABLISHED",
+  "alignment": "Caller must provide identical timeline and channel order; no correction applied",
+  "thresholds": "Provisional: active reference >= -60 dBFS RMS needs >=40 dB SNR per one-second channel window; quieter windows need residual peak <= -90 dBFS. Listening still required.",
+  "pairs": [
+    {
+      "stem": "stem-0",
+      "sample_rate": 44100,
+      "frames": 661500,
+      "reference_sha256": "9ebbc2133d181ca791157d699c8116a791f63e3bae3a44b94ecc05bfe9c5456f",
+      "candidate_sha256": "7843ac4c83f8009487b74eb6561c15d964175126c3203b506d6e62ac4c2fa216",
+      "clip_start_seconds": 3.0,
+      "exact": false,
+      "provisional_screen": "PASS_REQUIRES_LISTENING",
+      "max_absolute_error": 1.1324882507324219e-06,
+      "reference_peak": 0.6023099422454834,
+      "candidate_peak": 0.6023100018501282,
+      "worst_windows": [
+        {
+          "start_seconds": 4.0,
+          "channel": 0,
+          "reference_rms_dbfs": -22.38248301918422,
+          "error_rms_dbfs": -136.00349106430093,
+          "error_peak_dbfs": -118.91932589965438,
+          "snr_db": 113.62100804511671,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 1,
+          "reference_rms_dbfs": -22.449080684600446,
+          "error_rms_dbfs": -136.11124263065253,
+          "error_peak_dbfs": -119.38894781664486,
+          "snr_db": 113.66216194605208,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.080101816867607,
+          "error_rms_dbfs": -138.15729300807945,
+          "error_peak_dbfs": -123.76581260617748,
+          "snr_db": 115.07719119121184,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 1,
+          "reference_rms_dbfs": -24.221355175719825,
+          "error_rms_dbfs": -139.58622439662977,
+          "error_peak_dbfs": -124.27992061087551,
+          "snr_db": 115.36486922090995,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 1,
+          "reference_rms_dbfs": -23.141282323001754,
+          "error_rms_dbfs": -138.8959651949883,
+          "error_peak_dbfs": -125.90601940442512,
+          "snr_db": 115.75468287198655,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 1,
+          "reference_rms_dbfs": -30.325866231590382,
+          "error_rms_dbfs": -146.19817385246301,
+          "error_peak_dbfs": -127.74894386866498,
+          "snr_db": 115.87230762087263,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 0,
+          "reference_rms_dbfs": -24.051015115610767,
+          "error_rms_dbfs": -140.02192707294083,
+          "error_peak_dbfs": -124.49439791871097,
+          "snr_db": 115.97091195733006,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 1,
+          "reference_rms_dbfs": -24.338321018483512,
+          "error_rms_dbfs": -140.415953717771,
+          "error_peak_dbfs": -125.53103068416833,
+          "snr_db": 116.07763269928749,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 0,
+          "reference_rms_dbfs": -30.535276861274212,
+          "error_rms_dbfs": -146.7036148611629,
+          "error_peak_dbfs": -127.98912201812527,
+          "snr_db": 116.16833799988868,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.823836439879514,
+          "error_rms_dbfs": -141.1200932803374,
+          "error_peak_dbfs": -125.90601940442512,
+          "snr_db": 117.29625684045787,
+          "quiet": false,
+          "failed": false
+        }
+      ],
+      "windows": [
+        {
+          "start_seconds": 0.0,
+          "channel": 0,
+          "reference_rms_dbfs": -21.10560724164262,
+          "error_rms_dbfs": -143.3088767571902,
+          "error_peak_dbfs": -127.90832246209048,
+          "snr_db": 122.20326951554759,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 0.0,
+          "channel": 1,
+          "reference_rms_dbfs": -21.20840974175609,
+          "error_rms_dbfs": -143.17491369508795,
+          "error_peak_dbfs": -128.23613078585387,
+          "snr_db": 121.96650395333187,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.080101816867607,
+          "error_rms_dbfs": -138.15729300807945,
+          "error_peak_dbfs": -123.76581260617748,
+          "snr_db": 115.07719119121184,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 1,
+          "reference_rms_dbfs": -23.141282323001754,
+          "error_rms_dbfs": -138.8959651949883,
+          "error_peak_dbfs": -125.90601940442512,
+          "snr_db": 115.75468287198655,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 0,
+          "reference_rms_dbfs": -24.051015115610767,
+          "error_rms_dbfs": -140.02192707294083,
+          "error_peak_dbfs": -124.49439791871097,
+          "snr_db": 115.97091195733006,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 1,
+          "reference_rms_dbfs": -24.221355175719825,
+          "error_rms_dbfs": -139.58622439662977,
+          "error_peak_dbfs": -124.27992061087551,
+          "snr_db": 115.36486922090995,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 0,
+          "reference_rms_dbfs": -21.626182973871263,
+          "error_rms_dbfs": -140.89221577300492,
+          "error_peak_dbfs": -127.67033799609632,
+          "snr_db": 119.26603279913365,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 1,
+          "reference_rms_dbfs": -22.108865380921188,
+          "error_rms_dbfs": -140.48119256823836,
+          "error_peak_dbfs": -126.99317265087697,
+          "snr_db": 118.37232718731717,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 0,
+          "reference_rms_dbfs": -22.38248301918422,
+          "error_rms_dbfs": -136.00349106430093,
+          "error_peak_dbfs": -118.91932589965438,
+          "snr_db": 113.62100804511671,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 1,
+          "reference_rms_dbfs": -22.449080684600446,
+          "error_rms_dbfs": -136.11124263065253,
+          "error_peak_dbfs": -119.38894781664486,
+          "snr_db": 113.66216194605208,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 5.0,
+          "channel": 0,
+          "reference_rms_dbfs": -21.27395503362273,
+          "error_rms_dbfs": -140.82418107347317,
+          "error_peak_dbfs": -127.59243711842585,
+          "snr_db": 119.55022603985044,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 5.0,
+          "channel": 1,
+          "reference_rms_dbfs": -21.56127549758964,
+          "error_rms_dbfs": -140.69453664110887,
+          "error_peak_dbfs": -127.59243711842585,
+          "snr_db": 119.13326114351923,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 6.0,
+          "channel": 0,
+          "reference_rms_dbfs": -19.882943753212718,
+          "error_rms_dbfs": -144.3531524917614,
+          "error_peak_dbfs": -131.4301476432041,
+          "snr_db": 124.47020873854868,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 6.0,
+          "channel": 1,
+          "reference_rms_dbfs": -19.861811590734934,
+          "error_rms_dbfs": -144.84069412678937,
+          "error_peak_dbfs": -131.1336721168636,
+          "snr_db": 124.97888253605444,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.823836439879514,
+          "error_rms_dbfs": -141.1200932803374,
+          "error_peak_dbfs": -125.90601940442512,
+          "snr_db": 117.29625684045787,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 1,
+          "reference_rms_dbfs": -24.338321018483512,
+          "error_rms_dbfs": -140.415953717771,
+          "error_peak_dbfs": -125.53103068416833,
+          "snr_db": 116.07763269928749,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 0,
+          "reference_rms_dbfs": -25.028642889738904,
+          "error_rms_dbfs": -145.26989426556594,
+          "error_peak_dbfs": -126.16531894771248,
+          "snr_db": 120.24125137582703,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 1,
+          "reference_rms_dbfs": -25.439245589173666,
+          "error_rms_dbfs": -144.95736895865326,
+          "error_peak_dbfs": -125.65423685826471,
+          "snr_db": 119.5181233694796,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 9.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.152275762693073,
+          "error_rms_dbfs": -145.91202150463894,
+          "error_peak_dbfs": -129.6871441288261,
+          "snr_db": 122.75974574194586,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 9.0,
+          "channel": 1,
+          "reference_rms_dbfs": -23.317685769748813,
+          "error_rms_dbfs": -144.9971527008532,
+          "error_peak_dbfs": -129.6871441288261,
+          "snr_db": 121.6794669311044,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 10.0,
+          "channel": 0,
+          "reference_rms_dbfs": -22.201697715648933,
+          "error_rms_dbfs": -144.56214440790674,
+          "error_peak_dbfs": -127.26893834058964,
+          "snr_db": 122.36044669225781,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 10.0,
+          "channel": 1,
+          "reference_rms_dbfs": -22.608528834777935,
+          "error_rms_dbfs": -143.79367647255992,
+          "error_peak_dbfs": -126.63859731166835,
+          "snr_db": 121.185147637782,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 11.0,
+          "channel": 0,
+          "reference_rms_dbfs": -21.20450004047512,
+          "error_rms_dbfs": -145.3558521047005,
+          "error_peak_dbfs": -129.88682854695813,
+          "snr_db": 124.15135206422536,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 11.0,
+          "channel": 1,
+          "reference_rms_dbfs": -21.4030289153876,
+          "error_rms_dbfs": -144.72101872536638,
+          "error_peak_dbfs": -128.75227605797957,
+          "snr_db": 123.31798980997877,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 0,
+          "reference_rms_dbfs": -19.415593831762166,
+          "error_rms_dbfs": -144.32485017882755,
+          "error_peak_dbfs": -128.23613078585387,
+          "snr_db": 124.90925634706538,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 1,
+          "reference_rms_dbfs": -19.594618148216977,
+          "error_rms_dbfs": -145.01719330382454,
+          "error_peak_dbfs": -128.07068026653405,
+          "snr_db": 125.42257515560756,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 0,
+          "reference_rms_dbfs": -25.79663939060529,
+          "error_rms_dbfs": -147.61365843171765,
+          "error_peak_dbfs": -133.9289223753701,
+          "snr_db": 121.81701904111236,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 1,
+          "reference_rms_dbfs": -25.767253941256655,
+          "error_rms_dbfs": -147.64854086884512,
+          "error_peak_dbfs": -134.25673069913347,
+          "snr_db": 121.88128692758846,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 0,
+          "reference_rms_dbfs": -30.535276861274212,
+          "error_rms_dbfs": -146.7036148611629,
+          "error_peak_dbfs": -127.98912201812527,
+          "snr_db": 116.16833799988868,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 1,
+          "reference_rms_dbfs": -30.325866231590382,
+          "error_rms_dbfs": -146.19817385246301,
+          "error_peak_dbfs": -127.74894386866498,
+          "snr_db": 115.87230762087263,
+          "quiet": false,
+          "failed": false
+        }
+      ]
+    },
+    {
+      "stem": "stem-1",
+      "sample_rate": 44100,
+      "frames": 661500,
+      "reference_sha256": "ea334dbf464c01e14e65955a34727cb7e1068d25482960cbce588124cd1ec8c5",
+      "candidate_sha256": "03e43d8a420f19c5707b848a82be1e8e1bb51f70e6f760701748e413e91496fc",
+      "clip_start_seconds": 8.0,
+      "exact": false,
+      "provisional_screen": "PASS_REQUIRES_LISTENING",
+      "max_absolute_error": 1.519918441772461e-06,
+      "reference_peak": 0.9166347980499268,
+      "candidate_peak": 0.916634738445282,
+      "worst_windows": [
+        {
+          "start_seconds": 9.0,
+          "channel": 1,
+          "reference_rms_dbfs": -27.823933248754077,
+          "error_rms_dbfs": -145.0016625259209,
+          "error_peak_dbfs": -131.07557230399547,
+          "snr_db": 117.17772927716682,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 9.0,
+          "channel": 0,
+          "reference_rms_dbfs": -28.01751558747091,
+          "error_rms_dbfs": -145.35607670565912,
+          "error_peak_dbfs": -132.1859188609921,
+          "snr_db": 117.33856111818821,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 0,
+          "reference_rms_dbfs": -15.086483996144048,
+          "error_rms_dbfs": -135.13311707456864,
+          "error_peak_dbfs": -122.3841942233115,
+          "snr_db": 120.04663307842459,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 1,
+          "reference_rms_dbfs": -15.08593434956757,
+          "error_rms_dbfs": -135.68960280410946,
+          "error_peak_dbfs": -120.41199826559249,
+          "snr_db": 120.60366845454189,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.72490970844281,
+          "error_rms_dbfs": -138.03088125370456,
+          "error_peak_dbfs": -116.36359431003187,
+          "snr_db": 123.30597154526176,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.726381130902544,
+          "error_rms_dbfs": -138.48586174067447,
+          "error_peak_dbfs": -117.07304067327625,
+          "snr_db": 123.75948060977193,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.008279354199814,
+          "error_rms_dbfs": -138.16338311749652,
+          "error_peak_dbfs": -121.11855751242734,
+          "snr_db": 124.15510376329671,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.0218993306922,
+          "error_rms_dbfs": -138.66378047696634,
+          "error_peak_dbfs": -122.21553087257425,
+          "snr_db": 124.64188114627413,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 1,
+          "reference_rms_dbfs": -15.39124461783423,
+          "error_rms_dbfs": -140.62562447825474,
+          "error_peak_dbfs": -124.939925812934,
+          "snr_db": 125.2343798604205,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 1,
+          "reference_rms_dbfs": -13.869827974477209,
+          "error_rms_dbfs": -139.54980081039264,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 125.67997283591544,
+          "quiet": false,
+          "failed": false
+        }
+      ],
+      "windows": [
+        {
+          "start_seconds": 0.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.351376439243085,
+          "error_rms_dbfs": -143.17727445217878,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 128.82589801293568,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 0.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.348284371896119,
+          "error_rms_dbfs": -144.28057097644884,
+          "error_peak_dbfs": -128.23613078585387,
+          "snr_db": 129.93228660455273,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.806175183122804,
+          "error_rms_dbfs": -145.88793425913934,
+          "error_peak_dbfs": -127.21308033690624,
+          "snr_db": 131.08175907601654,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.758831761878142,
+          "error_rms_dbfs": -143.55281754635692,
+          "error_peak_dbfs": -125.90601940442512,
+          "snr_db": 128.79398578447876,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 0,
+          "reference_rms_dbfs": -13.647058024162,
+          "error_rms_dbfs": -141.3220774810772,
+          "error_peak_dbfs": -126.16531894771248,
+          "snr_db": 127.67501945691521,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 1,
+          "reference_rms_dbfs": -13.64481003903701,
+          "error_rms_dbfs": -140.23651503930256,
+          "error_peak_dbfs": -124.27992061087551,
+          "snr_db": 126.59170500026555,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 0,
+          "reference_rms_dbfs": -15.086483996144048,
+          "error_rms_dbfs": -135.13311707456864,
+          "error_peak_dbfs": -122.3841942233115,
+          "snr_db": 120.04663307842459,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 1,
+          "reference_rms_dbfs": -15.08593434956757,
+          "error_rms_dbfs": -135.68960280410946,
+          "error_peak_dbfs": -120.41199826559249,
+          "snr_db": 120.60366845454189,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.72490970844281,
+          "error_rms_dbfs": -138.03088125370456,
+          "error_peak_dbfs": -116.36359431003187,
+          "snr_db": 123.30597154526176,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.726381130902544,
+          "error_rms_dbfs": -138.48586174067447,
+          "error_peak_dbfs": -117.07304067327625,
+          "snr_db": 123.75948060977193,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 5.0,
+          "channel": 0,
+          "reference_rms_dbfs": -13.996962807315578,
+          "error_rms_dbfs": -147.360840330254,
+          "error_peak_dbfs": -130.5149978319906,
+          "snr_db": 133.36387752293842,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 5.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.078801857389077,
+          "error_rms_dbfs": -147.35804005888775,
+          "error_peak_dbfs": -130.5149978319906,
+          "snr_db": 133.27923820149869,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 6.0,
+          "channel": 0,
+          "reference_rms_dbfs": -15.745289918651128,
+          "error_rms_dbfs": -148.2666044853464,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 132.52131456669525,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 6.0,
+          "channel": 1,
+          "reference_rms_dbfs": -15.735170771468175,
+          "error_rms_dbfs": -147.35793788580526,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 131.62276711433708,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 0,
+          "reference_rms_dbfs": -15.388847633050819,
+          "error_rms_dbfs": -143.810605986685,
+          "error_peak_dbfs": -129.30104102491836,
+          "snr_db": 128.42175835363417,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 1,
+          "reference_rms_dbfs": -15.39124461783423,
+          "error_rms_dbfs": -140.62562447825474,
+          "error_peak_dbfs": -124.939925812934,
+          "snr_db": 125.2343798604205,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 0,
+          "reference_rms_dbfs": -13.88866854886757,
+          "error_rms_dbfs": -140.41377160496,
+          "error_peak_dbfs": -126.99317265087697,
+          "snr_db": 126.52510305609243,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 1,
+          "reference_rms_dbfs": -13.869827974477209,
+          "error_rms_dbfs": -139.54980081039264,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 125.67997283591544,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 9.0,
+          "channel": 0,
+          "reference_rms_dbfs": -28.01751558747091,
+          "error_rms_dbfs": -145.35607670565912,
+          "error_peak_dbfs": -132.1859188609921,
+          "snr_db": 117.33856111818821,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 9.0,
+          "channel": 1,
+          "reference_rms_dbfs": -27.823933248754077,
+          "error_rms_dbfs": -145.0016625259209,
+          "error_peak_dbfs": -131.07557230399547,
+          "snr_db": 117.17772927716682,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 10.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.072392731502589,
+          "error_rms_dbfs": -144.10078770643446,
+          "error_peak_dbfs": -128.23613078585387,
+          "snr_db": 130.02839497493187,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 10.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.099784794612113,
+          "error_rms_dbfs": -144.92753737878675,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 130.82775258417465,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 11.0,
+          "channel": 0,
+          "reference_rms_dbfs": -13.96116139161869,
+          "error_rms_dbfs": -142.00591371199422,
+          "error_peak_dbfs": -124.939925812934,
+          "snr_db": 128.04475232037552,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 11.0,
+          "channel": 1,
+          "reference_rms_dbfs": -13.866645432057659,
+          "error_rms_dbfs": -140.96996415945418,
+          "error_peak_dbfs": -124.49439791871097,
+          "snr_db": 127.10331872739653,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 0,
+          "reference_rms_dbfs": -16.506531908343376,
+          "error_rms_dbfs": -146.96726097620444,
+          "error_peak_dbfs": -130.5149978319906,
+          "snr_db": 130.46072906786105,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 1,
+          "reference_rms_dbfs": -16.45345374546981,
+          "error_rms_dbfs": -145.78701985461262,
+          "error_peak_dbfs": -130.30052052415513,
+          "snr_db": 129.33356610914282,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.0218993306922,
+          "error_rms_dbfs": -138.66378047696634,
+          "error_peak_dbfs": -122.21553087257425,
+          "snr_db": 124.64188114627413,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.008279354199814,
+          "error_rms_dbfs": -138.16338311749652,
+          "error_peak_dbfs": -121.11855751242734,
+          "snr_db": 124.15510376329671,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 0,
+          "reference_rms_dbfs": -12.56236465012076,
+          "error_rms_dbfs": -140.50511637437893,
+          "error_peak_dbfs": -127.59243711842585,
+          "snr_db": 127.94275172425817,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 1,
+          "reference_rms_dbfs": -12.56074066733385,
+          "error_rms_dbfs": -139.94014560546572,
+          "error_peak_dbfs": -126.36500336584449,
+          "snr_db": 127.37940493813187,
+          "quiet": false,
+          "failed": false
+        }
+      ]
+    },
+    {
+      "stem": "stem-2",
+      "sample_rate": 44100,
+      "frames": 661500,
+      "reference_sha256": "2f8fdb1b792a088a1a97237a05878e54e2a47e1f0b33692b184e4d3d3e68247f",
+      "candidate_sha256": "da31d2be67f2902ae5643777261c54b5034fda7243e719c81a0c52e826dda222",
+      "clip_start_seconds": 12.0,
+      "exact": false,
+      "provisional_screen": "PASS_REQUIRES_LISTENING",
+      "max_absolute_error": 9.5367431640625e-07,
+      "reference_peak": 1.0825268030166626,
+      "candidate_peak": 1.0825268030166626,
+      "worst_windows": [
+        {
+          "start_seconds": 13.0,
+          "channel": 1,
+          "reference_rms_dbfs": -16.0841354095593,
+          "error_rms_dbfs": -138.1370819496895,
+          "error_peak_dbfs": -120.41199826559249,
+          "snr_db": 122.05294654013021,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 0,
+          "reference_rms_dbfs": -16.074917670977353,
+          "error_rms_dbfs": -139.061457456295,
+          "error_peak_dbfs": -120.68776395530514,
+          "snr_db": 122.98653978531763,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 1,
+          "reference_rms_dbfs": -15.547734703012228,
+          "error_rms_dbfs": -144.73114273099083,
+          "error_peak_dbfs": -125.40954772992448,
+          "snr_db": 129.1834080279786,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 1,
+          "reference_rms_dbfs": -11.864996649747958,
+          "error_rms_dbfs": -141.61209833708094,
+          "error_peak_dbfs": -127.59243711842585,
+          "snr_db": 129.747101687333,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 1,
+          "reference_rms_dbfs": -13.437441398272792,
+          "error_rms_dbfs": -143.22289940690888,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 129.78545800863608,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 0,
+          "reference_rms_dbfs": -15.547406658893745,
+          "error_rms_dbfs": -145.43241671318097,
+          "error_peak_dbfs": -123.66654421554648,
+          "snr_db": 129.88501005428722,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 1,
+          "reference_rms_dbfs": -13.719737112199539,
+          "error_rms_dbfs": -143.70915575412678,
+          "error_peak_dbfs": -127.2876377872911,
+          "snr_db": 129.98941864192724,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 0,
+          "reference_rms_dbfs": -12.328422157881867,
+          "error_rms_dbfs": -142.42049228103915,
+          "error_peak_dbfs": -123.66654421554648,
+          "snr_db": 130.09207012315727,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 0,
+          "reference_rms_dbfs": -11.821826090095511,
+          "error_rms_dbfs": -142.13601557801016,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 130.31418948791466,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.787517701395474,
+          "error_rms_dbfs": -145.23762816734458,
+          "error_peak_dbfs": -123.66654421554648,
+          "snr_db": 130.4501104659491,
+          "quiet": false,
+          "failed": false
+        }
+      ],
+      "windows": [
+        {
+          "start_seconds": 0.0,
+          "channel": 0,
+          "reference_rms_dbfs": -12.351678933192773,
+          "error_rms_dbfs": -146.2899813386738,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 133.93830240548104,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 0.0,
+          "channel": 1,
+          "reference_rms_dbfs": -12.38125766030947,
+          "error_rms_dbfs": -145.25570755521323,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 132.87444989490376,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 0,
+          "reference_rms_dbfs": -13.731436793437998,
+          "error_rms_dbfs": -144.29005961792595,
+          "error_peak_dbfs": -126.99317265087697,
+          "snr_db": 130.55862282448794,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 1,
+          "reference_rms_dbfs": -13.719737112199539,
+          "error_rms_dbfs": -143.70915575412678,
+          "error_peak_dbfs": -127.2876377872911,
+          "snr_db": 129.98941864192724,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 0,
+          "reference_rms_dbfs": -15.547406658893745,
+          "error_rms_dbfs": -145.43241671318097,
+          "error_peak_dbfs": -123.66654421554648,
+          "snr_db": 129.88501005428722,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 1,
+          "reference_rms_dbfs": -15.547734703012228,
+          "error_rms_dbfs": -144.73114273099083,
+          "error_peak_dbfs": -125.40954772992448,
+          "snr_db": 129.1834080279786,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 0,
+          "reference_rms_dbfs": -12.328422157881867,
+          "error_rms_dbfs": -142.42049228103915,
+          "error_peak_dbfs": -123.66654421554648,
+          "snr_db": 130.09207012315727,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 1,
+          "reference_rms_dbfs": -12.317434567626835,
+          "error_rms_dbfs": -143.14150573609842,
+          "error_peak_dbfs": -124.49439791871097,
+          "snr_db": 130.8240711684716,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.787517701395474,
+          "error_rms_dbfs": -145.23762816734458,
+          "error_peak_dbfs": -123.66654421554648,
+          "snr_db": 130.4501104659491,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.860405703743567,
+          "error_rms_dbfs": -145.82620736766683,
+          "error_peak_dbfs": -123.47134746976336,
+          "snr_db": 130.96580166392326,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 5.0,
+          "channel": 0,
+          "reference_rms_dbfs": -11.601614896831485,
+          "error_rms_dbfs": -146.23689403284635,
+          "error_peak_dbfs": -126.16531894771248,
+          "snr_db": 134.63527913601487,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 5.0,
+          "channel": 1,
+          "reference_rms_dbfs": -11.629154821796341,
+          "error_rms_dbfs": -145.58616587572598,
+          "error_peak_dbfs": -125.40954772992448,
+          "snr_db": 133.95701105392965,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 6.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.89132956327541,
+          "error_rms_dbfs": -146.88866449492076,
+          "error_peak_dbfs": -126.84960095833449,
+          "snr_db": 131.99733493164536,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 6.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.8632071959511,
+          "error_rms_dbfs": -146.19643476153303,
+          "error_peak_dbfs": -124.49439791871097,
+          "snr_db": 131.33322756558192,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 0,
+          "reference_rms_dbfs": -12.29122432761141,
+          "error_rms_dbfs": -144.7877833364075,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 132.49655900879608,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 1,
+          "reference_rms_dbfs": -12.301923029724826,
+          "error_rms_dbfs": -145.3629355920964,
+          "error_peak_dbfs": -127.59243711842585,
+          "snr_db": 133.06101256237156,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 0,
+          "reference_rms_dbfs": -13.39750612590478,
+          "error_rms_dbfs": -144.5322112123956,
+          "error_peak_dbfs": -126.99317265087697,
+          "snr_db": 131.1347050864908,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 1,
+          "reference_rms_dbfs": -13.437441398272792,
+          "error_rms_dbfs": -143.22289940690888,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 129.78545800863608,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 9.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.308038276596871,
+          "error_rms_dbfs": -148.42607880979534,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 134.11804053319847,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 9.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.29863394241573,
+          "error_rms_dbfs": -148.0196175994577,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 133.72098365704196,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 10.0,
+          "channel": 0,
+          "reference_rms_dbfs": -11.537012442136763,
+          "error_rms_dbfs": -146.1451777276636,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 134.60816528552684,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 10.0,
+          "channel": 1,
+          "reference_rms_dbfs": -11.51115591148784,
+          "error_rms_dbfs": -146.03180728455075,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 134.52065137306292,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 11.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.815030525854064,
+          "error_rms_dbfs": -147.85038408876594,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 133.03535356291187,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 11.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.891127214836143,
+          "error_rms_dbfs": -147.41147310530698,
+          "error_peak_dbfs": -127.90832246209048,
+          "snr_db": 132.52034589047085,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 0,
+          "reference_rms_dbfs": -11.821826090095511,
+          "error_rms_dbfs": -142.13601557801016,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 130.31418948791466,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 1,
+          "reference_rms_dbfs": -11.864996649747958,
+          "error_rms_dbfs": -141.61209833708094,
+          "error_peak_dbfs": -127.59243711842585,
+          "snr_db": 129.747101687333,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 0,
+          "reference_rms_dbfs": -16.074917670977353,
+          "error_rms_dbfs": -139.061457456295,
+          "error_peak_dbfs": -120.68776395530514,
+          "snr_db": 122.98653978531763,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 1,
+          "reference_rms_dbfs": -16.0841354095593,
+          "error_rms_dbfs": -138.1370819496895,
+          "error_peak_dbfs": -120.41199826559249,
+          "snr_db": 122.05294654013021,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 0,
+          "reference_rms_dbfs": -14.617551742116856,
+          "error_rms_dbfs": -146.56431903201369,
+          "error_peak_dbfs": -127.59243711842585,
+          "snr_db": 131.94676728989683,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 1,
+          "reference_rms_dbfs": -14.590223861337602,
+          "error_rms_dbfs": -145.68006476934437,
+          "error_peak_dbfs": -126.43259817887211,
+          "snr_db": 131.08984090800678,
+          "quiet": false,
+          "failed": false
+        }
+      ]
+    },
+    {
+      "stem": "stem-3",
+      "sample_rate": 44100,
+      "frames": 661500,
+      "reference_sha256": "cd1d9385a7fc072d4abcd44fe2121b3c9e30a6e420ff3bee88c2e37525b4c9bb",
+      "candidate_sha256": "7a100db37855f47dbcbaf08761705e4ef7e7f82580287dcfb08cf90d86783ded",
+      "clip_start_seconds": 2.0,
+      "exact": false,
+      "provisional_screen": "PASS_REQUIRES_LISTENING",
+      "max_absolute_error": 1.0728836059570312e-06,
+      "reference_peak": 0.5047085881233215,
+      "candidate_peak": 0.5047083497047424,
+      "worst_windows": [
+        {
+          "start_seconds": 3.0,
+          "channel": 0,
+          "reference_rms_dbfs": -31.557641010388544,
+          "error_rms_dbfs": -139.3021795598621,
+          "error_peak_dbfs": -123.09364058655588,
+          "snr_db": 107.74453854947356,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 1,
+          "reference_rms_dbfs": -29.962635523978427,
+          "error_rms_dbfs": -137.84985798947488,
+          "error_peak_dbfs": -121.88772254881086,
+          "snr_db": 107.88722246549645,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 1,
+          "reference_rms_dbfs": -23.272846954215133,
+          "error_rms_dbfs": -135.7975255661194,
+          "error_peak_dbfs": -119.38894781664486,
+          "snr_db": 112.52467861190425,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 0,
+          "reference_rms_dbfs": -22.719677722729294,
+          "error_rms_dbfs": -135.60338014036708,
+          "error_peak_dbfs": -121.34224085147761,
+          "snr_db": 112.88370241763778,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 1,
+          "reference_rms_dbfs": -25.570837420926246,
+          "error_rms_dbfs": -140.1272910081514,
+          "error_peak_dbfs": -125.40954772992448,
+          "snr_db": 114.55645358722515,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.472862912415064,
+          "error_rms_dbfs": -138.37692746059483,
+          "error_peak_dbfs": -121.11855751242734,
+          "snr_db": 114.90406454817976,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 1,
+          "reference_rms_dbfs": -24.019348563405156,
+          "error_rms_dbfs": -138.9537863913656,
+          "error_peak_dbfs": -122.91077299775849,
+          "snr_db": 114.93443782796045,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 0,
+          "reference_rms_dbfs": -25.34511675470277,
+          "error_rms_dbfs": -140.30790043474627,
+          "error_peak_dbfs": -125.17156326393032,
+          "snr_db": 114.9627836800435,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 0.0,
+          "channel": 0,
+          "reference_rms_dbfs": -24.184673964718733,
+          "error_rms_dbfs": -140.70654161341832,
+          "error_peak_dbfs": -124.38649728097685,
+          "snr_db": 116.52186764869958,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.003708709463186,
+          "error_rms_dbfs": -139.97480755419983,
+          "error_peak_dbfs": -125.40954772992448,
+          "snr_db": 116.97109884473664,
+          "quiet": false,
+          "failed": false
+        }
+      ],
+      "windows": [
+        {
+          "start_seconds": 0.0,
+          "channel": 0,
+          "reference_rms_dbfs": -24.184673964718733,
+          "error_rms_dbfs": -140.70654161341832,
+          "error_peak_dbfs": -124.38649728097685,
+          "snr_db": 116.52186764869958,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 0.0,
+          "channel": 1,
+          "reference_rms_dbfs": -23.802633348434927,
+          "error_rms_dbfs": -141.53067906035486,
+          "error_peak_dbfs": -124.27992061087551,
+          "snr_db": 117.72804571191993,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.472862912415064,
+          "error_rms_dbfs": -138.37692746059483,
+          "error_peak_dbfs": -121.11855751242734,
+          "snr_db": 114.90406454817976,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 1.0,
+          "channel": 1,
+          "reference_rms_dbfs": -24.019348563405156,
+          "error_rms_dbfs": -138.9537863913656,
+          "error_peak_dbfs": -122.91077299775849,
+          "snr_db": 114.93443782796045,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 0,
+          "reference_rms_dbfs": -25.34511675470277,
+          "error_rms_dbfs": -140.30790043474627,
+          "error_peak_dbfs": -125.17156326393032,
+          "snr_db": 114.9627836800435,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 2.0,
+          "channel": 1,
+          "reference_rms_dbfs": -25.570837420926246,
+          "error_rms_dbfs": -140.1272910081514,
+          "error_peak_dbfs": -125.40954772992448,
+          "snr_db": 114.55645358722515,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 0,
+          "reference_rms_dbfs": -31.557641010388544,
+          "error_rms_dbfs": -139.3021795598621,
+          "error_peak_dbfs": -123.09364058655588,
+          "snr_db": 107.74453854947356,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 3.0,
+          "channel": 1,
+          "reference_rms_dbfs": -29.962635523978427,
+          "error_rms_dbfs": -137.84985798947488,
+          "error_peak_dbfs": -121.88772254881086,
+          "snr_db": 107.88722246549645,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 0,
+          "reference_rms_dbfs": -22.719677722729294,
+          "error_rms_dbfs": -135.60338014036708,
+          "error_peak_dbfs": -121.34224085147761,
+          "snr_db": 112.88370241763778,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 4.0,
+          "channel": 1,
+          "reference_rms_dbfs": -23.272846954215133,
+          "error_rms_dbfs": -135.7975255661194,
+          "error_peak_dbfs": -119.38894781664486,
+          "snr_db": 112.52467861190425,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 5.0,
+          "channel": 0,
+          "reference_rms_dbfs": -25.068068238739066,
+          "error_rms_dbfs": -142.38638562422582,
+          "error_peak_dbfs": -129.39596972540758,
+          "snr_db": 117.31831738548675,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 5.0,
+          "channel": 1,
+          "reference_rms_dbfs": -25.44619736354438,
+          "error_rms_dbfs": -142.61910192109,
+          "error_peak_dbfs": -129.6871441288261,
+          "snr_db": 117.17290455754562,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 6.0,
+          "channel": 0,
+          "reference_rms_dbfs": -25.62483122326436,
+          "error_rms_dbfs": -144.7388794123121,
+          "error_peak_dbfs": -128.75227605797957,
+          "snr_db": 119.11404818904774,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 6.0,
+          "channel": 1,
+          "reference_rms_dbfs": -26.604397133936498,
+          "error_rms_dbfs": -144.56099489435286,
+          "error_peak_dbfs": -127.90832246209048,
+          "snr_db": 117.95659776041636,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.003708709463186,
+          "error_rms_dbfs": -139.97480755419983,
+          "error_peak_dbfs": -125.40954772992448,
+          "snr_db": 116.97109884473664,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 7.0,
+          "channel": 1,
+          "reference_rms_dbfs": -22.84341787161383,
+          "error_rms_dbfs": -140.28311299533374,
+          "error_peak_dbfs": -125.65423685826471,
+          "snr_db": 117.4396951237199,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 0,
+          "reference_rms_dbfs": -21.124240999526506,
+          "error_rms_dbfs": -141.10989514511397,
+          "error_peak_dbfs": -122.91077299775849,
+          "snr_db": 119.98565414558746,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 8.0,
+          "channel": 1,
+          "reference_rms_dbfs": -20.919358916074167,
+          "error_rms_dbfs": -141.34827120717728,
+          "error_peak_dbfs": -121.88772254881086,
+          "snr_db": 120.4289122911031,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 9.0,
+          "channel": 0,
+          "reference_rms_dbfs": -21.58517414895405,
+          "error_rms_dbfs": -143.78597393376552,
+          "error_peak_dbfs": -128.66409367987848,
+          "snr_db": 122.20079978481147,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 9.0,
+          "channel": 1,
+          "reference_rms_dbfs": -22.05554433327139,
+          "error_rms_dbfs": -143.48249025992877,
+          "error_peak_dbfs": -127.90832246209048,
+          "snr_db": 121.42694592665738,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 10.0,
+          "channel": 0,
+          "reference_rms_dbfs": -25.060312369880705,
+          "error_rms_dbfs": -143.38434785421737,
+          "error_peak_dbfs": -124.60365583274103,
+          "snr_db": 118.32403548433666,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 10.0,
+          "channel": 1,
+          "reference_rms_dbfs": -24.15967187504615,
+          "error_rms_dbfs": -143.43782146062776,
+          "error_peak_dbfs": -124.38649728097685,
+          "snr_db": 119.27814958558162,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 11.0,
+          "channel": 0,
+          "reference_rms_dbfs": -22.72018923237802,
+          "error_rms_dbfs": -143.90651362487293,
+          "error_peak_dbfs": -128.72462277248223,
+          "snr_db": 121.18632439249491,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 11.0,
+          "channel": 1,
+          "reference_rms_dbfs": -22.806224971375244,
+          "error_rms_dbfs": -142.40448045872517,
+          "error_peak_dbfs": -126.99317265087697,
+          "snr_db": 119.59825548734993,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 0,
+          "reference_rms_dbfs": -23.010346528093827,
+          "error_rms_dbfs": -145.52703714598746,
+          "error_peak_dbfs": -128.9313729110381,
+          "snr_db": 122.51669061789363,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 12.0,
+          "channel": 1,
+          "reference_rms_dbfs": -23.300293289361132,
+          "error_rms_dbfs": -146.11814149299474,
+          "error_peak_dbfs": -130.5149978319906,
+          "snr_db": 122.8178482036336,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 0,
+          "reference_rms_dbfs": -25.263616311223252,
+          "error_rms_dbfs": -144.84284909835796,
+          "error_peak_dbfs": -128.1530115904307,
+          "snr_db": 119.57923278713471,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 13.0,
+          "channel": 1,
+          "reference_rms_dbfs": -24.9474085885244,
+          "error_rms_dbfs": -145.581090127345,
+          "error_peak_dbfs": -129.20713860075077,
+          "snr_db": 120.6336815388206,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 0,
+          "reference_rms_dbfs": -21.720673230551427,
+          "error_rms_dbfs": -144.6805964462315,
+          "error_peak_dbfs": -127.59243711842585,
+          "snr_db": 122.95992321568008,
+          "quiet": false,
+          "failed": false
+        },
+        {
+          "start_seconds": 14.0,
+          "channel": 1,
+          "reference_rms_dbfs": -21.755025689111918,
+          "error_rms_dbfs": -144.43743166517285,
+          "error_peak_dbfs": -128.57679757182947,
+          "snr_db": 122.68240597606093,
+          "quiet": false,
+          "failed": false
+        }
+      ]
+    }
+  ],
+  "provisional_screen": "PASS_REQUIRES_LISTENING"
+}

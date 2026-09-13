@@ -1,0 +1,4 @@
+B 8 L 3 cases 25 mismatch []
+B 131072 L 3072 cases 10 mismatch []
+example B=8,L=3: T=6 -> q=0,n=6,pad=2<L: B+(n+L-B)=9 written, drop 3 -> 6
+example B=8,L=3: T=12 -> q=1,n=4,pad=4>=L: 8-3+(4+3) -> 12

@@ -1,0 +1,11 @@
+{
+  "source_sha256": "c203bfa6bd53d16ef7ba6393540453f6cfd7541a87c169be5310989b8d987a0a",
+  "candidate_sha256": "e192646a7b0fe64d05f063796d57f3ba8dccb6091885d48e6d15352080b68bb1",
+  "bytes": 410708034,
+  "original_nodes": 489,
+  "candidate_nodes": 403,
+  "precision": "FP32",
+  "runtime_required": "ONNX Runtime with com.microsoft:FusedConv; validated original ARM 1.16.3",
+  "target": "ARM Cortex-A76 / Pi 5, built and checked on desktop only",
+  "deployment": "none"
+}

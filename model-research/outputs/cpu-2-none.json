@@ -1,0 +1,32 @@
+{
+  "name": "cpu-2-none",
+  "runtime": "1.30.0",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "provider_options": {
+    "CPUExecutionProvider": {}
+  },
+  "initialization_seconds": 0.21787245399900712,
+  "first_run_seconds": 0.24670211001648568,
+  "warm_seconds": [
+    0.24946678098058328,
+    0.2415328920178581,
+    0.24065750601585023,
+    0.24133886300842278,
+    0.24100773999816738
+  ],
+  "median_seconds": 0.24133886300842278,
+  "finite": true,
+  "output_range": [
+    0.0,
+    0.999998927116394
+  ],
+  "input": "seed42 uniform random [0,1), synthetic tensor, NOT real audio frontend",
+  "vs_unoptimized_fp32": {
+    "max_abs": 0.0,
+    "rms": 0.0,
+    "relative_l2": 0.0,
+    "exact_equal": true
+  }
+}

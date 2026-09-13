@@ -1,0 +1,12 @@
+0000000000023e78 <zplane::VectorOps<float, void>::subtract(zplane::VectorView<float>, zplane::VectorView<float const>)>:
+   23e78:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   23e7c:       mov x2, x0
+   23e80:       ldr x1, [x1, #0x8]
+   23e84:       ldr x3, [x3, #0xf10] ; @187fff10
+   23e88:       ldr w2, [x2, #0x10]
+   23e8c:       ldr x0, [x0, #0x8]
+   23e90:       ldr x3, [x3]
+   23e94:       mov x16, x3
+   23e98:       br x16
+   23e9c:       nop
+

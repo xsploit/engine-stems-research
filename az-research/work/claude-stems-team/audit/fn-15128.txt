@@ -1,0 +1,416 @@
+0000000000015128 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)>:
+   15128:       stp x29, x30, [sp, #-0x130]!
+   1512c:       mov x29, sp
+   15130:       stp x25, x26, [sp, #0x40]
+   15134:       mov x25, x1
+   15138:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1513c:       stp x27, x28, [sp, #0x50]
+   15140:       mov x28, x0
+   15144:       ldr x1, [x1, #0xfa8] ; @187fffa8
+   15148:       stp x19, x20, [sp, #0x10]
+   1514c:       ldr x2, [x1]
+   15150:       str x2, [sp, #0x128]
+   15154:       mov x2, #0x0                // =0
+   15158:       stp x21, x22, [sp, #0x20]
+   1515c:       ldr x0, [x25, #0x20]
+   15160:       stp x23, x24, [sp, #0x30]
+   15164:       cmp x0, #0x1
+   15168:       b.eq 0x154e0 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x3b8>
+   1516c:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15170:       add x0, x0, #0x290
+   15174:       str x0, [sp, #0x78]
+   15178:       add x19, sp, #0xf0
+   1517c:       ldr x0, [x28, #0x8]
+   15180:       mov x8, x19
+   15184:       mov x1, #0x0                // =0
+   15188:       adrp x22, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1518c:       mov x23, #0x0               // =0
+   15190:       add x22, x22, #0x170
+   15194:       bl 0x5200 <_ZNK6zplane22NNPredictionDispatcher8ONNXImpl25getModelInputShapeAtIndexEm@plt>
+   15198:       ldr x0, [sp, #0xf8]
+   1519c:       ldr x0, [x0, #0x8]
+   151a0:       cmp x0, x23
+   151a4:       b.ls 0x153d8 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x2b0>
+   151a8:       ldr x1, [x28, #0x60]
+   151ac:       add x0, x28, #0x230
+   151b0:       cbnz x1, 0x154b0 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x388>
+   151b4:       ldr x2, [sp, #0x78]
+   151b8:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   151bc:       str x1, [sp, #0x60]
+   151c0:       add x1, x1, #0x270
+   151c4:       stp x2, xzr, [sp, #0xb0]
+   151c8:       str x1, [sp, #0xc0]
+   151cc:       str xzr, [sp, #0xc8]
+   151d0:       stp xzr, xzr, [sp, #0xd0]
+   151d4:       str xzr, [sp, #0xe0]
+   151d8:       add x27, x28, #0x400
+   151dc:       adrp x6, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   151e0:       ldr x9, [x28, #0x440]
+   151e4:       add x6, x6, #0x1d0
+   151e8:       ldur q0, [x27, #0x58]
+   151ec:       adrp x5, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   151f0:       ldr x8, [x28, #0x450]
+   151f4:       add x5, x5, #0x1b0
+   151f8:       ldr x7, [x28, #0x468]
+   151fc:       add x21, sp, #0xb0
+   15200:       add x26, x28, #0x438
+   15204:       mov x1, x21
+   15208:       mov x2, x19
+   1520c:       mov x20, #0x0               // =0
+   15210:       adrp x24, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15214:       add x24, x24, #0x2b0
+   15218:       stp x6, x9, [sp, #0xf0]
+   1521c:       stp x5, x8, [sp, #0x100]
+   15220:       str q0, [sp, #0x110]
+   15224:       str x7, [sp, #0x120]
+   15228:       bl 0x187c0 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)>
+   1522c:       b 0x15268 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x140>
+   15230:       ldr x5, [x28, #0x450]
+   15234:       mov x1, x19
+   15238:       ldp x7, x2, [x26, #0x28]
+   1523c:       mov x0, x21
+   15240:       ldr x5, [x5, x20, lsl #3]
+   15244:       add x20, x20, #0x1
+   15248:       ldr x6, [x28, #0x90]
+   1524c:       str x7, [sp, #0xc0]
+   15250:       add x2, x5, x2, lsl #2
+   15254:       stp x22, x2, [sp, #0xb0]
+   15258:       ldr x5, [x28, #0x98]
+   1525c:       stp x24, x6, [sp, #0xf0]
+   15260:       str x5, [sp, #0x100]
+   15264:       bl 0x23f30 <zplane::VectorOps<float, void>::multiply(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   15268:       ldr x0, [x28, #0x8]
+   1526c:       mov x8, x19
+   15270:       mov x1, #0x0                // =0
+   15274:       bl 0x5200 <_ZNK6zplane22NNPredictionDispatcher8ONNXImpl25getModelInputShapeAtIndexEm@plt>
+   15278:       ldr x0, [sp, #0xf8]
+   1527c:       ldr x0, [x0, #0x18]
+   15280:       cmp x0, x20
+   15284:       b.hi 0x15230 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x108>
+   15288:       ldr x0, [sp, #0x60]
+   1528c:       adrp x6, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15290:       ldr x8, [x26, #0x30]
+   15294:       add x3, x0, #0x270
+   15298:       ldur q2, [x27, #0x58]
+   1529c:       add x6, x6, #0x310
+   152a0:       ldur q1, [x27, #0xc8]
+   152a4:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   152a8:       ldur q0, [x27, #0xd8]
+   152ac:       add x4, x0, #0x290
+   152b0:       ldr x9, [x28, #0x450]
+   152b4:       adrp x5, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   152b8:       ldr x7, [x28, #0x4c0]
+   152bc:       add x5, x5, #0x2f0
+   152c0:       stp x3, x9, [sp, #0xc0]
+   152c4:       add x3, sp, #0x200
+   152c8:       mov x2, x19
+   152cc:       stp x6, x5, [sp, #0xf0]
+   152d0:       mov x1, x21
+   152d4:       add x0, x28, #0x430
+   152d8:       str x7, [sp, #0x100]
+   152dc:       mov x24, #0x0               // =0
+   152e0:       adrp x20, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   152e4:       add x20, x20, #0x350
+   152e8:       stur q1, [x3, #-0xf8]
+   152ec:       stur q0, [x3, #-0xe8]
+   152f0:       stp x4, xzr, [sp, #0xb0]
+   152f4:       str q2, [sp, #0xd0]
+   152f8:       str x8, [sp, #0xe0]
+   152fc:       bl 0x1c6f0 <zplane::Algorithms::Fft::transform(zplane::AudioBlockView<float const>, zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>)>
+   15300:       b 0x15394 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x26c>
+   15304:       ldr x0, [x28, #0x4c0]
+   15308:       mov x1, x21
+   1530c:       ldr x5, [x28, #0x540]
+   15310:       ldr x0, [x0, x24, lsl #3]
+   15314:       stp x20, x0, [sp, #0xf0]
+   15318:       mov x0, x19
+   1531c:       ldr x4, [x28, #0x58]
+   15320:       ldr x2, [x28, #0x558]
+   15324:       ldr x5, [x5, x24, lsl #3]
+   15328:       str x4, [sp, #0xc0]
+   1532c:       madd x2, x23, x4, x2
+   15330:       str x4, [sp, #0x110]
+   15334:       ldr x6, [x28, #0x4d8]
+   15338:       stp x6, xzr, [sp, #0x100]
+   1533c:       add x2, x5, x2, lsl #2
+   15340:       stp x22, x2, [sp, #0xb0]
+   15344:       bl 0x246f8 <zplane::VectorOps<float, void>::calculateMagnitude(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)>
+   15348:       ldr x2, [x28, #0x4c0]
+   1534c:       mov x1, x21
+   15350:       ldr x5, [x28, #0x5b8]
+   15354:       mov x0, x19
+   15358:       ldr x2, [x2, x24, lsl #3]
+   1535c:       stp x20, x2, [sp, #0xf0]
+   15360:       ldr x4, [x28, #0x58]
+   15364:       str xzr, [sp, #0x108]
+   15368:       ldr x2, [x28, #0x5d0]
+   1536c:       ldr x6, [x5, x24, lsl #3]
+   15370:       add x24, x24, #0x1
+   15374:       madd x2, x23, x4, x2
+   15378:       str x4, [sp, #0xc0]
+   1537c:       ldr x5, [x28, #0x4d8]
+   15380:       str x5, [sp, #0x100]
+   15384:       add x2, x6, x2, lsl #2
+   15388:       stp x22, x2, [sp, #0xb0]
+   1538c:       str x4, [sp, #0x110]
+   15390:       bl 0x247a8 <zplane::VectorOps<float, void>::calculatePhase(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)>
+   15394:       ldr x0, [x28, #0x8]
+   15398:       mov x8, x19
+   1539c:       mov x1, #0x0                // =0
+   153a0:       bl 0x5200 <_ZNK6zplane22NNPredictionDispatcher8ONNXImpl25getModelInputShapeAtIndexEm@plt>
+   153a4:       ldr x0, [sp, #0xf8]
+   153a8:       ldr x0, [x0, #0x18]
+   153ac:       cmp x0, x24
+   153b0:       b.hi 0x15304 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x1dc>
+   153b4:       ldr x0, [x28, #0x8]
+   153b8:       mov x8, x19
+   153bc:       mov x1, #0x0                // =0
+   153c0:       add x23, x23, #0x1
+   153c4:       bl 0x5200 <_ZNK6zplane22NNPredictionDispatcher8ONNXImpl25getModelInputShapeAtIndexEm@plt>
+   153c8:       ldr x0, [sp, #0xf8]
+   153cc:       ldr x0, [x0, #0x8]
+   153d0:       cmp x0, x23
+   153d4:       b.hi 0x151a8 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x80>
+   153d8:       mov x1, #0x0                // =0
+   153dc:       add x0, x28, #0x10
+   153e0:       bl 0x4dd0 <_ZN6zplane22NNPredictionDispatcher14zplTensorArrayixEm@plt>
+   153e4:       ldp x2, x4, [x28, #0x50]
+   153e8:       ldr x1, [x28, #0x78]
+   153ec:       mul w2, w1, w2
+   153f0:       ldr x1, [x28, #0x568]
+   153f4:       mul w2, w2, w4
+   153f8:       bl 0x4d10 <_ZN6zplane22NNPredictionDispatcher13zplTensorBase10setRawDataEPfi@plt>
+   153fc:       ldrb w0, [x28, #0x80]
+   15400:       cbz w0, 0x15478 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x350>
+   15404:       ldr x0, [x25, #0x20]
+   15408:       cbz x0, 0x15478 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x350>
+   1540c:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15410:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15414:       add x23, x0, #0x170
+   15418:       add x22, x1, #0x2b0
+   1541c:       add x21, sp, #0xb0
+   15420:       add x24, x28, #0x780
+   15424:       mov x20, #0x0               // =0
+   15428:       ldr x4, [x25, #0x18]
+   1542c:       mov x0, x21
+   15430:       ldr x2, [x28, #0x798]
+   15434:       mov x1, x19
+   15438:       ldr x7, [x4, x20, lsl #3]
+   1543c:       ldr x5, [x2, x20, lsl #3]
+   15440:       add x20, x20, #0x1
+   15444:       ldr x4, [x24, #0x30]
+   15448:       ldr x6, [x24, #0x28]
+   1544c:       str x6, [sp, #0xc0]
+   15450:       add x4, x5, x4, lsl #2
+   15454:       stp x23, x4, [sp, #0xb0]
+   15458:       ldp x5, x2, [x25, #0x28]
+   1545c:       str x5, [sp, #0x100]
+   15460:       add x2, x7, x2, lsl #2
+   15464:       stp x22, x2, [sp, #0xf0]
+   15468:       bl 0x24428 <zplane::VectorOps<float, void>::shiftLeftAndInsert(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   1546c:       ldr x0, [x25, #0x20]
+   15470:       cmp x0, x20
+   15474:       b.hi 0x15428 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x300>
+   15478:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1547c:       ldr x0, [x0, #0xfa8] ; @187fffa8
+   15480:       ldr x1, [sp, #0x128]
+   15484:       ldr x2, [x0]
+   15488:       subs x1, x1, x2
+   1548c:       mov x2, #0x0                // =0
+   15490:       b.ne 0x15798 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x670>
+   15494:       ldp x19, x20, [sp, #0x10]
+   15498:       ldp x21, x22, [sp, #0x20]
+   1549c:       ldp x23, x24, [sp, #0x30]
+   154a0:       ldp x25, x26, [sp, #0x40]
+   154a4:       ldp x27, x28, [sp, #0x50]
+   154a8:       ldp x29, x30, [sp], #0x130
+   154ac:       ret
+   154b0:       ldr x2, [x25, #0x30]
+   154b4:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   154b8:       add x6, x3, #0x270
+   154bc:       str x3, [sp, #0x60]
+   154c0:       ldp x5, x4, [x25, #0x18]
+   154c4:       madd x2, x1, x23, x2
+   154c8:       ldr x3, [sp, #0x78]
+   154cc:       str x3, [sp, #0xb0]
+   154d0:       stp xzr, x6, [sp, #0xb8]
+   154d4:       stp x5, x4, [sp, #0xc8]
+   154d8:       stp x1, x2, [sp, #0xd8]
+   154dc:       b 0x151d8 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0xb0>
+   154e0:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   154e4:       add x0, x0, #0x290
+   154e8:       str x0, [sp, #0x90]
+   154ec:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   154f0:       add x0, x0, #0x270
+   154f4:       str x0, [sp, #0x98]
+   154f8:       add x0, x28, #0x230
+   154fc:       str x0, [sp, #0x88]
+   15500:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15504:       add x19, sp, #0xf0
+   15508:       add x21, sp, #0xb0
+   1550c:       add x24, x28, #0x528
+   15510:       mov x20, #0x0               // =0
+   15514:       str x0, [sp, #0x80]
+   15518:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1551c:       str x0, [sp, #0x78]
+   15520:       b 0x156e8 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x5c0>
+   15524:       ldr x0, [sp, #0x90]
+   15528:       stp x0, xzr, [sp, #0xb0]
+   1552c:       ldr x0, [sp, #0x98]
+   15530:       str x0, [sp, #0xc0]
+   15534:       str xzr, [sp, #0xc8]
+   15538:       stp xzr, xzr, [sp, #0xd0]
+   1553c:       str xzr, [sp, #0xe0]
+   15540:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15544:       add x1, x1, #0x2f0
+   15548:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1554c:       add x0, x0, #0x310
+   15550:       fmov d0, x0
+   15554:       add x26, x28, #0x400
+   15558:       ldp x3, x0, [sp, #0x80]
+   1555c:       mov v0.d[1], x1
+   15560:       ldur q1, [x26, #0x58]
+   15564:       adrp x4, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15568:       ldr x10, [x28, #0x440]
+   1556c:       mov v0.d[1], x1
+   15570:       ldr x9, [x28, #0x450]
+   15574:       add x4, x4, #0x1d0
+   15578:       ldr x8, [x28, #0x468]
+   1557c:       adrp x7, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15580:       add x7, x7, #0x1b0
+   15584:       add x22, x3, #0x170
+   15588:       mov x2, x19
+   1558c:       mov x1, x21
+   15590:       str q0, [sp, #0x60]
+   15594:       str q0, [sp, #0xa0]
+   15598:       stp x4, x10, [sp, #0xf0]
+   1559c:       stp x7, x9, [sp, #0x100]
+   155a0:       str q1, [sp, #0x110]
+   155a4:       str x8, [sp, #0x120]
+   155a8:       bl 0x187c0 <zplane::Algorithms::Hopping<float>::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)>
+   155ac:       ldr x0, [x28, #0x450]
+   155b0:       ldr x8, [x28, #0x468]
+   155b4:       ldr x9, [x0]
+   155b8:       mov x0, x21
+   155bc:       ldr x1, [sp, #0x78]
+   155c0:       add x8, x9, x8, lsl #2
+   155c4:       stp x22, x8, [sp, #0xb0]
+   155c8:       add x2, x1, #0x2b0
+   155cc:       ldr x10, [x28, #0x90]
+   155d0:       mov x1, x19
+   155d4:       ldr x9, [x28, #0x98]
+   155d8:       stp x2, x10, [sp, #0xf0]
+   155dc:       ldr x11, [x28, #0x460]
+   155e0:       str x11, [sp, #0xc0]
+   155e4:       str x9, [sp, #0x100]
+   155e8:       bl 0x23f30 <zplane::VectorOps<float, void>::multiply(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   155ec:       ldr q0, [sp, #0x60]
+   155f0:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   155f4:       ldur q3, [x26, #0x58]
+   155f8:       add x9, x0, #0x290
+   155fc:       ldur q2, [x26, #0xc8]
+   15600:       add x3, sp, #0x200
+   15604:       ldur q1, [x26, #0xd8]
+   15608:       adrp x0, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1560c:       ldr x11, [x28, #0x450]
+   15610:       add x8, x0, #0x270
+   15614:       ldr x10, [x28, #0x468]
+   15618:       str q0, [sp, #0xf0]
+   1561c:       mov x2, x19
+   15620:       ldr x6, [x28, #0x4c0]
+   15624:       str x6, [sp, #0x100]
+   15628:       mov x1, x21
+   1562c:       add x0, x28, #0x430
+   15630:       stur q2, [x3, #-0xf8]
+   15634:       stur q1, [x3, #-0xe8]
+   15638:       stp x9, xzr, [sp, #0xb0]
+   1563c:       str x8, [sp, #0xc0]
+   15640:       str x11, [sp, #0xc8]
+   15644:       str q3, [sp, #0xd0]
+   15648:       str x10, [sp, #0xe0]
+   1564c:       bl 0x1c6f0 <zplane::Algorithms::Fft::transform(zplane::AudioBlockView<float const>, zplane::ComplexAudioBlockView<float, zplane::ComplexSplitLayout>)>
+   15650:       ldr x0, [x28, #0x4c0]
+   15654:       adrp x5, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   15658:       ldr x8, [x28, #0x540]
+   1565c:       add x23, x5, #0x350
+   15660:       ldr x0, [x0]
+   15664:       stp x23, x0, [sp, #0xf0]
+   15668:       mov x1, x21
+   1566c:       ldr x2, [x24, #0x30]
+   15670:       mov x0, x19
+   15674:       ldr x6, [x28, #0x58]
+   15678:       ldr x8, [x8]
+   1567c:       str x6, [sp, #0xc0]
+   15680:       madd x2, x20, x6, x2
+   15684:       str x6, [sp, #0x110]
+   15688:       ldr x9, [x28, #0x4d8]
+   1568c:       stp x9, xzr, [sp, #0x100]
+   15690:       add x2, x8, x2, lsl #2
+   15694:       stp x22, x2, [sp, #0xb0]
+   15698:       bl 0x246f8 <zplane::VectorOps<float, void>::calculateMagnitude(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)>
+   1569c:       ldr x2, [x28, #0x4c0]
+   156a0:       mov x1, x21
+   156a4:       ldr x8, [x28, #0x5b8]
+   156a8:       mov x0, x19
+   156ac:       ldr x2, [x2]
+   156b0:       stp x23, x2, [sp, #0xf0]
+   156b4:       ldr x6, [x28, #0x58]
+   156b8:       str xzr, [sp, #0x108]
+   156bc:       ldr x2, [x28, #0x5d0]
+   156c0:       ldr x5, [x8]
+   156c4:       str x6, [sp, #0xc0]
+   156c8:       madd x2, x20, x6, x2
+   156cc:       add x20, x20, #0x1
+   156d0:       ldr x4, [x28, #0x4d8]
+   156d4:       str x4, [sp, #0x100]
+   156d8:       add x2, x5, x2, lsl #2
+   156dc:       stp x22, x2, [sp, #0xb0]
+   156e0:       str x6, [sp, #0x110]
+   156e4:       bl 0x247a8 <zplane::VectorOps<float, void>::calculatePhase(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)>
+   156e8:       ldr x0, [x28, #0x8]
+   156ec:       mov x8, x19
+   156f0:       mov x1, #0x0                // =0
+   156f4:       bl 0x5200 <_ZNK6zplane22NNPredictionDispatcher8ONNXImpl25getModelInputShapeAtIndexEm@plt>
+   156f8:       ldr x0, [sp, #0xf8]
+   156fc:       ldr x0, [x0, #0x8]
+   15700:       cmp x0, x20
+   15704:       b.ls 0x15740 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x618>
+   15708:       ldr x0, [x28, #0x60]
+   1570c:       cbz x0, 0x15524 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x3fc>
+   15710:       ldr x1, [x25, #0x30]
+   15714:       ldr x2, [sp, #0x90]
+   15718:       stp x2, xzr, [sp, #0xb0]
+   1571c:       madd x1, x0, x20, x1
+   15720:       ldr x2, [sp, #0x98]
+   15724:       str x2, [sp, #0xc0]
+   15728:       ldr x4, [x25, #0x18]
+   1572c:       str x4, [sp, #0xc8]
+   15730:       ldr x2, [x25, #0x20]
+   15734:       str x2, [sp, #0xd0]
+   15738:       stp x0, x1, [sp, #0xd8]
+   1573c:       b 0x15540 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x418>
+   15740:       ldr x5, [x28, #0x540]
+   15744:       mov x1, x19
+   15748:       ldr x4, [x24, #0x30]
+   1574c:       ldr x2, [x5, #0x8]
+   15750:       ldr x0, [sp, #0x80]
+   15754:       lsl x4, x4, #2
+   15758:       add x2, x2, x4
+   1575c:       add x23, x0, #0x170
+   15760:       stp x23, x2, [sp, #0xb0]
+   15764:       ldr x6, [x28, #0x50]
+   15768:       ldr x2, [x28, #0x58]
+   1576c:       ldr x5, [x5]
+   15770:       mul x2, x2, x6
+   15774:       add x4, x5, x4
+   15778:       str x2, [sp, #0xc0]
+   1577c:       ldr x0, [sp, #0x78]
+   15780:       str x2, [sp, #0x100]
+   15784:       add x22, x0, #0x2b0
+   15788:       mov x0, x21
+   1578c:       stp x22, x4, [sp, #0xf0]
+   15790:       bl 0x236b8 <zplane::VectorOps<float, void>::copy(zplane::VectorView<float>, zplane::VectorView<float const>)>
+   15794:       b 0x153d8 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)+0x2b0>
+   15798:       bl 0x51d0 <__stack_chk_fail@plt>
+   1579c:       nop
+

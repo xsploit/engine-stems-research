@@ -1,0 +1,32 @@
+{
+  "name": "cpu-8-all",
+  "runtime": "1.30.0",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "provider_options": {
+    "CPUExecutionProvider": {}
+  },
+  "initialization_seconds": 0.5483077300013974,
+  "first_run_seconds": 0.08367245399858803,
+  "warm_seconds": [
+    0.08048148901434615,
+    0.07953973600524478,
+    0.08062927098944783,
+    0.0817662310146261,
+    0.08270496199838817
+  ],
+  "median_seconds": 0.08062927098944783,
+  "finite": true,
+  "output_range": [
+    0.0,
+    0.999998927116394
+  ],
+  "input": "seed42 uniform random [0,1), synthetic tensor, NOT real audio frontend",
+  "vs_unoptimized_fp32": {
+    "max_abs": 5.841255187988281e-06,
+    "rms": 6.38881338315083e-07,
+    "relative_l2": 1.4008669529303547e-06,
+    "exact_equal": false
+  }
+}

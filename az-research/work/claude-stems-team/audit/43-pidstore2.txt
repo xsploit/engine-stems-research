@@ -1,0 +1,20 @@
+c29ec0 sub x1, x1, x0
+c29ec4 bl 0x391ae8
+c29ec8 add x0, sp, #0x430
+c29ecc bl 0x520550
+c29ed0 mov x0, x26
+c29ed4 bl 0x51c280
+c29ed8 add x0, sp, #0x3e8
+c29edc bl 0x520550
+c29ee0 ldr x0, [sp, #0x38]
+c29ee4 bl 0x51c280
+c29ee8 add x3, sp, #0x200
+c29eec ldrh w1, [sp, #0x188]
+c29ef0 ldr w2, [sp, #0x170]
+c29ef4 mov w0, #-0x1               // =-1
+c29ef8 strh w1, [sp, #0x208]
+c29efc ldur q0, [x3, #-0x88]
+c29f00 str w2, [x28, #0x398]
+c29f04 str xzr, [sp, #0x200]
+c29f08 str w0, [sp, #0x1f0]
+c29f0c ldr x0, [x28, #0x3a8]

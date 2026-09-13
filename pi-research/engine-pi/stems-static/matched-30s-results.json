@@ -1,0 +1,24 @@
+[
+  {
+    "threads": 2,
+    "inputSHA256": "3d082237b517b943787b88b8f66be4196036294e01287ccdc35022be2aced361",
+    "prepareSeconds": 2.9976620160014136,
+    "renderSeconds": 26.16854946599051,
+    "speedMultiple": 1.1464143260591868,
+    "firstAudioSeconds": 2.2227101899916306,
+    "minimumPrebufferSecondsThisTrace": 2.2237184019904817,
+    "maxRssMiB": 898.8125,
+    "frames": 1323000
+  },
+  {
+    "threads": 3,
+    "inputSHA256": "3d082237b517b943787b88b8f66be4196036294e01287ccdc35022be2aced361",
+    "prepareSeconds": 3.009289023000747,
+    "renderSeconds": 29.797757956010173,
+    "speedMultiple": 1.006787156412519,
+    "firstAudioSeconds": 2.4601223659992684,
+    "minimumPrebufferSecondsThisTrace": 2.461122096996405,
+    "maxRssMiB": 898.796875,
+    "frames": 1323000
+  }
+]

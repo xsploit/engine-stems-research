@@ -1,0 +1,71 @@
+1240f70 add x22, sp, #0xb8
+1240f78 mov x0, x22
+1240f7c add x1, x1, #0xe68  ; "action"
+1240f80 add x23, x25, #0x80
+1240f84 mov x2, x20
+1240f88 bl 0x51cae0
+1240f8c ldp x1, x2, [sp, #0xb8]
+1240f90 mov x0, x23
+1240f98 bl 0x391788
+1240fa0 mov x21, x0
+1240fa4 add x1, x1, #0x670
+1240fa8 mov x2, #0x1                // =1
+1240fac bl 0x391788
+1240fb4 mov x0, x21
+1240fb8 add x1, x1, #0x9f0  ; "done"
+1240fbc mov x2, #0x4                // =4
+1240fc0 bl 0x391788
+1240fc4 mov x0, x21
+1240fc8 add x1, x19, #0x4b8
+1240fcc mov x2, #0x1                // =1
+1240fd0 bl 0x391788
+1240fd4 mov x0, x22
+1240fd8 bl 0x51c280
+1240fdc add x1, x19, #0x4b8
+1240fe0 mov x2, #0x1                // =1
+1240fe4 mov x0, x23
+1240fe8 bl 0x391788
+1240fec mov x0, x23
+1240ff0 add x26, sp, #0x98
+1240ff4 bl 0x397d28
+1240ff8 add x24, sp, #0xa8
+1241000 ldr x0, [x0, #0x1a0]
+1241004 add x1, x25, #0x208
+124100c ldr x3, [x3, #0xae0]
+1241010 stp x1, x3, [sp, #0x38]
+1241018 ldr x2, [x2, #0x1b0]
+124101c stp x2, x0, [sp, #0x50]
+1241020 add x0, x0, #0x10
+1241028 ldr x1, [x1, #0xad8]
+124102c stp x0, x1, [sp, #0x8]
+1241034 ldr x0, [x0, #0x1b8]
+1241038 str x0, [sp]
+124103c add x0, x1, #0x18
+1241040 str x0, [sp, #0x18]
+1241044 add x0, x2, #0x10
+1241048 str x0, [sp, #0x20]
+124104c ldr x0, [sp, #0x38]
+1241050 mov x8, x20
+1241054 bl 0x1240bf0
+1241058 str x24, [sp, #0x98]
+1241060 add x2, x0, #0xa01
+1241068 mov w3, #0x0                // =0
+124106c add x1, x0, #0x9f8  ; "doneReply"
+1241070 mov x0, x26
+1241074 bl 0x51c6c8
+1241078 add x21, sp, #0xc8
+1241084 add x1, x1, #0x5d8  ; "[parent] "
+1241088 add x2, x2, #0x5e1
+124108c mov x0, x22
+1241090 mov w3, #0x0                // =0
+1241094 str x21, [sp, #0xb8]
+1241098 bl 0x51c6c8
+124109c ldr x0, [sp, #0xb8]
+12410a0 cmp x0, x21
+12410a4 b .eq	0x12410b4
+12410a8 ldr x1, [sp, #0xc8]
+12410ac add x1, x1, #0x1  ; "er::getPlaylistsFromRow(int)"
+12410b0 bl 0x391ae8
+12410b4 ldr x0, [sp, #0x98]
+12410b8 cmp x0, x24
+12410bc b .eq	0x12410cc

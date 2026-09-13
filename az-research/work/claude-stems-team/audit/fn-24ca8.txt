@@ -1,0 +1,8 @@
+0000000000024ca8 <zplane::VectorOps<float, void>::allocate(unsigned long)>:
+   24ca8:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   24cac:       ldr x1, [x1, #0xfb0] ; @187fffb0
+   24cb0:       ldr x1, [x1]
+   24cb4:       mov x16, x1
+   24cb8:       br x16
+   24cbc:       nop
+

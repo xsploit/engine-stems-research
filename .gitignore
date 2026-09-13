@@ -1,0 +1,10 @@
+*.onnx
+*.private
+*.exe
+*.so
+*.zip
+*.wav
+*.mp3
+__pycache__/
+.venv/
+venv/

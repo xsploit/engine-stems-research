@@ -1,0 +1,23 @@
+c29d20 str x0, [sp, #0x10]
+c29d24 bl 0x188f3ec
+c29d28 mov x0, x20
+c29d2c bl 0x51c280
+c29d30 mov x0, x22
+c29d34 bl 0x51c280
+c29d3c mov x0, x22
+c29d40 add x1, x1, #0x8e0  ; "/bin/sh"
+c29d44 bl 0x1895ec0
+c29d48 ldr x3, [sp, #0x50]
+c29d4c add x26, sp, #0x410
+c29d50 ldr x1, [sp, #0x470]
+c29d54 mov x0, x26
+c29d58 ldr x2, [sp, #0x478]
+c29d5c bl 0x51c960
+c29d60 mov x0, x22
+c29d64 bl 0x51c220
+c29d68 mov x1, x26
+c29d6c mov x0, x22
+c29d70 bl 0x51fc20
+c29d74 ldr q0, [sp, #0x1c0]
+c29d78 add x4, sp, #0x4a0
+c29d7c ldr x1, [sp, #0x1d0]

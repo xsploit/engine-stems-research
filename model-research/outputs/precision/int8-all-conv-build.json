@@ -1,0 +1,8 @@
+{
+  "candidate": "int8-all-conv",
+  "bytes": 106931336,
+  "conv_count": 154,
+  "quantized_convs": 154,
+  "protected_convs": [],
+  "build_seconds": 7.3490437919972464
+}

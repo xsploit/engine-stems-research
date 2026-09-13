@@ -1,0 +1,14 @@
+c29e60 mov x2, #0x100000001        // =4294967297
+c29e68 add x1, x1, #0x4b0
+c29e6c add x8, sp, #0x170
+c29e70 add x1, x1, #0x228
+c29e74 stp x1, x2, [x0]
+c29e78 add x2, x0, #0x10
+c29e7c mov w1, #0x17f              // =383
+c29e80 str w1, [x0, #0x10]
+c29e84 str x8, [sp, #0x50]
+c29e88 str x2, [sp, #0x4f8]
+c29e8c str x0, [sp, #0x500]
+c29e90 mov x0, x22
+c29e94 bl 0x1927690
+c29e98 ldr x0, [sp, #0x500]

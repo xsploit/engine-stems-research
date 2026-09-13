@@ -1,0 +1,34 @@
+00000000000247a8 <zplane::VectorOps<float, void>::calculatePhase(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)>:
+   247a8:       stp x29, x30, [sp, #-0x40]!
+   247ac:       mov x29, sp
+   247b0:       ldr x2, [x0, #0x10]
+   247b4:       ldr x3, [x0, #0x20]
+   247b8:       str x23, [sp, #0x30]
+   247bc:       ldr x23, [x1, #0x8]
+   247c0:       cmp w3, #0x0
+   247c4:       ldr x1, [x0, #0x18]
+   247c8:       ldr x0, [x0, #0x8]
+   247cc:       add x2, x1, x2
+   247d0:       b.le 0x2481c <zplane::VectorOps<float, void>::calculatePhase(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)+0x74>
+   247d4:       lsl x1, x1, #2
+   247d8:       lsl x2, x2, #2
+   247dc:       stp x19, x20, [sp, #0x10]
+   247e0:       add x20, x0, x1
+   247e4:       mov x19, #0x0               // =0
+   247e8:       stp x21, x22, [sp, #0x20]
+   247ec:       mov w21, w3
+   247f0:       add x22, x0, x2
+   247f4:       nop
+   247f8:       ldr s1, [x20, x19, lsl #2]
+   247fc:       ldr s0, [x22, x19, lsl #2]
+   24800:       bl 0x4c00 <atan2f@plt>
+   24804:       str s0, [x23, x19, lsl #2]
+   24808:       add x19, x19, #0x1
+   2480c:       cmp w21, w19
+   24810:       b.gt 0x247f8 <zplane::VectorOps<float, void>::calculatePhase(zplane::ComplexVectorView<float const, zplane::ComplexSplitLayout>, zplane::VectorView<float>)+0x50>
+   24814:       ldp x19, x20, [sp, #0x10]
+   24818:       ldp x21, x22, [sp, #0x20]
+   2481c:       ldr x23, [sp, #0x30]
+   24820:       ldp x29, x30, [sp], #0x40
+   24824:       ret
+

@@ -1,0 +1,70 @@
+0000000000027228 <zplfRealSqrt_I_ARMNeon(float*, int)>:
+   27228:       cmp wzr, w1, asr #2
+   2722c:       b.ge 0x272a0 <zplfRealSqrt_I_ARMNeon(float*, int)+0x78>
+   27230:       asr w3, w1, #2
+   27234:       adrp x4, 0x33000 <_IO_stdin_used+0xa20>
+   27238:       sub w2, w3, #0x1
+   2723c:       add x3, x0, #0x10
+   27240:       ldr q6, [x4, #0xbe0] ; =(2139095040, 2139095040, 2139095040, 2139095040) u32x4 (inf, inf, inf, inf) f32x4
+   27244:       add x3, x3, w2, uxtw #4
+   27248:       mov x2, x0
+   2724c:       nop
+   27250:       ldr q1, [x2]
+   27254:       ldr q3, [x2]
+   27258:       frsqrte v0.4s, v1.4s
+   2725c:       cmeq v2.4s, v3.4s, v6.4s
+   27260:       fcmeq v5.4s, v3.4s, #0.0
+   27264:       fmul v4.4s, v0.4s, v1.4s
+   27268:       cmeq v2.4s, v2.4s, v5.4s
+   2726c:       frsqrts v4.4s, v4.4s, v0.4s
+   27270:       fmul v0.4s, v0.4s, v4.4s
+   27274:       fmul v4.4s, v0.4s, v1.4s
+   27278:       frsqrts v4.4s, v4.4s, v0.4s
+   2727c:       fmul v0.4s, v0.4s, v4.4s
+   27280:       fmul v1.4s, v0.4s, v1.4s
+   27284:       frsqrts v1.4s, v1.4s, v0.4s
+   27288:       fmul v0.4s, v0.4s, v1.4s
+   2728c:       fmul v0.4s, v0.4s, v3.4s
+   27290:       bif v0.16b, v3.16b, v2.16b
+   27294:       str q0, [x2], #0x10
+   27298:       cmp x2, x3
+   2729c:       b.ne 0x27250 <zplfRealSqrt_I_ARMNeon(float*, int)+0x28>
+   272a0:       and w2, w1, #0xfffffffc
+   272a4:       cmp w1, w2
+   272a8:       b.le 0x27330 <zplfRealSqrt_I_ARMNeon(float*, int)+0x108>
+   272ac:       stp x29, x30, [sp, #-0x40]!
+   272b0:       mov x29, sp
+   272b4:       stp x19, x20, [sp, #0x10]
+   272b8:       sxtw x20, w2
+   272bc:       add x19, x20, #0x1
+   272c0:       str x21, [sp, #0x20]
+   272c4:       sub w21, w1, #0x1
+   272c8:       sub w21, w21, w2
+   272cc:       str d8, [sp, #0x28]
+   272d0:       add x21, x21, x19
+   272d4:       nop
+   272d8:       ldr s0, [x0, x20, lsl #2]
+   272dc:       fsqrt s8, s0
+   272e0:       fcmp s0, #0.0
+   272e4:       b.mi 0x27300 <zplfRealSqrt_I_ARMNeon(float*, int)+0xd8>
+   272e8:       str s8, [x0, x20, lsl #2]
+   272ec:       cmp x21, x19
+   272f0:       mov x20, x19
+   272f4:       b.eq 0x2731c <zplfRealSqrt_I_ARMNeon(float*, int)+0xf4>
+   272f8:       add x19, x19, #0x1
+   272fc:       b 0x272d8 <zplfRealSqrt_I_ARMNeon(float*, int)+0xb0>
+   27300:       str x0, [sp, #0x38]
+   27304:       bl 0x5050 <sqrtf@plt>
+   27308:       ldr x0, [sp, #0x38]
+   2730c:       cmp x21, x19
+   27310:       str s8, [x0, x20, lsl #2]
+   27314:       mov x20, x19
+   27318:       b.ne 0x272f8 <zplfRealSqrt_I_ARMNeon(float*, int)+0xd0>
+   2731c:       ldp x19, x20, [sp, #0x10]
+   27320:       ldr x21, [sp, #0x20]
+   27324:       ldr d8, [sp, #0x28]
+   27328:       ldp x29, x30, [sp], #0x40
+   2732c:       ret
+   27330:       ret
+   27334:       nop
+

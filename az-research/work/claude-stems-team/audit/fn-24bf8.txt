@@ -1,0 +1,46 @@
+0000000000024bf8 <zplane::VectorOps<float, void>::setMagnitudeAndPhase(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>, zplane::VectorView<float const>)>:
+   24bf8:       stp x29, x30, [sp, #-0x40]!
+   24bfc:       mov x29, sp
+   24c00:       stp x23, x24, [sp, #0x30]
+   24c04:       ldr x23, [x1, #0x8]
+   24c08:       ldr x3, [x0, #0x10]
+   24c0c:       ldr x1, [x0, #0x18]
+   24c10:       ldr x4, [x0, #0x20]
+   24c14:       add x3, x1, x3
+   24c18:       ldr x0, [x0, #0x8]
+   24c1c:       cmp w4, #0x0
+   24c20:       ldr x24, [x2, #0x8]
+   24c24:       b.le 0x24c9c <zplane::VectorOps<float, void>::setMagnitudeAndPhase(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>, zplane::VectorView<float const>)+0xa4>
+   24c28:       lsl x1, x1, #2
+   24c2c:       lsl x3, x3, #2
+   24c30:       stp x19, x20, [sp, #0x10]
+   24c34:       add x20, x0, x1
+   24c38:       mov x19, #0x0               // =0
+   24c3c:       stp x21, x22, [sp, #0x20]
+   24c40:       mov w21, w4
+   24c44:       add x22, x0, x3
+   24c48:       ldr s0, [x24, x19, lsl #2]
+   24c4c:       fcvt d0, s0
+   24c50:       bl 0x4e50 <cos@plt>
+   24c54:       ldr s1, [x23, x19, lsl #2]
+   24c58:       fcvt d1, s1
+   24c5c:       fmul d1, d1, d0
+   24c60:       fcvt s1, d1
+   24c64:       str s1, [x20, x19, lsl #2]
+   24c68:       ldr s0, [x24, x19, lsl #2]
+   24c6c:       fcvt d0, s0
+   24c70:       bl 0x4c40 <sin@plt>
+   24c74:       ldr s1, [x23, x19, lsl #2]
+   24c78:       fcvt d1, s1
+   24c7c:       fmul d1, d1, d0
+   24c80:       fcvt s1, d1
+   24c84:       str s1, [x22, x19, lsl #2]
+   24c88:       add x19, x19, #0x1
+   24c8c:       cmp w21, w19
+   24c90:       b.gt 0x24c48 <zplane::VectorOps<float, void>::setMagnitudeAndPhase(zplane::ComplexVectorView<float, zplane::ComplexSplitLayout>, zplane::VectorView<float const>, zplane::VectorView<float const>)+0x50>
+   24c94:       ldp x19, x20, [sp, #0x10]
+   24c98:       ldp x21, x22, [sp, #0x20]
+   24c9c:       ldp x23, x24, [sp, #0x30]
+   24ca0:       ldp x29, x30, [sp], #0x40
+   24ca4:       ret
+

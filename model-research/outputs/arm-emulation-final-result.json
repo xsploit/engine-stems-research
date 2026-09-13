@@ -1,0 +1,27 @@
+{
+  "host": "local PC only",
+  "emulator": "qemu-aarch64-static -cpu cortex-a76",
+  "runtime": "Engine ARM libNNPredictionDispatcher_on.so, ONNX Runtime 1.16.3",
+  "baseline": {
+    "model": "original",
+    "runtime_optimization": "all",
+    "session_initialization_seconds": 1.002918130,
+    "inference_seconds": 50.643900440,
+    "finite": true
+  },
+  "candidate": {
+    "model": "ARM-preoptimized FP32",
+    "runtime_optimization": "disabled because graph is preoptimized",
+    "session_initialization_seconds": 0.442189047,
+    "inference_seconds": 50.031001206,
+    "finite": true
+  },
+  "output_comparison": {
+    "elements": 2097152,
+    "exact_equal": true,
+    "max_abs_difference": 0.0,
+    "rms_difference": 0.0,
+    "relative_l2_difference": 0.0
+  },
+  "interpretation": "Emulator timing is not a Raspberry Pi performance benchmark. The result verifies ARM runtime compatibility and numerical identity for one synthetic input."
+}

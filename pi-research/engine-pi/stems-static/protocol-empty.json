@@ -1,0 +1,10 @@
+{
+  "args": [
+    "--stem"
+  ],
+  "input": "EOF",
+  "exit": 0,
+  "seconds": 0.014082196008530445,
+  "stdout": "preparing=failed\n\n",
+  "stderr": ""
+}

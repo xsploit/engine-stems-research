@@ -1,0 +1,4 @@
+# Tested reconstruction dependencies; original model supplied separately.
+numpy==2.5.3
+onnxruntime==1.30.0
+# System tools: ffmpeg / ffprobe; Python on Linux.

@@ -1,0 +1,516 @@
+0000000000016290 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)>:
+   16290:       sub sp, sp, #0x2b0
+   16294:       stp x29, x30, [sp]
+   16298:       mov x29, sp
+   1629c:       stp x23, x24, [sp, #0x30]
+   162a0:       adrp x23, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   162a4:       ldr x3, [x23, #0xfa8] ; @187fffa8
+   162a8:       stp x19, x20, [sp, #0x10]
+   162ac:       mov x19, x0
+   162b0:       ldrb w0, [x0, #0xa8]
+   162b4:       mov x20, x1
+   162b8:       ldr x1, [x3]
+   162bc:       str x1, [sp, #0x2a8]
+   162c0:       mov x1, #0x0                // =0
+   162c4:       stp x21, x22, [sp, #0x20]
+   162c8:       mov x22, x2
+   162cc:       ldr x21, [x19, #0x70]
+   162d0:       cbnz w0, 0x164e8 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x258>
+   162d4:       ldr x1, [x19, #0x50]
+   162d8:       ldr x0, [x19, #0x60]
+   162dc:       mul x0, x0, x1
+   162e0:       ldr x1, [x20, #0x20]
+   162e4:       cmp x21, x1
+   162e8:       b.eq 0x164fc <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x26c>
+   162ec:       add x19, sp, #0x120
+   162f0:       adrp x20, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   162f4:       add x0, x19, #0x80
+   162f8:       bl 0x5120 <_ZNSt8ios_baseC2Ev@plt>
+   162fc:       ldr x2, [x20, #0xf68] ; @187fff68
+   16300:       add x1, sp, #0x220
+   16304:       movi v0.4s, #0x0
+   16308:       adrp x23, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1630c:       str xzr, [sp, #0x278]
+   16310:       ldp x21, x24, [x2, #0x10]
+   16314:       strh wzr, [sp, #0x280]
+   16318:       ldr x0, [x23, #0xf78] ; @187fff78
+   1631c:       stur q0, [x1, #0x68]
+   16320:       stur q0, [x1, #0x78]
+   16324:       add x0, x0, #0x10
+   16328:       mov x1, #0x0                // =0
+   1632c:       ldur x3, [x21, #-0x18]
+   16330:       str x21, [sp, #0x120]
+   16334:       str x0, [sp, #0x1a0]
+   16338:       str x24, [x19, x3]
+   1633c:       str xzr, [sp, #0x128]
+   16340:       ldur x0, [x21, #-0x18]
+   16344:       add x0, x19, x0
+   16348:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   1634c:       ldr x0, [x20, #0xf68] ; @187fff68
+   16350:       stp x25, x26, [sp, #0x40]
+   16354:       add x2, x19, #0x10
+   16358:       mov x1, #0x0                // =0
+   1635c:       ldp x22, x25, [x0, #0x20]
+   16360:       ldur x3, [x22, #-0x18]
+   16364:       str x22, [sp, #0x130]
+   16368:       add x0, x2, x3
+   1636c:       str x25, [x2, x3]
+   16370:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   16374:       ldr x20, [x20, #0xf68] ; @187fff68
+   16378:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1637c:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16380:       add x0, x19, #0x50
+   16384:       ldr x1, [x1, #0xef8] ; @187ffef8
+   16388:       ldr x26, [x20, #0x8]
+   1638c:       add x4, x1, #0x18
+   16390:       ldr x2, [x2, #0xf60] ; @187fff60
+   16394:       add x3, x1, #0x68
+   16398:       ldur x5, [x26, #-0x18]
+   1639c:       add x1, x1, #0x40
+   163a0:       add x2, x2, #0x10
+   163a4:       ldr x20, [x20, #0x30]
+   163a8:       str x20, [x19, x5]
+   163ac:       str x4, [sp, #0x120]
+   163b0:       stp x1, x2, [sp, #0x130]
+   163b4:       stp xzr, xzr, [sp, #0x140]
+   163b8:       stp xzr, xzr, [sp, #0x150]
+   163bc:       stp xzr, xzr, [sp, #0x160]
+   163c0:       str x3, [sp, #0x1a0]
+   163c4:       bl 0x4fc0 <_ZNSt6localeC1Ev@plt>
+   163c8:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   163cc:       add x3, x19, #0x70
+   163d0:       mov w4, #0x18               // =24
+   163d4:       add x1, x19, #0x18
+   163d8:       ldr x2, [x2, #0xe38] ; @187ffe38
+   163dc:       add x0, x19, #0x80
+   163e0:       str w4, [sp, #0x178]
+   163e4:       add x2, x2, #0x10
+   163e8:       str x2, [sp, #0x138]
+   163ec:       str x3, [sp, #0x180]
+   163f0:       str xzr, [sp, #0x188]
+   163f4:       strb wzr, [sp, #0x190]
+   163f8:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   163fc:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16400:       add x0, x19, #0x10
+   16404:       add x1, x1, #0xd40
+   16408:       mov x2, #0xe                // =14
+   1640c:       stp x27, x28, [sp, #0x50]
+   16410:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16414:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16418:       add x0, x19, #0x10
+   1641c:       add x1, x1, #0x938
+   16420:       mov x2, #0x17               // =23
+   16424:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16428:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   1642c:       add x0, x19, #0x10
+   16430:       add x1, x1, #0xc80
+   16434:       mov x2, #0x57               // =87
+   16438:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   1643c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16440:       add x0, x19, #0x10
+   16444:       add x1, x1, #0x970
+   16448:       mov x2, #0xb                // =11
+   1644c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16450:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16454:       add x0, x19, #0x10
+   16458:       add x1, x1, #0xbc8
+   1645c:       mov x2, #0x5b               // =91
+   16460:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16464:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16468:       add x0, x19, #0x10
+   1646c:       add x1, x1, #0x9f8
+   16470:       mov x2, #0x7                // =7
+   16474:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16478:       add x0, x19, #0x10
+   1647c:       mov w1, #0x105              // =261
+   16480:       bl 0x4cd0 <_ZNSolsEi@plt>
+   16484:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16488:       mov x2, #0x1                // =1
+   1648c:       add x1, x1, #0xde8
+   16490:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16494:       add x20, sp, #0x100
+   16498:       mov x0, #0x10               // =16
+   1649c:       bl 0x4d50 <__cxa_allocate_exception@plt>
+   164a0:       mov x21, x0
+   164a4:       mov x8, x20
+   164a8:       add x0, x19, #0x18
+   164ac:       bl 0x4d60 <_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv@plt>
+   164b0:       ldr x1, [sp, #0x100]
+   164b4:       mov x0, x21
+   164b8:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+   164bc:       ldr x0, [sp, #0x100]
+   164c0:       add x20, x20, #0x10
+   164c4:       cmp x0, x20
+   164c8:       b.eq 0x164d0 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x240>
+   164cc:       bl 0x4e80 <_ZdlPv@plt>
+   164d0:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   164d4:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   164d8:       mov x0, x21
+   164dc:       ldr x2, [x2, #0xf48] ; @187fff48
+   164e0:       ldr x1, [x1, #0xf80] ; @187fff80
+   164e4:       bl 0x4f10 <__cxa_throw@plt>
+   164e8:       add x0, x19, #0x1a0
+   164ec:       bl 0x196f0 <zplane::Resample::Resampler::getInputBlockSize() const>
+   164f0:       ldr x1, [x20, #0x20]
+   164f4:       cmp x21, x1
+   164f8:       b.ne 0x162ec <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5c>
+   164fc:       ldr x1, [x20, #0x28]
+   16500:       cmp x0, x1
+   16504:       b.ne 0x162ec <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x5c>
+   16508:       ldrb w1, [x19, #0x80]
+   1650c:       ldr w0, [x19, #0x68]
+   16510:       ldr x21, [x19, #0x70]
+   16514:       cbz w1, 0x1674c <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x4bc>
+   16518:       add w1, w0, #0x1
+   1651c:       sxtw x1, w1
+   16520:       mul x21, x1, x21
+   16524:       ldrb w0, [x19, #0xa8]
+   16528:       cbz w0, 0x1673c <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x4ac>
+   1652c:       add x0, x19, #0x1e8
+   16530:       bl 0x19738 <zplane::Resample::Resampler::getOutputBlockSize() const>
+   16534:       ldr x1, [x22, #0x20]
+   16538:       cmp x21, x1
+   1653c:       b.eq 0x16758 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x4c8>
+   16540:       add x19, sp, #0x120
+   16544:       adrp x20, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16548:       add x0, x19, #0x80
+   1654c:       bl 0x5120 <_ZNSt8ios_baseC2Ev@plt>
+   16550:       ldr x2, [x20, #0xf68] ; @187fff68
+   16554:       add x1, sp, #0x220
+   16558:       movi v0.4s, #0x0
+   1655c:       adrp x23, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16560:       str xzr, [sp, #0x278]
+   16564:       ldp x21, x24, [x2, #0x10]
+   16568:       strh wzr, [sp, #0x280]
+   1656c:       ldr x0, [x23, #0xf78] ; @187fff78
+   16570:       stur q0, [x1, #0x68]
+   16574:       stur q0, [x1, #0x78]
+   16578:       add x0, x0, #0x10
+   1657c:       mov x1, #0x0                // =0
+   16580:       ldur x3, [x21, #-0x18]
+   16584:       str x21, [sp, #0x120]
+   16588:       str x0, [sp, #0x1a0]
+   1658c:       str x24, [x19, x3]
+   16590:       str xzr, [sp, #0x128]
+   16594:       ldur x0, [x21, #-0x18]
+   16598:       add x0, x19, x0
+   1659c:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   165a0:       ldr x0, [x20, #0xf68] ; @187fff68
+   165a4:       stp x25, x26, [sp, #0x40]
+   165a8:       add x2, x19, #0x10
+   165ac:       mov x1, #0x0                // =0
+   165b0:       ldp x22, x25, [x0, #0x20]
+   165b4:       ldur x3, [x22, #-0x18]
+   165b8:       str x22, [sp, #0x130]
+   165bc:       add x0, x2, x3
+   165c0:       str x25, [x2, x3]
+   165c4:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   165c8:       ldr x20, [x20, #0xf68] ; @187fff68
+   165cc:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   165d0:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   165d4:       add x0, x19, #0x50
+   165d8:       ldr x1, [x1, #0xef8] ; @187ffef8
+   165dc:       ldr x26, [x20, #0x8]
+   165e0:       add x4, x1, #0x18
+   165e4:       ldr x2, [x2, #0xf60] ; @187fff60
+   165e8:       add x3, x1, #0x68
+   165ec:       ldur x5, [x26, #-0x18]
+   165f0:       add x1, x1, #0x40
+   165f4:       add x2, x2, #0x10
+   165f8:       ldr x20, [x20, #0x30]
+   165fc:       str x20, [x19, x5]
+   16600:       str x4, [sp, #0x120]
+   16604:       stp x1, x2, [sp, #0x130]
+   16608:       stp xzr, xzr, [sp, #0x140]
+   1660c:       stp xzr, xzr, [sp, #0x150]
+   16610:       stp xzr, xzr, [sp, #0x160]
+   16614:       str x3, [sp, #0x1a0]
+   16618:       bl 0x4fc0 <_ZNSt6localeC1Ev@plt>
+   1661c:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16620:       add x3, x19, #0x70
+   16624:       mov w4, #0x18               // =24
+   16628:       add x1, x19, #0x18
+   1662c:       ldr x2, [x2, #0xe38] ; @187ffe38
+   16630:       add x0, x19, #0x80
+   16634:       str w4, [sp, #0x178]
+   16638:       add x2, x2, #0x10
+   1663c:       str x2, [sp, #0x138]
+   16640:       str x3, [sp, #0x180]
+   16644:       str xzr, [sp, #0x188]
+   16648:       strb wzr, [sp, #0x190]
+   1664c:       bl 0x4d20 <_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E@plt>
+   16650:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16654:       add x0, x19, #0x10
+   16658:       add x1, x1, #0xd40
+   1665c:       mov x2, #0xe                // =14
+   16660:       stp x27, x28, [sp, #0x50]
+   16664:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16668:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   1666c:       add x0, x19, #0x10
+   16670:       add x1, x1, #0x938
+   16674:       mov x2, #0x17               // =23
+   16678:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   1667c:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16680:       add x0, x19, #0x10
+   16684:       add x1, x1, #0xcd8
+   16688:       mov x2, #0x64               // =100
+   1668c:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   16690:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   16694:       add x0, x19, #0x10
+   16698:       add x1, x1, #0x970
+   1669c:       mov x2, #0xb                // =11
+   166a0:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   166a4:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   166a8:       add x0, x19, #0x10
+   166ac:       add x1, x1, #0xbc8
+   166b0:       mov x2, #0x5b               // =91
+   166b4:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   166b8:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   166bc:       add x0, x19, #0x10
+   166c0:       add x1, x1, #0x9f8
+   166c4:       mov x2, #0x7                // =7
+   166c8:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   166cc:       add x0, x19, #0x10
+   166d0:       mov w1, #0x106              // =262
+   166d4:       bl 0x4cd0 <_ZNSolsEi@plt>
+   166d8:       adrp x1, 0x32000 <pffft_transform_internal(PFFFT_Setup*, float const*, float*, __Float32x4_t*, pffft_direction_t, int)+0x318>
+   166dc:       mov x2, #0x1                // =1
+   166e0:       add x1, x1, #0xde8
+   166e4:       bl 0x5110 <_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@plt>
+   166e8:       add x20, sp, #0x100
+   166ec:       mov x0, #0x10               // =16
+   166f0:       bl 0x4d50 <__cxa_allocate_exception@plt>
+   166f4:       mov x21, x0
+   166f8:       mov x8, x20
+   166fc:       add x0, x19, #0x18
+   16700:       bl 0x4d60 <_ZNKSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE3strEv@plt>
+   16704:       ldr x1, [sp, #0x100]
+   16708:       mov x0, x21
+   1670c:       bl 0x4c70 <_ZNSt13runtime_errorC1EPKc@plt>
+   16710:       ldr x0, [sp, #0x100]
+   16714:       add x20, x20, #0x10
+   16718:       cmp x0, x20
+   1671c:       b.eq 0x16724 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x494>
+   16720:       bl 0x4e80 <_ZdlPv@plt>
+   16724:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16728:       adrp x1, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   1672c:       mov x0, x21
+   16730:       ldr x2, [x2, #0xf48] ; @187fff48
+   16734:       ldr x1, [x1, #0xf80] ; @187fff80
+   16738:       bl 0x4f10 <__cxa_throw@plt>
+   1673c:       ldr x0, [x19, #0x50]
+   16740:       ldr x1, [x19, #0x60]
+   16744:       mul x0, x0, x1
+   16748:       b 0x16534 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x2a4>
+   1674c:       sxtw x0, w0
+   16750:       mul x21, x0, x21
+   16754:       b 0x16524 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x294>
+   16758:       ldr x1, [x22, #0x28]
+   1675c:       cmp x0, x1
+   16760:       b.ne 0x16540 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x2b0>
+   16764:       ldrb w1, [x19, #0xa8]
+   16768:       add x3, x19, #0x28
+   1676c:       stp x27, x28, [sp, #0x50]
+   16770:       add x28, x19, #0x10
+   16774:       ldr x2, [x20, #0x8]
+   16778:       ldp x7, x6, [x20, #0x18]
+   1677c:       ldp x5, x4, [x20, #0x28]
+   16780:       cbz w1, 0x16900 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x670>
+   16784:       ldr x11, [x19, #0xb8]
+   16788:       add x8, x19, #0xb0
+   1678c:       ldr x10, [x19, #0xc8]
+   16790:       stp x6, x5, [sp, #0xa0]
+   16794:       add x6, x19, #0x200
+   16798:       ldr q0, [x19, #0xd0]
+   1679c:       add x5, x19, #0x128
+   167a0:       ldr x9, [x19, #0xe0]
+   167a4:       add x20, sp, #0xc0
+   167a8:       add x27, sp, #0x80
+   167ac:       add x0, x19, #0x1a0
+   167b0:       mov x1, x27
+   167b4:       adrp x24, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   167b8:       adrp x21, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   167bc:       add x24, x24, #0x1d0
+   167c0:       add x21, x21, #0x1b0
+   167c4:       stp x25, x26, [sp, #0x40]
+   167c8:       adrp x26, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   167cc:       adrp x25, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   167d0:       add x26, x26, #0x290
+   167d4:       add x25, x25, #0x270
+   167d8:       stp x5, x6, [sp, #0x60]
+   167dc:       stp x8, x3, [sp, #0x70]
+   167e0:       stp x26, x2, [sp, #0x80]
+   167e4:       mov x2, x20
+   167e8:       stp x25, x7, [sp, #0x90]
+   167ec:       str x4, [sp, #0xb0]
+   167f0:       stp x24, x11, [sp, #0xc0]
+   167f4:       stp x21, x10, [sp, #0xd0]
+   167f8:       str q0, [sp, #0xe0]
+   167fc:       str x9, [sp, #0xf0]
+   16800:       bl 0x1bea0 <zplane::Resample::Resampler::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)>
+   16804:       ldr x8, [sp, #0x70]
+   16808:       mov x1, x20
+   1680c:       ldr x4, [x19, #0xc8]
+   16810:       mov x0, x19
+   16814:       ldr x2, [x8, #0x30]
+   16818:       stp x26, xzr, [sp, #0xc0]
+   1681c:       ldr q0, [x19, #0xd0]
+   16820:       stp x25, x4, [sp, #0xd0]
+   16824:       str x2, [sp, #0xf0]
+   16828:       str q0, [sp, #0xe0]
+   1682c:       bl 0x15128 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)>
+   16830:       mov x1, x28
+   16834:       ldr x0, [x19, #0x8]
+   16838:       ldr x3, [sp, #0x78]
+   1683c:       mov x2, x3
+   16840:       bl 0x4f80 <_ZN6zplane22NNPredictionDispatcher8ONNXImpl7predictERKNS0_14zplTensorArrayERS2_@plt>
+   16844:       str x21, [sp, #0xd0]
+   16848:       ldp x5, x6, [sp, #0x60]
+   1684c:       mov x1, x20
+   16850:       mov x0, x19
+   16854:       ldr x3, [x5, #0x8]
+   16858:       stp x24, x3, [sp, #0xc0]
+   1685c:       ldur q0, [x6, #-0xb8]
+   16860:       ldr x2, [x5, #0x30]
+   16864:       str x2, [sp, #0xf0]
+   16868:       ldr x3, [x19, #0x140]
+   1686c:       str x3, [sp, #0xd8]
+   16870:       str q0, [sp, #0xe0]
+   16874:       bl 0x157a0 <zplane::StemsProAlgorithm::computeOutputTensor(zplane::AudioBlockView<float>)>
+   16878:       stp x26, xzr, [sp, #0x80]
+   1687c:       mov x2, x20
+   16880:       ldp x5, x6, [sp, #0x60]
+   16884:       mov x1, x27
+   16888:       ldr x4, [x22, #0x18]
+   1688c:       add x0, x19, #0x1e8
+   16890:       ldr q0, [x22, #0x20]
+   16894:       stp x21, x4, [sp, #0xd0]
+   16898:       ldur q1, [x6, #-0xb8]
+   1689c:       str q0, [sp, #0xe0]
+   168a0:       ldr x6, [x22, #0x8]
+   168a4:       str q1, [sp, #0xa0]
+   168a8:       ldr x3, [x22, #0x30]
+   168ac:       stp x24, x6, [sp, #0xc0]
+   168b0:       ldr x5, [x5, #0x30]
+   168b4:       str x5, [sp, #0xb0]
+   168b8:       ldr x7, [x19, #0x140]
+   168bc:       stp x25, x7, [sp, #0x90]
+   168c0:       str x3, [sp, #0xf0]
+   168c4:       bl 0x1bea0 <zplane::Resample::Resampler::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)>
+   168c8:       ldp x25, x26, [sp, #0x40]
+   168cc:       ldr x0, [x23, #0xfa8] ; @187fffa8
+   168d0:       ldr x1, [sp, #0x2a8]
+   168d4:       ldr x2, [x0]
+   168d8:       subs x1, x1, x2
+   168dc:       mov x2, #0x0                // =0
+   168e0:       b.ne 0x16988 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x6f8>
+   168e4:       ldp x29, x30, [sp]
+   168e8:       ldp x19, x20, [sp, #0x10]
+   168ec:       ldp x21, x22, [sp, #0x20]
+   168f0:       ldp x23, x24, [sp, #0x30]
+   168f4:       ldp x27, x28, [sp, #0x50]
+   168f8:       add sp, sp, #0x2b0
+   168fc:       ret
+   16900:       adrp x9, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16904:       adrp x8, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16908:       add x9, x9, #0x290
+   1690c:       add x8, x8, #0x270
+   16910:       add x20, sp, #0xc0
+   16914:       mov x0, x19
+   16918:       mov x1, x20
+   1691c:       str x3, [sp, #0x60]
+   16920:       stp x9, x2, [sp, #0xc0]
+   16924:       stp x8, x7, [sp, #0xd0]
+   16928:       stp x6, x5, [sp, #0xe0]
+   1692c:       str x4, [sp, #0xf0]
+   16930:       bl 0x15128 <zplane::StemsProAlgorithm::computeInputTensor(zplane::AudioBlockView<float const>)>
+   16934:       ldr x0, [x19, #0x8]
+   16938:       mov x1, x28
+   1693c:       ldr x3, [sp, #0x60]
+   16940:       mov x2, x3
+   16944:       bl 0x4f80 <_ZN6zplane22NNPredictionDispatcher8ONNXImpl7predictERKNS0_14zplTensorArrayERS2_@plt>
+   16948:       ldr x6, [x22, #0x8]
+   1694c:       adrp x3, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16950:       ldr x5, [x22, #0x18]
+   16954:       add x3, x3, #0x1d0
+   16958:       ldr q0, [x22, #0x20]
+   1695c:       adrp x2, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   16960:       ldr x4, [x22, #0x30]
+   16964:       add x2, x2, #0x1b0
+   16968:       mov x1, x20
+   1696c:       mov x0, x19
+   16970:       stp x3, x6, [sp, #0xc0]
+   16974:       stp x2, x5, [sp, #0xd0]
+   16978:       str q0, [sp, #0xe0]
+   1697c:       str x4, [sp, #0xf0]
+   16980:       bl 0x157a0 <zplane::StemsProAlgorithm::computeOutputTensor(zplane::AudioBlockView<float>)>
+   16984:       b 0x168cc <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x63c>
+   16988:       stp x25, x26, [sp, #0x40]
+   1698c:       bl 0x51d0 <__stack_chk_fail@plt>
+   16990:       stp x27, x28, [sp, #0x50]
+   16994:       mov x27, x0
+   16998:       stp x25, x26, [sp, #0x40]
+   1699c:       add x0, x19, #0x80
+   169a0:       ldr x1, [x23, #0xf78] ; @187fff78
+   169a4:       add x1, x1, #0x10
+   169a8:       str x1, [sp, #0x1a0]
+   169ac:       bl 0x4f60 <_ZNSt8ios_baseD2Ev@plt>
+   169b0:       mov x0, x27
+   169b4:       bl 0x4f40 <_Unwind_Resume@plt>
+   169b8:       stp x27, x28, [sp, #0x50]
+   169bc:       mov x27, x0
+   169c0:       add x0, x19, #0x18
+   169c4:       bl 0xa340 <std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char>>::~basic_stringbuf()>
+   169c8:       ldur x1, [x26, #-0x18]
+   169cc:       add x0, sp, #0x130
+   169d0:       ldur x2, [x22, #-0x18]
+   169d4:       str x20, [x19, x1]
+   169d8:       ldur x1, [x21, #-0x18]
+   169dc:       str x22, [sp, #0x130]
+   169e0:       str x25, [x0, x2]
+   169e4:       str x21, [sp, #0x120]
+   169e8:       str x24, [x19, x1]
+   169ec:       str xzr, [sp, #0x128]
+   169f0:       b 0x1699c <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x70c>
+   169f4:       ldur x1, [x21, #-0x18]
+   169f8:       stp x27, x28, [sp, #0x50]
+   169fc:       mov x27, x0
+   16a00:       str x21, [sp, #0x120]
+   16a04:       str x24, [x19, x1]
+   16a08:       str xzr, [sp, #0x128]
+   16a0c:       b 0x1699c <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x70c>
+   16a10:       ldr x1, [sp, #0x100]
+   16a14:       add x2, x20, #0x10
+   16a18:       mov x20, x0
+   16a1c:       cmp x1, x2
+   16a20:       b.ne 0x16a4c <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x7bc>
+   16a24:       mov x0, x21
+   16a28:       bl 0x5070 <__cxa_free_exception@plt>
+   16a2c:       mov x0, x19
+   16a30:       bl 0x4d40 <_ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev@plt>
+   16a34:       mov x0, x20
+   16a38:       bl 0x4f40 <_Unwind_Resume@plt>
+   16a3c:       mov x20, x0
+   16a40:       b 0x16a24 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x794>
+   16a44:       mov x20, x0
+   16a48:       b 0x16a2c <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x79c>
+   16a4c:       mov x0, x1
+   16a50:       bl 0x4e80 <_ZdlPv@plt>
+   16a54:       b 0x16a24 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x794>
+   16a58:       ldr x2, [sp, #0x100]
+   16a5c:       add x1, x20, #0x10
+   16a60:       mov x20, x0
+   16a64:       cmp x2, x1
+   16a68:       b.eq 0x16a24 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x794>
+   16a6c:       mov x0, x2
+   16a70:       bl 0x4e80 <_ZdlPv@plt>
+   16a74:       b 0x16a24 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x794>
+   16a78:       mov x20, x0
+   16a7c:       b 0x16a24 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x794>
+   16a80:       mov x20, x0
+   16a84:       b 0x16a2c <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x79c>
+   16a88:       b 0x169b8 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x728>
+   16a8c:       b 0x169f4 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x764>
+   16a90:       b 0x16990 <zplane::StemsProAlgorithm::process(zplane::AudioBlockView<float const>, zplane::AudioBlockView<float>)+0x700>
+   16a94:       nop
+

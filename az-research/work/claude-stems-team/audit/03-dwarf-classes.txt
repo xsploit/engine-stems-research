@@ -1,0 +1,2 @@
+0x0001a7cc: DW_TAG_class_type
+              DW_AT_name	("StemsProImpl")

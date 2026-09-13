@@ -1,0 +1,3 @@
+helper_exit=0
+stems-child-process.sqsh/libNNPredictionDispatcher_on.so 25667536 bytes
+stems-child-process.sqsh/stems-processor 411885072 bytes

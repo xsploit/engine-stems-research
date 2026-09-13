@@ -1,0 +1,87 @@
+{
+  "candidate": "fp32-opset13",
+  "device": "i5-13600K CPU, four threads",
+  "runtime": "1.30.0",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "bytes": 410749648,
+  "original_median_seconds": 0.11559228200349025,
+  "candidate_median_seconds": 0.11453007400268689,
+  "speedup": 1.0092744897796753,
+  "original_seconds": [
+    0.1568093259993475,
+    0.11352956498740241,
+    0.12263179299770854,
+    0.11559228200349025,
+    0.11721325799589977,
+    0.11526104301447049,
+    0.11174966400722042
+  ],
+  "candidate_seconds": [
+    0.11321478200261481,
+    0.11735999898519367,
+    0.1167159000178799,
+    0.11401206799200736,
+    0.1172857070050668,
+    0.1130670880083926,
+    0.11453007400268689
+  ],
+  "output_metrics": {
+    "music_proxy_0": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "music_proxy_1": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "music_proxy_2": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "music_proxy_3": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "quiet_proxy": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    },
+    "silence": {
+      "finite": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "p99_abs": 0.0,
+      "relative_l2": 0.0,
+      "fraction_abs_above_0_01": 0.0
+    }
+  },
+  "limitation": "Spectral proxies from one local recording, not exact Engine frontend tensors. Not audible-quality validation or Pi speed."
+}

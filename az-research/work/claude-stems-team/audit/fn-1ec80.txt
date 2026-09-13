@@ -1,0 +1,38 @@
+000000000001ec80 <zplane::Algorithms::WindowGenerator::hann(zplane::VectorView<float>)>:
+   1ec80:       stp x29, x30, [sp, #-0x50]!
+   1ec84:       mov x29, sp
+   1ec88:       stp x19, x20, [sp, #0x10]
+   1ec8c:       ldr x20, [x0, #0x10]
+   1ec90:       cbz x20, 0x1ed00 <zplane::Algorithms::WindowGenerator::hann(zplane::VectorView<float>)+0x80>
+   1ec94:       add x1, x20, #0x1
+   1ec98:       str x21, [sp, #0x20]
+   1ec9c:       stp d8, d9, [sp, #0x30]
+   1eca0:       mov w2, #0xfdb              // =4059
+   1eca4:       ucvtf s8, x1
+   1eca8:       ldr x21, [x0, #0x8]
+   1ecac:       movk w2, #0x40c9, lsl #16 ; w2=0x40c90fdb =6.2831854820251465 f32
+   1ecb0:       mov x19, #0x0               // =0
+   1ecb4:       fmov s9, w2
+   1ecb8:       stp d10, d11, [sp, #0x40]
+   1ecbc:       fmov s11, #1.00000000
+   1ecc0:       fmov s10, #0.50000000
+   1ecc4:       nop
+   1ecc8:       scvtf s0, w19
+   1eccc:       fadd s0, s0, s11
+   1ecd0:       fmul s0, s0, s9
+   1ecd4:       fdiv s0, s0, s8
+   1ecd8:       bl 0x5150 <cosf@plt>
+   1ecdc:       fsub s0, s11, s0
+   1ece0:       fmul s0, s0, s10
+   1ece4:       str s0, [x21, x19, lsl #2]
+   1ece8:       add x19, x19, #0x1
+   1ecec:       cmp x20, x19
+   1ecf0:       b.ne 0x1ecc8 <zplane::Algorithms::WindowGenerator::hann(zplane::VectorView<float>)+0x48>
+   1ecf4:       ldr x21, [sp, #0x20]
+   1ecf8:       ldp d8, d9, [sp, #0x30]
+   1ecfc:       ldp d10, d11, [sp, #0x40]
+   1ed00:       ldp x19, x20, [sp, #0x10]
+   1ed04:       ldp x29, x30, [sp], #0x50
+   1ed08:       ret
+   1ed0c:       nop
+

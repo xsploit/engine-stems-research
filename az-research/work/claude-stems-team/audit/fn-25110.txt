@@ -1,0 +1,100 @@
+0000000000025110 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)>:
+   25110:       stp x29, x30, [sp, #-0x20]!
+   25114:       adrp x7, 0x187ff000 <strlen@GLIBC_2.17+0x187ff000>
+   25118:       sub w4, w3, #0x1
+   2511c:       mov x29, sp
+   25120:       ldr x5, [x7, #0xfa8] ; @187fffa8
+   25124:       cmp w4, #0x0
+   25128:       ldr x6, [x5]
+   2512c:       str x6, [sp, #0x18]
+   25130:       mov x6, #0x0                // =0
+   25134:       b.le 0x25230 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)+0x120>
+   25138:       ubfiz x5, x4, #2, #32
+   2513c:       add x8, x2, w4, uxtw #3
+   25140:       add x9, x0, x5
+   25144:       add x6, x0, #0xf
+   25148:       cmp x2, x9
+   2514c:       sub x6, x6, x1
+   25150:       ccmp x0, x8, #0x2, lo
+   25154:       add x5, x1, x5
+   25158:       ccmp x6, #0x1e, #0x0, hs
+   2515c:       sub w6, w3, #0x2
+   25160:       cset w9, hi
+   25164:       cmp x2, x5
+   25168:       ccmp x1, x8, #0x2, lo
+   2516c:       ccmp w6, #0x4, #0x0, hs
+   25170:       cset w5, hi
+   25174:       tst w9, w5
+   25178:       b.eq 0x25268 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)+0x158>
+   2517c:       lsr w6, w4, #2
+   25180:       mov x8, x2
+   25184:       mov x5, #0x0                // =0
+   25188:       lsl x6, x6, #4
+   2518c:       nop
+   25190:       ld2 { v0.4s, v1.4s }, [x8], #32
+   25194:       str q0, [x0, x5]
+   25198:       str q1, [x1, x5]
+   2519c:       add x5, x5, #0x10
+   251a0:       cmp x5, x6
+   251a4:       b.ne 0x25190 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)+0x80>
+   251a8:       tst x4, #0x3
+   251ac:       and w5, w4, #0xfffffffc
+   251b0:       b.eq 0x25230 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)+0x120>
+   251b4:       lsl w8, w5, #1
+   251b8:       sxtw x10, w5
+   251bc:       add w6, w5, #0x1
+   251c0:       sbfiz x9, x5, #2, #32
+   251c4:       sxtw x8, w8
+   251c8:       cmp w4, w6
+   251cc:       add x11, x8, #0x1
+   251d0:       ldr s0, [x2, x8, lsl #2]
+   251d4:       str s0, [x0, x10, lsl #2]
+   251d8:       ldr s0, [x2, x11, lsl #2]
+   251dc:       str s0, [x1, x10, lsl #2]
+   251e0:       b.le 0x25230 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)+0x120>
+   251e4:       lsl w6, w6, #1
+   251e8:       add w5, w5, #0x2
+   251ec:       add x8, x9, #0x4
+   251f0:       cmp w4, w5
+   251f4:       sxtw x6, w6
+   251f8:       add x4, x6, #0x1
+   251fc:       ldr s0, [x2, x6, lsl #2]
+   25200:       str s0, [x0, x8]
+   25204:       ldr s0, [x2, x4, lsl #2]
+   25208:       str s0, [x1, x8]
+   2520c:       b.le 0x25230 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)+0x120>
+   25210:       lsl w5, w5, #1
+   25214:       add x9, x9, #0x8
+   25218:       sxtw x5, w5
+   2521c:       add x4, x5, #0x1
+   25220:       ldr s0, [x2, x5, lsl #2]
+   25224:       str s0, [x0, x9]
+   25228:       ldr s0, [x2, x4, lsl #2]
+   2522c:       str s0, [x1, x9]
+   25230:       mov x2, #-0x4               // =-4
+   25234:       ldr s0, [x1]
+   25238:       add x3, x2, w3, sxtw #2
+   2523c:       ldr x7, [x7, #0xfa8] ; @187fffa8
+   25240:       str s0, [x0, x3]
+   25244:       str wzr, [x1]
+   25248:       ldr x0, [sp, #0x18]
+   2524c:       ldr x2, [x7]
+   25250:       subs x0, x0, x2
+   25254:       mov x2, #0x0                // =0
+   25258:       str wzr, [x1, x3]
+   2525c:       b.ne 0x25294 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)+0x184>
+   25260:       ldp x29, x30, [sp], #0x20
+   25264:       ret
+   25268:       mov x5, #0x0                // =0
+   2526c:       nop
+   25270:       ldr s0, [x2]
+   25274:       add x2, x2, #0x8
+   25278:       str s0, [x0, x5, lsl #2]
+   2527c:       ldur s0, [x2, #-0x4]
+   25280:       str s0, [x1, x5, lsl #2]
+   25284:       add x5, x5, #0x1
+   25288:       cmp w4, w5
+   2528c:       b.gt 0x25270 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)+0x160>
+   25290:       b 0x25230 <zplane::ComplexUtilsHelper::setFFTResult(float*, float*, float const*, int)+0x120>
+   25294:       bl 0x51d0 <__stack_chk_fail@plt>
+

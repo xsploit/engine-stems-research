@@ -1,0 +1,28 @@
+000000000002d640 <CzplFFTpffft::zplfIFFT(float*, float*)>:
+   2d640:       stp x29, x30, [sp, #-0x20]!
+   2d644:       mov x29, sp
+   2d648:       stp x19, x20, [sp, #0x10]
+   2d64c:       mov x19, x0
+   2d650:       mov x20, x1
+   2d654:       mov x1, x2
+   2d658:       ldp w2, w3, [x0, #0x8]
+   2d65c:       ldr x0, [x0, #0x28]
+   2d660:       cmp w3, w2
+   2d664:       ldr x3, [x19, #0x30]
+   2d668:       b.eq 0x2d694 <CzplFFTpffft::zplfIFFT(float*, float*)+0x54>
+   2d66c:       ldr x2, [x19, #0x38]
+   2d670:       mov w4, #0x1                // =1
+   2d674:       bl 0x325c0 <pffft_transform_ordered>
+   2d678:       ldrsw x2, [x19, #0xc]
+   2d67c:       mov x0, x20
+   2d680:       ldr x1, [x19, #0x38]
+   2d684:       ldp x19, x20, [sp, #0x10]
+   2d688:       lsl x2, x2, #2
+   2d68c:       ldp x29, x30, [sp], #0x20
+   2d690:       b 0x4e60 <memcpy@plt>
+   2d694:       mov x2, x20
+   2d698:       mov w4, #0x1                // =1
+   2d69c:       ldp x19, x20, [sp, #0x10]
+   2d6a0:       ldp x29, x30, [sp], #0x20
+   2d6a4:       b 0x325c0 <pffft_transform_ordered>
+

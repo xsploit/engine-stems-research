@@ -1,0 +1,98 @@
+000000000000df68 <zplane::StemsPro::initialize(int, float, int, int, bool)>:
+    df68:       stp x29, x30, [sp, #-0x40]!
+    df6c:       mov x29, sp
+    df70:       stp x19, x20, [sp, #0x10]
+    df74:       mov x19, x0
+    df78:       ldr x0, [x0]
+    df7c:       cbnz x0, 0xe064 <zplane::StemsPro::initialize(int, float, int, int, bool)+0xfc>
+    df80:       str d8, [sp, #0x38]
+    df84:       fmov s8, s0
+    df88:       mov w0, #0x4400             // =17408
+    df8c:       movk w0, #0x462c, lsl #16 ; w0=0x462c4400 =11025.0 f32
+    df90:       fmov s0, w0
+    df94:       mov w0, #0x4                // =4
+    df98:       fcmpe s8, s0
+    df9c:       b.mi 0xe054 <zplane::StemsPro::initialize(int, float, int, int, bool)+0xec>
+    dfa0:       stp x21, x22, [sp, #0x20]
+    dfa4:       mov w21, w1
+    dfa8:       mov w1, #0x8000             // =32768
+    dfac:       movk w1, #0x483b, lsl #16 ; w1=0x483b8000 =192000.0 f32
+    dfb0:       fmov s0, w1
+    dfb4:       fcmpe s8, s0
+    dfb8:       b.gt 0xe074 <zplane::StemsPro::initialize(int, float, int, int, bool)+0x10c>
+    dfbc:       cmp w3, #0x0
+    dfc0:       sub w1, w21, #0x1
+    dfc4:       mov w20, w3
+    dfc8:       ccmp w1, #0x1, #0x2, gt
+    dfcc:       b.hi 0xe074 <zplane::StemsPro::initialize(int, float, int, int, bool)+0x10c>
+    dfd0:       str x23, [sp, #0x30]
+    dfd4:       and w23, w4, #0xff
+    dfd8:       mov w4, #0x4400             // =17408
+    dfdc:       mov w1, #0x47fa0000         // =1207566336
+    dfe0:       movk w4, #0x472c, lsl #16 ; w4=0x472c4400 =44100.0 f32
+    dfe4:       fmov s0, w4
+    dfe8:       fmov s1, w1
+    dfec:       cmp w2, #0x0
+    dff0:       fdiv s0, s8, s0
+    dff4:       mov w22, w2
+    dff8:       fmul s0, s0, s1
+    dffc:       fcvtps w4, s0
+    e000:       ccmp w4, w2, #0x1, gt
+    e004:       b.lt 0xe04c <zplane::StemsPro::initialize(int, float, int, int, bool)+0xe4>
+    e008:       mov x0, #0xc88              // =3208
+    e00c:       bl 0x4c10 <_Znwm@plt>
+    e010:       fmov s0, s8
+    e014:       mov w3, w20
+    e018:       mov w4, w23
+    e01c:       sxtw x2, w22
+    e020:       sxtw x1, w21
+    e024:       mov x20, x0
+    e028:       bl 0xe228 <zplane::StemsPro::StemsProImpl::StemsProImpl(float, unsigned long, unsigned long, int, bool)>
+    e02c:       ldp x21, x22, [sp, #0x20]
+    e030:       mov w0, #0x0                // =0
+    e034:       ldr x23, [sp, #0x30]
+    e038:       ldr d8, [sp, #0x38]
+    e03c:       str x20, [x19]
+    e040:       ldp x19, x20, [sp, #0x10]
+    e044:       ldp x29, x30, [sp], #0x40
+    e048:       ret
+    e04c:       ldp x21, x22, [sp, #0x20]
+    e050:       ldr x23, [sp, #0x30]
+    e054:       ldr d8, [sp, #0x38]
+    e058:       ldp x19, x20, [sp, #0x10]
+    e05c:       ldp x29, x30, [sp], #0x40
+    e060:       ret
+    e064:       mov w0, #0x3                // =3
+    e068:       ldp x19, x20, [sp, #0x10]
+    e06c:       ldp x29, x30, [sp], #0x40
+    e070:       ret
+    e074:       ldp x19, x20, [sp, #0x10]
+    e078:       ldp x21, x22, [sp, #0x20]
+    e07c:       ldr d8, [sp, #0x38]
+    e080:       ldp x29, x30, [sp], #0x40
+    e084:       ret
+    e088:       mov x19, x1
+    e08c:       cmp x19, #0x1
+    e090:       b.ne 0xe0cc <zplane::StemsPro::initialize(int, float, int, int, bool)+0x164>
+    e094:       bl 0x4bc0 <__cxa_begin_catch@plt>
+    e098:       bl 0x4fb0 <__cxa_end_catch@plt>
+    e09c:       mov w0, w19
+    e0a0:       ldr d8, [sp, #0x38]
+    e0a4:       ldp x21, x22, [sp, #0x20]
+    e0a8:       ldr x23, [sp, #0x30]
+    e0ac:       b 0xe058 <zplane::StemsPro::initialize(int, float, int, int, bool)+0xf0>
+    e0b0:       mov x21, x0
+    e0b4:       mov x19, x1
+    e0b8:       mov x0, x20
+    e0bc:       mov x1, #0xc88              // =3208
+    e0c0:       bl 0x4be0 <_ZdlPvm@plt>
+    e0c4:       mov x0, x21
+    e0c8:       b 0xe08c <zplane::StemsPro::initialize(int, float, int, int, bool)+0x124>
+    e0cc:       bl 0x4bc0 <__cxa_begin_catch@plt>
+    e0d0:       bl 0x4fb0 <__cxa_end_catch@plt>
+    e0d4:       mov w0, #0x6                // =6
+    e0d8:       ldr d8, [sp, #0x38]
+    e0dc:       ldp x21, x22, [sp, #0x20]
+    e0e0:       ldr x23, [sp, #0x30]
+    e0e4:       b 0xe058 <zplane::StemsPro::initialize(int, float, int, int, bool)+0xf0>
+

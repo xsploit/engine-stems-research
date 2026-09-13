@@ -1,0 +1,28 @@
+c288a8 mov x3, x0
+c288ac str x3, [sp, #0x38]
+c288b0 str x3, [x23, #0x278]
+c288b4 add x4, x0, #0x400
+c288b8 ldr x3, [sp, #0x18]
+c288bc strb wzr, [x0], #0x1
+c288c0 mov x2, #0x3ff              // =1023
+c288c4 mov w1, #0x0                // =0
+c288c8 str x4, [sp, #0x28]
+c288cc str x4, [x3, #0x10]
+c288d0 bl 0x3909c8
+c288d4 ldp x0, x2, [sp, #0x10]
+c288d8 mov x1, x27
+c288dc ldr x4, [sp, #0x28]
+c288e0 ldr x3, [sp, #0x38]
+c288e4 str x4, [x2, #0x8]
+c288e8 ldr x2, [x23, #0x260]
+c288ec add x4, x3, #0x80
+c288f0 ldr x5, [x0, #0x8]
+c288f4 stp x3, x4, [x27, #0x8]
+c288f8 ldr x0, [sp, #0x30]
+c288fc stp x4, x2, [x27, #0x18]
+c28900 stp x2, x5, [x27, #0x28]
+c28904 bl 0x397ce8
+c28908 mov w0, #-0x1               // =-1
+c2890c str w0, [x23, #0x398]
+c28910 str xzr, [x23, #0x3a0]
+c28914 mov x0, #0x18               // =24

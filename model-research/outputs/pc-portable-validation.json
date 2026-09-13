@@ -1,0 +1,90 @@
+{
+  "runtime": "1.16.3",
+  "hardware": "desktop i5-13600K, CPU two threads; NOT Pi",
+  "initialization_seconds": {
+    "original": 0.6319611979997717,
+    "portable-fused": 0.433611475978978
+  },
+  "validation": {
+    "silence": {
+      "finite": true,
+      "exact_equal": true,
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "relative_l2": 0.0
+    },
+    "uniform": {
+      "finite": true,
+      "exact_equal": true,
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "relative_l2": 0.0
+    },
+    "quiet": {
+      "finite": true,
+      "exact_equal": true,
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "relative_l2": 0.0
+    },
+    "wide_dynamic_range": {
+      "finite": true,
+      "exact_equal": true,
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "relative_l2": 0.0
+    },
+    "music_proxy_0": {
+      "finite": true,
+      "exact_equal": true,
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "relative_l2": 0.0
+    },
+    "music_proxy_1": {
+      "finite": true,
+      "exact_equal": true,
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "relative_l2": 0.0
+    },
+    "music_proxy_2": {
+      "finite": true,
+      "exact_equal": true,
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "relative_l2": 0.0
+    }
+  },
+  "input_notes": "Music proxies are Hann4096/hop1024 magnitude FFT examples from local audio, NOT verified Engine frontend tensors. No PCM quality claim.",
+  "warm_seconds": {
+    "original": [
+      0.211991095013218,
+      0.2128685210191179,
+      0.21506160599528812,
+      0.21419399499427527,
+      0.21360721997916698,
+      0.2089167170051951,
+      0.20968964498024434,
+      0.21482491798815317,
+      0.21084860400878824,
+      0.21439402099349536
+    ],
+    "portable-fused": [
+      0.21104480198118836,
+      0.2096170700096991,
+      0.21063760100514628,
+      0.20992986499913968,
+      0.21122836897848174,
+      0.21035237499745563,
+      0.21236890001455322,
+      0.20920858200406656,
+      0.21623175201239064,
+      0.2180982599966228
+    ]
+  },
+  "median_seconds": {
+    "original": 0.21323787049914245,
+    "portable-fused": 0.21084120149316732
+  }
+}

@@ -1,0 +1,11 @@
+c29e40 stp x3, xzr, [x0, #0x20]
+c29e44 mov x0, #0x18               // =24
+c29e48 stp x26, x25, [sp, #0x1c0]
+c29e4c str xzr, [sp, #0x4d8]
+c29e50 str x2, [sp, #0x4e8]
+c29e54 str w1, [sp, #0x4f0]
+c29e58 str xzr, [sp, #0x4f8]
+c29e5c bl 0x3915d8
+c29e60 mov x2, #0x100000001        // =4294967297
+c29e68 add x1, x1, #0x4b0
+c29e6c add x8, sp, #0x170

@@ -1,0 +1,30 @@
+c2d4b0 sub sp, sp, #0xf0
+c2d4b8 ldr x2, [x2, #0xb78]
+c2d4bc stp x29, x30, [sp, #0xa0]
+c2d4c0 add x29, sp, #0xa0
+c2d4c4 str d8, [sp, #0xe0]
+c2d4c8 fmov d8, d0
+c2d4cc stp x19, x20, [sp, #0xb0]
+c2d4d0 mov x19, x0
+c2d4d4 mov x20, x1
+c2d4d8 stp x21, x22, [sp, #0xc0]
+c2d4e0 add x3, x21, #0x48
+c2d4e4 ldr x0, [x2]
+c2d4e8 str x0, [sp, #0x98]
+c2d4ec mov x0, #0x0                // =0
+c2d4f0 str x3, [sp, #0x28]
+c2d4f4 mov x0, x3
+c2d4f8 bl 0x3912b8
+c2d4fc cbnz w0, 0xc2d814
+c2d500 mov w1, #0x1                // =1
+c2d504 mov x0, x20
+c2d508 strb w1, [sp, #0x30]
+c2d50c bl 0x1800a88
+c2d510 mov x1, x0
+c2d514 add x0, x21, #0x48
+c2d518 add x21, x19, #0x18
+c2d51c str d8, [x1]
+c2d520 bl 0x391298
+c2d524 ldr x0, [x19, #0x18]
+c2d528 cbz x0, 0xc2d660
+c2d52c bl 0x17c01cc
