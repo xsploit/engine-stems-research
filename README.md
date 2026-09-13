@@ -3,7 +3,7 @@ Snapshot: 13 September 2026.
 
 **[Download the complete research ZIP, including reference and A/B audio](https://github.com/xsploit/engine-stems-research/releases/tag/research-2026-09-13).**
 
-The repository contains browsable notes, code and measurements. Audio is in the release ZIP; extract that ZIP to follow the relative listening links. MANIFEST.json and INDEX.txt describe the complete ZIP, including those audio files. This repository is private; GitHub access is required.
+The repository contains browsable notes, code and measurements. Audio is in the release ZIP; extract that ZIP to follow the relative listening links. MANIFEST.json and INDEX.txt describe the complete ZIP, including those audio files. This repository and its release downloads are public; no invitation is required.
 
 This archive shares the research, experimental tools and comparison evidence with another researcher. It is not a BiteDJ implementation package or a finished product. No DJ application changes are included.
 
